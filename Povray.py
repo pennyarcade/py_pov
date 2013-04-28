@@ -7,297 +7,312 @@ See LICENSE file.
 Some modifications by W.T. Bridgman, 2006-2007.
 
 """
+
 from __future__ import nested_scopes
-import sys, os
+import os
 from math import sqrt
 
+
 ##################################################
+
 class File:
-  """POV-Ray scene file object."""
-  def lock(self,item):
-    #print "lock",id(item)
-    assert self.__lock is None
-    self.__lock = item
-
-  def unlock(self,item):
-    #print "unlock",id(item)
-    assert self.__lock is item
-    self.__lock = None
-
-  def indent(self):
-    self.__indent += 1
-
-  def dedent(self):
-    self.__indent -= 1
-    assert self.__indent >= 0
-
-  def block_begin(self):
-    self.writeln( "{" )
-    self.indent()
-
-  def block_end(self):
-    self.dedent()
-    self.writeln( "}" )
-    if self.__indent == 0:
-      # blank line if this is a top level end
-      self.writeln( )
-
-  def writeln(self,s=""):
-    #print "  "*self.__indent+s
-    assert self.__lock is None
-    self.file.write("  "*self.__indent+s+os.linesep)
-
-  #######################################################
-  # Public
-
-  def __init__(self,fnam="out.pov",*items):
-    """Open POV-Ray scene file.
-    
-    Open file and write some components.
-
-    @param fnam: POV-Ray scene file name.
-    @type fnam: string
-    
     """
-    assert type(fnam)==str
-    self.file = open(fnam,"w")
-    self.__indent = 0
-    self.__lock = None
-    self.write(*items)
+    POV-Ray scene file object.
 
-  def include(self,*names):
-    for name in names:
-      self.writeln( '#include "%s"'%name )
-    self.writeln()
+    """
 
-  def declare(self,name,item):
-    self.writeln("#declare %s = "%name)
-    self.indent()
-    self.write(item)
-    self.dedent()
+    def lock(self, item):
+        #print "lock",id(item)
+        assert self.__lock is None
+        self.__lock = item
 
-  def write(self,*items):
-    """Write commands into scene file."""
-    for item in items:
-      if type(item) == list:
-        for _item in item:
-          self.write(_item)
-      elif type(item) == str:
-        self.include(item)
-      else:
-        item.write(self)
+    def unlock(self, item):
+        #print "unlock",id(item)
+        assert self.__lock is item
+        self.__lock = None
 
-  def close(self):
-    """Close POV-Ray scene file."""
-    self.file.close()
+    def indent(self):
+        self.__indent += 1
+
+    def dedent(self):
+        self.__indent -= 1
+        assert self.__indent >= 0
+
+    def block_begin(self):
+        self.writeln("{")
+        self.indent()
+
+    def block_end(self):
+        self.dedent()
+        self.writeln("}")
+        if self.__indent == 0:
+            # blank line if this is a top level end
+            self.writeln()
+
+    def writeln(self, s=""):
+        #print "  "*self.__indent+s
+        assert self.__lock is None
+        self.file.write("  "*self.__indent+s+os.linesep)
+
+    #######################################################
+    # Public
+
+    def __init__(self, fnam="out.pov", *items):
+        """Open POV-Ray scene file.
+
+        Open file and write some components.
+
+        @param fnam: POV-Ray scene file name.
+        @type fnam: string
+
+        """
+        assert type(fnam) == str
+        self.file = open(fnam, "w")
+        self.__indent = 0
+        self.__lock = None
+        self.write(*items)
+
+    def include(self, *names):
+        for name in names:
+            self.writeln('#include "%s"' % name)
+            self.writeln()
+
+    def declare(self, name, item):
+        self.writeln("#declare %s = " % name)
+        self.indent()
+        self.write(item)
+        self.dedent()
+
+    def write(self, *items):
+        """Write commands into scene file."""
+        for item in items:
+            if type(item) == list:
+                for _item in item:
+                    self.write(_item)
+            elif type(item) == str:
+                self.include(item)
+            else:
+                item.write(self)
+
+    def close(self):
+        """Close POV-Ray scene file."""
+        self.file.close()
+
 
 class Vector:
-  """Generalized Vector class.
+    """Generalized Vector class.
 
-  Handles arbitrary component vectors."""
-  def __init__(self,*args):
-    if len(args) == 1:
-      if isinstance(args[0],Vector):
-        self.v = args[0].v
-      else:
-        self.v = list(args[0])
-    else:
-      self.v = args
-    float(self.v[0]) # assert
+    Handles arbitrary component vectors."""
+    def __init__(self, *args):
+        if len(args) == 1:
+            if isinstance(args[0], Vector):
+                self.v = args[0].v
+            else:
+                self.v = list(args[0])
+        else:
+            self.v = args
+        float(self.v[0])    # assert
 
-  def __str__(self):
-    return "<%s>"%(", ".join([str(x)for x in self.v]))
+    def __str__(self):
+        return "<%s>" % (", ".join([str(x)for x in self.v]))
 
-  def __repr__(self):
-    return "Vector%s"%(tuple(self.v),)
+    def __repr__(self):
+        return "Vector%s" % (tuple(self.v),)
 
-  def __setitem__(self, i, item):
-    self.v[i] = item
+    def __setitem__(self, i, item):
+        self.v[i] = item
 
-  def __getitem__(self, i):
-    return self.v[i]
+    def __getitem__(self, i):
+        return self.v[i]
 
-  def __mul__(self,other):
-    " scalar multiplication "
-    return Vector( [r*other for r in self.v] )
+    def __mul__(self, other):
+        " scalar multiplication "
+        return Vector([r*other for r in self.v])
 
-  def __rmul__(self,other):
-    " scalar multiplication "
-    return Vector( [r*other for r in self.v] )
+    def __rmul__(self, other):
+        " scalar multiplication "
+        return Vector([r*other for r in self.v])
 
-  def __div__(self,other):
-    return Vector( [r/other for r in self.v] )
+    def __div__(self, other):
+        return Vector([r/other for r in self.v])
 
-  def __add__(self,other):
-    return Vector([self.v[i]+other.v[i] for i in range(len(self.v))])
+    def __add__(self, other):
+        return Vector([self.v[i]+other.v[i] for i in range(len(self.v))])
 
-  def __sub__(self,other):
-    return Vector([self.v[i]-other.v[i] for i in range(len(self.v))])
+    def __sub__(self, other):
+        return Vector([self.v[i]-other.v[i] for i in range(len(self.v))])
 
-  def __neg__(self):
-    return Vector([-x for x in self.v])
+    def __neg__(self):
+        return Vector([-x for x in self.v])
 
-  def norm(self):
-    """Compute norm of vector."""
-    r = 0.0
-    for x in self.v:
-      r += x*x
-    return sqrt(r)
+    def norm(self):
+        """Compute norm of vector."""
+        r = 0.0
+        for x in self.v:
+            r += x*x
+        return sqrt(r)
 
-  def normalize(self):
-    """Normalize a vector"""
-    r = self.norm()
-    v = Vector( [x/r for x in self.v] )
-    return v
+    def normalize(self):
+        """Normalize a vector"""
+        r = self.norm()
+        v = Vector([x/r for x in self.v])
+        return v
 
-  def dot(self,other):
-    """Dot product of two vectors"""
-    r = 0.0
-    for i in range(len(self.v)):
-      r += self.v[i]*other.v[i]
-    return r
+    def dot(self, other):
+        """Dot product of two vectors"""
+        r = 0.0
+        for i in range(len(self.v)):
+            r += self.v[i]*other.v[i]
+        return r
 
-def map_arg(arg):
-  """Map an argument list to an appropriate format"""
-  if type(arg) in ( tuple, list ):
-    # if multiple-component, floating-point value, return a vector
-    if len(arg) and hasattr( arg[0], "__float__" ):
-      return Vector(arg)
-  # else return the same format as the input value
-  return arg
+    def map_arg(arg):
+        """Map an argument list to an appropriate format"""
+        if type(arg) in (tuple, list):
+            # if multiple-component, floating-point value, return a vector
+            if len(arg) and hasattr(arg[0], "__float__"):
+                return Vector(arg)
+        # else return the same format as the input value
+        return arg
 
-def flatten(seq):
-  seq = list(seq)
-  i=0
-  while i < len(seq):
-    if type(seq[i]) in (list,tuple):
-      x = seq.pop(i)
-      for item in x:
-        seq.insert(i,item)
-        i += 1
-    else:
-      i += 1
-  return seq
+    def flatten(seq):
+        seq = list(seq)
+        i = 0
+        while i < len(seq):
+            if type(seq[i]) in (list, tuple):
+                x = seq.pop(i)
+                for item in x:
+                    seq.insert(i, item)
+                    i += 1
+            else:
+                i += 1
+        return seq
+
 
 ######################################################
 class Item:
-  def __init__(self,name,args=[],opts=[],**kwargs):
-    """ 
-    Base class for POV objects.
+    def __init__(self, name, args=[], opts=[], **kwargs):
+        """
+        Base class for POV objects.
 
-    @param name: POV object name
-    @param args: compulsory (comma separated?) pov args XX commas don't seem to matter?
-    @param opts: eg. CSG items
-    @param kwargs: key value pairs
-    """
-    #print "Item",name,args,opts,kwargs
-    self.name = name
+        @param name: POV object name
+        @param args: compulsory (comma separated?) pov args XX commas don't seem to matter?
+        @param opts: eg. CSG items
+        @param kwargs: key value pairs
+        """
+        #print "Item",name,args,opts,kwargs
+        self.name = name
 
-    args = list(args)
-    for i in range(len(args)):
-      args[i] = map_arg(args[i])
-    self.args = flatten( args )
+        args = list(args)
+        for i in range(len(args)):
+            args[i] = map_arg(args[i])
+        self.args = flatten(args)
 
-    opts = list(opts)
-    for i in range(len(opts)):
-      opts[i] = map_arg(opts[i])
-    self.opts = flatten( opts )
+        opts = list(opts)
+        for i in range(len(opts)):
+            opts[i] = map_arg(opts[i])
+        self.opts = flatten(opts)
 
-    self.kwargs = dict(kwargs) # take a copy
-    for key,val in self.kwargs.items():
-      if type(val)==tuple or type(val)==list:
-        self.kwargs[key] = map_arg(val)
+        self.kwargs = dict(kwargs)  # take a copy
+        for key, val in self.kwargs.items():
+            if type(val) == tuple or type(val) == list:
+                self.kwargs[key] = map_arg(val)
 
-    #print "Item.__init__",self.name,self.args,self.opts
-  def append(self, *opts, **kwargs):
-    for item in flatten(opts):
-      self.opts.append( item )
-    for key,val in kwargs.items():
-      self.kwargs[key]=val
+        #print "Item.__init__",self.name,self.args,self.opts
 
-  def begin_write(self, file):
-    file.writeln( self.name )
-    file.block_begin()
-    if self.args:
-      file.writeln( ", ".join([str(arg) for arg in self.args]) )
-    file.lock(self) # assert
+    def append(self, *opts, **kwargs):
+        for item in flatten(opts):
+            self.opts.append(item)
+        for key, val in kwargs.items():
+            self.kwargs[key] = val
 
-  def opt_write(self, file, opt):
-    file.unlock(self) # assert
-    if hasattr(opt,"write"):
-      # opt is an Item
-      opt.write(file)
-    else:
-      # whatever else
-      file.writeln( str(opt) )
-    file.lock(self) # assert
+    def begin_write(self, file):
+        file.writeln(self.name)
+        file.block_begin()
+        if self.args:
+            file.writeln(", ".join([str(arg) for arg in self.args]))
+        file.lock(self)     # assert
 
-  def end_write(self, file):
-    file.unlock(self) # assert
-    for key,val in self.kwargs.items():
-      file.writeln( "%s %s"%(key,val) )
-    file.block_end()
+    def opt_write(self, file, opt):
+        file.unlock(self)   # assert
+        if hasattr(opt, "write"):
+            # opt is an Item
+            opt.write(file)
+        else:
+            # whatever else
+            file.writeln(str(opt))
+        file.lock(self)     # assert
 
-  def write(self, file):
-    #print "Item.write",self.name,self.args,self.opts
-    self.begin_write(file)
-    for opt in self.opts:
-      #print opt
-      self.opt_write(file,opt)
-    self.end_write(file)
+    def end_write(self, file):
+        file.unlock(self)   # assert
+        for key, val in self.kwargs.items():
+            file.writeln("%s %s" % (key, val))
+        file.block_end()
 
-  def __setattr__(self,name,val):
-    self.__dict__[name]=val
-    if name not in ["kwargs","args","opts","name","file"]: # "reserved" words
-      self.__dict__["kwargs"][name]=map_arg(val)
-      #print "Item",self.name,self.kwargs
+    def write(self, file):
+        #print "Item.write",self.name,self.args,self.opts
+        self.begin_write(file)
+        for opt in self.opts:
+            #print opt
+            self.opt_write(file, opt)
+        self.end_write(file)
 
-  def __setitem__(self,i,item):
-    if i < len(self.args):
-      self.args[i] = map_arg(item)
-    else:
-      i += len(args)
-      if i < len(self.opts):
-        self.opts[i] = map_arg(item)
+    def __setattr__(self, name, val):
+        self.__dict__[name] = val
+        if name not in ["kwargs", "args", "opts", "name", "file"]:  # "reserved" words
+            self.__dict__["kwargs"][name] = map_arg(val)
+            #print "Item",self.name,self.kwargs
 
-  def __getitem__(self,i):
-    if i < len(self.args):
-      return self.args[i]
-    else:
-      i += len(args)
-      if i < len(self.opts):
-        return self.opts[i]
-  #def append(self, item):
-    #self.opts.append( map_arg(item) )
+    def __setitem__(self, i, item):
+        if i < len(self.args):
+            self.args[i] = map_arg(item)
+        else:
+            i += len(args)
+            if i < len(self.opts):
+                self.opts[i] = map_arg(item)
+
+    def __getitem__(self, i):
+        if i < len(self.args):
+            return self.args[i]
+        else:
+            i += len(args)
+            if i < len(self.opts):
+                return self.opts[i]
+
+    #def append(self, item):
+        #self.opts.append( map_arg(item) )
+
 
 def py2pov(name):
-  # eg. Color -> color
-  return name.lower() # XX underscores ?
-  
+    # eg. Color -> color
+    return name.lower()   # XX underscores ?
+
+
 class KWItem(object):
-  """Keyword item handler
+    """Keyword item handler
 
-  @param val: data value
-  @type val: many formats allowed
-  @param name: parameter name
-  @type name: string
-  """
-  def __init__(self,val,name=None):
-    if name is None:
-      name = py2pov( self.__class__.__name__) 
-    self.name = name
-    self.val = map_arg(val)
+      @param val: data value
+      @type val: many formats allowed
+      @param name: parameter name
+      @type name: string
+    """
+    def __init__(self, val, name=None):
+        if name is None:
+            name = py2pov(self.__class__.__name__)
+        self.name = name
+        self.val = map_arg(val)
 
-  def __str__(self):
-    return "%s %s"%(self.name,self.val)
+    def __str__(self):
+        return "%s %s" % (self.name, self.val)
+
 
 #
 # Problem with forcing ordering of these keywords.  POVray ordering
 # does seem to matter.
 #
-for name in "Color Translate Scale Rotate Angle".split(): 
+for name in "Color Translate Scale Rotate Angle".split():
   globals()[name] = type( name, (KWItem,), {} ) # nifty :)
 #print globals().keys()
+
 
 class Texture(Item):
   """Create a texture"""
