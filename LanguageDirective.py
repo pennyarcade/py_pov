@@ -40,6 +40,7 @@ class Debug(LanguageDirective):
         super(Debug, self).__init__()
         self.arg = arg
 
+
 class Declare(LanguageDirective):
     """docstring for Declare"""
     def __init__(self, arg):
