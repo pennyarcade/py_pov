@@ -310,162 +310,182 @@ class KWItem(object):
 # does seem to matter.
 #
 for name in "Color Translate Scale Rotate Angle".split():
-  globals()[name] = type( name, (KWItem,), {} ) # nifty :)
-#print globals().keys()
+    globals()[name] = type(name, (KWItem,), {})    # nifty :)
+    #print globals().keys()
 
 
 class Texture(Item):
-  """Create a texture"""
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"texture",(),opts,**kwargs)
+    """Create a texture"""
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "texture", (), opts, **kwargs)
+
 
 class Pigment(Item):
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"pigment",(),opts,**kwargs)
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "pigment", (), opts, **kwargs)
+
 
 class ColorEntry:
-  """Single line entry for a color map"""
-  def __init__(self,x,color):
-    self.x = x
-    self.color = color
+    """Single line entry for a color map"""
+    def __init__(self, x, color):
+        self.x = x
+        self.color = color
 
-  def __str__(self):
-    return "[ %s %s ]"%(self.x, self.color)
+    def __str__(self):
+        return "[ %s %s ]" % (self.x, self.color)
+
 
 class ColorMap(Item):
-  """Assemble a color map from a collection of color entries."""
-  def __init__(self,*opts):
-    opts = list(opts)
-    for i in range(len(opts)):
-      x, color = opts[i]
-      opts[i] = ColorEntry( x, color )
-    Item.__init__(self,"color_map",(),opts)
+    """Assemble a color map from a collection of color entries."""
+    def __init__(self, *opts):
+        opts = list(opts)
+        for i in range(len(opts)):
+            x, color = opts[i]
+            opts[i] = ColorEntry(x, color)
+        Item.__init__(self, "color_map", (), opts)
+
 
 class ImageMap(Item):
-  """Map an image to an object"""
-  def __init__(self,filename,*opts,**kwargs):
-    hf_type=filename.split(".")[-1]
-    if hf_type=="jpg":
-      hf_type="jpeg"
-    if hf_type=="tif":
-      hf_type="tiff"
-    opts = list(opts)
-    opts.insert(0,"\"%s\""%filename)
-    opts.insert(0,hf_type)
-    Item.__init__(self,"image_map",(),opts,**kwargs)
+    """Map an image to an object"""
+    def __init__(self, filename, *opts, **kwargs):
+        hf_type = filename.split(".")[-1]
+        if hf_type == "jpg":
+            hf_type = "jpeg"
+        if hf_type == "tif":
+            hf_type = "tiff"
+        opts = list(opts)
+        opts.insert(0, "\"%s\"" % filename)
+        opts.insert(0, hf_type)
+        Item.__init__(self, "image_map", (), opts, **kwargs)
+
 
 class Finish(Item):
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"finish",(),opts,**kwargs)
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "finish", (), opts, **kwargs)
+
 
 class Normal(Item):
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"normal",(),opts,**kwargs)
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "normal", (), opts, **kwargs)
+
 
 class Camera(Item):
-  """Create a camera object"""
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"camera",(),opts,**kwargs)
+    """Create a camera object"""
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "camera", (), opts, **kwargs)
+
 
 class LightSource(Item):
-  """Place light source object at specified position
+    """Place light source object at specified position
 
-  @param v: position
-  @type v: tuple
-  """
-  #def __init__(self,v,c,*opts,**kwargs):
-    #Item.__init__(self,"light_source",(Vector(v),Vector(c)),
-      #opts,**kwargs)
-  def __init__(self,v,*opts,**kwargs):
-    Item.__init__(self,"light_source",(Vector(v),),
-      opts,**kwargs)
+    @param v: position
+    @type v: tuple
+    """
+    #def __init__(self,v,c,*opts,**kwargs):
+        #Item.__init__(self,"light_source",(Vector(v),Vector(c)),
+            #opts,**kwargs)
+    def __init__(self, v, *opts, **kwargs):
+        Item.__init__(self, "light_source", (Vector(v),), opts, **kwargs)
+
 
 class Background(Item):
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"background",(),opts,**kwargs)
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "background", (), opts, **kwargs)
+
 
 class Box(Item):
-  def __init__(self,v1,v2,*opts,**kwargs):
-    """Construct a box object
+    def __init__(self, v1, v2, *opts, **kwargs):
+        """Construct a box object
 
-    @param v1: vertex of box
-    @type v1: Vector()
-    @param v2: opposing vertex of box
-    @type v2: Vector()
-    """
-    Item.__init__(self,"box",(v1,v2),opts,**kwargs)
+        @param v1: vertex of box
+        @type v1: Vector()
+        @param v2: opposing vertex of box
+        @type v2: Vector()
+        """
+        Item.__init__(self, "box", (v1, v2), opts, **kwargs)
+
 
 class Cylinder(Item):
-  """Construct cylinder object
+    """Construct cylinder object
 
-  @param v1: coordinates of base point
-  @type v1: L{Vector}
-  @param v2: coordinates of cap point
-  @type v2: L{Vector}
-  @param r: radius of sphere
-  @type r: float
-  """
-  def __init__(self,v1,v2,r,*opts,**kwargs):
-    " opts: open "
-    Item.__init__(self,"cylinder",(v1,v2,r),opts,**kwargs)
+    @param v1: coordinates of base point
+    @type v1: L{Vector}
+    @param v2: coordinates of cap point
+    @type v2: L{Vector}
+    @param r: radius of sphere
+    @type r: float
+    """
+    def __init__(self, v1, v2, r, *opts, **kwargs):
+        " opts: open "
+        Item.__init__(self, "cylinder", (v1, v2, r), opts, **kwargs)
+
 
 class Plane(Item):
-  def __init__(self,v,r,*opts,**kwargs):
-    Item.__init__(self,"plane",(v,r),opts,**kwargs)
+    def __init__(self, v, r, *opts, **kwargs):
+        Item.__init__(self, "plane", (v, r), opts, **kwargs)
+
 
 class Torus(Item):
-  def __init__(self,r1,r2,*opts,**kwargs):
-    Item.__init__(self,"torus",(r1,r2),opts,**kwargs)
+    def __init__(self, r1, r2, *opts, **kwargs):
+        Item.__init__(self, "torus", (r1, r2), opts, **kwargs)
+
 
 class Cone(Item):
-  """Construct cylinder object
+    """Construct cylinder object
 
-  @param v1: coordinates of base point
-  @type v1: L{Vector}
-  @param r1: radius of base
-  @type r1: float
-  @param v2: coordinates of cap point
-  @type v2: L{Vector}
-  @param r2: radius of cap point
-  @type r2: float
-  """
-  def __init__(self,v1,r1,v2,r2,*opts,**kwargs):
-    " opts: open "
-    Item.__init__(self,"cone", (v1,r1,v2,r2),opts,**kwargs)
+    @param v1: coordinates of base point
+    @type v1: L{Vector}
+    @param r1: radius of base
+    @type r1: float
+    @param v2: coordinates of cap point
+    @type v2: L{Vector}
+    @param r2: radius of cap point
+    @type r2: float
+    """
+    def __init__(self, v1, r1, v2, r2, *opts, **kwargs):
+        " opts: open "
+        Item.__init__(self, "cone", (v1, r1, v2, r2), opts, **kwargs)
+
 
 class Sphere(Item):
-  """Sphere object
+    """Sphere object
 
-  @param v: position of center of sphere
-  @type v: L{Vector}
-  @param r: radius of sphere
-  @type r: float
-  """
-  def __init__(self,v,r,*opts,**kwargs):
-    Item.__init__(self,"sphere",(v,r),opts,**kwargs)
+    @param v: position of center of sphere
+    @type v: L{Vector}
+    @param r: radius of sphere
+    @type r: float
+    """
+    def __init__(self, v, r, *opts, **kwargs):
+        Item.__init__(self, "sphere", (v, r), opts, **kwargs)
 
-class Plane(Item):
-  def __init__(self,v,r,*opts,**kwargs):
-    Item.__init__(self,"plane",(v,r),opts,**kwargs)
+
+#class Plane(Item):
+#    def __init__(self, v, r, *opts, **kwargs):
+#        Item.__init__(self, "plane", (v, r), opts, **kwargs)
+
 
 class LooksLike(Item):
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"looks_like",(),opts,**kwargs)
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "looks_like", (), opts, **kwargs)
+
 
 class Fog(Item):
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"fog",(),opts,**kwargs)
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "fog", (), opts, **kwargs)
+
 
 class Disc(Item):
-  def __init__(self,v1,v2,r1,*opts,**kwargs):
-    Item.__init__(self,"disc",(v1,v2,r1),opts,**kwargs)
+    def __init__(self, v1, v2, r1, *opts, **kwargs):
+        Item.__init__(self, "disc", (v1, v2, r1), opts, **kwargs)
+
 
 ##############################################
 # Constructive Solid Geometry (CSG) components
 
 class Union(Item):
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"union",(),opts,**kwargs)
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "union", (), opts, **kwargs)
+
 
 class Intersection(Item):
   def __init__(self,*opts,**kwargs):
