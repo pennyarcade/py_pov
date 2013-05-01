@@ -11,10 +11,11 @@ Some modifications by W.T. Bridgman, 2006-2007.
 from __future__ import nested_scopes
 import os
 from math import sqrt
-
+import Vector
 
 ##################################################
 
+'''
 class File:
     """
     POV-Ray scene file object.
@@ -97,98 +98,13 @@ class File:
     def close(self):
         """Close POV-Ray scene file."""
         self.file.close()
+'''
 
 
-class Vector:
-    """Generalized Vector class.
-
-    Handles arbitrary component vectors."""
-    def __init__(self, *args):
-        if len(args) == 1:
-            if isinstance(args[0], Vector):
-                self.v = args[0].v
-            else:
-                self.v = list(args[0])
-        else:
-            self.v = args
-        float(self.v[0])    # assert
-
-    def __str__(self):
-        return "<%s>" % (", ".join([str(x)for x in self.v]))
-
-    def __repr__(self):
-        return "Vector%s" % (tuple(self.v),)
-
-    def __setitem__(self, i, item):
-        self.v[i] = item
-
-    def __getitem__(self, i):
-        return self.v[i]
-
-    def __mul__(self, other):
-        " scalar multiplication "
-        return Vector([r*other for r in self.v])
-
-    def __rmul__(self, other):
-        " scalar multiplication "
-        return Vector([r*other for r in self.v])
-
-    def __div__(self, other):
-        return Vector([r/other for r in self.v])
-
-    def __add__(self, other):
-        return Vector([self.v[i]+other.v[i] for i in range(len(self.v))])
-
-    def __sub__(self, other):
-        return Vector([self.v[i]-other.v[i] for i in range(len(self.v))])
-
-    def __neg__(self):
-        return Vector([-x for x in self.v])
-
-    def norm(self):
-        """Compute norm of vector."""
-        r = 0.0
-        for x in self.v:
-            r += x*x
-        return sqrt(r)
-
-    def normalize(self):
-        """Normalize a vector"""
-        r = self.norm()
-        v = Vector([x/r for x in self.v])
-        return v
-
-    def dot(self, other):
-        """Dot product of two vectors"""
-        r = 0.0
-        for i in range(len(self.v)):
-            r += self.v[i]*other.v[i]
-        return r
-
-    def map_arg(arg):
-        """Map an argument list to an appropriate format"""
-        if type(arg) in (tuple, list):
-            # if multiple-component, floating-point value, return a vector
-            if len(arg) and hasattr(arg[0], "__float__"):
-                return Vector(arg)
-        # else return the same format as the input value
-        return arg
-
-    def flatten(seq):
-        seq = list(seq)
-        i = 0
-        while i < len(seq):
-            if type(seq[i]) in (list, tuple):
-                x = seq.pop(i)
-                for item in x:
-                    seq.insert(i, item)
-                    i += 1
-            else:
-                i += 1
-        return seq
 
 
 ######################################################
+'''
 class Item:
     def __init__(self, name, args=[], opts=[], **kwargs):
         """
@@ -280,7 +196,7 @@ class Item:
 
     #def append(self, item):
         #self.opts.append( map_arg(item) )
-
+'''
 
 def py2pov(name):
     # eg. Color -> color
@@ -488,107 +404,131 @@ class Union(Item):
 
 
 class Intersection(Item):
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"intersection",(),opts,**kwargs)
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "intersection", (), opts, **kwargs)
+
 
 class Difference(Item):
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"difference",(),opts,**kwargs)
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "difference", (), opts, **kwargs)
+
 
 class Merge(Item):
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"merge",(),opts,**kwargs)
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "merge", (), opts, **kwargs)
+
 
 class Polygon(Item):
-  def __init__(self,*opts,**kwargs):
-    Item.__init__(self,"polygon",(),opts,**kwargs)
+    def __init__(self, *opts, **kwargs):
+        Item.__init__(self, "polygon", (), opts, **kwargs)
+
 
 class Text(Item):
-  def __init__(self,font,string,thickness,offset,*opts,**kwargs):
-    Item.__init__(self,"text",('ttf "'+font+'" "'+string+'"',thickness,offset),opts,**kwargs)
+    def __init__(self, font, string, thickness, offset, *opts, **kwargs):
+        Item.__init__(
+            self, "text",
+            ('ttf "' + font + '" "' + string + '"', thickness, offset),
+            opts, **kwargs)
+
 
 class ThickCylinder(Difference):
-  def __init__(self,v1,v2,r1,r2,*opts,**kwargs):
-    v1 = Vector(v1)
-    v2 = Vector(v2)
-    v = 0.001*(v2 - v1).normalize() # we make the second cyl a bit longer
-    #print (v1,v2,r2), (v1-v,v2+v,r1), opts,kwargs
-    Difference.__init__(
-      self, Cylinder(v1,v2,r2), Cylinder(v1-v,v2+v,r1), *opts,**kwargs
-    )
+    def __init__(self, v1, v2, r1, r2, *opts, **kwargs):
+        v1 = Vector(v1)
+        v2 = Vector(v2)
+        # we make the second cyl a bit longer
+        v = 0.001 * (v2 - v1).normalize()
+        #print (v1,v2,r2), (v1-v,v2+v,r1), opts,kwargs
+        Difference.__init__(
+            self, Cylinder(v1, v2, r2),
+            Cylinder(v1 - v, v2 + v, r1), *opts, **kwargs
+        )
+
 
 ThickCyl = ThickCylinder
 
 ##############################################
 
+
 class Triangle(Item):
-  def __init__(self,v1,v2,v3,*opts,**kwargs):
-    Item.__init__(self,"triangle",(v1,v2,v3),opts,**kwargs)
+    def __init__(self, v1, v2, v3, *opts, **kwargs):
+        Item.__init__(self, "triangle", (v1, v2, v3), opts, **kwargs)
+
 
 class Mesh(Item):
-  def __init__(self,file=None,*opts,**kwargs):
-    Item.__init__(self,"mesh",(),opts,**kwargs)
-    self.file = file # "reserved" word
-    if file is not None:
-      self.begin_write(file)
+    def __init__(self, file=None, *opts, **kwargs):
+        Item.__init__(self, "mesh", (), opts, **kwargs)
+        self.file = file      # "reserved" word
+        if file is not None:
+            self.begin_write(file)
 
-  def append(self,item):
-    if self.file is not None:
-      self.opt_write(self.file,item)
-    else:
-      Item.append(self,item)
+    def append(self, item):
+        if self.file is not None:
+            self.opt_write(self.file, item)
+        else:
+            Item.append(self, item)
 
-  def write(self, file):
-    #print "Item.write",self.name,self.args,self.opts
-    if self.file is None:
-      self.begin_write(file)
-      for opt in self.opts:
-        #print opt
-        self.opt_write(file,opt)
-    self.end_write(file)
+    def write(self, file):
+        #print "Item.write",self.name,self.args,self.opts
+        if self.file is None:
+            self.begin_write(file)
+            for opt in self.opts:
+                #print opt
+                self.opt_write(file, opt)
+        self.end_write(file)
 
 ##############################################
 
+
 class HeightField(Item):
-  def __init__(self,filename,*opts,**kwargs):
-    hf_type=filename.split(".")[-1]
-    if hf_type=="jpg":
-      hf_type="jpeg"
-    opts = list(opts)
-    opts.insert(0,"\"%s\""%filename)
-    opts.insert(0,hf_type)
-    Item.__init__(self,"height_field",(),opts,**kwargs)
+    def __init__(self, filename, *opts, **kwargs):
+        hf_type = filename.split(".")[-1]
+        if hf_type == "jpg":
+            hf_type = "jpeg"
+        opts = list(opts)
+        opts.insert(0, "\"%s\"" % filename)
+        opts.insert(0, hf_type)
+        Item.__init__(self, "height_field", (), opts, **kwargs)
+
 
 from FieldIm import *
 
 #
 ######################################################
 
-X = x = Vector(1,0,0)
-Y = y = Vector(0,1,0)
-Z = z = Vector(0,0,1)
-white = Texture(Pigment(color=(1,1,1)))
+X = x = Vector(1, 0, 0)
+Y = y = Vector(0, 1, 0)
+Z = z = Vector(0, 0, 1)
+white = Texture(Pigment(color=(1, 1, 1)))
+
 
 def tutorial31():
-  " from the povray tutorial sec. 3.1"
-  file=File("demo.pov","colors.inc","stones.inc")
-  cam = Camera(location=(0,2,-3),look_at=(0,1,2))
-  sphere = Sphere( (0,1,2), 2, Texture(Pigment(color=(1,1,1))))
-  light = LightSource( (2,4,-3), (1,1,1))
-  file.write( cam, sphere, light )
+    " from the povray tutorial sec. 3.1"
+    file = File("demo.pov", "colors.inc", "stones.inc")
+    cam = Camera(location=(0, 2, -3), look_at=(0, 1, 2))
+    sphere = Sphere((0, 1, 2), 2, Texture(Pigment(color=(1, 1, 1))))
+    light = LightSource((2, 4, -3), (1, 1, 1))
+    file.write(cam, sphere, light)
+
 
 def test00():
-  file=File("test.pov","colors.inc","stones.inc")
-  cam = Camera(location=(0,0,-3),look_at=(0,0,0),angle=45)
-  boxs = []
-  z = 100
-  for i in range(50):
-    for j in range(50):
-      boxs.append( Box((i-3,j-3,z),(i+0.7-3,j+0.7-3,z+1),Texture(Pigment(color=(i%2,j%2,1))) ) )
-  light = LightSource( (2,4,-3), (1,1,1) )
-  file.write( cam, boxs, light )
+    file = File("test.pov", "colors.inc", "stones.inc")
+    cam = Camera(location=(0, 0, -3), look_at=(0, 0, 0), angle=45)
+    boxs = []
+    z = 100
+    for i in range(50):
+        for j in range(50):
+            boxs.append(
+                Box(
+                    (i - 3, j - 3, z),
+                    (i + 0.7-3, j + 0.7 - 3, z + 1),
+                    Texture(Pigment(color=(i % 2, j % 2, 1)))
+                )
+            )
+    light = LightSource((2, 4, -3), (1, 1, 1))
+    file.write(cam, boxs, light)
+
 
 if __name__ == "__main__":
-#  test00()
-  tutorial31()
+    #  test00()
+    tutorial31()
 

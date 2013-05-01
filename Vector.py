@@ -1,0 +1,66 @@
+class Vector:
+    """Generalized Vector class.
+
+    Handles arbitrary component vectors."""
+    def __init__(self, *args):
+        if len(args) == 1:
+            if isinstance(args[0], Vector):
+                self.v = args[0].v
+            else:
+                self.v = list(args[0])
+        else:
+            self.v = args
+        float(self.v[0])    # assert
+
+    def __str__(self):
+        return "<%s>" % (", ".join([str(x)for x in self.v]))
+
+    def __repr__(self):
+        return "Vector%s" % (tuple(self.v),)
+
+    def __setitem__(self, i, item):
+        self.v[i] = item
+
+    def __getitem__(self, i):
+        return self.v[i]
+
+    def __mul__(self, other):
+        " scalar multiplication "
+        return Vector([r*other for r in self.v])
+
+    def __rmul__(self, other):
+        " scalar multiplication "
+        return Vector([r*other for r in self.v])
+
+    def __div__(self, other):
+        return Vector([r/other for r in self.v])
+
+    def __add__(self, other):
+        return Vector([self.v[i]+other.v[i] for i in range(len(self.v))])
+
+    def __sub__(self, other):
+        return Vector([self.v[i]-other.v[i] for i in range(len(self.v))])
+
+    def __neg__(self):
+        return Vector([-x for x in self.v])
+
+    def norm(self):
+        """Compute norm of vector."""
+        r = 0.0
+        for x in self.v:
+            r += x*x
+        return sqrt(r)
+
+    def normalize(self):
+        """Normalize a vector"""
+        r = self.norm()
+        v = Vector([x/r for x in self.v])
+        return v
+
+    def dot(self, other):
+        """Dot product of two vectors"""
+        r = 0.0
+        for i in range(len(self.v)):
+            r += self.v[i]*other.v[i]
+        return r
+
