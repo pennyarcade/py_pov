@@ -104,7 +104,7 @@ class File:
 
 
 ######################################################
-'''
+
 class Item:
     def __init__(self, name, args=[], opts=[], **kwargs):
         """
@@ -196,7 +196,6 @@ class Item:
 
     #def append(self, item):
         #self.opts.append( map_arg(item) )
-'''
 
 def py2pov(name):
     # eg. Color -> color

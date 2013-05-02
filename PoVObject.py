@@ -112,7 +112,6 @@ class Box(FiniteSolid):
                 <Corner_1>, <Corner_2>
                 [OBJECT_MODIFIERS...]
             }
-
     """
     def __init__(self, v1, v2, *opts, **kwargs):
         """
@@ -157,7 +156,6 @@ class Cone(FiniteSolid):
             @type  cappoint: Vector
             @param capradius: Cap radius of cone
             @type  capradius: Float
-
         """
 
         # Syntax checking
@@ -180,7 +178,7 @@ class Cone(FiniteSolid):
         )
 
 
-class cylinder(FiniteSolid):
+class Cylinder(FiniteSolid):
     """
        CYLINDER:
             cylinder
@@ -201,10 +199,19 @@ class cylinder(FiniteSolid):
 
         assert isinstance(basepoint, Vector)
         assert len(basepoint.v) == 3
-        assert type(baseradius) in (int, float)
         assert isinstance(cappoint, Vector)
         assert len(cappoint.v) == 3
+        assert type(radius) in (int, float)
+        # TODO: Make sure only valid Object Modifiers are passed
+        for i in range(len(opts)):
+            assert isInstance(i, ObjectModifier)
+        for key, val in kwargs.items():
+            assert key in ['open']
 
-
+        super(Cylinder, self).__init__(
+            "cylinder",
+            (basepoint, cappoint, radius),
+            opts, **kwargs
+        )
 
 

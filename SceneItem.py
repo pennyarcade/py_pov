@@ -10,8 +10,9 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 from __future__ import nested_scopes
 from logging import *
+from Vector import *
 import os
-import Vector
+
 
 class SceneItem(object):
     """
@@ -40,6 +41,7 @@ class SceneItem(object):
         if not "indentation" in globals():
             global indentation
             indentation = 0
+            debug("set initial indentation to 0")
 
         args = list(args)
         for i in range(len(args)):
@@ -99,20 +101,19 @@ class SceneItem(object):
         self.__dedent()
         return code
 
-
     def __getLine(self, s=""):
         """
             get line of code
         """
         global indentation
-        info("  " * indentation + s)
+        info("'" + "  " * indentation + s + "'")
         return "  " * indentation + s + os.linesep
 
     def __getBeginCode(self):
         """
             Start block of code
         """
-        code = self.__getLine(self.name) + self.__block_begin()
+        code = self.name + os.linesep + self.__block_begin()
         if self.args:
             code = code + self.__getLine(", ".join([str(arg) for arg in self.args]))
         return code
@@ -148,7 +149,7 @@ class SceneItem(object):
         code = ""
         code += self.__getBeginCode()
         for opt in self.opts:
-            code += str(opt)
+            code += self.__getLine(str(opt))
         code += self.__getEndCode()
         return code
 
@@ -166,11 +167,11 @@ class SceneItem(object):
             Set Item magic method
         """
         if i < len(self.args):
-            self.args[i] = map_arg(item)
+            self.args[i] = self.map_arg(item)
         else:
-            i += len(args)
+            i += len(self.args)
             if i < len(self.opts):
-                self.opts[i] = map_arg(item)
+                self.opts[i] = self.map_arg(item)
 
     def __getitem__(self, i):
         """
