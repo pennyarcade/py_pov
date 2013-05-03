@@ -192,6 +192,8 @@ class Cylinder(FiniteSolid):
     """
     def __init__(self, basepoint, cappoint, radius, *opts, **kwargs):
         """
+            Construct a cylinder Object
+
             @param basepoint: Base point of cylinder
             @type  basepoint: Vector
             @param cappoint: Cap point of cylinder
@@ -218,3 +220,176 @@ class Cylinder(FiniteSolid):
         )
 
 
+class HeightField(FiniteSolid):
+    '''
+        HEIGHT_FIELD:
+            height_field{
+              [HF_TYPE]
+              "filename"
+              [HF_MODIFIER...]
+              [OBJECT_MODIFIER...]
+            }
+        HF_TYPE:
+            gif | tga | pot | png | pgm | ppm | jpeg | tiff | sys | function
+        HF_MODIFIER:
+            hierarchy [Boolean]  |
+            smooth               |
+            water_level Level
+    '''
+    def __init__(self, filename, *opts, **kwargs):
+        '''
+            Construct a HeightField object
+
+            @TODO: Param Apidoc
+            @TODO: Syntax Checking
+        '''
+
+        super(HeightField, self).__init__(
+            "height_field",
+            (filename),
+            opts, **kwargs
+        )
+
+
+class JuliaFractal(FiniteSolid):
+    '''
+        JULIA_FRACTAL:
+            julia_fractal
+            {
+                <4D_Julia_Parameter>
+                [JF_ITEM...] [OBJECT_MODIFIER...]
+            }
+        JF_ITEM:
+            ALGEBRA_TYPE | FUNCTION_TYPE | max_iteration Count |
+            precision Amt | slice <4D_Normal>, Distance
+        ALGEBRA_TYPE:
+            quaternion | hypercomplex
+        FUNCTION_TYPE:
+            QUATERNATION:
+                 sqr | cube
+            HYPERCOMPLEX:
+                 sqr | cube | exp | reciprocal | sin | asin | sinh |
+                 asinh | cos | acos | cosh | acosh | tan | atan |tanh |
+                 atanh | ln | pwr( X_Val, Y_Val )
+    '''
+    def __init__(self, param4d, *opts, **kwargs):
+        '''
+            Construct a Julia Fractal object
+
+            @TODO: Param Apidoc
+            @TODO: Param Syntax checking
+        '''
+
+        super(Box, self).__init__("box", (param4d), opts, **kwargs)
+
+
+class Lathe(FiniteSolid):
+    '''
+        LATHE:
+            lathe
+            {
+                [SPLINE_TYPE] Number_Of_Points, <Point_1>
+                <Point_2>... <Point_n>
+                [LATHE_MODIFIER...]
+            }
+        SPLINE_TYPE:
+            linear_spline | quadratic_spline | cubic_spline | bezier_spline
+        LATHE_MODIFIER:
+            sturm | OBJECT_MODIFIER
+    '''
+
+
+class Prism(FiniteSolid):
+    '''
+        PRISM:
+            prism
+            {
+                [PRISM_ITEMS...] Height_1, Height_2, Number_Of_Points,
+                <Point_1>, <Point_2>, ... <Point_n>
+                [ open ] [PRISM_MODIFIERS...]
+            }
+        PRISM_ITEM:
+            linear_spline | quadratic_spline | cubic_spline |
+            bezier_spline | linear_sweep | conic_sweep
+        PRISM_MODIFIER:
+            sturm | OBJECT_MODIFIER
+    '''
+
+
+class Sphere(FiniteSolid):
+    '''
+        SPHERE:
+            sphere
+            {
+                <Center>, Radius
+                [OBJECT_MODIFIERS...]
+            }
+    '''
+
+
+class SphereSweep(FiniteSolid):
+    '''
+        SPHERE_SWEEP:
+            sphere_sweep {
+                linear_spline | b_spline | cubic_spline
+                NUM_OF_SPHERES,
+
+                CENTER, RADIUS,
+                CENTER, RADIUS,
+                ...
+                CENTER, RADIUS
+                [tolerance DEPTH_TOLERANCE]
+                [OBJECT_MODIFIERS]
+            }
+    '''
+
+
+class SuperEllipsoid(FiniteSolid):
+    '''
+        SUPERELLIPSOID:
+            superellipsoid
+            {
+                <Value_E, Value_N>
+                [OBJECT_MODIFIERS...]
+            }
+    '''
+
+
+class Sor(FiniteSolid):
+    '''
+        SOR:
+            sor
+            {
+                Number_Of_Points, <Point_1>, <Point_2>, ... <Point_n>
+                [ open ] [SOR_MODIFIERS...]
+            }
+        SOR_MODIFIER:
+            sturm | OBJECT_MODIFIER
+    '''
+
+
+class Text(FiniteSolid):
+    '''
+        TEXT_OBECT:
+            text {
+                ttf "fontname.ttf/ttc" "String_of_Text"
+                Thickness, <Offset>
+                [OBJECT_MODIFIERS...]
+            }
+    '''
+
+
+class Torus(FiniteSolid):
+    '''
+        TORUS:
+            torus
+            {
+                Major, Minor
+                [TORUS_MODIFIER...]
+            }
+        TORUS_MODIFIER:
+            sturm | OBJECT_MODIFIER
+    '''
+
+#####################################################
+# Finite Patch Objects

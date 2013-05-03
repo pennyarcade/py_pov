@@ -90,7 +90,7 @@ class SceneItem(object):
         """
             End code block
         """
-        debug("end block")
+        debug("end block: indentation= %s", indentation)
 
         if indentation == 0:
             # blank line if this is a top level end
@@ -137,9 +137,6 @@ class SceneItem(object):
         for key, val in kwargs.items():
             self.kwargs[key] = val
 
-    #def append(self, item):
-        #self.opts.append( map_arg(item) )
-
     def __str__(self):
         """
             return PoV code as string representation
@@ -152,15 +149,6 @@ class SceneItem(object):
             code += self.__getLine(str(opt))
         code += self.__getEndCode()
         return code
-
-#    def __setattr__(self, name, val):
-#       """
-#            Set Attribute magic method
-#        """
-#        self.__dict__[name] = val
-#        if name not in ["kwargs", "args", "opts", "name", "file"]:  # "reserved" words
-#            self.__dict__["kwargs"][name] = map_arg(val)
-#            debug("Item %s %s", self.name, self.kwargs)
 
     def __setitem__(self, i, item):
         """
