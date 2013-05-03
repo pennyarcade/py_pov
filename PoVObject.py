@@ -77,6 +77,9 @@ class Csg(PoVObject):
             UNION | INTERSECTION | DIFFERENCE | MERGE
     """
 
+#########################################################
+# Finite Solid Objects
+
 
 class Blob(FiniteSolid):
     """

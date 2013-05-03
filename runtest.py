@@ -293,9 +293,10 @@ class VectorTestCase(unittest.TestCase):
 
     def test_normalize(self):
         SUT = Vector(1, 2, 2)
-        third = 1 / 3
-        self.assertEqual(SUT.normalize(), Vector(third, (2 / 3), (2 / 3)))
+        self.assertEqual(SUT.normalize(), Vector(1.0 / 3, 2.0 / 3, 2 / 3))
 
+    def test_dot(self):
+        self.assertEqual(self.SUT.dot(self.SUT), 14)
 
 if __name__ == '__main__':
     unittest.main()

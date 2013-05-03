@@ -40,51 +40,6 @@ class SceneFile(list):
         assert self.__lock is item
         self.__lock = None
 
-'''
-    def __indent(self):
-        """
-            Indent PoV code
-         """
-        self.__indent += 1
-        debug("indent: %s", self.__indent)
-
-    def __dedent(self):
-        """
-            Dedent PoV code
-        """
-        self.__indent -= 1
-        debug("dedent: %s", self.__indent)
-        assert self.__indent >= 0
-
-    def __block_begin(self):
-        """
-            Begin code block
-        """
-        self.writeln("{")
-        self.indent()
-        debug("begin block")
-
-    def __block_end(self):
-        """
-            End code block
-        """
-        self.dedent()
-        self.writeln("}")
-        if self.__indent == 0:
-            # blank line if this is a top level end
-            self.writeln()
-        debug("end block")
-
-    def __writeln(self, s=""):
-        """
-            write line of code to file
-        """
-        info("  " * self.__indent + s)
-        assert self.__lock is None
-        self.file.write("  " * self.__indent + s + os.linesep)
-'''
-
-
     #######################################################
     # Public
 

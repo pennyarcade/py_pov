@@ -73,6 +73,7 @@ class Vector:
 
     def dot(self, other):
         """Dot product of two vectors"""
+        assert isinstance(other, Vector)
         r = 0.0
         for i in range(len(self.v)):
             r += self.v[i]*other.v[i]
