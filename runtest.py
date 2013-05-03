@@ -259,9 +259,42 @@ class VectorTestCase(unittest.TestCase):
     def test_repr(self):
         self.assertEqual(repr(self.SUT), "Vector(1, 2, 3)")
 
-    @unittest.skip("has to be implemented first")
     def test_equals(self):
         self.assertEqual(self.SUT, Vector(1, 2, 3))
+
+    def test_setattr(self):
+        self.SUT[1] = 4
+        self.assertEqual(self.SUT, Vector(1, 4, 3))
+
+    def test_getattr(self):
+        self.assertEqual(self.SUT[1], 2)
+
+    def test_mul(self):
+        self.assertEqual(self.SUT * 2, Vector(2, 4, 6))
+
+    def test_rmul(self):
+        self.assertEqual(2 * self.SUT, Vector(2, 4, 6))
+
+    def test_div(self):
+        self.assertEqual(Vector(2, 4, 6) / 2, Vector(1, 2, 3))
+
+    def test_add(self):
+        self.assertEqual(self.SUT + self.SUT, Vector(2, 4, 6))
+
+    def test_sub(self):
+        self.assertEqual(Vector(2, 4, 6) - self.SUT, self.SUT)
+
+    def test_neg(self):
+        self.assertEqual(-self.SUT, Vector(-1, -2, -3))
+
+    def test_norm(self):
+        SUT = Vector(1, 2, 2)
+        self.assertEqual(SUT.norm(), 3)
+
+    def test_normalize(self):
+        SUT = Vector(1, 2, 2)
+        third = 1 / 3
+        self.assertEqual(SUT.normalize(), Vector(third, (2 / 3), (2 / 3)))
 
 
 if __name__ == '__main__':

@@ -1,3 +1,7 @@
+from logging import *
+from math import sqrt
+
+
 class Vector:
     """Generalized Vector class.
 
@@ -9,7 +13,7 @@ class Vector:
             else:
                 self.v = list(args[0])
         else:
-            self.v = args
+            self.v = list(args)
         float(self.v[0])    # assert
 
     def __str__(self):
@@ -19,6 +23,7 @@ class Vector:
         return "Vector%s" % (tuple(self.v),)
 
     def __setitem__(self, i, item):
+        debug("__setitem__: %s %s %s", str(self.v), i, item)
         self.v[i] = item
 
     def __getitem__(self, i):
@@ -26,23 +31,32 @@ class Vector:
 
     def __mul__(self, other):
         " scalar multiplication "
+        assert type(other) in (float, int)
         return Vector([r*other for r in self.v])
 
     def __rmul__(self, other):
         " scalar multiplication "
+        assert type(other) in (float, int)
         return Vector([r*other for r in self.v])
 
     def __div__(self, other):
+        assert type(other) in (float, int)
         return Vector([r/other for r in self.v])
 
     def __add__(self, other):
+        assert isinstance(other, Vector)
         return Vector([self.v[i]+other.v[i] for i in range(len(self.v))])
 
     def __sub__(self, other):
+        assert isinstance(other, Vector)
         return Vector([self.v[i]-other.v[i] for i in range(len(self.v))])
 
     def __neg__(self):
         return Vector([-x for x in self.v])
+
+    def __eq__(self, other):
+        assert isinstance(other, Vector)
+        return self.v == other.v
 
     def norm(self):
         """Compute norm of vector."""
@@ -63,4 +77,3 @@ class Vector:
         for i in range(len(self.v)):
             r += self.v[i]*other.v[i]
         return r
-
