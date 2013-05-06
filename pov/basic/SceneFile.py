@@ -1,3 +1,4 @@
+# coding=UTF-8
 """
 Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
 
@@ -9,7 +10,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-import os
 from logging import *
 
 
@@ -21,24 +21,6 @@ class SceneFile(list):
         @var private __indent
         @var public  file
     """
-
-    def __lock(self, item):
-        """
-            Lock Item for processing
-            TODO: Deprecated when using __str__() to generate code
-        """
-        debug("lock %s", id(item))
-        assert self.__lock is None
-        self.__lock = item
-
-    def __unlock(self, item):
-        """
-            Unlock Item after processing
-            TODO: Deprecated when using __str__() to generate code
-        """
-        debug("unlock %s", id(item))
-        assert self.__lock is item
-        self.__lock = None
 
     #######################################################
     # Public
@@ -58,27 +40,6 @@ class SceneFile(list):
         self.__indent = 0
         self.__lock = None
         self.write(*items)
-
-    def include(self, *names):
-        """
-            Handle #include language directive
-            TODO: move to own subclass
-            TODO: syntax tests?
-        """
-        for name in names:
-            self.writeln('#include "%s"' % name)
-            self.writeln()
-
-    def declare(self, name, item):
-        """
-            Handle #declare languge directive
-            TODO: move to own subclass
-            TODO: syntax tests?
-        """
-        self.writeln("#declare %s = " % name)
-        self.indent()
-        self.write(item)
-        self.dedent()
 
     def write(self, *items):
         """

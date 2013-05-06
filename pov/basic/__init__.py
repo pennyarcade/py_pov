@@ -10,6 +10,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from basic.SceneItem import SceneItem
-from basic.SceneFile import SceneFile
-from basic.Vector import Vector
+from SceneItem import SceneItem
+from SceneFile import SceneFile
+from Vector import Vector

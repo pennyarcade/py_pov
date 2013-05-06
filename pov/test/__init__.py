@@ -10,6 +10,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from basic.SceneItem import SceneItem
-from basic.SceneFile import SceneFile
-from basic.Vector import Vector
+from BasicTest import *
+from FiniteSolidTest import *
+from LanguageDirectiveTest import *

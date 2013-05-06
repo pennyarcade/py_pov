@@ -1,4 +1,5 @@
-﻿"""
+﻿# coding=UTF-8
+"""
 Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -60,7 +61,7 @@ class SceneItem(object):
 
         debug("Item.__init__ %s, %s, %s", self.name, self.args, self.opts)
 
-    def __indent(self):
+    def _indent(self):
         """
             Indent PoV code
         """
@@ -68,7 +69,7 @@ class SceneItem(object):
         indentation += 1
         debug("indent: %s", indentation)
 
-    def __dedent(self):
+    def _dedent(self):
         """
             Dedent PoV code
         """
@@ -77,16 +78,16 @@ class SceneItem(object):
         debug("dedent: %s", indentation)
         assert indentation >= 0
 
-    def __block_begin(self):
+    def _block_begin(self):
         """
             Begin code block
         """
-        self.__indent()
+        self._indent()
         debug("begin block")
 
-        return self.__getLine("{")
+        return self._getLine("{")
 
-    def __block_end(self):
+    def _block_end(self):
         """
             End code block
         """
@@ -94,39 +95,20 @@ class SceneItem(object):
 
         if indentation == 0:
             # blank line if this is a top level end
-            code = self.__getLine()
+            code = self._getLine()
         else:
-            code = self.__getLine("}")
+            code = self._getLine("}")
 
-        self.__dedent()
+        self._dedent()
         return code
 
-    def __getLine(self, s=""):
+    def _getLine(self, s=""):
         """
             get line of code
         """
         global indentation
         info("'" + "  " * indentation + s + "'")
         return "  " * indentation + s + os.linesep
-
-    def __getBeginCode(self):
-        """
-            Start block of code
-        """
-        code = self.name + os.linesep + self.__block_begin()
-        if self.args:
-            code = code + self.__getLine(", ".join([str(arg) for arg in self.args]))
-        return code
-
-    def __getEndCode(self):
-        """
-            End block of code
-        """
-        code = ""
-        for key, val in self.kwargs.items():
-            code += self.__getLine("%s %s" % (key, val))
-        code += self.__block_end()
-        return code
 
     def append(self, *opts, **kwargs):
         """
@@ -143,12 +125,7 @@ class SceneItem(object):
         """
         debug("Item.__str__ %s, %s, %s", self.name, self.args, self.opts)
 
-        code = ""
-        code += self.__getBeginCode()
-        for opt in self.opts:
-            code += self.__getLine(str(opt))
-        code += self.__getEndCode()
-        return code
+        return self.name
 
     def __setitem__(self, i, item):
         """
@@ -157,7 +134,7 @@ class SceneItem(object):
         if i < len(self.args):
             self.args[i] = self.map_arg(item)
         else:
-            i += len(self.args)
+            #i += len(self.args)
             if i < len(self.opts):
                 self.opts[i] = self.map_arg(item)
 
@@ -168,9 +145,23 @@ class SceneItem(object):
         if i < len(self.args):
             return self.args[i]
         else:
-            i += len(args)
+            # i += len(self.args)
             if i < len(self.opts):
                 return self.opts[i]
+            else:
+                raise IndexError()
+
+    def __eq__(self, other):
+        assert isinstance(other, SceneItem)
+        a = self.name == other.name
+        debug(str(self.name) + ' = ' + str(self.name))
+        b = self.args == other.args
+        debug(str(self.args) + ' = ' + str(self.args))
+        c = self.opts == other.opts
+        debug(str(self.opts) + ' = ' + str(self.opts))
+        d = self.kwargs == other.kwargs
+        debug(str(self.kwargs) + ' = ' + str(self.kwargs))
+        return a & b & c & d
 
     def map_arg(self, arg):
         """Map an argument list to an appropriate format"""

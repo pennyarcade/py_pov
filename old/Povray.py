@@ -15,7 +15,6 @@ import Vector
 
 ##################################################
 
-'''
 class File:
     """
     POV-Ray scene file object.
@@ -98,7 +97,6 @@ class File:
     def close(self):
         """Close POV-Ray scene file."""
         self.file.close()
-'''
 
 
 
