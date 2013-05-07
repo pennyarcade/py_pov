@@ -11,11 +11,11 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from SceneItem import *
+from pov.basic.PoVObject import *
 
 
-class Camera(SceneItem):
-    """docstring for Camera"""
-    def __init__(self, arg):
-        super(Camera, self).__init__()
-        self.arg = arg
+class IsoSurface(PoVObject):
+    """
+        ISOSURFACE_OBJECT:
+            ISOSURFACE
+    """

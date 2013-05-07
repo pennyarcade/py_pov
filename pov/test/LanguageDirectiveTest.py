@@ -11,7 +11,9 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 import unittest
-from pov.language_directive.LanguageDirective import *
+import os
+from pov.basic import SceneItem
+from pov.language_directive import *
 
 
 class LanguageDirectiveTestCase(unittest.TestCase):
@@ -25,5 +27,35 @@ class LanguageDirectiveTestCase(unittest.TestCase):
     def test_str(self):
         le = os.linesep
         second = '#foo' + le
+
+        self.assertEqual(str(self.SUT), second)
+
+
+class IncludeTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = Include('test.inc')
+
+    def test_create(self):
+        self.assertIsInstance(self.SUT, Include)
+        self.assertIsInstance(self.SUT, LanguageDirective)
+
+    def test_str(self):
+        le = os.linesep
+        second = '#include "test.inc"' + le
+
+        self.assertEqual(str(self.SUT), second)
+
+
+class VersionTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = Version(3.6)
+
+    def test_create(self):
+        self.assertIsInstance(self.SUT, Version)
+        self.assertIsInstance(self.SUT, LanguageDirective)
+
+    def test_str(self):
+        le = os.linesep
+        second = '#version 3.6;' + le
 
         self.assertEqual(str(self.SUT), second)

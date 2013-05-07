@@ -67,8 +67,6 @@ class Vector:
         return Vector([-x for x in self.v])
 
     def __eq__(self, other):
-        if (not isinstance(other, Vector)):
-            return False
         return self.v == other.v
 
     def norm(self):

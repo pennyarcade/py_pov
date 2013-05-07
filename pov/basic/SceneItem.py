@@ -98,8 +98,8 @@ class SceneItem(object):
             code = self._getLine()
         else:
             code = self._getLine("}")
+            self._dedent()
 
-        self._dedent()
         return code
 
     def _getLine(self, s=""):
@@ -134,9 +134,11 @@ class SceneItem(object):
         if i < len(self.args):
             self.args[i] = self.map_arg(item)
         else:
-            #i += len(self.args)
+            i -= len(self.args)
             if i < len(self.opts):
                 self.opts[i] = self.map_arg(item)
+            else:
+                raise IndexError()
 
     def __getitem__(self, i):
         """
@@ -145,7 +147,7 @@ class SceneItem(object):
         if i < len(self.args):
             return self.args[i]
         else:
-            # i += len(self.args)
+            i -= len(self.args)
             if i < len(self.opts):
                 return self.opts[i]
             else:

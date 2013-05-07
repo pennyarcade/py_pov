@@ -10,8 +10,12 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from SceneItem import SceneItem
-from SceneFile import SceneFile
-from Vector import Vector
-from PoVObject import PoVObject
-from pov.test import *
+
+from pov.basic.PoVObject import *
+
+
+class InfiniteSolid(PoVObject):
+    """
+        INFINITE_SOLID_OBJECT:
+            PLANE | POLY | CUBIC | QUARTIC | QUADRIC
+    """

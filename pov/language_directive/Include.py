@@ -10,10 +10,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from pov.basic.SceneItem import *
+from LanguageDirective import *
 
 
-class Include(SceneItem):
+class Include(LanguageDirective):
     """
         INCLUDE_DIRECTIVE:
             #include FILE_NAME
@@ -31,14 +31,14 @@ class Include(SceneItem):
 
             @TODO: assert that filename points o a real file
         '''
+        self.filename = filename
         #super(Include, self).__init__('include')
-        pass
 
     def __str__(self):
         '''
             Generate PoV source code
         '''
-        code = self.__getLine('#' + 'include \"' + self.file.name + '\n')
+        code = self._getLine('#' + 'include \"' + self.filename + '\"')
 
         return code
 

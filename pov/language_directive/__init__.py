@@ -11,5 +11,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 from LanguageDirective import LanguageDirective
-
 from Include import Include
+from Version import Version
+from pov.test import *

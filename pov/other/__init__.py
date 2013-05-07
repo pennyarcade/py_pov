@@ -10,8 +10,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from SceneItem import SceneItem
-from SceneFile import SceneFile
-from Vector import Vector
-from PoVObject import PoVObject
 from pov.test import *
+from IsoSurface import IsoSurface
+from Object import Object
+from ParametricObj import ParametricObj
+from Camera import Camera

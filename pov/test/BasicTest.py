@@ -14,11 +14,10 @@ Unittests for basic classes
 
 import os
 import unittest
-import difflib
-import copy
+#import difflib
+#import copy
 from logging import *
-from pov.basic.SceneItem import SceneItem
-from pov.basic.Vector import Vector
+from pov.basic import *
 
 
 class SceneItemTestCase(unittest.TestCase):
@@ -30,7 +29,6 @@ class SceneItemTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
     def test_toString(self):
-        le = os.linesep
         second = 'foo'
 
         self.assertEqual(str(self.SUT), second)
@@ -125,13 +123,48 @@ class SceneItemTestCase(unittest.TestCase):
         )
 
     def test_setitemNonexistingIndex(self):
-        before = copy.copy(self.SUT)
-        self.SUT[2] = SceneItem('baz')
+        try:
+            self.SUT[2] = SceneItem('baz')
+        except IndexError:
+            pass
+        except e:
+            self.fail('Unexpected exception thrown:', e)
+        else:
+            self.fail('ExpectedException not thrown')
 
-        self.assertEqual(
-            before,
-            self.SUT
-        )
+    def test_block_endZeroIndentation(self):
+        self.assertEqual(self.SUT._block_end(), os.linesep)
+
+    def test_setitemReplacesOpt(self):
+        self.SUT = SceneItem('foo', [1, 2, 3], [4, 5, 6], bar=7)
+
+        #before
+        self.assertEqual(self.SUT.args, [1, 2, 3])
+        self.assertEqual(self.SUT.opts, [4, 5, 6])
+        self.assertEqual(self.SUT.kwargs, {'bar': 7})
+
+        self.SUT[4] = 0
+
+        #after
+        self.assertEqual(self.SUT.args, [1, 2, 3])
+        self.assertEqual(self.SUT.opts, [4, 0, 6])
+        self.assertEqual(self.SUT.kwargs, {'bar': 7})
+
+    def test_getitem(self):
+        self.SUT = SceneItem('foo', [1, 2, 3], [4, 5, 6], bar=7)
+
+        self.assertEqual(self.SUT[1], 2)
+        self.assertEqual(self.SUT[4], 5)
+
+    def test_getitemRaisesIndexError(self):
+        try:
+            warn(str(self.SUT[2]))
+        except IndexError:
+            pass
+        except e:
+            self.fail('Unexpected exception thrown:', e)
+        else:
+            self.fail('ExpectedException not thrown')
 
 
 class VectorTestCase(unittest.TestCase):
@@ -150,6 +183,9 @@ class VectorTestCase(unittest.TestCase):
 
     def test_equals(self):
         self.assertEqual(self.SUT, Vector(1, 2, 3))
+
+    def test_equalsNoVector(self):
+        self.assertNotEqual(self.SUT, SceneItem('bar'))
 
     def test_setattr(self):
         self.SUT[1] = 4
@@ -188,11 +224,45 @@ class VectorTestCase(unittest.TestCase):
         self.assertEqual(self.SUT.dot(self.SUT), 14)
 
 
-def suite():
-    suite = unittest.TestSuite()
-    suite.addTests(SceneItemTestCase())
-    suite.addTests(VectorTestCase())
-    return suite
+class SceneFileTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = SceneFile('test.pov', SceneItem('foo'), SceneItem('bar'))
 
-if __name__ == '__main__':
-    unittest.main()
+    def tearDown(self):
+        self.SUT.close()
+        os.remove(self.SUT.file.name)
+
+    def test_create(self):
+        self.assertIsInstance(self.SUT, SceneFile)
+
+    def test_append(self):
+        item = SceneItem('baz')
+        self.SUT.append(item)
+
+        self.assertIn(item, self.SUT.items)
+
+    def test_appendWrongType(self):
+        try:
+            self.SUT.append('foo')
+        except AssertionError:
+            pass
+        except e:
+            self.fail('Unexpected exception thrown:', e)
+        else:
+            self.fail('ExpectedException not thrown')
+
+
+class PoVObjectTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = PoVObject("foo", [1, 2, 3], [4, 5, 6], bar=7)
+
+    def test_toString(self):
+        le = os.linesep
+        first = str(self.SUT)
+        second = 'foo' + le + '  {' + le
+        second += '  1, 2, 3' + le + '  4' + le + '  5' + le + '  6' + le
+        second += '  bar 7' + le + '  }' + le
+
+        self.assertEqual(first, second)
+
+

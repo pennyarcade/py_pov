@@ -10,6 +10,14 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+from AthmosphericEffect import *
 from BasicTest import *
+from CsgTest import *
+from EndToEndTest import *
+from FinitePatchTest import *
 from FiniteSolidTest import *
+from GlobalSettingsTest import *
+from InfiniteSolidTest import *
 from LanguageDirectiveTest import *
+from ObjectModifierTest import *
+from OtherTest import *

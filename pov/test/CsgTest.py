@@ -10,8 +10,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from SceneItem import SceneItem
-from SceneFile import SceneFile
-from Vector import Vector
-from PoVObject import PoVObject
-from pov.test import *
+import os
+import unittest
+import difflib
+#import copy
+from logging import *
+
+

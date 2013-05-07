@@ -11,9 +11,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 from logging import *
+from SceneItem import *
 
 
-class SceneFile(list):
+class SceneFile(object):
     """
     POV-Ray scene file object.
 
@@ -36,24 +37,45 @@ class SceneFile(list):
 
         """
         assert type(fnam) == str
-        self.file = open(fnam, "w")
-        self.__indent = 0
-        self.__lock = None
-        self.write(*items)
 
-    def write(self, *items):
+        #initialize item list
+        self.items = list()
+
+        items = list(items)
+        for i in items:
+            self.append(i)
+
+        self.file = open(fnam, "w")
+
+    def __str__(self):
+        code = ''
+
+        for i in self.items:
+            code += str(i)
+
+        info ('SceneFile.str(): ' + code)
+
+        return code
+
+    def append(self, item):
+        #each item has to be derived of SceneItem
+        assert isinstance(item, SceneItem)
+        self.items.append(item)
+
+    def write(self):
         """
             Write commands into scene file.
             TODO: There should be no more type/syntax checking here
         """
-        for item in items:
-            if type(item) == list:
-                for _item in item:
-                    self.write(_item)
-            elif type(item) == str:
-                self.include(item)
-            else:
-                item.write(self)
+
+        #for item in items:
+        #    if type(item) == list:
+        #        for _item in item:
+        #            self.write(_item)
+        #    elif type(item) == str:
+        #        self.include(item)
+        #    else:
+        #        item.write(self)
 
     def close(self):
         """

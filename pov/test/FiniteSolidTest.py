@@ -13,7 +13,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 import os
 import unittest
 
-from pov.PoVObject import *
+from pov.basic.PoVObject import *
 from pov.basic.Vector import *
 from pov.object_modifier.ObjectModifier import *
 

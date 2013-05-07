@@ -27,3 +27,4 @@ from Sor import Sor
 from Text import Text
 from Torus import Torus
 
+from pov.test import *

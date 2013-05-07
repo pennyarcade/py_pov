@@ -11,8 +11,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from basic.SceneItem import *
-from basic.Vector import *
+from pov.basic.SceneItem import *
+from pov.basic.Vector import *
 
 
 class PoVObject(SceneItem):
@@ -55,49 +55,3 @@ class PoVObject(SceneItem):
             code += self._getLine("%s %s" % (key, val))
         code += self._block_end()
         return code
-
-
-class FinitePatch(PoVObject):
-    """
-        FINITE_PATCH_OBJECT:
-            BICUBIC_PATCH | DISC | MESH | MESH2 | POLYGON | TRIANGLE |
-            SMOOTH_TRIANGLE
-    """
-
-
-class IsoSurface(PoVObject):
-    """
-        ISOSURFACE_OBJECT:
-            ISOSURFACE
-    """
-
-
-class ParametricObj(PoVObject):
-    """
-        PARAMETRIC_OBJECT:
-            PARAMETRIC
-    """
-
-
-class Object(PoVObject):
-    """
-         object {
-           OBJECT_IDENTIFIER | OBJECT {}
-           LIST_ITEM_A, LIST_ITEM_B
-         }
-    """
-
-
-class InfiniteSolid(PoVObject):
-    """
-        INFINITE_SOLID_OBJECT:
-            PLANE | POLY | CUBIC | QUARTIC | QUADRIC
-    """
-
-
-class Csg(PoVObject):
-    """
-        CSG_OBJECT:
-            UNION | INTERSECTION | DIFFERENCE | MERGE
-    """
-
