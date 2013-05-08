@@ -15,5 +15,13 @@ import unittest
 import difflib
 #import copy
 from logging import *
+from pov.global_settings import *
 
 
+class GlobalSettingsTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = GlobalSettings()
+
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, GlobalSettings)
+        self.assertIsInstance(self.SUT, SceneItem)

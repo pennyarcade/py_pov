@@ -10,7 +10,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from AthmosphericEffect import *
+from AthmosphericEffectTest import *
 from BasicTest import *
 from CsgTest import *
 from EndToEndTest import *

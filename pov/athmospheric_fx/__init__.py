@@ -10,5 +10,5 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from AtmosphericEffect import AtmosphericEffect
+from AthmosphericEffect import AthmosphericEffect
 from pov.test import *

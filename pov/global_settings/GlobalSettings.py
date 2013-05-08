@@ -36,7 +36,5 @@ class GlobalSettings(SceneItem):
         NG_TYPE:
             1 | 2 | 3
     """
-    def __init__(self, arg):
-        #super(GlobalSettings, self).__init__()
-        #self.arg = arg
-        pass
+    def __init__(self, *opts, **kwargs):
+        super(GlobalSettings, self).__init__('global_settings')

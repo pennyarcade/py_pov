@@ -10,7 +10,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from atmospheric_fx import *
+from athmospheric_fx import *
 from basic import *
 from csg import *
 from finite_patch import *

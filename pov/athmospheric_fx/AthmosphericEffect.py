@@ -14,8 +14,12 @@ Some modifications by W.T. Bridgman, 2006-2007.
 from pov.basic.SceneItem import *
 
 
-class AtmosphericEffect(SceneItem):
-    """docstring for AtmosphericEffect"""
-    def __init__(self, arg):
-        super(AtmosphericEffect, self).__init__()
-        self.arg = arg
+class AthmosphericEffect(SceneItem):
+    """
+        ATMOSPHERIC_EFFECT:
+            MEDIA |
+            BACKGROUND |
+            FOG |
+            SKY_SPHERE |
+            RAINBOW
+    """

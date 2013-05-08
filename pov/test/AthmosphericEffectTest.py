@@ -15,5 +15,12 @@ import unittest
 import difflib
 #import copy
 from logging import *
+from pov import AthmosphericEffect
 
 
+class AthmosphericEffectTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = AthmosphericEffect()
+
+    def test_creation(self):
+        self.fail('implement test')
