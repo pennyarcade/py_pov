@@ -28,7 +28,7 @@ class PoVObject(SceneItem):
         """
             return PoV code as string representation
         """
-        debug("Item.__str__ %s, %s, %s", self.name, self.args, self.opts)
+        debug("PoVObject.__str__ %s, %s, %s", self.name, self.args, self.opts)
 
         code = ""
         code += self._getBeginCode()
@@ -41,7 +41,7 @@ class PoVObject(SceneItem):
         """
             Start block of code
         """
-        code = self.name + os.linesep + self._block_begin()
+        code = self.name + self._block_begin()
         if self.args:
             code = code + self._getLine(", ".join([str(arg) for arg in self.args]))
         return code

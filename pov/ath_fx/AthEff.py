@@ -14,7 +14,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 from pov.basic.SceneItem import *
 
 
-class AthmosphericEffect(SceneItem):
+class AthEff(SceneItem):
     """
         ATMOSPHERIC_EFFECT:
             MEDIA |
@@ -23,3 +23,5 @@ class AthmosphericEffect(SceneItem):
             SKY_SPHERE |
             RAINBOW
     """
+    def foo(self):
+        pass

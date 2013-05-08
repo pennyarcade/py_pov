@@ -11,10 +11,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from pov.basic.SceneItem import *
+from pov.basic.PoVObject import *
 
 
-class GlobalSettings(SceneItem):
+class GlobalSettings(PoVObject):
     """
         GLOBAL_SETTINGS:
             global_settings { GLOBAL_SETTING_ITEMS }
@@ -37,4 +37,4 @@ class GlobalSettings(SceneItem):
             1 | 2 | 3
     """
     def __init__(self, *opts, **kwargs):
-        super(GlobalSettings, self).__init__('global_settings')
+        super(GlobalSettings, self).__init__('global_settings', [], opts)

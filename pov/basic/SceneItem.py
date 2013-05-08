@@ -35,7 +35,7 @@ class SceneItem(object):
             @param opts: eg. CSG items
             @param kwargs: key value pairs
         """
-        debug("Item %s, %s, %s, %s", name, args, opts, kwargs)
+        debug("creating SceneItem %s, %s, %s, %s", name, args, opts, kwargs)
 
         self.name = name
 
@@ -123,7 +123,7 @@ class SceneItem(object):
         """
             return PoV code as string representation
         """
-        debug("Item.__str__ %s, %s, %s", self.name, self.args, self.opts)
+        debug("SceneItem.__str__ %s, %s, %s", self.name, self.args, self.opts)
 
         return self.name
 

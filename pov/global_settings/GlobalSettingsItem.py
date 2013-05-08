@@ -29,7 +29,3 @@ class GlobalSettingsItem(SceneItem):
             [RADIOSITY] &
             [PHOTONS]
     """
-    def __init__(self, arg):
-        #super(GlobalSettingsItem, self).__init__()
-        #self.arg = arg
-        pass
