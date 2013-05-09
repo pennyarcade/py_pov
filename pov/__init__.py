@@ -10,7 +10,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from ath_fx import *
+from atmeff import *
 from basic import *
 from csg import *
 from finite_patch import *

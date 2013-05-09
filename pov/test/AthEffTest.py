@@ -16,11 +16,12 @@ import unittest
 #import copy
 from logging import *
 
-from pov.ath_fx import *
+from pov.atmeff.AthEff import AthEff
+
 
 class AthEffTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = Foo('foo')
+        self.SUT = AthEff('foo')
 
     def test_creation(self):
         self.assertIsInstance(self.SUT, AthEff)

@@ -20,7 +20,7 @@ from pov.basic import *
 from pov.language_directive import *
 from pov.global_settings import *
 
-@unittest.skip
+#@unittest.skip
 class EndToEndTestCase(unittest.TestCase):
     def test_Scene1(self):
         '''

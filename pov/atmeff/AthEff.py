@@ -23,5 +23,3 @@ class AthEff(SceneItem):
             SKY_SPHERE |
             RAINBOW
     """
-    def foo(self):
-        pass
