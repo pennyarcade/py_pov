@@ -20,7 +20,7 @@ from pov.basic import *
 from pov.language_directive import *
 from pov.global_settings import *
 
-
+@unittest.skip
 class EndToEndTestCase(unittest.TestCase):
     def test_Scene1(self):
         '''
@@ -30,10 +30,9 @@ class EndToEndTestCase(unittest.TestCase):
         le = os.linesep
 
         ref = "#version 3.6;" + le
-        ref += "global_settings" + le
-        ref += "  {" + le
+        ref += "global_settings {" + le
         ref += "  assumed_gamma 1.0" + le
-        ref += "  }" + le
+        ref += "}" + le
         ref += "#default{ finish{ ambient 0.1 diffuse 0.9 }}" + le
         ref += "#include \"colors.inc\"" + le
         ref += "#include \"textures.inc\"" + le

@@ -33,7 +33,10 @@ class PoVObject(SceneItem):
         code = ""
         code += self._getBeginCode()
         for opt in self.opts:
-            code += self._getLine(str(opt))
+            if isinstance(opt, SceneItem):
+                code += str(opt)
+            else:
+                code += self._getLine(str(opt))
         code += self._getEndCode()
         return code
 
@@ -41,7 +44,9 @@ class PoVObject(SceneItem):
         """
             Start block of code
         """
-        code = self.name + self._block_begin()
+        global indentation
+
+        code = "  " * self._getIndent() + self.name + self._block_begin()
         if self.args:
             code = code + self._getLine(", ".join([str(arg) for arg in self.args]))
         return code

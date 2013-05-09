@@ -78,14 +78,23 @@ class SceneItem(object):
         debug("dedent: %s", indentation)
         assert indentation >= 0
 
+    def _getIndent(self):
+        """
+            Get indentation
+        """
+        global indentation
+        return indentation
+
     def _block_begin(self):
         """
             Begin code block
         """
-        self._indent()
         debug("begin block")
+        code = " {" + os.linesep
 
-        return self._getLine("{")
+        self._indent()
+
+        return code
 
     def _block_end(self):
         """
@@ -97,8 +106,8 @@ class SceneItem(object):
             # blank line if this is a top level end
             code = self._getLine()
         else:
-            code = self._getLine("}")
             self._dedent()
+            code = self._getLine("}")
 
         return code
 

@@ -259,10 +259,42 @@ class PoVObjectTestCase(unittest.TestCase):
     def test_toString(self):
         le = os.linesep
         first = str(self.SUT)
-        second = 'foo' + le + '  {' + le
-        second += '  1, 2, 3' + le + '  4' + le + '  5' + le + '  6' + le
-        second += '  bar 7' + le + '  }' + le
+        second = 'foo {' + le
+        second += '  1, 2, 3' + le
+        second += '  4' + le
+        second += '  5' + le
+        second += '  6' + le
+        second += '  bar 7' + le
+        second += '}' + le
 
         self.assertEqual(first, second)
 
+    def test_toString_with_object_option(self):
+        self.SUT[4] = PoVObject('bar')
 
+        le = os.linesep
+        first = str(self.SUT)
+        second = 'foo {' + le
+        second += '  1, 2, 3' + le
+        second += '  4' + le
+        second += '  bar {' + le
+        second += '  }' +le
+        second += '  6' + le
+        second += '  bar 7' + le
+        second += '}' + le
+
+        self.assertEqual(first, second)
+
+    def test_toString_with_indent(self):
+        self.SUT= PoVObject('bar')
+
+        self.SUT._indent()
+        first = str(self.SUT)
+        self.SUT._dedent()
+
+        le = os.linesep
+
+        second = '  bar {' + le
+        second += '  }' + le
+
+        self.assertEqual(first, second)

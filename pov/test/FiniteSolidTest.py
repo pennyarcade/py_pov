@@ -29,7 +29,7 @@ class BlobTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
         le = os.linesep
-        second = 'blob' + le + '  {' + le + '  }' + le
+        second = 'blob {' + le + '}' + le
 
         self.assertEqual(str(self.SUT), second)
 
@@ -43,8 +43,9 @@ class BoxTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
         le = os.linesep
-        second = 'box' + le + '  {' + le
-        second += '  <1, 2, 3>, <4, 5, 6>' + le + '  }' + le
+        second = 'box {' + le
+        second += '  <1, 2, 3>, <4, 5, 6>' + le
+        second += '}' + le
 
         self.assertEqual(
             str(self.SUT),
@@ -72,8 +73,9 @@ class ConeTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
         le = os.linesep
-        second = 'cone' + le + '  {' + le
-        second += '  <1, 2, 3>, 4, <5, 6, 7>, 8' + le + '  }' + le
+        second = 'cone {' + le
+        second += '  <1, 2, 3>, 4, <5, 6, 7>, 8' + le
+        second += '}' + le
 
         self.assertEqual(
             str(self.SUT),
@@ -107,8 +109,9 @@ class CylinderTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
         le = os.linesep
-        second = 'cylinder' + le + '  {' + le
-        second += '  <1, 2, 3>, <5, 6, 7>, 8' + le + '  }' + le
+        second = 'cylinder {' + le
+        second += '  <1, 2, 3>, <5, 6, 7>, 8' + le
+        second += '}' + le
 
         self.assertEqual(
             str(self.SUT),
