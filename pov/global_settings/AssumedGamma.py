@@ -26,8 +26,11 @@ class AssumedGamma(GlobalSettingsItem):
             @type value: float
 
         '''
+
         assert type(value) == float
         self.value = value
+
+        super(GlobalSettingsItem, self).__init__('assumed_gamma', [], [])
 
     def __str__(self):
         '''

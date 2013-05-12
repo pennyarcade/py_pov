@@ -19,8 +19,10 @@ from logging import *
 from pov.basic import *
 from pov.language_directive import *
 from pov.global_settings import *
+from pov.texture import *
 
-#@unittest.skip
+
+@unittest.skip
 class EndToEndTestCase(unittest.TestCase):
     def test_Scene1(self):
         '''
@@ -33,7 +35,12 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "global_settings {" + le
         ref += "  assumed_gamma 1.0" + le
         ref += "}" + le
-        ref += "#default{ finish{ ambient 0.1 diffuse 0.9 }}" + le
+        ref += "#default {" + le
+        ref += "  finish {" + le
+        ref += "    ambient 0.1" + le
+        ref += "    diffuse 0.9" + le
+        ref += "  }" + le
+        ref += "}" + le
         ref += "#include \"colors.inc\"" + le
         ref += "#include \"textures.inc\"" + le
         ref += "camera{ location  <0.0 , 1.0 ,-3.0>" + le
@@ -84,6 +91,14 @@ class EndToEndTestCase(unittest.TestCase):
         fix.append(
             GlobalSettings(
                 AssumedGamma(1.0)
+            )
+        )
+        fix.append(
+            Default(
+                Finish(
+                    Ambient(0.1),
+                    Diffuse(0.9)
+                )
             )
         )
 

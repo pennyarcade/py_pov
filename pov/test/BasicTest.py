@@ -251,6 +251,13 @@ class SceneFileTestCase(unittest.TestCase):
         else:
             self.fail('ExpectedException not thrown')
 
+    def test_toString(self):
+        le = os.linesep
+        first = str(self.SUT)
+
+        second = 'foo {' + le
+        second += '}' + le
+
 
 class PoVObjectTestCase(unittest.TestCase):
     def setUp(self):

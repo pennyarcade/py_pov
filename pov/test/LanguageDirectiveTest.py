@@ -14,6 +14,7 @@ import unittest
 import os
 from pov.basic import SceneItem
 from pov.language_directive import *
+from pov.texture import *
 
 
 class LanguageDirectiveTestCase(unittest.TestCase):
@@ -59,3 +60,13 @@ class VersionTestCase(unittest.TestCase):
         second = '#version 3.6;' + le
 
         self.assertEqual(str(self.SUT), second)
+
+
+class DefaultTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = Default(Ambient(0.43))
+
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, Default)
+        self.assertIsInstance(self.SUT, LanguageDirective)
+
