@@ -13,6 +13,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 from FiniteSolid import *
 from pov.basic.Vector import *
 from pov.object_modifier.ObjectModifier import *
+from pov.other import SdlSyntaxException
 
 
 class Cone(FiniteSolid):
@@ -39,18 +40,29 @@ class Cone(FiniteSolid):
         """
 
         # Syntax checking
-        assert isinstance(basepoint, Vector)
-        assert len(basepoint.v) == 3
-        assert type(baseradius) in (int, float)
-        assert isinstance(cappoint, Vector)
-        assert len(cappoint.v) == 3
-        assert type(capradius) in (int, float)
-        # TODO: Make sure only valid Object Modifiers are passed
+        if not isinstance(basepoint, Vector):
+            raise SdlSyntaxException('Parameter basepoint is not of type Vector')
+        if not len(basepoint.v) == 3:
+            raise SdlSyntaxException('Base point Vector has more or less than 3 dimensions')
+        if not type(baseradius) in (int, float):
+            raise SdlSyntaxException('Param base radius is not of type int or float')
+        if not isinstance(cappoint, Vector):
+            raise SdlSyntaxException('Parameter cappoint is not of type Vector')
+        if not len(cappoint.v) == 3:
+            raise SdlSyntaxException('Cap point Vector has more or less than 3 dimensions')
+        if not type(capradius) in (int, float):
+            raise SdlSyntaxException('Param base radius is not of type int or float')
+
+        # Make sure only valid Object Modifiers are passed
         for i in range(len(opts)):
-            assert isinstance(opts[i], ObjectModifier)
+            if not isinstance(opts[i], ObjectModifier):
+                raise SdlSyntaxException('Only ObjectModifier objects may be passed as options')
+
         for key, val in kwargs.items():
-            assert key in ['open']
-            assert type(val) == bool
+            if not key in ['open']:
+                raise SdlSyntaxException('Invalid key: ' + str(key))
+            if not type(val) == bool:
+                raise SdlSyntaxException('Value of key %s is not boolean', key)
 
         super(Cone, self).__init__(
             "cone",

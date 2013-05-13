@@ -1,0 +1,61 @@
+
+grep -Hirn 'todo' . >> todo.todo (13.05.2013):
+    ☐ ./runtest.py:20:                                         @TODO: Make custom Exception(s) for PoV SDL syntax errors
+    Assert statements to replace:
+        ✔ pov/global_settings/AssumedGamma.py:30:        assert type(value) == float @done (13-05-13 13:03)
+        ✔ pov/finite_solid/Cone.py:42:        assert isinstance(basepoint, Vector) @done (13-05-13 13:15)
+        ✔ pov/finite_solid/Cone.py:43:        assert len(basepoint.v) == 3 @done (13-05-13 13:15)
+        ✔ pov/finite_solid/Cone.py:44:        assert type(baseradius) in (int, float) @done (13-05-13 13:15)
+        ✔ pov/finite_solid/Cone.py:45:        assert isinstance(cappoint, Vector) @done (13-05-13 13:15)
+        ✔ pov/finite_solid/Cone.py:46:        assert len(cappoint.v) == 3 @done (13-05-13 13:15)
+        ✔ pov/finite_solid/Cone.py:47:        assert type(capradius) in (int, float) @done (13-05-13 13:15)
+        ✔ pov/finite_solid/Cone.py:50:            assert isinstance(opts[i], ObjectModifier) @done (13-05-13 13:15)
+        ✔ pov/finite_solid/Cone.py:52:            assert key in ['open'] @done (13-05-13 13:15)
+        ✔ pov/finite_solid/Cone.py:53:            assert type(val) == bool @done (13-05-13 13:15)
+        ✔ pov/finite_solid/Cylinder.py:38:        assert isinstance(basepoint, Vector) @done (13-05-13 13:20)
+        ✔ pov/finite_solid/Cylinder.py:39:        assert len(basepoint.v) == 3 @done (13-05-13 13:20)
+        ✔ pov/finite_solid/Cylinder.py:40:        assert isinstance(cappoint, Vector) @done (13-05-13 13:20)
+        ✔ pov/finite_solid/Cylinder.py:41:        assert len(cappoint.v) == 3 @done (13-05-13 13:20)
+        ✔ pov/finite_solid/Cylinder.py:42:        assert type(radius) in (int, float) @done (13-05-13 13:20)
+        ✔ pov/finite_solid/Cylinder.py:45:            assert isinstance(opts[i], ObjectModifier) @done (13-05-13 13:20)
+        ✔ pov/finite_solid/Cylinder.py:47:            assert key in ['open'] @done (13-05-13 13:20)
+        ✔ pov/finite_solid/Cylinder.py:48:            assert type(val) == bool @done (13-05-13 13:20)
+        ✔ pov/finite_solid/Box.py:38:        assert isinstance(v1, Vector) @done (13-05-13 13:27)
+        ✔ pov/finite_solid/Box.py:39:        assert len(v1.v) == 3 @done (13-05-13 13:27)
+        ✔ pov/finite_solid/Box.py:40:        assert isinstance(v2, Vector) @done (13-05-13 13:27)
+        ✔ pov/finite_solid/Box.py:41:        assert len(v2.v) == 3 @done (13-05-13 13:27)
+        ✔ pov/finite_solid/Box.py:44:            assert isinstance(opts[i], ObjectModifier) @done (13-05-13 13:27)
+        ✔ pov/texture/Diffuse.py:33:        assert type(diffusion) == float @done (13-05-13 13:53)
+        ✔ pov/texture/Diffuse.py:34:        assert 0 < diffusion < 1 @done (13-05-13 13:53)
+        ☐ pov/texture/Ambient.py:34:        assert type(ambient) == float
+        ☐ pov/language_directive/Version.py:32:        assert type(version) == float
+        ☐ pov/basic/SceneItem.py:79:        assert indentation >= 0
+        ☐ pov/basic/SceneItem.py:166:        assert isinstance(other, SceneItem)
+        ☐ pov/basic/SceneFile.py:39:        assert type(fnam) == str
+        ☐ pov/basic/SceneFile.py:62:        assert isinstance(item, SceneItem)
+        ☐ pov/basic/Vector.py:46:        assert type(other) in (float, int)
+        ☐ pov/basic/Vector.py:51:        assert type(other) in (float, int)
+        ☐ pov/basic/Vector.py:55:        assert type(other) in (float, int)
+        ☐ pov/basic/Vector.py:59:        assert isinstance(other, Vector)
+        ☐ pov/basic/Vector.py:63:        assert isinstance(other, Vector)
+        ☐ pov/basic/Vector.py:87:        assert isinstance(other, Vector)
+    ☐ ./pov/finite_solid/HeightField.py:37:            @TODO: Param Apidoc
+    ☐ ./pov/finite_solid/HeightField.py:38:            @TODO: Syntax Checking
+    ✔ ./pov/finite_solid/Cone.py:48:                     @TODO: Make sure only valid Object Modifiers are passed @done (13-05-13 13:28)
+    ☐ ./pov/finite_solid/JuliaFractal.py:42:            @TODO: Param Apidoc
+    ☐ ./pov/finite_solid/JuliaFractal.py:43:            @TODO: Param Syntax checking
+    ✔ ./pov/finite_solid/Cylinder.py:43:                @TODO: Make sure only valid Object Modifiers are passed @done (13-05-13 13:27)
+    ☐ ./pov/finite_solid/Blob.py:36:                      @TODO: constructor apidoc
+    ☐ ./pov/finite_solid/Blob.py:38:                      @TODO: Syntax Checking
+    ✔ ./pov/finite_solid/Box.py:42:                       @TODO: make sure only valid object modifiers are passed @done (13-05-13 13:27)
+    ☐ ./pov/texture/FinishItem.py:42:                  @TODO: constructor apidoc
+    ☐ ./pov/texture/FinishItem.py:43:                  @TODO: Syntax checking
+    ☐ ./pov/texture/Ambient.py:31:                     @TODO: make color vectors possible
+    ☐ ./pov/texture/Finish.py:42:                         @TODO: constructor apidoc
+    ☐ ./pov/texture/Finish.py:43:                         @TODO: Syntax checking
+    ☐ ./pov/language_directive/Default.py:30:      @TODO: constructor apidoc
+    ☐ ./pov/language_directive/Default.py:31:      @TODO: Syntax checking
+    ☐ ./pov/language_directive/Include.py:32:      @TODO: assert that filename points o a real file
+    ☐ ./pov/basic/SceneFile.py:68:                      @TODO: There should be no more type/syntax checking hereÜbereinstimmungen in Binärdatei pov/finite_solid/Blob.pyc.
+
+

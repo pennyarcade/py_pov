@@ -10,6 +10,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+from pov.other import SdlSyntaxException
 from GlobalSettingsItem import *
 
 
@@ -27,7 +28,8 @@ class AssumedGamma(GlobalSettingsItem):
 
         '''
 
-        assert type(value) == float
+        if not type(value) == float:
+            raise SdlSyntaxException('Parameter not of type float')
         self.value = value
 
         super(GlobalSettingsItem, self).__init__('assumed_gamma', [], [])

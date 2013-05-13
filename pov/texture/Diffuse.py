@@ -12,6 +12,8 @@ Unittests for basic classes
 
 """
 
+from logging import *
+from pov.other import SdlSyntaxException
 from FinishItem import *
 
 
@@ -29,10 +31,16 @@ class Diffuse(FinishItem):
             @type diffusion: float; 0 < x < 1
 
         '''
-        assert type(diffusion) == float
-        assert 0 < diffusion < 1
+        if not type(diffusion) == float:
+            raise SdlSyntaxException('Parameter not of type float')
+        if not 0 < diffusion:
+            raise SdlSyntaxException('Parameter %s smaller than zero', diffusion)
+        if not 1 > diffusion:
+            raise SdlSyntaxException('Parameter %s bigger than 1', diffusion)
 
         self.diffusion = diffusion
+
+        super(Diffuse, self).__init__("diffuse", [], [])
 
     def __str__(self):
         '''

@@ -21,3 +21,4 @@ from InfiniteSolidTest import *
 from LanguageDirectiveTest import *
 from ObjectModifierTest import *
 from OtherTest import *
+from TextureTest import *

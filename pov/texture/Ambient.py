@@ -13,6 +13,7 @@ Unittests for basic classes
 """
 
 from FinishItem import FinishItem
+from logging import *
 
 
 class Ambient(FinishItem):
@@ -32,6 +33,8 @@ class Ambient(FinishItem):
         '''
         assert type(ambient) == float
         self.ambient = ambient
+
+        super(Ambient, self).__init__("ambient", [], [])
 
     def __str__(self):
         '''

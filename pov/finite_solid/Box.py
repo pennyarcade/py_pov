@@ -35,12 +35,18 @@ class Box(FiniteSolid):
         """
 
         # Syntax checking
-        assert isinstance(v1, Vector)
-        assert len(v1.v) == 3
-        assert isinstance(v2, Vector)
-        assert len(v2.v) == 3
-        # TODO: make sure only valid object modifiers are passed
+        if not isinstance(v1, Vector):
+            raise SdlSyntaxException('Parameter v1 not of type Vector')
+        if not len(v1.v) == 3:
+            raise SdlSyntaxException('Vector v1 has more or less than 3 dimensions')
+        if not isinstance(v2, Vector):
+            raise SdlSyntaxException('Parameter v2 not of type Vector')
+        if not len(v2.v) == 3:
+            raise SdlSyntaxException('Vector v2 has more or less than 3 dimensions')
+
+        # make sure only valid object modifiers are passed
         for i in range(len(opts)):
-            assert isinstance(opts[i], ObjectModifier)
+            if not isinstance(opts[i], ObjectModifier):
+                raise SdlSyntaxException('Only ObjectModifier objects may be passed as options')
 
         super(Box, self).__init__("box", (v1, v2), opts, **kwargs)

@@ -42,4 +42,4 @@ class FinishItem(SceneItem):
             @TODO: constructor apidoc
             @TODO: Syntax checking
         """
-        super(Finish, self).__init__("finish", args=[], opts=[], **kwargs)
+        super(FinishItem, self).__init__("finish", args=[], opts=[], **kwargs)
