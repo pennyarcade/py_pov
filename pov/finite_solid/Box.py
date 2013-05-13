@@ -13,6 +13,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 from FiniteSolid import *
 from pov.basic.Vector import *
 from pov.object_modifier.ObjectModifier import *
+from pov.other import SdlSyntaxException
 
 
 class Box(FiniteSolid):

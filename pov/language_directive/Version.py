@@ -29,7 +29,8 @@ class Version(LanguageDirective):
             @type version: float
 
         '''
-        assert type(version) == float
+        if not type(version) == float:
+            raise SdlSyntaxException('Parameter not of type float')
         self.version = version
 
     def __str__(self):

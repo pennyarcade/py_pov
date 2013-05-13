@@ -14,6 +14,7 @@ Unittests for basic classes
 
 from FinishItem import FinishItem
 from logging import *
+from pov.other import SdlSyntaxException
 
 
 class Ambient(FinishItem):
@@ -31,7 +32,8 @@ class Ambient(FinishItem):
 
             @TODO: make color vectors possible
         '''
-        assert type(ambient) == float
+        if not type(ambient) == float:
+            raise SdlSyntaxException('Parameter not of type float')
         self.ambient = ambient
 
         super(Ambient, self).__init__("ambient", [], [])

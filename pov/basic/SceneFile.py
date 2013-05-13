@@ -36,7 +36,8 @@ class SceneFile(object):
         @param items
 
         """
-        assert type(fnam) == str
+        if not type(fnam) == str:
+            raise ArgumentError('Filename String expected but gor %s' % type(fnam))
 
         #initialize item list
         self.items = list()
@@ -59,7 +60,8 @@ class SceneFile(object):
 
     def append(self, item):
         #each item has to be derived of SceneItem
-        assert isinstance(item, SceneItem)
+        if not isinstance(item, SceneItem):
+            ArgumentError('Only SceneItems allowed')
         self.items.append(item)
 
     def write(self):

@@ -76,7 +76,8 @@ class SceneItem(object):
         global indentation
         indentation -= 1
         debug("dedent: %s", indentation)
-        assert indentation >= 0
+        if not indentation >= 0:
+            raise IllegalStateException('Indentation below zero')
 
     def _getIndent(self):
         """
@@ -163,7 +164,8 @@ class SceneItem(object):
                 raise IndexError()
 
     def __eq__(self, other):
-        assert isinstance(other, SceneItem)
+        if not isinstance(other, SceneItem):
+            raise ArgumentError()
         a = self.name == other.name
         debug(str(self.name) + ' = ' + str(self.name))
         b = self.args == other.args

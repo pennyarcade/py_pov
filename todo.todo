@@ -27,10 +27,10 @@ grep -Hirn 'todo' . >> todo.todo (13.05.2013):
         ✔ pov/finite_solid/Box.py:44:            assert isinstance(opts[i], ObjectModifier) @done (13-05-13 13:27)
         ✔ pov/texture/Diffuse.py:33:        assert type(diffusion) == float @done (13-05-13 13:53)
         ✔ pov/texture/Diffuse.py:34:        assert 0 < diffusion < 1 @done (13-05-13 13:53)
-        ☐ pov/texture/Ambient.py:34:        assert type(ambient) == float
-        ☐ pov/language_directive/Version.py:32:        assert type(version) == float
-        ☐ pov/basic/SceneItem.py:79:        assert indentation >= 0
-        ☐ pov/basic/SceneItem.py:166:        assert isinstance(other, SceneItem)
+        ✔ pov/texture/Ambient.py:34:        assert type(ambient) == float @done (13-05-13 19:56)
+        ✔ pov/language_directive/Version.py:32:        assert type(version) == float @done (13-05-13 19:57)
+        ✔ pov/basic/SceneItem.py:79:        assert indentation >= 0 @done (13-05-13 20:01)
+        ✔ pov/basic/SceneItem.py:166:        assert isinstance(other, SceneItem) @done (13-05-13 20:02)
         ☐ pov/basic/SceneFile.py:39:        assert type(fnam) == str
         ☐ pov/basic/SceneFile.py:62:        assert isinstance(item, SceneItem)
         ☐ pov/basic/Vector.py:46:        assert type(other) in (float, int)
