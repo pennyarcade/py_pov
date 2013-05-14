@@ -28,16 +28,46 @@ class HeightField(FiniteSolid):
         HF_MODIFIER:
             hierarchy [Boolean]  |
             smooth               |
-            water_level Level
+            water_level float
     '''
     def __init__(self, filename, *opts, **kwargs):
         '''
             Construct a HeightField object
 
-            @TODO: Param Apidoc
-            @TODO: Syntax Checking
+            @param filename: Input file name
+            @param type: string
+
+            @TODO: Check that file really exists
+            @TODO: check if file matches given type
+            @TODO: make sure superclass constructor gets all params in the right form
+            @TODO: test __str__
         '''
 
+        # param syntax checking
+        if not type(filename) == str:
+            raise TypeError('String expected for param "filename"')
+
+        # make sure only valid object modifiers are passed
+        for i in range(len(opts)):
+            if not isinstance(opts[i], ObjectModifier):
+                raise SdlSyntaxException('Only ObjectModifier objects may be passed as options')
+
+        # kwargs syntax checking
+        for key, val in kwargs.items():
+            # allowed keywords
+            if not key in ['hf_type', 'hierarchy', 'smooth', 'water_level']:
+                raise SdlSyntaxException('Invalid key: ' + str(key))
+
+            if (key in ['hierarchy', 'smooth']) and (not type(val) == bool):
+                raise SdlSyntaxException('Key %s expected boolean value, got %s', (key, type(val)))
+            if (key == hf_type) and (not type(val) == str):
+                raise SdlSyntaxException('Key %s expected string value, got %s', (key, type(val)))
+            if (key == 'hf_type') and (not val in ['gif', 'tga', 'pot', 'png', 'pgm', 'ppm', 'jpeg', 'tiff', 'sys', 'function']):
+                raise SdlSyntaxException('Value %s of key %s is not valid' % (val, key))
+            if (key == 'water_level') and (not type(val) == float):
+                raise SdlSyntaxException('Key %s expected float value, got %s', (key, type(val)))
+
+        # call superclass constructor
         super(HeightField, self).__init__(
             "height_field",
             (filename),

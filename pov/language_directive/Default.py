@@ -27,7 +27,9 @@ class Default(LanguageDirective, BlockObject):
 
     def __init__(self, *opts, **kwargs):
         """
-            @TODO: constructor apidoc
+            create a "default" language directive object
+
             @TODO: Syntax checking
         """
-        super(Default, self).__init__("default", args=[], opts=[], **kwargs)
+
+        super(Default, self).__init__("default", [], opts=[], **kwargs)

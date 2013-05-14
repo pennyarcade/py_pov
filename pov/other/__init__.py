@@ -16,3 +16,4 @@ from Object import Object
 from ParametricObj import ParametricObj
 from Camera import Camera
 from SdlSyntaxException import SdlSyntaxException
+

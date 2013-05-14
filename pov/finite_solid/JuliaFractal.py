@@ -20,7 +20,8 @@ class JuliaFractal(FiniteSolid):
             julia_fractal
             {
                 <4D_Julia_Parameter>
-                [JF_ITEM...] [OBJECT_MODIFIER...]
+                [JF_ITEM...]
+                [OBJECT_MODIFIER...]
             }
         JF_ITEM:
             ALGEBRA_TYPE | FUNCTION_TYPE | max_iteration Count |
@@ -39,9 +40,29 @@ class JuliaFractal(FiniteSolid):
         '''
             Construct a Julia Fractal object
 
-            @TODO: Param Apidoc
+            @Param param4d: four dimensional vector
+            @Type param4d: Vector
+
             @TODO: Param Syntax checking
+            @TODO: make sure superclass constructor gets all params in the right form
+            @todo test __str__
         '''
 
-        super(JuliaFractal, self).__init__("julia_fractal", (param4d), opts, **kwargs)
+        # param syntax checks
+        if not isinstance(param4d, Vector):
+            raise SdlSyntaxException('Parameter param4d not of type Vector')
+        if not len(param4d.v) == 4:
+            raise SdlSyntaxException('Vector param4d has more or less than 4 dimensions')
 
+        # make sure only valid object modifiers are passed
+        for i in range(len(opts)):
+            if not isinstance(opts[i], ObjectModifier):
+                raise SdlSyntaxException('Only ObjectModifier objects may be passed as options')
+
+        # kwargs syntax checking
+        for key, val in kwargs.items():
+            # allowed keywords
+            if not key in ['quaternion', 'hypercomplex', 'sqr', 'cube', '']:
+                raise SdlSyntaxException('Invalid key: ' + str(key))
+
+        super(JuliaFractal, self).__init__("julia_fractal", (param4d), opts, **kwargs)

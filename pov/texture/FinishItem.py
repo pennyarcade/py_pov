@@ -17,7 +17,6 @@ from ..basic import SceneItem
 class FinishItem(SceneItem):
     """
         FINISH:
-            Jump to SDL
             finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }
         FINISH_ITEMS:
             [ambient COLOR] & [diffuse FLOAT] & [brilliance FLOAT] & [PHONG] & [SPECULAR] & [REFLECTION] & [IRID] & [crand FLOAT] & [conserve_energy [BOOL]]
@@ -37,9 +36,11 @@ class FinishItem(SceneItem):
             [thickness FLOAT] & [turbulence FLOAT]
     """
 
-    def __init__(self, *opts, **kwargs):
+    def __init__(self, name, *opts, **kwargs):
         """
+            base class for finish items
+
             @TODO: constructor apidoc
             @TODO: Syntax checking
         """
-        super(FinishItem, self).__init__("finish", args=[], opts=[], **kwargs)
+        super(FinishItem, self).__init__(name, args=[], opts=[], **kwargs)

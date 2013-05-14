@@ -127,8 +127,8 @@ class SceneItemTestCase(unittest.TestCase):
             self.SUT[2] = SceneItem('baz')
         except IndexError:
             pass
-        except e:
-            self.fail('Unexpected exception thrown:', e)
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s ' % type(e))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -161,8 +161,8 @@ class SceneItemTestCase(unittest.TestCase):
             warn(str(self.SUT[2]))
         except IndexError:
             pass
-        except e:
-            self.fail('Unexpected exception thrown:', e)
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s ' % type(e))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -244,10 +244,10 @@ class SceneFileTestCase(unittest.TestCase):
     def test_appendWrongType(self):
         try:
             self.SUT.append('foo')
-        except AssertionError:
+        except TypeError:
             pass
-        except e:
-            self.fail('Unexpected exception thrown:', e)
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
         else:
             self.fail('ExpectedException not thrown')
 

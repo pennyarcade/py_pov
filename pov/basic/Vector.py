@@ -26,7 +26,7 @@ class Vector:
                 self.v = list(args[0])
         else:
             self.v = list(args)
-        float(self.v[0])    # assert
+        float(self.v[0])    # cast to float
 
     def __str__(self):
         return "<%s>" % (", ".join([str(x)for x in self.v]))
@@ -43,24 +43,29 @@ class Vector:
 
     def __mul__(self, other):
         " scalar multiplication "
-        assert type(other) in (float, int)
+        if not type(other) in (float, int):
+            raise SdlSyntaxException('Parameter not of type float or int')
         return Vector([r*other for r in self.v])
 
     def __rmul__(self, other):
         " scalar multiplication "
-        assert type(other) in (float, int)
+        if not type(other) in (float, int):
+            raise SdlSyntaxException('Parameter not of type float or int')
         return Vector([r*other for r in self.v])
 
     def __div__(self, other):
-        assert type(other) in (float, int)
+        if not type(other) in (float, int):
+            raise SdlSyntaxException('Parameter not of type float or int')
         return Vector([r/other for r in self.v])
 
     def __add__(self, other):
-        assert isinstance(other, Vector)
+        if not isinstance(other, Vector):
+            raise SdlSyntaxException('Parameter not of Vector')
         return Vector([self.v[i]+other.v[i] for i in range(len(self.v))])
 
     def __sub__(self, other):
-        assert isinstance(other, Vector)
+        if not isinstance(other, Vector):
+            raise SdlSyntaxException('Parameter not of Vector')
         return Vector([self.v[i]-other.v[i] for i in range(len(self.v))])
 
     def __neg__(self):
@@ -84,7 +89,8 @@ class Vector:
 
     def dot(self, other):
         """Dot product of two vectors"""
-        assert isinstance(other, Vector)
+        if not isinstance(other, Vector):
+            raise SdlSyntaxException('Parameter not of Vector')
         r = 0.0
         for i in range(len(self.v)):
             r += self.v[i]*other.v[i]

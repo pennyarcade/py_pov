@@ -33,8 +33,10 @@ class Blob(FiniteSolid):
 
     def __init__(self, args=[], opts=[], **kwargs):
         """
-            TODO: constructor apidoc
+            Create a Blob Object
+
+            @TODO: constructor apidoc
+            @TODO: Syntax Checking
         """
-        # TODO: Syntax Checking
 
         super(Blob, self).__init__("blob", args=[], opts=[], **kwargs)
