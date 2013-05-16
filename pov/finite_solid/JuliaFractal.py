@@ -10,8 +10,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+from pov.other import SdlSyntaxException
 from FiniteSolid import *
 from pov.basic.Vector import *
+from pov.object_modifier import ObjectModifier
 
 
 class JuliaFractal(FiniteSolid):
@@ -48,6 +50,11 @@ class JuliaFractal(FiniteSolid):
             @todo test __str__
         '''
 
+        valid_kw = ['quaternion', 'hypercomplex', 'sqr', 'cube', 'exp',
+                    'reciprocal', 'sin', 'asin', 'sinh', 'asinh', 'cos',
+                    'acos', 'cosh', 'acosh', 'tan', 'atan', 'tanh', 'atanh',
+                    'ln', 'pwr', 'max_iteration', 'precision', 'slice']
+
         # param syntax checks
         if not isinstance(param4d, Vector):
             raise SdlSyntaxException('Parameter param4d not of type Vector')
@@ -62,7 +69,7 @@ class JuliaFractal(FiniteSolid):
         # kwargs syntax checking
         for key, val in kwargs.items():
             # allowed keywords
-            if not key in ['quaternion', 'hypercomplex', 'sqr', 'cube', '']:
+            if not key in valid_kw:
                 raise SdlSyntaxException('Invalid key: ' + str(key))
 
         super(JuliaFractal, self).__init__("julia_fractal", (param4d), opts, **kwargs)

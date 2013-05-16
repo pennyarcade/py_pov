@@ -75,3 +75,25 @@ grep -Hirn 'todo' . >> todo.todo (14.05.2013):
     ☐ pov/language_directive/Default.py:31:            @TODO: Syntax checking
     ☐ pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file
     ☐ pov/basic/SceneFile.py:70:                           @TODO: There should be no more type/syntax checking here
+
+
+grep -Hirn 'todo' . >> todo.todo (16.05.2013):
+    ☐ pov/finite_solid/HeightField.py:40:            @TODO: Check that file really exists
+    ☐ pov/finite_solid/HeightField.py:41:            @TODO: check if file matches given type
+    ☐ pov/finite_solid/HeightField.py:42:            @TODO: make sure superclass constructor gets all params in the right form
+    ☐ pov/finite_solid/HeightField.py:43:            @TODO: test __str__
+    ☐ pov/finite_solid/JuliaFractal.py:46:            @TODO: Param Syntax checking
+    ☐ pov/finite_solid/JuliaFractal.py:47:            @TODO: make sure superclass constructor gets all params in the right form
+    ☐ pov/finite_solid/JuliaFractal.py:48:            @todo test __str__
+    ☐ pov/finite_solid/Blob.py:38:            @TODO: constructor apidoc
+    ☐ pov/finite_solid/Blob.py:39:            @TODO: Syntax Checking
+    ☐ pov/texture/FinishItem.py:43:            @TODO: constructor apidoc
+    ☐ pov/texture/FinishItem.py:44:            @TODO: Syntax checking
+    ☐ pov/texture/Ambient.py:33:            @TODO: make color vectors possible
+    ☐ pov/texture/Finish.py:42:            @TODO: constructor apidoc
+    ☐ pov/texture/Finish.py:43:            @TODO: Syntax checking
+    ☐ pov/language_directive/Default.py:32:            @TODO: Syntax checking
+    ☐ pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file
+    ☐ pov/basic/SceneItem.py:38:            @TODO: move indentation check to own function
+    ☐ pov/basic/SceneItem.py:39:            @TODO: make sure all params are passed through map_arg / flatten before syntax checks
+    ☐ pov/basic/SceneFile.py:70:            TODO: There should be no more type/syntax checking here

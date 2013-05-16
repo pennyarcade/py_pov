@@ -32,7 +32,7 @@ class FinishTestCase(unittest.TestCase):
 
 class FinishItemTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = FinishItem()
+        self.SUT = FinishItem('foo')
 
     def test_creation(self):
         self.assertIsInstance(self.SUT, FinishItem)

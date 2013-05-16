@@ -34,6 +34,9 @@ class SceneItem(object):
             @param args: compulsory (comma separated?) pov args XX commas don't seem to matter?
             @param opts: eg. CSG items
             @param kwargs: key value pairs
+
+            @TODO: move indentation check to own function
+            @TODO: make sure all params are passed through map_arg / flatten before syntax checks
         """
         debug("creating SceneItem %s, %s, %s, %s", name, args, opts, kwargs)
 

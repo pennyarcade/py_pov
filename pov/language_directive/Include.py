@@ -32,13 +32,13 @@ class Include(LanguageDirective):
             @TODO: assert that filename points o a real file
         '''
         self.filename = filename
-        #super(Include, self).__init__('include')
+        #filename(Include, self).__init__('include')
 
     def __str__(self):
         '''
             Generate PoV source code
         '''
-        code = self._getLine('#' + 'include \"' + self.filename + '\"')
+        code = self._getLine('#' + 'include \"%s\"' % self.filename)
 
         return code
 

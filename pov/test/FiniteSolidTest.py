@@ -13,6 +13,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 import os
 import unittest
 
+from pov.other import SdlSyntaxException
 from pov.basic.PoVObject import *
 from pov.basic.Vector import *
 from pov.object_modifier.ObjectModifier import *
@@ -142,8 +143,48 @@ class HeightFieldTestCase(unittest.TestCase):
 
 class JuliaFractalTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = JuliaFractal((1, 2, 3, 4))
+        self.SUT = JuliaFractal(Vector(1, 2, 3, 4))
 
     def test_creation(self):
         self.assertIsInstance(self.SUT, JuliaFractal)
         self.assertIsInstance(self.SUT, SceneItem)
+
+    def test_create_wrong_type(self):
+        try:
+            self.SUT = JuliaFractal('foo')
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_Vector_wrong_dimension(self):
+        try:
+            self.SUT = JuliaFractal(Vector(1, 2))
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_Vector_wrong_option(self):
+        try:
+            self.SUT = JuliaFractal(Vector(1, 2, 3, 4), Vector(1, 2, 3, 4))
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_non_existant_kw(self):
+        try:
+            self.SUT = JuliaFractal(Vector(1, 2, 3, 4), foo='bar')
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')

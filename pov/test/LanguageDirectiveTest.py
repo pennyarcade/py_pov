@@ -15,6 +15,7 @@ import os
 from pov.basic import SceneItem
 from pov.language_directive import *
 from pov.texture import *
+from pov.other import SdlSyntaxException
 
 
 class LanguageDirectiveTestCase(unittest.TestCase):
@@ -60,6 +61,16 @@ class VersionTestCase(unittest.TestCase):
         second = '#version 3.6;' + le
 
         self.assertEqual(str(self.SUT), second)
+
+    def test_create_wrong_type(self):
+        try:
+            self.SUT = Version('foo')
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
 
 
 class DefaultTestCase(unittest.TestCase):

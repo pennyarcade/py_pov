@@ -16,6 +16,7 @@ import unittest
 #import copy
 from logging import *
 from pov.basic import *
+from pov.other import SdlSyntaxException
 from pov.global_settings import *
 
 
@@ -42,3 +43,13 @@ class AssumedGammaTestCase(unittest.TestCase):
         first = str(self.SUT)
         second = 'assumed_gamma 0.75' + le
         self.assertEqual(first, second)
+
+    def test_create_wrong_type(self):
+        try:
+            self.SUT = AssumedGamma('foo')
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
