@@ -11,4 +11,11 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
+from pov.basic.PoVObject import *
 
+
+class Radiosity(PoVObject):
+    """
+        @Todo: Apidoc
+        @Todo: Implement
+    """

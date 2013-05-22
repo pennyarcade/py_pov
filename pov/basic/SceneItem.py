@@ -26,7 +26,7 @@ class SceneItem(object):
             ATMOSPHERIC_EFFECTS        |
             global_settings { GLOBAL_ITEMS }
     """
-    def __init__(self, name, args=[], opts=[], **kwargs):
+    def __init__(self, name, args=[], opts=[], kwargs=[]):
         """
             Base class for POV objects.
 
@@ -57,8 +57,14 @@ class SceneItem(object):
             opts[i] = self.map_arg(opts[i])
         self.opts = self.flatten(opts)
 
+        #debug('kwargs: %s', kwargs)
         self.kwargs = dict(kwargs)  # take a copy
-        for key, val in self.kwargs.items():
+        kwargs = dict(kwargs).items()
+        #debug('kwargs: %s', kwargs)
+        kwargs.reverse()
+        #debug('kwargs: %s', kwargs)
+
+        for key, val in kwargs:
             if type(val) == tuple or type(val) == list:
                 self.kwargs[key] = self.map_arg(val)
 

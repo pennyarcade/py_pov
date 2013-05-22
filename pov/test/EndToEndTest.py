@@ -13,16 +13,19 @@ Some modifications by W.T. Bridgman, 2006-2007.
 import os
 import unittest
 import difflib
-#import copy
 from logging import *
 
-from pov.basic import *
-from pov.language_directive import *
-from pov.global_settings import *
-from pov.texture import *
+from pov.basic.SceneFile import SceneFile
+from pov.basic.Vector import Vector
+from pov.global_settings.GlobalSettings import GlobalSettings
+from pov.language_directive.Version import Version
+from pov.language_directive.Default import Default
+from pov.language_directive.Include import Include
+from pov.other.Camera import Camera
+from pov.texture.Finish import Finish
 
 
-@unittest.skip
+#@unittest.skip
 class EndToEndTestCase(unittest.TestCase):
     def test_Scene1(self):
         '''
@@ -43,10 +46,12 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "}" + le
         ref += "#include \"colors.inc\"" + le
         ref += "#include \"textures.inc\"" + le
-        ref += "camera{ location  <0.0 , 1.0 ,-3.0>" + le
-        ref += "        look_at   <0.0 , 1.0 , 0.0>" + le
-        ref += "        right x*image_width/image_height" + le
-        ref += "        angle 75 }" + le
+        ref += "camera {" + le
+        ref += "  location <0.0 , 1.0 ,-3.0>" + le
+        ref += "  look_at <0.0 , 1.0 , 0.0>" + le
+        ref += "  right x*image_width/image_height" + le
+        ref += "  angle 75" + le
+        ref += "}" + le
         ref += "light_source{<1500,3000,-2500> color White}" + le
         ref += "plane{ <0,1,0>,1 hollow" + le
         ref += "       texture{" + le
@@ -89,16 +94,36 @@ class EndToEndTestCase(unittest.TestCase):
         fix = SceneFile('test.pov')
         fix.append(Version(3.6))
         fix.append(
-            GlobalSettings(
-                AssumedGamma(1.0)
-            )
+            GlobalSettings(assumed_gamma=1.0)
         )
         fix.append(
             Default(
                 Finish(
-                    Ambient(0.1),
-                    Diffuse(0.9)
+                    ambient=0.1,
+                    diffuse=0.9
                 )
+            )
+        )
+        fix.append(
+            Include('colors.inc'),
+        )
+        fix.append(
+            Include('textures.inc')
+        )
+
+        #@TODO: Define globaly (Vector Module?)
+        x = Vector(1, 0, 0)
+        #@TODO: Read from Config
+        image_width = 800
+        #@TODO: Read from Config
+        image_height = 600
+
+        fix.append(
+            Camera(
+                location=Vector(0.0, 1.0, -3.0),
+                look_at=Vector(0.0, 1.0, 0.0),
+                right=(x * image_width / image_height),
+                angle=75
             )
         )
 

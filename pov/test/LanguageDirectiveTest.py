@@ -20,7 +20,7 @@ from pov.other import SdlSyntaxException
 
 class LanguageDirectiveTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = LanguageDirective('foo')
+        self.SUT = LanguageDirective('#foo')
 
     def test_Creation(self):
         self.assertIsInstance(self.SUT, LanguageDirective)
@@ -28,7 +28,7 @@ class LanguageDirectiveTestCase(unittest.TestCase):
 
     def test_str(self):
         le = os.linesep
-        second = '#foo' + le
+        second = '#foo'
 
         self.assertEqual(str(self.SUT), second)
 
@@ -75,9 +75,20 @@ class VersionTestCase(unittest.TestCase):
 
 class DefaultTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = Default(Ambient(0.43))
+        debug('---------------------------------')
+        self.SUT = Default(ambient=0.43)
 
     def test_creation(self):
         self.assertIsInstance(self.SUT, Default)
         self.assertIsInstance(self.SUT, LanguageDirective)
+
+    def test_toString(self):
+        debug('---------------------------------')
+        le = os.linesep
+        first = str(self.SUT)
+        second = '#default {' + le
+        second += '  ambient 0.43' + le
+        second += '}' + le
+
+        self.assertEqual(first, second)
 

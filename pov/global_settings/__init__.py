@@ -10,7 +10,3 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from pov.test import *
-from AssumedGamma import AssumedGamma
-from GlobalSettings import GlobalSettings
-from GlobalSettingsItem import GlobalSettingsItem

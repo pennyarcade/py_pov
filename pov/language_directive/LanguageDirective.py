@@ -10,6 +10,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+from logging import *
 from pov.basic.SceneItem import *
 
 
@@ -33,9 +34,12 @@ class LanguageDirective(SceneItem):
             TEXT_STREAM_DIRECTIVE |
             MACRO_DEFINITION
     """
-    def __init__(self, name, *opts, **kwargs):
-        super(LanguageDirective, self).__init__(name)
+    def __init__(self, name, args=[], opts=[], kwargs=[]):
+        debug('LanguageDirective.__init__: %s' % name)
+        super(LanguageDirective, self).__init__(name, [], opts, kwargs)
 
     def __str__(self):
-        return self._getLine("#" + super(LanguageDirective, self).__str__())
+        code = super(LanguageDirective, self).__str__()
+        debug('LanguageDirective.__str__: %s\n %s' % (self.name, code))
+        return code
 

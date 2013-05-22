@@ -11,6 +11,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+from logging import *
 from ..basic import BlockObject
 from LanguageDirective import *
 
@@ -31,5 +32,13 @@ class Default(LanguageDirective, BlockObject):
 
             @TODO: Syntax checking
         """
+        super(Default, self).__init__("#default", [], opts, kwargs)
 
-        super(Default, self).__init__("default", [], opts=[], **kwargs)
+    def __str__(self):
+        """
+          @TODO: Apidoc
+        """
+        code = super(Default, self).__str__()
+        debug('Default.__str__: %s \n%s' % (self.name, code))
+
+        return code
