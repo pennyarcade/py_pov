@@ -24,7 +24,6 @@ from pov.basic.PoVObject import PoVObject
 
 
 class SceneItemTestCase(unittest.TestCase):
-
     def setUp(self):
         self.SUT = SceneItem('foo')
 
@@ -33,7 +32,6 @@ class SceneItemTestCase(unittest.TestCase):
 
     def test_toString(self):
         second = 'foo'
-
         self.assertEqual(str(self.SUT), second)
 
     def test_append(self):
