@@ -16,7 +16,8 @@ import unittest
 #import copy
 from logging import *
 from pov.texture.Finish import Finish
-from pov.basic import *
+from pov.basic.BlockObject import BlockObject
+from pov.basic.SceneItem import SceneItem
 from pov.other import *
 
 

@@ -10,14 +10,13 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from ..basic import BlockObject
-from ..basic import SceneItem
+from pov.basic.BlockObject import BlockObject
+from pov.basic.SceneItem import SceneItem
 
 
 class Finish(BlockObject, SceneItem):
     """
         FINISH:
-            Jump to SDL
             finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }
         FINISH_ITEMS:
             [ambient COLOR] & [diffuse FLOAT] & [brilliance FLOAT] & [PHONG] & [SPECULAR] & [REFLECTION] & [IRID] & [crand FLOAT] & [conserve_energy [BOOL]]
@@ -39,7 +38,8 @@ class Finish(BlockObject, SceneItem):
 
     def __init__(self, *opts, **kwargs):
         """
-            @TODO: constructor apidoc
+            Create a Finish object
+
             @TODO: Syntax checking
         """
         super(Finish, self).__init__("finish", (), opts, kwargs)

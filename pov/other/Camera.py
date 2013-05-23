@@ -11,10 +11,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from pov.basic.SceneItem import *
+from pov.basic.PoVObject import PoVObject
 
 
-class Camera(SceneItem):
+class Camera(PoVObject):
     """
     CAMERA:
         camera { [CAMERA_TYPE] [CAMERA_ITEMS] [CAMERA_MODIFIERS] } |

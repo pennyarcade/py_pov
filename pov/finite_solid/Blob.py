@@ -31,12 +31,11 @@ class Blob(FiniteSolid):
             hierarchy [Boolean] | sturm [Boolean] | OBJECT_MODIFIER
     """
 
-    def __init__(self, args=[], opts=[], **kwargs):
+    def __init__(self, opts=[], **kwargs):
         """
             Create a Blob Object
 
-            @TODO: constructor apidoc
             @TODO: Syntax Checking
         """
 
-        super(Blob, self).__init__("blob", args=[], opts=[], **kwargs)
+        super(Blob, self).__init__("blob", [], opts, kwargs)

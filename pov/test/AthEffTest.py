@@ -16,8 +16,8 @@ import unittest
 #import copy
 from logging import *
 
-from ..atmeff.AthEff import AthEff
-from ..basic import *
+from pov.atmeff.AthEff import AthEff
+from pov.basic.SceneItem import SceneItem
 
 
 class AthEffTestCase(unittest.TestCase):

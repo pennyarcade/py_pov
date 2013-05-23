@@ -25,7 +25,7 @@ from pov.other.Camera import Camera
 from pov.texture.Finish import Finish
 
 
-#@unittest.skip
+@unittest.skip
 class EndToEndTestCase(unittest.TestCase):
     def test_Scene1(self):
         '''
@@ -47,10 +47,10 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "#include \"colors.inc\"" + le
         ref += "#include \"textures.inc\"" + le
         ref += "camera {" + le
-        ref += "  location <0.0 , 1.0 ,-3.0>" + le
-        ref += "  look_at <0.0 , 1.0 , 0.0>" + le
-        ref += "  right x*image_width/image_height" + le
+        ref += "  location <0.0, 1.0, -3.0>" + le
         ref += "  angle 75" + le
+        ref += "  right x*image_width/image_height" + le
+        ref += "  look_at <0.0, 1.0, 0.0>" + le
         ref += "}" + le
         ref += "light_source{<1500,3000,-2500> color White}" + le
         ref += "plane{ <0,1,0>,1 hollow" + le
@@ -112,7 +112,7 @@ class EndToEndTestCase(unittest.TestCase):
         )
 
         #@TODO: Define globaly (Vector Module?)
-        x = Vector(1, 0, 0)
+        x = Vector(1.0, 0.0, 0.0)
         #@TODO: Read from Config
         image_width = 800
         #@TODO: Read from Config
@@ -124,9 +124,82 @@ class EndToEndTestCase(unittest.TestCase):
                 look_at=Vector(0.0, 1.0, 0.0),
                 right=(x * image_width / image_height),
                 angle=75
+            )#,
+#            LightSource(
+#                Vector(1500, 3000, -2500),
+#                color(White)
+#            )
+        )
+        '''
+        fix.append(
+            Plane(
+                Vector(0.0, 0.1, 0.0),
+                1.0,
+                Texture(
+                    Pigment(
+                        ColorMap(
+                            #@Todo: How to implement params??
+                        ),
+                        bozo=True,
+                        turbulence=0.92,
+                        scale=Vector(1.0, 1.0, 1.5) * 2.5,
+                        translate=Vector(0.0, 0.0, 0.0)
+                    ),
+                    Finish(
+                        ambient=1.0,
+                        diffuse=0.0
+                    )
+                ),
+                hollow=True,
+                scale=10000.0
             )
         )
+        ''' '''
+        fix.append(
+            Fog(
+                fog_type=2.0,
+                distance=50,
+                color=Color(1, 1, 1)*0.8,
+                fog_offset=0.1,
+                fog_alt=1.5,
+                turbulence=1.8
+            )
+        )
+        ''' '''
+        fix.append(
+            Plane(
+                Vector(0.0, 1.0, 0.0),
+                0.0,
+                Texture(
+                    Pigment(
+                        color=Color(0.22, 0.45, 0.0)
+                    ),
+                    Normal(
+                        bumps=0.75
+                        scale=0.015
+                    ),
+                    Finish(
+                        phong=1.0
+                    )
+                )
+            ),
+            Sphere(
+                Vector(0.0, 0.0, 0.0),
+                0.75,
+                Texture(
+                    Pigment(
+                        color=Color(0.9, 0.55, 0)
+                    ),
+                    Finish(
+                        phong=0.1
+                    )
+                ),
+                translate=Vector(0.85, 1.1, 0)
+            )
+        )
+        '''
 
+        #----------------------------------------------------
         msg = '\n' + ''.join(difflib.ndiff(
             ref.splitlines(1),
             str(fix).splitlines(1)

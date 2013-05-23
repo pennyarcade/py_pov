@@ -10,10 +10,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from pov.other import SdlSyntaxException
-from FiniteSolid import *
-from pov.basic.Vector import *
-from pov.object_modifier import ObjectModifier
+from pov.other.SdlSyntaxException import SdlSyntaxException
+from FiniteSolid import FiniteSolid
+from pov.basic.Vector import Vector
+from pov.object_modifier.ObjectModifier import ObjectModifier
 
 
 class JuliaFractal(FiniteSolid):

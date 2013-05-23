@@ -13,12 +13,17 @@ Some modifications by W.T. Bridgman, 2006-2007.
 import os
 import unittest
 
-from pov.other import SdlSyntaxException
-from pov.basic.PoVObject import *
-from pov.basic.Vector import *
-from pov.object_modifier.ObjectModifier import *
+from pov.other.SdlSyntaxException import SdlSyntaxException
+from pov.basic.Vector import Vector
+from pov.basic.SceneItem import SceneItem
+from pov.object_modifier.ObjectModifier import ObjectModifier
 
-from pov.finite_solid import *
+from pov.finite_solid.Blob import Blob
+from pov.finite_solid.Box import Box
+from pov.finite_solid.Cone import Cone
+from pov.finite_solid.Cylinder import Cylinder
+from pov.finite_solid.HeightField import HeightField
+from pov.finite_solid.JuliaFractal import JuliaFractal
 
 
 class BlobTestCase(unittest.TestCase):

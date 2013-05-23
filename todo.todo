@@ -114,7 +114,7 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude .git >> todo.todo
     ☐ ./pov/global_settings/Radiosity.py:20:        @Todo: Implement
     ☐ ./pov/global_settings/Photons.py:19:        @Todo: Apidoc
     ☐ ./pov/global_settings/Photons.py:20:        @Todo: Implement
-    ☐ ./pov/global_settings/AssumedGamma.py:22:        @Todo: [DEPRECATED] Move to KW Param and remove Class
+    ✔ ./pov/global_settings/AssumedGamma.py:22:        @Todo: [DEPRECATED] Move to KW Param and remove Class @done (13-05-23 08:31)
     ☐ ./pov/finite_solid/HeightField.py:40:            @TODO: Check that file really exists
     ☐ ./pov/finite_solid/HeightField.py:41:            @TODO: check if file matches given type
     ☐ ./pov/finite_solid/HeightField.py:42:            @TODO: make sure superclass constructor gets all params in the right form
@@ -122,7 +122,7 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude .git >> todo.todo
     ☐ ./pov/finite_solid/JuliaFractal.py:48:            @TODO: Param Syntax checking
     ☐ ./pov/finite_solid/JuliaFractal.py:49:            @TODO: make sure superclass constructor gets all params in the right form
     ☐ ./pov/finite_solid/JuliaFractal.py:50:            @todo test __str__
-    ☐ ./pov/finite_solid/Blob.py:38:            @TODO: constructor apidoc
+    ✔ ./pov/finite_solid/Blob.py:38:            @TODO: constructor apidoc @done (13-05-23 08:33)
     ☐ ./pov/finite_solid/Blob.py:39:            @TODO: Syntax Checking
     ✔ ./pov/texture/FinishItem.py:38:        @Todo: [DEPRECATED] Move to KW Param and remove Class @done (13-05-22 15:38)
     ✔ ./pov/texture/FinishItem.py:45:            @TODO: constructor apidoc @done (13-05-22 15:38)
@@ -130,10 +130,10 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude .git >> todo.todo
     ✔ ./pov/texture/Diffuse.py:25:        @Todo: [DEPRECATED] Move to KW Param and remove Class @done (13-05-22 15:39)
     ✔ ./pov/texture/Ambient.py:25:        @Todo: [DEPRECATED] Move to KW Param and remove Class @done (13-05-22 15:39)
     ✔ ./pov/texture/Ambient.py:35:            @TODO: make color vectors possible @done (13-05-22 15:39)
-    ☐ ./pov/texture/Finish.py:42:            @TODO: constructor apidoc
+    ✔ ./pov/texture/Finish.py:42:            @TODO: constructor apidoc @done (13-05-23 08:37)
     ☐ ./pov/texture/Finish.py:43:            @TODO: Syntax checking
     ☐ ./pov/language_directive/Default.py:33:            @TODO: Syntax checking
-    ☐ ./pov/language_directive/Default.py:39:          @TODO: Apidoc
+    ✔ ./pov/language_directive/Default.py:39:          @TODO: Apidoc @done (13-05-23 08:38)
     ☐ ./pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file
     ☐ ./pov/basic/SceneItem.py:38:            @TODO: move indentation check to own functioni
     ☐ ./pov/basic/SceneItem.py:39:            @TODO: make sure all params are passed through map_arg / flatten before syntax checks

@@ -12,10 +12,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 import os
 import unittest
-#import difflib
-#import copy
 from logging import *
-from pov.basic import *
+from pov.basic.SceneItem import SceneItem
 from pov.other import SdlSyntaxException
 from pov.global_settings.GlobalSettings import GlobalSettings
 

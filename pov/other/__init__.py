@@ -9,11 +9,3 @@ See LICENSE file.
 Some modifications by W.T. Bridgman, 2006-2007.
 
 """
-
-from pov.test import *
-from IsoSurface import IsoSurface
-from Object import Object
-from ParametricObj import ParametricObj
-from Camera import Camera
-from SdlSyntaxException import SdlSyntaxException
-

@@ -17,7 +17,10 @@ import unittest
 #import difflib
 #import copy
 from logging import *
-from pov.basic import *
+from pov.basic.SceneItem import SceneItem
+from pov.basic.Vector import Vector
+from pov.basic.SceneFile import SceneFile
+from pov.basic.PoVObject import PoVObject
 
 
 class SceneItemTestCase(unittest.TestCase):
