@@ -10,8 +10,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from AthEffTest import *
 from BasicTest import *
+from AthEffTest import *
 from CsgTest import *
 from EndToEndTest import *
 from FinitePatchTest import *

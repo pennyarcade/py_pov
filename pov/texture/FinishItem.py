@@ -10,8 +10,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from ..basic import BlockObject
-from ..basic import SceneItem
+from pov.basic.BlockObject import BlockObject
+from pov.basic.SceneItem import SceneItem
 
 
 class FinishItem(SceneItem):

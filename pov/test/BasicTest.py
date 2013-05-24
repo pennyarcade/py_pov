@@ -17,7 +17,11 @@ import unittest
 #import difflib
 #import copy
 from logging import *
-from pov.basic import *
+from pov.basic.SceneItem import SceneItem
+from pov.basic.Vector import Vector
+from pov.basic.SceneFile import SceneFile
+from pov.basic.PoVObject import PoVObject
+from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class SceneItemTestCase(unittest.TestCase):
@@ -222,6 +226,18 @@ class VectorTestCase(unittest.TestCase):
 
     def test_dot(self):
         self.assertEqual(self.SUT.dot(self.SUT), 14)
+
+    def test_mul_wrong_type(self):
+        try:
+            self.SUT * 'foo'
+        except SdlSyntaxException as e:
+            if not str(e) == 'Parameter not of type float or int':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
 
 
 class SceneFileTestCase(unittest.TestCase):

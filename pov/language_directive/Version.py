@@ -12,8 +12,9 @@ Unittests for basic classes
 
 """
 
-from LanguageDirective import *
-from pov.other import SdlSyntaxException
+from logging import *
+from LanguageDirective import LanguageDirective
+from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class Version(LanguageDirective):

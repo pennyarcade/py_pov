@@ -10,5 +10,3 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from pov.test import *
-from InfiniteSolid import InfiniteSolid

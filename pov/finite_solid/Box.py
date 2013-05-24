@@ -10,10 +10,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from FiniteSolid import *
-from pov.basic.Vector import *
-from pov.object_modifier.ObjectModifier import *
-from pov.other import SdlSyntaxException
+from FiniteSolid import FiniteSolid
+from pov.basic.Vector import Vector
+from pov.object_modifier.ObjectModifier import ObjectModifier
+from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class Box(FiniteSolid):
@@ -33,6 +33,8 @@ class Box(FiniteSolid):
             @type v1: Vector()
             @param v2: opposing vertex of box
             @type v2: Vector()
+
+            @TODO: Add Syntax check: There are no valid kwargs
         """
 
         # Syntax checking

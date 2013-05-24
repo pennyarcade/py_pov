@@ -12,10 +12,13 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 import unittest
 import os
-from pov.basic import SceneItem
-from pov.language_directive import *
-from pov.texture import *
-from pov.other import SdlSyntaxException
+from pov.basic.SceneItem import SceneItem
+from pov.language_directive.LanguageDirective import LanguageDirective
+from pov.language_directive.Include import Include
+from pov.language_directive.Version import Version
+from pov.language_directive.Default import Default
+from pov.texture.Ambient import Ambient
+from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class LanguageDirectiveTestCase(unittest.TestCase):

@@ -10,9 +10,11 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from FiniteSolid import *
-from pov.basic.Vector import *
-from pov.object_modifier.ObjectModifier import *
+from FiniteSolid import FiniteSolid
+from pov.basic.Vector import Vector
+from pov.object_modifier.ObjectModifier import ObjectModifier
+from pov.other.SdlSyntaxException import SdlSyntaxException
+
 
 class Cylinder(FiniteSolid):
     """

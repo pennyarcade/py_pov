@@ -10,15 +10,4 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from atmeff import *
-from basic import *
-from csg import *
-from finite_patch import *
-from finite_solid import *
-from global_settings import *
-from infinite_solid import *
-from language_directive import *
-from object_modifier import *
-from other import *
-from test import *
-
+import test

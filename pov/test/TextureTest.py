@@ -15,9 +15,12 @@ import unittest
 #import difflib
 #import copy
 from logging import *
-from pov.texture import *
-from pov.basic import *
-from pov.other import *
+from pov.texture.Ambient import Ambient
+from pov.texture.Finish import Finish
+from pov.texture.FinishItem import FinishItem
+from pov.texture.Diffuse import Diffuse
+from pov.basic.SceneItem import SceneItem
+from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class FinishTestCase(unittest.TestCase):

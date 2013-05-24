@@ -16,7 +16,6 @@ import unittest
 from pov.test import *
 
 
-'''
 def suite():
     suite = unittest.TestSuite()
 
@@ -29,4 +28,3 @@ def suite():
 
 if __name__ == '__main__':
     suite().run()
-'''

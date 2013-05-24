@@ -12,6 +12,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 from logging import *
 from math import sqrt
+from pov.other.SdlSyntaxException import *
 
 
 class Vector:

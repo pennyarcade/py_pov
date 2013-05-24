@@ -11,8 +11,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from ..basic import BlockObject
-from LanguageDirective import *
+from pov.basic.BlockObject import BlockObject
+from LanguageDirective import LanguageDirective
 
 
 class Default(LanguageDirective, BlockObject):

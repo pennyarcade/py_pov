@@ -13,12 +13,19 @@ Some modifications by W.T. Bridgman, 2006-2007.
 import os
 import unittest
 
-from pov.other import SdlSyntaxException
-from pov.basic.PoVObject import *
-from pov.basic.Vector import *
-from pov.object_modifier.ObjectModifier import *
+from pov.other.SdlSyntaxException import SdlSyntaxException
+from pov.basic.PoVObject import PoVObject
+from pov.basic.Vector import Vector
+from pov.basic.SceneItem import SceneItem
+from pov.object_modifier.ObjectModifier import ObjectModifier
 
-from pov.finite_solid import *
+from pov.finite_solid.Blob import Blob
+from pov.finite_solid.Box import Box
+from pov.finite_solid.Cone import Cone
+from pov.finite_solid.Cylinder import Cylinder
+from pov.finite_solid.HeightField import HeightField
+from pov.finite_solid.JuliaFractal import JuliaFractal
+
 
 
 class BlobTestCase(unittest.TestCase):
@@ -59,6 +66,76 @@ class BoxTestCase(unittest.TestCase):
         self.assertIsInstance(SUT, Box)
         self.assertIsInstance(SUT, SceneItem)
 
+    def test_create_v1_wrong_type(self):
+        try:
+            self.SUT = Box(
+                'foo',
+                Vector(5, 6, 7),
+                ObjectModifier('foo')
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_v2_wrong_type(self):
+        try:
+            self.SUT = Box(
+                Vector(5, 6, 7),
+                'foo',
+                ObjectModifier('foo')
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_v1_wrong_length(self):
+        try:
+            self.SUT = Box(
+                Vector(1, 2),
+                Vector(5, 6, 7),
+                ObjectModifier('foo')
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_v2_wrong_length(self):
+        try:
+            self.SUT = Box(
+                Vector(1, 2, 3),
+                Vector(4, 5, 6, 7),
+                ObjectModifier('foo')
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_option_wrong_length(self):
+        try:
+            self.SUT = Box(
+                Vector(1, 2, 3),
+                Vector(5, 6, 7),
+                Vector(1, 2)
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
 
 class ConeTestCase(unittest.TestCase):
     def setUp(self):
@@ -84,7 +161,7 @@ class ConeTestCase(unittest.TestCase):
         )
 
     def test_creationWithOptionAndKwarg(self):
-        SUT = Cone(
+        self.SUT = Cone(
             Vector(1, 2, 3),
             4,
             Vector(5, 6, 7),
@@ -93,8 +170,93 @@ class ConeTestCase(unittest.TestCase):
             open=True
         )
 
-        self.assertIsInstance(SUT, Cone)
-        self.assertIsInstance(SUT, SceneItem)
+        self.assertIsInstance(self.SUT, Cone)
+        self.assertIsInstance(self.SUT, SceneItem)
+
+    def test_create_non_existant_kw(self):
+        try:
+            self.SUT = Cone(
+                Vector(1, 2, 3),
+                4,
+                Vector(5, 6, 7),
+                8,
+                ObjectModifier('foo'),
+                foo=True
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_open_wrong_type(self):
+        try:
+            self.SUT = Cone(
+                Vector(1, 2, 3),
+                4,
+                Vector(5, 6, 7),
+                8,
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_baseradius_wrong_type(self):
+        try:
+            self.SUT = Cone(
+                Vector(1, 2, 3),
+                'foo',
+                Vector(5, 6, 7),
+                8,
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_capradius_wrong_type(self):
+        try:
+            self.SUT = Cone(
+                Vector(1, 2, 3),
+                4,
+                Vector(5, 6, 7),
+                'foo',
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_option_wrong_type(self):
+        try:
+            self.SUT = Cone(
+                Vector(1, 2, 3),
+                4,
+                Vector(5, 6, 7),
+                8,
+                Vector(1, 2),
+                open=0.3
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
 
 
 class CylinderTestCase(unittest.TestCase):
@@ -120,7 +282,7 @@ class CylinderTestCase(unittest.TestCase):
         )
 
     def test_creationWithOptionAndKwarg(self):
-        SUT = Cylinder(
+        self.SUT = Cylinder(
             Vector(1, 2, 3),
             Vector(5, 6, 7),
             8,
@@ -128,8 +290,40 @@ class CylinderTestCase(unittest.TestCase):
             open=True
         )
 
-        self.assertIsInstance(SUT, Cylinder)
-        self.assertIsInstance(SUT, SceneItem)
+        self.assertIsInstance(self.SUT, Cylinder)
+        self.assertIsInstance(self.SUT, SceneItem)
+
+    def test_create_non_existant_kw(self):
+        try:
+            self.SUT = Cylinder(
+                Vector(1, 2, 3),
+                Vector(5, 6, 7),
+                8,
+                ObjectModifier('foo'),
+                bar=True
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_open_wrong_type(self):
+        try:
+            self.SUT = Cylinder(
+                Vector(1, 2, 3),
+                Vector(5, 6, 7),
+                8,
+                ObjectModifier('foo'),
+                open='foo'
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
 
 
 class HeightFieldTestCase(unittest.TestCase):
@@ -139,6 +333,86 @@ class HeightFieldTestCase(unittest.TestCase):
     def test_creation(self):
         self.assertIsInstance(self.SUT, HeightField)
         self.assertIsInstance(self.SUT, SceneItem)
+
+    def test_create_wrong_type(self):
+        try:
+            self.SUT = HeightField(1.0)
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_Vector_wrong_option(self):
+        try:
+            self.SUT = HeightField('foo', Vector(1, 2, 3, 4))
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_non_existant_kw(self):
+        try:
+            self.SUT = HeightField('baz', foo='bar')
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_smooth_wrong_type(self):
+        try:
+            self.SUT = HeightField('baz', smooth='bar')
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_hierarchy_wrong_type(self):
+        try:
+            self.SUT = HeightField('baz', hierarchy='bar')
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_hf_type_wrong_type(self):
+        try:
+            self.SUT = HeightField('baz', hf_type=0.2)
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_hf_type_non_existant_value(self):
+        try:
+            self.SUT = HeightField('baz', hf_type='bar')
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_waterlevel_not_float(self):
+        try:
+            self.SUT = HeightField('baz', water_level='bar')
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+        else:
+            self.fail('ExpectedException not thrown')
 
 
 class JuliaFractalTestCase(unittest.TestCase):

@@ -15,9 +15,11 @@ import unittest
 #import difflib
 #import copy
 from logging import *
-from pov.basic import *
-from pov.other import SdlSyntaxException
-from pov.global_settings import *
+from pov.basic.SceneItem import SceneItem
+from pov.other.SdlSyntaxException import SdlSyntaxException
+from pov.global_settings.GlobalSettings import GlobalSettings
+from pov.global_settings.AssumedGamma import AssumedGamma
+from pov.global_settings.GlobalSettingsItem import GlobalSettingsItem
 
 
 class GlobalSettingsTestCase(unittest.TestCase):

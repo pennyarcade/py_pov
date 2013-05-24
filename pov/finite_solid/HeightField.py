@@ -10,6 +10,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+from pov.other import SdlSyntaxException
+from pov.object_modifier.ObjectModifier import *
 from FiniteSolid import *
 from pov.basic.Vector import *
 
@@ -45,7 +47,7 @@ class HeightField(FiniteSolid):
 
         # param syntax checking
         if not type(filename) == str:
-            raise TypeError('String expected for param "filename"')
+            raise SdlSyntaxException('String expected for param "filename"')
 
         # make sure only valid object modifiers are passed
         for i in range(len(opts)):
@@ -60,7 +62,7 @@ class HeightField(FiniteSolid):
 
             if (key in ['hierarchy', 'smooth']) and (not type(val) == bool):
                 raise SdlSyntaxException('Key %s expected boolean value, got %s', (key, type(val)))
-            if (key == hf_type) and (not type(val) == str):
+            if (key == 'hf_type') and (not type(val) == str):
                 raise SdlSyntaxException('Key %s expected string value, got %s', (key, type(val)))
             if (key == 'hf_type') and (not val in ['gif', 'tga', 'pot', 'png', 'pgm', 'ppm', 'jpeg', 'tiff', 'sys', 'function']):
                 raise SdlSyntaxException('Value %s of key %s is not valid' % (val, key))
