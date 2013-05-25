@@ -151,9 +151,9 @@ class SceneItem(object):
             debug("set initial indentation to 0")
 
         #Call syntax check methods
-        self._check_arguments(args)
-        self._check_opts(opts)
-        self._check_kwargs(kwargs)
+        self._check_arguments()
+        self._check_opts()
+        self._check_kwargs()
 
         self.name = name
 
@@ -375,14 +375,15 @@ class SceneItem(object):
             works for Options and kwargs
         """
 
-        # syntax check appended stuff
-        self._check_opts(opts)
-        self._check_kwargs(kwargs)
-
         for item in self.flatten(opts):
             self.opts.append(item)
         for key, val in kwargs.items():
             self.kwargs[key] = val
+
+        # syntax check all options including appended stuff
+        # need to check everything to get duplicate options etc.
+        self._check_opts()
+        self._check_kwargs()
 
     def map_arg(self, arg):
         """
