@@ -97,3 +97,56 @@ grep -Hirn 'todo' . >> todo.todo (16.05.2013):
     ☐ pov/basic/SceneItem.py:38:            @TODO: move indentation check to own function
     ☐ pov/basic/SceneItem.py:39:            @TODO: make sure all params are passed through map_arg / flatten before syntax checks
     ☐ pov/basic/SceneFile.py:70:            TODO: There should be no more type/syntax checking here
+
+
+grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude .git >> todo.todo (22.05.2013):
+    ✔ ./pov/test/EndToEndTest.py:94:        #@todo: transform kw pairs from Objects to keyword params @done (13-05-22 15:28)
+    ✔ ./pov/test/EndToEndTest.py:101:                    #@todo: transform kw pairs from Objects to keyword params @done (13-05-22 15:28)
+    ✔ ./pov/test/EndToEndTest.py:103:                    #@todo: transform kw pairs from Objects to keyword params @done (13-05-22 15:28)
+    ☐ ./pov/test/EndToEndTest.py:115:        #@TODO: Define globaly (Vector Module?)
+    ☐ ./pov/test/EndToEndTest.py:117:        #@TODO: Read from Config
+    ☐ ./pov/test/EndToEndTest.py:119:        #@TODO: Read from Config
+    ✔ ./pov/global_settings/GlobalSettingsItem.py:32:        @Todo: [DEPRECATED] Dependencies and remove Class @done (13-05-22 15:38)
+    ☐ ./pov/global_settings/GlobalSettings.py:44:            @TODO: Param Syntax checking
+    ☐ ./pov/global_settings/GlobalSettings.py:45:            @TODO: make sure superclass constructor gets all params in the right form
+    ☐ ./pov/global_settings/GlobalSettings.py:46:            @todo test __str__
+    ☐ ./pov/global_settings/Radiosity.py:19:        @Todo: Apidoc
+    ☐ ./pov/global_settings/Radiosity.py:20:        @Todo: Implement
+    ☐ ./pov/global_settings/Photons.py:19:        @Todo: Apidoc
+    ☐ ./pov/global_settings/Photons.py:20:        @Todo: Implement
+    ✔ ./pov/global_settings/AssumedGamma.py:22:        @Todo: [DEPRECATED] Move to KW Param and remove Class @done (13-05-23 08:31)
+    ☐ ./pov/finite_solid/HeightField.py:40:            @TODO: Check that file really exists
+    ☐ ./pov/finite_solid/HeightField.py:41:            @TODO: check if file matches given type
+    ☐ ./pov/finite_solid/HeightField.py:42:            @TODO: make sure superclass constructor gets all params in the right form
+    ☐ ./pov/finite_solid/HeightField.py:43:            @TODO: test __str__
+    ☐ ./pov/finite_solid/JuliaFractal.py:48:            @TODO: Param Syntax checking
+    ☐ ./pov/finite_solid/JuliaFractal.py:49:            @TODO: make sure superclass constructor gets all params in the right form
+    ☐ ./pov/finite_solid/JuliaFractal.py:50:            @todo test __str__
+    ✔ ./pov/finite_solid/Blob.py:38:            @TODO: constructor apidoc @done (13-05-23 08:33)
+    ☐ ./pov/finite_solid/Blob.py:39:            @TODO: Syntax Checking
+    ✔ ./pov/texture/FinishItem.py:38:        @Todo: [DEPRECATED] Move to KW Param and remove Class @done (13-05-22 15:38)
+    ✔ ./pov/texture/FinishItem.py:45:            @TODO: constructor apidoc @done (13-05-22 15:38)
+    ✔ ./pov/texture/FinishItem.py:46:            @TODO: Syntax checking @done (13-05-22 15:39)
+    ✔ ./pov/texture/Diffuse.py:25:        @Todo: [DEPRECATED] Move to KW Param and remove Class @done (13-05-22 15:39)
+    ✔ ./pov/texture/Ambient.py:25:        @Todo: [DEPRECATED] Move to KW Param and remove Class @done (13-05-22 15:39)
+    ✔ ./pov/texture/Ambient.py:35:            @TODO: make color vectors possible @done (13-05-22 15:39)
+    ✔ ./pov/texture/Finish.py:42:            @TODO: constructor apidoc @done (13-05-23 08:37)
+    ☐ ./pov/texture/Finish.py:43:            @TODO: Syntax checking
+    ☐ ./pov/language_directive/Default.py:33:            @TODO: Syntax checking
+    ✔ ./pov/language_directive/Default.py:39:          @TODO: Apidoc @done (13-05-23 08:38)
+    ☐ ./pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file
+    ☐ ./pov/basic/SceneItem.py:38:            @TODO: move indentation check to own functioni
+    ☐ ./pov/basic/SceneItem.py:39:            @TODO: make sure all params are passed through map_arg / flatten before syntax checks
+    ☐ ./pov/basic/SceneFile.py:20:        @Todo: Proper Apidoc
+    ☐ ./pov/basic/SceneFile.py:21:        @Todo: Add param for PovRay Ini file
+    ☐ ./pov/basic/SceneFile.py:40:            @Todo: check if file is writeable?
+    ☐ ./pov/basic/SceneFile.py:56:            @Todo: Apidoc
+    ☐ ./pov/basic/SceneFile.py:69:            @Todo: Apidoc
+    ☐ ./pov/basic/SceneFile.py:70:            @Todo: Make multiple items possible?
+    ☐ ./pov/basic/SceneFile.py:81:            @TODO: There should be no more type/syntax checking here
+    ☐ ./pov/basic/SceneFile.py:82:            @Todo: Write to file code
+    ☐ ./pov/other/Camera.py:56:            @TODO: Param Syntax checking
+    ☐ ./pov/other/Camera.py:57:            @TODO: make sure superclass constructor gets all params in the right form
+    ☐ ./pov/other/Camera.py:58:            @todo test __str__
+    ☐ ./pov/other/Camera.py:59:            @todo: add transformations
+    ☐ ./pov/other/Camera.py:60:            @Todo: are there any valid options at all?

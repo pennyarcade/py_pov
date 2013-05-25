@@ -14,7 +14,6 @@ import os
 import unittest
 
 from pov.other.SdlSyntaxException import SdlSyntaxException
-from pov.basic.PoVObject import PoVObject
 from pov.basic.Vector import Vector
 from pov.basic.SceneItem import SceneItem
 from pov.object_modifier.ObjectModifier import ObjectModifier
@@ -25,7 +24,6 @@ from pov.finite_solid.Cone import Cone
 from pov.finite_solid.Cylinder import Cylinder
 from pov.finite_solid.HeightField import HeightField
 from pov.finite_solid.JuliaFractal import JuliaFractal
-
 
 
 class BlobTestCase(unittest.TestCase):

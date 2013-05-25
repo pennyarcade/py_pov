@@ -25,7 +25,6 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class SceneItemTestCase(unittest.TestCase):
-
     def setUp(self):
         self.SUT = SceneItem('foo')
 
@@ -34,7 +33,6 @@ class SceneItemTestCase(unittest.TestCase):
 
     def test_toString(self):
         second = 'foo'
-
         self.assertEqual(str(self.SUT), second)
 
     def test_append(self):
@@ -96,7 +94,7 @@ class SceneItemTestCase(unittest.TestCase):
         self.assertEqual(self.SUT.kwargs, {})
 
     def test_createWithKwargs(self):
-        self.SUT = SceneItem('foo', [], [], bar=(1, 2, 3),  baz=SceneItem('bar'))
+        self.SUT = SceneItem('foo', [], [], {'bar':(1, 2, 3), 'baz':SceneItem('bar')})
 
         self.assertEqual(type(self.SUT.args), list)
         self.assertEqual(self.SUT.args, [])
@@ -140,7 +138,7 @@ class SceneItemTestCase(unittest.TestCase):
         self.assertEqual(self.SUT._block_end(), os.linesep)
 
     def test_setitemReplacesOpt(self):
-        self.SUT = SceneItem('foo', [1, 2, 3], [4, 5, 6], bar=7)
+        self.SUT = SceneItem('foo', [1, 2, 3], [4, 5, 6], {'bar':7})
 
         #before
         self.assertEqual(self.SUT.args, [1, 2, 3])
@@ -155,7 +153,7 @@ class SceneItemTestCase(unittest.TestCase):
         self.assertEqual(self.SUT.kwargs, {'bar': 7})
 
     def test_getitem(self):
-        self.SUT = SceneItem('foo', [1, 2, 3], [4, 5, 6], bar=7)
+        self.SUT = SceneItem('foo', [1, 2, 3], [4, 5, 6], {'bar':7})
 
         self.assertEqual(self.SUT[1], 2)
         self.assertEqual(self.SUT[4], 5)
@@ -277,7 +275,7 @@ class SceneFileTestCase(unittest.TestCase):
 
 class PoVObjectTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = PoVObject("foo", [1, 2, 3], [4, 5, 6], bar=7)
+        self.SUT = PoVObject("foo", [1, 2, 3], [4, 5, 6], {'bar':7})
 
     def test_toString(self):
         le = os.linesep

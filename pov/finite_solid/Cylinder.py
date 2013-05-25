@@ -63,6 +63,6 @@ class Cylinder(FiniteSolid):
         super(Cylinder, self).__init__(
             "cylinder",
             (basepoint, cappoint, radius),
-            opts, **kwargs
+            opts, kwargs
         )
 

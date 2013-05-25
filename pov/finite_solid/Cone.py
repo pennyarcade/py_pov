@@ -67,6 +67,6 @@ class Cone(FiniteSolid):
         super(Cone, self).__init__(
             "cone",
             (basepoint, baseradius, cappoint, capradius),
-            opts, **kwargs
+            opts, kwargs
         )
 

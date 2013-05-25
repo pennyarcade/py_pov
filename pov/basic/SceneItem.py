@@ -10,9 +10,9 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 from __future__ import nested_scopes
-from logging import *
-from Vector import *
 import os
+from logging import *
+from Vector import Vector
 
 
 class SceneItem(object):
@@ -26,43 +26,143 @@ class SceneItem(object):
             ATMOSPHERIC_EFFECTS        |
             global_settings { GLOBAL_ITEMS }
     """
-    def __init__(self, name, args=[], opts=[], **kwargs):
+
+    # All reserved identifiers for syntax checking purposes
+    # @see: http://www.povray.org/documentation/view/3.6.1/226/
+    __reserved_keywords = [
+        'aa_level', 'aa_threshold', 'abs', 'absorption', 'accuracy', 'acos',
+        'acosh', 'adaptive', 'adc_bailout', 'agate', 'agate_turb', 'all',
+        'all_intersections', 'alpha', 'altitude', 'always_sample', 'ambient',
+        'ambient_light', 'angle', 'aperture', 'append', 'arc_angle',
+        'area_light', 'array', 'asc', 'ascii', 'asin', 'asinh', 'assumed_gamma',
+        'atan', 'atan2', 'atanh', 'autostop', 'average',
+        'b_spline', 'background', 'bezier_spline', 'bicubic_patch',
+        'black_hole', 'blob', 'blue', 'blur_samples', 'bounded_by', 'box',
+        'boxed', 'bozo', 'break', 'brick', 'brick_size', 'brightness',
+        'brilliance', 'bump_map', 'bump_size', 'bumps',
+        'camera', 'case', 'caustics', 'ceil', 'cells', 'charset', 'checker',
+        'chr', 'circular', 'clipped_by', 'clock', 'clock_delta', 'clock_on',
+        'collect', 'color', 'color_map', 'colour', 'colour_map', 'component',
+        'composite', 'concat', 'cone', 'confidence', 'conic_sweep',
+        'conserve_energy', 'contained_by', 'control0', 'control1', 'coords',
+        'cos', 'cosh', 'count', 'crackle', 'crand', 'cube', 'cubic',
+        'cubic_spline', 'cubic_wave', 'cutaway_textures', 'cylinder',
+        'cylindrical',
+        'debug', 'declare', 'default', 'defined', 'degrees', 'density',
+        'density_file', 'density_map', 'dents', 'df3', 'difference', 'diffuse',
+        'dimension_size', 'dimensions', 'direction', 'disc', 'dispersion',
+        'dispersion_samples', 'dist_exp', 'distance', 'div', 'double_illuminate',
+        'eccentricity', 'else', 'emission', 'end', 'error', 'error_bound',
+        'evaluate', 'exp', 'expand_thresholds', 'exponent', 'exterior',
+        'extinction',
+        'face_indices', 'facets', 'fade_color', 'fade_colour', 'fade_distance',
+        'fade_power', 'falloff', 'falloff_angle', 'false', 'fclose',
+        'file_exists', 'filter', 'final_clock', 'final_frame', 'finish',
+        'fisheye', 'flatness', 'flip', 'floor', 'focal_point', 'fog', 'fog_alt',
+        'fog_offset', 'fog_type', 'fopen', 'form', 'frame_number', 'frequency',
+        'fresnel', 'function',
+        'gather', 'gif', 'global_lights', 'global_settings', 'gradient',
+        'granite', 'gray', 'gray_threshold', 'green', 'height_field', 'hexagon',
+        'hf_gray_16', 'hierarchy', 'hypercomplex', 'hollow', 'if', 'ifdef',
+        'iff', 'ifndef', 'image_height', 'image_map', 'image_pattern',
+        'image_width', 'include', 'initial_clock', 'initial_frame', 'inside',
+        'inside_vector', 'int', 'interior', 'interior_texture', 'internal',
+        'interpolate', 'intersection', 'intervals', 'inverse', 'ior', 'irid',
+        'irid_wavelength', 'isosurface',
+        'jitter', 'jpeg', 'julia', 'julia_fractal',
+        'lambda', 'lathe', 'leopard', 'light_group', 'light_source',
+        'linear_spline', 'linear_sweep', 'ln', 'load_file', 'local', 'location',
+        'log', 'look_at', 'looks_like', 'low_error_factor',
+        'macro', 'magnet', 'major_radius', 'mandel', 'map_type', 'marble',
+        'material', 'material_map', 'matrix', 'max', 'max_extent',
+        'max_gradient', 'max_intersections', 'max_iteration', 'max_sample',
+        'max_trace', 'max_trace_level', 'media', 'media_attenuation',
+        'media_interaction', 'merge', 'mesh', 'mesh2', 'metallic', 'method',
+        'metric', 'min', 'min_extent', 'minimum_reuse', 'mod', 'mortar',
+        'natural_spline', 'nearest_count', 'no', 'no_bump_scale', 'no_image',
+        'no_reflection', 'no_shadow', 'noise_generator', 'normal',
+        'normal_indices', 'normal_map', 'normal_vectors', 'number_of_waves',
+        'object', 'octaves', 'off', 'offset', 'omega', 'omnimax', 'on', 'once',
+        'onion', 'open', 'orient', 'orientation', 'orthographic',
+        'panoramic', 'parallel', 'parametric', 'pass_through', 'pattern',
+        'perspective', 'pgm', 'phase', 'phong', 'phong_size', 'photons',
+        'pi', 'pigment', 'pigment_map', 'pigment_pattern', 'planar', 'plane',
+        'png', 'point_at', 'poly', 'poly_wave', 'polygon', 'pot', 'pow', 'ppm',
+        'precision', 'precompute', 'pretrace_end', 'pretrace_start', 'prism',
+        'prod', 'projected_through', 'pwr',
+        'quadratic_spline', 'quadric', 'quartic', 'quaternion', 'quick_color',
+        'quick_colour', 'quilted',
+        'radial', 'radians', 'radiosity', 'radius', 'rainbow', 'ramp_wave',
+        'rand', 'range', 'ratio', 'read', 'reciprocal', 'recursion_limit',
+        'red', 'reflection', 'reflection_exponent', 'refraction', 'render',
+        'repeat', 'rgb', 'rgbf', 'rgbft', 'rgbt', 'right', 'ripples', 'rotate',
+        'roughness',
+        'samples', 'save_file', 'scale', 'scallop_wave', 'scattering', 'seed',
+        'select', 'shadowless', 'sin', 'sine_wave', 'sinh', 'size', 'sky',
+        'sky_sphere', 'slice', 'slope', 'slope_map', 'smooth', 'smooth_triangle',
+        'solid', 'sor', 'spacing', 'specular', 'sphere', 'sphere_sweep',
+        'spherical', 'spiral1', 'spiral2', 'spline', 'split_union', 'spotlight',
+        'spotted', 'sqr', 'sqrt', 'statistics', 'str', 'strcmp', 'strength',
+        'strlen', 'strlwr', 'strupr', 'sturm', 'substr', 'sum', 'superellipsoid',
+        'switch', 'sys',
+        't', 'tan', 'tanh', 'target', 'text', 'texture', 'texture_list',
+        'texture_map', 'tga', 'thickness', 'threshold', 'tiff', 'tightness',
+        'tile2', 'tiles', 'tolerance', 'toroidal', 'torus', 'trace', 'transform',
+        'translate', 'transmit', 'triangle', 'triangle_wave', 'true', 'ttf',
+        'turb_depth', 'turbulence', 'type',
+        'u', 'u_steps', 'ultra_wide_angle', 'undef', 'union', 'up', 'use_alpha',
+        'use_color', 'use_colour', 'use_index', 'utf8', 'uv_indices',
+        'uv_mapping', 'uv_vectors',
+        'v', 'v_steps', 'val', 'variance', 'vaxis_rotate', 'vcross', 'vdot',
+        'version', 'vertex_vectors', 'vlength', 'vnormalize', 'vrotate', 'vstr',
+        'vturbulence',
+        'warning', 'warp', 'water_level', 'waves', 'while', 'width', 'wood',
+        'wrinkles', 'write',
+        'x', 'y', 'yes', 'z'
+    ]
+
+    def __init__(self, name, args=[], opts=[], kwargs=[]):
         """
             Base class for POV objects.
 
             @param name: POV object name
+            @type name: string
             @param args: compulsory (comma separated?) pov args XX commas don't seem to matter?
+            @type args: list
             @param opts: eg. CSG items
+            @type opts: list
             @param kwargs: key value pairs
+            @type kwargs: dict
 
             @TODO: move indentation check to own function
-            @TODO: make sure all params are passed through map_arg / flatten before syntax checks
         """
-        debug("creating SceneItem %s, %s, %s, %s", name, args, opts, kwargs)
+        debug("%s: SceneItem.__init__(): Start: %s, %s, %s, %s" %
+              (self.__class__.__name__, name, args, opts, kwargs))
 
-        self.name = name
+        # format parameters
+        self._format_args(args)
+        self._format_opts(opts)
+        self._format_kwargs(kwargs)
 
+        #@todo: Does indentation really have to stay in the constructor??
         if not "indentation" in globals():
             global indentation
             indentation = 0
             debug("set initial indentation to 0")
 
-        args = list(args)
-        for i in range(len(args)):
-            args[i] = self.map_arg(args[i])
-        self.args = self.flatten(args)
+        #Call syntax check methods
+        self._check_arguments(args)
+        self._check_opts(opts)
+        self._check_kwargs(kwargs)
 
-        opts = list(opts)
-        for i in range(len(opts)):
-            opts[i] = self.map_arg(opts[i])
-        self.opts = self.flatten(opts)
+        self.name = name
 
-        self.kwargs = dict(kwargs)  # take a copy
-        for key, val in self.kwargs.items():
-            if type(val) == tuple or type(val) == list:
-                self.kwargs[key] = self.map_arg(val)
+        debug("%s: SceneItem.__init__(): Stop: %s, %s, %s, %s" %
+              (self.__class__.__name__, name, args, opts, kwargs))
 
-        debug("Item.__init__ %s, %s, %s", self.name, self.args, self.opts)
+    #---------------------------------------------------------------------------
+    # Pseudo private  methods
+    #---------------------------------------------------------------------------
 
     def _indent(self):
         """
@@ -92,6 +192,8 @@ class SceneItem(object):
     def _block_begin(self):
         """
             Begin code block
+                * return opening bracket and line separator
+                * increase indentation
         """
         debug("begin block")
         code = " {" + os.linesep
@@ -103,6 +205,8 @@ class SceneItem(object):
     def _block_end(self):
         """
             End code block
+                * reduce indentation
+                * add line with closing bracket
         """
         debug("end block: indentation= %s", indentation)
 
@@ -117,24 +221,98 @@ class SceneItem(object):
 
     def _getLine(self, s=""):
         """
-            get line of code
+            format line of code with indentation and line separator
         """
         global indentation
         info("'" + "  " * indentation + s + "'")
         return "  " * indentation + s + os.linesep
 
-    def append(self, *opts, **kwargs):
-        """
-            append Subitem(s) to Item
-        """
-        for item in self.flatten(opts):
-            self.opts.append(item)
-        for key, val in kwargs.items():
-            self.kwargs[key] = val
+    def _check_opts(self):
+        '''
+            Option Syntax checks
+
+            to be overwritten in subclasses
+        '''
+        pass
+
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+
+            to be overwritten in subclasses
+        '''
+        pass
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+
+            to be overwritten in subclasses
+        '''
+        pass
+
+    def _format_args(self, args):
+        '''
+            format argument parameters
+        '''
+        args = list(args)
+        for i in range(len(args)):
+            args[i] = self.map_arg(args[i])
+        self.args = self.flatten(args)
+
+    def _format_opts(self, opts):
+        '''
+            format option parameters
+        '''
+        opts = list(opts)
+        for i in range(len(opts)):
+            opts[i] = self.map_arg(opts[i])
+        self.opts = self.flatten(opts)
+
+    def _format_kwargs(self, kwargs):
+        '''
+            format keyword parameters
+        '''
+        #debug('kwargs: %s', kwargs)
+        self.kwargs = dict(kwargs)  # take a copy
+        kwargs = dict(kwargs).items()
+        #debug('kwargs: %s', kwargs)
+        kwargs.reverse()
+        #debug('kwargs: %s', kwargs)
+
+        for key, val in kwargs:
+            if type(val) == tuple or type(val) == list:
+                self.kwargs[key] = self.map_arg(val)
+
+    def _is_valid_keyword(self, name):
+        '''
+            Test if keyword is Valid
+
+            @todo: typecheck param
+        '''
+        if name in self.__reserved_keywords:
+            return true
+        return false
+
+    def _is_valid_identifier(self, name):
+        '''
+            Test if name is not a keyword
+
+            @todo: typecheck param
+        '''
+        if name not in self.__reserved_keywords:
+            return true
+        return false
+
+    #---------------------------------------------------------------------------
+    # Overloading magic methods
+    #---------------------------------------------------------------------------
 
     def __str__(self):
         """
             return PoV code as string representation
+
+            this method is meant to be overridden in subclasses
         """
         debug("SceneItem.__str__ %s, %s, %s", self.name, self.args, self.opts)
 
@@ -143,6 +321,8 @@ class SceneItem(object):
     def __setitem__(self, i, item):
         """
             Set Item magic method
+
+            e.g. foo[i] = bar
         """
         if i < len(self.args):
             self.args[i] = self.map_arg(item)
@@ -156,6 +336,8 @@ class SceneItem(object):
     def __getitem__(self, i):
         """
             Get Item magic method
+
+            e.g. foo = bar[i]
         """
         if i < len(self.args):
             return self.args[i]
@@ -167,6 +349,9 @@ class SceneItem(object):
                 raise IndexError()
 
     def __eq__(self, other):
+        '''
+            Operator Overload "="
+        '''
         if not isinstance(other, SceneItem):
             raise ArgumentError()
         a = self.name == other.name
@@ -179,8 +364,30 @@ class SceneItem(object):
         debug(str(self.kwargs) + ' = ' + str(self.kwargs))
         return a & b & c & d
 
+    #---------------------------------------------------------------------------
+    # Public methods
+    #---------------------------------------------------------------------------
+
+    def append(self, *opts, **kwargs):
+        """
+            append Subitem(s) to Item
+
+            works for Options and kwargs
+        """
+
+        # syntax check appended stuff
+        self._check_opts(opts)
+        self._check_kwargs(kwargs)
+
+        for item in self.flatten(opts):
+            self.opts.append(item)
+        for key, val in kwargs.items():
+            self.kwargs[key] = val
+
     def map_arg(self, arg):
-        """Map an argument list to an appropriate format"""
+        """
+            Map an argument list to an appropriate format
+        """
         if type(arg) in (tuple, list):
             # if multiple-component, floating-point value, return a vector
             if len(arg) and hasattr(arg[0], "__float__"):
@@ -189,6 +396,9 @@ class SceneItem(object):
         return arg
 
     def flatten(self, seq):
+        '''
+            flatten lists to one dimension
+        '''
         seq = list(seq)
         i = 0
         while i < len(seq):
@@ -200,7 +410,4 @@ class SceneItem(object):
             else:
                 i += 1
         return seq
-
-
-
 

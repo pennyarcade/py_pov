@@ -9,3 +9,13 @@ See LICENSE file.
 Some modifications by W.T. Bridgman, 2006-2007.
 
 """
+
+
+from pov.basic.PoVObject import *
+
+
+class Photons(PoVObject):
+    """
+        @Todo: Apidoc
+        @Todo: Implement
+    """

@@ -11,8 +11,9 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+from logging import *
 from pov.basic.BlockObject import BlockObject
-from LanguageDirective import LanguageDirective
+from pov.language_directive.LanguageDirective import LanguageDirective
 
 
 class Default(LanguageDirective, BlockObject):
@@ -31,5 +32,13 @@ class Default(LanguageDirective, BlockObject):
 
             @TODO: Syntax checking
         """
+        super(Default, self).__init__("#default", [], opts, kwargs)
 
-        super(Default, self).__init__("default", [], opts=[], **kwargs)
+    def __str__(self):
+        """
+          Return PoV source code
+        """
+        code = super(Default, self).__str__()
+        debug('Default.__str__: %s \n%s' % (self.name, code))
+
+        return code

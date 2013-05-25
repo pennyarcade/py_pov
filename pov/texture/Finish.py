@@ -17,7 +17,6 @@ from pov.basic.SceneItem import SceneItem
 class Finish(BlockObject, SceneItem):
     """
         FINISH:
-            Jump to SDL
             finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }
         FINISH_ITEMS:
             [ambient COLOR] & [diffuse FLOAT] & [brilliance FLOAT] & [PHONG] & [SPECULAR] & [REFLECTION] & [IRID] & [crand FLOAT] & [conserve_energy [BOOL]]
@@ -39,7 +38,9 @@ class Finish(BlockObject, SceneItem):
 
     def __init__(self, *opts, **kwargs):
         """
-            @TODO: constructor apidoc
+            Create a Finish object
+
             @TODO: Syntax checking
         """
-       # super(Finish, self).__init__("finish", args=[], opts=[])
+        super(Finish, self).__init__("finish", (), opts, kwargs)
+

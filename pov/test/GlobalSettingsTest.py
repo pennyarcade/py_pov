@@ -12,14 +12,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 import os
 import unittest
-#import difflib
-#import copy
 from logging import *
 from pov.basic.SceneItem import SceneItem
-from pov.other.SdlSyntaxException import SdlSyntaxException
+from pov.other import SdlSyntaxException
 from pov.global_settings.GlobalSettings import GlobalSettings
-from pov.global_settings.AssumedGamma import AssumedGamma
-from pov.global_settings.GlobalSettingsItem import GlobalSettingsItem
 
 
 class GlobalSettingsTestCase(unittest.TestCase):
@@ -29,29 +25,3 @@ class GlobalSettingsTestCase(unittest.TestCase):
     def test_creation(self):
         self.assertIsInstance(self.SUT, GlobalSettings)
         self.assertIsInstance(self.SUT, SceneItem)
-
-
-class AssumedGammaTestCase(unittest.TestCase):
-    def setUp(self):
-        self.SUT = AssumedGamma(0.75)
-
-    def test_creation(self):
-        self.assertIsInstance(self.SUT, GlobalSettingsItem)
-        self.assertIsInstance(self.SUT, SceneItem)
-        self.assertIsInstance(self.SUT, AssumedGamma)
-
-    def test_toString(self):
-        le = os.linesep
-        first = str(self.SUT)
-        second = 'assumed_gamma 0.75' + le
-        self.assertEqual(first, second)
-
-    def test_create_wrong_type(self):
-        try:
-            self.SUT = AssumedGamma('foo')
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
-        else:
-            self.fail('ExpectedException not thrown')

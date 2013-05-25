@@ -17,6 +17,8 @@ from SceneItem import *
 class SceneFile(object):
     """
     POV-Ray scene file object.
+        @Todo: Proper Apidoc
+        @Todo: Add param for PovRay Ini file
 
         @var private __lock
         @var private __indent
@@ -29,12 +31,13 @@ class SceneFile(object):
     def __init__(self, fnam="out.pov", *items):
         """Open POV-Ray scene file.
 
-        Open file and write some components.
+            Open file and write some components.
 
-        @param fnam: POV-Ray scene file name.
-        @type fnam: string
-        @param items
+            @param fnam: POV-Ray scene file name.
+            @type fnam: string
+            @param items
 
+            @Todo: check if file is writeable?
         """
         if not type(fnam) == str:
             raise TypeError('Filename String expected but gor %s' % type(fnam))
@@ -49,6 +52,9 @@ class SceneFile(object):
         self.file = open(fnam, "w")
 
     def __str__(self):
+        '''
+            @Todo: Apidoc
+        '''
         code = ''
 
         for i in self.items:
@@ -59,6 +65,11 @@ class SceneFile(object):
         return code
 
     def append(self, item):
+        '''
+            @Todo: Apidoc
+            @Todo: Make multiple items possible?
+            @Dodo: "Skwawk!"
+        '''
         #each item has to be derived of SceneItem
         if not isinstance(item, SceneItem):
             raise TypeError('Only SceneItems allowed')
@@ -67,7 +78,8 @@ class SceneFile(object):
     def write(self):
         """
             Write commands into scene file.
-            TODO: There should be no more type/syntax checking here
+            @TODO: There should be no more type/syntax checking here
+            @Todo: Write to file code
         """
 
         #for item in items:

@@ -9,9 +9,3 @@ See LICENSE file.
 Some modifications by W.T. Bridgman, 2006-2007.
 
 """
-
-#from BlockObject import BlockObject
-#from SceneItem import SceneItem
-#from SceneFile import SceneFile
-#from Vector import Vector
-#from PoVObject import PoVObject
