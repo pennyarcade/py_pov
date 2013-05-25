@@ -41,4 +41,3 @@ class Default(LanguageDirective, BlockObject):
         code = super(Default, self).__str__()
         debug('Default.__str__: %s \n%s' % (self.name, code))
 
-        return code

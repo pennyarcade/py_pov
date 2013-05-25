@@ -43,4 +43,3 @@ class Finish(BlockObject, SceneItem):
             @TODO: Syntax checking
         """
         super(Finish, self).__init__("finish", (), opts, kwargs)
-
