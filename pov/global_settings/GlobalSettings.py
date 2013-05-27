@@ -48,6 +48,23 @@ class GlobalSettings(PoVObject):
             @todo test __str__
         '''
 
+        super(GlobalSettings, self).__init__("global_settings", (), opts, kwargs)
+
+    def _check_opts(self):
+        '''
+            Option Syntax checks
+        '''
+        for i in range(len(self.opts)):
+            if not (isinstance(opts[i], Radiosity) or isinstance(opts[i], Photons)):
+                raise SdlSyntaxException('Only Radiosity or Photons objects may be passed as options')
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+
+            to be overwritten in subclasses
+        '''
+
         valid_kw = {
             'ambient_light': 'Color',
             'assumed_gamma': 'float',
@@ -60,15 +77,8 @@ class GlobalSettings(PoVObject):
             'noise_generator': 'int'
         }
 
-        # param syntax checks
-
-        # make sure only valid object modifiers are passed
-        for i in range(len(opts)):
-            if not (isinstance(opts[i], Radiosity) or isinstance(opts[i], Photons)):
-                raise SdlSyntaxException('Only Radiosity or Photons objects may be passed as options')
-
         # kwargs syntax checking
-        for key, val in kwargs.items():
+        for key, val in self.kwargs.items():
             # allowed keywords
             if not key in valid_kw:
                 raise SdlSyntaxException('Invalid key: ' + str(key))
@@ -76,6 +86,3 @@ class GlobalSettings(PoVObject):
             if not val.__class__.__name__ == valid_kw[key]:
                 raise SdlSyntaxException('Value of KW Argument %s is expectet to be type %s but got %s: ' %
                                          (key, valid_kw[key], val.__class__.__name__))
-
-        super(GlobalSettings, self).__init__("global_settings", (), opts, kwargs)
-

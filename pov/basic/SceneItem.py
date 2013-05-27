@@ -314,7 +314,8 @@ class SceneItem(object):
 
             this method is meant to be overridden in subclasses
         """
-        debug("SceneItem.__str__ %s, %s, %s", self.name, self.args, self.opts)
+        debug("%s: SceneItem.__str__(): %s, %s, %s" %
+              (self.__class__.__name__, self.name, self.args, self.opts))
 
         return self.name
 
@@ -411,4 +412,3 @@ class SceneItem(object):
             else:
                 i += 1
         return seq
-

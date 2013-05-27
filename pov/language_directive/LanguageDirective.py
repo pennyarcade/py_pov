@@ -33,13 +33,17 @@ class LanguageDirective(SceneItem):
             WHILE_DIRECTIVE |
             TEXT_STREAM_DIRECTIVE |
             MACRO_DEFINITION
+
+        @Todo: Is this superclass deprecated?
     """
     def __init__(self, name, args=[], opts=[], kwargs=[]):
-        debug('LanguageDirective.__init__: %s' % name)
-        super(LanguageDirective, self).__init__(name, [], opts, kwargs)
+        debug("%s: LanguageDirective.__init__(): %s, %s, %s, %s" %
+              (self.__class__.__name__, name, args, opts, kwargs))
+
+        super(LanguageDirective, self).__init__(name, args, opts, kwargs)
 
     def __str__(self):
         code = super(LanguageDirective, self).__str__()
-        debug('LanguageDirective.__str__: %s\n %s' % (self.name, code))
+        debug('%s: LanguageDirective.__str__(): %s\n %s' %
+              (self.__class__.__name__, self.name, code))
         return code
-

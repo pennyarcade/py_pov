@@ -30,6 +30,7 @@ class Version(LanguageDirective):
             @param version: Full name of file to be included
             @type version: float
 
+            @todo: How to refactor this into _check_args()??
         '''
         if not type(version) == float:
             raise SdlSyntaxException('Parameter not of type float')
@@ -41,6 +42,6 @@ class Version(LanguageDirective):
         '''
         code = self._getLine('#' + 'version ' + str(self.version) + ';')
 
-        info ('Version.str(): ' + code)
+        debug("Version.__str__(): %s\n%s" % (self.version, code))
 
         return code

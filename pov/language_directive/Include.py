@@ -40,6 +40,8 @@ class Include(LanguageDirective):
         '''
         code = self._getLine('#' + 'include \"%s\"' % self.filename)
 
+        debug('Include.__str__: %s \n%s' % (self.filename, code))
+
         return code
 
 
