@@ -55,30 +55,25 @@ class Camera(PoVObject):
             @Todo: are there any valid options at all?
     """
 
+    def __init__(self, *opts, **kwargs):
+        '''
+            Create camera object
+        '''
+        super(Camera, self).__init__('camera', [], opts, kwargs)
+
     def _check_kwargs(self):
         '''
             Keyword Argument Syntax checks
         '''
 
         valid_kw = {
-            'camera_type': ['perspective',
-                            'orthographic',
-                            'fisheye',
-                            'ultra_wide_angle',
-                            'omnimax',
-                            'panoramic',
-                            'spherical',
-                            'cylinder 1',
-                            'cylinder 2',
-                            'cylinder 3',
-                            'cylinder 4'
-                            ],
+            'camera_type': 'string',
             'location': 'Vector',
             'right': 'Vector',
             'up': 'Vector',
             'direction': 'Vector',
             'sky': 'Vector',
-            'angle': range(360),
+            'angle': 'int',
             'look_at': 'Vector',
             'aperture': 'float',
             'blur_samples': 'int',
@@ -87,8 +82,20 @@ class Camera(PoVObject):
             'variance': 'float'
         }
 
-        # kwargs syntax checking
-        for key, val in self.kwargs.items():
-            # allowed keywords
-            if not key in valid_kw:
-                raise SdlSyntaxException('Invalid key: ' + str(key))
+        self._validate_kwargs(valid_kw)
+
+        foo = ['perspective',
+               'orthographic',
+               'fisheye',
+               'ultra_wide_angle',
+               'omnimax',
+               'panoramic',
+               'spherical',
+               'cylinder 1',
+               'cylinder 2',
+               'cylinder 3',
+               'cylinder 4'
+               ]
+
+
+

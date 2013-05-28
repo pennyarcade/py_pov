@@ -16,16 +16,17 @@ import difflib
 from logging import *
 
 from pov.basic.SceneFile import SceneFile
-from pov.basic.Vector import Vector
+from pov.basic.Vector import *
 from pov.global_settings.GlobalSettings import GlobalSettings
 from pov.language_directive.Version import Version
 from pov.language_directive.Default import Default
 from pov.language_directive.Include import Include
 from pov.other.Camera import Camera
+from pov.other.LightSource import LightSource
 from pov.texture.Finish import Finish
 
 
-@unittest.skip
+#@unittest.skip
 class EndToEndTestCase(unittest.TestCase):
     def test_Scene1(self):
         '''
@@ -49,7 +50,7 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "camera {" + le
         ref += "  location <0.0, 1.0, -3.0>" + le
         ref += "  angle 75" + le
-        ref += "  right x*image_width/image_height" + le
+        ref += "  right <1.33333333333, 0.0, 0.0>" + le
         ref += "  look_at <0.0, 1.0, 0.0>" + le
         ref += "}" + le
         ref += "light_source{<1500,3000,-2500> color White}" + le
@@ -106,13 +107,9 @@ class EndToEndTestCase(unittest.TestCase):
         )
         fix.append(
             Include('colors.inc'),
-        )
-        fix.append(
             Include('textures.inc')
         )
 
-        #@TODO: Define globaly (Vector Module?)
-        x = Vector(1.0, 0.0, 0.0)
         #@TODO: Read from Config
         image_width = 800
         #@TODO: Read from Config
@@ -124,13 +121,13 @@ class EndToEndTestCase(unittest.TestCase):
                 look_at=Vector(0.0, 1.0, 0.0),
                 right=(x * image_width / image_height),
                 angle=75
-            )#,
-#            LightSource(
-#                Vector(1500, 3000, -2500),
-#                color(White)
-#            )
+            ),
+            LightSource(
+                Vector(1500, 3000, -2500),
+                color='White'
+            )
         )
-        '''
+
         fix.append(
             Plane(
                 Vector(0.0, 0.1, 0.0),
@@ -154,7 +151,7 @@ class EndToEndTestCase(unittest.TestCase):
                 scale=10000.0
             )
         )
-        ''' '''
+        '''
         fix.append(
             Fog(
                 fog_type=2.0,

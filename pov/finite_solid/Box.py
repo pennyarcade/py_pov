@@ -24,6 +24,29 @@ class Box(FiniteSolid):
                 <Corner_1>, <Corner_2>
                 [OBJECT_MODIFIERS...]
             }
+
+        OBJECT_MODIFIERS:
+            [OBJECT_PHOTONS] |
+            [CLIPPED_BY] |
+            [BOUNDED_BY] |
+            [MATERIAL] |
+            [INTERIOR] |
+            [INTERIOR_TEXTURE] |
+            [TEXTURE] |
+            [PIGMENT] |
+            [NORMAL] |
+            [FINISH] |
+            [TRANSFORMATION...] |
+            [no_shadow] |
+            [no_image[BOOL]] |
+            [no_reflection{BOOL]] |
+            [inverse] |
+            [double_illuminate[BOOL]] |
+            [hollow [BOOL]]
+
+        OBJECT_PHOTONS:
+            photons { OBJECT_PHOTON_ITEMS }
+
     """
     def __init__(self, v1, v2, *opts, **kwargs):
         """
@@ -33,8 +56,6 @@ class Box(FiniteSolid):
             @type v1: Vector()
             @param v2: opposing vertex of box
             @type v2: Vector()
-
-            @TODO: Add Syntax check: There are no valid kwargs
         """
 
         # Syntax checking
@@ -52,4 +73,4 @@ class Box(FiniteSolid):
             if not isinstance(opts[i], ObjectModifier):
                 raise SdlSyntaxException('Only ObjectModifier objects may be passed as options')
 
-        super(Box, self).__init__("box", (v1, v2), opts, **kwargs)
+        super(Box, self).__init__("box", [v1, v2], opts, kwargs)

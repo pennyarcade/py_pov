@@ -12,8 +12,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 from pov.other.SdlSyntaxException import SdlSyntaxException
 from FiniteSolid import FiniteSolid
-from pov.basic.Vector import Vector
-from pov.object_modifier.ObjectModifier import ObjectModifier
 
 
 class JuliaFractal(FiniteSolid):
@@ -45,31 +43,55 @@ class JuliaFractal(FiniteSolid):
             @Param param4d: four dimensional vector
             @Type param4d: Vector
 
-            @TODO: Param Syntax checking
-            @TODO: make sure superclass constructor gets all params in the right form
             @todo test __str__
         '''
+        super(JuliaFractal, self).__init__("julia_fractal", [param4d], opts, kwargs)
 
-        valid_kw = ['quaternion', 'hypercomplex', 'sqr', 'cube', 'exp',
-                    'reciprocal', 'sin', 'asin', 'sinh', 'asinh', 'cos',
-                    'acos', 'cosh', 'acosh', 'tan', 'atan', 'tanh', 'atanh',
-                    'ln', 'pwr', 'max_iteration', 'precision', 'slice']
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+        '''
+        valid_args = ['Vector']
+
+        self._validate_args(valid_args)
 
         # param syntax checks
-        if not isinstance(param4d, Vector):
-            raise SdlSyntaxException('Parameter param4d not of type Vector')
-        if not len(param4d.v) == 4:
+        if not len(self.args[0].v) == 4:
             raise SdlSyntaxException('Vector param4d has more or less than 4 dimensions')
 
-        # make sure only valid object modifiers are passed
-        for i in range(len(opts)):
-            if not isinstance(opts[i], ObjectModifier):
-                raise SdlSyntaxException('Only ObjectModifier objects may be passed as options')
+    def _check_opts(self):
+        '''
+            Option Syntax checks
 
-        # kwargs syntax checking
-        for key, val in kwargs.items():
-            # allowed keywords
-            if not key in valid_kw:
-                raise SdlSyntaxException('Invalid key: ' + str(key))
+            @Todo: get rid of Object Modifier superclass?
+        '''
+        valid_opts = ['ObjectModifier']
 
-        super(JuliaFractal, self).__init__("julia_fractal", (param4d), opts, **kwargs)
+        self._validate_opts(valid_opts)
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+        '''
+
+        valid_kw = {
+            'algebra_type': 'string',
+            'function_type': 'string',
+            'max_iteration': 'int',
+            'precision': 'float',
+            'slice': 'list',
+            # Object modifier kw
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool',
+            'hollow': 'bool'
+        }
+
+        self._validate_kwargs(valid_kw)
+
+        algebra_type = ['quaternion', 'hypercomplex']
+        function_type = ['sqr', 'cube', 'exp', 'reciprocal', 'sin', 'asin',
+                         'sinh', 'asinh', 'cos', 'acos', 'cosh', 'acosh', 'tan',
+                         'atan', 'tanh', 'atanh', 'ln', 'pwr']

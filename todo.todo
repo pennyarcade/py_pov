@@ -1,152 +1,54 @@
-
-grep -Hirn 'todo' . >> todo.todo (13.05.2013):
-    ✔ ./runtest.py:20:                                         @TODO: Make custom Exception(s) for PoV SDL syntax errors @done (13-05-14 08:46)
-    Assert statements to replace:
-        ✔ pov/global_settings/AssumedGamma.py:30:        assert type(value) == float @done (13-05-13 13:03)
-        ✔ pov/finite_solid/Cone.py:42:        assert isinstance(basepoint, Vector) @done (13-05-13 13:15)
-        ✔ pov/finite_solid/Cone.py:43:        assert len(basepoint.v) == 3 @done (13-05-13 13:15)
-        ✔ pov/finite_solid/Cone.py:44:        assert type(baseradius) in (int, float) @done (13-05-13 13:15)
-        ✔ pov/finite_solid/Cone.py:45:        assert isinstance(cappoint, Vector) @done (13-05-13 13:15)
-        ✔ pov/finite_solid/Cone.py:46:        assert len(cappoint.v) == 3 @done (13-05-13 13:15)
-        ✔ pov/finite_solid/Cone.py:47:        assert type(capradius) in (int, float) @done (13-05-13 13:15)
-        ✔ pov/finite_solid/Cone.py:50:            assert isinstance(opts[i], ObjectModifier) @done (13-05-13 13:15)
-        ✔ pov/finite_solid/Cone.py:52:            assert key in ['open'] @done (13-05-13 13:15)
-        ✔ pov/finite_solid/Cone.py:53:            assert type(val) == bool @done (13-05-13 13:15)
-        ✔ pov/finite_solid/Cylinder.py:38:        assert isinstance(basepoint, Vector) @done (13-05-13 13:20)
-        ✔ pov/finite_solid/Cylinder.py:39:        assert len(basepoint.v) == 3 @done (13-05-13 13:20)
-        ✔ pov/finite_solid/Cylinder.py:40:        assert isinstance(cappoint, Vector) @done (13-05-13 13:20)
-        ✔ pov/finite_solid/Cylinder.py:41:        assert len(cappoint.v) == 3 @done (13-05-13 13:20)
-        ✔ pov/finite_solid/Cylinder.py:42:        assert type(radius) in (int, float) @done (13-05-13 13:20)
-        ✔ pov/finite_solid/Cylinder.py:45:            assert isinstance(opts[i], ObjectModifier) @done (13-05-13 13:20)
-        ✔ pov/finite_solid/Cylinder.py:47:            assert key in ['open'] @done (13-05-13 13:20)
-        ✔ pov/finite_solid/Cylinder.py:48:            assert type(val) == bool @done (13-05-13 13:20)
-        ✔ pov/finite_solid/Box.py:38:        assert isinstance(v1, Vector) @done (13-05-13 13:27)
-        ✔ pov/finite_solid/Box.py:39:        assert len(v1.v) == 3 @done (13-05-13 13:27)
-        ✔ pov/finite_solid/Box.py:40:        assert isinstance(v2, Vector) @done (13-05-13 13:27)
-        ✔ pov/finite_solid/Box.py:41:        assert len(v2.v) == 3 @done (13-05-13 13:27)
-        ✔ pov/finite_solid/Box.py:44:            assert isinstance(opts[i], ObjectModifier) @done (13-05-13 13:27)
-        ✔ pov/texture/Diffuse.py:33:        assert type(diffusion) == float @done (13-05-13 13:53)
-        ✔ pov/texture/Diffuse.py:34:        assert 0 < diffusion < 1 @done (13-05-13 13:53)
-        ✔ pov/texture/Ambient.py:34:        assert type(ambient) == float @done (13-05-13 19:56)
-        ✔ pov/language_directive/Version.py:32:        assert type(version) == float @done (13-05-13 19:57)
-        ✔ pov/basic/SceneItem.py:79:        assert indentation >= 0 @done (13-05-13 20:01)
-        ✔ pov/basic/SceneItem.py:166:        assert isinstance(other, SceneItem) @done (13-05-13 20:02)
-        ✔ pov/basic/SceneFile.py:39:        assert type(fnam) == str @done (13-05-14 08:43)
-        ✔ pov/basic/SceneFile.py:62:        assert isinstance(item, SceneItem) @done (13-05-14 08:43)
-        ✔ pov/basic/Vector.py:46:        assert type(other) in (float, int) @done (13-05-14 08:46)
-        ✔ pov/basic/Vector.py:51:        assert type(other) in (float, int) @done (13-05-14 08:46)
-        ✔ pov/basic/Vector.py:55:        assert type(other) in (float, int) @done (13-05-14 08:46)
-        ✔ pov/basic/Vector.py:59:        assert isinstance(other, Vector) @done (13-05-14 08:46)
-        ✔ pov/basic/Vector.py:63:        assert isinstance(other, Vector) @done (13-05-14 08:46)
-        ✔ pov/basic/Vector.py:87:        assert isinstance(other, Vector) @done (13-05-14 08:46)
-    ☐ ./pov/finite_solid/HeightField.py:37:            @TODO: Param Apidoc
-    ☐ ./pov/finite_solid/HeightField.py:38:            @TODO: Syntax Checking
-    ✔ ./pov/finite_solid/Cone.py:48:                     @TODO: Make sure only valid Object Modifiers are passed @done (13-05-13 13:28)
-    ☐ ./pov/finite_solid/JuliaFractal.py:42:            @TODO: Param Apidoc
-    ☐ ./pov/finite_solid/JuliaFractal.py:43:            @TODO: Param Syntax checking
-    ✔ ./pov/finite_solid/Cylinder.py:43:                @TODO: Make sure only valid Object Modifiers are passed @done (13-05-13 13:27)
-    ☐ ./pov/finite_solid/Blob.py:36:                      @TODO: constructor apidoc
-    ☐ ./pov/finite_solid/Blob.py:38:                      @TODO: Syntax Checking
-    ✔ ./pov/finite_solid/Box.py:42:                       @TODO: make sure only valid object modifiers are passed @done (13-05-13 13:27)
-    ☐ ./pov/texture/FinishItem.py:42:                  @TODO: constructor apidoc
-    ☐ ./pov/texture/FinishItem.py:43:                  @TODO: Syntax checking
-    ☐ ./pov/texture/Ambient.py:31:                     @TODO: make color vectors possible
-    ☐ ./pov/texture/Finish.py:42:                         @TODO: constructor apidoc
-    ☐ ./pov/texture/Finish.py:43:                         @TODO: Syntax checking
-    ☐ ./pov/language_directive/Default.py:30:      @TODO: constructor apidoc
-    ☐ ./pov/language_directive/Default.py:31:      @TODO: Syntax checking
-    ☐ ./pov/language_directive/Include.py:32:      @TODO: assert that filename points o a real file
-    ☐ ./pov/basic/SceneFile.py:68:                      @TODO: There should be no more type/syntax checking hereÜbereinstimmungen in Binärdatei pov/finite_solid/Blob.pyc.
-
-
-grep -Hirn 'todo' . >> todo.todo (14.05.2013):
-    ✔ pov/finite_solid/HeightField.py:37:            @TODO: Param Apidoc @done (13-05-14 09:08)
-    ✔ pov/finite_solid/HeightField.py:38:            @TODO: Syntax Checking @done (13-05-14 09:34)
-    ✔ pov/finite_solid/JuliaFractal.py:42:            @TODO: Param Apidoc @done (13-05-14 13:27)
-    ☐ pov/finite_solid/JuliaFractal.py:43:            @TODO: Param Syntax checking
-    ☐ pov/finite_solid/Blob.py:36:                     @TODO: constructor apidoc
-    ☐ pov/finite_solid/Blob.py:38:                      @TODO: Syntax Checking
-    ☐ pov/texture/FinishItem.py:42:                  @TODO: constructor apidoc
-    ☐ pov/texture/FinishItem.py:43:                  @TODO: Syntax checking
-    ☐ pov/texture/Ambient.py:33:                    @TODO: make color vectors possible
-    ☐ pov/texture/Finish.py:42:                         @TODO: constructor apidoc
-    ☐ pov/texture/Finish.py:43:                          @TODO: Syntax checking
-    ✔ pov/language_directive/Default.py:30:            @TODO: constructor apidoc @done (13-05-14 13:36)
-    ☐ pov/language_directive/Default.py:31:            @TODO: Syntax checking
-    ☐ pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file
-    ☐ pov/basic/SceneFile.py:70:                           @TODO: There should be no more type/syntax checking here
-
-
-grep -Hirn 'todo' . >> todo.todo (16.05.2013):
-    ☐ pov/finite_solid/HeightField.py:40:            @TODO: Check that file really exists
-    ☐ pov/finite_solid/HeightField.py:41:            @TODO: check if file matches given type
-    ☐ pov/finite_solid/HeightField.py:42:            @TODO: make sure superclass constructor gets all params in the right form
-    ☐ pov/finite_solid/HeightField.py:43:            @TODO: test __str__
-    ☐ pov/finite_solid/JuliaFractal.py:46:            @TODO: Param Syntax checking
-    ☐ pov/finite_solid/JuliaFractal.py:47:            @TODO: make sure superclass constructor gets all params in the right form
-    ☐ pov/finite_solid/JuliaFractal.py:48:            @todo test __str__
-    ☐ pov/finite_solid/Blob.py:38:            @TODO: constructor apidoc
-    ☐ pov/finite_solid/Blob.py:39:            @TODO: Syntax Checking
-    ☐ pov/texture/FinishItem.py:43:            @TODO: constructor apidoc
-    ☐ pov/texture/FinishItem.py:44:            @TODO: Syntax checking
-    ☐ pov/texture/Ambient.py:33:            @TODO: make color vectors possible
-    ☐ pov/texture/Finish.py:42:            @TODO: constructor apidoc
-    ☐ pov/texture/Finish.py:43:            @TODO: Syntax checking
-    ☐ pov/language_directive/Default.py:32:            @TODO: Syntax checking
-    ☐ pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file
-    ☐ pov/basic/SceneItem.py:38:            @TODO: move indentation check to own function
-    ☐ pov/basic/SceneItem.py:39:            @TODO: make sure all params are passed through map_arg / flatten before syntax checks
-    ☐ pov/basic/SceneFile.py:70:            TODO: There should be no more type/syntax checking here
-
-
-grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude .git >> todo.todo (22.05.2013):
-    ✔ ./pov/test/EndToEndTest.py:94:        #@todo: transform kw pairs from Objects to keyword params @done (13-05-22 15:28)
-    ✔ ./pov/test/EndToEndTest.py:101:                    #@todo: transform kw pairs from Objects to keyword params @done (13-05-22 15:28)
-    ✔ ./pov/test/EndToEndTest.py:103:                    #@todo: transform kw pairs from Objects to keyword params @done (13-05-22 15:28)
-    ☐ ./pov/test/EndToEndTest.py:115:        #@TODO: Define globaly (Vector Module?)
-    ☐ ./pov/test/EndToEndTest.py:117:        #@TODO: Read from Config
-    ☐ ./pov/test/EndToEndTest.py:119:        #@TODO: Read from Config
-    ✔ ./pov/global_settings/GlobalSettingsItem.py:32:        @Todo: [DEPRECATED] Dependencies and remove Class @done (13-05-22 15:38)
-    ☐ ./pov/global_settings/GlobalSettings.py:44:            @TODO: Param Syntax checking
-    ☐ ./pov/global_settings/GlobalSettings.py:45:            @TODO: make sure superclass constructor gets all params in the right form
-    ☐ ./pov/global_settings/GlobalSettings.py:46:            @todo test __str__
+grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git > todo.todo (28.05.2013):
+    ✔ ./pov/test/EndToEndTest.py:114:        #@TODO: Define globaly (Vector Module?) @done (13-05-28 09:21)
+    ☐ ./pov/test/EndToEndTest.py:116:        #@TODO: Read from Config
+    ☐ ./pov/test/EndToEndTest.py:118:        #@TODO: Read from Config
+    ☐ ./pov/test/EndToEndTest.py:141:                            #@Todo: How to implement params??
+    ✔ ./pov/global_settings/GlobalSettings.py:46:            @TODO: Param Syntax checking @done (13-05-28 09:23)
+    ✔ ./pov/global_settings/GlobalSettings.py:47:            @TODO: make sure superclass constructor gets all params in the right form @done (13-05-28 09:25)
+    ☐ ./pov/global_settings/GlobalSettings.py:48:            @todo test __str__
+    ☐ ./pov/global_settings/GlobalSettings.py:57:            @Todo: generalize checks
     ☐ ./pov/global_settings/Radiosity.py:19:        @Todo: Apidoc
     ☐ ./pov/global_settings/Radiosity.py:20:        @Todo: Implement
     ☐ ./pov/global_settings/Photons.py:19:        @Todo: Apidoc
     ☐ ./pov/global_settings/Photons.py:20:        @Todo: Implement
-    ✔ ./pov/global_settings/AssumedGamma.py:22:        @Todo: [DEPRECATED] Move to KW Param and remove Class @done (13-05-23 08:31)
-    ☐ ./pov/finite_solid/HeightField.py:40:            @TODO: Check that file really exists
-    ☐ ./pov/finite_solid/HeightField.py:41:            @TODO: check if file matches given type
-    ☐ ./pov/finite_solid/HeightField.py:42:            @TODO: make sure superclass constructor gets all params in the right form
-    ☐ ./pov/finite_solid/HeightField.py:43:            @TODO: test __str__
-    ☐ ./pov/finite_solid/JuliaFractal.py:48:            @TODO: Param Syntax checking
-    ☐ ./pov/finite_solid/JuliaFractal.py:49:            @TODO: make sure superclass constructor gets all params in the right form
+    ☐ ./pov/finite_solid/HeightField.py:42:            @TODO: Check that file really exists
+    ☐ ./pov/finite_solid/HeightField.py:43:            @TODO: check if file matches given type
+    ☐ ./pov/finite_solid/HeightField.py:44:            @TODO: make sure superclass constructor gets all params in the right form
+    ☐ ./pov/finite_solid/HeightField.py:45:            @TODO: test __str__
+    ✔ ./pov/finite_solid/JuliaFractal.py:48:            @TODO: Param Syntax checking @done (13-05-28 09:28)
+    ✔ ./pov/finite_solid/JuliaFractal.py:49:            @TODO: make sure superclass constructor gets all params in the right form @done (13-05-28 09:28)
     ☐ ./pov/finite_solid/JuliaFractal.py:50:            @todo test __str__
-    ✔ ./pov/finite_solid/Blob.py:38:            @TODO: constructor apidoc @done (13-05-23 08:33)
-    ☐ ./pov/finite_solid/Blob.py:39:            @TODO: Syntax Checking
-    ✔ ./pov/texture/FinishItem.py:38:        @Todo: [DEPRECATED] Move to KW Param and remove Class @done (13-05-22 15:38)
-    ✔ ./pov/texture/FinishItem.py:45:            @TODO: constructor apidoc @done (13-05-22 15:38)
-    ✔ ./pov/texture/FinishItem.py:46:            @TODO: Syntax checking @done (13-05-22 15:39)
-    ✔ ./pov/texture/Diffuse.py:25:        @Todo: [DEPRECATED] Move to KW Param and remove Class @done (13-05-22 15:39)
-    ✔ ./pov/texture/Ambient.py:25:        @Todo: [DEPRECATED] Move to KW Param and remove Class @done (13-05-22 15:39)
-    ✔ ./pov/texture/Ambient.py:35:            @TODO: make color vectors possible @done (13-05-22 15:39)
-    ✔ ./pov/texture/Finish.py:42:            @TODO: constructor apidoc @done (13-05-23 08:37)
+    ✔ ./pov/finite_solid/JuliaFractal.py:53:        # @todo: move to _check_arguments() @done (13-05-28 11:21)
+    ✔ ./pov/finite_solid/JuliaFractal.py:71:            @Todo: generalize @done (13-05-28 12:28)
+    ☐ ./pov/finite_solid/JuliaFractal.py:72:            @Todo: get rid of Object Modifier superclass
+    ✔ ./pov/finite_solid/JuliaFractal.py:73:            @todo: most Object Modifiers should be kwargs @done (13-05-28 12:42)
+    ☐ ./pov/finite_solid/Blob.py:38:            @TODO: Syntax Checking
+    ✔ ./pov/finite_solid/Box.py:37:            @TODO: Add Syntax check: There are no valid kwargs @done (13-05-28 14:35)
     ☐ ./pov/texture/Finish.py:43:            @TODO: Syntax checking
+    ☐ ./pov/language_directive/Version.py:33:            @todo: How to refactor this into _check_args()??
     ☐ ./pov/language_directive/Default.py:33:            @TODO: Syntax checking
-    ✔ ./pov/language_directive/Default.py:39:          @TODO: Apidoc @done (13-05-23 08:38)
     ☐ ./pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file
-    ☐ ./pov/basic/SceneItem.py:38:            @TODO: move indentation check to own functioni
-    ☐ ./pov/basic/SceneItem.py:39:            @TODO: make sure all params are passed through map_arg / flatten before syntax checks
+    ☐ ./pov/language_directive/LanguageDirective.py:37:        @Todo: Is this superclass deprecated?
+    ☐ ./pov/basic/SceneItem.py:138:            @TODO: move indentation check to own function
+    ☐ ./pov/basic/SceneItem.py:148:        #@todo: Does indentation really have to stay in the constructor??
+    ✘ ./pov/basic/SceneItem.py:311:            @todo: typecheck param @cancelled (13-05-28 12:45)
+    ✘ ./pov/basic/SceneItem.py:321:            @todo: typecheck param @cancelled (13-05-28 12:45)
     ☐ ./pov/basic/SceneFile.py:20:        @Todo: Proper Apidoc
     ☐ ./pov/basic/SceneFile.py:21:        @Todo: Add param for PovRay Ini file
     ☐ ./pov/basic/SceneFile.py:40:            @Todo: check if file is writeable?
-    ☐ ./pov/basic/SceneFile.py:56:            @Todo: Apidoc
-    ☐ ./pov/basic/SceneFile.py:69:            @Todo: Apidoc
-    ☐ ./pov/basic/SceneFile.py:70:            @Todo: Make multiple items possible?
+    ✔ ./pov/basic/SceneFile.py:56:            @Todo: Apidoc @done (13-05-28 12:49)
+    ✔ ./pov/basic/SceneFile.py:69:            @Todo: Apidoc @done (13-05-28 12:48)
+    ✔ ./pov/basic/SceneFile.py:70:            @Todo: Make multiple items possible? @done (13-05-28 14:56)
     ☐ ./pov/basic/SceneFile.py:81:            @TODO: There should be no more type/syntax checking here
     ☐ ./pov/basic/SceneFile.py:82:            @Todo: Write to file code
-    ☐ ./pov/other/Camera.py:56:            @TODO: Param Syntax checking
-    ☐ ./pov/other/Camera.py:57:            @TODO: make sure superclass constructor gets all params in the right form
-    ☐ ./pov/other/Camera.py:58:            @todo test __str__
-    ☐ ./pov/other/Camera.py:59:            @todo: add transformations
-    ☐ ./pov/other/Camera.py:60:            @Todo: are there any valid options at all?
+    ☐ ./pov/other/Camera.py:52:            @TODO: Param Syntax checking
+    ☐ ./pov/other/Camera.py:53:            @todo test __str__
+    ☐ ./pov/other/Camera.py:54:            @todo: add transformations
+    ☐ ./pov/other/Camera.py:55:            @Todo: are there any valid options at all?
+    ☐ pov.basic.SceneFile                           25      1    96%   43
+    ☐ pov.basic.SceneItem                          137     10    93%   184, 266-271, 314, 323-325, 377
+    ☐ pov.basic.Vector                              61      5    92%   54, 59, 64, 69, 94
+    ☐ pov.finite_solid.Cone                         28      4    86%   44, 46, 50, 52
+    ☐ pov.finite_solid.Cylinder                     26      6    77%   42, 44, 46, 48, 50, 55
+    ☐ pov.global_settings.GlobalSettings            15      2    87%   58-59
+    ✔ pov.other.Camera                               8      3    63%   63-81 @done (13-05-28 13:07)

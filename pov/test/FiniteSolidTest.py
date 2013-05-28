@@ -12,6 +12,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 import os
 import unittest
+import traceback
 
 from pov.other.SdlSyntaxException import SdlSyntaxException
 from pov.basic.Vector import Vector
@@ -27,6 +28,22 @@ from pov.finite_solid.JuliaFractal import JuliaFractal
 
 
 class BlobTestCase(unittest.TestCase):
+    '''
+        BLOB:
+            blob { BLOB_ITEM... [BLOB_MODIFIERS...]}
+        BLOB_ITEM:
+            sphere{<Center>, Radius,
+                   [ strength ] Strength[COMPONENT_MODIFIER...] } |
+            cylinder{<End1>, <End2>, Radius,
+                     [ strength ] Strength [COMPONENT_MODIFIER...] } |
+            component Strength, Radius, <Center> |
+            threshold Amount
+        COMPONENT_MODIFIER:
+            TEXTURE | PIGMENT | NORMAL | FINISH | TRANSFORMATION
+        BLOB_MODIFIER:
+            hierarchy [Boolean] | sturm [Boolean] | OBJECT_MODIFIER
+    '''
+
     def setUp(self):
         self.SUT = Blob()
 
@@ -41,6 +58,100 @@ class BlobTestCase(unittest.TestCase):
 
 
 class BoxTestCase(unittest.TestCase):
+    '''
+        BOX:
+            box
+            {
+                <Corner_1>, <Corner_2>
+                [OBJECT_MODIFIERS...]
+            }
+
+        OBJECT_MODIFIERS:
+            [OBJECT_PHOTONS] |
+            [CLIPPED_BY] |
+            [BOUNDED_BY] |
+            [MATERIAL] |
+            [INTERIOR] |
+            [INTERIOR_TEXTURE] |
+            [TEXTURE] |
+            [PIGMENT] |
+            [NORMAL] |
+            [FINISH] |
+            [TRANSFORMATION...] |
+
+            [no_shadow] |
+            [no_image[BOOL]] |
+            [no_reflection{BOOL]] |
+            [inverse] |
+            [double_illuminate[BOOL]] |
+            [hollow [BOOL]]
+
+        OBJECT_PHOTONS:
+            photons { OBJECT_PHOTON_ITEMS }
+
+        CLIPPED_BY:
+            clipped_by { UNTEXTURED_SOLID_OBJECT... } |
+            clipped_by { bounded_by }
+
+        MATERIAL:
+            material { [MATERIAL_IDENTIFIER] [MATERIAL_ITEM ...] }
+
+        INTERIOR:
+            interior { [INTERIOR_IDENTIFIER] [INTERIOR_ITEMS] }
+
+        INTERIOR_TEXTURE:
+            interior_texture { TEXTURE_BODY }
+
+        TEXTURE:
+            texture { TEXTURE_BODY }
+
+        PIGMENT:
+            pigment { PIGMENT_BODY }
+
+        NORMAL:
+            normal { NORMAL_BODY }
+
+        FINISH:
+            finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }
+
+        TRANSFORMATION:
+            rotate VECTOR | scale VECTOR | translate VECTOR | TRANSFORM | MATRIX
+            TRANSFORM:
+            transform TRANSFORM_IDENTIFIER | transform { [TRANSFORM_ITEM...] }
+
+        MATRIX:
+            matrix < F_VAL00, F_VAL01, F_VAL02,
+                     F_VAL10, F_VAL11, F_VAL12,
+                     F_VAL20, F_VAL21, F_VAL22,
+                     F_VAL30, F_VAL31, F_VAL32 >
+
+        Rules to Check:
+            @ToDo: KwArg: 0..1 no_shadow Bool
+            @ToDo: KwArg: 0..1 no_image Bool
+            @ToDo: KwArg: 0..1 no_reflection BOOL
+            @ToDo: KwArg: 0..1 inverse bool
+            @ToDo: KwArg: 0..1 double_illuminate bool
+            @ToDo: KwArg: 0..1 hollow bool
+            @ToDo: KwArg: 0..1 rotate Vector 3D
+            @ToDo: KwArg: 0..1 scale Vector 3D
+            @ToDo: KwArg: 0..1 translate Vector 3D
+            @ToDo: KwArg: 0..1 matrix Vector 12D
+
+            @ToDo: Option: 0..1 Photon object
+            @ToDo: Option: 0..1 clipped_by object
+            @ToDo: Option: 0..1 material object
+            @ToDo: Option: 0..1 interior object
+            @ToDo: Option: 0..1 interior_texture object
+            @ToDo: Option: 0..1 texture object
+            @ToDo: Option: 0..1 pigment object
+            @ToDo: Option: 0..1 normal object
+            @ToDo: Option: 0..1 finish object
+
+            @ToDo: Option: 0..1 transform object
+            @ToDo: KwArg: 0..1 transform string; existing identifier; transform object
+            @ToDo: only one "transform"
+    '''
+
     def setUp(self):
         self.SUT = Box(Vector(1, 2, 3), Vector(4, 5, 6))
 
@@ -74,7 +185,8 @@ class BoxTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -88,7 +200,8 @@ class BoxTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -102,7 +215,8 @@ class BoxTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -116,11 +230,12 @@ class BoxTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
-    def test_create_option_wrong_length(self):
+    def test_create_option_wrong_type(self):
         try:
             self.SUT = Box(
                 Vector(1, 2, 3),
@@ -130,7 +245,8 @@ class BoxTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -184,7 +300,8 @@ class ConeTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -201,7 +318,8 @@ class ConeTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -218,7 +336,8 @@ class ConeTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -235,7 +354,8 @@ class ConeTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -252,7 +372,8 @@ class ConeTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -303,7 +424,8 @@ class CylinderTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -319,7 +441,8 @@ class CylinderTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -338,7 +461,8 @@ class HeightFieldTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -348,7 +472,8 @@ class HeightFieldTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -358,7 +483,8 @@ class HeightFieldTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -368,7 +494,8 @@ class HeightFieldTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -378,7 +505,8 @@ class HeightFieldTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -388,7 +516,8 @@ class HeightFieldTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -398,7 +527,8 @@ class HeightFieldTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -408,7 +538,8 @@ class HeightFieldTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -427,7 +558,8 @@ class JuliaFractalTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -437,7 +569,8 @@ class JuliaFractalTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -447,7 +580,8 @@ class JuliaFractalTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -457,6 +591,7 @@ class JuliaFractalTestCase(unittest.TestCase):
         except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')

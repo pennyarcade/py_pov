@@ -35,4 +35,9 @@ class ObjectModifier(SceneItem):
             [inverse] |
             [double_illuminate[BOOL]] |
             [hollow [BOOL]]
+
+        OBJECT_PHOTONS:
+            photons { OBJECT_PHOTON_ITEMS }
+
+
     """

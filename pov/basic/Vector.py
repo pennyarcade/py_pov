@@ -96,3 +96,8 @@ class Vector:
         for i in range(len(self.v)):
             r += self.v[i]*other.v[i]
         return r
+
+# Predefine basic vectors
+x = Vector(1.0, 0.0, 0.0)
+y = Vector(0.0, 1.0, 0.0)
+z = Vector(0.0, 0.0, 1.0)

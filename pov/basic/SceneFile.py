@@ -16,7 +16,8 @@ from SceneItem import *
 
 class SceneFile(object):
     """
-    POV-Ray scene file object.
+        POV-Ray scene file object.
+
         @Todo: Proper Apidoc
         @Todo: Add param for PovRay Ini file
 
@@ -53,31 +54,33 @@ class SceneFile(object):
 
     def __str__(self):
         '''
-            @Todo: Apidoc
+            Return PoV source code for complete scene file
         '''
         code = ''
 
         for i in self.items:
             code += str(i)
 
-        info ('SceneFile.str(): ' + code)
+        info('SceneFile.str(): ' + code)
 
         return code
 
-    def append(self, item):
+    def append(self, *items):
         '''
-            @Todo: Apidoc
-            @Todo: Make multiple items possible?
-            @Dodo: "Skwawk!"
+            Append Scene Item(s) to Scene Filename
         '''
-        #each item has to be derived of SceneItem
-        if not isinstance(item, SceneItem):
-            raise TypeError('Only SceneItems allowed')
-        self.items.append(item)
+        for i in items:
+            # each item has to be derived of SceneItem
+            if not isinstance(i, SceneItem):
+                raise SdlSyntaxException('Item is expectet to be a SceneItem object but got %s: ' %
+                                         (i.__class__.__name__))
+
+            self.items.append(i)
 
     def write(self):
         """
             Write commands into scene file.
+
             @TODO: There should be no more type/syntax checking here
             @Todo: Write to file code
         """

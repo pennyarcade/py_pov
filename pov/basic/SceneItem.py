@@ -13,6 +13,7 @@ from __future__ import nested_scopes
 import os
 from logging import *
 from Vector import Vector
+from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class SceneItem(object):
@@ -144,13 +145,13 @@ class SceneItem(object):
         self._format_opts(opts)
         self._format_kwargs(kwargs)
 
-        #@todo: Does indentation really have to stay in the constructor??
+        # @todo: Does indentation really have to stay in the constructor??
         if not "indentation" in globals():
             global indentation
             indentation = 0
             debug("set initial indentation to 0")
 
-        #Call syntax check methods
+        # Call syntax check methods
         self._check_arguments()
         self._check_opts()
         self._check_kwargs()
@@ -251,6 +252,46 @@ class SceneItem(object):
         '''
         pass
 
+    def _validate_args(self, valid_args):
+        '''
+            Typecheck mandatory args agains given lost
+        '''
+        # args validation against objects list
+        for i in range(len(self.args)):
+            # type of  arguments
+            if not self.args[i].__class__.__name__ == valid_args[i]:
+                raise SdlSyntaxException('Value of Argument %s is expectet to be type %s but got %s: ' %
+                                         (i, valid_args[i], self.args[i].__class__.__name__))
+
+    def _validate_opts(self, valid_opts):
+        '''
+            Typecheck Keywords agains givien dictionary
+        '''
+        # make sure only valid object modifiers are passed
+        for i in range(len(self.opts)):
+            if not self.opts[i].__class__.__name__ in valid_opts:
+                raise SdlSyntaxException('Invalid option type %s not in allowed opts \n%s' %
+                                         (self.opts[i].__class__.__name__, valid_opts))
+
+    def _validate_kwargs(self, valid_kw):
+        '''
+            Typecheck Keywords agains givien dictionary
+        '''
+        # kwargs validation against objects dictionary
+        for key, val in self.kwargs.items():
+            # kwargs validation against global list
+            if not self._is_valid_keyword(key):
+                raise SdlSyntaxException('No such Keyword: ' + str(key))
+
+            # allowed keywords
+            if not key in valid_kw:
+                raise SdlSyntaxException('Keyword %s not allowed for object %s: ' %
+                                         (self.__class__.__name, key))
+            # type of kw arguments
+            if not val.__class__.__name__ == valid_kw[key]:
+                raise SdlSyntaxException('Value of KW Argument %s is expectet to be type %s but got %s: ' %
+                                         (key, self.valid_kw[key], val.__class__.__name__))
+
     def _format_args(self, args):
         '''
             format argument parameters
@@ -287,22 +328,18 @@ class SceneItem(object):
     def _is_valid_keyword(self, name):
         '''
             Test if keyword is Valid
-
-            @todo: typecheck param
         '''
         if name in self.__reserved_keywords:
-            return true
-        return false
+            return True
+        return False
 
     def _is_valid_identifier(self, name):
         '''
             Test if name is not a keyword
-
-            @todo: typecheck param
         '''
         if name not in self.__reserved_keywords:
-            return true
-        return false
+            return True
+        return False
 
     #---------------------------------------------------------------------------
     # Overloading magic methods

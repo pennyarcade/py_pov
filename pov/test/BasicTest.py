@@ -14,8 +14,7 @@ Unittests for basic classes
 
 import os
 import unittest
-#import difflib
-#import copy
+import traceback
 from logging import *
 from pov.basic.SceneItem import SceneItem
 from pov.basic.Vector import Vector
@@ -138,7 +137,7 @@ class SceneItemTestCase(unittest.TestCase):
         self.assertEqual(self.SUT._block_end(), os.linesep)
 
     def test_setitemReplacesOpt(self):
-        self.SUT = SceneItem('foo', [1, 2, 3], [4, 5, 6], {'bar':7})
+        self.SUT = SceneItem('foo', [1, 2, 3], [4, 5, 6], {'bar': 7})
 
         #before
         self.assertEqual(self.SUT.args, [1, 2, 3])
@@ -232,7 +231,8 @@ class VectorTestCase(unittest.TestCase):
             if not str(e) == 'Parameter not of type float or int':
                 self.fail('SdlSyntaxException with wrong message: %s' % str(e))
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
 
@@ -258,12 +258,13 @@ class SceneFileTestCase(unittest.TestCase):
     def test_appendWrongType(self):
         try:
             self.SUT.append('foo')
-        except TypeError:
+        except SdlSyntaxException:
             pass
         except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
         else:
-            self.fail('ExpectedException not thrown')
+            self.fail('Expected exception not thrown')
 
     def test_toString(self):
         le = os.linesep

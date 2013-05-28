@@ -10,10 +10,21 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-import os
+#import os
 import unittest
-import difflib
+#import difflib
 #import copy
+#import traceback
 from logging import *
 
+from pov.basic.SceneItem import *
+from pov.other.Camera import *
 
+
+class CameraTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = Camera()
+
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, Camera)
+        self.assertIsInstance(self.SUT, SceneItem)
