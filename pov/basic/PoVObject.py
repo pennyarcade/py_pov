@@ -15,7 +15,7 @@ from pov.basic.SceneItem import *
 from pov.basic.Vector import *
 
 
-class PoVObject(BlockObject, SceneItem):
+class PoVObject(BlockObject):
     """
         OBJECT:
             FINITE_SOLID_OBJECT | FINITE_PATCH_OBJECT |

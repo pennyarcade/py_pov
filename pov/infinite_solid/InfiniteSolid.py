@@ -11,10 +11,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from pov.basic.PoVObject import *
+from pov.basic.BlockObject import BlockObject
 
 
-class InfiniteSolid(PoVObject):
+class InfiniteSolid(BlockObject):
     """
         INFINITE_SOLID_OBJECT:
             PLANE | POLY | CUBIC | QUARTIC | QUADRIC

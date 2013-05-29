@@ -10,11 +10,11 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+from pov.basic.BlockObject import BlockObject
 from pov.other.SdlSyntaxException import SdlSyntaxException
-from FiniteSolid import FiniteSolid
 
 
-class JuliaFractal(FiniteSolid):
+class JuliaFractal(BlockObject):
     '''
         JULIA_FRACTAL:
             julia_fractal

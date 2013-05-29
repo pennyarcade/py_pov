@@ -11,13 +11,13 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from pov.basic.PoVObject import PoVObject
+from pov.basic.BlockObject import BlockObject
 from pov.global_settings.Radiosity import Radiosity
 from pov.global_settings.Photons import Photons
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
-class GlobalSettings(PoVObject):
+class GlobalSettings(BlockObject):
     """
         GLOBAL_SETTINGS:
             global_settings { GLOBAL_SETTING_ITEMS }

@@ -11,10 +11,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 from pov.basic.SceneItem import *
-from pov.basic.PoVObject import *
+from pov.basic.BlockObject import *
 
 
-class FinitePatch(PoVObject):
+class FinitePatch(BlockObject):
     """
         FINITE_PATCH_OBJECT:
             BICUBIC_PATCH | DISC | MESH | MESH2 | POLYGON | TRIANGLE |

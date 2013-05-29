@@ -11,10 +11,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from pov.basic.PoVObject import *
+from pov.basic.BlockObject import *
 
 
-class IsoSurface(PoVObject):
+class IsoSurface(BlockObject):
     """
         ISOSURFACE_OBJECT:
             ISOSURFACE

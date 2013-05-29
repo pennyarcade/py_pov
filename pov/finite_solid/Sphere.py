@@ -10,11 +10,11 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from FiniteSolid import *
-from pov.basic.Vector import *
+from pov.basic.BlockObject import BlockObject
+from pov.basic.Vector import Vector
 
 
-class Sphere(FiniteSolid):
+class Sphere(BlockObject):
     '''
         SPHERE:
             sphere
@@ -24,3 +24,8 @@ class Sphere(FiniteSolid):
             }
     '''
 
+    def __init__(self, center, radius, *opts, **kwargs):
+        '''
+            Create Sphere object
+        '''
+        super(Sphere, self).__init__('sphere', [center, radius], opts, kwargs)

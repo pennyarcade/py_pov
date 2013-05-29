@@ -19,7 +19,7 @@ from logging import *
 from pov.basic.SceneItem import SceneItem
 from pov.basic.Vector import Vector
 from pov.basic.SceneFile import SceneFile
-from pov.basic.PoVObject import PoVObject
+from pov.basic.BlockObject import BlockObject
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
@@ -274,9 +274,9 @@ class SceneFileTestCase(unittest.TestCase):
         second += '}' + le
 
 
-class PoVObjectTestCase(unittest.TestCase):
+class BlockObjectTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = PoVObject("foo", [1, 2, 3], [4, 5, 6], {'bar':7})
+        self.SUT = BlockObject("foo", [1, 2, 3], [4, 5, 6], {'bar':7})
 
     def test_toString(self):
         le = os.linesep
@@ -292,7 +292,7 @@ class PoVObjectTestCase(unittest.TestCase):
         self.assertEqual(first, second)
 
     def test_toString_with_object_option(self):
-        self.SUT[4] = PoVObject('bar')
+        self.SUT[4] = BlockObject('bar')
 
         le = os.linesep
         first = str(self.SUT)
@@ -308,7 +308,7 @@ class PoVObjectTestCase(unittest.TestCase):
         self.assertEqual(first, second)
 
     def test_toString_with_indent(self):
-        self.SUT= PoVObject('bar')
+        self.SUT= BlockObject('bar')
 
         self.SUT._indent()
         first = str(self.SUT)

@@ -16,16 +16,7 @@ import unittest
 #import copy
 from logging import *
 
-from pov.atmeff.AthEff import AthEff
 from pov.basic.SceneItem import SceneItem
 
 
-class AthEffTestCase(unittest.TestCase):
-    def setUp(self):
-        self.SUT = AthEff('foo')
-        pass
 
-    #@unittest.skip
-    def test_creation(self):
-        self.assertIsInstance(self.SUT, AthEff)
-        self.assertIsInstance(self.SUT, SceneItem)

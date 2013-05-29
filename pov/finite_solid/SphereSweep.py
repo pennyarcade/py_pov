@@ -10,11 +10,11 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from FiniteSolid import *
-from pov.basic.Vector import *
+from pov.basic.BlockObject import BlockObject
+from pov.basic.Vector import Vector
 
 
-class SphereSweep(FiniteSolid):
+class SphereSweep(BlockObject):
     '''
         SPHERE_SWEEP:
             sphere_sweep {

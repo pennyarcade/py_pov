@@ -35,6 +35,31 @@ class Color(PoVObject):
             [red FLOAT] & [green FLOAT] & [blue FLOAT] & [filter FLOAT] & [transmit FLOAT]
     '''
 
+    def __init__(self, *opts, **kwargs):
+        '''
+            Create Color object
+        '''
+        super(Color, self).__init__('color', [], opts, kwargs)
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+        '''
+
+        valid_kw = {
+            'rgb':  'Vector',
+            'rgbf': 'Vector',
+            'rgbt': 'Vector',
+            'rgbft': 'Vector',
+            'red': 'float',
+            'green': 'float',
+            'blue': 'float',
+            'filter': 'float',
+            'transmit': 'float'
+        }
+
+        self._validate_kwargs(valid_kw)
+
 #-------------------------------------------------------------------
 # Color Definitions
 #-------------------------------------------------------------------

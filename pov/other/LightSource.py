@@ -11,11 +11,11 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from pov.basic.PoVObject import PoVObject
+from pov.basic.BlockObject import BlockObject
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
-class LightSource(PoVObject):
+class LightSource(BlockObject):
     '''
         LIGHT:
             LIGHT_SOURCE | LIGHT_GROUP
@@ -52,6 +52,6 @@ class LightSource(PoVObject):
 
     def __init__(self, location, *opts, **kwargs):
         '''
-            Create camera object
+            Create light source object
         '''
         super(LightSource, self).__init__('light_source', [location], opts, kwargs)

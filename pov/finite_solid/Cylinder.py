@@ -10,13 +10,13 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from FiniteSolid import FiniteSolid
+from pov.basic.BlockObject import BlockObject
 from pov.basic.Vector import Vector
 from pov.object_modifier.ObjectModifier import ObjectModifier
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
-class Cylinder(FiniteSolid):
+class Cylinder(BlockObject):
     """
        CYLINDER:
             cylinder

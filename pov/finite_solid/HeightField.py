@@ -10,13 +10,12 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from pov.other import SdlSyntaxException
-from pov.object_modifier.ObjectModifier import *
-from FiniteSolid import *
-from pov.basic.Vector import *
+from pov.basic.BlockObject import BlockObject
+from pov.basic.Vector import Vector
+from pov.other.SdlSyntaxException import SdlSyntaxException
+from pov.object_modifier.ObjectModifier import ObjectModifier
 
-
-class HeightField(FiniteSolid):
+class HeightField(BlockObject):
     '''
         HEIGHT_FIELD:
             height_field{

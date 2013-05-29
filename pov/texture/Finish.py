@@ -11,10 +11,9 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 from pov.basic.BlockObject import BlockObject
-from pov.basic.SceneItem import SceneItem
 
 
-class Finish(BlockObject, SceneItem):
+class Finish(BlockObject):
     """
         FINISH:
             finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }

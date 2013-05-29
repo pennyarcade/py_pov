@@ -11,10 +11,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from pov.basic.PoVObject import *
+from pov.basic.BlockObject import *
 
 
-class Csg(PoVObject):
+class Csg(BlockObject):
     """
         CSG_OBJECT:
             UNION | INTERSECTION | DIFFERENCE | MERGE

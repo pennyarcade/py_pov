@@ -11,10 +11,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from pov.basic.PoVObject import *
+from pov.basic.BlockObject import *
 
 
-class Object(PoVObject):
+class Object(BlockObject):
     """
          object {
            OBJECT_IDENTIFIER | OBJECT {}

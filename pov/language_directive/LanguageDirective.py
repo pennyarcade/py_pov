@@ -11,7 +11,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 from logging import *
-from pov.basic.SceneItem import *
+from pov.basic.SceneItem import SceneItem
 
 
 class LanguageDirective(SceneItem):
