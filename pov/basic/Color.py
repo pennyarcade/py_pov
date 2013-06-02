@@ -10,12 +10,12 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-
-from pov.basic.PoVObject import PoVObject
+import os
+from pov.basic.SceneItem import SceneItem
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
-class Color(PoVObject):
+class Color(SceneItem):
     '''
         Color Expressions
 
@@ -40,6 +40,16 @@ class Color(PoVObject):
             Create Color object
         '''
         super(Color, self).__init__('color', [], opts, kwargs)
+
+    def __str__(self):
+        code = ''
+
+        for key, val in self.kwargs.items():
+            code += key + ' ' + str(val) + ' '
+
+        code += os.linesep
+
+        return code
 
     def _check_kwargs(self):
         '''

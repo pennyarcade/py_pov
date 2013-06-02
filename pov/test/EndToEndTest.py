@@ -116,7 +116,7 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "  <0.0, 0.0, 0.0>, 0.75" + le
         ref += "  texture {" + le
         ref += "    pigment {" + le
-        ref += "      color rgb <0.9,0.55,0>" + le
+        ref += "      color rgb <0.9, 0.55, 0.0>" + le
         ref += "    }" + le
         ref += "    finish {" + le
         ref += "      phong 1.0" + le
@@ -168,11 +168,11 @@ class EndToEndTestCase(unittest.TestCase):
                 Texture(
                     Pigment(
                         ColorMap({
-                            0.00: Color('rgb', Vector(0.05, 0.15, 0.45)),
-                            0.50: Color('rgb', Vector(0.05, 0.15, 0.45)),
-                            0.70: Color('rgb', Vector(1.0, 1.0, 1.0)),
-                            0.85: Color('rgb', Vector(0.2, 0.2, 0.2)),
-                            1.00: Color('rgb', Vector(0.5, 0.5, 0.5))
+                            0.00: Color(rgb=Vector(0.05, 0.15, 0.45)),
+                            0.50: Color(rgb=Vector(0.05, 0.15, 0.45)),
+                            0.70: Color(rgb=Vector(1.0, 1.0, 1.0)),
+                            0.85: Color(rgb=Vector(0.2, 0.2, 0.2)),
+                            1.00: Color(rgb=Vector(0.5, 0.5, 0.5))
                         }),
                         bozo=True,
                         turbulence=0.92,
@@ -207,7 +207,7 @@ class EndToEndTestCase(unittest.TestCase):
                 0.0,
                 Texture(
                     Pigment(
-                        color=Color(0.22, 0.45, 0.0)
+                        color=Color(rgb=Vector(0.22, 0.45, 0.0))
                     ),
                     Normal(
                         bumps=0.75,
@@ -223,7 +223,7 @@ class EndToEndTestCase(unittest.TestCase):
                 0.75,
                 Texture(
                     Pigment(
-                        color=Color(0.9, 0.55, 0.0)
+                        color=Color(rgb=Vector(0.9, 0.55, 0.0))
                     ),
                     Finish(
                         phong=1.0
