@@ -11,11 +11,11 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from pov.infinite_solid.InfiniteSolid import InfiniteSolid
+from pov.basic.BlockObject import BlockObject
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
-class Plane(InfiniteSolid):
+class Plane(BlockObject):
     '''
         PLANE:
             plane { V_NORMAL, F_DISTANCE [OBJECT_MODIFIERS] }
@@ -26,3 +26,7 @@ class Plane(InfiniteSolid):
             Create plane object
         '''
         super(Plane, self).__init__('plane', [normal, distance], opts, kwargs)
+
+        if 'hollow' in self.kwargs and self.kwargs['hollow'] is True:
+            del self.kwargs['hollow']
+            self.opts.append('hollow')

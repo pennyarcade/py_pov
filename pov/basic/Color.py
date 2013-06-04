@@ -33,6 +33,8 @@ class Color(SceneItem):
 
         COLOR_KEYWORD_ITEMS:
             [red FLOAT] & [green FLOAT] & [blue FLOAT] & [filter FLOAT] & [transmit FLOAT]
+
+        @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
     '''
 
     def __init__(self, *opts, **kwargs):
@@ -41,15 +43,33 @@ class Color(SceneItem):
         '''
         super(Color, self).__init__('color', [], opts, kwargs)
 
+        if 'rgb' in self.kwargs:
+            self.type = 'rgb'
+            self.vector = self.kwargs['rgb']
+        elif 'rgbt' in kwargs:
+            self.type = 'rgbt'
+            self.vector = self.kwargs['rgbt']
+        elif 'rgbf' in kwargs:
+            self.type = 'rgbf'
+            self.vector = self.kwargs['rgbf']
+        elif 'rgbft' in kwargs:
+            self.type = 'rgbft'
+            self.vector = self.kwargs['rgbft']
+        else:
+            # @todo: how to deal with separate color keywords
+            pass
+
     def __str__(self):
         code = ''
 
-        for key, val in self.kwargs.items():
-            code += key + ' ' + str(val) + ' '
-
-        code += os.linesep
+        if self.type in ['rgb', 'rgbt', 'rgbf', 'rgbft']:
+            code += self.type + ' ' + str(self.vector)
 
         return code
+
+    def __mul__(self, other):
+        self.vector *= other
+        return self
 
     def _check_kwargs(self):
         '''

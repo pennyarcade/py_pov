@@ -81,3 +81,7 @@ class Pigment(BlockObject):
             Create Pigment object
         '''
         super(Pigment, self).__init__('pigment', [], opts, kwargs)
+
+        if 'bozo' in self.kwargs and self.kwargs['bozo'] is True:
+            del self.kwargs['bozo']
+            self.opts.append('bozo')
