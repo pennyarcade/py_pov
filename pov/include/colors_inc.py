@@ -176,44 +176,50 @@ Very_Light_Purple = Color(red=0.94, green=0.81, blue=0.99)
 
 # Takes Hue value as input, returns RGB vector.
 def CH2RGB(H):
+    """
+        @todo: Apidoc
+        @Todo: Param Syntax checks
+    """
     H %= 360
     if H < 0:
         H += 360
-   #switch (H)
-      #range (0, 120)
-         #local R = (120-  H) / 60;
-         #local G = (  H-  0) / 60;
-         #local B = 0;
-      #break
-      #range (120, 240)
-         #local R = 0;
-         #local G = (240-  H) / 60;
-         #local B = (  H-120) / 60;
-      #break
-      #range (240, 360)
-         #local R = (  H-240) / 60;
-         #local G = 0;
-         #local B = (360-  H) / 60;
-      #break
-   #end
-   #<min(R,1), min(G,1), min(B,1)>
-#end
+    if H in range(120):
+        R = (120 - H) / 60
+        G = (H - 0) / 60
+        B = 0
+    elif H in range(120, 240):
+        R = 0
+        G = (240 - H) / 60
+        B = (H - 120) / 60
+    elif H in range(240, 360):
+        R = (H - 240) / 60
+        G = 0
+        B = (360 - H) / 60
+
+    return Vector(min(R, 1), min(G, 1), min(B, 1))
+
 
 # Takes RGB vector, Max component, and Span as input,
 # returns Hue value.
-#macro CRGB2H (RGB, Max, Span)
-   #local H = 0;
-   #local R = RGB.red;
-   #local G = RGB.green;
-   #local B = RGB.blue;
-   #if (Span>0)
-      #local H = (
-         #+ (R = Max & G != Max ? 0 + (G - B)/Span : 0)
-         #+ (G = Max & B != Max ? 2 + (B - R)/Span : 0)
-         #+ (B = Max & R != Max ? 4 + (R - G)/Span : 0)
-      #)*60;
-   #end
-#end
+def CRGB2H(RGB, Max, Span):
+    """
+        @todo: Apidoc
+        @Todo: Param Syntax checks
+    """
+    R = RGB.red
+    G = RGB.green
+    B = RGB.blue
+    if Span > 0:
+        T1, T2, T3 = 0
+        if R == Max & G != Max:
+            T1 = 0 + (G - B) / Span
+        if G == Max & B != Max:
+            T2 = 2 + (B - R) / Span
+        if B == Max & R != Max:
+            T3 = 4 + (R - G) / Span
+        return (T1 + T2 + T3) * 60
+    return 0
+
 
 # Converts a color in HSL color space to a color in RGB color space.
 # Input:  < Hue, Saturation, Lightness, Filter, Transmit >

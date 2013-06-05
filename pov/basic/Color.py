@@ -40,6 +40,8 @@ class Color(SceneItem):
     def __init__(self, *opts, **kwargs):
         '''
             Create Color object
+
+            @Todo: add properties for all color components @see colors_ink.py
         '''
         super(Color, self).__init__('color', [], opts, kwargs)
 
