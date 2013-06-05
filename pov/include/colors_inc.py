@@ -224,39 +224,49 @@ def CRGB2H(RGB, Max, Span):
 # Converts a color in HSL color space to a color in RGB color space.
 # Input:  < Hue, Saturation, Lightness, Filter, Transmit >
 # Output: < Red, Green, Blue, Filter, Transmit >
-#macro CHSL2RGB(Color)
-   #local HSLFT = color Color;
-   #local H = (HSLFT.red);
-   #local S = (HSLFT.green);
-   #local L = (HSLFT.blue);
-   #local SatRGB = CH2RGB(H);
-   #local Col = 2*S*SatRGB + (1-S)*<1,1,1>;
-   #if (L<0.5)
-      #local RGB = L*Col;
-   #else
-      #local RGB = (1-L)*Col + (2*L-1)*<1,1,1>;
-   #end
-   #<RGB.red,RGB.green,RGB.blue,(HSLFT.filter),(HSLFT.transmit)>
-#end
+def CHSL2RGB(vector):
+    """
+        @todo: Apidoc
+        @Todo: Param Syntax checks
+        @todo: support this?
+    """
+    HSLFT = Color(vector)
+    H = (HSLFT.red)
+    S = (HSLFT.green)
+    L = (HSLFT.blue)
+    SatRGB = CH2RGB(H)
+    Col = 2 * S * SatRGB + (1 - S) * Vector(1, 1, 1)
+    if L < 0.5:
+        RGB = L * Col
+    else:
+        RGB = (1 - L) * Col + (2 * L - 1) * Vector(1, 1, 1)
+    return Color(RGB.red, RGB.green, RGB.blue, HSLFT.filter, HSLFT.transmit)
 
 # Converts a color in RGB color space to a color in HSL color space.
 # Input:  < Red, Green, Blue, Filter, Transmit >
 # Output: < Hue, Saturation, Lightness, Filter, Transmit >
-#macro CRGB2HSL(Color)
-   #local RGBFT = color Color;
-   #local R = (RGBFT.red);
-   #local G = (RGBFT.green);
-   #local B = (RGBFT.blue);
-   #local Min = min(R,min(G,B));
-   #local Max = max(R,max(G,B));
-   #local Span = Max-Min;
-   #local L = (Min+Max)/2;
-   #local S = 0;
-   #if( L!=0 & L!=1 )
-      #local S = Span / ( L<0.5 ? (L*2) : (2-L*2) );
-   #end
-   #local H = CRGB2H (<R,G,B>, Max, Span);
-   #<H,S,L,(RGBFT.filter),(RGBFT.transmit)>
+def CRGB2HSL(color):
+    """
+        @todo: Apidoc
+        @Todo: Param Syntax checks
+        @todo: support this?
+    """
+    R = (RGBFT.red)
+    G = (RGBFT.green)
+    B = (RGBFT.blue)
+    Min = min(R, min(G, B))
+    Max = max(R, max(G, B))
+    Span = Max - Min
+    L = (Min + Max) / 2
+    S = 0
+    if (L != 0 & L != 1):
+        if L < 0.5:
+            L *= 2
+        else:
+            L = 2 - L * 2
+        S = Span / L
+    #local H = CRGB2H (<R,G,B>, Max, Span);
+    #<H,S,L,(RGBFT.filter),(RGBFT.transmit)>
 #end
 
 # Converts a color in HSV color space to a color in RGB color space.
