@@ -34,8 +34,8 @@ from pov.texture.ColorMap import ColorMap
 from pov.texture.Normal import Normal
 
 
-#@unittest.skip
 class EndToEndTestCase(unittest.TestCase):
+    #@unittest.skip
     def test_Scene1(self):
         '''
             Example taken from:
@@ -240,3 +240,7 @@ class EndToEndTestCase(unittest.TestCase):
         ))
 
         self.assertEqual(ref, str(fix), msg)
+
+    #@unittest.skip
+    def test_Scene2(self):
+        pass
