@@ -50,7 +50,7 @@ class SceneFile(object):
         for i in items:
             self.append(i)
 
-        self.file = open(fnam, "w")
+        #self.file = open(fnam, "w")
 
     def __str__(self):
         '''
@@ -98,4 +98,4 @@ class SceneFile(object):
         """
             Close POV-Ray scene file.
         """
-        self.file.close()
+        #self.file.close()

@@ -78,3 +78,7 @@ class Normal(BlockObject):
             Create Normal object
         '''
         super(Normal, self).__init__('normal', [], opts, kwargs)
+
+        if 'bumps' in self.kwargs:
+            self.args.append('bumps %s' % self.kwargs['bumps'])
+            del self.kwargs['bumps']

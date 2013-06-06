@@ -35,7 +35,7 @@ from pov.texture.Normal import Normal
 
 
 class EndToEndTestCase(unittest.TestCase):
-    #@unittest.skip
+    @unittest.skip
     def test_Scene1(self):
         '''
             Example taken from:
@@ -69,6 +69,7 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "  <0.0, 1.0, 0.0>, 1.0" + le
         ref += "  texture {" + le
         ref += "    pigment {" + le
+        ref += "      bozo" + le
         ref += "      color_map {" + le
         ref += "        [0.0 rgb <0.05, 0.15, 0.45>]" + le
         ref += "        [0.5 rgb <0.05, 0.15, 0.45>]" + le
@@ -76,7 +77,6 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "        [1.0 rgb <0.5, 0.5, 0.5>]" + le
         ref += "        [0.7 rgb <1.0, 1.0, 1.0>]" + le
         ref += "      }" + le
-        ref += "      bozo" + le
         ref += "      scale <2.5, 2.5, 3.75>" + le
         ref += "      translate <0.0, 0.0, 0.0>" + le
         ref += "      turbulence 0.92" + le
@@ -104,8 +104,8 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "      color rgb <0.22, 0.45, 0.0>" + le
         ref += "    }" + le
         ref += "    normal {" + le
-        ref += "      scale 0.015" + le
         ref += "      bumps 0.75" + le
+        ref += "      scale 0.015" + le
         ref += "    }" + le
         ref += "    finish {" + le
         ref += "      phong 0.1" + le
@@ -241,6 +241,6 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    #@unittest.skip
+    @unittest.skip
     def test_Scene2(self):
         pass

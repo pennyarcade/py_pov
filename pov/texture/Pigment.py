@@ -84,4 +84,4 @@ class Pigment(BlockObject):
 
         if 'bozo' in self.kwargs and self.kwargs['bozo'] is True:
             del self.kwargs['bozo']
-            self.opts.append('bozo')
+            self.args.append('bozo')

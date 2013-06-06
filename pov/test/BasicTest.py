@@ -244,7 +244,7 @@ class SceneFileTestCase(unittest.TestCase):
 
     def tearDown(self):
         self.SUT.close()
-        os.remove(self.SUT.file.name)
+        #os.remove(self.SUT.file.name)
 
     def test_create(self):
         self.assertIsInstance(self.SUT, SceneFile)
