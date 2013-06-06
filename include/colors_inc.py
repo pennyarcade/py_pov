@@ -224,20 +224,24 @@ def CRGB2H(RGB, Max, Span):
 # Converts a color in HSL color space to a color in RGB color space.
 # Input:  < Hue, Saturation, Lightness, Filter, Transmit >
 # Output: < Red, Green, Blue, Filter, Transmit >
-#macro CHSL2RGB(Color)
-   #local HSLFT = color Color;
-   #local H = (HSLFT.red);
-   #local S = (HSLFT.green);
-   #local L = (HSLFT.blue);
-   #local SatRGB = CH2RGB(H);
-   #local Col = 2*S*SatRGB + (1-S)*<1,1,1>;
-   #if (L<0.5)
-      #local RGB = L*Col;
-   #else
-      #local RGB = (1-L)*Col + (2*L-1)*<1,1,1>;
-   #end
-   #<RGB.red,RGB.green,RGB.blue,(HSLFT.filter),(HSLFT.transmit)>
-#end
+def CHSL2RGB(vector):
+    """
+        @todo: Apidoc
+        @Todo: Param Syntax checks
+        @todo: support this?
+    """
+    HSLFT = Color(vector)
+    H = (HSLFT.red)
+    S = (HSLFT.green)
+    L = (HSLFT.blue)
+    SatRGB = CH2RGB(H)
+    Col = 2 * S * SatRGB + (1 - S) * Vector(1, 1, 1)
+    if L < 0.5:
+        RGB = L * Col
+    else:
+        RGB = (1 - L) * Col + (2 * L - 1) * Vector(1, 1, 1)
+    return Color(RGB.red, RGB.green, RGB.blue, HSLFT.filter, HSLFT.transmit)
+
 
 # Converts a color in RGB color space to a color in HSL color space.
 # Input:  < Red, Green, Blue, Filter, Transmit >
@@ -256,7 +260,7 @@ def CRGB2HSL(Color):
             S = Span / (L * 2)
         else:
             S = Span / (2 - L * 2)
-    H = CRGB2H(Vector(R, G, B), Max, Span))
+    H = CRGB2H(Vector(R, G, B), Max, Span)
     return Vector(H, S, L, Color.filter, Color.transmit)
 
 # Converts a color in HSV color space to a color in RGB color space.
