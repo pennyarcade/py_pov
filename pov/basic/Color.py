@@ -12,6 +12,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 import os
 from pov.basic.SceneItem import SceneItem
+from pov.basic.Vector import Vector
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
@@ -35,6 +36,7 @@ class Color(SceneItem):
             [red FLOAT] & [green FLOAT] & [blue FLOAT] & [filter FLOAT] & [transmit FLOAT]
 
         @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
+        @TODO: check syntax of kwargs
     '''
 
     def __init__(self, *opts, **kwargs):
@@ -59,13 +61,15 @@ class Color(SceneItem):
             self.vector = self.kwargs['rgbft']
         else:
             # @todo: how to deal with separate color keywords
+            self.type = 'none'
+            self.vector = Vector(0, 0, 0)
             pass
 
     def __str__(self):
         code = ''
 
         if self.type in ['rgb', 'rgbt', 'rgbf', 'rgbft']:
-            code += self.type + ' ' + str(self.vector)
+            code += self.type + ' ' + str(self.vector) + os.linesep
 
         return code
 

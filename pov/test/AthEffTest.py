@@ -16,7 +16,12 @@ import unittest
 #import copy
 from logging import *
 
-from pov.basic.SceneItem import SceneItem
+from pov.atmeff.Fog import Fog
 
 
+class AthEffTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = Fog('foo')
 
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, Fog)

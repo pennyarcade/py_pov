@@ -20,7 +20,9 @@ from pov.basic.SceneItem import SceneItem
 from pov.basic.Vector import Vector
 from pov.basic.SceneFile import SceneFile
 from pov.basic.BlockObject import BlockObject
+from pov.basic.Color import Color
 from pov.other.SdlSyntaxException import SdlSyntaxException
+from pov.other.IllegalStateException import IllegalStateException
 
 
 class SceneItemTestCase(unittest.TestCase):
@@ -93,7 +95,7 @@ class SceneItemTestCase(unittest.TestCase):
         self.assertEqual(self.SUT.kwargs, {})
 
     def test_createWithKwargs(self):
-        self.SUT = SceneItem('foo', [], [], {'bar':(1, 2, 3), 'baz':SceneItem('bar')})
+        self.SUT = SceneItem('foo', [], [], {'bar': (1, 2, 3), 'baz': SceneItem('bar')})
 
         self.assertEqual(type(self.SUT.args), list)
         self.assertEqual(self.SUT.args, [])
@@ -152,7 +154,7 @@ class SceneItemTestCase(unittest.TestCase):
         self.assertEqual(self.SUT.kwargs, {'bar': 7})
 
     def test_getitem(self):
-        self.SUT = SceneItem('foo', [1, 2, 3], [4, 5, 6], {'bar':7})
+        self.SUT = SceneItem('foo', [1, 2, 3], [4, 5, 6], {'bar': 7})
 
         self.assertEqual(self.SUT[1], 2)
         self.assertEqual(self.SUT[4], 5)
@@ -161,6 +163,56 @@ class SceneItemTestCase(unittest.TestCase):
         try:
             warn(str(self.SUT[2]))
         except IndexError:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s ' % type(e))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test__dedentBelowZero(self):
+
+        try:
+            self.SUT._dedent()
+        except IllegalStateException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s ' % type(e))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test__validateKwargsInvanildKwarg(self):
+        self.SUT = SceneItem('foo', [], [], {'adaptive': (1, 2, 3), 'agate': SceneItem('bar')})
+
+        try:
+            self.SUT._validate_kwargs({'boo': 'Vector'})
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s ' % type(e))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test__validateKwargsInvanildKwargValue(self):
+        self.SUT = SceneItem('foo', [], [], {'adaptive': (1, 2, 3)})
+
+        try:
+            self.SUT._validate_kwargs({'adaptive': 'String'})
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s ' % type(e))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test__is_valid_identifier(self):
+        self.assertTrue(self.SUT._is_valid_identifier('foobar'), msg='Valid Identifier')
+        self.assertFalse(self.SUT._is_valid_identifier('agate'), msg='Invalid Identifier')
+
+    def test___eq__WrongType(self):
+        try:
+            if self.SUT == 3:
+                pass
+        except TypeError:
             pass
         except Exception as e:
             self.fail('Unexpected exception thrown: %s ' % type(e))
@@ -236,6 +288,65 @@ class VectorTestCase(unittest.TestCase):
         else:
             self.fail('ExpectedException not thrown')
 
+    def test_rmul__WrongType(self):
+        try:
+            'foo' * self.SUT
+        except SdlSyntaxException as e:
+            if not str(e) == 'Parameter not of type float or int':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_div__WrongType(self):
+        try:
+            self.SUT / 'foo'
+        except SdlSyntaxException as e:
+            if not str(e) == 'Parameter not of type float or int':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_add__WrongType(self):
+        try:
+            self.SUT + 'foo'
+        except SdlSyntaxException as e:
+            if not str(e) == 'Parameter not of type Vector':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_sub__WrongType(self):
+        try:
+            self.SUT - 'foo'
+        except SdlSyntaxException as e:
+            if not str(e) == 'Parameter not of type Vector':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_dotWrongType(self):
+        try:
+            self.SUT.dot('foo')
+        except SdlSyntaxException as e:
+            if not str(e) == 'Parameter not of type Vector':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
 
 
 class SceneFileTestCase(unittest.TestCase):
@@ -254,6 +365,17 @@ class SceneFileTestCase(unittest.TestCase):
         self.SUT.append(item)
 
         self.assertIn(item, self.SUT.items)
+
+    def test_createFnamWrongType(self):
+        try:
+            self.SUT = SceneFile(0, SceneItem('foo'), SceneItem('bar'))
+        except TypeError:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('Expected exception not thrown')
 
     def test_appendWrongType(self):
         try:
@@ -276,7 +398,7 @@ class SceneFileTestCase(unittest.TestCase):
 
 class BlockObjectTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = BlockObject("foo", [1, 2, 3], [4, 5, 6], {'bar':7})
+        self.SUT = BlockObject("foo", [1, 2, 3], [4, 5, 6], {'bar': 7})
 
     def test_toString(self):
         le = os.linesep
@@ -320,3 +442,64 @@ class BlockObjectTestCase(unittest.TestCase):
         second += '  }' + le
 
         self.assertEqual(first, second)
+
+
+class ColorTestCase(unittest.TestCase):
+    '''
+        Color Expressions
+
+        COLOR:
+            [color] COLOR_BODY | colour COLOR_BODY
+
+        COLOR_BODY:
+            COLOR_VECTOR | COLOR_KEYWORD_GROUP | COLOR_IDENTIFIER
+
+        COLOR_VECTOR:
+            rgb 3D_VECTOR | rgbf 4D_VECTOR | rgbt 4D_VECTOR | [rgbft] 5D_VECTOR
+
+        COLOR_KEYWORD_GROUP:
+            [COLOR_IDENTIFIER] COLOR_KEYWORD_ITEMS
+
+        COLOR_KEYWORD_ITEMS:
+            [red FLOAT] & [green FLOAT] & [blue FLOAT] & [filter FLOAT] & [transmit FLOAT]
+
+        @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
+    '''
+
+    def setUp(self):
+        self.SUT = Color(rgb=Vector(100, 150, 200))
+
+    def test_create(self):
+        self.assertIsInstance(self.SUT, Color)
+        self.assertIsInstance(self.SUT, SceneItem)
+
+    def test_CreateRgbColor(self):
+        self.assertEqual(self.SUT.type, 'rgb')
+        self.assertEqual(self.SUT.vector, Vector(100, 150, 200))
+
+    def test_CreateRgbfColor(self):
+        self.SUT = Color(rgbf=Vector(100, 150, 200, 1))
+        self.assertEqual(self.SUT.type, 'rgbf')
+        self.assertEqual(self.SUT.vector, Vector(100, 150, 200, 1))
+
+    def test_CreateRgbtColor(self):
+        self.SUT = Color(rgbt=Vector(100, 150, 200, 2))
+        self.assertEqual(self.SUT.type, 'rgbt')
+        self.assertEqual(self.SUT.vector, Vector(100, 150, 200, 2))
+
+    def test_CreateRgbftColor(self):
+        self.SUT = Color(rgbft=Vector(100, 150, 200, 1, 2))
+        self.assertEqual(self.SUT.type, 'rgbft')
+        self.assertEqual(self.SUT.vector, Vector(100, 150, 200, 1, 2))
+
+    def test_toStringRGB(self):
+        le = os.linesep
+        first = str(self.SUT)
+        second = 'rgb <100, 150, 200>' + le
+
+        self.assertEqual(first, second)
+
+    def test_mulColor(self):
+        self.SUT *= 0.1
+        print self.SUT
+        self.assertEqual(self.SUT.vector, Vector(10, 15, 20))

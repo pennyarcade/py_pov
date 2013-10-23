@@ -14,6 +14,7 @@ import os
 from logging import *
 from Vector import Vector
 from pov.other.SdlSyntaxException import SdlSyntaxException
+from pov.other.IllegalStateException import IllegalStateException
 
 
 class SceneItem(object):
@@ -178,10 +179,12 @@ class SceneItem(object):
             Dedent PoV code
         """
         global indentation
+
+        if not indentation > 0:
+            raise IllegalStateException('Indentation below zero')
+
         indentation -= 1
         debug("dedent: %s", indentation)
-        if not indentation >= 0:
-            raise IllegalStateException('Indentation below zero')
 
     def _getIndent(self):
         """
@@ -286,11 +289,11 @@ class SceneItem(object):
             # allowed keywords
             if not key in valid_kw:
                 raise SdlSyntaxException('Keyword %s not allowed for object %s: ' %
-                                         (self.__class__.__name, key))
+                                         (key, self.__class__.__name__))
             # type of kw arguments
             if not val.__class__.__name__ == valid_kw[key]:
                 raise SdlSyntaxException('Value of KW Argument %s is expectet to be type %s but got %s: ' %
-                                         (key, self.valid_kw[key], val.__class__.__name__))
+                                         (key, valid_kw[key], val.__class__.__name__))
 
     def _format_args(self, args):
         '''
@@ -391,7 +394,7 @@ class SceneItem(object):
             Operator Overload "="
         '''
         if not isinstance(other, SceneItem):
-            raise ArgumentError()
+            raise TypeError('can only be compared to objects of same type')
         a = self.name == other.name
         debug(str(self.name) + ' = ' + str(self.name))
         b = self.args == other.args

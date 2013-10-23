@@ -61,12 +61,12 @@ class Vector:
 
     def __add__(self, other):
         if not isinstance(other, Vector):
-            raise SdlSyntaxException('Parameter not of Vector')
+            raise SdlSyntaxException('Parameter not of type Vector')
         return Vector([self.v[i]+other.v[i] for i in range(len(self.v))])
 
     def __sub__(self, other):
         if not isinstance(other, Vector):
-            raise SdlSyntaxException('Parameter not of Vector')
+            raise SdlSyntaxException('Parameter not of type Vector')
         return Vector([self.v[i]-other.v[i] for i in range(len(self.v))])
 
     def __neg__(self):
@@ -91,7 +91,7 @@ class Vector:
     def dot(self, other):
         """Dot product of two vectors"""
         if not isinstance(other, Vector):
-            raise SdlSyntaxException('Parameter not of Vector')
+            raise SdlSyntaxException('Parameter not of type Vector')
         r = 0.0
         for i in range(len(self.v)):
             r += self.v[i]*other.v[i]
