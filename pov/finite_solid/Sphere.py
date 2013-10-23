@@ -22,10 +22,13 @@ class Sphere(BlockObject):
                 <Center>, Radius
                 [OBJECT_MODIFIERS...]
             }
+
+        @Todo: Syntax Checking
     '''
 
     def __init__(self, center, radius, *opts, **kwargs):
         '''
             Create Sphere object
         '''
+
         super(Sphere, self).__init__('sphere', [center, radius], opts, kwargs)

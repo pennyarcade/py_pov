@@ -10,12 +10,12 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-import os
 import unittest
+import traceback
 from logging import *
 from pov.basic.SceneItem import SceneItem
-from pov.other import SdlSyntaxException
 from pov.global_settings.GlobalSettings import GlobalSettings
+from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class GlobalSettingsTestCase(unittest.TestCase):
@@ -25,3 +25,15 @@ class GlobalSettingsTestCase(unittest.TestCase):
     def test_creation(self):
         self.assertIsInstance(self.SUT, GlobalSettings)
         self.assertIsInstance(self.SUT, SceneItem)
+
+    def test_create_Option_wrong_type(self):
+        try:
+            self.SUT = GlobalSettings('foo', 'bar')
+        except SdlSyntaxException as e:
+            if not str(e) == 'Only Radiosity or Photons objects may be passed as options':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')

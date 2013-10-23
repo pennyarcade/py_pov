@@ -16,6 +16,8 @@ import unittest
 #import copy
 from logging import *
 from pov.texture.Finish import Finish
+from pov.texture.ColorMap import ColorMap
+from pov.texture.ColorMap import ColourMap
 from pov.basic.BlockObject import BlockObject
 from pov.basic.SceneItem import SceneItem
 from pov.other.SdlSyntaxException import SdlSyntaxException
@@ -41,3 +43,18 @@ class FinishTestCase(unittest.TestCase):
 
         self.assertEqual(first, second)
 
+
+class ColorMapTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = ColorMap('foo')
+
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, ColorMap)
+        self.assertIsInstance(self.SUT, BlockObject)
+        self.assertIsInstance(self.SUT, SceneItem)
+
+    def test_creation_britisch(self):
+        self.SUT = ColourMap('foo')
+        self.assertIsInstance(self.SUT, ColourMap)
+        self.assertIsInstance(self.SUT, BlockObject)
+        self.assertIsInstance(self.SUT, SceneItem)

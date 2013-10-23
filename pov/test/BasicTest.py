@@ -10,6 +10,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 Unittests for basic classes
 
+@TODO refactor Unittests extract testing for exceptions to method
 """
 
 import os

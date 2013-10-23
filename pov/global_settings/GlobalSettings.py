@@ -56,7 +56,7 @@ class GlobalSettings(BlockObject):
             @Todo: generalize checks
         '''
         for i in range(len(self.opts)):
-            if not (isinstance(opts[i], Radiosity) or isinstance(opts[i], Photons)):
+            if not (isinstance(self.opts[i], Radiosity) or isinstance(self.opts[i], Photons)):
                 raise SdlSyntaxException('Only Radiosity or Photons objects may be passed as options')
 
     def _check_kwargs(self):

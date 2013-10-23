@@ -25,6 +25,7 @@ from pov.finite_solid.Cone import Cone
 from pov.finite_solid.Cylinder import Cylinder
 from pov.finite_solid.HeightField import HeightField
 from pov.finite_solid.JuliaFractal import JuliaFractal
+from pov.finite_solid.Sphere import Sphere
 
 
 class BlobTestCase(unittest.TestCase):
@@ -377,6 +378,82 @@ class ConeTestCase(unittest.TestCase):
         else:
             self.fail('ExpectedException not thrown')
 
+    def test_create_basepoint_wrong_type(self):
+        try:
+            self.SUT = Cone(
+                'foo',
+                4,
+                Vector(5, 6, 7),
+                8,
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Parameter basepoint is not of type Vector':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_cappoint_wrong_type(self):
+        try:
+            self.SUT = Cone(
+                Vector(1, 2, 3),
+                4,
+                'foo',
+                8,
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Parameter cappoint is not of type Vector':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_basepoint_wrong_length(self):
+        try:
+            self.SUT = Cone(
+                Vector(1, 2, 3, 9),
+                4,
+                Vector(5, 6, 7),
+                8,
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Base point Vector has more or less than 3 dimensions':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_cappoint_wrong_length(self):
+        try:
+            self.SUT = Cone(
+                Vector(1, 2, 3),
+                4,
+                Vector(5, 6, 7, 9),
+                8,
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Cap point Vector has more or less than 3 dimensions':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
 
 class CylinderTestCase(unittest.TestCase):
     def setUp(self):
@@ -440,6 +517,114 @@ class CylinderTestCase(unittest.TestCase):
             )
         except SdlSyntaxException:
             pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_basepoint_wrong_type(self):
+        try:
+            self.SUT = Cylinder(
+                'foo',
+                Vector(5, 6, 7),
+                8,
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Parameter basepoint is not of type Vector':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_cappoint_wrong_type(self):
+        try:
+            self.SUT = Cylinder(
+                Vector(1, 2, 3),
+                'foo',
+                8,
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Parameter cappoint is not of type Vector':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_basepoint_wrong_length(self):
+        try:
+            self.SUT = Cylinder(
+                Vector(1, 2, 3, 9),
+                Vector(5, 6, 7),
+                8,
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Base point Vector has more or less than 3 dimensions':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_cappoint_wrong_length(self):
+        try:
+            self.SUT = Cylinder(
+                Vector(1, 2, 3),
+                Vector(5, 6, 7, 9),
+                8,
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Cap point Vector has more or less than 3 dimensions':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_radius_wrong_type(self):
+        try:
+            self.SUT = Cylinder(
+                Vector(1, 2, 3),
+                Vector(5, 6, 7),
+                'foo',
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Param radius is not of type int or float':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_ObjectModifier_wrong_type(self):
+        try:
+            self.SUT = Cylinder(
+                Vector(1, 2, 3),
+                Vector(5, 6, 7),
+                8,
+                'foo',
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Only ObjectModifier objects may be passed as options':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
         except Exception as e:
             self.fail('Unexpected exception thrown: %s \r\n %s' %
                       (type(e), traceback.format_exc()))
@@ -590,6 +775,131 @@ class JuliaFractalTestCase(unittest.TestCase):
             self.SUT = JuliaFractal(Vector(1, 2, 3, 4), foo='bar')
         except SdlSyntaxException:
             pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+
+class SphereTestCase(unittest.TestCase):
+    '''
+        SPHERE:
+            sphere
+            {
+                <Center>, Radius
+                [OBJECT_MODIFIERS...]
+            }
+    '''
+    def setUp(self):
+        self.SUT = Sphere(
+            Vector(1, 2, 3),
+            8
+        )
+
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, Sphere)
+        self.assertIsInstance(self.SUT, SceneItem)
+
+        le = os.linesep
+        second = 'shpere {' + le
+        second += '  <1, 2, 3>, 8' + le
+        second += '}' + le
+
+        self.assertEqual(
+            str(self.SUT),
+            second
+        )
+
+    def test_creationWithOptionAndKwarg(self):
+        self.SUT = Sphere(
+            Vector(1, 2, 3),
+            8,
+            ObjectModifier('foo'),
+            open=True
+        )
+
+        self.assertIsInstance(self.SUT, Sphere)
+        self.assertIsInstance(self.SUT, SceneItem)
+
+    def test_create_non_existant_kw(self):
+        try:
+            self.SUT = Sphere(
+                Vector(5, 6, 7),
+                8,
+                ObjectModifier('foo'),
+                bar=True
+            )
+        except SdlSyntaxException:
+            pass
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_center_wrong_type(self):
+        try:
+            self.SUT = Sphere(
+                'foo',
+                8,
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Parameter center is not of type Vector':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_center_wrong_length(self):
+        try:
+            self.SUT = Sphere(
+                Vector(1, 2, 3, 9),
+                8,
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Base point Vector has more or less than 3 dimensions':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_radius_wrong_type(self):
+        try:
+            self.SUT = Sphere(
+                Vector(1, 2, 3),
+                'foo',
+                ObjectModifier('foo'),
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Param radius is not of type int or float':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
+        except Exception as e:
+            self.fail('Unexpected exception thrown: %s \r\n %s' %
+                      (type(e), traceback.format_exc()))
+        else:
+            self.fail('ExpectedException not thrown')
+
+    def test_create_ObjectModifier_wrong_type(self):
+        try:
+            self.SUT = Sphere(
+                Vector(1, 2, 3),
+                8,
+                'foo',
+                open=0.3
+            )
+        except SdlSyntaxException as e:
+            if not str(e) == 'Only ObjectModifier objects may be passed as options':
+                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
         except Exception as e:
             self.fail('Unexpected exception thrown: %s \r\n %s' %
                       (type(e), traceback.format_exc()))

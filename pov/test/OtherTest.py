@@ -19,6 +19,7 @@ from logging import *
 
 from pov.basic.SceneItem import *
 from pov.other.Camera import *
+from pov.other.LightSource import LightSource
 
 
 class CameraTestCase(unittest.TestCase):
@@ -27,4 +28,13 @@ class CameraTestCase(unittest.TestCase):
 
     def test_creation(self):
         self.assertIsInstance(self.SUT, Camera)
+        self.assertIsInstance(self.SUT, SceneItem)
+
+
+class LightSourceTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = LightSource((1, 2, 3))
+
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, LightSource)
         self.assertIsInstance(self.SUT, SceneItem)

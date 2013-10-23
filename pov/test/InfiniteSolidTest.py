@@ -10,10 +10,20 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-import os
 import unittest
-import difflib
-#import copy
 from logging import *
+from pov.infinite_solid.Plane import Plane
+from pov.basic.SceneItem import SceneItem
 
 
+class PlaneTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = Plane(
+            (1, 2, 3),
+            4,
+            hollow=True
+        )
+
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, Plane)
+        self.assertIsInstance(self.SUT, SceneItem)

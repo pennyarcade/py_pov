@@ -53,6 +53,7 @@ class ColorMap(BlockObject):
 
         return code
 
+
 class ColourMap(ColorMap):
     '''
         COLOR_MAP:
