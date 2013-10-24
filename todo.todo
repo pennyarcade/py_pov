@@ -45,10 +45,90 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git > todo.t
     ☐ ./pov/other/Camera.py:53:            @todo test __str__
     ☐ ./pov/other/Camera.py:54:            @todo: add transformations
     ☐ ./pov/other/Camera.py:55:            @Todo: are there any valid options at all?
-    ☐ pov.basic.SceneFile                           25      1    96%   43
-    ☐ pov.basic.SceneItem                          137     10    93%   184, 266-271, 314, 323-325, 377
-    ☐ pov.basic.Vector                              61      5    92%   54, 59, 64, 69, 94
-    ☐ pov.finite_solid.Cone                         28      4    86%   44, 46, 50, 52
-    ☐ pov.finite_solid.Cylinder                     26      6    77%   42, 44, 46, 48, 50, 55
-    ☐ pov.global_settings.GlobalSettings            15      2    87%   58-59
+    ✔ pov.basic.SceneFile                           25      1    96%   43 @done (13-10-23 13:38)
+    ✔ pov.basic.SceneItem                          137     10    93%   184, 266-271, 314, 323-325, 377 @done (13-10-23 13:38)
+    ✔ pov.basic.Vector                              61      5    92%   54, 59, 64, 69, 94 @done (13-10-23 13:38)
+    ✔ pov.finite_solid.Cone                         28      4    86%   44, 46, 50, 52 @done (13-10-23 14:25)
+    ✔ pov.finite_solid.Cylinder                     26      6    77%   42, 44, 46, 48, 50, 55 @done (13-10-23 15:22)
+    ✔ pov.global_settings.GlobalSettings            15      2    87%   58-59 @done (13-10-23 15:22)
     ✔ pov.other.Camera                               8      3    63%   63-81 @done (13-05-28 13:07)
+
+grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.todo (24.10.2013):
+    ☐ ./pov/language_directive/LanguageDirective.py:37:        @Todo: Is this superclass deprecated?
+    ☐ ./pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file
+    ☐ ./pov/language_directive/Default.py:33:            @TODO: Syntax checking
+    ☐ ./pov/language_directive/Version.py:33:            @todo: How to refactor this into _check_args()??
+    ☐ ./pov/finite_solid/HeightField.py:41:            @TODO: Check that file really exists
+    ☐ ./pov/finite_solid/HeightField.py:42:            @TODO: check if file matches given type
+    ☐ ./pov/finite_solid/HeightField.py:43:            @TODO: make sure superclass constructor gets all params in the right form
+    ☐ ./pov/finite_solid/HeightField.py:44:            @TODO: test __str__
+    ☐ ./pov/finite_solid/JuliaFractal.py:46:            @todo test __str__
+    ☐ ./pov/finite_solid/JuliaFractal.py:66:            @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/finite_solid/Blob.py:38:            @TODO: Syntax Checking
+    ☐ ./pov/finite_solid/Sphere.py:26:        @Todo: Syntax Checking
+    ☐ ./pov/examples/basic_sphere.py:55:#@TODO: Read from Config
+    ☐ ./pov/examples/basic_sphere.py:57:#@TODO: Read from Config
+    ☐ ./pov/examples/basic_sphere.py:105:        # @Todo: make colors multiplyable
+    ☐ ./pov/other/Camera.py:52:            @TODO: Param Syntax checking
+    ☐ ./pov/other/Camera.py:53:            @todo test __str__
+    ☐ ./pov/other/Camera.py:54:            @todo: add transformations
+    ☐ ./pov/other/Camera.py:55:            @Todo: are there any valid options at all?
+    ☐ ./pov/global_settings/GlobalSettings.py:46:            @Todo: test __str__
+    ☐ ./pov/global_settings/GlobalSettings.py:47:            @Todo: check there are no valid params??
+    ☐ ./pov/global_settings/GlobalSettings.py:56:            @Todo: generalize checks
+    ☐ ./pov/global_settings/GlobalSettings.py:66:            @Todo: how to check values in a generalized way?
+    ☐ ./pov/global_settings/Photons.py:19:        @Todo: Apidoc
+    ☐ ./pov/global_settings/Photons.py:20:        @Todo: Implement
+    ☐ ./pov/global_settings/Radiosity.py:19:        @Todo: Apidoc
+    ☐ ./pov/global_settings/Radiosity.py:20:        @Todo: Implement
+    ☐ ./pov/basic/Color.py:38:        @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
+    ☐ ./pov/basic/Color.py:39:        @TODO: check syntax of kwargs
+    ☐ ./pov/basic/Color.py:46:            @Todo: add properties for all color components @see colors_ink.py
+    ☐ ./pov/basic/Color.py:63:            # @todo: how to deal with separate color keywords
+    ☐ ./pov/basic/SceneItem.py:139:            @TODO: move indentation check to own function
+    ☐ ./pov/basic/SceneItem.py:149:        # @todo: Does indentation really have to stay in the constructor??
+    ☐ ./pov/basic/SceneFile.py:21:        @Todo: Proper Apidoc
+    ☐ ./pov/basic/SceneFile.py:22:        @Todo: Add param for PovRay Ini file
+    ☐ ./pov/basic/SceneFile.py:41:            @Todo: check if file is writeable?
+    ☐ ./pov/basic/SceneFile.py:84:            @TODO: There should be no more type/syntax checking here
+    ☐ ./pov/basic/SceneFile.py:85:            @Todo: Write to file code
+    ☐ ./pov/include/colors_inc.py:180:        @todo: Apidoc
+    ☐ ./pov/include/colors_inc.py:181:        @Todo: Param Syntax checks
+    ☐ ./pov/include/colors_inc.py:206:        @todo: Apidoc
+    ☐ ./pov/include/colors_inc.py:207:        @Todo: Param Syntax checks
+    ☐ ./pov/include/colors_inc.py:229:        @todo: Apidoc
+    ☐ ./pov/include/colors_inc.py:230:        @Todo: Param Syntax checks
+    ☐ ./pov/include/colors_inc.py:231:        @todo: support this?
+    ☐ ./pov/infinite_solid/Plane.py:22:        @TODO: Syntax checks
+    ☐ ./pov/texture/Finish.py:42:                     @TODO: Syntax checking
+    ☐ ./pov/test/EndToEndTest.py:146:            @TODO: Read from Config
+    ☐ ./pov/test/EndToEndTest.py:148:            @TODO: Read from Config
+    ☐ ./pov/test/EndToEndTest.py:196:             @Todo: make colors multiplyable
+    ☐ ./pov/test/FiniteSolidTest.py:130:            @ToDo: KwArg: 0..1 no_shadow Bool
+    ☐ ./pov/test/FiniteSolidTest.py:131:            @ToDo: KwArg: 0..1 no_image Bool
+    ☐ ./pov/test/FiniteSolidTest.py:132:            @ToDo: KwArg: 0..1 no_reflection BOOL
+    ☐ ./pov/test/FiniteSolidTest.py:133:            @ToDo: KwArg: 0..1 inverse bool
+    ☐ ./pov/test/FiniteSolidTest.py:134:            @ToDo: KwArg: 0..1 double_illuminate bool
+    ☐ ./pov/test/FiniteSolidTest.py:135:            @ToDo: KwArg: 0..1 hollow bool
+    ☐ ./pov/test/FiniteSolidTest.py:136:            @ToDo: KwArg: 0..1 rotate Vector 3D
+    ☐ ./pov/test/FiniteSolidTest.py:137:            @ToDo: KwArg: 0..1 scale Vector 3D
+    ☐ ./pov/test/FiniteSolidTest.py:138:            @ToDo: KwArg: 0..1 translate Vector 3D
+    ☐ ./pov/test/FiniteSolidTest.py:139:            @ToDo: KwArg: 0..1 matrix Vector 12D
+    ☐ ./pov/test/FiniteSolidTest.py:141:            @ToDo: Option: 0..1 Photon object
+    ☐ ./pov/test/FiniteSolidTest.py:142:            @ToDo: Option: 0..1 clipped_by object
+    ☐ ./pov/test/FiniteSolidTest.py:143:            @ToDo: Option: 0..1 material object
+    ☐ ./pov/test/FiniteSolidTest.py:144:            @ToDo: Option: 0..1 interior object
+    ☐ ./pov/test/FiniteSolidTest.py:145:            @ToDo: Option: 0..1 interior_texture object
+    ☐ ./pov/test/FiniteSolidTest.py:146:            @ToDo: Option: 0..1 texture object
+    ☐ ./pov/test/FiniteSolidTest.py:147:            @ToDo: Option: 0..1 pigment object
+    ☐ ./pov/test/FiniteSolidTest.py:148:            @ToDo: Option: 0..1 normal object
+    ☐ ./pov/test/FiniteSolidTest.py:149:            @ToDo: Option: 0..1 finish object
+    ☐ ./pov/test/FiniteSolidTest.py:151:            @ToDo: Option: 0..1 transform object
+    ☐ ./pov/test/FiniteSolidTest.py:152:            @ToDo: KwArg: 0..1 transform string; existing identifier; transform object
+    ☐ ./pov/test/FiniteSolidTest.py:153:            @ToDo: only one "transform"
+    ☐ ./pov/test/BasicTest.py:13:                    @TODO refactor Unittests extract testing for exceptions to method
+    ☐ ./pov/test/BasicTest.py:467:                    @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
+    ✔ pov.texture.Normal                             9      4    56%   80-84 @done (13-10-24 08:49)
+    ✔ pov.texture.Pigment                            9      4    56%   83-87 @done (13-10-24 09:01)
+    ✔ pov.texture.Texture                            6      1    83%   82 @done (13-10-24 09:01)
+
