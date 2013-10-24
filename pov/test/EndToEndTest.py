@@ -246,6 +246,9 @@ class EndToEndTestCase(unittest.TestCase):
 
     @unittest.skip
     def test_Scene2(self):
+        '''
+            examples/basic_scene.pov
+        '''
         ref = '''#version 3.6;
 #include "colors.inc"
 global_settings {
@@ -355,7 +358,7 @@ sphere {
                         frequency=8
                     ),
                     Finish(
-                       specular=0.6
+                        specular=0.6
                     )
                 )
             )
