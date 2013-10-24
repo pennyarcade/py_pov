@@ -281,13 +281,12 @@ sphere {
   <0.0, 0.0, 0.0>, 1.0
   texture {
     pigment {
-      color_map {
+      radial color_map {
         [0.0 color rgb <1.0, 0.4, 0.2>]
         [1.0 color rgb <1.0, 0.4, 0.2>]
         [0.66 color rgb <0.4, 1.0, 0.2>]
         [0.33 color rgb <0.2, 0.4, 1.0>]
       }
-      radial
       frequency 8
     }
     finish {
@@ -347,13 +346,12 @@ sphere {
                 1.0,
                 Texture(
                     Pigment(
-                        ColorMap({
+                        radial=ColorMap({
                             0.00: Color(rgb=Vector(1.0, 0.4, 0.2)),
                             0.33: Color(rgb=Vector(0.2, 0.4, 1.0)),
                             0.66: Color(rgb=Vector(0.4, 1.0, 0.2)),
                             1.00: Color(rgb=Vector(1.0, 0.4, 0.2))
                         }),
-                        radial=True,
                         frequency=8
                     ),
                     Finish(

@@ -62,6 +62,6 @@ class BlockObject(SceneItem):
         #debug('kwargs: %s', kwargs)
 
         for key, val in kwargs:
-            code += self._getLine("%s %s" % (key, val))
+            code += self._getLine("%s %s" % (key, str(val).strip()))
         code += self._block_end()
         return code
