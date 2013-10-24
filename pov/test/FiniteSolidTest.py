@@ -802,7 +802,7 @@ class SphereTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
         le = os.linesep
-        second = 'shpere {' + le
+        second = 'sphere {' + le
         second += '  <1, 2, 3>, 8' + le
         second += '}' + le
 
@@ -864,7 +864,7 @@ class SphereTestCase(unittest.TestCase):
                 open=0.3
             )
         except SdlSyntaxException as e:
-            if not str(e) == 'Base point Vector has more or less than 3 dimensions':
+            if not str(e) == 'Center point Vector has more or less than 3 dimensions':
                 self.fail('SdlSyntaxException with wrong message: %s' % str(e))
         except Exception as e:
             self.fail('Unexpected exception thrown: %s \r\n %s' %
