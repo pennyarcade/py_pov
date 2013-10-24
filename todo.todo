@@ -103,7 +103,7 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.
     ☐ ./pov/texture/Finish.py:42:                     @TODO: Syntax checking
     ☐ ./pov/test/EndToEndTest.py:146:            @TODO: Read from Config
     ☐ ./pov/test/EndToEndTest.py:148:            @TODO: Read from Config
-    ☐ ./pov/test/EndToEndTest.py:196:             @Todo: make colors multiplyable
+    ✔ ./pov/test/EndToEndTest.py:196:             @Todo: make colors multiplyable @done (13-10-24 14:05)
     ☐ ./pov/test/FiniteSolidTest.py:130:            @ToDo: KwArg: 0..1 no_shadow Bool
     ☐ ./pov/test/FiniteSolidTest.py:131:            @ToDo: KwArg: 0..1 no_image Bool
     ☐ ./pov/test/FiniteSolidTest.py:132:            @ToDo: KwArg: 0..1 no_reflection BOOL
