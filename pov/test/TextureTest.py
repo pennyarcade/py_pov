@@ -46,7 +46,7 @@ class FinishTestCase(unittest.TestCase):
 
 class ColorMapTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = ColorMap('foo')
+        self.SUT = ColorMap({'foo': 'bar'})
 
     def test_creation(self):
         self.assertIsInstance(self.SUT, ColorMap)
@@ -54,7 +54,21 @@ class ColorMapTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
     def test_creation_britisch(self):
-        self.SUT = ColourMap('foo')
+        self.SUT = ColourMap({'foo': 'bar'})
         self.assertIsInstance(self.SUT, ColourMap)
         self.assertIsInstance(self.SUT, BlockObject)
         self.assertIsInstance(self.SUT, SceneItem)
+
+    def test_toString(self):
+        le = os.linesep
+        first = str(self.SUT)
+        second = 'foo {' + le
+        second += '  1, 2, 3' + le
+        second += '  4' + le
+        second += '  5' + le
+        second += '  6' + le
+        second += '  bar 7' + le
+        second += '}' + le
+
+        self.assertEqual(first, second)
+
