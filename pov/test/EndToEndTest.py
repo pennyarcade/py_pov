@@ -8,6 +8,8 @@ See LICENSE file.
 
 Some modifications by W.T. Bridgman, 2006-2007.
 
+@TODO: Add rendering tests that call povray to make sure it works
+
 """
 
 import os
@@ -43,7 +45,7 @@ class EndToEndTestCase(unittest.TestCase):
         '''
         le = os.linesep
 
-        ref = "#version 3.6;" + le
+        ref =  "#version 3.6;" + le
         ref += "global_settings {" + le
         ref += "  assumed_gamma 1.0" + le
         ref += "}" + le
@@ -311,4 +313,76 @@ sphere {
   }
 }
         '''
-        pass
+
+        fix = SceneFile('test.pov')
+        fix.append(Version(3.6))
+        fix.append(Include('colors.inc'))
+        fix.append(
+            GlobalSettings(assumed_gamma=1.0)
+        )
+
+        #@TODO: Read from Config
+        image_width = 800
+        #@TODO: Read from Config
+        image_height = 600
+
+        fix.append(
+            Camera(
+                location=Vector(0.0, 0.5, -4.0),
+                direction=1.5 * z,
+                right=x*image_width/image_height,
+                look_at=Vector(0.0, 0.0, 0.0)
+            )
+        )
+
+        fix.append(
+            SkySphere(
+                Pigment(
+                    ColorMap(
+                        {0.0: Color(rgb=Vector(0.6, 0.7, 1.0)),
+                         0.7: Color(rgb=Vector(0.0, 0.1, 0.8))}
+                    ),
+                    gradient=y
+                )
+            ),
+            LightSource(
+                (0.0, 0.0, 0.0),
+                Color(rgb=Vector(1.0, 1.0, 1.0)),
+                translate=Vector(-30.0, 30.0, -30.0)
+            )
+        )
+
+        fix.append(
+            Plane(
+                y, -1,
+                Pigment(
+                    Color(rgb=Vector(0.7, 0.5, 0.3))
+                )
+            ),
+            Sphere(
+                0.0, 1.0,
+                Texture(
+                    Pigment(
+                        ColorMap({
+                            0.00: Color(rgb=Vector(1.0, 0.4, 0.2)),
+                            0.33: Color(rgb=Vector(0.2, 0.4, 1.0)),
+                            0.66: Color(rgb=Vector(0.4, 1.0, 0.2)),
+                            1.00: Color(rgb=Vector(1.0, 0.4, 0.2))
+                        }),
+                        radial=True,
+                        frequency=8
+                    ),
+                    Finish(
+                       specular=0.6
+                    )
+                )
+            )
+        )
+
+        #----------------------------------------------------
+        msg = '\n' + ''.join(difflib.ndiff(
+            ref.splitlines(1),
+            str(fix).splitlines(1)
+        ))
+
+        self.assertEqual(ref, str(fix), msg)

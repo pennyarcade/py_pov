@@ -18,6 +18,9 @@ from logging import *
 from pov.texture.Finish import Finish
 from pov.texture.ColorMap import ColorMap
 from pov.texture.ColorMap import ColourMap
+from pov.texture.Normal import Normal
+from pov.texture.Pigment import Pigment
+from pov.texture.Texture import Texture
 from pov.basic.BlockObject import BlockObject
 from pov.basic.SceneItem import SceneItem
 from pov.other.SdlSyntaxException import SdlSyntaxException
@@ -72,3 +75,32 @@ class ColorMapTestCase(unittest.TestCase):
 
         self.assertEqual(first, second)
 
+
+class NormalTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = Normal(bumps=0.1, diffuse=0.9)
+
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, Normal)
+        self.assertIsInstance(self.SUT, BlockObject)
+        self.assertIsInstance(self.SUT, SceneItem)
+
+
+class PigmentTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = Pigment(bozo=True, diffuse=0.9)
+
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, Pigment)
+        self.assertIsInstance(self.SUT, BlockObject)
+        self.assertIsInstance(self.SUT, SceneItem)
+
+
+class TextureTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = Texture()
+
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, Texture)
+        self.assertIsInstance(self.SUT, BlockObject)
+        self.assertIsInstance(self.SUT, SceneItem)
