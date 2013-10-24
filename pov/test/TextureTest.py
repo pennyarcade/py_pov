@@ -23,6 +23,8 @@ from pov.texture.Pigment import Pigment
 from pov.texture.Texture import Texture
 from pov.basic.BlockObject import BlockObject
 from pov.basic.SceneItem import SceneItem
+from pov.basic.Color import Color
+from pov.basic.Vector import Vector
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
@@ -49,7 +51,7 @@ class FinishTestCase(unittest.TestCase):
 
 class ColorMapTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = ColorMap({'foo': 'bar'})
+        self.SUT = ColorMap({0.3: Color(rgb=Vector(0.1, 0.2, 0.3))})
 
     def test_creation(self):
         self.assertIsInstance(self.SUT, ColorMap)
@@ -65,12 +67,8 @@ class ColorMapTestCase(unittest.TestCase):
     def test_toString(self):
         le = os.linesep
         first = str(self.SUT)
-        second = 'foo {' + le
-        second += '  1, 2, 3' + le
-        second += '  4' + le
-        second += '  5' + le
-        second += '  6' + le
-        second += '  bar 7' + le
+        second =  'color_map {' + le
+        second += '  [0.3 color rgb <0.1, 0.2, 0.3>]' + le
         second += '}' + le
 
         self.assertEqual(first, second)

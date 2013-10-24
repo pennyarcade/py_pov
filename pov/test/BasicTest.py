@@ -496,7 +496,7 @@ class ColorTestCase(unittest.TestCase):
     def test_toStringRGB(self):
         le = os.linesep
         first = str(self.SUT)
-        second = 'rgb <100, 150, 200>' + le
+        second = 'color rgb <100, 150, 200>' + le
 
         self.assertEqual(first, second)
 

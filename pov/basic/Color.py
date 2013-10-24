@@ -69,7 +69,7 @@ class Color(SceneItem):
         code = ''
 
         if self.type in ['rgb', 'rgbt', 'rgbf', 'rgbft']:
-            code += self.type + ' ' + str(self.vector) + os.linesep
+            code += "  " * self._getIndent() + self.name + ' ' + self.type + ' ' + str(self.vector) + os.linesep
 
         return code
 

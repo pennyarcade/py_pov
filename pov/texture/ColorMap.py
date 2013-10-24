@@ -49,7 +49,7 @@ class ColorMap(BlockObject):
         debug(str(cmap))
 
         for key in cmap:
-            code += self._getLine('[%s %s]' % (key, cmap[key]))
+            code += self._getLine('[%s %s]' % (key, str(cmap[key]).strip()))
 
         return code
 

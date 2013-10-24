@@ -32,6 +32,8 @@ class Fog(PoVObject):
             GROUND_FOG_ITEMS:
                 FOG_ITEMS & fog_offset FLOAT & fog_alt FLOAT &
                 [up VECTOR [TRANSFORMATION...]]
+
+        @todo: Syntax checks
     '''
 
     def __init__(self, *opts, **kwargs):

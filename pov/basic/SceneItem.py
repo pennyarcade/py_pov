@@ -123,6 +123,10 @@ class SceneItem(object):
         'x', 'y', 'yes', 'z'
     ]
 
+    _object_modifiers= [
+        'ObjectModifier', 'Texture', 'Translate'
+    ]
+
     def __init__(self, name, args=[], opts=[], kwargs=[]):
         """
             Base class for POV objects.

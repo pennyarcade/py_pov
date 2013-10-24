@@ -811,12 +811,11 @@ class SphereTestCase(unittest.TestCase):
             second
         )
 
-    def test_creationWithOptionAndKwarg(self):
+    def test_creationWithOption(self):
         self.SUT = Sphere(
             Vector(1, 2, 3),
             8,
-            ObjectModifier('foo'),
-            open=True
+            ObjectModifier('foo')
         )
 
         self.assertIsInstance(self.SUT, Sphere)

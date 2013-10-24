@@ -18,6 +18,7 @@ import difflib
 from logging import *
 
 from pov.atmeff.Fog import Fog
+from pov.atmeff.SkySphere import SkySphere
 from pov.basic.SceneFile import SceneFile
 from pov.basic.Vector import *
 from pov.basic.Color import Color
@@ -27,6 +28,7 @@ from pov.infinite_solid.Plane import Plane
 from pov.language_directive.Version import Version
 from pov.language_directive.Default import Default
 from pov.language_directive.Include import Include
+from pov.object_modifier.Translate import Translate
 from pov.other.Camera import Camera
 from pov.other.LightSource import LightSource
 from pov.texture.Finish import Finish
@@ -73,11 +75,11 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "    pigment {" + le
         ref += "      bozo" + le
         ref += "      color_map {" + le
-        ref += "        [0.0 rgb <0.05, 0.15, 0.45>]" + le
-        ref += "        [0.5 rgb <0.05, 0.15, 0.45>]" + le
-        ref += "        [0.85 rgb <0.2, 0.2, 0.2>]" + le
-        ref += "        [1.0 rgb <0.5, 0.5, 0.5>]" + le
-        ref += "        [0.7 rgb <1.0, 1.0, 1.0>]" + le
+        ref += "        [0.0 color rgb <0.05, 0.15, 0.45>]" + le
+        ref += "        [0.5 color rgb <0.05, 0.15, 0.45>]" + le
+        ref += "        [0.85 color rgb <0.2, 0.2, 0.2>]" + le
+        ref += "        [1.0 color rgb <0.5, 0.5, 0.5>]" + le
+        ref += "        [0.7 color rgb <1.0, 1.0, 1.0>]" + le
         ref += "      }" + le
         ref += "      scale <2.5, 2.5, 3.75>" + le
         ref += "      translate <0.0, 0.0, 0.0>" + le
@@ -92,12 +94,12 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "  scale 10000.0" + le
         ref += "}" + le
         ref += "fog {" + le
-        ref += "  fog_type 2.0" + le
-        ref += "  fog_offset 0.1" + le
-        ref += "  fog_alt 1.5" + le
-        ref += "  turbulence 1.8" + le
         ref += "  color rgb <0.8, 0.8, 0.8>" + le
         ref += "  distance 50.0" + le
+        ref += "  fog_offset 0.1" + le
+        ref += "  fog_alt 1.5" + le
+        ref += "  fog_type 2.0" + le
+        ref += "  turbulence 1.8" + le
         ref += "}" + le
         ref += "plane {" + le
         ref += "  <0.0, 1.0, 0.0>, 0.0" + le
@@ -193,10 +195,9 @@ class EndToEndTestCase(unittest.TestCase):
 
         fix.append(
             Fog(
+                Color(rgb=Vector(1, 1, 1))*0.8,
                 fog_type=2.0,
                 distance=50.0,
-                # @Todo: make colors multiplyable
-                color=Color(rgb=Vector(1, 1, 1))*0.8,
                 fog_offset=0.1,
                 fog_alt=1.5,
                 turbulence=1.8
@@ -209,7 +210,7 @@ class EndToEndTestCase(unittest.TestCase):
                 0.0,
                 Texture(
                     Pigment(
-                        color=Color(rgb=Vector(0.22, 0.45, 0.0))
+                        Color(rgb=Vector(0.22, 0.45, 0.0))
                     ),
                     Normal(
                         bumps=0.75,
@@ -225,13 +226,13 @@ class EndToEndTestCase(unittest.TestCase):
                 0.75,
                 Texture(
                     Pigment(
-                        color=Color(rgb=Vector(0.9, 0.55, 0.0))
+                        Color(rgb=Vector(0.9, 0.55, 0.0))
                     ),
                     Finish(
                         phong=1.0
                     )
                 ),
-                translate=Vector(0.85, 1.1, 0.0)
+                Translate(Vector(0.85, 1.1, 0.0))
             )
         )
 
@@ -243,76 +244,58 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    #@unittest.skip
+    @unittest.skip
     def test_Scene2(self):
-        ref = '''
-// Persistence of Vision Ray Tracer Scene Description File
-// File: ?.pov
-// Vers: 3.6
-// Desc: Basic Scene Example
-// Date: mm/dd/yy
-// Auth: ?
-//
-
-#version 3.6;
-
+        ref = '''#version 3.6;
 #include "colors.inc"
-
 global_settings {
   assumed_gamma 1.0
 }
-
-// ----------------------------------------
-
 camera {
-  location  <0.0, 0.5, -4.0>
-  direction 1.5*z
-  right     x*image_width/image_height
-  look_at   <0.0, 0.0,  0.0>
+  location <0.0, 0.5, -4.0>
+  look_at <0.0, 0.0, 0.0>
+  right <1.33333333333, 0.0, 0.0>
+  direction <0.0, 0.0, 1.5>
 }
-
 sky_sphere {
   pigment {
-    gradient y
     color_map {
-      [0.0 rgb <0.6,0.7,1.0>]
-      [0.7 rgb <0.0,0.1,0.8>]
+      [0.0 color rgb <0.6, 0.7, 1.0>]
+      [0.7 color rgb <0.0, 0.1, 0.8>]
     }
+    gradient <0.0, 1.0, 0.0>
   }
 }
-
 light_source {
-  <0, 0, 0>            // light's position (translated below)
-  color rgb <1, 1, 1>  // light's color
-  translate <-30, 30, -30>
+  <0.0, 0.0, 0.0>
+  color rgb <1.0, 1.0, 1.0>
+  translate <-30.0, 30.0, -30.0>
 }
-
-// ----------------------------------------
-
 plane {
-  y, -1
-  pigment { color rgb <0.7,0.5,0.3> }
+  <0.0, 1.0, 0.0>, -1
+  pigment {
+    color rgb <0.7, 0.5, 0.3>
+  }
 }
-
 sphere {
-  0.0, 1
+  <0.0, 0.0, 0.0>, 1.0
   texture {
     pigment {
+      color_map {
+        [0.0 color rgb <1.0, 0.4, 0.2>]
+        [1.0 color rgb <1.0, 0.4, 0.2>]
+        [0.66 color rgb <0.4, 1.0, 0.2>]
+        [0.33 color rgb <0.2, 0.4, 1.0>]
+      }
       radial
       frequency 8
-      color_map {
-        [0.00 color rgb <1.0,0.4,0.2> ]
-        [0.33 color rgb <0.2,0.4,1.0> ]
-        [0.66 color rgb <0.4,1.0,0.2> ]
-        [1.00 color rgb <1.0,0.4,0.2> ]
-      }
     }
-    finish{
+    finish {
       specular 0.6
     }
   }
 }
-        '''
+'''
 
         fix = SceneFile('test.pov')
         fix.append(Version(3.6))
@@ -360,7 +343,8 @@ sphere {
                 )
             ),
             Sphere(
-                0.0, 1.0,
+                Vector(0.0, 0.0, 0.0),
+                1.0,
                 Texture(
                     Pigment(
                         ColorMap({
