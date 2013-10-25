@@ -36,6 +36,8 @@ class Version(LanguageDirective):
             raise SdlSyntaxException('Parameter not of type float')
         self.version = version
 
+        super(Version, self).__init__('#version', [version], [], {})
+
     def __str__(self):
         '''
             Generate PoV source code
@@ -45,3 +47,11 @@ class Version(LanguageDirective):
         debug("Version.__str__(): %s\n%s" % (self.version, code))
 
         return code
+
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+
+            to be overwritten in subclasses
+        '''
+        pass

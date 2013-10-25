@@ -24,4 +24,6 @@ class Sor(BlockObject):
             }
         SOR_MODIFIER:
             sturm | OBJECT_MODIFIER
+
+        @Todo: Implement
     '''

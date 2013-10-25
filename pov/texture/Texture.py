@@ -78,5 +78,7 @@ class Texture(BlockObject):
     def __init__(self, *opts, **kwargs):
         '''
             Create Texture object
+
+            @Todo: Syntax Checks
         '''
         super(Texture, self).__init__('texture', [], opts, kwargs)

@@ -53,5 +53,7 @@ class LightSource(BlockObject):
     def __init__(self, location, *opts, **kwargs):
         '''
             Create light source object
+
+            @Todo: Syntax checks
         '''
         super(LightSource, self).__init__('light_source', [location], opts, kwargs)

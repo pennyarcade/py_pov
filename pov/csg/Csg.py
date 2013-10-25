@@ -18,4 +18,6 @@ class Csg(BlockObject):
     """
         CSG_OBJECT:
             UNION | INTERSECTION | DIFFERENCE | MERGE
+
+        @Todo: Implement
     """

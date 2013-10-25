@@ -61,14 +61,14 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.
     ☐ ./pov/finite_solid/HeightField.py:41:            @TODO: Check that file really exists
     ☐ ./pov/finite_solid/HeightField.py:42:            @TODO: check if file matches given type
     ☐ ./pov/finite_solid/HeightField.py:43:            @TODO: make sure superclass constructor gets all params in the right form
-    ☐ ./pov/finite_solid/HeightField.py:44:            @TODO: test __str__
-    ☐ ./pov/finite_solid/JuliaFractal.py:46:            @todo test __str__
+    ✔ ./pov/finite_solid/HeightField.py:44:            @TODO: test __str__ @done (13-10-25 11:04)
+    ✔ ./pov/finite_solid/JuliaFractal.py:46:            @todo test __str__ @done (13-10-25 11:07)
     ☐ ./pov/finite_solid/JuliaFractal.py:66:            @Todo: get rid of Object Modifier superclass?
     ☐ ./pov/finite_solid/Blob.py:38:            @TODO: Syntax Checking
     ☐ ./pov/finite_solid/Sphere.py:26:        @Todo: Syntax Checking
     ☐ ./pov/examples/basic_sphere.py:55:#@TODO: Read from Config
     ☐ ./pov/examples/basic_sphere.py:57:#@TODO: Read from Config
-    ☐ ./pov/examples/basic_sphere.py:105:        # @Todo: make colors multiplyable
+    ✔ ./pov/examples/basic_sphere.py:105:        # @Todo: make colors multiplyable @done (13-10-25 14:05)
     ☐ ./pov/other/Camera.py:52:            @TODO: Param Syntax checking
     ☐ ./pov/other/Camera.py:53:            @todo test __str__
     ☐ ./pov/other/Camera.py:54:            @todo: add transformations

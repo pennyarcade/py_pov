@@ -18,4 +18,6 @@ class ParametricObj(BlockObject):
     """
         PARAMETRIC_OBJECT:
             PARAMETRIC
+
+        @Todo: Implement
     """

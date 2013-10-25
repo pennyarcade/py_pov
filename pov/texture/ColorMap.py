@@ -33,6 +33,8 @@ class ColorMap(BlockObject):
     def __init__(self, cmap, *opts, **kwargs):
         '''
             Create ColorMap object
+
+            @Todo: Syntax Checks
         '''
         super(ColorMap, self).__init__('color_map', [cmap], opts, kwargs)
 

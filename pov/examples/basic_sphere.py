@@ -102,7 +102,6 @@ fix.append(
     Fog(
         fog_type=2.0,
         distance=50.0,
-        # @Todo: make colors multiplyable
         color=Color(rgb=Vector(1, 1, 1))*0.8,
         fog_offset=0.1,
         fog_alt=1.5,

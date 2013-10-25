@@ -28,4 +28,6 @@ class SphereSweep(BlockObject):
                 [tolerance DEPTH_TOLERANCE]
                 [OBJECT_MODIFIERS]
             }
+
+        @Todo: Implement
     '''

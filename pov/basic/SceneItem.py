@@ -262,6 +262,8 @@ class SceneItem(object):
     def _validate_args(self, valid_args):
         '''
             Typecheck mandatory args agains given lost
+
+            @TODO: make valid_args a fixed list of arguments?
         '''
         # args validation against objects list
         for i in range(len(self.args)):

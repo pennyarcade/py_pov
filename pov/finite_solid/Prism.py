@@ -28,4 +28,6 @@ class Prism(BlockObject):
             bezier_spline | linear_sweep | conic_sweep
         PRISM_MODIFIER:
             sturm | OBJECT_MODIFIER
+
+        @Todo: Implement
     '''

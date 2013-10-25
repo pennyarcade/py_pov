@@ -24,6 +24,8 @@ class Default(LanguageDirective, BlockObject):
             #default { DEFAULT_ITEM }
         DEFAULT_ITEM:
             PLAIN_TEXTURE | PIGMENT | NORMAL | FINISH
+
+        @TODO Unittest Syntax Checks
     """
 
     def __init__(self, *opts, **kwargs):
@@ -32,6 +34,8 @@ class Default(LanguageDirective, BlockObject):
 
             @TODO: Syntax checking
         """
+        # Syntax checking
+
         super(Default, self).__init__("#default", [], opts, kwargs)
 
     def __str__(self):
@@ -41,3 +45,22 @@ class Default(LanguageDirective, BlockObject):
         code = super(Default, self).__str__()
         debug('Default.__str__: %s \n%s' % (self.name, code))
         return code
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+        '''
+
+        valid_kw = {}
+        self._validate_kwargs(valid_kw)
+
+    def _check_opts(self):
+        '''
+            Optional Argument Syntax checks
+        '''
+
+        valid_kw = [
+            'Texture', 'Pigment', 'Normal', 'Finish'
+        ]
+
+        self._validate_kwargs(valid_kw)

@@ -30,6 +30,7 @@ class Include(LanguageDirective):
             @type filename: string
 
             @TODO: assert that filename points o a real file
+            @TODO: Syntax Checks
         '''
         self.filename = filename
         #filename(Include, self).__init__('include')

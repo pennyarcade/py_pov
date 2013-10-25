@@ -43,7 +43,6 @@ class JuliaFractal(BlockObject):
             @Param param4d: four dimensional vector
             @Type param4d: Vector
 
-            @todo test __str__
         '''
         super(JuliaFractal, self).__init__("julia_fractal", [param4d], opts, kwargs)
 

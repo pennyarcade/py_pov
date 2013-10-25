@@ -22,5 +22,6 @@ class SuperEllipsoid(BlockObject):
                 <Value_E, Value_N>
                 [OBJECT_MODIFIERS...]
             }
-    '''
 
+        @Todo: Implement
+    '''

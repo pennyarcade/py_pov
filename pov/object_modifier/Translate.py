@@ -24,6 +24,8 @@ class Translate(ObjectModifier):
     def __init__(self, tvector):
         '''
             Create Translate object
+
+            @Todo: Use Syntax checking methods
         '''
 
         # Syntax checking

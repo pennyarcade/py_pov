@@ -18,4 +18,6 @@ class IsoSurface(BlockObject):
     """
         ISOSURFACE_OBJECT:
             ISOSURFACE
+
+        @Todo: Implement
     """

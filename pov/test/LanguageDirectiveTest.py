@@ -14,11 +14,12 @@ import unittest
 import os
 from logging import *
 from pov.basic.SceneItem import SceneItem
-from pov.basic.Vector import Vector
+#from pov.basic.Vector import Vector
 from pov.language_directive.LanguageDirective import LanguageDirective
 from pov.language_directive.Default import Default
 from pov.language_directive.Version import Version
 from pov.language_directive.Include import Include
+from pov.texture.Finish import Finish
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
@@ -80,7 +81,7 @@ class VersionTestCase(unittest.TestCase):
 class DefaultTestCase(unittest.TestCase):
     def setUp(self):
         debug('---------------------------------')
-        self.SUT = Default(ambient=0.43)
+        self.SUT = Default(Finish(ambient=0.43))
 
     def test_creation(self):
         self.assertIsInstance(self.SUT, Default)
@@ -91,8 +92,9 @@ class DefaultTestCase(unittest.TestCase):
         le = os.linesep
         first = str(self.SUT)
         second = '#default {' + le
-        second += '  ambient 0.43' + le
+        second += '  finish {' + le
+        second += '    ambient 0.43' + le
+        second += '  }' + le
         second += '}' + le
 
         self.assertEqual(first, second)
-

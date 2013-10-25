@@ -15,6 +15,7 @@ from pov.basic.Vector import Vector
 from pov.other.SdlSyntaxException import SdlSyntaxException
 from pov.object_modifier.ObjectModifier import ObjectModifier
 
+
 class HeightField(BlockObject):
     '''
         HEIGHT_FIELD:
@@ -41,7 +42,7 @@ class HeightField(BlockObject):
             @TODO: Check that file really exists
             @TODO: check if file matches given type
             @TODO: make sure superclass constructor gets all params in the right form
-            @TODO: test __str__
+            @TODO: refactor syntax checks to standard check methods
         '''
 
         # param syntax checking
@@ -71,6 +72,14 @@ class HeightField(BlockObject):
         # call superclass constructor
         super(HeightField, self).__init__(
             "height_field",
-            (filename),
+            [filename],
             opts, **kwargs
         )
+
+    def _getBeginCode(self):
+        """
+            Start block of code
+        """
+        code = "  " * self._getIndent() + self.name + self._block_begin()
+        code = code + self._getLine('"' + str(self.args[0]) + '"')
+        return code

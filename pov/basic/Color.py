@@ -44,6 +44,7 @@ class Color(SceneItem):
             Create Color object
 
             @Todo: add properties for all color components @see colors_ink.py
+            @TODO: Syntax Checks
         '''
         super(Color, self).__init__('color', [], opts, kwargs)
 

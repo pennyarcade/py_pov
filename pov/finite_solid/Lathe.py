@@ -27,5 +27,6 @@ class Lathe(BlockObject):
             linear_spline | quadratic_spline | cubic_spline | bezier_spline
         LATHE_MODIFIER:
             sturm | OBJECT_MODIFIER
-    '''
 
+        @TODO: Implement
+    '''

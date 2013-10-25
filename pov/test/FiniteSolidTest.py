@@ -728,6 +728,16 @@ class HeightFieldTestCase(unittest.TestCase):
         else:
             self.fail('ExpectedException not thrown')
 
+    def test_toString(self):
+        le = os.linesep
+
+        second = 'height_field {' + le
+        second += '  "foo.gif"' + le
+        second += '}' + le
+
+        self.assertEqual(str(self.SUT), second)
+
+
 
 class JuliaFractalTestCase(unittest.TestCase):
     def setUp(self):
@@ -780,6 +790,15 @@ class JuliaFractalTestCase(unittest.TestCase):
                       (type(e), traceback.format_exc()))
         else:
             self.fail('ExpectedException not thrown')
+
+    def test_toString(self):
+        le = os.linesep
+
+        second = 'julia_fractal {' + le
+        second += '  <1, 2, 3, 4>' + le
+        second += '}' + le
+
+        self.assertEqual(str(self.SUT), second)
 
 
 class SphereTestCase(unittest.TestCase):

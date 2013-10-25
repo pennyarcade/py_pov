@@ -76,6 +76,9 @@ class Normal(BlockObject):
     def __init__(self, *opts, **kwargs):
         '''
             Create Normal object
+
+            @todo: implement
+            @todo: Syntax checks
         '''
         super(Normal, self).__init__('normal', [], opts, kwargs)
 

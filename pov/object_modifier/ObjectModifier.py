@@ -39,5 +39,5 @@ class ObjectModifier(SceneItem):
         OBJECT_PHOTONS:
             photons { OBJECT_PHOTON_ITEMS }
 
-
+        @Todo: Implement subclasses
     """

@@ -249,55 +249,56 @@ class EndToEndTestCase(unittest.TestCase):
         '''
             examples/basic_scene.pov
         '''
-        ref = '''#version 3.6;
-#include "colors.inc"
-global_settings {
-  assumed_gamma 1.0
-}
-camera {
-  location <0.0, 0.5, -4.0>
-  look_at <0.0, 0.0, 0.0>
-  right <1.33333333333, 0.0, 0.0>
-  direction <0.0, 0.0, 1.5>
-}
-sky_sphere {
-  pigment {
-    color_map {
-      [0.0 color rgb <0.6, 0.7, 1.0>]
-      [0.7 color rgb <0.0, 0.1, 0.8>]
-    }
-    gradient <0.0, 1.0, 0.0>
-  }
-}
-light_source {
-  <0.0, 0.0, 0.0>
-  color rgb <1.0, 1.0, 1.0>
-  translate <-30.0, 30.0, -30.0>
-}
-plane {
-  <0.0, 1.0, 0.0>, -1
-  pigment {
-    color rgb <0.7, 0.5, 0.3>
-  }
-}
-sphere {
-  <0.0, 0.0, 0.0>, 1.0
-  texture {
-    pigment {
-      radial color_map {
-        [0.0 color rgb <1.0, 0.4, 0.2>]
-        [1.0 color rgb <1.0, 0.4, 0.2>]
-        [0.66 color rgb <0.4, 1.0, 0.2>]
-        [0.33 color rgb <0.2, 0.4, 1.0>]
-      }
-      frequency 8
-    }
-    finish {
-      specular 0.6
-    }
-  }
-}
-'''
+        le = os.linesep
+
+        ref =  '#version 3.6;' + le
+        ref += '#include "colors.inc"' + le
+        ref += 'global_settings {' + le
+        ref += '  assumed_gamma 1.0' + le
+        ref += '}' + le
+        ref += 'camera {' + le
+        ref += '  location <0.0, 0.5, -4.0>' + le
+        ref += '  look_at <0.0, 0.0, 0.0>' + le
+        ref += '  right <1.33333333333, 0.0, 0.0>' + le
+        ref += '  direction <0.0, 0.0, 1.5>' + le
+        ref += '}' + le
+        ref += 'sky_sphere {' + le
+        ref += '  pigment {' + le
+        ref += '    color_map {' + le
+        ref += '      [0.0 color rgb <0.6, 0.7, 1.0>]' + le
+        ref += '      [0.7 color rgb <0.0, 0.1, 0.8>]' + le
+        ref += '    }' + le
+        ref += '    gradient <0.0, 1.0, 0.0>' + le
+        ref += '  }' + le
+        ref += '}' + le
+        ref += 'light_source {' + le
+        ref += '  <0.0, 0.0, 0.0>' + le
+        ref += '  color rgb <1.0, 1.0, 1.0>' + le
+        ref += '  translate <-30.0, 30.0, -30.0>' + le
+        ref += '}' + le
+        ref += 'plane {' + le
+        ref += '  <0.0, 1.0, 0.0>, -1' + le
+        ref += '  pigment {' + le
+        ref += '    color rgb <0.7, 0.5, 0.3>' + le
+        ref += '  }' + le
+        ref += '}' + le
+        ref += 'sphere {' + le
+        ref += '  <0.0, 0.0, 0.0>, 1.0' + le
+        ref += '  texture {' + le
+        ref += '    pigment {' + le
+        ref += '      radial color_map {' + le
+        ref += '        [0.0 color rgb <1.0, 0.4, 0.2>]' + le
+        ref += '        [1.0 color rgb <1.0, 0.4, 0.2>]' + le
+        ref += '        [0.66 color rgb <0.4, 1.0, 0.2>]' + le
+        ref += '        [0.33 color rgb <0.2, 0.4, 1.0>]' + le
+        ref += '      }' + le
+        ref += '      frequency 8' + le
+        ref += '    }' + le
+        ref += '    finish {' + le
+        ref += '      specular 0.6' + le
+        ref += '    }' + le
+        ref += '  }' + le
+        ref += '}' + le
 
         fix = SceneFile('test.pov')
         fix.append(Version(3.6))
@@ -371,3 +372,160 @@ sphere {
         ))
 
         self.assertEqual(ref, str(fix), msg)
+
+    @unittest.skip
+    def test_Checkered_Floor_Example(self):
+        '''
+            examples/checkered_floor.pov
+        '''
+        le = os.linesep
+
+        ref =  '#version 3.6;' + le
+        ref += '#include "colors.inc"' + le
+        ref += 'global_settings {' + le
+        ref += '  assumed_gamma 1.0' + le
+        ref += '  max_trace_level 5' + le
+        ref += '}' + le
+        ref += 'camera {' + le
+        ref += '  location  <0.0, 0.5, -4.0>' + le
+        ref += '  direction 1.5*z' + le
+        ref += '  right     x*image_width/image_height' + le
+        ref += '  look_at   <0.0, 0.0,  0.0>' + le
+        ref += '}' + le
+        ref += 'sky_sphere {' + le
+        ref += '  pigment {' + le
+        ref += '    gradient y' + le
+        ref += '    color_map {' + le
+        ref += '      [0.0 rgb <0.6,0.7,1.0>]' + le
+        ref += '      [0.7 rgb <0.0,0.1,0.8>]' + le
+        ref += '    }' + le
+        ref += '  }' + le
+        ref += '}' + le
+        ref += 'light_source {' + le
+        ref += '  <0, 0, 0>' + le
+        ref += '  color rgb <1, 1, 1>' + le
+        ref += '  translate <-30, 30, -30>' + le
+        ref += '}' + le
+        ref += 'plane {' + le
+        ref += '  y, -1' + le
+        ref += '  texture' + le
+        ref += '  {' + le
+        ref += '    pigment {' + le
+        ref += '      checker' + le
+        ref += '      color rgb 1' + le
+        ref += '      color blue 1' + le
+        ref += '      scale 0.5' + le
+        ref += '    }' + le
+        ref += '    finish{' + le
+        ref += '      diffuse 0.8' + le
+        ref += '      ambient 0.1' + le
+        ref += '    }' + le
+        ref += '  }' + le
+        ref += '}' + le
+        ref += 'sphere {' + le
+        ref += '  0.0, 1' + le
+        ref += '  texture {' + le
+        ref += '    pigment {' + le
+        ref += '      color rgb <0.8,0.8,1.0>' + le
+        ref += '    }' + le
+        ref += '    finish{' + le
+        ref += '      diffuse 0.3' + le
+        ref += '      ambient 0.0' + le
+        ref += '      specular 0.6' + le
+        ref += '      reflection {' + le
+        ref += '        0.8' + le
+        ref += '        metallic' + le
+        ref += '      }' + le
+        ref += '      conserve_energy' + le
+        ref += '    }' + le
+        ref += '  }' + le
+        ref += '}' + le
+
+        fix = SceneFile('test.pov')
+        fix.append(Version(3.6))
+        fix.append(Include('colors.inc'))
+        fix.append(
+            GlobalSettings(
+                assumed_gamma=1.0,
+                max_trace_level=5
+            )
+        )
+
+        #@TODO: Read from Config
+        image_width = 800
+        #@TODO: Read from Config
+        image_height = 600
+
+        fix.append(
+            Camera(
+                location=Vector(0.0, 0.5, -4.0),
+                direction=1.5 * z,
+                right=x * image_width / image_height,
+                look_at=Vector(0.0, 0.0, 0.0)
+            ),
+            SkySphere(
+                Pigment(
+                    ColorMap({
+                        0.0: Color(rgb=Vector(0.6, 0.7, 1.0)),
+                        0.7: Color(rgb=Vector(0.0, 0.1, 0.8))
+                    }),
+                    gradient=y
+                )
+            ),
+            LightSource(
+                Vector(0, 0, 0),
+                Color(rgb=Vector(1, 1, 1)),
+                Translate(Vector(-30, 30, -30))
+            )
+        )
+
+        fix.append(
+            Plane(
+                y, -1,
+                Texture(
+                    Pigment(
+                        checker,
+                        Color(rgb=Vector(1, 1, 1)),
+                        Color(blue=1),
+
+                    )
+                )
+            )
+        )
+
+'''
+        ref += 'plane {' + le
+        ref += '  y, -1' + le
+        ref += '  texture' + le
+        ref += '  {' + le
+        ref += '    pigment {' + le
+        ref += '      checker' + le
+        ref += '      color rgb 1' + le
+        ref += '      color blue 1' + le
+        ref += '      scale 0.5' + le
+        ref += '    }' + le
+        ref += '    finish{' + le
+        ref += '      diffuse 0.8' + le
+        ref += '      ambient 0.1' + le
+        ref += '    }' + le
+        ref += '  }' + le
+        ref += '}' + le
+        ref += 'sphere {' + le
+        ref += '  0.0, 1' + le
+        ref += '  texture {' + le
+        ref += '    pigment {' + le
+        ref += '      color rgb <0.8,0.8,1.0>' + le
+        ref += '    }' + le
+        ref += '    finish{' + le
+        ref += '      diffuse 0.3' + le
+        ref += '      ambient 0.0' + le
+        ref += '      specular 0.6' + le
+        ref += '      reflection {' + le
+        ref += '        0.8' + le
+        ref += '        metallic' + le
+        ref += '      }' + le
+        ref += '      conserve_energy' + le
+        ref += '    }' + le
+        ref += '  }' + le
+        ref += '}' + le
+'''

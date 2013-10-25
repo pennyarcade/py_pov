@@ -24,4 +24,6 @@ class Torus(BlockObject):
             }
         TORUS_MODIFIER:
             sturm | OBJECT_MODIFIER
+
+        @Todo: Implement
     '''

@@ -35,6 +35,7 @@ class LanguageDirective(SceneItem):
             MACRO_DEFINITION
 
         @Todo: Is this superclass deprecated?
+        @Todo: Implement subclasses
     """
     def __init__(self, name, args=[], opts=[], kwargs=[]):
         debug("%s: LanguageDirective.__init__(): %s, %s, %s, %s" %
