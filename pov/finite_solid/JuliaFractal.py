@@ -71,6 +71,8 @@ class JuliaFractal(BlockObject):
     def _check_kwargs(self):
         '''
             Keyword Argument Syntax checks
+
+            @Todo: Finish syntax checks
         '''
 
         valid_kw = {

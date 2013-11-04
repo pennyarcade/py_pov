@@ -27,7 +27,6 @@ class Sphere(BlockObject):
                 [OBJECT_MODIFIERS...]
             }
 
-        @Todo: Syntax Checking
     '''
 
     def __init__(self, center, radius, *opts, **kwargs):
@@ -35,24 +34,46 @@ class Sphere(BlockObject):
             Create Sphere object
         '''
 
-        # Syntax checking
-        if not isinstance(center, Vector):
-            raise SdlSyntaxException('Parameter center is not of type Vector')
-        if not len(center.v) == 3:
-            raise SdlSyntaxException('Center point Vector has more or less than 3 dimensions')
-        if not type(radius) in (int, float):
-            raise SdlSyntaxException('Param radius is not of type int or float')
-
-        # Make sure only valid Object Modifiers are passed
-        for i in range(len(opts)):
-            if not opts[i].__class__.__name__ in self._object_modifiers:
-                warn(str(type(opts[i])))
-                raise SdlSyntaxException('Only ObjectModifier objects may be passed as options')
-
-        for key, val in kwargs.items():
-            if not key in []:
-                raise SdlSyntaxException('Invalid key: ' + str(key))
-#            if not type(val) == bool:
-#                raise SdlSyntaxException('Value of key %s is not boolean', key)
-
         super(Sphere, self).__init__('sphere', [center, radius], opts, kwargs)
+
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+
+            @Todo: How to allow int and float as type
+        '''
+        valid_args = ['Vector', ('float', 'int')]
+
+        self._validate_args(valid_args)
+
+        # param syntax checks
+        if not len(self.args[0].v) == 3:
+            raise SdlSyntaxException('Center point Vector has more or less than 3 dimensions')
+
+    def _check_opts(self):
+        '''
+            Option Syntax checks
+
+            @Todo: get rid of Object Modifier superclass?
+        '''
+        valid_opts = ['ObjectModifier']
+
+        self._validate_opts(valid_opts)
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+
+        '''
+
+        valid_kw = {
+            # Object modifier kw
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool',
+            'hollow': 'bool'
+        }
+
+        self._validate_kwargs(valid_kw)

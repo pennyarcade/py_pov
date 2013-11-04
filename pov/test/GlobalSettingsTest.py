@@ -30,7 +30,7 @@ class GlobalSettingsTestCase(unittest.TestCase):
         try:
             self.SUT = GlobalSettings('foo', 'bar')
         except SdlSyntaxException as e:
-            if not str(e) == 'Only Radiosity or Photons objects may be passed as options':
+            if not str(e) == 'Invalid option type str not in allowed opts \n[\'Radiosity\', \'Photons\']':
                 self.fail('SdlSyntaxException with wrong message: %s' % str(e))
         except Exception as e:
             self.fail('Unexpected exception thrown: %s \r\n %s' %

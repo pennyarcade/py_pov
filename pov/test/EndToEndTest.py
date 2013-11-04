@@ -484,48 +484,33 @@ class EndToEndTestCase(unittest.TestCase):
                 y, -1,
                 Texture(
                     Pigment(
-                        checker,
                         Color(rgb=Vector(1, 1, 1)),
                         Color(blue=1),
-
+                        checker=True,
+                        scale= 0.5
+                    ),
+                    Finish(
+                        diffuse=0.8,
+                        ambient=0.1
+                    )
+                )
+            ),
+            Sphere(
+                0.0, 1,
+                Texture(
+                    Pigment(
+                        Color(rgb=Vector(0.8, 0.8, 1.0))
+                    ),
+                    Finish(
+                        Reflection(
+                            0.8,
+                            metallic=True
+                        ),
+                        diffuse=0.3,
+                        ambient=0.0,
+                        specular=0.6,
+                        conserve_energy=True
                     )
                 )
             )
         )
-
-'''
-        ref += 'plane {' + le
-        ref += '  y, -1' + le
-        ref += '  texture' + le
-        ref += '  {' + le
-        ref += '    pigment {' + le
-        ref += '      checker' + le
-        ref += '      color rgb 1' + le
-        ref += '      color blue 1' + le
-        ref += '      scale 0.5' + le
-        ref += '    }' + le
-        ref += '    finish{' + le
-        ref += '      diffuse 0.8' + le
-        ref += '      ambient 0.1' + le
-        ref += '    }' + le
-        ref += '  }' + le
-        ref += '}' + le
-        ref += 'sphere {' + le
-        ref += '  0.0, 1' + le
-        ref += '  texture {' + le
-        ref += '    pigment {' + le
-        ref += '      color rgb <0.8,0.8,1.0>' + le
-        ref += '    }' + le
-        ref += '    finish{' + le
-        ref += '      diffuse 0.3' + le
-        ref += '      ambient 0.0' + le
-        ref += '      specular 0.6' + le
-        ref += '      reflection {' + le
-        ref += '        0.8' + le
-        ref += '        metallic' + le
-        ref += '      }' + le
-        ref += '      conserve_energy' + le
-        ref += '    }' + le
-        ref += '  }' + le
-        ref += '}' + le
-'''

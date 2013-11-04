@@ -865,7 +865,7 @@ class SphereTestCase(unittest.TestCase):
                 open=0.3
             )
         except SdlSyntaxException as e:
-            if not str(e) == 'Parameter center is not of type Vector':
+            if not str(e) == 'Value of Argument 0 is expectet to be type Vector but got str':
                 self.fail('SdlSyntaxException with wrong message: %s' % str(e))
         except Exception as e:
             self.fail('Unexpected exception thrown: %s \r\n %s' %
@@ -899,7 +899,7 @@ class SphereTestCase(unittest.TestCase):
                 open=0.3
             )
         except SdlSyntaxException as e:
-            if not str(e) == 'Param radius is not of type int or float':
+            if not str(e) == 'Value of Argument 1 is expectet to be type (\'float\', \'int\') but got str':
                 self.fail('SdlSyntaxException with wrong message: %s' % str(e))
         except Exception as e:
             self.fail('Unexpected exception thrown: %s \r\n %s' %
@@ -916,7 +916,7 @@ class SphereTestCase(unittest.TestCase):
                 open=0.3
             )
         except SdlSyntaxException as e:
-            if not str(e) == 'Only ObjectModifier objects may be passed as options':
+            if not str(e) == 'Invalid option type str not in allowed opts \n[\'ObjectModifier\']':
                 self.fail('SdlSyntaxException with wrong message: %s' % str(e))
         except Exception as e:
             self.fail('Unexpected exception thrown: %s \r\n %s' %

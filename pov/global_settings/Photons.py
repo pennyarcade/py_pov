@@ -16,6 +16,22 @@ from pov.basic.BlockObject import BlockObject
 
 class Photons(BlockObject):
     """
-        @Todo: Apidoc
+        PHOTONS:
+            photons { PHOTON_QUANTITY [PHOTON_ITEMS] }
+        PHOTON_QUANTITY:
+            spacing FLOAT |
+            count INT
+        PHOTON_ITEMS:
+            [gather I_MIN, I_MAX] &
+            [media I_MAX_STEPS [, F_FACTOR]] &
+            [jitter FLOAT] &
+            [max_trace_level INT] &
+            [adc_bailout FLOAT] &
+            [save_file FILE_NAME] &
+            [load_file FILE_NAME] &
+            [autostop FLOAT] &
+            [expand_thresholds F_INCREASE, F_MIN] &
+            [radius [FLOAT, FLOAT, FLOAT, FLOAT]]
+
         @Todo: Implement
     """

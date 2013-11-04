@@ -37,6 +37,8 @@ class Cone(BlockObject):
             @type  cappoint: Vector
             @param capradius: Cap radius of cone
             @type  capradius: Float
+
+            @Todo: use Syntax Checking Methods (See juliaFractal)
         """
 
         # Syntax checking

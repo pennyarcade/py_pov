@@ -14,6 +14,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 from pov.basic.BlockObject import BlockObject
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
+
 class Camera(BlockObject):
     """
         CAMERA:
@@ -27,6 +28,7 @@ class Camera(BlockObject):
             omnimax |
             panoramic |
             spherical |
+            cylinder CYLINDER_TYPE
         CYLINDER_TYPE:
             1 | 2 | 3 | 4
         CAMERA_ITEMS:
@@ -48,11 +50,8 @@ class Camera(BlockObject):
             [confidence FLOAT] &
             [variance FLOAT]
 
-
-            @TODO: Param Syntax checking
             @todo test __str__
             @todo: add transformations
-            @Todo: are there any valid options at all?
     """
 
     def __init__(self, *opts, **kwargs):
@@ -60,6 +59,24 @@ class Camera(BlockObject):
             Create camera object
         '''
         super(Camera, self).__init__('camera', [], opts, kwargs)
+
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+        '''
+        valid_args = []
+
+        self._validate_args(valid_args)
+
+    def _check_opts(self):
+        '''
+            Option Syntax checks
+
+            @Todo: get rid of Object Modifier superclass?
+        '''
+        valid_opts = ['Angle', 'Normal', 'Transformation']
+
+        self._validate_opts(valid_opts)
 
     def _check_kwargs(self):
         '''
@@ -84,6 +101,7 @@ class Camera(BlockObject):
 
         self._validate_kwargs(valid_kw)
 
+        #@TODO: Implement Camera type checking
         foo = ['perspective',
                'orthographic',
                'fisheye',

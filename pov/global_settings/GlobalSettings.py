@@ -12,9 +12,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 
 from pov.basic.BlockObject import BlockObject
-from pov.global_settings.Radiosity import Radiosity
-from pov.global_settings.Photons import Photons
-from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class GlobalSettings(BlockObject):
@@ -44,7 +41,6 @@ class GlobalSettings(BlockObject):
             Construct a GlobalSettings object
 
             @Todo: test __str__
-            @Todo: check there are no valid params??
         '''
 
         super(GlobalSettings, self).__init__("global_settings", [], opts, kwargs)
@@ -52,18 +48,15 @@ class GlobalSettings(BlockObject):
     def _check_opts(self):
         '''
             Option Syntax checks
-
-            @Todo: generalize checks
         '''
-        for i in range(len(self.opts)):
-            if not (isinstance(self.opts[i], Radiosity) or isinstance(self.opts[i], Photons)):
-                raise SdlSyntaxException('Only Radiosity or Photons objects may be passed as options')
+
+        valid_opts = ['Radiosity', 'Photons']
+
+        self._validate_opts(valid_opts)
 
     def _check_kwargs(self):
         '''
             Keyword Argument Syntax checks
-
-            @Todo: how to check values in a generalized way?
         '''
 
         valid_kw = {
@@ -79,3 +72,8 @@ class GlobalSettings(BlockObject):
         }
 
         self._validate_kwargs(valid_kw)
+
+        self._checkKwargValue('charset', ['ascii', 'utf8', 'sys'])
+        self._checkKwargValue('noise_generator', [1, 2, 3])
+
+

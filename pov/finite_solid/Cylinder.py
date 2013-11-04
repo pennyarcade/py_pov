@@ -35,6 +35,8 @@ class Cylinder(BlockObject):
             @type  cappoint: Vector
             @param radius: Radius of cylinder
             @type  radius: Float
+
+            @Todo: Use Syntax checking Methods (See JuliaFractal)
         """
 
         # Syntax checking

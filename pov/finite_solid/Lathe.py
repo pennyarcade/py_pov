@@ -29,4 +29,5 @@ class Lathe(BlockObject):
             sturm | OBJECT_MODIFIER
 
         @TODO: Implement
+        @Todo: Syntax Checks
     '''
