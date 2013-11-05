@@ -55,8 +55,8 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git > todo.t
 
 grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.todo (24.10.2013):
     ☐ ./pov/language_directive/LanguageDirective.py:37:        @Todo: Is this superclass deprecated?
-    ☐ ./pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file
-    ☐ ./pov/language_directive/Default.py:33:            @TODO: Syntax checking
+    ✔ ./pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file @done (13-11-05 14:12)
+    ✔ ./pov/language_directive/Default.py:33:            @TODO: Syntax checking @done (13-11-05 12:48)
     ☐ ./pov/language_directive/Version.py:33:            @todo: How to refactor this into _check_args()??
     ☐ ./pov/finite_solid/HeightField.py:41:            @TODO: Check that file really exists
     ☐ ./pov/finite_solid/HeightField.py:42:            @TODO: check if file matches given type

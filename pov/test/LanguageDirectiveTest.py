@@ -39,7 +39,7 @@ class LanguageDirectiveTestCase(unittest.TestCase):
 
 class IncludeTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = Include('test.inc')
+        self.SUT = Include('fixture/test.inc')
 
     def test_create(self):
         self.assertIsInstance(self.SUT, Include)
@@ -47,7 +47,7 @@ class IncludeTestCase(unittest.TestCase):
 
     def test_str(self):
         le = os.linesep
-        second = '#include "test.inc"' + le
+        second = '#include "fixture/test.inc"' + le
 
         self.assertEqual(str(self.SUT), second)
 
