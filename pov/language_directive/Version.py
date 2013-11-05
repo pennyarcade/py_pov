@@ -29,12 +29,7 @@ class Version(LanguageDirective):
 
             @param version: Full name of file to be included
             @type version: float
-
-            @todo: How to refactor this into _check_args()??
         '''
-        if not type(version) == float:
-            raise SdlSyntaxException('Parameter not of type float')
-        self.version = version
 
         super(Version, self).__init__('#version', [version], [], {})
 
@@ -42,9 +37,9 @@ class Version(LanguageDirective):
         '''
             Generate PoV source code
         '''
-        code = self._getLine('#' + 'version ' + str(self.version) + ';')
+        code = self._getLine('#' + 'version ' + str(self.args[0]) + ';')
 
-        debug("Version.__str__(): %s\n%s" % (self.version, code))
+        debug("Version.__str__(): %s\n%s" % (self.args[0], code))
 
         return code
 
@@ -54,4 +49,6 @@ class Version(LanguageDirective):
 
             to be overwritten in subclasses
         '''
-        pass
+        valid_args = ['float']
+
+        self._validate_args(valid_args)

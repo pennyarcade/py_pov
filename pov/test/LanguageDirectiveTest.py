@@ -67,7 +67,7 @@ class VersionTestCase(unittest.TestCase):
         self.assertEqual(str(self.SUT), second)
 
     def test_create_wrong_type(self):
-        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter not of type float'):
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of Argument 0 is expectet to be type float but got str'):
             self.SUT = Version('foo')
 
 
