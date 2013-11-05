@@ -58,16 +58,16 @@ class HeightField(BlockObject):
         for key, val in kwargs.items():
             # allowed keywords
             if not key in ['hf_type', 'hierarchy', 'smooth', 'water_level']:
-                raise SdlSyntaxException('Invalid key: ' + str(key))
+                raise SdlSyntaxException('Invalid keyword: ' + str(key))
 
             if (key in ['hierarchy', 'smooth']) and (not type(val) == bool):
-                raise SdlSyntaxException('Key %s expected boolean value, got %s', (key, type(val)))
+                raise SdlSyntaxException('Keyword %s expected boolean value, got %s' % (key, val.__class__.__name__))
             if (key == 'hf_type') and (not type(val) == str):
-                raise SdlSyntaxException('Key %s expected string value, got %s', (key, type(val)))
+                raise SdlSyntaxException('Keyword %s expected string value, got %s' % (key, val.__class__.__name__))
             if (key == 'hf_type') and (not val in ['gif', 'tga', 'pot', 'png', 'pgm', 'ppm', 'jpeg', 'tiff', 'sys', 'function']):
-                raise SdlSyntaxException('Value %s of key %s is not valid' % (val, key))
+                raise SdlSyntaxException('Value %s of keyword %s is not valid' % (val, key))
             if (key == 'water_level') and (not type(val) == float):
-                raise SdlSyntaxException('Key %s expected float value, got %s', (key, type(val)))
+                raise SdlSyntaxException('Keyword %s expected float value, got %s' % (key, val.__class__.__name__))
 
         # call superclass constructor
         super(HeightField, self).__init__(

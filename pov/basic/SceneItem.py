@@ -313,7 +313,7 @@ class SceneItem(object):
         if kwarg in self.kwargs:
             if not self.kwargs[kwarg] in validvalues:
                 raise SdlSyntaxException(
-                    'Value of KW Argument %s is expectet to be in %s but got %s: ' %
+                    'Value of KW Argument %s is expectet to be in %s but got %s' %
                     (kwarg, validvalues, self.kwargs[kwarg])
                 )
 

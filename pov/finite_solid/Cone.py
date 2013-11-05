@@ -53,7 +53,7 @@ class Cone(BlockObject):
         if not len(cappoint.v) == 3:
             raise SdlSyntaxException('Cap point Vector has more or less than 3 dimensions')
         if not type(capradius) in (int, float):
-            raise SdlSyntaxException('Param base radius is not of type int or float')
+            raise SdlSyntaxException('Param cap radius is not of type int or float')
 
         # Make sure only valid Object Modifiers are passed
         for i in range(len(opts)):
@@ -62,9 +62,9 @@ class Cone(BlockObject):
 
         for key, val in kwargs.items():
             if not key in ['open']:
-                raise SdlSyntaxException('Invalid key: ' + str(key))
+                raise SdlSyntaxException('Invalid keyword: ' + str(key))
             if not type(val) == bool:
-                raise SdlSyntaxException('Value of key %s is not boolean', key)
+                raise SdlSyntaxException('Value of keyword %s is not boolean' % key)
 
         super(Cone, self).__init__(
             "cone",

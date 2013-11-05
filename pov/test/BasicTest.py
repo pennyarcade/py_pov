@@ -281,26 +281,12 @@ class SceneFileTestCase(unittest.TestCase):
         self.assertIn(item, self.SUT.items)
 
     def test_createFnamWrongType(self):
-        try:
+        with self.assertRaisesRegexp(TypeError, 'Filename String expected but got int'):
             self.SUT = SceneFile(0, SceneItem('foo'), SceneItem('bar'))
-        except TypeError:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('Expected exception not thrown')
 
     def test_appendWrongType(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Item is expectet to be a SceneItem object but got str'):
             self.SUT.append('foo')
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('Expected exception not thrown')
 
     def test_toString(self):
         le = os.linesep
@@ -417,17 +403,3 @@ class ColorTestCase(unittest.TestCase):
         self.SUT *= 0.1
         print self.SUT
         self.assertEqual(self.SUT.vector, Vector(10, 15, 20))
-
-    '''
-    def assertRaises(self):
-        try:
-            'foo' * self.SUT
-        except SdlSyntaxException as e:
-            if not str(e) == 'Parameter not of type float or int':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
-    '''

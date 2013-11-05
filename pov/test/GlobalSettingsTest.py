@@ -27,13 +27,5 @@ class GlobalSettingsTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
     def test_create_Option_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Invalid option type str not in allowed opts \n\\[\'Radiosity\', \'Photons\']'):
             self.SUT = GlobalSettings('foo', 'bar')
-        except SdlSyntaxException as e:
-            if not str(e) == 'Invalid option type str not in allowed opts \n[\'Radiosity\', \'Photons\']':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')

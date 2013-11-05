@@ -126,7 +126,7 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.
     ☐ ./pov/test/FiniteSolidTest.py:151:            @ToDo: Option: 0..1 transform object
     ☐ ./pov/test/FiniteSolidTest.py:152:            @ToDo: KwArg: 0..1 transform string; existing identifier; transform object
     ☐ ./pov/test/FiniteSolidTest.py:153:            @ToDo: only one "transform"
-    ☐ ./pov/test/BasicTest.py:13:                    @TODO refactor Unittests extract testing for exceptions to method
+    ✔ ./pov/test/BasicTest.py:13:                    @TODO refactor Unittests extract testing for exceptions to method @done (13-11-05 12:42)
     ☐ ./pov/test/BasicTest.py:467:                    @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
     ✔ pov.texture.Normal                             9      4    56%   80-84 @done (13-10-24 08:49)
     ✔ pov.texture.Pigment                            9      4    56%   83-87 @done (13-10-24 09:01)

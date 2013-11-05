@@ -32,7 +32,6 @@ class LanguageDirectiveTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
     def test_str(self):
-        le = os.linesep
         second = '#foo'
 
         self.assertEqual(str(self.SUT), second)
@@ -68,14 +67,8 @@ class VersionTestCase(unittest.TestCase):
         self.assertEqual(str(self.SUT), second)
 
     def test_create_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter not of type float'):
             self.SUT = Version('foo')
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
-        else:
-            self.fail('ExpectedException not thrown')
 
 
 class DefaultTestCase(unittest.TestCase):
