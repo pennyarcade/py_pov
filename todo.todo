@@ -58,9 +58,9 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.
     ✔ ./pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file @done (13-11-05 14:12)
     ✔ ./pov/language_directive/Default.py:33:            @TODO: Syntax checking @done (13-11-05 12:48)
     ✔ ./pov/language_directive/Version.py:33:            @todo: How to refactor this into _check_args()?? @done (13-11-05 14:22)
-    ☐ ./pov/finite_solid/HeightField.py:41:            @TODO: Check that file really exists
+    ✔ ./pov/finite_solid/HeightField.py:41:            @TODO: Check that file really exists @done (13-11-05 15:09)
     ☐ ./pov/finite_solid/HeightField.py:42:            @TODO: check if file matches given type
-    ☐ ./pov/finite_solid/HeightField.py:43:            @TODO: make sure superclass constructor gets all params in the right form
+    ✔ ./pov/finite_solid/HeightField.py:43:            @TODO: make sure superclass constructor gets all params in the right form @done (13-11-05 15:09)
     ✔ ./pov/finite_solid/HeightField.py:44:            @TODO: test __str__ @done (13-10-25 11:04)
     ✔ ./pov/finite_solid/JuliaFractal.py:46:            @todo test __str__ @done (13-10-25 11:07)
     ☐ ./pov/finite_solid/JuliaFractal.py:66:            @Todo: get rid of Object Modifier superclass?

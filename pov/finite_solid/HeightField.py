@@ -10,6 +10,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+import os
 from pov.basic.BlockObject import BlockObject
 from pov.basic.Vector import Vector
 from pov.other.SdlSyntaxException import SdlSyntaxException
@@ -39,41 +40,15 @@ class HeightField(BlockObject):
             @param filename: Input file name
             @param type: string
 
-            @TODO: Check that file really exists
             @TODO: check if file matches given type
-            @TODO: make sure superclass constructor gets all params in the right form
-            @TODO: refactor syntax checks to standard check methods
         '''
-
-        # param syntax checking
-        if not type(filename) == str:
-            raise SdlSyntaxException('String expected for param "filename"')
-
-        # make sure only valid object modifiers are passed
-        for i in range(len(opts)):
-            if not isinstance(opts[i], ObjectModifier):
-                raise SdlSyntaxException('Only ObjectModifier objects may be passed as options')
-
-        # kwargs syntax checking
-        for key, val in kwargs.items():
-            # allowed keywords
-            if not key in ['hf_type', 'hierarchy', 'smooth', 'water_level']:
-                raise SdlSyntaxException('Invalid keyword: ' + str(key))
-
-            if (key in ['hierarchy', 'smooth']) and (not type(val) == bool):
-                raise SdlSyntaxException('Keyword %s expected boolean value, got %s' % (key, val.__class__.__name__))
-            if (key == 'hf_type') and (not type(val) == str):
-                raise SdlSyntaxException('Keyword %s expected string value, got %s' % (key, val.__class__.__name__))
-            if (key == 'hf_type') and (not val in ['gif', 'tga', 'pot', 'png', 'pgm', 'ppm', 'jpeg', 'tiff', 'sys', 'function']):
-                raise SdlSyntaxException('Value %s of keyword %s is not valid' % (val, key))
-            if (key == 'water_level') and (not type(val) == float):
-                raise SdlSyntaxException('Keyword %s expected float value, got %s' % (key, val.__class__.__name__))
 
         # call superclass constructor
         super(HeightField, self).__init__(
             "height_field",
             [filename],
-            opts, **kwargs
+            opts,
+            kwargs
         )
 
     def _getBeginCode(self):
@@ -83,3 +58,49 @@ class HeightField(BlockObject):
         code = "  " * self._getIndent() + self.name + self._block_begin()
         code = code + self._getLine('"' + str(self.args[0]) + '"')
         return code
+
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+        '''
+        valid_args = ['str']
+
+        self._validate_args(valid_args)
+
+        # param syntax checks
+        if not os.path.isfile(self.args[0]):
+            raise IOError('No sutch file: %s%s%s' % (os.getcwd(), os.sep, self.args[0]))
+        #@TODO: check file type
+
+    def _check_opts(self):
+        '''
+            Option Syntax checks
+
+            @Todo: get rid of Object Modifier superclass?
+        '''
+        valid_opts = ['ObjectModifier']
+
+        self._validate_opts(valid_opts)
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+        '''
+
+        valid_kw = {
+            'hf_type': 'str',
+            'hierarchy': 'bool',
+            'smooth': 'bool',
+            'water_level': 'float',
+            # Object modifier kw
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool',
+            'hollow': 'bool'
+        }
+
+        self._validate_kwargs(valid_kw)
+
+        self._checkKwargValue(self, 'hf_type', ['gif', 'tga', 'pot', 'png', 'pgm', 'ppm', 'jpeg', 'tiff', 'sys', 'function'])

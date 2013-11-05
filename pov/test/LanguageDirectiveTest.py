@@ -14,7 +14,6 @@ import unittest
 import os
 from logging import *
 from pov.basic.SceneItem import SceneItem
-#from pov.basic.Vector import Vector
 from pov.language_directive.LanguageDirective import LanguageDirective
 from pov.language_directive.Default import Default
 from pov.language_directive.Version import Version
