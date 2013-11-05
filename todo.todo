@@ -1,58 +1,3 @@
-grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git > todo.todo (28.05.2013):
-    ✔ ./pov/test/EndToEndTest.py:114:        #@TODO: Define globaly (Vector Module?) @done (13-05-28 09:21)
-    ☐ ./pov/test/EndToEndTest.py:116:        #@TODO: Read from Config
-    ☐ ./pov/test/EndToEndTest.py:118:        #@TODO: Read from Config
-    ☐ ./pov/test/EndToEndTest.py:141:                            #@Todo: How to implement params??
-    ✔ ./pov/global_settings/GlobalSettings.py:46:            @TODO: Param Syntax checking @done (13-05-28 09:23)
-    ✔ ./pov/global_settings/GlobalSettings.py:47:            @TODO: make sure superclass constructor gets all params in the right form @done (13-05-28 09:25)
-    ☐ ./pov/global_settings/GlobalSettings.py:48:            @todo test __str__
-    ☐ ./pov/global_settings/GlobalSettings.py:57:            @Todo: generalize checks
-    ☐ ./pov/global_settings/Radiosity.py:19:        @Todo: Apidoc
-    ☐ ./pov/global_settings/Radiosity.py:20:        @Todo: Implement
-    ☐ ./pov/global_settings/Photons.py:19:        @Todo: Apidoc
-    ☐ ./pov/global_settings/Photons.py:20:        @Todo: Implement
-    ☐ ./pov/finite_solid/HeightField.py:42:            @TODO: Check that file really exists
-    ☐ ./pov/finite_solid/HeightField.py:43:            @TODO: check if file matches given type
-    ☐ ./pov/finite_solid/HeightField.py:44:            @TODO: make sure superclass constructor gets all params in the right form
-    ☐ ./pov/finite_solid/HeightField.py:45:            @TODO: test __str__
-    ✔ ./pov/finite_solid/JuliaFractal.py:48:            @TODO: Param Syntax checking @done (13-05-28 09:28)
-    ✔ ./pov/finite_solid/JuliaFractal.py:49:            @TODO: make sure superclass constructor gets all params in the right form @done (13-05-28 09:28)
-    ☐ ./pov/finite_solid/JuliaFractal.py:50:            @todo test __str__
-    ✔ ./pov/finite_solid/JuliaFractal.py:53:        # @todo: move to _check_arguments() @done (13-05-28 11:21)
-    ✔ ./pov/finite_solid/JuliaFractal.py:71:            @Todo: generalize @done (13-05-28 12:28)
-    ☐ ./pov/finite_solid/JuliaFractal.py:72:            @Todo: get rid of Object Modifier superclass
-    ✔ ./pov/finite_solid/JuliaFractal.py:73:            @todo: most Object Modifiers should be kwargs @done (13-05-28 12:42)
-    ☐ ./pov/finite_solid/Blob.py:38:            @TODO: Syntax Checking
-    ✔ ./pov/finite_solid/Box.py:37:            @TODO: Add Syntax check: There are no valid kwargs @done (13-05-28 14:35)
-    ☐ ./pov/texture/Finish.py:43:            @TODO: Syntax checking
-    ☐ ./pov/language_directive/Version.py:33:            @todo: How to refactor this into _check_args()??
-    ☐ ./pov/language_directive/Default.py:33:            @TODO: Syntax checking
-    ☐ ./pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file
-    ☐ ./pov/language_directive/LanguageDirective.py:37:        @Todo: Is this superclass deprecated?
-    ☐ ./pov/basic/SceneItem.py:138:            @TODO: move indentation check to own function
-    ☐ ./pov/basic/SceneItem.py:148:        #@todo: Does indentation really have to stay in the constructor??
-    ✘ ./pov/basic/SceneItem.py:311:            @todo: typecheck param @cancelled (13-05-28 12:45)
-    ✘ ./pov/basic/SceneItem.py:321:            @todo: typecheck param @cancelled (13-05-28 12:45)
-    ☐ ./pov/basic/SceneFile.py:20:        @Todo: Proper Apidoc
-    ☐ ./pov/basic/SceneFile.py:21:        @Todo: Add param for PovRay Ini file
-    ☐ ./pov/basic/SceneFile.py:40:            @Todo: check if file is writeable?
-    ✔ ./pov/basic/SceneFile.py:56:            @Todo: Apidoc @done (13-05-28 12:49)
-    ✔ ./pov/basic/SceneFile.py:69:            @Todo: Apidoc @done (13-05-28 12:48)
-    ✔ ./pov/basic/SceneFile.py:70:            @Todo: Make multiple items possible? @done (13-05-28 14:56)
-    ☐ ./pov/basic/SceneFile.py:81:            @TODO: There should be no more type/syntax checking here
-    ☐ ./pov/basic/SceneFile.py:82:            @Todo: Write to file code
-    ☐ ./pov/other/Camera.py:52:            @TODO: Param Syntax checking
-    ☐ ./pov/other/Camera.py:53:            @todo test __str__
-    ☐ ./pov/other/Camera.py:54:            @todo: add transformations
-    ☐ ./pov/other/Camera.py:55:            @Todo: are there any valid options at all?
-    ✔ pov.basic.SceneFile                           25      1    96%   43 @done (13-10-23 13:38)
-    ✔ pov.basic.SceneItem                          137     10    93%   184, 266-271, 314, 323-325, 377 @done (13-10-23 13:38)
-    ✔ pov.basic.Vector                              61      5    92%   54, 59, 64, 69, 94 @done (13-10-23 13:38)
-    ✔ pov.finite_solid.Cone                         28      4    86%   44, 46, 50, 52 @done (13-10-23 14:25)
-    ✔ pov.finite_solid.Cylinder                     26      6    77%   42, 44, 46, 48, 50, 55 @done (13-10-23 15:22)
-    ✔ pov.global_settings.GlobalSettings            15      2    87%   58-59 @done (13-10-23 15:22)
-    ✔ pov.other.Camera                               8      3    63%   63-81 @done (13-05-28 13:07)
-
 grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.todo (24.10.2013):
     ☐ ./pov/language_directive/LanguageDirective.py:37:        @Todo: Is this superclass deprecated?
     ✔ ./pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file @done (13-11-05 14:12)
@@ -131,4 +76,59 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.
     ✔ pov.texture.Normal                             9      4    56%   80-84 @done (13-10-24 08:49)
     ✔ pov.texture.Pigment                            9      4    56%   83-87 @done (13-10-24 09:01)
     ✔ pov.texture.Texture                            6      1    83%   82 @done (13-10-24 09:01)
+
+grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git > todo.todo (28.05.2013):
+    ✔ ./pov/test/EndToEndTest.py:114:        #@TODO: Define globaly (Vector Module?) @done (13-05-28 09:21)
+    ☐ ./pov/test/EndToEndTest.py:116:        #@TODO: Read from Config
+    ☐ ./pov/test/EndToEndTest.py:118:        #@TODO: Read from Config
+    ☐ ./pov/test/EndToEndTest.py:141:                            #@Todo: How to implement params??
+    ✔ ./pov/global_settings/GlobalSettings.py:46:            @TODO: Param Syntax checking @done (13-05-28 09:23)
+    ✔ ./pov/global_settings/GlobalSettings.py:47:            @TODO: make sure superclass constructor gets all params in the right form @done (13-05-28 09:25)
+    ☐ ./pov/global_settings/GlobalSettings.py:48:            @todo test __str__
+    ☐ ./pov/global_settings/GlobalSettings.py:57:            @Todo: generalize checks
+    ☐ ./pov/global_settings/Radiosity.py:19:        @Todo: Apidoc
+    ☐ ./pov/global_settings/Radiosity.py:20:        @Todo: Implement
+    ☐ ./pov/global_settings/Photons.py:19:        @Todo: Apidoc
+    ☐ ./pov/global_settings/Photons.py:20:        @Todo: Implement
+    ☐ ./pov/finite_solid/HeightField.py:42:            @TODO: Check that file really exists
+    ☐ ./pov/finite_solid/HeightField.py:43:            @TODO: check if file matches given type
+    ☐ ./pov/finite_solid/HeightField.py:44:            @TODO: make sure superclass constructor gets all params in the right form
+    ☐ ./pov/finite_solid/HeightField.py:45:            @TODO: test __str__
+    ✔ ./pov/finite_solid/JuliaFractal.py:48:            @TODO: Param Syntax checking @done (13-05-28 09:28)
+    ✔ ./pov/finite_solid/JuliaFractal.py:49:            @TODO: make sure superclass constructor gets all params in the right form @done (13-05-28 09:28)
+    ☐ ./pov/finite_solid/JuliaFractal.py:50:            @todo test __str__
+    ✔ ./pov/finite_solid/JuliaFractal.py:53:        # @todo: move to _check_arguments() @done (13-05-28 11:21)
+    ✔ ./pov/finite_solid/JuliaFractal.py:71:            @Todo: generalize @done (13-05-28 12:28)
+    ☐ ./pov/finite_solid/JuliaFractal.py:72:            @Todo: get rid of Object Modifier superclass
+    ✔ ./pov/finite_solid/JuliaFractal.py:73:            @todo: most Object Modifiers should be kwargs @done (13-05-28 12:42)
+    ☐ ./pov/finite_solid/Blob.py:38:            @TODO: Syntax Checking
+    ✔ ./pov/finite_solid/Box.py:37:            @TODO: Add Syntax check: There are no valid kwargs @done (13-05-28 14:35)
+    ☐ ./pov/texture/Finish.py:43:            @TODO: Syntax checking
+    ☐ ./pov/language_directive/Version.py:33:            @todo: How to refactor this into _check_args()??
+    ☐ ./pov/language_directive/Default.py:33:            @TODO: Syntax checking
+    ☐ ./pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file
+    ☐ ./pov/language_directive/LanguageDirective.py:37:        @Todo: Is this superclass deprecated?
+    ☐ ./pov/basic/SceneItem.py:138:            @TODO: move indentation check to own function
+    ☐ ./pov/basic/SceneItem.py:148:        #@todo: Does indentation really have to stay in the constructor??
+    ✘ ./pov/basic/SceneItem.py:311:            @todo: typecheck param @cancelled (13-05-28 12:45)
+    ✘ ./pov/basic/SceneItem.py:321:            @todo: typecheck param @cancelled (13-05-28 12:45)
+    ☐ ./pov/basic/SceneFile.py:20:        @Todo: Proper Apidoc
+    ☐ ./pov/basic/SceneFile.py:21:        @Todo: Add param for PovRay Ini file
+    ☐ ./pov/basic/SceneFile.py:40:            @Todo: check if file is writeable?
+    ✔ ./pov/basic/SceneFile.py:56:            @Todo: Apidoc @done (13-05-28 12:49)
+    ✔ ./pov/basic/SceneFile.py:69:            @Todo: Apidoc @done (13-05-28 12:48)
+    ✔ ./pov/basic/SceneFile.py:70:            @Todo: Make multiple items possible? @done (13-05-28 14:56)
+    ☐ ./pov/basic/SceneFile.py:81:            @TODO: There should be no more type/syntax checking here
+    ☐ ./pov/basic/SceneFile.py:82:            @Todo: Write to file code
+    ☐ ./pov/other/Camera.py:52:            @TODO: Param Syntax checking
+    ☐ ./pov/other/Camera.py:53:            @todo test __str__
+    ☐ ./pov/other/Camera.py:54:            @todo: add transformations
+    ☐ ./pov/other/Camera.py:55:            @Todo: are there any valid options at all?
+    ✔ pov.basic.SceneFile                           25      1    96%   43 @done (13-10-23 13:38)
+    ✔ pov.basic.SceneItem                          137     10    93%   184, 266-271, 314, 323-325, 377 @done (13-10-23 13:38)
+    ✔ pov.basic.Vector                              61      5    92%   54, 59, 64, 69, 94 @done (13-10-23 13:38)
+    ✔ pov.finite_solid.Cone                         28      4    86%   44, 46, 50, 52 @done (13-10-23 14:25)
+    ✔ pov.finite_solid.Cylinder                     26      6    77%   42, 44, 46, 48, 50, 55 @done (13-10-23 15:22)
+    ✔ pov.global_settings.GlobalSettings            15      2    87%   58-59 @done (13-10-23 15:22)
+    ✔ pov.other.Camera                               8      3    63%   63-81 @done (13-05-28 13:07)
 

@@ -26,4 +26,5 @@ class Sor(BlockObject):
             sturm | OBJECT_MODIFIER
 
         @Todo: Implement
+        @todo: Syntax checks
     '''

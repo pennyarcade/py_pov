@@ -20,4 +20,5 @@ class Csg(BlockObject):
             UNION | INTERSECTION | DIFFERENCE | MERGE
 
         @Todo: Implement
+        @Todo: Deprecate Csg Superclass
     """

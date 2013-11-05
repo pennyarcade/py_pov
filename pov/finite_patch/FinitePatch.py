@@ -20,5 +20,6 @@ class FinitePatch(BlockObject):
             BICUBIC_PATCH | DISC | MESH | MESH2 | POLYGON | TRIANGLE |
             SMOOTH_TRIANGLE
 
-        @TOODO: Implement
+        @TODO: Implement
+        @Todo: Deprecate initePatch Superclass
     """

@@ -57,7 +57,7 @@ class Box(BlockObject):
             @param v2: opposing vertex of box
             @type v2: Vector()
 
-            Todo: Use Syntax checking Methods (See JuliaFractal)
+            @Todo: Use Syntax checking Methods (See JuliaFractal)
         """
 
         # Syntax checking
