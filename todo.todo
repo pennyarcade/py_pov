@@ -44,7 +44,7 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.
     ☐ ./pov/include/colors_inc.py:229:        @todo: Apidoc
     ☐ ./pov/include/colors_inc.py:230:        @Todo: Param Syntax checks
     ☐ ./pov/include/colors_inc.py:231:        @todo: support this?
-    ☐ ./pov/infinite_solid/Plane.py:22:        @TODO: Syntax checks
+    ✔ ./pov/infinite_solid/Plane.py:22:        @TODO: Syntax checks @done (13-11-05 19:10)
     ☐ ./pov/texture/Finish.py:42:                     @TODO: Syntax checking
     ☐ ./pov/test/EndToEndTest.py:146:            @TODO: Read from Config
     ☐ ./pov/test/EndToEndTest.py:148:            @TODO: Read from Config
