@@ -24,15 +24,11 @@ class Default(LanguageDirective, BlockObject):
             #default { DEFAULT_ITEM }
         DEFAULT_ITEM:
             PLAIN_TEXTURE | PIGMENT | NORMAL | FINISH
-
-        @TODO Unittest Syntax Checks
     """
 
     def __init__(self, *opts, **kwargs):
         """
             create a "default" language directive object
-
-            @TODO: Syntax checking
         """
         # Syntax checking
 
@@ -40,7 +36,7 @@ class Default(LanguageDirective, BlockObject):
 
     def __str__(self):
         """
-          Return PoV source code
+            Return PoV source code
         """
         code = super(Default, self).__str__()
         debug('Default.__str__: %s \n%s' % (self.name, code))

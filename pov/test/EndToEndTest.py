@@ -39,7 +39,7 @@ from pov.texture.Normal import Normal
 
 
 class EndToEndTestCase(unittest.TestCase):
-    #@unittest.skip
+    @unittest.skip
     def test_Scene1(self):
         '''
             Example taken from:
@@ -244,7 +244,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    #@unittest.skip
+    @unittest.skip
     def test_Scene2(self):
         '''
             examples/basic_scene.pov
@@ -373,7 +373,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    #@unittest.skip
+    @unittest.skip
     def test_Checkered_Floor_Example(self):
         '''
             examples/checkered_floor.pov

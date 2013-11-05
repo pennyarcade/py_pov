@@ -177,79 +177,44 @@ class BoxTestCase(unittest.TestCase):
         self.assertIsInstance(SUT, SceneItem)
 
     def test_create_v1_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter v1 not of type Vector'):
             self.SUT = Box(
                 'foo',
                 Vector(5, 6, 7),
                 ObjectModifier('foo')
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_v2_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter v2 not of type Vector'):
             self.SUT = Box(
                 Vector(5, 6, 7),
                 'foo',
                 ObjectModifier('foo')
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_v1_wrong_length(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Vector v1 has more or less than 3 dimensions'):
             self.SUT = Box(
                 Vector(1, 2),
                 Vector(5, 6, 7),
                 ObjectModifier('foo')
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_v2_wrong_length(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Vector v2 has more or less than 3 dimensions'):
             self.SUT = Box(
                 Vector(1, 2, 3),
                 Vector(4, 5, 6, 7),
                 ObjectModifier('foo')
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_option_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Only ObjectModifier objects may be passed as options'):
             self.SUT = Box(
                 Vector(1, 2, 3),
                 Vector(5, 6, 7),
                 Vector(1, 2)
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
 
 class ConeTestCase(unittest.TestCase):
@@ -289,7 +254,7 @@ class ConeTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
     def test_create_non_existant_kw(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Invalid keyword: foo'):
             self.SUT = Cone(
                 Vector(1, 2, 3),
                 4,
@@ -298,16 +263,9 @@ class ConeTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 foo=True
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_open_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of keyword open is not boolean'):
             self.SUT = Cone(
                 Vector(1, 2, 3),
                 4,
@@ -316,16 +274,9 @@ class ConeTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_baseradius_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Param base radius is not of type int or float'):
             self.SUT = Cone(
                 Vector(1, 2, 3),
                 'foo',
@@ -334,16 +285,9 @@ class ConeTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_capradius_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Param cap radius is not of type int or float'):
             self.SUT = Cone(
                 Vector(1, 2, 3),
                 4,
@@ -352,16 +296,9 @@ class ConeTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_option_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Only ObjectModifier objects may be passed as options'):
             self.SUT = Cone(
                 Vector(1, 2, 3),
                 4,
@@ -370,16 +307,9 @@ class ConeTestCase(unittest.TestCase):
                 Vector(1, 2),
                 open=0.3
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_basepoint_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter basepoint is not of type Vector'):
             self.SUT = Cone(
                 'foo',
                 4,
@@ -388,17 +318,9 @@ class ConeTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Parameter basepoint is not of type Vector':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_cappoint_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter cappoint is not of type Vector'):
             self.SUT = Cone(
                 Vector(1, 2, 3),
                 4,
@@ -407,17 +329,9 @@ class ConeTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Parameter cappoint is not of type Vector':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_basepoint_wrong_length(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Base point Vector has more or less than 3 dimensions'):
             self.SUT = Cone(
                 Vector(1, 2, 3, 9),
                 4,
@@ -426,17 +340,9 @@ class ConeTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Base point Vector has more or less than 3 dimensions':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_cappoint_wrong_length(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Cap point Vector has more or less than 3 dimensions'):
             self.SUT = Cone(
                 Vector(1, 2, 3),
                 4,
@@ -445,14 +351,6 @@ class ConeTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Cap point Vector has more or less than 3 dimensions':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
 
 class CylinderTestCase(unittest.TestCase):
@@ -490,7 +388,7 @@ class CylinderTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
     def test_create_non_existant_kw(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Invalid keyword: bar'):
             self.SUT = Cylinder(
                 Vector(1, 2, 3),
                 Vector(5, 6, 7),
@@ -498,16 +396,9 @@ class CylinderTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 bar=True
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_open_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of keyword open is not boolean'):
             self.SUT = Cylinder(
                 Vector(1, 2, 3),
                 Vector(5, 6, 7),
@@ -515,16 +406,9 @@ class CylinderTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open='foo'
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_basepoint_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter basepoint is not of type Vector'):
             self.SUT = Cylinder(
                 'foo',
                 Vector(5, 6, 7),
@@ -532,17 +416,9 @@ class CylinderTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Parameter basepoint is not of type Vector':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_cappoint_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter cappoint is not of type Vector'):
             self.SUT = Cylinder(
                 Vector(1, 2, 3),
                 'foo',
@@ -550,17 +426,9 @@ class CylinderTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Parameter cappoint is not of type Vector':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_basepoint_wrong_length(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Base point Vector has more or less than 3 dimensions'):
             self.SUT = Cylinder(
                 Vector(1, 2, 3, 9),
                 Vector(5, 6, 7),
@@ -568,17 +436,9 @@ class CylinderTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Base point Vector has more or less than 3 dimensions':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_cappoint_wrong_length(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Cap point Vector has more or less than 3 dimensions'):
             self.SUT = Cylinder(
                 Vector(1, 2, 3),
                 Vector(5, 6, 7, 9),
@@ -586,17 +446,9 @@ class CylinderTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Cap point Vector has more or less than 3 dimensions':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_radius_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Param radius is not of type int or float'):
             self.SUT = Cylinder(
                 Vector(1, 2, 3),
                 Vector(5, 6, 7),
@@ -604,17 +456,9 @@ class CylinderTestCase(unittest.TestCase):
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Param radius is not of type int or float':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_ObjectModifier_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Only ObjectModifier objects may be passed as options'):
             self.SUT = Cylinder(
                 Vector(1, 2, 3),
                 Vector(5, 6, 7),
@@ -622,14 +466,6 @@ class CylinderTestCase(unittest.TestCase):
                 'foo',
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Only ObjectModifier objects may be passed as options':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
 
 class HeightFieldTestCase(unittest.TestCase):
@@ -641,92 +477,37 @@ class HeightFieldTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
     def test_create_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'String expected for param "filename"'):
             self.SUT = HeightField(1.0)
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_Vector_wrong_option(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Only ObjectModifier objects may be passed as options'):
             self.SUT = HeightField('foo', Vector(1, 2, 3, 4))
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_non_existant_kw(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Invalid keyword: foo'):
             self.SUT = HeightField('baz', foo='bar')
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_smooth_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Keyword smooth expected boolean value, got str'):
             self.SUT = HeightField('baz', smooth='bar')
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_hierarchy_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Keyword hierarchy expected boolean value, got str'):
             self.SUT = HeightField('baz', hierarchy='bar')
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_hf_type_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Keyword hf_type expected string value, got float'):
             self.SUT = HeightField('baz', hf_type=0.2)
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_hf_type_non_existant_value(self):
-        try:
+        #TODO: give type hint in error msg
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value bar of keyword hf_type is not valid'):
             self.SUT = HeightField('baz', hf_type='bar')
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_waterlevel_not_float(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Keyword water_level expected float value, got str'):
             self.SUT = HeightField('baz', water_level='bar')
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_toString(self):
         le = os.linesep
@@ -738,7 +519,6 @@ class HeightFieldTestCase(unittest.TestCase):
         self.assertEqual(str(self.SUT), second)
 
 
-
 class JuliaFractalTestCase(unittest.TestCase):
     def setUp(self):
         self.SUT = JuliaFractal(Vector(1, 2, 3, 4))
@@ -748,48 +528,20 @@ class JuliaFractalTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
     def test_create_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of Argument 0 is expectet to be type Vector but got str'):
             self.SUT = JuliaFractal('foo')
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_Vector_wrong_dimension(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Vector param4d has more or less than 4 dimensions'):
             self.SUT = JuliaFractal(Vector(1, 2))
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_Vector_wrong_option(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Invalid option type Vector not in allowed opts \n\\[\\\'ObjectModifier\\\']'):
             self.SUT = JuliaFractal(Vector(1, 2, 3, 4), Vector(1, 2, 3, 4))
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_non_existant_kw(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'No such Keyword: foo'):
             self.SUT = JuliaFractal(Vector(1, 2, 3, 4), foo='bar')
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_toString(self):
         le = os.linesep
@@ -841,85 +593,46 @@ class SphereTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
     def test_create_non_existant_kw(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'No such Keyword: bar'):
             self.SUT = Sphere(
                 Vector(5, 6, 7),
                 8,
                 ObjectModifier('foo'),
                 bar=True
             )
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_center_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of Argument 0 is expectet to be type Vector but got str'):
             self.SUT = Sphere(
                 'foo',
                 8,
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Parameter center is not of type Vector':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_center_wrong_length(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Center point Vector has more or less than 3 dimensions'):
             self.SUT = Sphere(
                 Vector(1, 2, 3, 9),
                 8,
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Center point Vector has more or less than 3 dimensions':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_radius_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of Argument 1 is expectet to be type \\(\'float\', \'int\'\\) but got str'):
             self.SUT = Sphere(
                 Vector(1, 2, 3),
                 'foo',
                 ObjectModifier('foo'),
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Param radius is not of type int or float':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_create_ObjectModifier_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Invalid option type str not in allowed opts \n\\[\\\'ObjectModifier\\\']'):
             self.SUT = Sphere(
                 Vector(1, 2, 3),
                 8,
                 'foo',
                 open=0.3
             )
-        except SdlSyntaxException as e:
-            if not str(e) == 'Only ObjectModifier objects may be passed as options':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')

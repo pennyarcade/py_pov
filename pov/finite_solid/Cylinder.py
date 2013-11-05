@@ -35,6 +35,8 @@ class Cylinder(BlockObject):
             @type  cappoint: Vector
             @param radius: Radius of cylinder
             @type  radius: Float
+
+            @Todo: Use Syntax checking Methods (See JuliaFractal)
         """
 
         # Syntax checking
@@ -56,9 +58,9 @@ class Cylinder(BlockObject):
 
         for key, val in kwargs.items():
             if not key in ['open']:
-                raise SdlSyntaxException('Invalid key: ' + str(key))
+                raise SdlSyntaxException('Invalid keyword: ' + str(key))
             if not type(val) == bool:
-                raise SdlSyntaxException('Value of key %s is not boolean', key)
+                raise SdlSyntaxException('Value of keyword %s is not boolean' % key)
 
         super(Cylinder, self).__init__(
             "cylinder",

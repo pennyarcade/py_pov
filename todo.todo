@@ -55,31 +55,31 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git > todo.t
 
 grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.todo (24.10.2013):
     ☐ ./pov/language_directive/LanguageDirective.py:37:        @Todo: Is this superclass deprecated?
-    ☐ ./pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file
-    ☐ ./pov/language_directive/Default.py:33:            @TODO: Syntax checking
-    ☐ ./pov/language_directive/Version.py:33:            @todo: How to refactor this into _check_args()??
-    ☐ ./pov/finite_solid/HeightField.py:41:            @TODO: Check that file really exists
+    ✔ ./pov/language_directive/Include.py:32:            @TODO: assert that filename points o a real file @done (13-11-05 14:12)
+    ✔ ./pov/language_directive/Default.py:33:            @TODO: Syntax checking @done (13-11-05 12:48)
+    ✔ ./pov/language_directive/Version.py:33:            @todo: How to refactor this into _check_args()?? @done (13-11-05 14:22)
+    ✔ ./pov/finite_solid/HeightField.py:41:            @TODO: Check that file really exists @done (13-11-05 15:09)
     ☐ ./pov/finite_solid/HeightField.py:42:            @TODO: check if file matches given type
-    ☐ ./pov/finite_solid/HeightField.py:43:            @TODO: make sure superclass constructor gets all params in the right form
+    ✔ ./pov/finite_solid/HeightField.py:43:            @TODO: make sure superclass constructor gets all params in the right form @done (13-11-05 15:09)
     ✔ ./pov/finite_solid/HeightField.py:44:            @TODO: test __str__ @done (13-10-25 11:04)
     ✔ ./pov/finite_solid/JuliaFractal.py:46:            @todo test __str__ @done (13-10-25 11:07)
     ☐ ./pov/finite_solid/JuliaFractal.py:66:            @Todo: get rid of Object Modifier superclass?
-    ☐ ./pov/finite_solid/Blob.py:38:            @TODO: Syntax Checking
-    ☐ ./pov/finite_solid/Sphere.py:26:        @Todo: Syntax Checking
+    ✔ ./pov/finite_solid/Blob.py:38:            @TODO: Syntax Checking @done (13-11-04 09:37)
+    ✔ ./pov/finite_solid/Sphere.py:26:        @Todo: Syntax Checking @done (13-11-04 09:47)
     ☐ ./pov/examples/basic_sphere.py:55:#@TODO: Read from Config
     ☐ ./pov/examples/basic_sphere.py:57:#@TODO: Read from Config
     ✔ ./pov/examples/basic_sphere.py:105:        # @Todo: make colors multiplyable @done (13-10-25 14:05)
-    ☐ ./pov/other/Camera.py:52:            @TODO: Param Syntax checking
+    ✔ ./pov/other/Camera.py:52:            @TODO: Param Syntax checking @done (13-11-04 10:14)
     ☐ ./pov/other/Camera.py:53:            @todo test __str__
     ☐ ./pov/other/Camera.py:54:            @todo: add transformations
-    ☐ ./pov/other/Camera.py:55:            @Todo: are there any valid options at all?
+    ✔ ./pov/other/Camera.py:55:            @Todo: are there any valid options at all? @done (13-11-04 10:14)
     ☐ ./pov/global_settings/GlobalSettings.py:46:            @Todo: test __str__
-    ☐ ./pov/global_settings/GlobalSettings.py:47:            @Todo: check there are no valid params??
-    ☐ ./pov/global_settings/GlobalSettings.py:56:            @Todo: generalize checks
-    ☐ ./pov/global_settings/GlobalSettings.py:66:            @Todo: how to check values in a generalized way?
-    ☐ ./pov/global_settings/Photons.py:19:        @Todo: Apidoc
+    ✔ ./pov/global_settings/GlobalSettings.py:47:            @Todo: check there are no valid params?? @done (13-11-04 10:15)
+    ✔ ./pov/global_settings/GlobalSettings.py:56:            @Todo: generalize checks @done (13-11-04 13:15)
+    ✔ ./pov/global_settings/GlobalSettings.py:66:            @Todo: how to check values in a generalized way? @done (13-11-04 13:15)
+    ✔ ./pov/global_settings/Photons.py:19:        @Todo: Apidoc @done (13-11-04 14:34)
     ☐ ./pov/global_settings/Photons.py:20:        @Todo: Implement
-    ☐ ./pov/global_settings/Radiosity.py:19:        @Todo: Apidoc
+    ✔ ./pov/global_settings/Radiosity.py:19:        @Todo: Apidoc @done (13-11-04 14:32)
     ☐ ./pov/global_settings/Radiosity.py:20:        @Todo: Implement
     ☐ ./pov/basic/Color.py:38:        @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
     ☐ ./pov/basic/Color.py:39:        @TODO: check syntax of kwargs
@@ -126,7 +126,7 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.
     ☐ ./pov/test/FiniteSolidTest.py:151:            @ToDo: Option: 0..1 transform object
     ☐ ./pov/test/FiniteSolidTest.py:152:            @ToDo: KwArg: 0..1 transform string; existing identifier; transform object
     ☐ ./pov/test/FiniteSolidTest.py:153:            @ToDo: only one "transform"
-    ☐ ./pov/test/BasicTest.py:13:                    @TODO refactor Unittests extract testing for exceptions to method
+    ✔ ./pov/test/BasicTest.py:13:                    @TODO refactor Unittests extract testing for exceptions to method @done (13-11-05 12:42)
     ☐ ./pov/test/BasicTest.py:467:                    @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
     ✔ pov.texture.Normal                             9      4    56%   80-84 @done (13-10-24 08:49)
     ✔ pov.texture.Pigment                            9      4    56%   83-87 @done (13-10-24 09:01)

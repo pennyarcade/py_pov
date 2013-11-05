@@ -30,4 +30,5 @@ class Prism(BlockObject):
             sturm | OBJECT_MODIFIER
 
         @Todo: Implement
+        @Todo: Syntax Checks
     '''

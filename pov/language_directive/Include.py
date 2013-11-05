@@ -10,8 +10,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+import os
 from LanguageDirective import *
-
 
 class Include(LanguageDirective):
     """
@@ -28,21 +28,29 @@ class Include(LanguageDirective):
 
             @param filename: Full name of file to be included
             @type filename: string
-
-            @TODO: assert that filename points o a real file
-            @TODO: Syntax Checks
         '''
-        self.filename = filename
-        #filename(Include, self).__init__('include')
+
+        super(Include, self).__init__("include", [filename], [], [])
 
     def __str__(self):
         '''
             Generate PoV source code
         '''
-        code = self._getLine('#' + 'include \"%s\"' % self.filename)
+        code = self._getLine('#' + 'include \"%s\"' % self.args[0])
 
-        debug('Include.__str__: %s \n%s' % (self.filename, code))
+        debug('Include.__str__: %s \n%s' % (self.args[0], code))
 
         return code
 
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+        '''
+        valid_args = ['str']
+
+        self._validate_args(valid_args)
+
+        # param syntax checks
+        if not os.path.isfile(self.args[0]):
+            raise IOError('No sutch file: %s%s%s' % (os.getcwd(), os.sep, self.args[0]))
 

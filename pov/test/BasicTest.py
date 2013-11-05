@@ -10,7 +10,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 Unittests for basic classes
 
-@TODO refactor Unittests extract testing for exceptions to method
+@SEE: http://docs.python.org/2/library/unittest.html#unittest.TestCase.assertRaises
 """
 
 import os
@@ -127,14 +127,8 @@ class SceneItemTestCase(unittest.TestCase):
         )
 
     def test_setitemNonexistingIndex(self):
-        try:
+        with self.assertRaisesRegexp(IndexError, ''):
             self.SUT[2] = SceneItem('baz')
-        except IndexError:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s ' % type(e))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_block_endZeroIndentation(self):
         self.assertEqual(self.SUT._block_end(), os.linesep)
@@ -161,64 +155,31 @@ class SceneItemTestCase(unittest.TestCase):
         self.assertEqual(self.SUT[4], 5)
 
     def test_getitemRaisesIndexError(self):
-        try:
+        with self.assertRaisesRegexp(IndexError, ''):
             warn(str(self.SUT[2]))
-        except IndexError:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s ' % type(e))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test__dedentBelowZero(self):
-
-        try:
+        with self.assertRaisesRegexp(IllegalStateException, 'Indentation below zero'):
             self.SUT._dedent()
-        except IllegalStateException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s ' % type(e))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test__validateKwargsInvanildKwarg(self):
-        self.SUT = SceneItem('foo', [], [], {'adaptive': (1, 2, 3), 'agate': SceneItem('bar')})
-
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Keyword agate not allowed for object SceneItem'):
+            self.SUT = SceneItem('foo', [], [], {'adaptive': (1, 2, 3), 'agate': SceneItem('bar')})
             self.SUT._validate_kwargs({'boo': 'Vector'})
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s ' % type(e))
-        else:
-            self.fail('ExpectedException not thrown')
 
-    def test__validateKwargsInvanildKwargValue(self):
-        self.SUT = SceneItem('foo', [], [], {'adaptive': (1, 2, 3)})
-
-        try:
+    def test__validateKwargsInvanildKwargType(self):
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of KW Argument adaptive is expectet to be type String but got Vector'):
+            self.SUT = SceneItem('foo', [], [], {'adaptive': (1, 2, 3)})
             self.SUT._validate_kwargs({'adaptive': 'String'})
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s ' % type(e))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test__is_valid_identifier(self):
         self.assertTrue(self.SUT._is_valid_identifier('foobar'), msg='Valid Identifier')
         self.assertFalse(self.SUT._is_valid_identifier('agate'), msg='Invalid Identifier')
 
     def test___eq__WrongType(self):
-        try:
+        with self.assertRaisesRegexp(TypeError, 'can only be compared to objects of same type'):
             if self.SUT == 3:
                 pass
-        except TypeError:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s ' % type(e))
-        else:
-            self.fail('ExpectedException not thrown')
 
 
 class VectorTestCase(unittest.TestCase):
@@ -278,76 +239,28 @@ class VectorTestCase(unittest.TestCase):
         self.assertEqual(self.SUT.dot(self.SUT), 14)
 
     def test_mul_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter not of type float or int'):
             self.SUT * 'foo'
-        except SdlSyntaxException as e:
-            if not str(e) == 'Parameter not of type float or int':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_rmul__WrongType(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter not of type float or int'):
             'foo' * self.SUT
-        except SdlSyntaxException as e:
-            if not str(e) == 'Parameter not of type float or int':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_div__WrongType(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter not of type float or int'):
             self.SUT / 'foo'
-        except SdlSyntaxException as e:
-            if not str(e) == 'Parameter not of type float or int':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_add__WrongType(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter not of type Vector'):
             self.SUT + 'foo'
-        except SdlSyntaxException as e:
-            if not str(e) == 'Parameter not of type Vector':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_sub__WrongType(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter not of type Vector'):
             self.SUT - 'foo'
-        except SdlSyntaxException as e:
-            if not str(e) == 'Parameter not of type Vector':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
     def test_dotWrongType(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Parameter not of type Vector'):
             self.SUT.dot('foo')
-        except SdlSyntaxException as e:
-            if not str(e) == 'Parameter not of type Vector':
-                self.fail('SdlSyntaxException with wrong message: %s' % str(e))
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('ExpectedException not thrown')
 
 
 class SceneFileTestCase(unittest.TestCase):
@@ -368,26 +281,12 @@ class SceneFileTestCase(unittest.TestCase):
         self.assertIn(item, self.SUT.items)
 
     def test_createFnamWrongType(self):
-        try:
+        with self.assertRaisesRegexp(TypeError, 'Filename String expected but got int'):
             self.SUT = SceneFile(0, SceneItem('foo'), SceneItem('bar'))
-        except TypeError:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('Expected exception not thrown')
 
     def test_appendWrongType(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Item is expectet to be a SceneItem object but got str'):
             self.SUT.append('foo')
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' %
-                      (type(e), traceback.format_exc()))
-        else:
-            self.fail('Expected exception not thrown')
 
     def test_toString(self):
         le = os.linesep

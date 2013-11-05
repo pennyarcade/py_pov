@@ -14,7 +14,6 @@ import unittest
 import os
 from logging import *
 from pov.basic.SceneItem import SceneItem
-#from pov.basic.Vector import Vector
 from pov.language_directive.LanguageDirective import LanguageDirective
 from pov.language_directive.Default import Default
 from pov.language_directive.Version import Version
@@ -32,7 +31,6 @@ class LanguageDirectiveTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, SceneItem)
 
     def test_str(self):
-        le = os.linesep
         second = '#foo'
 
         self.assertEqual(str(self.SUT), second)
@@ -40,7 +38,7 @@ class LanguageDirectiveTestCase(unittest.TestCase):
 
 class IncludeTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = Include('test.inc')
+        self.SUT = Include('fixture/test.inc')
 
     def test_create(self):
         self.assertIsInstance(self.SUT, Include)
@@ -48,7 +46,7 @@ class IncludeTestCase(unittest.TestCase):
 
     def test_str(self):
         le = os.linesep
-        second = '#include "test.inc"' + le
+        second = '#include "fixture/test.inc"' + le
 
         self.assertEqual(str(self.SUT), second)
 
@@ -68,14 +66,8 @@ class VersionTestCase(unittest.TestCase):
         self.assertEqual(str(self.SUT), second)
 
     def test_create_wrong_type(self):
-        try:
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of Argument 0 is expectet to be type float but got str'):
             self.SUT = Version('foo')
-        except SdlSyntaxException:
-            pass
-        except Exception as e:
-            self.fail('Unexpected exception thrown: %s \r\n %s' % (type(e), str(e)))
-        else:
-            self.fail('ExpectedException not thrown')
 
 
 class DefaultTestCase(unittest.TestCase):

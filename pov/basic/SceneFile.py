@@ -41,7 +41,7 @@ class SceneFile(object):
             @Todo: check if file is writeable?
         """
         if not type(fnam) == str:
-            raise TypeError('Filename String expected but gor %s' % type(fnam))
+            raise TypeError('Filename String expected but got %s' % fnam.__class__.__name__)
 
         #initialize item list
         self.items = list()
@@ -72,7 +72,7 @@ class SceneFile(object):
         for i in items:
             # each item has to be derived of SceneItem
             if not isinstance(i, SceneItem):
-                raise SdlSyntaxException('Item is expectet to be a SceneItem object but got %s: ' %
+                raise SdlSyntaxException('Item is expectet to be a SceneItem object but got %s' %
                                          (i.__class__.__name__))
 
             self.items.append(i)
