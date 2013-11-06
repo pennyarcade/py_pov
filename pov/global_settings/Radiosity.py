@@ -39,3 +39,53 @@ class Radiosity(BlockObject):
 
         @Todo: Implement
     """
+
+
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+        '''
+        valid_args = ['str']
+
+        self._validate_args(valid_args)
+
+        # param syntax checks
+        if not os.path.isfile(self.args[0]):
+            raise IOError('No such file: %s%s%s' % (os.getcwd(), os.sep, self.args[0]))
+        #@TODO: check file type
+
+    def _check_opts(self):
+        '''
+            Option Syntax checks
+
+            @Todo: get rid of Object Modifier superclass?
+        '''
+        valid_opts = ['ObjectModifier']
+
+        self._validate_opts(valid_opts)
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+        '''
+
+        valid_kw = {
+            'hf_type': 'str',
+            'hierarchy': 'bool',
+            'smooth': 'bool',
+            'water_level': 'float',
+            # Object modifier kw
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool',
+            'hollow': 'bool'
+        }
+
+        self._validate_kwargs(valid_kw)
+
+        self._checkKwargValue('hf_type', ['gif', 'tga', 'pot', 'png', 'pgm', 'ppm', 'jpeg', 'tiff', 'sys', 'function'])
+
+
+

@@ -470,50 +470,49 @@ class CylinderTestCase(unittest.TestCase):
 
 class HeightFieldTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = HeightField('foo.gif')
+        self.SUT = HeightField('fixture/test.gif')
 
     def test_creation(self):
         self.assertIsInstance(self.SUT, HeightField)
         self.assertIsInstance(self.SUT, SceneItem)
 
     def test_create_wrong_type(self):
-        with self.assertRaisesRegexp(SdlSyntaxException, 'String expected for param "filename"'):
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of Argument 0 is expectet to be type str but got float'):
             self.SUT = HeightField(1.0)
 
     def test_create_Vector_wrong_option(self):
-        with self.assertRaisesRegexp(SdlSyntaxException, 'Only ObjectModifier objects may be passed as options'):
-            self.SUT = HeightField('foo', Vector(1, 2, 3, 4))
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Invalid option type Vector not in allowed opts \n\\[\'ObjectModifier\']'):
+            self.SUT = HeightField('fixture/test.gif', Vector(1, 2, 3, 4))
 
     def test_create_non_existant_kw(self):
-        with self.assertRaisesRegexp(SdlSyntaxException, 'Invalid keyword: foo'):
-            self.SUT = HeightField('baz', foo='bar')
+        with self.assertRaisesRegexp(SdlSyntaxException, 'No such Keyword: foo'):
+            self.SUT = HeightField('fixture/test.gif', foo='bar')
 
     def test_create_smooth_wrong_type(self):
-        with self.assertRaisesRegexp(SdlSyntaxException, 'Keyword smooth expected boolean value, got str'):
-            self.SUT = HeightField('baz', smooth='bar')
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of KW Argument smooth is expectet to be type bool but got str'):
+            self.SUT = HeightField('fixture/test.gif', smooth='bar')
 
     def test_create_hierarchy_wrong_type(self):
-        with self.assertRaisesRegexp(SdlSyntaxException, 'Keyword hierarchy expected boolean value, got str'):
-            self.SUT = HeightField('baz', hierarchy='bar')
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of KW Argument hierarchy is expectet to be type bool but got str'):
+            self.SUT = HeightField('fixture/test.gif', hierarchy='bar')
 
     def test_create_hf_type_wrong_type(self):
-        with self.assertRaisesRegexp(SdlSyntaxException, 'Keyword hf_type expected string value, got float'):
-            self.SUT = HeightField('baz', hf_type=0.2)
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of KW Argument hf_type is expectet to be type str but got float'):
+            self.SUT = HeightField('fixture/test.gif', hf_type=0.2)
 
     def test_create_hf_type_non_existant_value(self):
-        #TODO: give type hint in error msg
-        with self.assertRaisesRegexp(SdlSyntaxException, 'Value bar of keyword hf_type is not valid'):
-            self.SUT = HeightField('baz', hf_type='bar')
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of KW Argument hf_type is expectet to be in \\[\'gif\', \'tga\', \'pot\', \'png\', \'pgm\', \'ppm\', \'jpeg\', \'tiff\', \'sys\', \'function\'] but got bar'):
+            self.SUT = HeightField('fixture/test.gif', hf_type='bar')
 
     def test_create_waterlevel_not_float(self):
-        with self.assertRaisesRegexp(SdlSyntaxException, 'Keyword water_level expected float value, got str'):
-            self.SUT = HeightField('baz', water_level='bar')
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of KW Argument water_level is expectet to be type float but got str'):
+            self.SUT = HeightField('fixture/test.gif', water_level='bar')
 
     def test_toString(self):
         le = os.linesep
 
         second = 'height_field {' + le
-        second += '  "foo.gif"' + le
+        second += '  "fixture/test.gif"' + le
         second += '}' + le
 
         self.assertEqual(str(self.SUT), second)

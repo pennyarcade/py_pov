@@ -69,7 +69,7 @@ class HeightField(BlockObject):
 
         # param syntax checks
         if not os.path.isfile(self.args[0]):
-            raise IOError('No sutch file: %s%s%s' % (os.getcwd(), os.sep, self.args[0]))
+            raise IOError('No such file: %s%s%s' % (os.getcwd(), os.sep, self.args[0]))
         #@TODO: check file type
 
     def _check_opts(self):
@@ -103,4 +103,4 @@ class HeightField(BlockObject):
 
         self._validate_kwargs(valid_kw)
 
-        self._checkKwargValue(self, 'hf_type', ['gif', 'tga', 'pot', 'png', 'pgm', 'ppm', 'jpeg', 'tiff', 'sys', 'function'])
+        self._checkKwargValue('hf_type', ['gif', 'tga', 'pot', 'png', 'pgm', 'ppm', 'jpeg', 'tiff', 'sys', 'function'])

@@ -32,6 +32,39 @@ class Photons(BlockObject):
             [autostop FLOAT] &
             [expand_thresholds F_INCREASE, F_MIN] &
             [radius [FLOAT, FLOAT, FLOAT, FLOAT]]
-
-        @Todo: Implement
     """
+
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+        '''
+        valid_args = []
+        self._validate_args(valid_args)
+
+    def _check_opts(self):
+        '''
+            Option Syntax checks
+        '''
+        valid_opts = ['Gather', 'Media', 'ExpandThresholds']
+        self._validate_opts(valid_opts)
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+        '''
+        valid_kw = {
+            'spacing': ('float', 'int'),
+            'count': 'int',
+            'jitter': ('float', 'int'),
+            'max_trace_level': 'int',
+            'adc_bailout': ('float', 'int'),
+            'save_file': 'str',
+            'load_file': 'str',
+            'autostop': ('float', 'int'),
+            'radius': 'Vector'
+        }
+
+        self._validate_kwargs(valid_kw)
+
+        #self._checkKwargValue('hf_type', ['gif', 'tga', 'pot', 'png', 'pgm', 'ppm', 'jpeg', 'tiff', 'sys', 'function'])
+

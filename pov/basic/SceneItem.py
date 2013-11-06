@@ -120,7 +120,8 @@ class SceneItem(object):
         'vturbulence',
         'warning', 'warp', 'water_level', 'waves', 'while', 'width', 'wood',
         'wrinkles', 'write',
-        'x', 'y', 'yes', 'z'
+        'x', 'y', 'yes', 'z',
+        'hf_type'
     ]
 
     _object_modifiers= [
