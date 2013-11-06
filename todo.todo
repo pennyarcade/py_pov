@@ -132,3 +132,147 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git > todo.t
     ✔ pov.global_settings.GlobalSettings            15      2    87%   58-59 @done (13-10-23 15:22)
     ✔ pov.other.Camera                               8      3    63%   63-81 @done (13-05-28 13:07)
 
+./coverage/pov_language_directive_Default.html:115:<p id='t33' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @TODO: Syntax checking</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_language_directive_LanguageDirective.html:125:<p id='t37' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; @Todo: Is this superclass deprecated?</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_finite_solid_JuliaFractal.html:182:<p id='t46' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @todo test __str__</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_finite_solid_JuliaFractal.html:202:<p id='t66' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Todo: get rid of Object Modifier superclass?</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_global_settings_GlobalSettings.html:166:<p id='t46' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Todo: test __str__</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_global_settings_GlobalSettings.html:167:<p id='t47' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Todo: check there are no valid params??</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_global_settings_GlobalSettings.html:176:<p id='t56' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Todo: generalize checks</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_global_settings_GlobalSettings.html:186:<p id='t66' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Todo: how to check values in a generalized way?</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_finite_solid_Blob.html:118:<p id='t38' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @TODO: Syntax Checking</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_finite_solid_Sphere.html:99:<p id='t26' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; @Todo: Syntax Checking</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_infinite_solid_Plane.html:95:<p id='t22' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; @TODO: Syntax checks</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_other_Camera.html:192:<p id='t52' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @TODO: Param Syntax checking</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_other_Camera.html:193:<p id='t53' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @todo test __str__</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_other_Camera.html:194:<p id='t54' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @todo: add transformations</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_other_Camera.html:195:<p id='t55' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Todo: are there any valid options at all?</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_basic_SceneFile.html:161:<p id='t21' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; @Todo: Proper Apidoc</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_basic_SceneFile.html:162:<p id='t22' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; @Todo: Add param for PovRay Ini file</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_basic_SceneFile.html:181:<p id='t41' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Todo: check if file is writeable?</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_basic_SceneFile.html:224:<p id='t84' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @TODO: There should be no more type/syntax checking here</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_basic_SceneFile.html:225:<p id='t85' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Todo: Write to file code</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_global_settings_Photons.html:79:<p id='t19' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; @Todo: Apidoc</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_global_settings_Photons.html:80:<p id='t20' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; @Todo: Implement</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_texture_Finish.html:125:<p id='t42' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @TODO: Syntax checking</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_basic_SceneItem.html:632:<p id='t139' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @TODO: move indentation check to own function</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_basic_SceneItem.html:642:<p id='t149' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># @todo: Does indentation really have to stay in the constructor??</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_language_directive_Version.html:119:<p id='t33' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @todo: How to refactor this into _check_args()??</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_global_settings_Radiosity.html:79:<p id='t19' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; @Todo: Apidoc</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_global_settings_Radiosity.html:80:<p id='t20' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; @Todo: Implement</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_basic_Color.html:180:<p id='t38' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_basic_Color.html:181:<p id='t39' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; @TODO: check syntax of kwargs</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_basic_Color.html:188:<p id='t46' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Todo: add properties for all color components @see colors_ink.py</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_basic_Color.html:205:<p id='t63' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># @todo: how to deal with separate color keywords</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_finite_solid_HeightField.html:156:<p id='t41' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @TODO: Check that file really exists</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_finite_solid_HeightField.html:157:<p id='t42' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @TODO: check if file matches given type</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_finite_solid_HeightField.html:158:<p id='t43' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @TODO: make sure superclass constructor gets all params in the right form</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_finite_solid_HeightField.html:159:<p id='t44' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @TODO: test __str__</span><span class='strut'>&nbsp;</span></p>
+./coverage/pov_language_directive_Include.html:118:<p id='t32' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @TODO: assert that filename points o a real file</span><span class='strut'>&nbsp;</span></p>
+./pov/object_modifier/ObjectModifier.py:42:        @Todo: Implement subclasses
+./pov/object_modifier/Translate.py:28:            @Todo: Use Syntax checking methods
+./pov/finite_patch/FinitePatch.py:23:        @TODO: Implement
+./pov/finite_patch/FinitePatch.py:24:        @Todo: Deprecate initePatch Superclass
+./pov/language_directive/LanguageDirective.py:37:        @Todo: Is this superclass deprecated?
+./pov/language_directive/LanguageDirective.py:38:        @Todo: Implement subclasses
+./pov/finite_solid/Lathe.py:31:        @TODO: Implement
+./pov/finite_solid/Lathe.py:32:        @Todo: Syntax Checks
+./pov/finite_solid/HeightField.py:43:            @TODO: check if file matches given type
+./pov/finite_solid/HeightField.py:73:        #@TODO: check file type
+./pov/finite_solid/HeightField.py:79:            @Todo: get rid of Object Modifier superclass?
+./pov/finite_solid/SphereSweep.py:32:        @Todo: Implement
+./pov/finite_solid/Prism.py:32:        @Todo: Implement
+./pov/finite_solid/Prism.py:33:        @Todo: Syntax Checks
+./pov/finite_solid/SuperEllipsoid.py:26:        @Todo: Implement
+./pov/finite_solid/Text.py:26:        @Todo: Implement
+./pov/finite_solid/Cone.py:41:            @Todo: use Syntax Checking Methods (See juliaFractal)
+./pov/finite_solid/Sor.py:28:        @Todo: Implement
+./pov/finite_solid/Sor.py:29:        @todo: Syntax checks
+./pov/finite_solid/Torus.py:28:        @Todo: Implement
+./pov/finite_solid/JuliaFractal.py:65:            @Todo: get rid of Object Modifier superclass?
+./pov/finite_solid/JuliaFractal.py:75:            @Todo: Finish syntax checks
+./pov/finite_solid/Blob.py:38:            @TODO: How to deal with Comopnent Modifiers?
+./pov/finite_solid/Blob.py:55:            @Todo: get rid of Object Modifier superclass?
+./pov/finite_solid/Sphere.py:43:            @Todo: How to allow int and float as type
+./pov/finite_solid/Sphere.py:57:            @Todo: get rid of Object Modifier superclass?
+./pov/finite_solid/Box.py:60:            @Todo: Use Syntax checking Methods (See JuliaFractal)
+./pov/finite_solid/Cylinder.py:39:            @Todo: Use Syntax checking Methods (See JuliaFractal)
+./pov/examples/basic_scene.py:96:#@TODO: Read from Config
+./pov/examples/basic_scene.py:98:#@TODO: Read from Config
+./pov/examples/basic_sphere.py:55:#@TODO: Read from Config
+./pov/examples/basic_sphere.py:57:#@TODO: Read from Config
+./pov/other/Object.py:23:         @Todo: Implement
+./pov/other/ParametricObj.py:22:        @Todo: Implement
+./pov/other/IsoSurface.py:22:        @Todo: Implement
+./pov/other/Camera.py:53:            @todo test __str__
+./pov/other/Camera.py:54:            @todo: add transformations
+./pov/other/Camera.py:75:            @Todo: get rid of Object Modifier superclass?
+./pov/other/Camera.py:104:        #@TODO: Implement Camera type checking
+./pov/other/LightSource.py:57:            @Todo: Syntax checks
+./pov/global_settings/GlobalSettings.py:43:            @Todo: test __str__
+./pov/global_settings/Radiosity.py:40:        @Todo: Implement
+./pov/global_settings/Radiosity.py:55:        #@TODO: check file type
+./pov/global_settings/Radiosity.py:61:            @Todo: get rid of Object Modifier superclass?
+./pov/basic/Color.py:38:        @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
+./pov/basic/Color.py:39:        @TODO: check syntax of kwargs
+./pov/basic/Color.py:46:            @Todo: add properties for all color components @see colors_ink.py
+./pov/basic/Color.py:47:            @TODO: Syntax Checks
+./pov/basic/Color.py:64:            # @todo: how to deal with separate color keywords
+./pov/basic/SceneItem.py:144:            @TODO: move indentation check to own function
+./pov/basic/SceneItem.py:154:        # @todo: Does indentation really have to stay in the constructor??
+./pov/basic/SceneItem.py:267:            @TODO: make valid_args a fixed list of arguments?
+./pov/basic/SceneFile.py:21:        @Todo: Proper Apidoc
+./pov/basic/SceneFile.py:22:        @Todo: Add param for PovRay Ini file
+./pov/basic/SceneFile.py:41:            @Todo: check if file is writeable?
+./pov/basic/SceneFile.py:84:            @TODO: There should be no more type/syntax checking here
+./pov/basic/SceneFile.py:85:            @Todo: Write to file code
+./pov/atmeff/Fog.py:36:        @todo: Syntax checks
+./pov/atmeff/SkySphere.py:29:            @todo: Syntax checks
+./pov/include/colors_inc.py:180:        @todo: Apidoc
+./pov/include/colors_inc.py:181:        @Todo: Param Syntax checks
+./pov/include/colors_inc.py:206:        @todo: Apidoc
+./pov/include/colors_inc.py:207:        @Todo: Param Syntax checks
+./pov/include/colors_inc.py:229:        @todo: Apidoc
+./pov/include/colors_inc.py:230:        @Todo: Param Syntax checks
+./pov/include/colors_inc.py:231:        @todo: support this?
+./pov/infinite_solid/Plane.py:22:        @TODO: Syntax checks
+./pov/infinite_solid/Plane.py:32:        #@Todo: Generalize handling of boolean keywords
+./pov/infinite_solid/Plane.py:53:            @Todo: get rid of Object Modifier superclass?
+./pov/texture/Finish.py:42:            @TODO: Syntax checking
+./pov/texture/Normal.py:80:            @todo: implement
+./pov/texture/Normal.py:81:            @todo: Syntax checks
+./pov/texture/Texture.py:82:            @Todo: Syntax Checks
+./pov/texture/Pigment.py:83:            @todo: Syntax checks
+./pov/texture/ColorMap.py:37:            @Todo: Syntax Checks
+./pov/csg/Csg.py:22:        @Todo: Implement
+./pov/csg/Csg.py:23:        @Todo: Deprecate Csg Superclass
+./pov/test/EndToEndTest.py:11:@TODO: Add rendering tests that call povray to make sure it works
+./pov/test/EndToEndTest.py:150:        #@TODO: Read from Config
+./pov/test/EndToEndTest.py:152:        #@TODO: Read from Config
+./pov/test/EndToEndTest.py:310:        #@TODO: Read from Config
+./pov/test/EndToEndTest.py:312:        #@TODO: Read from Config
+./pov/test/EndToEndTest.py:454:        #@TODO: Read from Config
+./pov/test/EndToEndTest.py:456:        #@TODO: Read from Config
+./pov/test/FiniteSolidTest.py:130:            @ToDo: KwArg: 0..1 no_shadow Bool
+./pov/test/FiniteSolidTest.py:131:            @ToDo: KwArg: 0..1 no_image Bool
+./pov/test/FiniteSolidTest.py:132:            @ToDo: KwArg: 0..1 no_reflection BOOL
+./pov/test/FiniteSolidTest.py:133:            @ToDo: KwArg: 0..1 inverse bool
+./pov/test/FiniteSolidTest.py:134:            @ToDo: KwArg: 0..1 double_illuminate bool
+./pov/test/FiniteSolidTest.py:135:            @ToDo: KwArg: 0..1 hollow bool
+./pov/test/FiniteSolidTest.py:136:            @ToDo: KwArg: 0..1 rotate Vector 3D
+./pov/test/FiniteSolidTest.py:137:            @ToDo: KwArg: 0..1 scale Vector 3D
+./pov/test/FiniteSolidTest.py:138:            @ToDo: KwArg: 0..1 translate Vector 3D
+./pov/test/FiniteSolidTest.py:139:            @ToDo: KwArg: 0..1 matrix Vector 12D
+./pov/test/FiniteSolidTest.py:141:            @ToDo: Option: 0..1 Photon object
+./pov/test/FiniteSolidTest.py:142:            @ToDo: Option: 0..1 clipped_by object
+./pov/test/FiniteSolidTest.py:143:            @ToDo: Option: 0..1 material object
+./pov/test/FiniteSolidTest.py:144:            @ToDo: Option: 0..1 interior object
+./pov/test/FiniteSolidTest.py:145:            @ToDo: Option: 0..1 interior_texture object
+./pov/test/FiniteSolidTest.py:146:            @ToDo: Option: 0..1 texture object
+./pov/test/FiniteSolidTest.py:147:            @ToDo: Option: 0..1 pigment object
+./pov/test/FiniteSolidTest.py:148:            @ToDo: Option: 0..1 normal object
+./pov/test/FiniteSolidTest.py:149:            @ToDo: Option: 0..1 finish object
+./pov/test/FiniteSolidTest.py:151:            @ToDo: Option: 0..1 transform object
+./pov/test/FiniteSolidTest.py:152:            @ToDo: KwArg: 0..1 transform string; existing identifier; transform object
+./pov/test/FiniteSolidTest.py:153:            @ToDo: only one "transform"
+./pov/test/BasicTest.py:366:        @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
