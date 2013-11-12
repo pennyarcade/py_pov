@@ -21,11 +21,39 @@ class SkySphere(PoVObject):
             sky_sphere { [SKY_SPHERE_IDENTIFIER] [SKY_SPHERE_ITEM...] }
         SKY_SPHERE_ITEM:
             PIGMENT | TRANSFORMATION
+
+        @todo: How to treat transformations? keyword/object
     '''
 
     def __init__(self, *opts, **kwargs):
         '''
             Create SkySphere object
-            @todo: Syntax checks
         '''
         super(SkySphere, self).__init__('sky_sphere', [], opts, kwargs)
+
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+        '''
+        valid_args = ['']
+
+        self._validate_args(valid_args)
+
+    def _check_opts(self):
+        '''
+            Option Syntax checks
+        '''
+        valid_opts = ['Pigment', 'Transformation']
+
+        self._validate_opts(valid_opts)
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+
+            @Todo: Finish syntax checks
+        '''
+
+        valid_kw = {}
+
+        self._validate_kwargs(valid_kw)

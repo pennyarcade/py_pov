@@ -17,11 +17,21 @@ import unittest
 from logging import *
 
 from pov.atmeff.Fog import Fog
+from pov.atmeff.SkySphere import SkySphere
+from pov.texture.Pigment import Pigment
 
 
-class AthEffTestCase(unittest.TestCase):
+class FogTestCase(unittest.TestCase):
     def setUp(self):
         self.SUT = Fog('foo')
 
     def test_creation(self):
         self.assertIsInstance(self.SUT, Fog)
+
+
+class SkySphereTestCase(unittest.TestCase):
+    def setUp(self):
+        self.SUT = SkySphere(Pigment())
+
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, SkySphere)

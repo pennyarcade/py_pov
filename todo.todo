@@ -1,117 +1,117 @@
 grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.todo (06.11.2013):
-    ☐ pov.atmeff.SkySphere                           6      1    83%   31
+    ✔ pov.atmeff.SkySphere                           6      1    83%   31 @done (13-11-12 09:52)
     ☐ pov.basic.SceneItem                          154      2    99%   315-316
     ☐ pov.finite_solid.HeightField                  25      8    68%   58-60, 81-83, 90-106
     ☐ pov.infinite_solid.Plane                      19      1    95%   47
     ☐ pov.language_directive.Include                15      3    80%   39-43
     ☐ pov.object_modifier.Translate                 16      8    50%   32-37, 40-44
-    ☐ ./pov/object_modifier/ObjectModifier.py:42:        @Todo: Implement subclasses
-    ☐ ./pov/object_modifier/Translate.py:28:            @Todo: Use Syntax checking methods
-    ☐ ./pov/finite_patch/FinitePatch.py:23:        @TODO: Implement
-    ☐ ./pov/finite_patch/FinitePatch.py:24:        @Todo: Deprecate initePatch Superclass
-    ☐ ./pov/language_directive/LanguageDirective.py:37:        @Todo: Is this superclass deprecated?
-    ☐ ./pov/language_directive/LanguageDirective.py:38:        @Todo: Implement subclasses
-    ☐ ./pov/finite_solid/Lathe.py:31:        @TODO: Implement
-    ☐ ./pov/finite_solid/Lathe.py:32:        @Todo: Syntax Checks
-    ☐ ./pov/finite_solid/HeightField.py:43:            @TODO: check if file matches given type
-    ☐ ./pov/finite_solid/HeightField.py:73:        #@TODO: check file type
-    ☐ ./pov/finite_solid/HeightField.py:79:            @Todo: get rid of Object Modifier superclass?
-    ☐ ./pov/finite_solid/SphereSweep.py:32:        @Todo: Implement
-    ☐ ./pov/finite_solid/Prism.py:32:        @Todo: Implement
-    ☐ ./pov/finite_solid/Prism.py:33:        @Todo: Syntax Checks
-    ☐ ./pov/finite_solid/SuperEllipsoid.py:26:        @Todo: Implement
-    ☐ ./pov/finite_solid/Text.py:26:        @Todo: Implement
-    ☐ ./pov/finite_solid/Cone.py:41:            @Todo: use Syntax Checking Methods (See juliaFractal)
-    ☐ ./pov/finite_solid/Sor.py:28:        @Todo: Implement
-    ☐ ./pov/finite_solid/Sor.py:29:        @todo: Syntax checks
-    ☐ ./pov/finite_solid/Torus.py:28:        @Todo: Implement
-    ☐ ./pov/finite_solid/JuliaFractal.py:65:            @Todo: get rid of Object Modifier superclass?
-    ☐ ./pov/finite_solid/JuliaFractal.py:75:            @Todo: Finish syntax checks
-    ☐ ./pov/finite_solid/Blob.py:38:            @TODO: How to deal with Comopnent Modifiers?
-    ☐ ./pov/finite_solid/Blob.py:55:            @Todo: get rid of Object Modifier superclass?
-    ☐ ./pov/finite_solid/Sphere.py:43:            @Todo: How to allow int and float as type
-    ☐ ./pov/finite_solid/Sphere.py:57:            @Todo: get rid of Object Modifier superclass?
-    ☐ ./pov/finite_solid/Box.py:60:            @Todo: Use Syntax checking Methods (See JuliaFractal)
-    ☐ ./pov/finite_solid/Cylinder.py:39:            @Todo: Use Syntax checking Methods (See JuliaFractal)
-    ☐ ./pov/examples/basic_scene.py:96:#@TODO: Read from Config
-    ☐ ./pov/examples/basic_scene.py:98:#@TODO: Read from Config
-    ☐ ./pov/examples/basic_sphere.py:55:#@TODO: Read from Config
-    ☐ ./pov/examples/basic_sphere.py:57:#@TODO: Read from Config
-    ☐ ./pov/other/Object.py:23:         @Todo: Implement
-    ☐ ./pov/other/ParametricObj.py:22:        @Todo: Implement
-    ☐ ./pov/other/IsoSurface.py:22:        @Todo: Implement
-    ☐ ./pov/other/Camera.py:53:            @todo test __str__
-    ☐ ./pov/other/Camera.py:54:            @todo: add transformations
-    ☐ ./pov/other/Camera.py:75:            @Todo: get rid of Object Modifier superclass?
-    ☐ ./pov/other/Camera.py:104:        #@TODO: Implement Camera type checking
-    ☐ ./pov/other/LightSource.py:57:            @Todo: Syntax checks
-    ☐ ./pov/global_settings/GlobalSettings.py:43:            @Todo: test __str__
-    ☐ ./pov/global_settings/Radiosity.py:40:        @Todo: Implement
-    ☐ ./pov/global_settings/Radiosity.py:55:        #@TODO: check file type
-    ☐ ./pov/global_settings/Radiosity.py:61:            @Todo: get rid of Object Modifier superclass?
-    ☐ ./pov/basic/Color.py:38:        @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
-    ☐ ./pov/basic/Color.py:39:        @TODO: check syntax of kwargs
-    ☐ ./pov/basic/Color.py:46:            @Todo: add properties for all color components @see colors_ink.py
-    ☐ ./pov/basic/Color.py:47:            @TODO: Syntax Checks
-    ☐ ./pov/basic/Color.py:64:            # @todo: how to deal with separate color keywords
-    ☐ ./pov/basic/SceneItem.py:144:            @TODO: move indentation check to own function
-    ☐ ./pov/basic/SceneItem.py:154:        # @todo: Does indentation really have to stay in the constructor??
-    ☐ ./pov/basic/SceneItem.py:267:            @TODO: make valid_args a fixed list of arguments?
-    ☐ ./pov/basic/SceneFile.py:21:        @Todo: Proper Apidoc
-    ☐ ./pov/basic/SceneFile.py:22:        @Todo: Add param for PovRay Ini file
-    ☐ ./pov/basic/SceneFile.py:41:            @Todo: check if file is writeable?
-    ☐ ./pov/basic/SceneFile.py:84:            @TODO: There should be no more type/syntax checking here
-    ☐ ./pov/basic/SceneFile.py:85:            @Todo: Write to file code
-    ☐ ./pov/atmeff/Fog.py:36:        @todo: Syntax checks
-    ☐ ./pov/atmeff/SkySphere.py:29:            @todo: Syntax checks
-    ☐ ./pov/include/colors_inc.py:180:        @todo: Apidoc
-    ☐ ./pov/include/colors_inc.py:181:        @Todo: Param Syntax checks
-    ☐ ./pov/include/colors_inc.py:206:        @todo: Apidoc
-    ☐ ./pov/include/colors_inc.py:207:        @Todo: Param Syntax checks
-    ☐ ./pov/include/colors_inc.py:229:        @todo: Apidoc
-    ☐ ./pov/include/colors_inc.py:230:        @Todo: Param Syntax checks
-    ☐ ./pov/include/colors_inc.py:231:        @todo: support this?
-    ☐ ./pov/infinite_solid/Plane.py:22:        @TODO: Syntax checks
-    ☐ ./pov/infinite_solid/Plane.py:32:        #@Todo: Generalize handling of boolean keywords
-    ☐ ./pov/infinite_solid/Plane.py:53:            @Todo: get rid of Object Modifier superclass?
-    ☐ ./pov/texture/Finish.py:42:            @TODO: Syntax checking
-    ☐ ./pov/texture/Normal.py:80:            @todo: implement
-    ☐ ./pov/texture/Normal.py:81:            @todo: Syntax checks
-    ☐ ./pov/texture/Texture.py:82:            @Todo: Syntax Checks
-    ☐ ./pov/texture/Pigment.py:83:            @todo: Syntax checks
-    ☐ ./pov/texture/ColorMap.py:37:            @Todo: Syntax Checks
-    ☐ ./pov/csg/Csg.py:22:        @Todo: Implement
-    ☐ ./pov/csg/Csg.py:23:        @Todo: Deprecate Csg Superclass
-    ☐ ./pov/test/EndToEndTest.py:11:@TODO: Add rendering tests that call povray to make sure it works
-    ☐ ./pov/test/EndToEndTest.py:150:        #@TODO: Read from Config
-    ☐ ./pov/test/EndToEndTest.py:152:        #@TODO: Read from Config
-    ☐ ./pov/test/EndToEndTest.py:310:        #@TODO: Read from Config
-    ☐ ./pov/test/EndToEndTest.py:312:        #@TODO: Read from Config
-    ☐ ./pov/test/EndToEndTest.py:454:        #@TODO: Read from Config
-    ☐ ./pov/test/EndToEndTest.py:456:        #@TODO: Read from Config
-    ☐ ./pov/test/FiniteSolidTest.py:130:            @ToDo: KwArg: 0..1 no_shadow Bool
-    ☐ ./pov/test/FiniteSolidTest.py:131:            @ToDo: KwArg: 0..1 no_image Bool
-    ☐ ./pov/test/FiniteSolidTest.py:132:            @ToDo: KwArg: 0..1 no_reflection BOOL
-    ☐ ./pov/test/FiniteSolidTest.py:133:            @ToDo: KwArg: 0..1 inverse bool
-    ☐ ./pov/test/FiniteSolidTest.py:134:            @ToDo: KwArg: 0..1 double_illuminate bool
-    ☐ ./pov/test/FiniteSolidTest.py:135:            @ToDo: KwArg: 0..1 hollow bool
-    ☐ ./pov/test/FiniteSolidTest.py:136:            @ToDo: KwArg: 0..1 rotate Vector 3D
-    ☐ ./pov/test/FiniteSolidTest.py:137:            @ToDo: KwArg: 0..1 scale Vector 3D
-    ☐ ./pov/test/FiniteSolidTest.py:138:            @ToDo: KwArg: 0..1 translate Vector 3D
-    ☐ ./pov/test/FiniteSolidTest.py:139:            @ToDo: KwArg: 0..1 matrix Vector 12D
-    ☐ ./pov/test/FiniteSolidTest.py:141:            @ToDo: Option: 0..1 Photon object
-    ☐ ./pov/test/FiniteSolidTest.py:142:            @ToDo: Option: 0..1 clipped_by object
-    ☐ ./pov/test/FiniteSolidTest.py:143:            @ToDo: Option: 0..1 material object
-    ☐ ./pov/test/FiniteSolidTest.py:144:            @ToDo: Option: 0..1 interior object
-    ☐ ./pov/test/FiniteSolidTest.py:145:            @ToDo: Option: 0..1 interior_texture object
-    ☐ ./pov/test/FiniteSolidTest.py:146:            @ToDo: Option: 0..1 texture object
-    ☐ ./pov/test/FiniteSolidTest.py:147:            @ToDo: Option: 0..1 pigment object
-    ☐ ./pov/test/FiniteSolidTest.py:148:            @ToDo: Option: 0..1 normal object
-    ☐ ./pov/test/FiniteSolidTest.py:149:            @ToDo: Option: 0..1 finish object
-    ☐ ./pov/test/FiniteSolidTest.py:151:            @ToDo: Option: 0..1 transform object
-    ☐ ./pov/test/FiniteSolidTest.py:152:            @ToDo: KwArg: 0..1 transform string; existing identifier; transform object
-    ☐ ./pov/test/FiniteSolidTest.py:153:            @ToDo: only one "transform"
-    ☐ ./pov/test/BasicTest.py:366:        @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
+    ☐ ./pov/object_modifier/ObjectModifier.py:42:          @Todo: Implement subclasses
+    ☐ ./pov/object_modifier/Translate.py:28:               @Todo: Use Syntax checking methods
+    ☐ ./pov/finite_patch/FinitePatch.py:23:                @TODO: Implement
+    ☐ ./pov/finite_patch/FinitePatch.py:24:                @Todo: Deprecate initePatch Superclass
+    ☐ ./pov/language_directive/LanguageDirective.py:37:    @Todo: Is this superclass deprecated?
+    ☐ ./pov/language_directive/LanguageDirective.py:38:    @Todo: Implement subclasses
+    ☐ ./pov/finite_solid/Lathe.py:31:                      @TODO: Implement
+    ☐ ./pov/finite_solid/Lathe.py:32:                      @Todo: Syntax Checks
+    ☐ ./pov/finite_solid/HeightField.py:43:                @TODO: check if file matches given type
+    ☐ ./pov/finite_solid/HeightField.py:73:                @TODO: check file type
+    ☐ ./pov/finite_solid/HeightField.py:79:                @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/finite_solid/SphereSweep.py:32:                @Todo: Implement
+    ☐ ./pov/finite_solid/Prism.py:32:                      @Todo: Implement
+    ☐ ./pov/finite_solid/Prism.py:33:                      @Todo: Syntax Checks
+    ☐ ./pov/finite_solid/SuperEllipsoid.py:26:             @Todo: Implement
+    ☐ ./pov/finite_solid/Text.py:26:                       @Todo: Implement
+    ☐ ./pov/finite_solid/Cone.py:41:                       @Todo: use Syntax Checking Methods (See juliaFractal)
+    ☐ ./pov/finite_solid/Sor.py:28:                        @Todo: Implement
+    ☐ ./pov/finite_solid/Sor.py:29:                        @todo: Syntax checks
+    ☐ ./pov/finite_solid/Torus.py:28:                      @Todo: Implement
+    ☐ ./pov/finite_solid/JuliaFractal.py:65:               @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/finite_solid/JuliaFractal.py:75:               @Todo: Finish syntax checks
+    ☐ ./pov/finite_solid/Blob.py:38:                       @TODO: How to deal with Comopnent Modifiers?
+    ☐ ./pov/finite_solid/Blob.py:55:                       @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/finite_solid/Sphere.py:43:                     @Todo: How to allow int and float as type
+    ☐ ./pov/finite_solid/Sphere.py:57:                     @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/finite_solid/Box.py:60:                        @Todo: Use Syntax checking Methods (See JuliaFractal)
+    ☐ ./pov/finite_solid/Cylinder.py:39:                   @Todo: Use Syntax checking Methods (See JuliaFractal)
+    ☐ ./pov/examples/basic_scene.py:96:                    @TODO: Read from Config
+    ☐ ./pov/examples/basic_scene.py:98:                    @TODO: Read from Config
+    ☐ ./pov/examples/basic_sphere.py:55:                   @TODO: Read from Config
+    ☐ ./pov/examples/basic_sphere.py:57:                   @TODO: Read from Config
+    ☐ ./pov/other/Object.py:23:                            @Todo: Implement
+    ☐ ./pov/other/ParametricObj.py:22:                     @Todo: Implement
+    ☐ ./pov/other/IsoSurface.py:22:                        @Todo: Implement
+    ☐ ./pov/other/Camera.py:53:                            @todo test __str__
+    ☐ ./pov/other/Camera.py:54:                            @todo: add transformations
+    ☐ ./pov/other/Camera.py:75:                            @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/other/Camera.py:104:                           @TODO: Implement Camera type checking
+    ☐ ./pov/other/LightSource.py:57:                       @Todo: Syntax checks
+    ☐ ./pov/global_settings/GlobalSettings.py:43:          @Todo: test __str__
+    ☐ ./pov/global_settings/Radiosity.py:40:               @Todo: Implement
+    ☐ ./pov/global_settings/Radiosity.py:55:               @TODO: check file type
+    ☐ ./pov/global_settings/Radiosity.py:61:               @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/basic/Color.py:38:                             @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
+    ☐ ./pov/basic/Color.py:39:                             @TODO: check syntax of kwargs
+    ☐ ./pov/basic/Color.py:46:                             @Todo: add properties for all color components @see colors_ink.py
+    ☐ ./pov/basic/Color.py:47:                             @TODO: Syntax Checks
+    ☐ ./pov/basic/Color.py:64:                             @todo: how to deal with separate color keywords
+    ☐ ./pov/basic/SceneItem.py:144:                        @TODO: move indentation check to own function
+    ☐ ./pov/basic/SceneItem.py:154:                        @todo: Does indentation really have to stay in the constructor??
+    ☐ ./pov/basic/SceneItem.py:267:                        @TODO: make valid_args a fixed list of arguments?
+    ☐ ./pov/basic/SceneFile.py:21:                         @Todo: Proper Apidoc
+    ☐ ./pov/basic/SceneFile.py:22:                         @Todo: Add param for PovRay Ini file
+    ☐ ./pov/basic/SceneFile.py:41:                         @Todo: check if file is writeable?
+    ☐ ./pov/basic/SceneFile.py:84:                         @TODO: There should be no more type/syntax checking here
+    ☐ ./pov/basic/SceneFile.py:85:                         @Todo: Write to file code
+    ✔ ./pov/atmeff/Fog.py:36:                              @todo: Syntax checks @done (13-11-12 11:48)
+    ✔ ./pov/atmeff/SkySphere.py:29:                        @todo: Syntax checks @done (13-11-12 11:27)
+    ☐ ./pov/include/colors_inc.py:180:                     @todo: Apidoc
+    ☐ ./pov/include/colors_inc.py:181:                     @Todo: Param Syntax checks
+    ☐ ./pov/include/colors_inc.py:206:                     @todo: Apidoc
+    ☐ ./pov/include/colors_inc.py:207:                     @Todo: Param Syntax checks
+    ☐ ./pov/include/colors_inc.py:229:                     @todo: Apidoc
+    ☐ ./pov/include/colors_inc.py:230:                     @Todo: Param Syntax checks
+    ☐ ./pov/include/colors_inc.py:231:                     @todo: support this?
+    ☐ ./pov/infinite_solid/Plane.py:22:                    @TODO: Syntax checks
+    ☐ ./pov/infinite_solid/Plane.py:32:                    @Todo: Generalize handling of boolean keywords
+    ☐ ./pov/infinite_solid/Plane.py:53:                    @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/texture/Finish.py:42:                          @TODO: Syntax checking
+    ☐ ./pov/texture/Normal.py:80:                          @todo: implement
+    ☐ ./pov/texture/Normal.py:81:                          @todo: Syntax checks
+    ☐ ./pov/texture/Texture.py:82:                         @Todo: Syntax Checks
+    ☐ ./pov/texture/Pigment.py:83:                         @todo: Syntax checks
+    ☐ ./pov/texture/ColorMap.py:37:                        @Todo: Syntax Checks
+    ☐ ./pov/csg/Csg.py:22:                                 @Todo: Implement
+    ☐ ./pov/csg/Csg.py:23:                                 @Todo: Deprecate Csg Superclass
+    ☐ ./pov/test/EndToEndTest.py:11:                       @TODO: Add rendering tests that call povray to make sure it works
+    ☐ ./pov/test/EndToEndTest.py:150:                      @TODO: Read from Config
+    ☐ ./pov/test/EndToEndTest.py:152:                      @TODO: Read from Config
+    ☐ ./pov/test/EndToEndTest.py:310:                      @TODO: Read from Config
+    ☐ ./pov/test/EndToEndTest.py:312:                      @TODO: Read from Config
+    ☐ ./pov/test/EndToEndTest.py:454:                      @TODO: Read from Config
+    ☐ ./pov/test/EndToEndTest.py:456:                      @TODO: Read from Config
+    ☐ ./pov/test/FiniteSolidTest.py:130:                   @ToDo: KwArg: 0..1 no_shadow Bool
+    ☐ ./pov/test/FiniteSolidTest.py:131:                   @ToDo: KwArg: 0..1 no_image Bool
+    ☐ ./pov/test/FiniteSolidTest.py:132:                   @ToDo: KwArg: 0..1 no_reflection BOOL
+    ☐ ./pov/test/FiniteSolidTest.py:133:                   @ToDo: KwArg: 0..1 inverse bool
+    ☐ ./pov/test/FiniteSolidTest.py:134:                   @ToDo: KwArg: 0..1 double_illuminate bool
+    ☐ ./pov/test/FiniteSolidTest.py:135:                   @ToDo: KwArg: 0..1 hollow bool
+    ☐ ./pov/test/FiniteSolidTest.py:136:                   @ToDo: KwArg: 0..1 rotate Vector 3D
+    ☐ ./pov/test/FiniteSolidTest.py:137:                   @ToDo: KwArg: 0..1 scale Vector 3D
+    ☐ ./pov/test/FiniteSolidTest.py:138:                   @ToDo: KwArg: 0..1 translate Vector 3D
+    ☐ ./pov/test/FiniteSolidTest.py:139:                   @ToDo: KwArg: 0..1 matrix Vector 12D
+    ☐ ./pov/test/FiniteSolidTest.py:141:                   @ToDo: Option: 0..1 Photon object
+    ☐ ./pov/test/FiniteSolidTest.py:142:                   @ToDo: Option: 0..1 clipped_by object
+    ☐ ./pov/test/FiniteSolidTest.py:143:                   @ToDo: Option: 0..1 material object
+    ☐ ./pov/test/FiniteSolidTest.py:144:                   @ToDo: Option: 0..1 interior object
+    ☐ ./pov/test/FiniteSolidTest.py:145:                   @ToDo: Option: 0..1 interior_texture object
+    ☐ ./pov/test/FiniteSolidTest.py:146:                   @ToDo: Option: 0..1 texture object
+    ☐ ./pov/test/FiniteSolidTest.py:147:                   @ToDo: Option: 0..1 pigment object
+    ☐ ./pov/test/FiniteSolidTest.py:148:                   @ToDo: Option: 0..1 normal object
+    ☐ ./pov/test/FiniteSolidTest.py:149:                   @ToDo: Option: 0..1 finish object
+    ☐ ./pov/test/FiniteSolidTest.py:151:                   @ToDo: Option: 0..1 transform object
+    ☐ ./pov/test/FiniteSolidTest.py:152:                   @ToDo: KwArg: 0..1 transform string; existing identifier; transform object
+    ☐ ./pov/test/FiniteSolidTest.py:153:                   @ToDo: only one "transform"
+    ☐ ./pov/test/BasicTest.py:366:                         @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
 
 
 grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.todo (24.10.2013):
