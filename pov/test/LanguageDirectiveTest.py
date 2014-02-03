@@ -50,6 +50,10 @@ class IncludeTestCase(unittest.TestCase):
 
         self.assertEqual(str(self.SUT), second)
 
+    def test_create_non_existant_file(self):
+        with self.assertRaisesRegexp(IOError, 'No such file: %s%s%s' % (os.getcwd(), os.sep, 'fixture/nonexistant.inc')):
+            self.SUT = Include('fixture/nonexistant.inc')
+
 
 class VersionTestCase(unittest.TestCase):
     def setUp(self):

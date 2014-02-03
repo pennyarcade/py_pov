@@ -124,11 +124,11 @@ class SceneItem(object):
         'hf_type'
     ]
 
-    _object_modifiers= [
+    _object_modifiers = [
         'ObjectModifier', 'Texture', 'Translate'
     ]
 
-    def __init__(self, name, args=[], opts=[], kwargs=[]):
+    def __init__(self, name, args=[], opts=[], kwargs={}):
         """
             Base class for POV objects.
 
@@ -311,6 +311,7 @@ class SceneItem(object):
         '''
             Check value range for kwargs
         '''
+
         if kwarg in self.kwargs:
             if not self.kwargs[kwarg] in validvalues:
                 raise SdlSyntaxException(

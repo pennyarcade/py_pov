@@ -181,6 +181,14 @@ class SceneItemTestCase(unittest.TestCase):
             if self.SUT == 3:
                 pass
 
+    def test__checkKwargValue_invalid_value(self):
+        self.SUT = SceneItem('foo', [], [], {'baz': 'bar'})
+
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of KW Argument baz is expectet to be in .* but got bar'):
+            self.SUT._checkKwargValue('baz', ['foo'])
+
+#Value of KW Argument baz is expectet to be in ['foo'] but got bar
+#Value of KW Argument baz is expectet to be in ['foo'] but got bar
 
 class VectorTestCase(unittest.TestCase):
     def setUp(self):

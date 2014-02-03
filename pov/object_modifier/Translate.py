@@ -24,17 +24,21 @@ class Translate(ObjectModifier):
     def __init__(self, tvector):
         '''
             Create Translate object
-
-            @Todo: Use Syntax checking methods
         '''
 
-        # Syntax checking
-        if not isinstance(tvector, Vector):
-            raise SdlSyntaxException('Parameter tvector is not of type Vector')
-        if not len(tvector.v) == 3:
-            raise SdlSyntaxException('TVector has more or less than 3 dimensions')
-
         super(Translate, self).__init__('translate', [tvector], [], [])
+
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+        '''
+        valid_args = ['Vector']
+
+        self._validate_args(valid_args)
+
+        # param syntax checks
+        if not len(self.args[0].v) == 3:
+            raise SdlSyntaxException('Vector TVector has more or less than 4 dimensions')
 
     def __str__(self):
         code = ''

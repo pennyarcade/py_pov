@@ -1,17 +1,17 @@
 grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.todo (06.11.2013):
     ✔ pov.atmeff.SkySphere                           6      1    83%   31 @done (13-11-12 09:52)
-    ☐ pov.basic.SceneItem                          154      2    99%   315-316
-    ☐ pov.finite_solid.HeightField                  25      8    68%   58-60, 81-83, 90-106
-    ☐ pov.infinite_solid.Plane                      19      1    95%   47
-    ☐ pov.language_directive.Include                15      3    80%   39-43
-    ☐ pov.object_modifier.Translate                 16      8    50%   32-37, 40-44
+    ✔ pov.basic.SceneItem                          154      2    99%   315-316 @done (14-02-03 09:28)
+    ✔ pov.finite_solid.HeightField                  25      8    68%   58-60, 81-83, 90-106 @done (14-02-03 11:01)
+    ✔ pov.infinite_solid.Plane                      19      1    95%   47 @done (14-02-03 11:07)
+    ✔ pov.language_directive.Include                15      3    80%   39-43 @done (14-02-03 12:28)
+    ✔ pov.object_modifier.Translate                 16      8    50%   32-37, 40-44 @done (14-02-03 13:38)
     ☐ ./pov/object_modifier/ObjectModifier.py:42:          @Todo: Implement subclasses
-    ☐ ./pov/object_modifier/Translate.py:28:               @Todo: Use Syntax checking methods
+    ✔ ./pov/object_modifier/Translate.py:28:               @Todo: Use Syntax checking methods @done (14-02-03 13:45)
     ☐ ./pov/finite_patch/FinitePatch.py:23:                @TODO: Implement
     ☐ ./pov/finite_patch/FinitePatch.py:24:                @Todo: Deprecate initePatch Superclass
     ☐ ./pov/language_directive/LanguageDirective.py:37:    @Todo: Is this superclass deprecated?
     ☐ ./pov/language_directive/LanguageDirective.py:38:    @Todo: Implement subclasses
-    ☐ ./pov/finite_solid/Lathe.py:31:                      @TODO: Implement
+    ✔ ./pov/finite_solid/Lathe.py:31:                      @TODO: Implement @done (14-02-03 14:04)
     ☐ ./pov/finite_solid/Lathe.py:32:                      @Todo: Syntax Checks
     ☐ ./pov/finite_solid/HeightField.py:43:                @TODO: check if file matches given type
     ☐ ./pov/finite_solid/HeightField.py:73:                @TODO: check file type

@@ -19,11 +19,13 @@ from logging import *
 from pov.atmeff.Fog import Fog
 from pov.atmeff.SkySphere import SkySphere
 from pov.texture.Pigment import Pigment
+from pov.basic.Color import Color
+from pov.basic.Vector import Vector
 
 
 class FogTestCase(unittest.TestCase):
     def setUp(self):
-        self.SUT = Fog('foo')
+        self.SUT = Fog(Color(rgb=Vector(100, 100, 100)))
 
     def test_creation(self):
         self.assertIsInstance(self.SUT, Fog)

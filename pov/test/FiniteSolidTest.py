@@ -26,6 +26,7 @@ from pov.finite_solid.Cylinder import Cylinder
 from pov.finite_solid.HeightField import HeightField
 from pov.finite_solid.JuliaFractal import JuliaFractal
 from pov.finite_solid.Sphere import Sphere
+from pov.finite_solid.Lathe import Lathe
 
 
 class BlobTestCase(unittest.TestCase):
@@ -504,6 +505,10 @@ class HeightFieldTestCase(unittest.TestCase):
         with self.assertRaisesRegexp(SdlSyntaxException, 'Value of KW Argument hf_type is expectet to be in \\[\'gif\', \'tga\', \'pot\', \'png\', \'pgm\', \'ppm\', \'jpeg\', \'tiff\', \'sys\', \'function\'] but got bar'):
             self.SUT = HeightField('fixture/test.gif', hf_type='bar')
 
+    def test_create_hf_non_existant_file(self):
+        with self.assertRaisesRegexp(IOError, 'No such file: %s%s%s' % (os.getcwd(), os.sep, 'fixture/nonexistant.gif')):
+            self.SUT = HeightField('fixture/nonexistant.gif', hf_type='bar')
+
     def test_create_waterlevel_not_float(self):
         with self.assertRaisesRegexp(SdlSyntaxException, 'Value of KW Argument water_level is expectet to be type float but got str'):
             self.SUT = HeightField('fixture/test.gif', water_level='bar')
@@ -635,3 +640,41 @@ class SphereTestCase(unittest.TestCase):
                 'foo',
                 open=0.3
             )
+
+
+class LatheTestCase(unittest.TestCase):
+    '''
+        LATHE:
+            lathe
+            {
+                [SPLINE_TYPE] Number_Of_Points, <Point_1>
+                <Point_2>... <Point_n>
+                [LATHE_MODIFIER...]
+            }
+        SPLINE_TYPE:
+            linear_spline | quadratic_spline | cubic_spline | bezier_spline
+        LATHE_MODIFIER:
+            sturm | OBJECT_MODIFIER
+    '''
+
+    def setUp(self):
+        self.SUT = Lathe('linear_spline', 1, [Vector(1, 2, 3)])
+
+    def test_creation(self):
+        self.assertIsInstance(self.SUT, Lathe)
+        self.assertIsInstance(self.SUT, SceneItem)
+
+#    def test_create_wrong_type(self):
+#        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of Argument 0 is expectet to be type str but got float'):
+#            self.SUT = HeightField(1.0)
+
+    def test_toString(self):
+        le = os.linesep
+
+        second = 'lathe {' + le
+        second += '  linear_spline, 1, <1, 2, 3>' + le
+        second += '}' + le
+
+        self.assertEqual(str(self.SUT), second)
+
+

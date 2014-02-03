@@ -14,6 +14,7 @@ import unittest
 from logging import *
 from pov.infinite_solid.Plane import Plane
 from pov.basic.SceneItem import SceneItem
+from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class PlaneTestCase(unittest.TestCase):
@@ -27,3 +28,7 @@ class PlaneTestCase(unittest.TestCase):
     def test_creation(self):
         self.assertIsInstance(self.SUT, Plane)
         self.assertIsInstance(self.SUT, SceneItem)
+
+    def test_creation_vector_to_big(self):
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Normal vector has more or less than 3 dimensions'):
+            self.SUT = Plane((1, 2, 3, 4), 5)
