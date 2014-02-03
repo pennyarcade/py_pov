@@ -82,3 +82,4 @@ class Texture(BlockObject):
             @Todo: Syntax Checks
         '''
         super(Texture, self).__init__('texture', [], opts, kwargs)
+

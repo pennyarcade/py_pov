@@ -62,9 +62,19 @@ class Color(SceneItem):
             self.vector = self.kwargs['rgbft']
         else:
             # @todo: how to deal with separate color keywords
-            self.type = 'none'
-            self.vector = Vector(0, 0, 0)
-            pass
+            self.type = 'rgbft'
+            self.vector = Vector(0, 0, 0, 0, 0)
+
+            if 'red' in kwargs:
+                self.vector[0]= self.kwargs['red']
+            if 'green' in kwargs:
+                self.vector[1]= self.kwargs['green']
+            if 'blue' in kwargs:
+                self.vector[2]= self.kwargs['blue']
+            if 'filter' in kwargs:
+                self.vector[3]= self.kwargs['filter']
+            if 'transmit' in kwargs:
+                self.vector[4]= self.kwargs['transmit']
 
     def __str__(self):
         code = ''
@@ -88,9 +98,9 @@ class Color(SceneItem):
             'rgbf': 'Vector',
             'rgbt': 'Vector',
             'rgbft': 'Vector',
-            'red': 'float',
-            'green': 'float',
-            'blue': 'float',
+            'red': ['int', 'float'],
+            'green': ['int', 'float'],
+            'blue': ['int', 'float'],
             'filter': 'float',
             'transmit': 'float'
         }

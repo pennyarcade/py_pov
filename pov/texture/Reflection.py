@@ -10,12 +10,15 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+
 from pov.basic.BlockObject import BlockObject
+from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
-class Finish(BlockObject):
-    """
+class Reflection(BlockObject):
+    '''
         FINISH:
+            Jump to SDL
             finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }
         FINISH_ITEMS:
             [ambient COLOR] & [diffuse FLOAT] & [brilliance FLOAT] & [PHONG] & [SPECULAR] & [REFLECTION] & [IRID] & [crand FLOAT] & [conserve_energy [BOOL]]
@@ -33,16 +36,18 @@ class Finish(BlockObject):
             irid { F_AMOUNT [IRID_ITEMS] }
         IRID_ITEMS:
             [thickness FLOAT] & [turbulence FLOAT]
-    """
+    '''
 
     def __init__(self, *opts, **kwargs):
-        """
-            Create a Finish object
+        '''
+            Create Reflection object
 
-            @TODO: Syntax checking
-        """
-        super(Finish, self).__init__("finish", (), opts, kwargs)
+            @todo: implement
+            @todo: Syntax checks
+        '''
+        super(Reflection, self).__init__('reflection', [], opts, kwargs)
 
-        if 'conserve_energy' in self.kwargs and self.kwargs['conserve_energy'] is True:
-            del self.kwargs['conserve_energy']
-            self.args.append('conserve_energy')
+        if 'metallic' in self.kwargs and self.kwargs['metallic'] is True:
+            del self.kwargs['metallic']
+            self.args.append('metallic')
+

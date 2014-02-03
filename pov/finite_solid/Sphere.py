@@ -56,7 +56,7 @@ class Sphere(BlockObject):
 
             @Todo: get rid of Object Modifier superclass?
         '''
-        valid_opts = ['ObjectModifier']
+        valid_opts = ['ObjectModifier', 'Texture', 'Translate']
 
         self._validate_opts(valid_opts)
 

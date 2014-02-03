@@ -53,7 +53,7 @@ class Plane(BlockObject):
 
             @Todo: get rid of Object Modifier superclass?
         '''
-        valid_opts = ['ObjectModifier']
+        valid_opts = ['ObjectModifier', 'Texture', 'Pigment']
 
         self._validate_opts(valid_opts)
 
@@ -69,7 +69,8 @@ class Plane(BlockObject):
             'no_reflection': 'bool',
             'inverse': 'bool',
             'double_illuminate': 'bool',
-            'hollow': 'bool'
+            'hollow': 'bool',
+            'scale': ['int', 'float']
         }
 
         self._validate_kwargs(valid_kw)

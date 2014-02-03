@@ -269,14 +269,15 @@ class SceneItem(object):
         # args validation against objects list
         for i in range(len(self.args)):
             # type of  arguments
-            if isinstance(valid_args[i], (list, tuple)):
-                if not self.args[i].__class__.__name__ in valid_args[i]:
-                    raise SdlSyntaxException('Value of Argument %s is expectet to be type %s but got %s' %
-                                             (i, valid_args[i], self.args[i].__class__.__name__))
-            else:
-                if not self.args[i].__class__.__name__ == valid_args[i]:
-                    raise SdlSyntaxException('Value of Argument %s is expectet to be type %s but got %s' %
-                                             (i, valid_args[i], self.args[i].__class__.__name__))
+            if i < len(valid_args):
+                if isinstance(valid_args[i], (list, tuple)):
+                    if not self.args[i].__class__.__name__ in valid_args[i]:
+                        raise SdlSyntaxException('Value of Argument %s is expectet to be type %s but got %s' %
+                                                 (i, valid_args[i], self.args[i].__class__.__name__))
+                else:
+                    if not self.args[i].__class__.__name__ == valid_args[i]:
+                        raise SdlSyntaxException('Value of Argument %s is expectet to be type %s but got %s' %
+                                                 (i, valid_args[i], self.args[i].__class__.__name__))
 
     def _validate_opts(self, valid_opts):
         '''
@@ -303,7 +304,7 @@ class SceneItem(object):
                 raise SdlSyntaxException('Keyword %s not allowed for object %s' %
                                          (key, self.__class__.__name__))
             # type of kw arguments
-            if not val.__class__.__name__ == valid_kw[key]:
+            if not val.__class__.__name__ in valid_kw[key]:
                 raise SdlSyntaxException('Value of KW Argument %s is expectet to be type %s but got %s' %
                                          (key, valid_kw[key], val.__class__.__name__))
 

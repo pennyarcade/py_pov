@@ -88,3 +88,6 @@ class Pigment(BlockObject):
             del self.kwargs['bozo']
             self.args.append('bozo')
 
+        if 'checker' in self.kwargs and self.kwargs['checker'] is True:
+            del self.kwargs['checker']
+            self.args.append('checker')

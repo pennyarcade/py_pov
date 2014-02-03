@@ -65,6 +65,7 @@ class Fog(PoVObject):
         '''
 
         valid_kw = {
+            'turbulence': ('float', 'int'),
             'distance': ('float', 'int'),
             'turb_depth': ('float', 'int'),
             'fog_type': 'int',

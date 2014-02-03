@@ -633,7 +633,7 @@ class SphereTestCase(unittest.TestCase):
             )
 
     def test_create_ObjectModifier_wrong_type(self):
-        with self.assertRaisesRegexp(SdlSyntaxException, 'Invalid option type str not in allowed opts \n\\[\\\'ObjectModifier\\\']'):
+        with self.assertRaisesRegexp(SdlSyntaxException, 'Invalid option type str not in allowed opts \n\\[.*]'):
             self.SUT = Sphere(
                 Vector(1, 2, 3),
                 8,
@@ -658,11 +658,12 @@ class LatheTestCase(unittest.TestCase):
     '''
 
     def setUp(self):
-        self.SUT = Lathe('linear_spline', 1, [Vector(1, 2, 3)])
+        self.SUT = Lathe('linear_spline', 2, [Vector(1, 2, 3), Vector(1, 2, 3)])
 
     def test_creation(self):
         self.assertIsInstance(self.SUT, Lathe)
         self.assertIsInstance(self.SUT, SceneItem)
+
 
 #    def test_create_wrong_type(self):
 #        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of Argument 0 is expectet to be type str but got float'):
@@ -672,7 +673,7 @@ class LatheTestCase(unittest.TestCase):
         le = os.linesep
 
         second = 'lathe {' + le
-        second += '  linear_spline, 1, <1, 2, 3>' + le
+        second += '  linear_spline, 2, <1, 2, 3>, <1, 2, 3>' + le
         second += '}' + le
 
         self.assertEqual(str(self.SUT), second)

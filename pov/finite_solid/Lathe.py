@@ -10,8 +10,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+from logging import *
 from pov.basic.BlockObject import BlockObject
 from pov.basic.Vector import Vector
+from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class Lathe(BlockObject):
@@ -49,21 +51,22 @@ class Lathe(BlockObject):
         '''
             Argument Syntax checks
         '''
-        valid_args = ['str', 'int', 'List']
+        valid_args = ['str', 'int', 'Vector']
 
+        warn(self.args)
         self._validate_args(valid_args)
 
         # param syntax checks
-        valid = ('linear_spline', 'quadratic_spline', 'cubic_spline', 'bezier_spline')
-        if not self.args[0] in valid:
+        valid = ['linear_spline', 'quadratic_spline', 'cubic_spline', 'bezier_spline']
+        if not self.args[0] in ['linear_spline', 'quadratic_spline', 'cubic_spline', 'bezier_spline']:
             raise SdlSyntaxException('Invalid value for param stype got %s expected %s' % (self.args[0], valid))
 
         if not self.args[1] > 0:
             raise SdlSyntaxException('Invalid value for param number: got %s expected > 0' % (self.args[1]))
 
-        for v in self.args[2]:
-            if not v.__class__.__name__ == 'Vector':
-                raise SdlSyntaxException('Invalid value for param points expected elements of type Vector but got %s' % (self.args[2]))
+        for v in range(2, len(self.args)):
+            if not self.args[v].__class__.__name__ == 'Vector':
+                raise SdlSyntaxException('Invalid value for param points expected elements of type Vector but got %s' % (self.args[2].__class__.__name__))
 
     def _check_opts(self):
         '''
@@ -83,6 +86,7 @@ class Lathe(BlockObject):
         '''
 
         valid_kw = {
+            'points': 'Vector',
             'sturm': 'bool',
             # Object modifier kw
             'no_shadow': 'bool',
