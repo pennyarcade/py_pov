@@ -522,3 +522,76 @@ class EndToEndTestCase(unittest.TestCase):
         ))
 
         self.assertEqual(ref, str(fix), msg)
+
+    def test_image_map_example(self):
+        le = os.linesep
+
+        ref = le.join([
+            '#version 3.6;',
+            '#include "fixture/colors.inc"',
+            'global_settings {',
+            '  assumed_gamma 1.0',
+            '}',
+            'camera {',
+            '  location  <0.0, 0.0, -4.0>',
+            '  direction 2*z',
+            '  right     x*image_width/image_height',
+            '  look_at   <0.0, 0.0,  0.0>',
+            '}',
+            'sky_sphere {',
+            '  pigment {',
+            '    gradient y',
+            '    color_map {',
+            '      [0.0 color blue 0.6]',
+            '      [1.0 color rgb 1]',
+            '    }',
+            '  }',
+            '}',
+            'light_source {',
+            '  <0, 0, 0>',
+            '  color rgb <1, 1, 1>',
+            '  translate <-30, 30, -30>',
+            '}',
+            'plane {',
+            '  y, -1',
+            '  texture {',
+            '    pigment { checker color rgb 1 color blue 1 scale 0.5 }',
+            '    finish { reflection 0.2 }',
+            '  }',
+            '}',
+            'plane {',
+            '  z, -1',
+            '  texture {',
+            '    pigment {',
+            '      image_map {',
+            '        png "test.png"',
+            '        interpolate 2',
+            '        once',
+            '        filter 0 0.8',
+            '        filter 1 0.8',
+            '      }',
+            '      translate -0.5*(x+y)',
+            '      scale 2',
+            '    }',
+            '    finish { ambient 0.3 }',
+            '  }',
+            '}'
+        ])
+
+        fix = SceneFile('test.pov')
+        fix.append(Version(3.6))
+        fix.append(Include('fixture/colors.inc'))
+        fix.append(
+            GlobalSettings(
+                assumed_gamma=1.0,
+            )
+        )
+
+
+        #----------------------------------------------------
+        msg = '\n' + ''.join(difflib.ndiff(
+            ref.splitlines(1),
+            str(fix).splitlines(1)
+        ))
+
+        self.assertEqual(ref, str(fix), msg)
