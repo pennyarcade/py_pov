@@ -39,7 +39,7 @@ from pov.texture.Normal import Normal
 
 
 class EndToEndTestCase(unittest.TestCase):
-    @unittest.skip
+    #@unittest.skip
     def test_Scene1(self):
         '''
             Example taken from:
@@ -143,8 +143,8 @@ class EndToEndTestCase(unittest.TestCase):
             )
         )
         fix.append(
-            Include('colors.inc'),
-            Include('textures.inc')
+            Include('fixture/colors.inc'),
+            Include('fixture/textures.inc')
         )
 
         #@TODO: Read from Config
@@ -244,8 +244,8 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    @unittest.skip
-    def test_Scene2(self):
+    #@unittest.skip
+    def test_examples_basic_scene(self):
         '''
             examples/basic_scene.pov
         '''
@@ -373,7 +373,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    @unittest.skip
+    #@unittest.skip
     def test_Checkered_Floor_Example(self):
         '''
             examples/checkered_floor.pov
@@ -443,7 +443,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         fix = SceneFile('test.pov')
         fix.append(Version(3.6))
-        fix.append(Include('colors.inc'))
+        fix.append(Include('fixture/colors.inc'))
         fix.append(
             GlobalSettings(
                 assumed_gamma=1.0,
