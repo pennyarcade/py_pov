@@ -1,5 +1,4 @@
-'''
-/*******************************************************************************
+'''****************************************************************************
  Persistence of Vision Ray Tracer Scene Description File
  File: main.pov
  Vers: 3.6
@@ -7,8 +6,10 @@
  Link:
  Date: 04/2013
  Auth: Chocokiko
-*******************************************************************************/
+*****************************************************************************'''
 
+
+'''
 //Only load once
 #ifdef(main)
     //already loaded
@@ -18,8 +19,15 @@
 /*******************************************************************************
 Includes
 *******************************************************************************/
+'''
 
-// ==== Standard POV-Ray Includes ====
+import sys
+from logging import *
+
+# ==== Standard POV-Ray Includes ====
+from pov.include.colors_inc import *
+
+'''
 #include "colors.inc"     // Standard Color definitions
 // #include "textures.inc"   // Standard Texture definitions
 // #include "functions.inc"  // internal functions usable in user defined functions
@@ -54,20 +62,27 @@ Includes
 // #include "stones2.inc"    // More, done by Dan Farmer and Paul Novak
 // #include "woodmaps.inc"   // Basic wooden colormaps
 // #include "woods.inc"      // Great wooden textures created by Dan Farmer and Paul Novak
+'''
 
-// ==== LGEO Colors and Definitions ====
+# ==== LGEO Colors and Definitions ====
 #include "lg_color.inc"
 #include "lg_defs.inc"
 
-// ==== LGEO fixed parts ====
+# ==== LGEO fixed parts ====
 
-// ==== LGEO parts ====
+# ==== LGEO parts ====
 
-// ==== Object includes ====
+# ==== Object includes ====
 #include "10036-1_car.pov"
 #include "10036-1_house.pov"
 #include "10036-1_main.pov"
 
+
+fix = SceneFile('test.pov')
+fix.append(Version(3.6))
+
+
+'''
 /*******************************************************************************
 Settings --> After Includes to overwrite presets
 *******************************************************************************/
@@ -171,3 +186,11 @@ object {set_10036_1_house_oven_door}
 
 #end
 '''
+
+
+# print everything to stdout for now
+print str(fix)
+
+
+
+
