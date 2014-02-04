@@ -37,10 +37,11 @@ from pov.texture.Pigment import Pigment
 from pov.texture.ColorMap import ColorMap
 from pov.texture.Normal import Normal
 from pov.texture.Reflection import Reflection
+from pov.texture.ImageMap import ImageMap
 
 
 class EndToEndTestCase(unittest.TestCase):
-    #@unittest.skip
+    @unittest.skip
     def test_Scene1(self):
         '''
             Example taken from:
@@ -96,11 +97,11 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "}" + le
         ref += "fog {" + le
         ref += "  color rgb <0.8, 0.8, 0.8>" + le
-        ref += "  turbulence 1.8" + le
+        ref += "  distance 50.0" + le
         ref += "  fog_offset 0.1" + le
         ref += "  fog_alt 1.5" + le
         ref += "  fog_type 2" + le
-        ref += "  distance 50.0" + le
+        ref += "  turbulence 1.8" + le
         ref += "}" + le
         ref += "plane {" + le
         ref += "  <0.0, 1.0, 0.0>, 0.0" + le
@@ -245,7 +246,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    #@unittest.skip
+    @unittest.skip
     def test_examples_basic_scene(self):
         '''
             examples/basic_scene.pov
@@ -374,7 +375,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    #@unittest.skip
+    @unittest.skip
     def test_Checkered_Floor_Example(self):
         '''
             examples/checkered_floor.pov
@@ -523,6 +524,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
+    @unittest.skip
     def test_image_map_example(self):
         le = os.linesep
 
@@ -587,6 +589,71 @@ class EndToEndTestCase(unittest.TestCase):
             )
         )
 
+        #@TODO: Read from Config
+        image_width = 800
+        #@TODO: Read from Config
+        image_height = 600
+
+        fix.append(
+            Camera(
+                location=Vector(0.0, 0.0, -4.0),
+                direction= 2 * z,
+                right=x * image_width / image_height,
+                look_at=Vector(0.0, 0.0, 0.0)
+            ),
+            SkySphere(
+                Pigment(
+                    ColorMap({
+                        0.0: Color(rgb=Vector(0.6, 0.7, 1.0)),
+                        0.7: Color(rgb=Vector(0.0, 0.1, 0.8))
+                    }),
+                    gradient=y
+                )
+            ),
+            LightSource(
+                Vector(0, 0, 0),
+                Color(rgb=Vector(1, 1, 1)),
+                Translate(Vector(-30, 30, -30))
+            )
+        )
+
+        fix.append(
+            Plane(
+                y, -1,
+                Texture (
+                    Pigment(
+                        Color(rgb=Vector(1, 1, 1)),
+                        Color(blue=1),
+                        checker=True,
+                        scale=0.5
+                    ),
+                    Finish(
+                        Reflection(
+                            0.2
+                        )
+                    )
+                )
+            ),
+            Plane(
+                z, -1,
+                Texture(
+                    Pigment(
+                        ImageMap(
+                            'png', 'test.png',
+                            Filter(0, 0.8),
+                            Filter(1, 0.8),
+                            interpolate=2,
+                            once=True,
+                        )
+                    ),
+                    Translate(-0.5*(x+y)),
+                    scale=2
+                ),
+                Finish(
+                    ambient=0.3
+                )
+            )
+        )
 
         #----------------------------------------------------
         msg = '\n' + ''.join(difflib.ndiff(
