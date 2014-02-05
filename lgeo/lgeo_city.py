@@ -45,6 +45,8 @@ from pov.texture.ColorMap import ColorMap
 from pov.texture.Normal import Normal
 from pov.texture.Pigment import Pigment
 
+from pov.texture.pattern.Gradient import Gradient
+
 
 # ==== Standard POV-Ray Includes ====
 # Standard Color definitions
@@ -169,11 +171,11 @@ def main():
     fix.append(
         SkySphere(
             Pigment(
+                Gradient(y),
                 ColorMap({
                     0.00: Color(rgb=Vector(0.6, 0.7, 1.0)),
                     0.70: Color(rgb=Vector(0.0, 0.1, 0.8))
                 }),
-                gradient='y'
             )
         )
     )
