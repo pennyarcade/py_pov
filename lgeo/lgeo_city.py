@@ -8,27 +8,49 @@
  Auth: Chocokiko
 *****************************************************************************'''
 
-
 '''
 //Only load once
 #ifdef(main)
     //already loaded
 #else
 #declare main = 1;
-
-/*******************************************************************************
-Includes
-*******************************************************************************/
 '''
 
+'''*****************************************************************************
+Includes
+*****************************************************************************'''
+# ==== System Includes ====
 import sys
 from logging import *
 
+# ==== py_pov Inchudes
+from pov.atmeff.SkySphere import SkySphere
+
+from pov.basic.SceneFile import SceneFile
+from pov.basic.Color import Color
+from pov.basic.Vector import *
+
+from pov.global_settings.GlobalSettings import GlobalSettings
+
+from pov.infinite_solid.Plane import Plane
+
+from pov.language_directive.Version import Version
+
+from pov.object_modifier.Translate import Translate
+
+from pov.other.Camera import Camera
+from pov.other.LightSource import LightSource
+
+from pov.texture.ColorMap import ColorMap
+from pov.texture.Normal import Normal
+from pov.texture.Pigment import Pigment
+
+
 # ==== Standard POV-Ray Includes ====
+# Standard Color definitions
 from pov.include.colors_inc import *
 
 '''
-#include "colors.inc"     // Standard Color definitions
 // #include "textures.inc"   // Standard Texture definitions
 // #include "functions.inc"  // internal functions usable in user defined functions
 
@@ -78,118 +100,145 @@ from pov.include.colors_inc import *
 #include "10036-1_main.pov"
 
 
-fix = SceneFile('test.pov')
-fix.append(Version(3.6))
+def main():
+
+    fix = SceneFile('test.pov')
+    fix.append(Version(3.6))
+
+    '''*************************************************************************
+    Settings --> After Includes to overwrite presets
+    *************************************************************************'''
+
+    #@TODO: Read from Config
+    image_width = 800
+    #@TODO: Read from Config
+    image_height = 600
+
+    fix.append(
+        GlobalSettings(
+            assumed_gamma=1.5,
+            ambient_light=Color(rgb=Vector(1, 1, 1))
+        )
+    )
+
+    # LGEO Settings
+    lg_quality = 4
+
+    # L3P Settings
+    L3Version = 1.4
+    # Quality level, 0=BBox, 1=no refr, 2=normal, 3=studlogo, 4=stud2logo
+    L3Quality = 4
+    # Width of seam between two bricks
+    L3SW = 0.5
+    L3Studs = 1  # 1=on 0=off
+    L3Bumps = 0  # 1=on 0=off
+
+    L3Ambient = 0.4
+    L3Diffuse = 0.4
+    L3Ior = 1.25
+    L3NormalBumps = Normal(
+        bumps=0.01,
+        scale=20
+    )
+    L3NormalSlope = Normal(
+        bumps=0.3,
+        scale=0.5
+        )
+
+    # At least a small seam when transparent
+    if L3SW:
+        L3SWT = L3SW
+    else:
+        L3SWT = 0.001
+
+    '''*************************************************************************
+    Camera
+    *************************************************************************'''
+    fix.append(
+        Camera(
+            location=Vector(5, 12, 12),
+            direction=1.5*z,
+            right=x*image_width/image_height,
+            look_at=(0.0, 5.0, 0.0)
+        )
+    )
+
+    '''*************************************************************************
+    Background
+    *************************************************************************'''
+    fix.append(
+        SkySphere(
+            Pigment(
+                ColorMap({
+                    0.00: Color(rgb=Vector(0.6, 0.7, 1.0)),
+                    0.70: Color(rgb=Vector(0.0, 0.1, 0.8))
+                }),
+                gradient='y'
+            )
+        )
+    )
+
+    '''*************************************************************************
+    Light
+    *************************************************************************'''
+    fix.append(
+        #LightSource(
+        #  Vector(0, 0, 0)      # light's position (translated below)
+        #  Color(rgb=(1, 1, 1)  # light's color
+        #  Translate(
+        #      Vector(-3000, 3000, -3000)
+        #  )
+        #)
+
+        LightSource(
+            Vector(0, 0, 0),             # light's position (translated below)
+            Color(rgb=Vector(1, 1, 1)),  # light's color
+            Translate(
+                Vector(300, 300, 300)
+            )
+        )
+    )
+
+    '''*************************************************************************
+    Ground plane
+    *************************************************************************'''
+    fix.append(
+        Plane(
+            y, -0.01,
+            Pigment(
+                Color(rgb=Vector(0.7, 0.5, 0.3))
+            )
+        )
+    )
+
+    '''*************************************************************************
+    Objects
+    *************************************************************************'''
+    # Pizza to go / Car
+
+    '''
+    object {set_10036_1_car_nonmoving}
+    object {set_10036_1_car_steering_wheel}
+    object {set_10036_1_car_schutter_l}
+    object {set_10036_1_car_schutter_r}
+    object {set_10036_1_car_sunroof}
+    object {set_10036_1_car_sunroof_glass}
+    object {set_10036_1_car_wheel_fr}
+    object {set_10036_1_car_wheel_fl}
+    object {set_10036_1_car_wheel_rr}
+    object {set_10036_1_car_wheel_rl}
+    '''
+
+    '''
+    object {set_10036_1_house_base}
+    object {set_10036_1_house_nonmoving}
+    object {set_10036_1_house_oven_door}
+    '''
+
+    # print everything to stdout for now
+    print str(fix)
 
 
-'''
-/*******************************************************************************
-Settings --> After Includes to overwrite presets
-*******************************************************************************/
-
-global_settings {
-  assumed_gamma 1.5
-  ambient_light rgb <1, 1, 1>
-}
-
-// LGEO Settings
-#declare lg_quality = 4;
-
-// L3P Settings
-#declare L3Version = 1.4;
-#declare L3Quality = 4;  // Quality level, 0=BBox, 1=no refr, 2=normal, 3=studlogo, 4=stud2logo
-#declare L3SW = 0.5;  // Width of seam between two bricks
-#declare L3Studs = 1;  // 1=on 0=off
-#declare L3Bumps = 0;  // 1=on 0=off
-
-#declare L3Ambient = 0.4;
-#declare L3Diffuse = 0.4;
-#declare L3Ior     = 1.25;
-#declare L3NormalBumps = normal { bumps 0.01 scale 20 }
-#declare L3NormalSlope = normal { bumps 0.3 scale 0.5 }
-
-#declare L3SWT = (L3SW ? L3SW : 0.001);  // At least a small seam when transparent
-
-
-/*******************************************************************************
-Camera
-*******************************************************************************/
-
-camera {
-  location  <5, 12, 12>
-  direction 1.5*z
-  right     x*image_width/image_height
-  look_at   <0.0, 5.0,  0.0>
-}
-
-/*******************************************************************************
-Background
-*******************************************************************************/
-
-sky_sphere {
-  pigment {
-    gradient y
-    color_map {
-      [0.0 rgb <0.6,0.7,1.0>]
-      [0.7 rgb <0.0,0.1,0.8>]
-    }
-  }
-}
-
-/*******************************************************************************
-Light
-*******************************************************************************/
-
-//light_source {
-//  <0, 0, 0>            // light's position (translated below)
-//  color rgb <1, 1, 1>  // light's color
-//  translate <-3000, 3000, -3000>
-//}
-
-light_source {
-  <0, 0, 0>            // light's position (translated below)
-  color rgb <1, 1, 1>  // light's color
-  translate <300, 300, 300>
-}
-
-
-/*******************************************************************************
-Ground plane
-*******************************************************************************/
-plane {
-  y, -0.01
-  pigment { color rgb <0.7,0.5,0.3> }
-}
-
-/*******************************************************************************
-Objects
-*******************************************************************************/
-// Pizza to go / Car
-/*
-object {set_10036_1_car_nonmoving}
-object {set_10036_1_car_steering_wheel}
-object {set_10036_1_car_schutter_l}
-object {set_10036_1_car_schutter_r}
-object {set_10036_1_car_sunroof}
-object {set_10036_1_car_sunroof_glass}
-object {set_10036_1_car_wheel_fr}
-object {set_10036_1_car_wheel_fl}
-object {set_10036_1_car_wheel_rr}
-object {set_10036_1_car_wheel_rl}
-*/
-
-/*
-object {set_10036_1_house_base}
-object {set_10036_1_house_nonmoving}
-object {set_10036_1_house_oven_door}
-*/
-
-#end
-'''
-
-
-# print everything to stdout for now
-print str(fix)
 
 
 
