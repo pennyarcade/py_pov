@@ -22,3 +22,9 @@ class Object(BlockObject):
          }
          @Todo: Implement
     """
+
+    def __init__(self, *opts, **kwargs):
+        '''
+            Create object object
+        '''
+        super(Object, self).__init__('object', [], opts, kwargs)

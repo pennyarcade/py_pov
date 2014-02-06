@@ -40,6 +40,7 @@ from pov.object_modifier.Translate import Translate
 
 from pov.other.Camera import Camera
 from pov.other.LightSource import LightSource
+from pov.other.Object import Object
 
 from pov.texture.ColorMap import ColorMap
 from pov.texture.Normal import Normal
@@ -97,7 +98,7 @@ from pov.include.colors_inc import *
 # ==== LGEO parts ====
 
 # ==== Object includes ====
-import lgeo.set.lg_10036_1_car
+from lgeo.set import lg_10036_1_car
 #include "10036-1_house.pov"
 #include "10036-1_main.pov"
 
@@ -219,7 +220,9 @@ def main():
     # Pizza to go / Car
 
     fix.append(
-        Object(set_10036_1_car_nonmoving)
+        Object(
+            lg_10036_1_car.nonmoving()
+        )
 
         #object {set_10036_1_car_steering_wheel}
         #object {set_10036_1_car_schutter_l}

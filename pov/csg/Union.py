@@ -11,7 +11,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from pov.basic.BlockObject import *
+from pov.csg.Csg import Csg
 
 
 class Union(Csg):
@@ -24,3 +24,9 @@ class Union(Csg):
             [split_union BOOL] & [OBJECT_MODIFIERS]
          @Todo: Implement
     """
+
+    def __init__(self, *opts, **kwargs):
+        '''
+            Create Union object
+        '''
+        super(Union, self).__init__('union', [], opts, kwargs)
