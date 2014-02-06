@@ -1,45 +1,48 @@
-'''*****************************************************************************/
-/*                                                                             */
-/* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)      */
-/*                                                                             */
-/* 19970623 Lutz Uhlmann                                                       */
-/* 2002xxxx Lutz Uhlmann added LGEO logo derived from Larc C. Hassings L3Logo  */
-/* 20071112 Lutz Uhlmann added lg_knob_dot for patterned baseplates            */
-/* 20071124 Lutz Uhlmann added lg_quality for L3P comptibility                 */
-/* 20071129 Lutz Uhlmann added lg_tech_knob_logo for lg_quality > 3            */
-/* 20080229 Lutz Uhlmann added lg_test variable for development                */
-/* 20080720 Lutz Uhlmann added lg_studs variable                               */
-/*                                                                             */
-/* This file is in no way related to the LEGO(tm) Group.                       */
-/* It is provided for private non-commercial use only.                         */
-/*                                                                             */
-/* lg_defs: Definitions of standard sub-parts and sizes                        */
-/*                                                                             */
-/*******************************************************************************/
+'''****************************************************************************/
+*                                                                             */
+* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)      */
+*                                                                             */
+* 19970623 Lutz Uhlmann                                                       */
+* 2002xxxx Lutz Uhlmann added LGEO logo derived from Larc C. Hassings L3Logo  */
+* 20071112 Lutz Uhlmann added lg_knob_dot for patterned baseplates            */
+* 20071124 Lutz Uhlmann added lg_quality for L3P comptibility                 */
+* 20071129 Lutz Uhlmann added lg_tech_knob_logo for lg_quality > 3            */
+* 20080229 Lutz Uhlmann added lg_test variable for development                */
+* 20080720 Lutz Uhlmann added lg_studs variable                               */
+*                                                                             */
+* This file is in no way related to the LEGO(tm) Group.                       */
+* It is provided for private non-commercial use only.                         */
+*                                                                             */
+* lg_defs: Definitions of standard sub-parts and sizes                        */
+*                                                                             */
+*****************************************************************************'''
 
-/***********************************************************************
- *  Dimensions
- ***********************************************************************/
+from math import *
 
-#declare LG_KNOB_RADIUS = 0.24;
-#declare LG_KNOB_HEIGHT = 0.16;
-#declare LG_KNOB_HEIGHT_LOGO = 0.16;
-#declare LG_KNOB_INNER_RADIUS = 0.16;
-#declare LG_WALL_WIDTH = 0.16;
-#declare LG_BRICK_WIDTH = 0.8;
-#declare LG_BRICK_HEIGHT = 0.96;
-#declare LG_BRICK_INNER_HEIGHT = 0.84;
-#declare LG_PLATE_HEIGHT = 0.32;
-#declare LG_PLATE_INNER_HEIGHT = 0.2;
-#declare LG_TOP_HEIGHT = LG_BRICK_HEIGHT-LG_BRICK_INNER_HEIGHT;
-#declare LG_CYLINDER_RADIUS = (sqrt(2)*LG_BRICK_WIDTH/2-LG_KNOB_RADIUS);
-#declare LG_CYLINDER_WALL_WIDTH = (LG_CYLINDER_RADIUS-LG_KNOB_RADIUS);
-#declare LG_CORNER_SPACE = 0.016; //0.025
-#declare LG_KNOB_CORNER_SPACE = LG_CORNER_SPACE * 1.5;
-#declare LG_CROSSAXLE_WIDTH = 0.18;
-#declare LG_GRID_WIDTH=LG_BRICK_WIDTH/sqrt(2)-2*LG_KNOB_RADIUS;
-#declare LG_E = 0.01;
+#***********************************************************************
+#*  Dimensions
+#***********************************************************************/
 
+LG_KNOB_RADIUS = 0.24
+LG_KNOB_HEIGHT = 0.16
+LG_KNOB_HEIGHT_LOGO = 0.16
+LG_KNOB_INNER_RADIUS = 0.16
+LG_WALL_WIDTH = 0.16
+LG_BRICK_WIDTH = 0.8
+LG_BRICK_HEIGHT = 0.96
+LG_BRICK_INNER_HEIGHT = 0.84
+LG_PLATE_HEIGHT = 0.32
+LG_PLATE_INNER_HEIGHT = 0.2
+LG_TOP_HEIGHT = LG_BRICK_HEIGHT-LG_BRICK_INNER_HEIGHT
+LG_CYLINDER_RADIUS = (sqrt(2)*LG_BRICK_WIDTH/2-LG_KNOB_RADIUS)
+LG_CYLINDER_WALL_WIDTH = (LG_CYLINDER_RADIUS-LG_KNOB_RADIUS)
+LG_CORNER_SPACE = 0.016   # 0.025
+LG_KNOB_CORNER_SPACE = LG_CORNER_SPACE * 1.5
+LG_CROSSAXLE_WIDTH = 0.18
+LG_GRID_WIDTH = LG_BRICK_WIDTH/sqrt(2)-2*LG_KNOB_RADIUS
+LG_E = 0.01
+
+'''
 /***********************************************************************
  *  Stud Logo
  *

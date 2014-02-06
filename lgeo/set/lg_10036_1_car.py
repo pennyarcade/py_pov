@@ -118,7 +118,7 @@ from pov.csg.Union import Union
 #include "lg_2357.inc"
 #include "lg_2412b.inc"
 #include "lg_2436.inc"
-#include "lg_2441.inc"
+from lgeo.include.brick import lg_2441
 #include "lg_3003.inc"
 #include "lg_3004.inc"
 #include "lg_3010.inc"
@@ -168,7 +168,11 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         #*******************************************************************
 
         # 2441 Red Car Base 7 x 4 x 2/3
-        #StdBrick(lg_2441 , lg_red,           0,   3*LGPH,         0,  -90,   0,   0)
+        custom_macros.StdBrick(
+            lg_2441.solid(),
+            lg_red,
+            0, 3*LGPH, 0,
+            -90, 0, 0)
     )
 
     return part

@@ -67,7 +67,7 @@ Includes
 
 # ==== LGEO Colors and Definitions ====
 #include "lg_color.inc"
-#include "lg_defs.inc"
+from lgeo.include.common.lg_defs import *
 
 # ==== LGEO fixed parts ====
 
@@ -84,24 +84,19 @@ LGPH = LG_PLATE_HEIGHT
 '''*****************************************************************************
 Macros
 *****************************************************************************'''
-#macro UnchangedBrick (Brick, Texture)
-#    object {
-#        Brick
-#        texture {
-#            Texture
-#        }
-#    }
-#end
 
-#macro StdBrick (Brick, Texture, Tx, Ty, Tz, Rx, Ry, Rz)
-#    object {
-#        Brick
-#        texture {
-#            Texture
-#        }
-#        rotate <Rx, Ry, Rz>
-#        translate <Tx , Ty, Tz>
-#    }
-#end
 
-#end
+def UnchangedBrick(brick, texture):
+    return Object(
+        brick,
+        Texture(texture)
+    )
+
+
+def StdBrick(brick, texture, tx, ty, tz, rx, ry, rz):
+    Object(
+        brick,
+        Texture(texture),
+        Rotate(Vector(rx, ry, rz)),
+        Translate(Vector(tx, ty, tz))
+    )

@@ -1,4 +1,4 @@
-#!python
+#!/usr/bin/python
 
 from lgeo import lgeo_city
 
