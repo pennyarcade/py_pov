@@ -76,10 +76,10 @@ Includes
 '''*****************************************************************************
 Settings
 *****************************************************************************'''
-#declare LDU = 0.8/20;
-#declare LGBW = LG_BRICK_WIDTH;
-#declare LGBH = LG_BRICK_HEIGHT;
-#declare LGPH = LG_PLATE_HEIGHT;
+LDU = 0.8/20
+LGBW = LG_BRICK_WIDTH
+LGBH = LG_BRICK_HEIGHT
+LGPH = LG_PLATE_HEIGHT
 
 '''*****************************************************************************
 Macros
