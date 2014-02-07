@@ -38,7 +38,7 @@ class Translate(ObjectModifier):
 
         # param syntax checks
         if not len(self.args[0].v) == 3:
-            raise SdlSyntaxException('Vector TVector has more or less than 4 dimensions')
+            raise SdlSyntaxException('Vector TVector has more or less than 3 dimensions')
 
     def __str__(self):
         code = ''

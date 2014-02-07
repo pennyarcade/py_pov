@@ -22,6 +22,7 @@ from pov.finite_solid.Cylinder import Cylinder
 from pov.finite_solid.Sphere import Sphere
 from pov.finite_solid.Torus import Torus
 
+from pov.object_modifier.Matrix import Matrix
 from pov.object_modifier.Rotate import Rotate
 from pov.object_modifier.Translate import Translate
 
@@ -223,6 +224,8 @@ def solid():
 
             if MIR == 1:
                 mirmatrix = Matrix(Vector(1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0))
+            else:
+                mirmatrix = ''
 
             result.append(
                 Union(

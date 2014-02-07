@@ -16,17 +16,17 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 from pov.object_modifier.ObjectModifier import ObjectModifier
 
 
-class Rotate(ObjectModifier):
+class Scale(ObjectModifier):
     '''
-        rotate VECTOR
+        scale VECTOR
     '''
 
-    def __init__(self, rvector):
+    def __init__(self, svector):
         '''
-            Create Rotate object
+            Create Scale object
         '''
 
-        super(Rotate, self).__init__('rotate', [rvector], [], [])
+        super(Scale, self).__init__('scale', [svector], [], [])
 
     def _check_arguments(self):
         '''
@@ -38,7 +38,7 @@ class Rotate(ObjectModifier):
 
         # param syntax checks
         if not len(self.args[0].v) == 3:
-            raise SdlSyntaxException('Vector RVector has more or less than 4 dimensions')
+            raise SdlSyntaxException('Vector SVector has more or less than 3 dimensions')
 
     def __str__(self):
         code = ''

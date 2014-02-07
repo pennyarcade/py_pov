@@ -19,6 +19,26 @@
 
 from math import *
 
+from lgeo.config.lgeo_cfg import *
+
+from pov.csg.Difference import Difference
+from pov.csg.Intersection import Intersection
+from pov.csg.Merge import Merge
+from pov.csg.Union import Union
+
+from pov.basic.Vector import *
+
+from pov.finite_solid.Box import Box
+from pov.finite_solid.Cylinder import Cylinder
+from pov.finite_solid.Sphere import Sphere
+from pov.finite_solid.Torus import Torus
+
+from pov.object_modifier.Rotate import Rotate
+from pov.object_modifier.Scale import Scale
+from pov.object_modifier.Translate import Translate
+
+from pov.other.Object import Object
+
 #***********************************************************************
 #*  Dimensions
 #***********************************************************************/
@@ -235,9 +255,9 @@ lg_tech_knob = Union(
             ),
             Difference(
                 Cylinder(
-                Vector(0, 0, LG_KNOB_HEIGHT),
-                Vector(0, 0, -LG_E),
-                (LG_KNOB_RADIUS-LG_CORNER_SPACE)
+                    Vector(0, 0, LG_KNOB_HEIGHT),
+                    Vector(0, 0, -LG_E),
+                    (LG_KNOB_RADIUS-LG_CORNER_SPACE)
                 ),
                 Cylinder(
                     Vector(0, 0, LG_KNOB_HEIGHT+LG_E),
@@ -458,25 +478,25 @@ def lg_tech_knob_logo_clear():
 
 
 lg_brick_cylinder_clear = Merge(
-        Difference(
-            Cylinder(
-                Vector(0, 0, LG_BRICK_INNER_HEIGHT+LG_E),
-                Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)),
-                (LG_CYLINDER_RADIUS)
-            ),
-            Cylinder(
-                Vector(0, 0, LG_BRICK_INNER_HEIGHT+LG_CORNER_SPACE),
-                Vector(0, 0, 0),
-                (LG_KNOB_RADIUS)
-            ),
+    Difference(
+        Cylinder(
+            Vector(0, 0, LG_BRICK_INNER_HEIGHT+LG_E),
+            Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)),
+            (LG_CYLINDER_RADIUS)
         ),
-        Torus(
-            (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
-            (LG_CYLINDER_WALL_WIDTH/2)
-            Rotate(Vector(90, 0, 0)
-            Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2))
+        Cylinder(
+            Vector(0, 0, LG_BRICK_INNER_HEIGHT+LG_CORNER_SPACE),
+            Vector(0, 0, 0),
+            (LG_KNOB_RADIUS)
         ),
     ),
+    Torus(
+        (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
+        (LG_CYLINDER_WALL_WIDTH/2),
+        Rotate(Vector(90, 0, 0)),
+        Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)))
+    )
+)
 
 
 lg_plate_cylinder_clear = Merge(
@@ -494,18 +514,18 @@ lg_plate_cylinder_clear = Merge(
     ),
     Torus(
         (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
-        (LG_CYLINDER_WALL_WIDTH/2)
-        Rotate(Vector(90, 0, 0)
-        Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2))
-    ),
-),
+        (LG_CYLINDER_WALL_WIDTH/2),
+        Rotate(Vector(90, 0, 0)),
+        Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)))
+    )
+)
 
 
-lg_brick_column_clear= Cylinder(
+lg_brick_column_clear = Cylinder(
     Vector(0, 0, LG_BRICK_INNER_HEIGHT+LG_E),
     Vector(0, 0, 0),
     (LG_KNOB_INNER_RADIUS)
-),
+)
 
 
 lg_plate_column_clear = Difference(
@@ -518,18 +538,18 @@ lg_plate_column_clear = Difference(
         Vector(0, 0, 1),
         Vector(0, 0, -1),
         (0.06)
-    ),
-),
+    )
+)
 
 
 lg_support_wall_clear = Box(
     Vector(-LG_CYLINDER_WALL_WIDTH/2, -LG_E, 0.225),
     Vector(LG_CYLINDER_WALL_WIDTH/2, LG_BRICK_WIDTH-LG_CYLINDER_RADIUS-LG_WALL_WIDTH+LG_E, LG_BRICK_HEIGHT)
-),
+)
 
 
 lg_knob_inner_space_clear = Cylinder(
     Vector(0, 0, -LG_CORNER_SPACE),
     Vector(0, 0, 0.15),
     (0.125)
-),
+)
