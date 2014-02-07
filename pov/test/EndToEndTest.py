@@ -41,7 +41,7 @@ from pov.texture.ImageMap import ImageMap
 
 
 class EndToEndTestCase(unittest.TestCase):
-    @unittest.skip
+    #@unittest.skip
     def test_Scene1(self):
         '''
             Example taken from:
@@ -246,7 +246,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    @unittest.skip
+    #@unittest.skip
     def test_examples_basic_scene(self):
         '''
             examples/basic_scene.pov
@@ -375,7 +375,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    @unittest.skip
+    #@unittest.skip
     def test_Checkered_Floor_Example(self):
         '''
             examples/checkered_floor.pov
@@ -524,7 +524,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    @unittest.skip
+    #@unittest.skip
     def test_image_map_example(self):
         le = os.linesep
 
