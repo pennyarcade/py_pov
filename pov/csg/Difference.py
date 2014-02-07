@@ -14,19 +14,17 @@ Some modifications by W.T. Bridgman, 2006-2007.
 from pov.csg.Csg import Csg
 
 
-class Union(Csg):
+class Difference(Csg):
     """
-        UNION:
-            union { UNION_OBJECT UNION_OBJECT... [UNION_MODIFIERS] }
-        UNION_OBJECT:
-            OBJECT | LIGHT
-        UNION_MODIFIERS:
-            [split_union BOOL] & [OBJECT_MODIFIERS]
+        DIFFERENCE:
+            difference { SOLID_OBJECT SOLID_OBJECT... [DIFFERENCE_MODIFIERS] }
+        DIFFERENCE_MODIFIERS:
+            [cutaway_textures] & [OBJECT_MODIFIERS]
          @Todo: Implement
     """
 
     def __init__(self, *opts, **kwargs):
         '''
-            Create Union object
+            Create Difference object
         '''
-        super(Union, self).__init__('union', [], opts, kwargs)
+        super(Difference, self).__init__('difference', [], opts, kwargs)

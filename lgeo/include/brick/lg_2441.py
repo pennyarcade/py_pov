@@ -15,11 +15,15 @@
 from pov.basic.Vector import Vector
 
 from pov.csg.Union import Union
+from pov.csg.Difference import Difference
 
 from pov.finite_solid.Box import Box
 from pov.finite_solid.Cylinder import Cylinder
 from pov.finite_solid.Sphere import Sphere
 from pov.finite_solid.Torus import Torus
+
+from pov.object_modifier.Rotate import Rotate
+from pov.object_modifier.Translate import Translate
 
 from pov.other.Object import Object
 
@@ -157,7 +161,7 @@ def solid():
                         Vector(0, LG_BRICK_WIDTH+0.08, -0.2),
                         0.2-LG_CORNER_SPACE
                     ),
-                    Differecne(
+                    Difference(
                         Cylinder(
                             Vector(0, LG_BRICK_WIDTH-LG_CORNER_SPACE, -0.2),
                             Vector(0, LG_BRICK_WIDTH+0.08-LG_CORNER_SPACE, -0.2),
@@ -168,14 +172,16 @@ def solid():
                     Torus(
                         0.2-LG_CORNER_SPACE,
                         LG_CORNER_SPACE,
-                        Translate(Vector(0, LG_BRICK_WIDTH+LG_CORNER_SPACE, -0.2))
+                        Translate(
+                            Vector(0, LG_BRICK_WIDTH+LG_CORNER_SPACE, -0.2)
+                        )
                     ),
                     Torus(
                         0.2-LG_CORNER_SPACE,
                         LG_CORNER_SPACE,
                         Translate(Vector(0, LG_BRICK_WIDTH+0.08-LG_CORNER_SPACE, -0.2)),
                     ),
-                    Differecne(
+                    Difference(
                         Union(
                             Cylinder(
                                 Vector(0, LG_BRICK_WIDTH+0.08-LG_E, -0.2),
@@ -300,12 +306,12 @@ def solid():
                     Cylinder(
                         Vector(
                             4*LG_BRICK_WIDTH - LG_CORNER_SPACE,
-                            G_BRICK_WIDTH - LG_CORNER_SPACE,
+                            LG_BRICK_WIDTH - LG_CORNER_SPACE,
                             LG_CORNER_SPACE
                         ),
                         Vector(
                             4*LG_BRICK_WIDTH - LG_CORNER_SPACE,
-                            G_BRICK_WIDTH - LG_CORNER_SPACE,
+                            LG_BRICK_WIDTH - LG_CORNER_SPACE,
                             LG_PLATE_HEIGHT + LG_CORNER_SPACE
                         ),
                         LG_CORNER_SPACE
@@ -616,7 +622,7 @@ def solid():
                     ),
                     Box(
                         Vector(
-                            -3 * G_BRICK_WIDTH + LG_CORNER_SPACE,
+                            -3 * LG_BRICK_WIDTH + LG_CORNER_SPACE,
                             LG_BRICK_WIDTH,
                             -LG_PLATE_HEIGHT + LG_CORNER_SPACE
                         ),

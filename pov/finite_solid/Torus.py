@@ -27,3 +27,10 @@ class Torus(BlockObject):
 
         @Todo: Implement
     '''
+
+    def __init__(self, major, minor, *opts, **kwargs):
+        '''
+            Create Torus object
+        '''
+
+        super(Torus, self).__init__('torus', [major, minor], opts, kwargs)

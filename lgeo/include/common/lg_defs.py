@@ -42,469 +42,494 @@ LG_CROSSAXLE_WIDTH = 0.18
 LG_GRID_WIDTH = LG_BRICK_WIDTH/sqrt(2)-2*LG_KNOB_RADIUS
 LG_E = 0.01
 
+
+'''*********************************************************************
+*  Stud Logo
+*
+*  Declare lg_quality < 3 if you do not want the LGEO logo on the studs.
+*  Remove the translate statements to rearrange letters of logo...
+*
+*********************************************************************'''
+
+
+def lego_logo_text():
+    letter_e = Union(
+        # Letter E
+        Sphere(Vector(-59, 0, -36), 6),
+        Cylinder(Vector(-59, 0, -36), Vector(-59, 0, 1), 6),
+        Sphere(Vector(-59, 0, 1), 6),
+        Cylinder(Vector(0, 0, -49), Vector(0, 0, -25), 6),
+        Sphere(Vector(0, 0, -25), 6),
+        Sphere(Vector(59, 0, -62), 6),
+        Cylinder(Vector(59, 0, -62), Vector(59, 0, -24), 6),
+        Sphere(Vector(59, 0, -24), 6),
+        Cylinder(Vector(-59, 0, -36), Vector(59, 0, -62), 6),
+    ),
+    if (lg_stud_logo > 0):
+        letter_e.append(
+            Translate(Vector(0, 0, 60))
+        )
+
+    letter_g = Union(
+        # Letter G
+        Sphere(Vector(-35.95, 0, 57), 6),
+        Torus(18.45, 6, ClippedBy(Plane(Vector(40, 0, -9), 0)), Translate(Vector(-40, 0, 39))),
+        Cylinder(Vector(-44.05, 0, 21), Vector(35.95, 0, 3), 6),
+        Torus(18.45, 6, ClippedBy(Plane(Vector(-40, 0, 9), 0),), Translate(Vector(40, 0, 21))),
+        Cylinder(Vector(44.05, 0, 39), Vector(0, 0, 49), 6),
+        Sphere(Vector(0, 0, 49), 6),
+        Cylinder(Vector(0, 0, 49), Vector(0, 0, 34), 6),
+        Sphere(Vector(0, 0, 34), 6),
+    ),
+    if (lg_stud_logo > 0):
+        letter_g.append(
+            Translate(Vector(0, 0, -65))
+        )
+
+    if (lg_quality > 2):
+        return Union(
+            Union(
+                # Letter L
+                Sphere(Vector(-59, 0, -96), 6),
+                Cylinder(Vector(-59, 0, -96), Vector(59, 0, -122), 6),
+                Sphere(Vector(59, 0, -122), 6),
+                Cylinder(Vector(59, 0, -122), Vector(59, 0, -84), 6),
+                Sphere(Vector(59, 0, -84), 6),
+            ),
+            letter_e,
+            letter_g,
+            Union(
+                # Letter O
+                Torus(18.45, 6, ClippedBy(Plane(Vector(40, 0, -9), 0)), Translate(Vector(-40, 0, 99))),
+                Cylinder(Vector(-44.05, 0, 81), Vector(35.95, 0, 63), 6),
+                Torus(18.45, 6, ClippedBy(Plane(Vector(-40, 0, 9), 0)), Translate(Vector(40, 0, 81))),
+                Cylinder(Vector(44.05, 0, 99), Vector(-35.95, 0, 117), 6),
+            ),
+            Scale(4.5/128),
+            Rotate(y*90),
+            Rotate(x*-90),
+            Scale(Vector(-1, 1, 1)),
+            Scale(.08 * LG_KNOB_RADIUS * 2)
+        )
+
+
+def lego_logo_text_clear():
+    letter_e = Merge(
+        # Letter E
+        Sphere(Vector(-59, 0, -36), 6),
+        Cylinder(Vector(-59, 0, -36), Vector(-59, 0, 1), 6),
+        Sphere(Vector(-59, 0, 1), 6),
+        Cylinder(Vector(0, 0, -49), Vector(0, 0, -25), 6),
+        Sphere(Vector(0, 0, -25), 6),
+        Sphere(Vector(59, 0, -62), 6),
+        Cylinder(Vector(59, 0, -62), Vector(59, 0, -24), 6),
+        Sphere(Vector(59, 0, -24), 6),
+        Cylinder(Vector(-59, 0, -36), Vector(59, 0, -62), 6),
+    ),
+    if (lg_stud_logo > 0):
+        letter_e.append(
+            Translate(Vector(0, 0, 60))
+        )
+
+    letter_g = Merge(
+        #Letter G
+        Sphere(Vector(-35.95, 0, 57), 6),
+        Torus(18.45, 6, ClippedBy(Plane(Vector(40, 0, -9), 0)), Translate(Vector(-40, 0, 39))),
+        Cylinder(Vector(-44.05, 0, 21), Vector(35.95, 0, 3), 6),
+        Torus(18.45, 6, ClippedBy(Plane(Vector(-40, 0, 9), 0)), Translate(Vector(40, 0, 21))),
+        Cylinder(Vector(44.05, 0, 39), Vector(0, 0, 49), 6),
+        Sphere(Vector(0, 0, 49), 6),
+        Cylinder(Vector(0, 0, 49), Vector(0, 0, 34), 6),
+        Sphere(Vector(0, 0, 34), 6),
+    ),
+    if (lg_stud_logo > 0):
+        letter_g.append(
+            Translate(Vector(0, 0, -65))
+        )
+
+    return Merge(
+        Merge(
+            # Letter L
+            Sphere(Vector(-59, 0, -96), 6),
+            Cylinder(Vector(-59, 0, -96), Vector(59, 0, -122), 6),
+            Sphere(Vector(59, 0, -122), 6),
+            Cylinder(Vector(59, 0, -122), Vector(59, 0, -84), 6),
+            Sphere(Vector(59, 0, -84), 6),
+        ),
+        letter_e,
+        letter_g,
+        Merge(
+            # Letter O
+            Torus(18.45, 6, ClippedBy(Plane(Vector(40, 0, -9), 0)), Translate(Vector(-40, 0, 99))),
+            Cylinder(Vector(-44.05, 0, 81), Vector(35.95, 0, 63), 6),
+            Torus(18.45, 6, ClippedBy(Plane(Vector(-40, 0, 9), 0)), Translate(Vector(40, 0, 81))),
+            Cylinder(Vector(44.05, 0, 99), Vector(-35.95, 0, 117), 6),
+        ),
+        Scale(4.5/128),
+        Rotate(y*90),
+        Rotate(x*-90),
+        Scale(Vector(-1, 1, 1)),
+        Scale(.08 * LG_KNOB_RADIUS * 2)
+    ),
+
+
+'''********************************************************************
+*  LGEO Primitives
+********************************************************************'''
+
+
+# solid stud
+def lg_knob():
+    result = Union(
+        Union(
+            Cylinder(
+                Vector(0, 0, LG_KNOB_HEIGHT-LG_KNOB_CORNER_SPACE),
+                Vector(0, 0, -LG_E),
+                (LG_KNOB_RADIUS)
+            ),
+            Cylinder(
+                Vector(0, 0, LG_KNOB_HEIGHT),
+                Vector(0, 0, -LG_E),
+                (LG_KNOB_RADIUS-LG_KNOB_CORNER_SPACE)
+            ),
+        ),
+        Torus(
+            (LG_KNOB_RADIUS-LG_KNOB_CORNER_SPACE),
+            (LG_KNOB_CORNER_SPACE),
+            Rotate(Vector(90, 0, 0)),
+            Translate(Vector(0, 0, (LG_KNOB_HEIGHT-LG_KNOB_CORNER_SPACE)))
+        )
+    )
+
+    if (lg_quality > 2):
+        result.append(
+            Object(
+                lego_logo_text(),
+                Translate(Vector(0, 0, LG_KNOB_HEIGHT))
+            )
+        )
+
+
+# solid stud top for dotted baseplates
+lg_knob_dot = Intersection(
+    Object(
+        lg_knob(),
+        Translate(Vector(0, 0, 0.001))
+    ),
+    Cylinder(
+        Vector(0, 0, LG_KNOB_HEIGHT-0.001),
+        Vector(0, 0, LG_KNOB_HEIGHT+0.1),
+        LG_KNOB_INNER_RADIUS
+    )
+)
+
+
+# hollow stud
+lg_tech_knob = Union(
+    Difference(
+        Union(
+            Cylinder(
+                Vector(0, 0, LG_KNOB_HEIGHT-LG_CORNER_SPACE),
+                Vector(0, 0, -LG_E),
+                (LG_KNOB_RADIUS)
+            ),
+            Difference(
+                Cylinder(
+                Vector(0, 0, LG_KNOB_HEIGHT),
+                Vector(0, 0, -LG_E),
+                (LG_KNOB_RADIUS-LG_CORNER_SPACE)
+                ),
+                Cylinder(
+                    Vector(0, 0, LG_KNOB_HEIGHT+LG_E),
+                    Vector(0, 0, -2*LG_E),
+                    (LG_KNOB_INNER_RADIUS+LG_CORNER_SPACE)
+                )
+            )
+        ),
+        Cylinder(
+            Vector(0, 0, (LG_KNOB_HEIGHT+2*LG_E)),
+            Vector(0, 0, -3*LG_E),
+            (LG_KNOB_INNER_RADIUS)
+        )
+    ),
+    Torus(
+        (LG_KNOB_INNER_RADIUS+LG_CORNER_SPACE),
+        (LG_CORNER_SPACE),
+        Rotate(Vector(90, 0, 0)),
+        Translate(Vector(0, 0, (LG_KNOB_HEIGHT-LG_CORNER_SPACE)))
+    ),
+    Torus(
+        (LG_KNOB_RADIUS-LG_CORNER_SPACE),
+        (LG_CORNER_SPACE),
+        Rotate(Vector(90, 0, 0)),
+        Translate(Vector(0, 0, (LG_KNOB_HEIGHT-LG_CORNER_SPACE)))
+    )
+)
+
+
+# hollow stud with logo
 '''
-/***********************************************************************
- *  Stud Logo
- *
- *  Declare lg_quality < 3 if you do not want the LGEO logo on the studs.
- *  Remove the translate statements to rearrange letters of logo...
- *
- ***********************************************************************/
-
-#if (lg_quality > 2)
- #declare lego_logo_text =
-  union {
-   union {
-    /* Letter L */
-    sphere {<-59, 0, -96>, 6}
-    cylinder {<-59, 0, -96>, <59, 0, -122>, 6}
-    sphere {<59, 0, -122>, 6}
-    cylinder {<59, 0, -122>, <59, 0, -84>, 6}
-    sphere {<59, 0, -84>, 6}
-   }
-   union {
-     /* Letter E */
-    sphere {<-59, 0, -36>, 6}
-    cylinder {<-59, 0, -36>, <-59, 0, 1>, 6}
-    sphere {<-59, 0, 1>, 6}
-    cylinder {<0, 0, -49>, <0, 0, -25>, 6}
-    sphere {<0, 0, -25>, 6}
-    sphere {<59, 0, -62>, 6}
-    cylinder {<59, 0, -62>, <59, 0, -24>, 6}
-    sphere {<59, 0, -24>, 6}
-    cylinder {<-59, 0, -36>, <59, 0, -62>, 6}
-    #if (lg_stud_logo > 0)
-     translate <0, 0, 60>
+def lg_tech_knob_logo():
+    #if (lg_quality > 3)
+        Union(
     #end
-   }
-   union {
-    /* Letter G */
-    sphere {<-35.95, 0, 57>, 6}
-    torus {18.45, 6 clipped_by{plane{<40, 0, -9>, 0}} translate<-40, 0, 39>}
-    cylinder {<-44.05, 0, 21>, <35.95, 0, 3>, 6}
-    torus {18.45, 6 clipped_by{plane{<-40, 0, 9>, 0}} translate<40, 0, 21>}
-    cylinder {<44.05, 0, 39>, <0, 0, 49>, 6}
-    sphere {<0, 0, 49>, 6}
-    cylinder {<0, 0, 49>, <0, 0, 34>, 6}
-    sphere {<0, 0, 34>, 6}
-    #if (lg_stud_logo > 0)
-     translate <0, 0, -65>
+    Object( lg_tech_knob
+        #if (lg_test ) 0)
+            Scale(Vector(1, 1, .1)
+        #end
+    ),
+    #if (lg_quality > 3)
+        Object( lego_logo_text Scale(Vector(3/4, 3/4, 3/4) ),
     #end
-   }
-   union {
-    /* Letter O */
-    torus {18.45, 6 clipped_by{plane{<40, 0, -9>, 0}} translate<-40, 0, 99>}
-    cylinder {<-44.05, 0, 81>, <35.95, 0, 63>, 6}
-    torus {18.45, 6 clipped_by{plane{<-40, 0, 9>, 0}} translate<40, 0, 81>}
-    cylinder {<44.05, 0, 99>, <-35.95, 0, 117>, 6}
-   }
-   scale 4.5/128
-   rotate y*90
-   rotate x*-90
-   scale <-1, 1, 1>
-   scale .08 * LG_KNOB_RADIUS * 2
-  }
-
- #declare lego_logo_text_clear =
-  merge {
-   merge {
-    /* Letter L */
-    sphere {<-59, 0, -96>, 6}
-    cylinder {<-59, 0, -96>, <59, 0, -122>, 6}
-    sphere {<59, 0, -122>, 6}
-    cylinder {<59, 0, -122>, <59, 0, -84>, 6}
-    sphere {<59, 0, -84>, 6}
-   }
-   merge {
-    /* Letter E */
-    sphere {<-59, 0, -36>, 6}
-    cylinder {<-59, 0, -36>, <-59, 0, 1>, 6}
-    sphere {<-59, 0, 1>, 6}
-    cylinder {<0, 0, -49>, <0, 0, -25>, 6}
-    sphere {<0, 0, -25>, 6}
-    sphere {<59, 0, -62>, 6}
-    cylinder {<59, 0, -62>, <59, 0, -24>, 6}
-    sphere {<59, 0, -24>, 6}
-    cylinder {<-59, 0, -36>, <59, 0, -62>, 6}
-    #if (lg_stud_logo > 0)
-     translate <0, 0, 60>
+    #if (lg_quality > 3)
+        ),
     #end
-   }
-   merge {
-    /* Letter G */
-    sphere {<-35.95, 0, 57>, 6}
-    torus {18.45, 6 clipped_by{plane{<40, 0, -9>, 0}} translate<-40, 0, 39>}
-    cylinder {<-44.05, 0, 21>, <35.95, 0, 3>, 6}
-    torus {18.45, 6 clipped_by{plane{<-40, 0, 9>, 0}} translate<40, 0, 21>}
-    cylinder {<44.05, 0, 39>, <0, 0, 49>, 6}
-    sphere {<0, 0, 49>, 6}
-    cylinder {<0, 0, 49>, <0, 0, 34>, 6}
-    sphere {<0, 0, 34>, 6}
-    #if (lg_stud_logo > 0)
-     translate <0, 0, -65>
-    #end
-   }
-   merge {
-    /* Letter O */
-    torus {18.45, 6 clipped_by{plane{<40, 0, -9>, 0}} translate<-40, 0, 99>}
-    cylinder {<-44.05, 0, 81>, <35.95, 0, 63>, 6}
-    torus {18.45, 6 clipped_by{plane{<-40, 0, 9>, 0}} translate<40, 0, 81>}
-    cylinder {<44.05, 0, 99>, <-35.95, 0, 117>, 6}
-   }
-   scale 4.5/128
-   rotate y*90
-   rotate x*-90
-   scale <-1, 1, 1>
-   scale .08 * LG_KNOB_RADIUS * 2
-  }
-#end
-
-/***********************************************************************
- *  LGEO Primitives
- ***********************************************************************/
-
-// solid stud
-#declare lg_knob =
-union {
- union {
-  cylinder {
-   <0, 0, LG_KNOB_HEIGHT-LG_KNOB_CORNER_SPACE>,
-   <0, 0, -LG_E>,
-   (LG_KNOB_RADIUS)
-  }
-  cylinder {
-   <0, 0, LG_KNOB_HEIGHT>,
-   <0, 0, -LG_E>,
-   (LG_KNOB_RADIUS-LG_KNOB_CORNER_SPACE)
-  }
- }
- torus {
-  (LG_KNOB_RADIUS-LG_KNOB_CORNER_SPACE),
-  (LG_KNOB_CORNER_SPACE)
-  rotate <90, 0, 0>
-  translate <0, 0, (LG_KNOB_HEIGHT-LG_KNOB_CORNER_SPACE)>
- }
- #if (lg_quality > 2)
-  object { lego_logo_text translate <0,0,LG_KNOB_HEIGHT> }
- #end
-}
-
-// solid stud top for dotted baseplates
-#declare lg_knob_dot =
-intersection {
- object { lg_knob translate <0, 0, 0.001> }
- cylinder {
-  <0, 0, LG_KNOB_HEIGHT-0.001>,
-  <0, 0, LG_KNOB_HEIGHT+0.1>,
-  LG_KNOB_INNER_RADIUS
- }
-}
-
-// hollow stud
-#declare lg_tech_knob =
-union{
- difference {
-  union {
-   cylinder {
-    <0, 0, LG_KNOB_HEIGHT-LG_CORNER_SPACE>,
-    <0, 0, -LG_E>,
-    (LG_KNOB_RADIUS)
-   }
-   difference {
-    cylinder {
-     <0, 0, LG_KNOB_HEIGHT>,
-     <0, 0, -LG_E>,
-     (LG_KNOB_RADIUS-LG_CORNER_SPACE)
-    }
-    cylinder {
-     <0, 0, LG_KNOB_HEIGHT+LG_E>,
-     <0, 0, -2*LG_E>,
-     (LG_KNOB_INNER_RADIUS+LG_CORNER_SPACE)
-    }
-   }
-  }
-  cylinder {
-   <0, 0, (LG_KNOB_HEIGHT+2*LG_E)>,
-   <0, 0, -3*LG_E>,
-   (LG_KNOB_INNER_RADIUS)
-  }
- }
- torus {
-  (LG_KNOB_INNER_RADIUS+LG_CORNER_SPACE),
-  (LG_CORNER_SPACE)
-  rotate <90, 0, 0>
-  translate <0, 0, (LG_KNOB_HEIGHT-LG_CORNER_SPACE)>
- }
- torus {
-  (LG_KNOB_RADIUS-LG_CORNER_SPACE),
-  (LG_CORNER_SPACE)
-  rotate <90, 0, 0>
-  translate <0, 0, (LG_KNOB_HEIGHT-LG_CORNER_SPACE)>
- }
-}
-
-// hollow stud with logo
-#declare lg_tech_knob_logo =
-#if (lg_quality > 3)
-union {
-#end
- object { lg_tech_knob
-  #if (lg_test > 0)
-   scale <1, 1, .1>
-  #end
- }
- #if (lg_quality > 3)
-  object { lego_logo_text scale <3/4, 3/4, 3/4> }
- #end
-#if (lg_quality > 3)
-}
-#end
-
-// brick inner cylinder to fit stud inside
-#declare lg_brick_cylinder =
-union {
- difference {
-  cylinder {
-   <0, 0, LG_BRICK_INNER_HEIGHT+LG_E>,
-   <0, 0, (LG_CYLINDER_WALL_WIDTH/2)>,
-   (LG_CYLINDER_RADIUS)
-  }
-  cylinder {
-   <0, 0, LG_BRICK_INNER_HEIGHT+LG_CORNER_SPACE>,
-   <0, 0, 0>,
-   (LG_KNOB_RADIUS)
-  }
- }
- torus {
-  (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
-  (LG_CYLINDER_WALL_WIDTH/2)
-  rotate <90, 0, 0>
-  translate <0, 0, (LG_CYLINDER_WALL_WIDTH/2)>
- }
-}
-
-// plate inner cylinder to fit stud inside
-#declare lg_plate_cylinder =
-union {
- difference {
-  cylinder {
-   <0, 0, LG_PLATE_INNER_HEIGHT+LG_E>,
-   <0, 0, (LG_CYLINDER_WALL_WIDTH/2)>,
-   (LG_CYLINDER_RADIUS)
-  }
-  cylinder {
-   <0, 0, LG_PLATE_INNER_HEIGHT+LG_CORNER_SPACE>,
-   <0, 0, 0>,
-   (LG_KNOB_RADIUS)
-  }
- }
- torus {
-  (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
-  (LG_CYLINDER_WALL_WIDTH/2)
-  rotate <90, 0, 0>
-  translate <0, 0, (LG_CYLINDER_WALL_WIDTH/2)>
- }
-}
-
-// brick inner cylinder to fit into hollow stud
-#declare lg_brick_column =
-cylinder {
- <0, 0, LG_BRICK_INNER_HEIGHT+LG_E>,
- <0, 0, 0>,
- (LG_KNOB_INNER_RADIUS)
-}
-
-// plate inner cylinder to fit into hollow stud
-#declare lg_plate_column =
-difference {
- cylinder {
-  <0, 0, LG_PLATE_INNER_HEIGHT+LG_E>,
-  <0, 0, 0>,
-  (LG_KNOB_INNER_RADIUS)
- }
- cylinder {
-  <0, 0, 1>,
-  <0, 0, -1>,
-  (0.06)
- }
-}
-
-// wall between brick cylinder and brick wall
-#declare lg_support_wall =
-box {
- <-LG_CYLINDER_WALL_WIDTH/2, -LG_E, 0.225>,
- <LG_CYLINDER_WALL_WIDTH/2, LG_BRICK_WIDTH-LG_CYLINDER_RADIUS-LG_WALL_WIDTH+LG_E, LG_BRICK_HEIGHT>
-}
-
-// cutout for solid stud
-#declare lg_knob_inner_space =
-cylinder {
- <0, 0, -LG_CORNER_SPACE>,
- <0, 0, 0.15>,
- (0.125)
-}
-
-/***********************************************************************
- *  LGEO Primitives Clear versions
- ***********************************************************************/
-
-#declare lg_knob_clear =
-merge {
- merge {
-  cylinder {
-   <0, 0, LG_KNOB_HEIGHT-LG_KNOB_CORNER_SPACE>,
-   <0, 0, -LG_E>,
-   (LG_KNOB_RADIUS)
-  }
-  cylinder {
-   <0, 0, LG_KNOB_HEIGHT>,
-   <0, 0, -LG_E>,
-   (LG_KNOB_RADIUS-LG_KNOB_CORNER_SPACE)
-  }
- }
- torus {
-  (LG_KNOB_RADIUS-LG_KNOB_CORNER_SPACE),
-  (LG_KNOB_CORNER_SPACE)
-  rotate <90, 0, 0>
-  translate <0, 0, (LG_KNOB_HEIGHT-LG_KNOB_CORNER_SPACE)>
- }
- #if (lg_quality > 2)
-  object { lego_logo_text_clear translate <0,0,LG_KNOB_HEIGHT> }
- #end
-}
-
-#declare lg_tech_knob_clear =
-merge{
- difference {
-  merge {
-   cylinder {
-    <0, 0, LG_KNOB_HEIGHT-LG_CORNER_SPACE>,
-    <0, 0, -LG_E>,
-    (LG_KNOB_RADIUS)
-   }
-   difference {
-    cylinder {
-     <0, 0, LG_KNOB_HEIGHT>,
-     <0, 0, -LG_E>,
-     (LG_KNOB_RADIUS-LG_CORNER_SPACE)
-    }
-    cylinder {
-     <0, 0, LG_KNOB_HEIGHT+LG_E>,
-     <0, 0, -2*LG_E>,
-     (LG_KNOB_INNER_RADIUS+LG_CORNER_SPACE)
-    }
-   }
-  }
-  cylinder {
-   <0, 0, (LG_KNOB_HEIGHT+2*LG_E)>,
-   <0, 0, -3*LG_E>,
-   (LG_KNOB_INNER_RADIUS)
-  }
- }
- torus {
-  (LG_KNOB_INNER_RADIUS+LG_CORNER_SPACE),
-  (LG_CORNER_SPACE)
-  rotate <90, 0, 0>
-  translate <0, 0, (LG_KNOB_HEIGHT-LG_CORNER_SPACE)>
- }
- torus {
-  (LG_KNOB_RADIUS-LG_CORNER_SPACE),
-  (LG_CORNER_SPACE)
-  rotate <90, 0, 0>
-  translate <0, 0, (LG_KNOB_HEIGHT-LG_CORNER_SPACE)>
- }
-}
-
-#declare lg_tech_knob_logo_clear =
-#if (lg_quality > 3)
-union {
-#end
- object { lg_tech_knob_clear }
- #if (lg_quality > 3)
-  object { lego_logo_text scale <3/4, 3/4, 3/4> }
- #end
-#if (lg_quality > 3)
-}
-#end
-
-#declare lg_brick_cylinder_clear =
-merge {
- difference {
-  cylinder {
-   <0, 0, LG_BRICK_INNER_HEIGHT+LG_E>,
-   <0, 0, (LG_CYLINDER_WALL_WIDTH/2)>,
-   (LG_CYLINDER_RADIUS)
-  }
-  cylinder {
-   <0, 0, LG_BRICK_INNER_HEIGHT+LG_CORNER_SPACE>,
-   <0, 0, 0>,
-   (LG_KNOB_RADIUS)
-  }
- }
- torus {
-  (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
-  (LG_CYLINDER_WALL_WIDTH/2)
-  rotate <90, 0, 0>
-  translate <0, 0, (LG_CYLINDER_WALL_WIDTH/2)>
- }
-}
-
-#declare lg_plate_cylinder_clear =
-merge {
- difference {
-  cylinder {
-   <0, 0, LG_PLATE_INNER_HEIGHT+LG_E>,
-   <0, 0, (LG_CYLINDER_WALL_WIDTH/2)>,
-   (LG_CYLINDER_RADIUS)
-  }
-  cylinder {
-   <0, 0, LG_PLATE_INNER_HEIGHT+LG_CORNER_SPACE>,
-   <0, 0, 0>,
-   (LG_KNOB_RADIUS)
-  }
- }
- torus {
-  (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
-  (LG_CYLINDER_WALL_WIDTH/2)
-  rotate <90, 0, 0>
-  translate <0, 0, (LG_CYLINDER_WALL_WIDTH/2)>
- }
-}
-
-#declare lg_brick_column_clear =
-cylinder {
- <0, 0, LG_BRICK_INNER_HEIGHT+LG_E>,
- <0, 0, 0>,
- (LG_KNOB_INNER_RADIUS)
-}
-
-#declare lg_plate_column_clear =
-difference {
- cylinder {
-  <0, 0, LG_PLATE_INNER_HEIGHT+LG_E>,
-  <0, 0, 0>,
-  (LG_KNOB_INNER_RADIUS)
- }
- cylinder {
-  <0, 0, 1>,
-  <0, 0, -1>,
-  (0.06)
- }
-}
-
-#declare lg_support_wall_clear =
-box {
- <-LG_CYLINDER_WALL_WIDTH/2, -LG_E, 0.225>,
- <LG_CYLINDER_WALL_WIDTH/2, LG_BRICK_WIDTH-LG_CYLINDER_RADIUS-LG_WALL_WIDTH+LG_E, LG_BRICK_HEIGHT>
-}
-
-#declare lg_knob_inner_space_clear =
-cylinder {
- <0, 0, -LG_CORNER_SPACE>,
- <0, 0, 0.15>,
- (0.125)
-}
-
-#end
-
 '''
+
+# brick inner cylinder to fit stud inside
+lg_brick_cylinder = Union(
+    Difference(
+        Cylinder(
+            Vector(0, 0, LG_BRICK_INNER_HEIGHT+LG_E),
+            Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)),
+            (LG_CYLINDER_RADIUS)
+        ),
+        Cylinder(
+            Vector(0, 0, LG_BRICK_INNER_HEIGHT+LG_CORNER_SPACE),
+            Vector(0, 0, 0),
+            (LG_KNOB_RADIUS)
+        )
+    ),
+    Torus(
+        (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
+        (LG_CYLINDER_WALL_WIDTH/2),
+        Rotate(Vector(90, 0, 0)),
+        Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)))
+    )
+)
+
+
+# plate inner cylinder to fit stud inside
+lg_plate_cylinder = Union(
+    Difference(
+        Cylinder(
+            Vector(0, 0, LG_PLATE_INNER_HEIGHT+LG_E),
+            Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)),
+            (LG_CYLINDER_RADIUS)
+        ),
+        Cylinder(
+            Vector(0, 0, LG_PLATE_INNER_HEIGHT+LG_CORNER_SPACE),
+            Vector(0, 0, 0),
+            (LG_KNOB_RADIUS)
+        )
+    ),
+    Torus(
+        (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
+        (LG_CYLINDER_WALL_WIDTH/2),
+        Rotate(Vector(90, 0, 0)),
+        Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)))
+    )
+)
+
+
+# brick inner cylinder to fit into hollow stud
+lg_brick_column = Cylinder(
+    Vector(0, 0, LG_BRICK_INNER_HEIGHT+LG_E),
+    Vector(0, 0, 0),
+    (LG_KNOB_INNER_RADIUS)
+)
+
+
+# plate inner cylinder to fit into hollow stud
+lg_plate_column = Difference(
+    Cylinder(
+        Vector(0, 0, LG_PLATE_INNER_HEIGHT+LG_E),
+        Vector(0, 0, 0),
+        (LG_KNOB_INNER_RADIUS)
+    ),
+    Cylinder(
+        Vector(0, 0, 1),
+        Vector(0, 0, -1),
+        (0.06)
+    )
+)
+
+
+# wall between brick cylinder and brick wall
+lg_support_wall = Box(
+    Vector(-LG_CYLINDER_WALL_WIDTH/2, -LG_E, 0.225),
+    Vector(LG_CYLINDER_WALL_WIDTH/2, LG_BRICK_WIDTH-LG_CYLINDER_RADIUS-LG_WALL_WIDTH+LG_E, LG_BRICK_HEIGHT)
+)
+
+
+# cutout for solid stud
+lg_knob_inner_space = Cylinder(
+    Vector(0, 0, -LG_CORNER_SPACE),
+    Vector(0, 0, 0.15),
+    (0.125)
+)
+
+'''********************************************************************
+*  LGEO Primitives Clear versions
+********************************************************************'''
+
+
+def lg_knob_clear():
+    result = Merge(
+        Merge(
+            Cylinder(
+                Vector(0, 0, LG_KNOB_HEIGHT-LG_KNOB_CORNER_SPACE),
+                Vector(0, 0, -LG_E),
+                (LG_KNOB_RADIUS)
+            ),
+            Cylinder(
+                Vector(0, 0, LG_KNOB_HEIGHT),
+                Vector(0, 0, -LG_E),
+                (LG_KNOB_RADIUS-LG_KNOB_CORNER_SPACE)
+            )
+        ),
+        Torus(
+            (LG_KNOB_RADIUS-LG_KNOB_CORNER_SPACE),
+            (LG_KNOB_CORNER_SPACE),
+            Rotate(Vector(90, 0, 0)),
+            Translate(Vector(0, 0, (LG_KNOB_HEIGHT-LG_KNOB_CORNER_SPACE)))
+        )
+    )
+
+    if (lg_quality > 2):
+        result.append(
+            Object(
+                lego_logo_text_clear(),
+                Translate(Vector(0, 0, LG_KNOB_HEIGHT))
+            )
+        )
+    return result
+
+lg_tech_knob_clear = Merge(
+    Difference(
+        Merge(
+            Cylinder(
+                Vector(0, 0, LG_KNOB_HEIGHT-LG_CORNER_SPACE),
+                Vector(0, 0, -LG_E),
+                (LG_KNOB_RADIUS)
+            ),
+            Difference(
+                Cylinder(
+                    Vector(0, 0, LG_KNOB_HEIGHT),
+                    Vector(0, 0, -LG_E),
+                    (LG_KNOB_RADIUS-LG_CORNER_SPACE)
+                ),
+                Cylinder(
+                    Vector(0, 0, LG_KNOB_HEIGHT+LG_E),
+                    Vector(0, 0, -2*LG_E),
+                    (LG_KNOB_INNER_RADIUS+LG_CORNER_SPACE)
+                )
+            )
+        ),
+        Cylinder(
+            Vector(0, 0, (LG_KNOB_HEIGHT+2*LG_E)),
+            Vector(0, 0, -3*LG_E),
+            (LG_KNOB_INNER_RADIUS)
+        )
+    ),
+    Torus(
+        (LG_KNOB_INNER_RADIUS+LG_CORNER_SPACE),
+        (LG_CORNER_SPACE),
+        Rotate(Vector(90, 0, 0)),
+        Translate(Vector(0, 0, (LG_KNOB_HEIGHT-LG_CORNER_SPACE)))
+    ),
+    Torus(
+        (LG_KNOB_RADIUS-LG_CORNER_SPACE),
+        (LG_CORNER_SPACE),
+        Rotate(Vector(90, 0, 0)),
+        Translate(Vector(0, 0, (LG_KNOB_HEIGHT-LG_CORNER_SPACE)))
+    )
+)
+
+
+def lg_tech_knob_logo_clear():
+    if (lg_quality > 3):
+        return Union(
+            lg_tech_knob_clear,
+            Object(lego_logo_text(), Scale(Vector(3/4, 3/4, 3/4)))
+        )
+    else:
+        return lg_tech_knob_clear
+
+
+lg_brick_cylinder_clear = Merge(
+        Difference(
+            Cylinder(
+                Vector(0, 0, LG_BRICK_INNER_HEIGHT+LG_E),
+                Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)),
+                (LG_CYLINDER_RADIUS)
+            ),
+            Cylinder(
+                Vector(0, 0, LG_BRICK_INNER_HEIGHT+LG_CORNER_SPACE),
+                Vector(0, 0, 0),
+                (LG_KNOB_RADIUS)
+            ),
+        ),
+        Torus(
+            (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
+            (LG_CYLINDER_WALL_WIDTH/2)
+            Rotate(Vector(90, 0, 0)
+            Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2))
+        ),
+    ),
+
+
+lg_plate_cylinder_clear = Merge(
+    Difference(
+        Cylinder(
+            Vector(0, 0, LG_PLATE_INNER_HEIGHT+LG_E),
+            Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)),
+            (LG_CYLINDER_RADIUS)
+        ),
+        Cylinder(
+            Vector(0, 0, LG_PLATE_INNER_HEIGHT+LG_CORNER_SPACE),
+            Vector(0, 0, 0),
+            (LG_KNOB_RADIUS)
+        ),
+    ),
+    Torus(
+        (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
+        (LG_CYLINDER_WALL_WIDTH/2)
+        Rotate(Vector(90, 0, 0)
+        Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2))
+    ),
+),
+
+
+lg_brick_column_clear= Cylinder(
+    Vector(0, 0, LG_BRICK_INNER_HEIGHT+LG_E),
+    Vector(0, 0, 0),
+    (LG_KNOB_INNER_RADIUS)
+),
+
+
+lg_plate_column_clear = Difference(
+    Cylinder(
+        Vector(0, 0, LG_PLATE_INNER_HEIGHT+LG_E),
+        Vector(0, 0, 0),
+        (LG_KNOB_INNER_RADIUS)
+    ),
+    Cylinder(
+        Vector(0, 0, 1),
+        Vector(0, 0, -1),
+        (0.06)
+    ),
+),
+
+
+lg_support_wall_clear = Box(
+    Vector(-LG_CYLINDER_WALL_WIDTH/2, -LG_E, 0.225),
+    Vector(LG_CYLINDER_WALL_WIDTH/2, LG_BRICK_WIDTH-LG_CYLINDER_RADIUS-LG_WALL_WIDTH+LG_E, LG_BRICK_HEIGHT)
+),
+
+
+lg_knob_inner_space_clear = Cylinder(
+    Vector(0, 0, -LG_CORNER_SPACE),
+    Vector(0, 0, 0.15),
+    (0.125)
+),
