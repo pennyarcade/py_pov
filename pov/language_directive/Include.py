@@ -51,6 +51,6 @@ class Include(LanguageDirective):
         self._validate_args(valid_args)
 
         # param syntax checks
-        if not os.path.isfile(self.args[0]):
-            raise IOError('No such file: %s%s%s' % (os.getcwd(), os.sep, self.args[0]))
+#        if not os.path.isfile(self.args[0]):
+#            raise IOError('No such file: %s%s%s' % (os.getcwd(), os.sep, self.args[0]))
 

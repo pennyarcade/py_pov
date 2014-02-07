@@ -72,7 +72,8 @@ class Fog(PoVObject):
             'fog_offset': ('float', 'int'),
             'fog_alt': ('float', 'int'),
             'inverse': 'bool',
-            'up': 'Vector'
+            'up': 'Vector',
+            'color': 'Color'
         }
 
         self._validate_kwargs(valid_kw)

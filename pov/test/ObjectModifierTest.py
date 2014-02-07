@@ -11,6 +11,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 import unittest
+import os
 from logging import *
 from pov.object_modifier.Translate import Translate
 from pov.object_modifier.ObjectModifier import ObjectModifier
@@ -27,7 +28,7 @@ class TranslateTestCase(unittest.TestCase):
         self.assertIsInstance(self.SUT, ObjectModifier)
 
     def test_str(self):
-        second = 'translate <1, 2, 3>\n'
+        second = 'translate <1, 2, 3>' + os.linesep
         self.assertEqual(str(self.SUT), second)
 
     def test_create_arg_wrong_type(self):
