@@ -1,5 +1,5 @@
 '''****************************************************************************/
-*                                                                             */
+* FO O                                                                           */
 * LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)      */
 *                                                                             */
 * 19970623 Lutz Uhlmann                                                       */
@@ -95,162 +95,162 @@ lg_black = Texture(
 
 # 1
 lg_blue = Texture(
-     Pigment(Color(rgb=Vector(0/255, 51/255, 178/255)),
-     Finish( lg_solid_finish )
+    Pigment(Color(rgb=Vector(0/255, 51/255, 178/255))),
+    Finish(lg_solid_finish)
 )
 
 # 2
 lg_green = Texture(
- Pigment(Color(rgb=Vector(0/255, 140/255, 20/255)),
- Finish( lg_solid_finish ),
+    Pigment(Color(rgb=Vector(0/255, 140/255, 20/255))),
+    Finish(lg_solid_finish),
 ),
 
 # 3
 lg_teal = Texture(
- Pigment(Color(rgb=Vector(0/255, 153/255, 159/255)),
- Finish( lg_solid_finish ),
+    Pigment(Color(rgb=Vector(0/255, 153/255, 159/255))),
+    Finish( lg_solid_finish ),
 ),
 lg_cyan = lg_teal
 
 # 4
 lg_red = Texture(
- Pigment(Color(rgb=Vector(196/255, 0/255, 38/255)),
- Finish( lg_solid_finish ),
+    Pigment(Color(rgb=Vector(196/255, 0/255, 38/255))),
+    Finish( lg_solid_finish ),
 ),
 
 # 5
 lg_dark_pink = Texture(
- Pigment(Color(rgb=Vector(223/255, 102/255, 149/255)),
+ Pigment(Color(rgb=Vector(223/255, 102/255, 149/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 6
 lg_brown = Texture(
- Pigment(Color(rgb=Vector(92/255, 32/255, 0/255)),
+ Pigment(Color(rgb=Vector(92/255, 32/255, 0/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 7
 lg_grey = Texture(
- Pigment(Color(rgb=Vector(193/255, 194/255, 193/255)),
+ Pigment(Color(rgb=Vector(193/255, 194/255, 193/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 8
 lg_dark_grey = Texture(
- Pigment(Color(rgb=Vector(99/255, 89/255, 82/255)),
+ Pigment(Color(rgb=Vector(99/255, 89/255, 82/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 9
 lg_light_blue = Texture(
- Pigment(Color(rgb=Vector(107/255, 172/255, 220/255)),
+ Pigment(Color(rgb=Vector(107/255, 172/255, 220/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 10
 lg_bright_green = Texture(
- Pigment(Color(rgb=Vector(97/255, 238/255, 104/255)),
+ Pigment(Color(rgb=Vector(97/255, 238/255, 104/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 11
 lg_turquoise = Texture(
- Pigment(Color(rgb=Vector(51/255, 166/255, 167/255)),
+ Pigment(Color(rgb=Vector(51/255, 166/255, 167/255))),
  Finish( lg_solid_finish ),
 ),
 lg_blue_green = lg_turquoise
 
 # 12
 lg_salmon = Texture(
- Pigment(Color(rgb=Vector(255/255, 133/255, 122/255)),
+ Pigment(Color(rgb=Vector(255/255, 133/255, 122/255))),
  Finish( lg_solid_finish ),
 ),
 lg_light_red = lg_salmon
 
 # 13
 lg_pink = Texture(
- Pigment(Color(rgb=Vector(249/255, 163/255, 198/255)),
+ Pigment(Color(rgb=Vector(249/255, 163/255, 198/255))),
  Finish( lg_solid_finish ),
 ),
 lg_rose = lg_pink
 
 # 14
 lg_yellow = Texture(
- Pigment(Color(rgb=Vector(255/255, 220/255, 0/255)),
+ Pigment(Color(rgb=Vector(255/255, 220/255, 0/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 15
 lg_white = Texture(
- Pigment(Color(rgb=Vector(255/255, 255/255, 255/255)),
+ Pigment(Color(rgb=Vector(255/255, 255/255, 255/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 17
 lg_light_green = Texture(
- Pigment(Color(rgb=Vector(186/255, 255/255, 206/255)),
+ Pigment(Color(rgb=Vector(186/255, 255/255, 206/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 18
 lg_light_yellow = Texture(
- Pigment(Color(rgb=Vector(253/255, 232/255, 150/255)),
+ Pigment(Color(rgb=Vector(253/255, 232/255, 150/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 19
 lg_tan = Texture(
- Pigment(Color(rgb=Vector(232/255, 207/255, 161/255)),
+ Pigment(Color(rgb=Vector(232/255, 207/255, 161/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 20
 lg_light_violet = Texture(
- Pigment(Color(rgb=Vector(215/255, 196/255, 230/255)),
+ Pigment(Color(rgb=Vector(215/255, 196/255, 230/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 22
 lg_purple = Texture(
- Pigment(Color(rgb=Vector(129/255, 0/255, 124/255)),
+ Pigment(Color(rgb=Vector(129/255, 0/255, 124/255))),
  Finish( lg_solid_finish ),
 ),
 lg_violet = lg_purple
 
 # 23
 lg_violet_blue = Texture(
- Pigment(Color(rgb=Vector(71/255, 50/255, 176/255)),
+ Pigment(Color(rgb=Vector(71/255, 50/255, 176/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 25
 lg_orange = Texture(
- Pigment(Color(rgb=Vector(249/255, 96/255, 0/255)),
+ Pigment(Color(rgb=Vector(249/255, 96/255, 0/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 26
 lg_magenta = Texture(
- Pigment(Color(rgb=Vector(232/255, 27/255, 109/255)),
+ Pigment(Color(rgb=Vector(232/255, 27/255, 109/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 27
 lg_lime = Texture(
- Pigment(Color(rgb=Vector(231/255, 240/255, 0/255)),
+ Pigment(Color(rgb=Vector(231/255, 240/255, 0/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 27
 lg_dark_tan = Texture(
- Pigment(Color(rgb=Vector(187/255, 141/255, 75/255)),
+ Pigment(Color(rgb=Vector(187/255, 141/255, 75/255))),
  Finish( lg_solid_finish ),
 ),
 
 # 29
 lg_light_purple = Texture(
- Pigment(Color(rgb=Vector(205/255, 173/255, 200/255)),
+ Pigment(Color(rgb=Vector(205/255, 173/255, 200/255))),
  Finish( lg_solid_finish ),
 ),
 
