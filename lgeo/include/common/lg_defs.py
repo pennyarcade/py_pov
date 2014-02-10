@@ -63,6 +63,15 @@ LG_GRID_WIDTH = LG_BRICK_WIDTH/sqrt(2)-2*LG_KNOB_RADIUS
 LG_E = 0.01
 
 
+'''*****************************************************************************
+Custom Shorthands
+*****************************************************************************'''
+LDU = 0.8/20
+LGBW = LG_BRICK_WIDTH
+LGBH = LG_BRICK_HEIGHT
+LGPH = LG_PLATE_HEIGHT
+
+
 '''*********************************************************************
 *  Stud Logo
 *
@@ -131,6 +140,8 @@ def lego_logo_text():
             Scale(Vector(-1, 1, 1)),
             Scale(.08 * LG_KNOB_RADIUS * 2)
         )
+    else:
+        return Object()
 
 
 def lego_logo_text_clear():
@@ -228,6 +239,9 @@ def lg_knob():
                 Translate(Vector(0, 0, LG_KNOB_HEIGHT))
             )
         )
+
+    return result
+
 
 
 # solid stud top for dotted baseplates

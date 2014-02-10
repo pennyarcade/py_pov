@@ -39,7 +39,7 @@ def solid():
 
     MIR = 0
     while MIR < 2:
-        subpart = Object()
+        subpart = Union()
 
         PIN = -2
         while PIN < 4:
@@ -802,61 +802,61 @@ def solid():
                         LG_WALL_WIDTH
                     ),
                     Object(
-                        lg_knob,
+                        lg_knob(),
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1-2*MIR, 1)),
                         Translate(Vector(3.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, 0))
                     ),
                     Object(
-                        lg_knob,
+                        lg_knob(),
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1-2*MIR, 1)),
                         Translate(Vector(2.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, 0))
                     ),
                     Object(
-                        lg_knob,
+                        lg_knob(),
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1-2*MIR, 1)),
                         Translate(Vector(1.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT))
                     ),
                     Object(
-                        lg_knob,
+                        lg_knob(),
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1-2*MIR, 1)),
                         Translate(Vector(0.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT))
                     ),
                     Object(
-                        lg_knob,
+                        lg_knob(),
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1-2*MIR, 1)),
                         Translate(Vector(-0.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT))
                     ),
                     Object(
-                        lg_knob,
+                        lg_knob(),
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1-2*MIR, 1)),
                         Translate(Vector(1.5*LG_BRICK_WIDTH, 3*LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT))
                     ),
                     Object(
-                        lg_knob,
+                        lg_knob(),
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1-2*MIR, 1)),
                         Translate(Vector(0.5*LG_BRICK_WIDTH, 3*LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT))
                     ),
                     Object(
-                        lg_knob,
+                        lg_knob(),
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1-2*MIR, 1)),
                         Translate(Vector(-0.5*LG_BRICK_WIDTH, 3*LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT))
                     ),
                     Object(
-                        lg_knob,
+                        lg_knob(),
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1-2*MIR, 1)),
                         Translate(Vector(-1.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, 0))
                     ),
                     Object(
-                        lg_knob,
+                        lg_knob(),
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1-2*MIR, 1)),
                         Translate(Vector(-2.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, 0))
@@ -1100,6 +1100,7 @@ def solid():
 
     )
 
+    return result
 
 
 

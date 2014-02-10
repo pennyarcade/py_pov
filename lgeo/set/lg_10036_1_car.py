@@ -108,7 +108,7 @@ from pov.csg.Union import Union
 
 # ==== LGEO Colors and Definitions ====
 #include "lg_color.inc"
-#include "lg_defs.inc"
+from  lgeo.include.common.lg_defs import *
 
 # ==== LGEO fixed parts ====
 
@@ -142,6 +142,7 @@ from lgeo.include.brick import lg_2441
 
 # ==== Custom Includes ====
 from lgeo.include.common import custom_macros
+from lgeo.include.common.lg_color import *
 
 
 #declare set_10036_1_car_nonmoving= union {
