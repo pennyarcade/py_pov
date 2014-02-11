@@ -65,6 +65,7 @@ Includes
 # ==== Py Pov Includes ====
 from pov.csg.Union import Union
 
+from pov.other.Comment import Comment
 
 # ==== Standard POV-Ray Includes ====
 #include "colors.inc"     // Standard Color definitions
@@ -124,7 +125,7 @@ from lgeo.include.brick import lg_2441
 #include "lg_3010.inc"
 #include "lg_3020.inc"
 #include "lg_3021.inc"
-#include "lg_3022.inc"
+from lgeo.include.brick import lg_3022
 #include "lg_3024.inc"
 #include "lg_3069b.inc"
 #include "lg_3641.inc"
@@ -168,6 +169,8 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         #Objects (Step 1)
         #*******************************************************************
 
+        Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
+
         # 2441 Red Car Base 7 x 4 x 2/3
         custom_macros.StdBrick(
             lg_2441.solid(),
@@ -175,15 +178,23 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             0, 3*LGPH, 0,
             -90, 0, 0),
 
+        Comment('**** End 2441 Red Car Base 7 x 4 x 2/3 ****'),
+
+
         #********************************************************************
         #Objects (Step 2)
         #*********************************************************************
+
+        Comment('**** Start 3022 White Plate 2 x 2 ****'),
+
         custom_macros.StdBrick(
             lg_3022.solid(),
             lg_white,
             2.5*LGBW, 4*LGPH, 0,
             -90, 0, 0
-        )
+        ),
+
+        Comment('**** End 3022 White Plate 2 x 2 ****'),
 
     )
 
@@ -191,8 +202,6 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
 
 
 '''
-# 3022    White   Plate 2 x 2
-StdBrick(lg_3022 , lg_white,  2.5*LGBW,   4*LGPH,         0,  -90,   0,   0)
 # 2412b   White   Tile 1 x 2 Grille with Groove
 StdBrick(lg_2412b, lg_white,  0.5*LGBW,   3*LGPH, -1.5*LGBW,  -90,  90,   0)
 StdBrick(lg_2412b, lg_white,  0.5*LGBW,   3*LGPH,  1.5*LGBW,  -90,  90,   0)
