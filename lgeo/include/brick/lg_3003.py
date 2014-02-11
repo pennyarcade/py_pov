@@ -12,6 +12,9 @@
 *                                                                             */
 *****************************************************************************'''
 
+from lgeo.include.common.brick_subparts import *
+from lgeo.include.common.lg_defs import *
+
 from pov.basic.Vector import Vector
 
 from pov.csg.Union import Union
@@ -26,16 +29,9 @@ from pov.object_modifier.Translate import Translate
 
 from pov.other.Object import Object
 
-from lgeo.include.common.lg_defs import *
-
 
 def solid(LENGTH=2, WIDTH=2):
-    knobs_inner = Union(
-        Box(
-            Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LG_CORNER_SPACE),
-            Vector(LENGTH*LG_BRICK_WIDTH-LG_WALL_WIDTH, WIDTH*LG_BRICK_WIDTH-LG_WALL_WIDTH, LG_BRICK_INNER_HEIGHT),
-        ),
-    )
+    knobs_inner = get_knob_inner_space(LENGTH, WIDTH)
 
     KS_X = 0
     while (KS_X < LENGTH):
