@@ -117,7 +117,7 @@ from  lgeo.include.common.lg_defs import *
 #include "lg_2348b.inc"
 #include "lg_2349.inc"
 #include "lg_2357.inc"
-#include "lg_2412b.inc"
+from lgeo.include.brick import lg_2412b
 #include "lg_2436.inc"
 from lgeo.include.brick import lg_2441
 #include "lg_3003.inc"
@@ -165,13 +165,13 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
     """
 
     part = Union(
+        Comment('''
         #*******************************************************************
-        #Objects (Step 1)
+        # Objects (Step 1)
         #*******************************************************************
-
+        '''),
         Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
 
-        # 2441 Red Car Base 7 x 4 x 2/3
         custom_macros.StdBrick(
             lg_2441.solid(),
             lg_red,
@@ -179,40 +179,54 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             -90, 0, 0),
 
         Comment('**** End 2441 Red Car Base 7 x 4 x 2/3 ****'),
-
-
-        #********************************************************************
-        #Objects (Step 2)
-        #*********************************************************************
-
+        Comment('''
+        #*******************************************************************
+        # Objects (Step 2)
+        #*******************************************************************
+        '''),
         Comment('**** Start 3022 White Plate 2 x 2 ****'),
-
         custom_macros.StdBrick(
             lg_3022.solid(),
             lg_white,
             2.5*LGBW, 4*LGPH, 0,
             -90, 0, 0
         ),
-
         Comment('**** End 3022 White Plate 2 x 2 ****'),
-
+        Comment('**** Start 2412b White Tile 1 x 2 Grille with Groove ****'),
+        custom_macros.StdBrick(
+            lg_2412b.solid(),
+            lg_white,
+            0.5*LGBW, 3*LGPH, -1.5*LGBW,
+            -90, 90, 0
+        ),
+        Comment('**** End 2412b White Tile 1 x 2 Grille with Groove ****'),
+        Comment('**** Start 2412b White Tile 1 x 2 Grille with Groove ****'),
+        custom_macros.StdBrick(
+            lg_2412b.solid(),
+            lg_white,
+            0.5*LGBW, 3*LGPH, 1.5*LGBW,
+            -90, 90, 0
+        ),
+        Comment('**** End 2412b White Tile 1 x 2 Grille with Groove ****'),
+        Comment('''
+        ********************************************************************
+        * Objects (Step 3)
+        ********************************************************************
+        '''),
+        Comment('**** Start 3022 White Plate 2 x 2 ****'),
+        custom_macros.StdBrick(
+            lg_3022.solid(),
+            lg_white,
+            -2.5*LGBW, 4*LGPH, 0,
+            -90, 0, 0
+        ),
+        Comment('**** End 3022 White Plate 2 x 2 ****')
     )
 
     return part
 
 
 '''
-# 2412b   White   Tile 1 x 2 Grille with Groove
-StdBrick(lg_2412b, lg_white,  0.5*LGBW,   3*LGPH, -1.5*LGBW,  -90,  90,   0)
-StdBrick(lg_2412b, lg_white,  0.5*LGBW,   3*LGPH,  1.5*LGBW,  -90,  90,   0)
-'''
-
-'''*************************************************************************
-Objects (Step 3)
-*************************************************************************'''
-'''
-# 3022    White   Plate 2 x 2
-StdBrick(lg_3022 ,  lg_white, -2.5*LGBW,   4*LGPH,         0,  -90,   0,   0)
 // 3010    White   Brick 1 x 4
 StdBrick(lg_3010 ,  lg_white,    -1*LGBW,   5*LGPH,         0,  -90,   0,   0)
 '''
