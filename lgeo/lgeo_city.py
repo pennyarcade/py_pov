@@ -239,5 +239,4 @@ def main():
         #object {set_10036_1_house_oven_door}
     )
 
-    # print everything to stdout for now
-    print str(fix)
+    return fix
