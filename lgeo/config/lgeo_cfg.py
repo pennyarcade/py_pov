@@ -2,7 +2,7 @@
     Configuration for Lgeo Library parts
 '''
 
-lg_quality = 2
+lg_quality = 4
 # compatible to L3Ps L3Quality for these values supported
 # 2: normal studs
 # 3: solid studs have logo

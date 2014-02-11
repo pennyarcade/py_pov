@@ -120,9 +120,9 @@ from  lgeo.include.common.lg_defs import *
 from lgeo.include.brick import lg_2412b
 #include "lg_2436.inc"
 from lgeo.include.brick import lg_2441
-#include "lg_3003.inc"
+from lgeo.include.brick import lg_3003
 #include "lg_3004.inc"
-#include "lg_3010.inc"
+from lgeo.include.brick import lg_3010
 #include "lg_3020.inc"
 #include "lg_3021.inc"
 from lgeo.include.brick import lg_3022
@@ -171,7 +171,6 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         #*******************************************************************
         '''),
         Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
-
         custom_macros.StdBrick(
             lg_2441.solid(),
             lg_red,
@@ -220,23 +219,41 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             -2.5*LGBW, 4*LGPH, 0,
             -90, 0, 0
         ),
-        Comment('**** End 3022 White Plate 2 x 2 ****')
+        Comment('**** End 3022 White Plate 2 x 2 ****'),
+        Comment('**** Start 3010 White Brick 1 x 4 ****'),
+        custom_macros.StdBrick(
+            lg_3010.solid(),
+            lg_white,
+            -1*LGBW, 5*LGPH, 0,
+            -90, 0, 0
+        ),
+        Comment('**** End 3010 White Brick 1 x 4 ****'),
+        Comment('''
+        ********************************************************************
+        * Objects (Step 4)
+        ********************************************************************
+        '''),
+        Comment('**** Start 3003 Yellow Brick 2 x 2 ****'),
+        custom_macros.StdBrick(
+            lg_3003.solid(),
+            lg_yellow,
+            0.5*LGBW, 5*LGPH, 0,
+            -90, 0, 0
+        ),
+        Comment('**** End 3003 Yellow Brick 2 x 2 ****'),
     )
 
     return part
 
 
 '''
-// 3010    White   Brick 1 x 4
-StdBrick(lg_3010 ,  lg_white,    -1*LGBW,   5*LGPH,         0,  -90,   0,   0)
-'''
+        Comment('****  ****'),
+        custom_macros.StdBrick(
 
-'''*************************************************************************
-Objects (Step 4)
-*************************************************************************'''
-'''
-// 3003    Yellow  Brick 2 x 2
-StdBrick(lg_3003 , lg_yellow,  0.5*LGBW,   5*LGPH,         0,  -90,   0,   0)
+        ),
+        Comment('****  ****'),
+
+
 // 3788    White   Car Mudguard 2 x 4
 StdBrick(lg_3788 ,  lg_white,  2.5*LGBW,   6*LGPH,         0,  -90,   0,   0)
 '''
