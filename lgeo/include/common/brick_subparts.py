@@ -42,9 +42,60 @@ LGEO Standard Brick common subparts
 
 
 def get_knob_inner_space(LENGTH=1, WIDTH=1):
-    return Union(
+    result = Union(
         Box(
             Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LG_CORNER_SPACE),
             Vector(LENGTH*LG_BRICK_WIDTH-LG_WALL_WIDTH, WIDTH*LG_BRICK_WIDTH-LG_WALL_WIDTH, LG_PLATE_INNER_HEIGHT)
         )
     )
+
+    KS_X = 0
+    while (KS_X < LENGTH):
+        KS_Y = 0
+        while (KS_Y < WIDTH):
+            result.append(
+                Object(
+                    lg_knob_inner_space,
+                    Translate(Vector((KS_X+0.5)*LG_BRICK_WIDTH, (KS_Y+0.5)*LG_BRICK_WIDTH, LG_BRICK_INNER_HEIGHT))
+                )
+            )
+            KS_Y = KS_Y + 1
+        KS_X = KS_X + 1
+
+    return result
+
+
+def get_knob_objects(LENGTH=1, WIDTH=1, HEIGHT=LG_BRICK_HEIGHT):
+    result = Union()
+
+    KNOB_X = 0
+    while (KNOB_X < LENGTH):
+        KNOB_Y = 0
+        while (KNOB_Y < WIDTH):
+            result.append(
+                Object(
+                    lg_knob(),
+                    Rotate(Vector(0, 0, -90)),
+                    Translate(Vector((0.5+KNOB_X)*LG_BRICK_WIDTH, (0.5+KNOB_Y)*LG_BRICK_WIDTH, HEIGHT)),
+                )
+            )
+            KNOB_Y = KNOB_Y + 1
+        KNOB_X = KNOB_X + 1
+
+    return result
+
+
+def get_brick_coloumn(LENGTH=1):
+    result = Union()
+
+    COL_X = 1
+    while (COL_X < LENGTH):
+        result.append(
+            Object(
+                lg_brick_column,
+                Translate(Vector(COL_X*LG_BRICK_WIDTH, 0.5*LG_BRICK_WIDTH, 0)),
+            )
+        )
+        COL_X = COL_X + 1
+
+    return result

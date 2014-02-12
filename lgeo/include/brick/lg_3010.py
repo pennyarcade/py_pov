@@ -31,19 +31,7 @@ from pov.other.Object import Object
 
 
 def solid(LENGTH=4, WIDTH=1):
-    knobinnerspace = get_knob_inner_space(LENGTH, WIDTH)
-
-    KS_X = 0
-    while (KS_X > LENGTH):
-        knobinnerspace.append(
-            Object(
-                lg_knob_inner_space,
-                Translate(Vector((KS_X+0.5)*LG_BRICK_WIDTH, 0.5*LG_BRICK_WIDTH, LG_BRICK_INNER_HEIGHT)),
-            )
-        )
-        KS_X = KS_X + 1
-
-    result = Union(
+    return Union(
         Sphere(
             Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE), LG_CORNER_SPACE
         ),
@@ -143,37 +131,14 @@ def solid(LENGTH=4, WIDTH=1):
                     Vector(LENGTH*LG_BRICK_WIDTH-LG_CORNER_SPACE, WIDTH*LG_BRICK_WIDTH, LG_BRICK_HEIGHT-LG_CORNER_SPACE),
                 ),
             ),
-            knobinnerspace
-        )
-    )
-
-    COL_X = 1
-    while (COL_X < LENGTH):
-        result.append(
-            Object(
-                lg_brick_column,
-                Translate(Vector(COL_X*LG_BRICK_WIDTH, 0.5*LG_BRICK_WIDTH, 0)),
-            )
-        )
-        COL_X = COL_X + 1
-
-    KNOB_X = 0
-    while (KNOB_X < LENGTH):
-        result.append(
-            Object(
-                lg_knob(),
-                Rotate(Vector(0, 0, -90)),
-                Translate(Vector((0.5+KNOB_X)*LG_BRICK_WIDTH, 0.5*LG_BRICK_WIDTH, LG_BRICK_HEIGHT)),
-            )
-        )
-        KNOB_X = KNOB_X + 1
-
-    result.append(
+            get_knob_inner_space(LENGTH, WIDTH)
+        ),
+        get_brick_coloumn(LENGTH),
+        get_knob_objects(LENGTH, WIDTH),
         Translate(Vector(-LENGTH/2*LG_BRICK_WIDTH, -LG_BRICK_WIDTH/2, -LG_BRICK_HEIGHT)),
         Rotate(Vector(0, 0, 90))
     )
 
-    return result
 
 
 '''
