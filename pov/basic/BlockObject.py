@@ -10,9 +10,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-
-from pov.basic.SceneItem import *
-from pov.basic.Vector import *
+from logging import debug
+from pov.basic.SceneItem import SceneItem
 
 
 class BlockObject(SceneItem):
@@ -32,7 +31,7 @@ class BlockObject(SceneItem):
                 code += str(opt)
             else:
                 code += self._getLine(str(opt))
-        code += self._getEndCode()
+        code += self._get_end_code()
 
         debug("BlockObject.__str__ Code: \n%s", code)
 
@@ -42,14 +41,15 @@ class BlockObject(SceneItem):
         """
             Start block of code
         """
-        global indentation
 
         code = "  " * self._getIndent() + self.name + self._block_begin()
         if self.args:
-            code = code + self._getLine(", ".join([str(arg) for arg in self.args]))
+            code = code + self._getLine(
+                            ", ".join([str(arg) for arg in self.args])
+                        )
         return code
 
-    def _getEndCode(self):
+    def _get_end_code(self):
         """
             End block of code
         """
