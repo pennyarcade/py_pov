@@ -65,6 +65,7 @@ Includes
 # ==== Py Pov Includes ====
 from pov.csg.Union import Union
 
+from pov.other.Comment import Comment
 
 # ==== Standard POV-Ray Includes ====
 #include "colors.inc"     // Standard Color definitions
@@ -108,7 +109,7 @@ from pov.csg.Union import Union
 
 # ==== LGEO Colors and Definitions ====
 #include "lg_color.inc"
-#include "lg_defs.inc"
+from  lgeo.include.common.lg_defs import *
 
 # ==== LGEO fixed parts ====
 
@@ -116,19 +117,19 @@ from pov.csg.Union import Union
 #include "lg_2348b.inc"
 #include "lg_2349.inc"
 #include "lg_2357.inc"
-#include "lg_2412b.inc"
+from lgeo.include.brick import lg_2412b
 #include "lg_2436.inc"
 from lgeo.include.brick import lg_2441
-#include "lg_3003.inc"
+from lgeo.include.brick import lg_3003
 #include "lg_3004.inc"
-#include "lg_3010.inc"
+from lgeo.include.brick import lg_3010
 #include "lg_3020.inc"
 #include "lg_3021.inc"
-#include "lg_3022.inc"
+from lgeo.include.brick import lg_3022
 #include "lg_3024.inc"
 #include "lg_3069b.inc"
 #include "lg_3641.inc"
-#include "lg_3788.inc"
+from lgeo.include.brick import lg_3788
 #include "lg_3823.inc"
 #include "lg_3829c01.inc"
 #include "lg_3853.inc"
@@ -142,6 +143,7 @@ from lgeo.include.brick import lg_2441
 
 # ==== Custom Includes ====
 from lgeo.include.common import custom_macros
+from lgeo.include.common.lg_color import *
 
 
 #declare set_10036_1_car_nonmoving= union {
@@ -163,58 +165,118 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
     """
 
     part = Union(
+        Comment('''
         #*******************************************************************
-        #Objects (Step 1)
+        # Objects (Step 1)
         #*******************************************************************
-
-        # 2441 Red Car Base 7 x 4 x 2/3
+        '''),
+        Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
         custom_macros.StdBrick(
             lg_2441.solid(),
             lg_red,
             0, 3*LGPH, 0,
-            -90, 0, 0)
+            -90, 0, 0),
+
+        Comment('**** End 2441 Red Car Base 7 x 4 x 2/3 ****'),
+        Comment('''
+        #*******************************************************************
+        # Objects (Step 2)
+        #*******************************************************************
+        '''),
+        Comment('**** Start 3022 White Plate 2 x 2 ****'),
+        custom_macros.StdBrick(
+            lg_3022.solid(),
+            lg_white,
+            2.5*LGBW, 4*LGPH, 0,
+            -90, 0, 0
+        ),
+        Comment('**** End 3022 White Plate 2 x 2 ****'),
+        Comment('**** Start 2412b White Tile 1 x 2 Grille with Groove ****'),
+        custom_macros.StdBrick(
+            lg_2412b.solid(),
+            lg_white,
+            0.5*LGBW, 3*LGPH, -1.5*LGBW,
+            -90, 90, 0
+        ),
+        Comment('**** End 2412b White Tile 1 x 2 Grille with Groove ****'),
+        Comment('**** Start 2412b White Tile 1 x 2 Grille with Groove ****'),
+        custom_macros.StdBrick(
+            lg_2412b.solid(),
+            lg_white,
+            0.5*LGBW, 3*LGPH, 1.5*LGBW,
+            -90, 90, 0
+        ),
+        Comment('**** End 2412b White Tile 1 x 2 Grille with Groove ****'),
+        Comment('''
+        ********************************************************************
+        * Objects (Step 3)
+        ********************************************************************
+        '''),
+        Comment('**** Start 3022 White Plate 2 x 2 ****'),
+        custom_macros.StdBrick(
+            lg_3022.solid(),
+            lg_white,
+            -2.5*LGBW, 4*LGPH, 0,
+            -90, 0, 0
+        ),
+        Comment('**** End 3022 White Plate 2 x 2 ****'),
+        Comment('**** Start 3010 White Brick 1 x 4 ****'),
+        custom_macros.StdBrick(
+            lg_3010.solid(),
+            lg_white,
+            -1*LGBW, 5*LGPH, 0,
+            -90, 0, 0
+        ),
+        Comment('**** End 3010 White Brick 1 x 4 ****'),
+        Comment('''
+        ********************************************************************
+        * Objects (Step 4)
+        ********************************************************************
+        '''),
+        Comment('**** Start 3003 Yellow Brick 2 x 2 ****'),
+        custom_macros.StdBrick(
+            lg_3003.solid(),
+            lg_yellow,
+            0.5*LGBW, 5*LGPH, 0,
+            -90, 0, 0
+        ),
+        Comment('**** End 3003 Yellow Brick 2 x 2 ****'),
+        Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
+        custom_macros.StdBrick(
+            lg_3788.solid(),
+            lg_white,
+            2.5*LGBW, 6*LGPH, 0,
+            -90, 180, 0
+        ),
+        Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
+        Comment('''
+        ********************************************************************
+        * Objects (Step 5)
+        ********************************************************************
+        '''),
+        Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
+        custom_macros.StdBrick(
+            lg_3788.solid(),
+            lg_white,
+            -2.5*LGBW, 6*LGPH, 0,
+            -90, 0, 0
+        ),
+        Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
     )
 
     return part
 
 
-'''*************************************************************************
-Objects (Step 2)
-*************************************************************************'''
 '''
-# 3022    White   Plate 2 x 2
-StdBrick(lg_3022 , lg_white,  2.5*LGBW,   4*LGPH,         0,  -90,   0,   0)
-# 2412b   White   Tile 1 x 2 Grille with Groove
-StdBrick(lg_2412b, lg_white,  0.5*LGBW,   3*LGPH, -1.5*LGBW,  -90,  90,   0)
-StdBrick(lg_2412b, lg_white,  0.5*LGBW,   3*LGPH,  1.5*LGBW,  -90,  90,   0)
+        Comment('****  ****'),
+        custom_macros.StdBrick(
+
+        ),
+        Comment('****  ****'),
+
 '''
 
-'''*************************************************************************
-Objects (Step 3)
-*************************************************************************'''
 '''
-# 3022    White   Plate 2 x 2
-StdBrick(lg_3022 ,  lg_white, -2.5*LGBW,   4*LGPH,         0,  -90,   0,   0)
-// 3010    White   Brick 1 x 4
-StdBrick(lg_3010 ,  lg_white,    -1*LGBW,   5*LGPH,         0,  -90,   0,   0)
-'''
-
-'''*************************************************************************
-Objects (Step 4)
-*************************************************************************'''
-'''
-// 3003    Yellow  Brick 2 x 2
-StdBrick(lg_3003 , lg_yellow,  0.5*LGBW,   5*LGPH,         0,  -90,   0,   0)
-// 3788    White   Car Mudguard 2 x 4
-StdBrick(lg_3788 ,  lg_white,  2.5*LGBW,   6*LGPH,         0,  -90,   0,   0)
-'''
-
-'''*************************************************************************
-Objects (Step 5)
-*************************************************************************'''
-'''
-// 3788    White   Car Mudguard 2 x 4
-StdBrick(lg_3788 ,  lg_white, -2.5*LGBW,   6*LGPH,         0,  -90,   0,   0)
 // 3021    Red     Plate 2 x 3
 StdBrick(lg_3021 ,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
 // 3024    White   Plate 1 x 1

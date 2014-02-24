@@ -73,13 +73,16 @@ from lgeo.include.common.lg_defs import *
 
 # ==== LGEO parts ====
 
-'''*****************************************************************************
-Settings
-*****************************************************************************'''
-LDU = 0.8/20
-LGBW = LG_BRICK_WIDTH
-LGBH = LG_BRICK_HEIGHT
-LGPH = LG_PLATE_HEIGHT
+# ==== Py Pov ====
+from pov.basic.Vector import *
+
+from pov.other.Object import Object
+
+from pov.object_modifier.Rotate import Rotate
+from pov.object_modifier.Translate import Translate
+
+from pov.texture.Texture import Texture
+
 
 '''*****************************************************************************
 Macros
@@ -94,9 +97,9 @@ def UnchangedBrick(brick, texture):
 
 
 def StdBrick(brick, texture, tx, ty, tz, rx, ry, rz):
-    Object(
+    return Object(
         brick,
-        Texture(texture),
+        texture,
         Rotate(Vector(rx, ry, rz)),
         Translate(Vector(tx, ty, tz))
     )

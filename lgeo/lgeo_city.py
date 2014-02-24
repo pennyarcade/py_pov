@@ -8,19 +8,17 @@
  Auth: Chocokiko
 *****************************************************************************'''
 
-'''
-//Only load once
+#Only load once
 #ifdef(main)
-    //already loaded
+    #already loaded
 #else
 #declare main = 1;
-'''
 
 '''*****************************************************************************
 Includes
 *****************************************************************************'''
 # ==== System Includes ====
-import sys
+# import sys
 from logging import *
 
 # ==== py_pov Inchudes
@@ -54,27 +52,39 @@ from pov.texture.pattern.Gradient import Gradient
 from pov.include.colors_inc import *
 
 '''
-// #include "textures.inc"   // Standard Texture definitions
-// #include "functions.inc"  // internal functions usable in user defined functions
+// Standard Texture definitions
+// #include "textures.inc"
+// internal functions usable in user defined functions
+// #include "functions.inc"
 
 // ==== Additional Includes ====
 // Don't have all of the following included at once, it'll cost memory and time
 // to parse!
 // --- general include files ---
-// #include "arrays.inc"     // macros for manipulating arrays
-// #include "chars.inc"      // A complete library of character objects, by Ken Maeno
-// #include "consts.inc"     // Various constants and alias definitions
-// #include "debug.inc"      // contains various macros for debugging scene files
-// #include "logo.inc"       // The official POV-Ray Logo in various forms
-// #include "math.inc"       // general math functions and macros
-// #include "rad_def.inc"    // Some common radiosity settings
-// #include "rand.inc"       // macros for generating random numbers
+// macros for manipulating arrays
+// #include "arrays.inc"
+// A complete library of character objects, by Ken Maeno
+// #include "chars.inc"
+// Various constants and alias definitions
+// #include "consts.inc"
+// contains various macros for debugging scene files
+// #include "debug.inc"
+// The official POV-Ray Logo in various forms
+// #include "logo.inc"
+// general math functions and macros
+// #include "math.inc"
+// Some common radiosity settings
+// #include "rad_def.inc"
+// macros for generating random numbers
+// #include "rand.inc"
 // #include "shapes.inc"     // macros for generating various shapes
 // #include "shapes2.inc"    // some not built in basic shapes
 // #include "shapesq.inc"    // Pre-defined quartic shapes
 // #include "skies.inc"      // Ready defined sky spheres
-// #include "strings.inc"    // macros for generating and manipulating text strings
-// #include "sunpos.inc"     // macro for sun position on a given date, time, and location on earth
+// macros for generating and manipulating text strings
+// #include "strings.inc"
+// macro for sun position on a given date, time, and location on earth
+// #include "sunpos.inc"
 // #include "transforms.inc" // transformation macros
 
 // --- textures ---
@@ -86,7 +96,8 @@ from pov.include.colors_inc import *
 // #include "stones1.inc"    // Great stone-textures created by Mike Miller
 // #include "stones2.inc"    // More, done by Dan Farmer and Paul Novak
 // #include "woodmaps.inc"   // Basic wooden colormaps
-// #include "woods.inc"      // Great wooden textures created by Dan Farmer and Paul Novak
+// Great wooden textures created by Dan Farmer and Paul Novak
+// #include "woods.inc"
 '''
 
 # ==== LGEO Colors and Definitions ====
@@ -239,5 +250,4 @@ def main():
         #object {set_10036_1_house_oven_door}
     )
 
-    # print everything to stdout for now
-    print str(fix)
+    return fix

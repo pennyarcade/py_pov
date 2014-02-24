@@ -33,6 +33,9 @@ from pov.finite_solid.Cylinder import Cylinder
 from pov.finite_solid.Sphere import Sphere
 from pov.finite_solid.Torus import Torus
 
+from pov.infinite_solid.Plane import Plane
+
+from pov.object_modifier.ClippedBy import ClippedBy
 from pov.object_modifier.Rotate import Rotate
 from pov.object_modifier.Scale import Scale
 from pov.object_modifier.Translate import Translate
@@ -61,6 +64,15 @@ LG_KNOB_CORNER_SPACE = LG_CORNER_SPACE * 1.5
 LG_CROSSAXLE_WIDTH = 0.18
 LG_GRID_WIDTH = LG_BRICK_WIDTH/sqrt(2)-2*LG_KNOB_RADIUS
 LG_E = 0.01
+
+
+'''*****************************************************************************
+Custom Shorthands
+*****************************************************************************'''
+LDU = 0.8/20
+LGBW = LG_BRICK_WIDTH
+LGBH = LG_BRICK_HEIGHT
+LGPH = LG_PLATE_HEIGHT
 
 
 '''*********************************************************************
@@ -125,12 +137,14 @@ def lego_logo_text():
                 Torus(18.45, 6, ClippedBy(Plane(Vector(-40, 0, 9), 0)), Translate(Vector(40, 0, 81))),
                 Cylinder(Vector(44.05, 0, 99), Vector(-35.95, 0, 117), 6),
             ),
-            Scale(4.5/128),
+            Scale(Vector(4.5/128, 4.5/128, 4.5/128)),
             Rotate(y*90),
             Rotate(x*-90),
             Scale(Vector(-1, 1, 1)),
-            Scale(.08 * LG_KNOB_RADIUS * 2)
+            Scale(Vector(1, 1, 1) * .08 * LG_KNOB_RADIUS * 2)
         )
+    else:
+        return Object()
 
 
 def lego_logo_text_clear():
@@ -228,6 +242,9 @@ def lg_knob():
                 Translate(Vector(0, 0, LG_KNOB_HEIGHT))
             )
         )
+
+    return result
+
 
 
 # solid stud top for dotted baseplates
