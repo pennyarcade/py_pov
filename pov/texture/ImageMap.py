@@ -12,11 +12,11 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 
 from pov.basic.BlockObject import BlockObject
-from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class ImageMap(BlockObject):
     '''
+        @Todo: Docstring
     '''
 
     def __init__(self, btype, bfile, *opts, **kwargs):
@@ -26,6 +26,6 @@ class ImageMap(BlockObject):
             @todo: implement
             @todo: Syntax checks
         '''
-        super(ImageMap, self).__init__('image_map', [btype, bfile], opts, kwargs)
-
-
+        super(ImageMap, self).__init__(
+            'image_map', [btype, bfile], opts, kwargs
+        )

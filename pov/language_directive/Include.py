@@ -10,8 +10,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-import os
-from LanguageDirective import *
+from logging import debug
+
+from pov.language_directive.LanguageDirective import LanguageDirective
+
 
 class Include(LanguageDirective):
     """
@@ -52,5 +54,6 @@ class Include(LanguageDirective):
 
         # param syntax checks
 #        if not os.path.isfile(self.args[0]):
-#            raise IOError('No such file: %s%s%s' % (os.getcwd(), os.sep, self.args[0]))
-
+#            raise IOError(
+#                'No such file: %s%s%s' % (os.getcwd(), os.sep, self.args[0])
+#            )

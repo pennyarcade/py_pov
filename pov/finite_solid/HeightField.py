@@ -12,9 +12,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 import os
 from pov.basic.BlockObject import BlockObject
-from pov.basic.Vector import Vector
-from pov.other.SdlSyntaxException import SdlSyntaxException
-from pov.object_modifier.ObjectModifier import ObjectModifier
 
 
 class HeightField(BlockObject):
@@ -51,7 +48,7 @@ class HeightField(BlockObject):
             kwargs
         )
 
-    def _getBeginCode(self):
+    def _get_begin_code(self):
         """
             Start block of code
         """
@@ -69,7 +66,9 @@ class HeightField(BlockObject):
 
         # param syntax checks
         if not os.path.isfile(self.args[0]):
-            raise IOError('No such file: %s%s%s' % (os.getcwd(), os.sep, self.args[0]))
+            raise IOError(
+                'No such file: %s%s%s' % (os.getcwd(), os.sep, self.args[0])
+            )
         #@TODO: check file type
 
     def _check_opts(self):
@@ -103,4 +102,8 @@ class HeightField(BlockObject):
 
         self._validate_kwargs(valid_kw)
 
-        self._checkKwargValue('hf_type', ['gif', 'tga', 'pot', 'png', 'pgm', 'ppm', 'jpeg', 'tiff', 'sys', 'function'])
+        self._checkKwargValue(
+            'hf_type',
+            ['gif', 'tga', 'pot', 'png', 'pgm',
+            'ppm', 'jpeg', 'tiff', 'sys', 'function']
+        )

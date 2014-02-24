@@ -10,9 +10,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from logging import *
+from logging import warn
 from pov.basic.BlockObject import BlockObject
-from pov.basic.Vector import Vector
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
@@ -45,7 +44,9 @@ class Lathe(BlockObject):
             @Param type: points
             @Type type: List of Vector length 3
         '''
-        super(Lathe, self).__init__("lathe", [stype, number, points], opts, kwargs)
+        super(Lathe, self).__init__(
+            "lathe", [stype, number, points], opts, kwargs
+        )
 
     def _check_arguments(self):
         '''
@@ -57,16 +58,31 @@ class Lathe(BlockObject):
         self._validate_args(valid_args)
 
         # param syntax checks
-        valid = ['linear_spline', 'quadratic_spline', 'cubic_spline', 'bezier_spline']
-        if not self.args[0] in ['linear_spline', 'quadratic_spline', 'cubic_spline', 'bezier_spline']:
-            raise SdlSyntaxException('Invalid value for param stype got %s expected %s' % (self.args[0], valid))
+        valid = [
+            'linear_spline',
+            'quadratic_spline',
+            'cubic_spline',
+            'bezier_spline'
+        ]
+        if not self.args[0] in valid:
+            raise SdlSyntaxException(
+                'Invalid value for param stype got %s expected %s'
+                % (self.args[0], valid)
+            )
 
         if not self.args[1] > 0:
-            raise SdlSyntaxException('Invalid value for param number: got %s expected > 0' % (self.args[1]))
+            raise SdlSyntaxException(
+                'Invalid value for param number: got %s expected > 0'
+                % (self.args[1])
+            )
 
-        for v in range(2, len(self.args)):
-            if not self.args[v].__class__.__name__ == 'Vector':
-                raise SdlSyntaxException('Invalid value for param points expected elements of type Vector but got %s' % (self.args[2].__class__.__name__))
+        for idx in range(2, len(self.args)):
+            if not self.args[idx].__class__.__name__ == 'Vector':
+                raise SdlSyntaxException(
+                    'Invalid value for param points expected elements '
+                    + 'of type Vector but got %s'
+                    % (self.args[2].__class__.__name__)
+                )
 
     def _check_opts(self):
         '''
@@ -98,5 +114,3 @@ class Lathe(BlockObject):
         }
 
         self._validate_kwargs(valid_kw)
-
-

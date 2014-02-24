@@ -11,7 +11,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 from pov.basic.BlockObject import BlockObject
-from pov.basic.Vector import Vector
 
 
 class Sor(BlockObject):

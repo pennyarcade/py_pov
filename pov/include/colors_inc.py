@@ -12,11 +12,12 @@ Original Source:
     Persistence of Vision Ray Tracer version 3.5 Include File
     File: colors.inc
     Last updated: 2001.7.21
-    Description: This file contains pre-defined colors and color-manipulation macros.
+    Description: This file contains pre-defined
+                 colors and color-manipulation macros.
 
 """
 
-from logging import *
+from logging import debug
 from pov.basic.Color import Color
 from pov.basic.Vector import Vector
 from pov.language_directive.Version import Version
@@ -25,10 +26,8 @@ Version(3.5)
 
 debug("including colors.inc\n")
 
-'''
-    Persistence of Vision Raytracer Version 3.5
-    Many pre-defined colors for use in scene files.
-'''
+# Persistence of Vision Raytracer Version 3.5
+# Many pre-defined colors for use in scene files.
 
 # COLORS:
 Red = Color(rgb=Vector(1, 0, 0))

@@ -12,8 +12,8 @@ Unittests for basic classes
 
 """
 
-from logging import *
-from LanguageDirective import LanguageDirective
+from logging import debug
+from pov.language_directive.LanguageDirective import LanguageDirective
 
 
 class Version(LanguageDirective):

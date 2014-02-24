@@ -44,7 +44,9 @@ class JuliaFractal(BlockObject):
             @Type param4d: Vector
 
         '''
-        super(JuliaFractal, self).__init__("julia_fractal", [param4d], opts, kwargs)
+        super(JuliaFractal, self).__init__(
+            "julia_fractal", [param4d], opts, kwargs
+        )
 
     def _check_arguments(self):
         '''
@@ -56,7 +58,9 @@ class JuliaFractal(BlockObject):
 
         # param syntax checks
         if not len(self.args[0].v) == 4:
-            raise SdlSyntaxException('Vector param4d has more or less than 4 dimensions')
+            raise SdlSyntaxException(
+                'Vector param4d has more or less than 4 dimensions'
+            )
 
     def _check_opts(self):
         '''
@@ -92,7 +96,7 @@ class JuliaFractal(BlockObject):
 
         self._validate_kwargs(valid_kw)
 
-        algebra_type = ['quaternion', 'hypercomplex']
-        function_type = ['sqr', 'cube', 'exp', 'reciprocal', 'sin', 'asin',
-                         'sinh', 'asinh', 'cos', 'acos', 'cosh', 'acosh', 'tan',
-                         'atan', 'tanh', 'atanh', 'ln', 'pwr']
+        # algebra_type = ['quaternion', 'hypercomplex']
+        # function_type = ['sqr', 'cube', 'exp', 'reciprocal', 'sin', 'asin',
+        #                  'sinh', 'asinh', 'cos', 'acos', 'cosh', 'acosh',
+        #                  'tan', 'atan', 'tanh', 'atanh', 'ln', 'pwr']

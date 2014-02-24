@@ -13,7 +13,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 import os
 from pov.basic.SceneItem import SceneItem
 from pov.basic.Vector import Vector
-from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class Color(SceneItem):
@@ -66,15 +65,28 @@ class Color(SceneItem):
             self.vector = Vector(0, 0, 0, 0, 0)
 
             if 'red' in kwargs:
-                self.vector[0]= self.kwargs['red']
+                self.vector[0] = self.kwargs['red']
             if 'green' in kwargs:
-                self.vector[1]= self.kwargs['green']
+                self.vector[1] = self.kwargs['green']
             if 'blue' in kwargs:
-                self.vector[2]= self.kwargs['blue']
+                self.vector[2] = self.kwargs['blue']
             if 'filter' in kwargs:
-                self.vector[3]= self.kwargs['filter']
+                self.vector[3] = self.kwargs['filter']
             if 'transmit' in kwargs:
-                self.vector[4]= self.kwargs['transmit']
+                self.vector[4] = self.kwargs['transmit']
+
+        self.red = self.vector[0]
+        self.green = self.vector[1]
+        self.blue = self.vector[2]
+        self.filter = 0
+        self.transmit = 0
+
+        if len(self.vector) > 3:
+            self.vector[3]
+
+        if len(self.vector) > 4:
+            self.vector[4]
+
 
     def __str__(self):
         code = ''

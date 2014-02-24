@@ -10,11 +10,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from logging import *
 from pov.basic.BlockObject import BlockObject
-from pov.basic.Vector import Vector
-from pov.basic.SceneItem import SceneItem
-from pov.object_modifier.ObjectModifier import ObjectModifier
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
@@ -48,7 +44,9 @@ class Sphere(BlockObject):
 
         # param syntax checks
         if not len(self.args[0].v) == 3:
-            raise SdlSyntaxException('Center point Vector has more or less than 3 dimensions')
+            raise SdlSyntaxException(
+                'Center point Vector has more or less than 3 dimensions'
+            )
 
     def _check_opts(self):
         '''

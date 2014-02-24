@@ -66,5 +66,5 @@ class Photons(BlockObject):
 
         self._validate_kwargs(valid_kw)
 
-        #self._checkKwargValue('hf_type', ['gif', 'tga', 'pot', 'png', 'pgm', 'ppm', 'jpeg', 'tiff', 'sys', 'function'])
-
+        #self._checkKwargValue('hf_type', ['gif', 'tga', 'pot', 'png', 'pgm',
+        #'ppm', 'jpeg', 'tiff', 'sys', 'function'])

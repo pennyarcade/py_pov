@@ -12,7 +12,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 
 from pov.basic.BlockObject import BlockObject
-from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class LightSource(BlockObject):
@@ -56,4 +55,6 @@ class LightSource(BlockObject):
 
             @Todo: Syntax checks
         '''
-        super(LightSource, self).__init__('light_source', [location], opts, kwargs)
+        super(LightSource, self).__init__(
+            'light_source', [location], opts, kwargs
+        )

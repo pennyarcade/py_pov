@@ -12,7 +12,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 
 from pov.basic.BlockObject import BlockObject
-from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class Camera(BlockObject):
@@ -102,18 +101,16 @@ class Camera(BlockObject):
         self._validate_kwargs(valid_kw)
 
         #@TODO: Implement Camera type checking
-        foo = ['perspective',
-               'orthographic',
-               'fisheye',
-               'ultra_wide_angle',
-               'omnimax',
-               'panoramic',
-               'spherical',
-               'cylinder 1',
-               'cylinder 2',
-               'cylinder 3',
-               'cylinder 4'
-               ]
-
-
-
+        # camera_type = [
+        #     'perspective',
+        #     'orthographic',
+        #     'fisheye',
+        #     'ultra_wide_angle',
+        #     'omnimax',
+        #     'panoramic',
+        #     'spherical',
+        #     'cylinder 1',
+        #     'cylinder 2',
+        #     'cylinder 3',
+        #     'cylinder 4'
+        # ]

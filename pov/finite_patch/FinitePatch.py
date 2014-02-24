@@ -10,8 +10,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from pov.basic.SceneItem import *
-from pov.basic.BlockObject import *
+from pov.basic.BlockObject import BlockObject
 
 
 class FinitePatch(BlockObject):

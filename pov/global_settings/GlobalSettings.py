@@ -43,7 +43,9 @@ class GlobalSettings(BlockObject):
             @Todo: test __str__
         '''
 
-        super(GlobalSettings, self).__init__("global_settings", [], opts, kwargs)
+        super(GlobalSettings, self).__init__(
+            "global_settings", [], opts, kwargs
+        )
 
     def _check_opts(self):
         '''

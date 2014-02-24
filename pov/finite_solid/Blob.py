@@ -10,8 +10,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from pov.basic.BlockObject import *
-from pov.basic.Vector import *
+from pov.basic.BlockObject import BlockObject
 
 
 class Blob(BlockObject):
@@ -31,7 +30,7 @@ class Blob(BlockObject):
             hierarchy [Boolean] | sturm [Boolean] | OBJECT_MODIFIER
     """
 
-    def __init__(self, opts=[], **kwargs):
+    def __init__(self, *opts, **kwargs):
         """
             Create a Blob Object
 

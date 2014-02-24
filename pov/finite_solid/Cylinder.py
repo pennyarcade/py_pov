@@ -41,26 +41,36 @@ class Cylinder(BlockObject):
 
         # Syntax checking
         if not isinstance(basepoint, Vector):
-            raise SdlSyntaxException('Parameter basepoint is not of type Vector')
+            raise SdlSyntaxException(
+                'Parameter basepoint is not of type Vector'
+            )
         if not len(basepoint.v) == 3:
-            raise SdlSyntaxException('Base point Vector has more or less than 3 dimensions')
+            raise SdlSyntaxException(
+                'Base point Vector has more or less than 3 dimensions'
+            )
         if not isinstance(cappoint, Vector):
             raise SdlSyntaxException('Parameter cappoint is not of type Vector')
         if not len(cappoint.v) == 3:
-            raise SdlSyntaxException('Cap point Vector has more or less than 3 dimensions')
+            raise SdlSyntaxException(
+                'Cap point Vector has more or less than 3 dimensions'
+            )
         if not type(radius) in (int, float):
             raise SdlSyntaxException('Param radius is not of type int or float')
 
         # Make sure only valid Object Modifiers are passed
         for i in range(len(opts)):
             if not isinstance(opts[i], ObjectModifier):
-                raise SdlSyntaxException('Only ObjectModifier objects may be passed as options')
+                raise SdlSyntaxException(
+                    'Only ObjectModifier objects may be passed as options'
+                )
 
         for key, val in kwargs.items():
             if not key in ['open']:
                 raise SdlSyntaxException('Invalid keyword: ' + str(key))
             if not type(val) == bool:
-                raise SdlSyntaxException('Value of keyword %s is not boolean' % key)
+                raise SdlSyntaxException(
+                    'Value of keyword %s is not boolean' % key
+                )
 
         super(Cylinder, self).__init__(
             "cylinder",

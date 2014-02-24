@@ -10,9 +10,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from logging import *
+from logging import debug
+
 from pov.basic.BlockObject import BlockObject
-from pov.other.SdlSyntaxException import SdlSyntaxException
+#from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class ColorMap(BlockObject):
@@ -38,12 +39,10 @@ class ColorMap(BlockObject):
         '''
         super(ColorMap, self).__init__('color_map', [cmap], opts, kwargs)
 
-    def _getBeginCode(self):
+    def _get_begin_code(self):
         """
             Start block of code
         """
-        global indentation
-
         code = "  " * self._getIndent() + self.name + self._block_begin()
 
         cmap = self.args[0]
@@ -71,9 +70,9 @@ class ColourMap(ColorMap):
             The brackets here are part of the map entry.
     '''
 
-    def __init__(self, map, *opts, **kwargs):
+    def __init__(self, cmap, *opts, **kwargs):
         '''
             Create ColorMap object
         '''
-        super(ColorMap, self).__init__('colour_map', [map], opts, kwargs)
+        super(ColourMap, self).__init__('colour_map', [cmap], opts, kwargs)
 

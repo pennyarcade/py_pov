@@ -45,7 +45,9 @@ class Plane(BlockObject):
 
         # param syntax checks
         if not len(self.args[0].v) == 3:
-            raise SdlSyntaxException('Normal vector has more or less than 3 dimensions')
+            raise SdlSyntaxException(
+                'Normal vector has more or less than 3 dimensions'
+            )
 
     def _check_opts(self):
         '''

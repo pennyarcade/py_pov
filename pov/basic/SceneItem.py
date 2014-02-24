@@ -399,6 +399,21 @@ class SceneItem(object):
             else:
                 raise IndexError()
 
+    def __delitem__(self, i):
+        """
+            Delete Item magic method
+
+            e.g. foo[i] = bar
+        """
+        if i < len(self.args):
+            del self.args[i]
+        else:
+            i -= len(self.args)
+            if i < len(self.opts):
+                del self.opts[i]
+            else:
+                raise IndexError()
+
     def __getitem__(self, i):
         """
             Get Item magic method
@@ -429,6 +444,9 @@ class SceneItem(object):
         d = self.kwargs == other.kwargs
         debug(str(self.kwargs) + ' = ' + str(self.kwargs))
         return a & b & c & d
+
+    def __len__(self):
+        return len(self.args) + len(self.opts)
 
     #---------------------------------------------------------------------------
     # Public methods

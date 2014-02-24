@@ -48,31 +48,37 @@ class Box(BlockObject):
             photons { OBJECT_PHOTON_ITEMS }
 
     """
-    def __init__(self, v1, v2, *opts, **kwargs):
+    def __init__(self, vector1, vector2, *opts, **kwargs):
         """
             Construct a box object
 
-            @param v1: vertex of box
-            @type v1: Vector()
-            @param v2: opposing vertex of box
-            @type v2: Vector()
+            @param vector1: vertex of box
+            @type vector1: Vector()
+            @param vector2: opposing vertex of box
+            @type vector2: Vector()
 
             @Todo: Use Syntax checking Methods (See JuliaFractal)
         """
 
         # Syntax checking
-        if not isinstance(v1, Vector):
+        if not isinstance(vector1, Vector):
             raise SdlSyntaxException('Parameter v1 not of type Vector')
-        if not len(v1.v) == 3:
-            raise SdlSyntaxException('Vector v1 has more or less than 3 dimensions')
-        if not isinstance(v2, Vector):
+        if not len(vector1.v) == 3:
+            raise SdlSyntaxException(
+                'Vector v1 has more or less than 3 dimensions'
+            )
+        if not isinstance(vector2, Vector):
             raise SdlSyntaxException('Parameter v2 not of type Vector')
-        if not len(v2.v) == 3:
-            raise SdlSyntaxException('Vector v2 has more or less than 3 dimensions')
+        if not len(vector2.v) == 3:
+            raise SdlSyntaxException(
+                'Vector v2 has more or less than 3 dimensions'
+            )
 
         # make sure only valid object modifiers are passed
         for i in range(len(opts)):
             if not isinstance(opts[i], ObjectModifier):
-                raise SdlSyntaxException('Only ObjectModifier objects may be passed as options')
+                raise SdlSyntaxException(
+                    'Only ObjectModifier objects may be passed as options'
+                )
 
-        super(Box, self).__init__("box", [v1, v2], opts, kwargs)
+        super(Box, self).__init__("box", [vector1, vector2], opts, kwargs)

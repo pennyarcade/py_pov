@@ -18,7 +18,7 @@ from logging import *
 
 sys.path.append('../../')
 
-from include.colors_inc import *
+from pov.include.colors_inc import *
 
 
 class ColorsIncTestCase(unittest.TestCase):

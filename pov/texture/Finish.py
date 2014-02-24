@@ -43,6 +43,7 @@ class Finish(BlockObject):
         """
         super(Finish, self).__init__("finish", (), opts, kwargs)
 
-        if 'conserve_energy' in self.kwargs and self.kwargs['conserve_energy'] is True:
+        if 'conserve_energy' in self.kwargs \
+                and self.kwargs['conserve_energy'] is True:
             del self.kwargs['conserve_energy']
             self.args.append('conserve_energy')

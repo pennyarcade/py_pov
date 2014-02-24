@@ -26,7 +26,7 @@ class BlockObject(SceneItem):
         debug("BlockObject.__str__ %s, %s, %s", self.name, self.args, self.opts)
 
         code = ""
-        code += self._getBeginCode()
+        code += self._get_begin_code()
         for opt in self.opts:
             if isinstance(opt, SceneItem):
                 code += str(opt)
@@ -38,7 +38,7 @@ class BlockObject(SceneItem):
 
         return code
 
-    def _getBeginCode(self):
+    def _get_begin_code(self):
         """
             Start block of code
         """
