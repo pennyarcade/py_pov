@@ -246,6 +246,14 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             lg_3788.solid(),
             lg_white,
             2.5*LGBW, 6*LGPH, 0,
+            -90, 180, 0
+        ),
+        Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
+        Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
+        custom_macros.StdBrick(
+            lg_3788.solid(),
+            lg_white,
+            -2.5*LGBW, 6*LGPH, 0,
             -90, 0, 0
         ),
         Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
@@ -267,8 +275,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
 Objects (Step 5)
 *************************************************************************'''
 '''
-// 3788    White   Car Mudguard 2 x 4
-StdBrick(lg_3788 ,  lg_white, -2.5*LGBW,   6*LGPH,         0,  -90,   0,   0)
+
 // 3021    Red     Plate 2 x 3
 StdBrick(lg_3021 ,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
 // 3024    White   Plate 1 x 1

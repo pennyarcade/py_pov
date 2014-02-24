@@ -12,20 +12,30 @@
 *                                                                             */
 *****************************************************************************'''
 
-'''
-#ifdef(lg_3788)
-#else
- #declare lg_angle = atan2(0.44, 0.38)*180/pi;
-#declare lg_3788 =
-'''
+from lgeo.include.common.lg_defs import *
+from lgeo.include.common.brick_subparts import *
+
+from pov.basic.Vector import Vector
+
+from pov.csg.Union import Union
+
+from pov.finite_solid.Box import Box
+
+from pov.object_modifier.Translate import Translate
+from pov.object_modifier.Rotate import Rotate
+
+from pov.other.Object import Object
+
+
+lg_angle = atan2(0.44, 0.38)*180/pi
 
 
 def solid():
-    rotpart= Union();
+    mainpart= Union()
 
-    ROT = 0;
+    ROT = 0
     while (ROT < 2):
-        rotpart.append(
+        rotpart = Union(
             Sphere(
                 Vector(LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LG_BRICK_WIDTH-LG_CORNER_SPACE, -LG_CORNER_SPACE),
                 LG_CORNER_SPACE
@@ -307,11 +317,11 @@ def solid():
                 Rotate(Vector(0, 0, 180))
             )
 
-        ROT = ROT +1;
+        mainpart.append(rotpart)
+        ROT = ROT + 1
     #end
 
-    return Union(
-        rotpart,
+    mainpart.append(
         Difference(
             Box(
                 Vector(LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_BRICK_WIDTH+LG_CORNER_SPACE, -LG_PLATE_HEIGHT),
@@ -342,7 +352,7 @@ def solid():
         )
     )
 
-
+    return mainpart
 
 '''
 #declare lg_3788_clear =
