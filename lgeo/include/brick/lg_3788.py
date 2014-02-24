@@ -282,12 +282,10 @@ def solid():
             ),
             Box(
                 Vector(LG_BRICK_WIDTH-0.12+LG_CORNER_SPACE, 2*LG_BRICK_WIDTH-LG_CORNER_SPACE, -2*LG_PLATE_HEIGHT),
-                # Todo 0.12e == 0.12*10^0 oder 0.12* math.e
                 Vector(LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LG_BRICK_WIDTH-0.12e0, -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE)
             ),
             Box(
                 Vector(-LG_BRICK_WIDTH+0.12-LG_CORNER_SPACE, 2*LG_BRICK_WIDTH-LG_CORNER_SPACE, -2*LG_PLATE_HEIGHT),
-                # Todo 0.12e == 0.12*10^0 oder 0.12* math.e
                 Vector(-LG_BRICK_WIDTH+LG_CORNER_SPACE, 2*LG_BRICK_WIDTH-0.12e0, -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE)
             ),
             Object(
