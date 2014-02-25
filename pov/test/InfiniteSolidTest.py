@@ -11,24 +11,33 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 import unittest
-from logging import *
+from logging import debug
 from pov.infinite_solid.Plane import Plane
 from pov.basic.SceneItem import SceneItem
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class PlaneTestCase(unittest.TestCase):
+    '''
+        Test Plane class
+    '''
     def setUp(self):
-        self.SUT = Plane(
+        self.sut = Plane(
             (1, 2, 3),
             4,
             hollow=True
         )
 
     def test_creation(self):
-        self.assertIsInstance(self.SUT, Plane)
-        self.assertIsInstance(self.SUT, SceneItem)
+        '''
+            Test creation and inheritance of object
+        '''
+        self.assertIsInstance(self.sut, Plane)
+        self.assertIsInstance(self.sut, SceneItem)
 
     def test_creation_vector_to_big(self):
+        '''
+            Test vector parameter
+        '''
         with self.assertRaisesRegexp(SdlSyntaxException, 'Normal vector has more or less than 3 dimensions'):
-            self.SUT = Plane((1, 2, 3, 4), 5)
+            self.sut = Plane((1, 2, 3, 4), 5)

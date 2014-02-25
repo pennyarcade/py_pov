@@ -10,15 +10,15 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-from BasicTest import *
-from AthEffTest import *
-from CsgTest import *
-from EndToEndTest import *
-from FinitePatchTest import *
-from FiniteSolidTest import *
-from GlobalSettingsTest import *
-from InfiniteSolidTest import *
-from LanguageDirectiveTest import *
-from ObjectModifierTest import *
-from OtherTest import *
-from TextureTest import *
+import pov.test.BasicTest
+import pov.test.AthEffTest
+import pov.test.CsgTest
+import pov.test.EndToEndTest
+import pov.test.FinitePatchTest
+import pov.test.FiniteSolidTest
+import pov.test.GlobalSettingsTest
+import pov.test.InfiniteSolidTest
+import pov.test.LanguageDirectiveTest
+import pov.test.ObjectModifierTest
+import pov.test.OtherTest
+import pov.test.TextureTest

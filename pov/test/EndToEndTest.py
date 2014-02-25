@@ -15,12 +15,12 @@ Some modifications by W.T. Bridgman, 2006-2007.
 import os
 import unittest
 import difflib
-from logging import *
+from logging import debug
 
 from pov.atmeff.Fog import Fog
 from pov.atmeff.SkySphere import SkySphere
 from pov.basic.SceneFile import SceneFile
-from pov.basic.Vector import *
+from pov.basic.Vector import Vector, x, y, z
 from pov.basic.Color import Color
 from pov.global_settings.GlobalSettings import GlobalSettings
 from pov.finite_solid.Sphere import Sphere
@@ -41,95 +41,99 @@ from pov.texture.ImageMap import ImageMap
 
 
 class EndToEndTestCase(unittest.TestCase):
+    '''
+        End To End Tests
+    '''
+
     #@unittest.skip
-    def test_Scene1(self):
+    def test_scene1(self):
         '''
             Example taken from:
             http://www.f-lohmueller.de/pov_tut/basic/povkurs3.htm
         '''
-        le = os.linesep
+        lsep = os.linesep
 
-        ref =  "#version 3.6;" + le
-        ref += "global_settings {" + le
-        ref += "  assumed_gamma 1.0" + le
-        ref += "}" + le
-        ref += "#default {" + le
-        ref += "  finish {" + le
-        ref += "    ambient 0.1" + le
-        ref += "    diffuse 0.9" + le
-        ref += "  }" + le
-        ref += "}" + le
-        ref += "#include \"fixture/colors.inc\"" + le
-        ref += "#include \"fixture/textures.inc\"" + le
-        ref += "camera {" + le
-        ref += "  location <0.0, 1.0, -3.0>" + le
-        ref += "  angle 75" + le
-        ref += "  right <1.33333333333, 0.0, 0.0>" + le
-        ref += "  look_at <0.0, 1.0, 0.0>" + le
-        ref += "}" + le
-        ref += "light_source {" + le
-        ref += "  <1500, 3000, -2500>" + le
-        ref += "  color White" + le
-        ref += "}" + le
-        ref += "plane {" + le
-        ref += "  <0.0, 1.0, 0.0>, 1.0" + le
-        ref += "  texture {" + le
-        ref += "    pigment {" + le
-        ref += "      bozo" + le
-        ref += "      color_map {" + le
-        ref += "        [0.0 color rgb <0.05, 0.15, 0.45>]" + le
-        ref += "        [0.5 color rgb <0.05, 0.15, 0.45>]" + le
-        ref += "        [0.85 color rgb <0.2, 0.2, 0.2>]" + le
-        ref += "        [1.0 color rgb <0.5, 0.5, 0.5>]" + le
-        ref += "        [0.7 color rgb <1.0, 1.0, 1.0>]" + le
-        ref += "      }" + le
-        ref += "      scale <2.5, 2.5, 3.75>" + le
-        ref += "      translate <0.0, 0.0, 0.0>" + le
-        ref += "      turbulence 0.92" + le
-        ref += "    }" + le
-        ref += "    finish {" + le
-        ref += "      ambient 1.0" + le
-        ref += "      diffuse 0.0" + le
-        ref += "    }" + le
-        ref += "  }" + le
-        ref += "  hollow" + le
-        ref += "  scale 10000.0" + le
-        ref += "}" + le
-        ref += "fog {" + le
-        ref += "  color rgb <0.8, 0.8, 0.8>" + le
-        ref += "  distance 50.0" + le
-        ref += "  fog_offset 0.1" + le
-        ref += "  fog_alt 1.5" + le
-        ref += "  fog_type 2" + le
-        ref += "  turbulence 1.8" + le
-        ref += "}" + le
-        ref += "plane {" + le
-        ref += "  <0.0, 1.0, 0.0>, 0.0" + le
-        ref += "  texture {" + le
-        ref += "    pigment {" + le
-        ref += "      color rgb <0.22, 0.45, 0.0>" + le
-        ref += "    }" + le
-        ref += "    normal {" + le
-        ref += "      bumps 0.75" + le
-        ref += "      scale 0.015" + le
-        ref += "    }" + le
-        ref += "    finish {" + le
-        ref += "      phong 0.1" + le
-        ref += "    }" + le
-        ref += "  }" + le
-        ref += "}" + le
-        ref += "sphere {" + le
-        ref += "  <0.0, 0.0, 0.0>, 0.75" + le
-        ref += "  texture {" + le
-        ref += "    pigment {" + le
-        ref += "      color rgb <0.9, 0.55, 0.0>" + le
-        ref += "    }" + le
-        ref += "    finish {" + le
-        ref += "      phong 1.0" + le
-        ref += "    }" + le
-        ref += "  }" + le
-        ref += "  translate <0.85, 1.1, 0.0>" + le
-        ref += "}" + le
+        ref =  "#version 3.6;" + lsep
+        ref += "global_settings {" + lsep
+        ref += "  assumed_gamma 1.0" + lsep
+        ref += "}" + lsep
+        ref += "#default {" + lsep
+        ref += "  finish {" + lsep
+        ref += "    ambient 0.1" + lsep
+        ref += "    diffuse 0.9" + lsep
+        ref += "  }" + lsep
+        ref += "}" + lsep
+        ref += "#include \"fixture/colors.inc\"" + lsep
+        ref += "#include \"fixture/textures.inc\"" + lsep
+        ref += "camera {" + lsep
+        ref += "  location <0.0, 1.0, -3.0>" + lsep
+        ref += "  anglsep 75" + lsep
+        ref += "  right <1.33333333333, 0.0, 0.0>" + lsep
+        ref += "  look_at <0.0, 1.0, 0.0>" + lsep
+        ref += "}" + lsep
+        ref += "light_source {" + lsep
+        ref += "  <1500, 3000, -2500>" + lsep
+        ref += "  color White" + lsep
+        ref += "}" + lsep
+        ref += "plane {" + lsep
+        ref += "  <0.0, 1.0, 0.0>, 1.0" + lsep
+        ref += "  texture {" + lsep
+        ref += "    pigment {" + lsep
+        ref += "      bozo" + lsep
+        ref += "      color_map {" + lsep
+        ref += "        [0.0 color rgb <0.05, 0.15, 0.45>]" + lsep
+        ref += "        [0.5 color rgb <0.05, 0.15, 0.45>]" + lsep
+        ref += "        [0.85 color rgb <0.2, 0.2, 0.2>]" + lsep
+        ref += "        [1.0 color rgb <0.5, 0.5, 0.5>]" + lsep
+        ref += "        [0.7 color rgb <1.0, 1.0, 1.0>]" + lsep
+        ref += "      }" + lsep
+        ref += "      scalsep <2.5, 2.5, 3.75>" + lsep
+        ref += "      translate <0.0, 0.0, 0.0>" + lsep
+        ref += "      turbulsepnce 0.92" + lsep
+        ref += "    }" + lsep
+        ref += "    finish {" + lsep
+        ref += "      ambient 1.0" + lsep
+        ref += "      diffuse 0.0" + lsep
+        ref += "    }" + lsep
+        ref += "  }" + lsep
+        ref += "  hollow" + lsep
+        ref += "  scalsep 10000.0" + lsep
+        ref += "}" + lsep
+        ref += "fog {" + lsep
+        ref += "  color rgb <0.8, 0.8, 0.8>" + lsep
+        ref += "  distance 50.0" + lsep
+        ref += "  fog_offset 0.1" + lsep
+        ref += "  fog_alt 1.5" + lsep
+        ref += "  fog_type 2" + lsep
+        ref += "  turbulsepnce 1.8" + lsep
+        ref += "}" + lsep
+        ref += "plane {" + lsep
+        ref += "  <0.0, 1.0, 0.0>, 0.0" + lsep
+        ref += "  texture {" + lsep
+        ref += "    pigment {" + lsep
+        ref += "      color rgb <0.22, 0.45, 0.0>" + lsep
+        ref += "    }" + lsep
+        ref += "    normal {" + lsep
+        ref += "      bumps 0.75" + lsep
+        ref += "      scalsep 0.015" + lsep
+        ref += "    }" + lsep
+        ref += "    finish {" + lsep
+        ref += "      phong 0.1" + lsep
+        ref += "    }" + lsep
+        ref += "  }" + lsep
+        ref += "}" + lsep
+        ref += "sphere {" + lsep
+        ref += "  <0.0, 0.0, 0.0>, 0.75" + lsep
+        ref += "  texture {" + lsep
+        ref += "    pigment {" + lsep
+        ref += "      color rgb <0.9, 0.55, 0.0>" + lsep
+        ref += "    }" + lsep
+        ref += "    finish {" + lsep
+        ref += "      phong 1.0" + lsep
+        ref += "    }" + lsep
+        ref += "  }" + lsep
+        ref += "  translate <0.85, 1.1, 0.0>" + lsep
+        ref += "}" + lsep
 
         fix = SceneFile('test.pov')
         fix.append(Version(3.6))
@@ -251,56 +255,56 @@ class EndToEndTestCase(unittest.TestCase):
         '''
             examples/basic_scene.pov
         '''
-        le = os.linesep
+        lsep = os.linesep
 
-        ref =  '#version 3.6;' + le
-        ref += '#include "fixture/colors.inc"' + le
-        ref += 'global_settings {' + le
-        ref += '  assumed_gamma 1.0' + le
-        ref += '}' + le
-        ref += 'camera {' + le
-        ref += '  location <0.0, 0.5, -4.0>' + le
-        ref += '  look_at <0.0, 0.0, 0.0>' + le
-        ref += '  right <1.33333333333, 0.0, 0.0>' + le
-        ref += '  direction <0.0, 0.0, 1.5>' + le
-        ref += '}' + le
-        ref += 'sky_sphere {' + le
-        ref += '  pigment {' + le
-        ref += '    color_map {' + le
-        ref += '      [0.0 color rgb <0.6, 0.7, 1.0>]' + le
-        ref += '      [0.7 color rgb <0.0, 0.1, 0.8>]' + le
-        ref += '    }' + le
-        ref += '    gradient <0.0, 1.0, 0.0>' + le
-        ref += '  }' + le
-        ref += '}' + le
-        ref += 'light_source {' + le
-        ref += '  <0.0, 0.0, 0.0>' + le
-        ref += '  color rgb <1.0, 1.0, 1.0>' + le
-        ref += '  translate <-30.0, 30.0, -30.0>' + le
-        ref += '}' + le
-        ref += 'plane {' + le
-        ref += '  <0.0, 1.0, 0.0>, -1' + le
-        ref += '  pigment {' + le
-        ref += '    color rgb <0.7, 0.5, 0.3>' + le
-        ref += '  }' + le
-        ref += '}' + le
-        ref += 'sphere {' + le
-        ref += '  <0.0, 0.0, 0.0>, 1.0' + le
-        ref += '  texture {' + le
-        ref += '    pigment {' + le
-        ref += '      radial color_map {' + le
-        ref += '        [0.0 color rgb <1.0, 0.4, 0.2>]' + le
-        ref += '        [1.0 color rgb <1.0, 0.4, 0.2>]' + le
-        ref += '        [0.66 color rgb <0.4, 1.0, 0.2>]' + le
-        ref += '        [0.33 color rgb <0.2, 0.4, 1.0>]' + le
-        ref += '      }' + le
-        ref += '      frequency 8' + le
-        ref += '    }' + le
-        ref += '    finish {' + le
-        ref += '      specular 0.6' + le
-        ref += '    }' + le
-        ref += '  }' + le
-        ref += '}' + le
+        ref =  '#version 3.6;' + lsep
+        ref += '#include "fixture/colors.inc"' + lsep
+        ref += 'global_settings {' + lsep
+        ref += '  assumed_gamma 1.0' + lsep
+        ref += '}' + lsep
+        ref += 'camera {' + lsep
+        ref += '  location <0.0, 0.5, -4.0>' + lsep
+        ref += '  look_at <0.0, 0.0, 0.0>' + lsep
+        ref += '  right <1.33333333333, 0.0, 0.0>' + lsep
+        ref += '  direction <0.0, 0.0, 1.5>' + lsep
+        ref += '}' + lsep
+        ref += 'sky_sphere {' + lsep
+        ref += '  pigment {' + lsep
+        ref += '    color_map {' + lsep
+        ref += '      [0.0 color rgb <0.6, 0.7, 1.0>]' + lsep
+        ref += '      [0.7 color rgb <0.0, 0.1, 0.8>]' + lsep
+        ref += '    }' + lsep
+        ref += '    gradient <0.0, 1.0, 0.0>' + lsep
+        ref += '  }' + lsep
+        ref += '}' + lsep
+        ref += 'light_source {' + lsep
+        ref += '  <0.0, 0.0, 0.0>' + lsep
+        ref += '  color rgb <1.0, 1.0, 1.0>' + lsep
+        ref += '  translate <-30.0, 30.0, -30.0>' + lsep
+        ref += '}' + lsep
+        ref += 'plane {' + lsep
+        ref += '  <0.0, 1.0, 0.0>, -1' + lsep
+        ref += '  pigment {' + lsep
+        ref += '    color rgb <0.7, 0.5, 0.3>' + lsep
+        ref += '  }' + lsep
+        ref += '}' + lsep
+        ref += 'sphere {' + lsep
+        ref += '  <0.0, 0.0, 0.0>, 1.0' + lsep
+        ref += '  texture {' + lsep
+        ref += '    pigment {' + lsep
+        ref += '      radial color_map {' + lsep
+        ref += '        [0.0 color rgb <1.0, 0.4, 0.2>]' + lsep
+        ref += '        [1.0 color rgb <1.0, 0.4, 0.2>]' + lsep
+        ref += '        [0.66 color rgb <0.4, 1.0, 0.2>]' + lsep
+        ref += '        [0.33 color rgb <0.2, 0.4, 1.0>]' + lsep
+        ref += '      }' + lsep
+        ref += '      frequency 8' + lsep
+        ref += '    }' + lsep
+        ref += '    finish {' + lsep
+        ref += '      specular 0.6' + lsep
+        ref += '    }' + lsep
+        ref += '  }' + lsep
+        ref += '}' + lsep
 
         fix = SceneFile('test.pov')
         fix.append(Version(3.6))
@@ -376,71 +380,71 @@ class EndToEndTestCase(unittest.TestCase):
         self.assertEqual(ref, str(fix), msg)
 
     #@unittest.skip
-    def test_Checkered_Floor_Example(self):
+    def test_checkered_floor_example(self):
         '''
             examples/checkered_floor.pov
         '''
-        le = os.linesep
+        lsep = os.linesep
 
-        ref =  '#version 3.6;' + le
-        ref += '#include "fixture/colors.inc"' + le
-        ref += 'global_settings {' + le
-        ref += '  assumed_gamma 1.0' + le
-        ref += '  max_trace_level 5' + le
-        ref += '}' + le
-        ref += 'camera {' + le
-        ref += '  location <0.0, 0.5, -4.0>' + le
-        ref += '  look_at <0.0, 0.0, 0.0>' + le
-        ref += '  right <1.33333333333, 0.0, 0.0>' + le
-        ref += '  direction <0.0, 0.0, 1.5>' + le
-        ref += '}' + le
-        ref += 'sky_sphere {' + le
-        ref += '  pigment {' + le
-        ref += '    color_map {' + le
-        ref += '      [0.0 color rgb <0.6, 0.7, 1.0>]' + le
-        ref += '      [0.7 color rgb <0.0, 0.1, 0.8>]' + le
-        ref += '    }' + le
-        ref += '    gradient <0.0, 1.0, 0.0>' + le
-        ref += '  }' + le
-        ref += '}' + le
-        ref += 'light_source {' + le
-        ref += '  <0, 0, 0>' + le
-        ref += '  color rgb <1, 1, 1>' + le
-        ref += '  translate <-30, 30, -30>' + le
-        ref += '}' + le
-        ref += 'plane {' + le
-        ref += '  <0.0, 1.0, 0.0>, -1' + le
-        ref += '  texture {' + le
-        ref += '    pigment {' + le
-        ref += '      checker' + le
-        ref += '      color rgb <1, 1, 1>' + le
-        ref += '      color rgbft <0, 0, 1, 0, 0>' + le
-        ref += '      scale 0.5' + le
-        ref += '    }' + le
-        ref += '    finish {' + le
-        ref += '      ambient 0.1' + le
-        ref += '      diffuse 0.8' + le
-        ref += '    }' + le
-        ref += '  }' + le
-        ref += '}' + le
-        ref += 'sphere {' + le
-        ref += '  <0, 0, 0>, 1' + le
-        ref += '  texture {' + le
-        ref += '    pigment {' + le
-        ref += '      color rgb <0.8, 0.8, 1.0>' + le
-        ref += '    }' + le
-        ref += '    finish {' + le
-        ref += '      conserve_energy' + le
-        ref += '      reflection {' + le
-        ref += '        metallic' + le
-        ref += '        0.8' + le
-        ref += '      }' + le
-        ref += '      diffuse 0.3' + le
-        ref += '      ambient 0.0' + le
-        ref += '      specular 0.6' + le
-        ref += '    }' + le
-        ref += '  }' + le
-        ref += '}' + le
+        ref =  '#version 3.6;' + lsep
+        ref += '#include "fixture/colors.inc"' + lsep
+        ref += 'global_settings {' + lsep
+        ref += '  assumed_gamma 1.0' + lsep
+        ref += '  max_trace_lsepvel 5' + lsep
+        ref += '}' + lsep
+        ref += 'camera {' + lsep
+        ref += '  location <0.0, 0.5, -4.0>' + lsep
+        ref += '  look_at <0.0, 0.0, 0.0>' + lsep
+        ref += '  right <1.33333333333, 0.0, 0.0>' + lsep
+        ref += '  direction <0.0, 0.0, 1.5>' + lsep
+        ref += '}' + lsep
+        ref += 'sky_sphere {' + lsep
+        ref += '  pigment {' + lsep
+        ref += '    color_map {' + lsep
+        ref += '      [0.0 color rgb <0.6, 0.7, 1.0>]' + lsep
+        ref += '      [0.7 color rgb <0.0, 0.1, 0.8>]' + lsep
+        ref += '    }' + lsep
+        ref += '    gradient <0.0, 1.0, 0.0>' + lsep
+        ref += '  }' + lsep
+        ref += '}' + lsep
+        ref += 'light_source {' + lsep
+        ref += '  <0, 0, 0>' + lsep
+        ref += '  color rgb <1, 1, 1>' + lsep
+        ref += '  translate <-30, 30, -30>' + lsep
+        ref += '}' + lsep
+        ref += 'plane {' + lsep
+        ref += '  <0.0, 1.0, 0.0>, -1' + lsep
+        ref += '  texture {' + lsep
+        ref += '    pigment {' + lsep
+        ref += '      checker' + lsep
+        ref += '      color rgb <1, 1, 1>' + lsep
+        ref += '      color rgbft <0, 0, 1, 0, 0>' + lsep
+        ref += '      scalsep 0.5' + lsep
+        ref += '    }' + lsep
+        ref += '    finish {' + lsep
+        ref += '      ambient 0.1' + lsep
+        ref += '      diffuse 0.8' + lsep
+        ref += '    }' + lsep
+        ref += '  }' + lsep
+        ref += '}' + lsep
+        ref += 'sphere {' + lsep
+        ref += '  <0, 0, 0>, 1' + lsep
+        ref += '  texture {' + lsep
+        ref += '    pigment {' + lsep
+        ref += '      color rgb <0.8, 0.8, 1.0>' + lsep
+        ref += '    }' + lsep
+        ref += '    finish {' + lsep
+        ref += '      conserve_energy' + lsep
+        ref += '      reflsepction {' + lsep
+        ref += '        metallic' + lsep
+        ref += '        0.8' + lsep
+        ref += '      }' + lsep
+        ref += '      diffuse 0.3' + lsep
+        ref += '      ambient 0.0' + lsep
+        ref += '      specular 0.6' + lsep
+        ref += '    }' + lsep
+        ref += '  }' + lsep
+        ref += '}' + lsep
 
         fix = SceneFile('test.pov')
         fix.append(Version(3.6))
@@ -526,9 +530,10 @@ class EndToEndTestCase(unittest.TestCase):
 
     #@unittest.skip
     def test_image_map_example(self):
-        le = os.linesep
-
-        ref = le.join([
+        '''
+            @TODO: Apidoc
+        '''
+        ref = os.linesep.join([
             '#version 3.6;',
             '#include "fixture/colors.inc"',
             'global_settings {',

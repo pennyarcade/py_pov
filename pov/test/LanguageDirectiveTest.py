@@ -12,7 +12,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 import unittest
 import os
-from logging import *
+from logging import debug
 from pov.basic.SceneItem import SceneItem
 from pov.language_directive.LanguageDirective import LanguageDirective
 from pov.language_directive.Default import Default
@@ -51,7 +51,12 @@ class IncludeTestCase(unittest.TestCase):
         self.assertEqual(str(self.SUT), second)
 
     def test_create_non_existant_file(self):
-        with self.assertRaisesRegexp(IOError, 'No such file: %s%s%s' % (os.getcwd(), os.sep, 'fixture/nonexistant.inc')):
+        with self.assertRaisesRegexp(
+            IOError,
+            'No such file: %s%s%s' % (
+                os.getcwd(), os.sep, 'fixture/nonexistant.inc'
+            )
+        ):
             self.SUT = Include('fixture/nonexistant.inc')
 
 
@@ -70,7 +75,10 @@ class VersionTestCase(unittest.TestCase):
         self.assertEqual(str(self.SUT), second)
 
     def test_create_wrong_type(self):
-        with self.assertRaisesRegexp(SdlSyntaxException, 'Value of Argument 0 is expectet to be type float but got str'):
+        with self.assertRaisesRegexp(
+            SdlSyntaxException,
+            'Value of Argument 0 is expectet to be type float but got str'
+        ):
             self.SUT = Version('foo')
 
 

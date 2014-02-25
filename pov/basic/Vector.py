@@ -22,70 +22,74 @@ class Vector:
     def __init__(self, *args):
         if len(args) == 1:
             if isinstance(args[0], Vector):
-                self.v = args[0].v
+                self.values = args[0].values
             else:
-                self.v = list(args[0])
+                self.values = list(args[0])
         else:
-            self.v = list(args)
-        float(self.v[0])    # cast to float
+            self.values = list(args)
+        float(self.values[0])    # cast to float
 
     def __str__(self):
-        return "<%s>" % (", ".join([str(item)for item in self.v]))
+        return "<%s>" % (", ".join([str(item)for item in self.values]))
 
     def __repr__(self):
-        return "Vector%s" % (tuple(self.v),)
+        return "Vector%s" % (tuple(self.values),)
 
     def __setitem__(self, i, item):
-        debug("__setitem__: %s %s %s", str(self.v), i, item)
-        self.v[i] = item
+        debug("__setitem__: %s %s %s", str(self.values), i, item)
+        self.values[i] = item
 
     def __getitem__(self, i):
-        return self.v[i]
+        return self.values[i]
 
     def __mul__(self, other):
         " scalar multiplication "
         if not type(other) in (float, int):
             raise SdlSyntaxException('Parameter not of type float or int')
-        return Vector([r*other for r in self.v])
+        return Vector([r*other for r in self.values])
 
     def __rmul__(self, other):
         " scalar multiplication "
         if not type(other) in (float, int):
             raise SdlSyntaxException('Parameter not of type float or int')
-        return Vector([r*other for r in self.v])
+        return Vector([r*other for r in self.values])
 
     def __div__(self, other):
         if not type(other) in (float, int):
             raise SdlSyntaxException('Parameter not of type float or int')
-        return Vector([r/other for r in self.v])
+        return Vector([r/other for r in self.values])
 
     def __add__(self, other):
         if not isinstance(other, Vector):
             raise SdlSyntaxException('Parameter not of type Vector')
-        return Vector([self.v[i]+other.v[i] for i in range(len(self.v))])
+        return Vector(
+            [self.values[i]+other.values[i] for i in range(len(self.values))]
+        )
 
     def __sub__(self, other):
         if not isinstance(other, Vector):
             raise SdlSyntaxException('Parameter not of type Vector')
-        return Vector([self.v[i]-other.v[i] for i in range(len(self.v))])
+        return Vector(
+            [self.values[i]-other.values[i] for i in range(len(self.values))]
+        )
 
     def __neg__(self):
-        return Vector([-item for item in self.v])
+        return Vector([-item for item in self.values])
 
     def __eq__(self, other):
-        return self.v == other.v
+        return self.values == other.values
 
     def norm(self):
         """Compute norm of vector."""
         result = 0.0
-        for item in self.v:
+        for item in self.values:
             result += item*item
         return sqrt(result)
 
     def normalize(self):
         """Normalize a vector"""
         div = self.norm()
-        result = Vector([item/div for item in self.v])
+        result = Vector([item/div for item in self.values])
         return result
 
     def dot(self, other):
@@ -93,8 +97,8 @@ class Vector:
         if not isinstance(other, Vector):
             raise SdlSyntaxException('Parameter not of type Vector')
         result = 0.0
-        for i in range(len(self.v)):
-            result += self.v[i]*other.v[i]
+        for i in range(len(self.values)):
+            result += self.values[i]*other.values[i]
         return result
 
 # Predefine basic vectors

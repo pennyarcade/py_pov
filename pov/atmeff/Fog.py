@@ -12,7 +12,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 
 from pov.basic.PoVObject import PoVObject
-from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class Fog(PoVObject):

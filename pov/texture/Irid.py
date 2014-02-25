@@ -12,12 +12,11 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 
 from pov.basic.BlockObject import BlockObject
-from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class Irid(BlockObject):
     '''
-
+        @TODO: Docstring
     '''
 
     def __init__(self, *opts, **kwargs):

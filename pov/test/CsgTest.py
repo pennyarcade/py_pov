@@ -1,4 +1,4 @@
-# coding=UTF-8
+## coding=UTF-8
 """
 Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
 
@@ -10,10 +10,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-import os
-import unittest
-import difflib
+#import os
+#import unittest
+#import difflib
 #import copy
-from logging import *
-
-
+#from logging import *

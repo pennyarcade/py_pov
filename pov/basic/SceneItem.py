@@ -240,9 +240,8 @@ class SceneItem(object):
         """
             format line of code with indentation and line separator
         """
-        global indentation
-        info("'" + "  " * indentation + string + "'")
-        return "  " * indentation + string + linesep
+        info("'" + "  " * self._get_indent() + string + "'")
+        return "  " * self._get_indent() + string + linesep
 
     def _check_opts(self):
         '''
@@ -280,17 +279,18 @@ class SceneItem(object):
             if i < len(valid_args):
                 if isinstance(valid_args[i], (list, tuple)):
                     if not self.args[i].__class__.__name__ in valid_args[i]:
+                        msg = 'Value of Argument %s is expectet to be type %s'
+                        msg += ' but got %s'
                         raise SdlSyntaxException(
-                            'Value of Argument %s is expectet to be type %s'
-                            + ' but got %s'
-                            % (i, valid_args[i],
-                                self.args[i].__class__.__name__)
+                            msg %
+                            (i, valid_args[i], self.args[i].__class__.__name__)
                         )
                 else:
                     if not self.args[i].__class__.__name__ == valid_args[i]:
+                        msg = 'Value of Argument %s is expectet to be type %s'
+                        msg += ' but got %s'
                         raise SdlSyntaxException(
-                            'Value of Argument %s is expectet '
-                            + 'to be type %s but got %s' %
+                            msg %
                             (i, valid_args[i], self.args[i].__class__.__name__)
                         )
 
@@ -302,8 +302,8 @@ class SceneItem(object):
         for i in range(len(self.opts)):
             if not self.opts[i].__class__.__name__ in valid_opts:
                 raise SdlSyntaxException(
-                        'Invalid option type %s not in allowed opts \n%s' %
-                         (self.opts[i].__class__.__name__, valid_opts)
+                    'Invalid option type %s not in allowed opts \n%s' %
+                    (self.opts[i].__class__.__name__, valid_opts)
                 )
 
     def _validate_kwargs(self, valid_kw):
@@ -318,15 +318,14 @@ class SceneItem(object):
 
             # allowed keywords
             if not key in valid_kw:
-                raise SdlSyntaxException('Keyword %s not allowed for object %s'
-                    % (key, self.__class__.__name__)
-                )
+                msg = 'Keyword %s not allowed for object %s'
+                raise SdlSyntaxException(msg % (key, self.__class__.__name__))
             # type of kw arguments
             if not val.__class__.__name__ in valid_kw[key]:
+                msg = 'Value of KW Argument %s is expectet to be type %s'
+                msg += ' but got %s'
                 raise SdlSyntaxException(
-                    'Value of KW Argument %s is expectet to be type %s'
-                    + ' but got %s' %
-                    (key, valid_kw[key], val.__class__.__name__)
+                    msg % (key, valid_kw[key], val.__class__.__name__)
                 )
 
     def _checkKwargValue(self, kwarg, validvalues):
@@ -336,10 +335,10 @@ class SceneItem(object):
 
         if kwarg in self.kwargs:
             if not self.kwargs[kwarg] in validvalues:
+                msg = 'Value of KW Argument %s is expectet '
+                msg += 'to be in %s but got %s'
                 raise SdlSyntaxException(
-                    'Value of KW Argument %s is expectet '
-                    + 'to be in %s but got %s' %
-                    (kwarg, validvalues, self.kwargs[kwarg])
+                    msg % (kwarg, validvalues, self.kwargs[kwarg])
                 )
 
     def _format_args(self, args):
@@ -457,15 +456,15 @@ class SceneItem(object):
         '''
         if not isinstance(other, SceneItem):
             raise TypeError('can only be compared to objects of same type')
-        va = self.name == other.name
+        vala = self.name == other.name
         debug(str(self.name) + ' = ' + str(self.name))
-        vb = self.args == other.args
+        valb = self.args == other.args
         debug(str(self.args) + ' = ' + str(self.args))
-        vc = self.opts == other.opts
+        valc = self.opts == other.opts
         debug(str(self.opts) + ' = ' + str(self.opts))
-        vd = self.kwargs == other.kwargs
+        vald = self.kwargs == other.kwargs
         debug(str(self.kwargs) + ' = ' + str(self.kwargs))
-        return va & vb & vc & vd
+        return vala & valb & valc & vald
 
     def __len__(self):
         return len(self.args) + len(self.opts)

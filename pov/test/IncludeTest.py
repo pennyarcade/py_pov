@@ -11,19 +11,22 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 import sys
-import os
+#import os
 import unittest
-import traceback
-from logging import *
+#import traceback
+#from logging import *
 
 sys.path.append('../../')
 
-from pov.include.colors_inc import *
+include pov.include.colors_inc
 
 
 class ColorsIncTestCase(unittest.TestCase):
-    def test_Red(self):
+    '''
+        Test colors_inc.py
+    '''
+    def test_red(self):
         self.assertEqual(
-            str(Red),
+            str(colors_inc.RED),
             'rgb <1.0, 0.0, 0.0>'
         )
