@@ -11,7 +11,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 import os
-from pov.basic.Vector import Vector
 from pov.other.SdlSyntaxException import SdlSyntaxException
 from pov.object_modifier.ObjectModifier import ObjectModifier
 
@@ -38,11 +37,14 @@ class Rotate(ObjectModifier):
 
         # param syntax checks
         if not len(self.args[0].v) == 3:
-            raise SdlSyntaxException('Vector RVector has more or less than 4 dimensions')
+            raise SdlSyntaxException(
+                'Vector RVector has more or less than 4 dimensions'
+            )
 
     def __str__(self):
         code = ''
 
-        code += "  " * self._getIndent() + self.name + ' ' + str(self.args[0]) + os.linesep
+        code += "  " * self._get_indent() + self.name + ' '
+        code += str(self.args[0]) + os.linesep
 
         return code

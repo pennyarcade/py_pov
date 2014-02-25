@@ -12,7 +12,7 @@ Unittests File
 
 """
 
-from pov.basic.SceneItem import *
+from pov.basic.SceneItem import SceneItem
 
 
 class ObjectModifier(SceneItem):

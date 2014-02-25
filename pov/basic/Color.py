@@ -82,17 +82,17 @@ class Color(SceneItem):
         self.transmit = 0
 
         if len(self.vector) > 3:
-            self.vector[3]
+            self.filter = self.vector[3]
 
         if len(self.vector) > 4:
-            self.vector[4]
-
+            self.transmit = self.vector[4]
 
     def __str__(self):
         code = ''
 
         if self.type in ['rgb', 'rgbt', 'rgbf', 'rgbft']:
-            code += "  " * self._getIndent() + self.name + ' ' + self.type + ' ' + str(self.vector) + os.linesep
+            code += "  " * self._get_indent() + self.name + ' '
+            code += self.type + ' ' + str(self.vector) + os.linesep
 
         return code
 
@@ -118,9 +118,3 @@ class Color(SceneItem):
         }
 
         self._validate_kwargs(valid_kw)
-
-#-------------------------------------------------------------------
-# Color Definitions
-#-------------------------------------------------------------------
-
-White = Color()

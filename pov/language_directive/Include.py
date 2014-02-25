@@ -38,7 +38,7 @@ class Include(LanguageDirective):
         '''
             Generate PoV source code
         '''
-        code = self._getLine('#' + 'include \"%s\"' % self.args[0])
+        code = self._get_line('#' + 'include \"%s\"' % self.args[0])
 
         debug('Include.__str__: %s \n%s' % (self.args[0], code))
 

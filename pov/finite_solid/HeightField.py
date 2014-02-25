@@ -52,8 +52,8 @@ class HeightField(BlockObject):
         """
             Start block of code
         """
-        code = "  " * self._getIndent() + self.name + self._block_begin()
-        code = code + self._getLine('"' + str(self.args[0]) + '"')
+        code = "  " * self._get_indent() + self.name + self._block_begin()
+        code = code + self._get_line('"' + str(self.args[0]) + '"')
         return code
 
     def _check_arguments(self):

@@ -10,9 +10,9 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-import os
-from pov.basic.Vector import Vector
-from pov.other.SdlSyntaxException import SdlSyntaxException
+# import os
+# from pov.basic.Vector import Vector
+# from pov.other.SdlSyntaxException import SdlSyntaxException
 from pov.object_modifier.ObjectModifier import ObjectModifier
 
 
@@ -38,7 +38,8 @@ class Interior(ObjectModifier):
 #
 #        # param syntax checks
 #        if not len(self.args[0].v) == 3:
-#            raise SdlSyntaxException('Vector SVector has more or less than 3 dimensions')
+#            raise SdlSyntaxException(
+#                'Vector SVector has more or less than 3 dimensions')
 
 
 
@@ -46,6 +47,7 @@ class Interior(ObjectModifier):
 #    def __str__(self):
 #        code = ''
 #
-#        code += "  " * self._getIndent() + self.name + ' ' + str(self.args[0]) + os.linesep
+#        code += "  " * self._getIndent() + self.name + ' '
+#        code += str(self.args[0]) + os.linesep
 #
 #        return code

@@ -10,9 +10,9 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 from __future__ import nested_scopes
-import os
-from logging import *
-from Vector import Vector
+from os import linesep
+from logging import debug, info
+from pov.basic.Vector import Vector
 from pov.other.SdlSyntaxException import SdlSyntaxException
 from pov.other.IllegalStateException import IllegalStateException
 
@@ -53,7 +53,8 @@ class SceneItem(object):
         'debug', 'declare', 'default', 'defined', 'degrees', 'density',
         'density_file', 'density_map', 'dents', 'df3', 'difference', 'diffuse',
         'dimension_size', 'dimensions', 'direction', 'disc', 'dispersion',
-        'dispersion_samples', 'dist_exp', 'distance', 'div', 'double_illuminate',
+        'dispersion_samples', 'dist_exp', 'distance', 'div',
+        'double_illuminate',
         'eccentricity', 'else', 'emission', 'end', 'error', 'error_bound',
         'evaluate', 'exp', 'expand_thresholds', 'exponent', 'exterior',
         'extinction',
@@ -101,15 +102,17 @@ class SceneItem(object):
         'roughness',
         'samples', 'save_file', 'scale', 'scallop_wave', 'scattering', 'seed',
         'select', 'shadowless', 'sin', 'sine_wave', 'sinh', 'size', 'sky',
-        'sky_sphere', 'slice', 'slope', 'slope_map', 'smooth', 'smooth_triangle',
+        'sky_sphere', 'slice', 'slope', 'slope_map', 'smooth',
+        'smooth_triangle',
         'solid', 'sor', 'spacing', 'specular', 'sphere', 'sphere_sweep',
         'spherical', 'spiral1', 'spiral2', 'spline', 'split_union', 'spotlight',
         'spotted', 'sqr', 'sqrt', 'statistics', 'str', 'strcmp', 'strength',
-        'strlen', 'strlwr', 'strupr', 'sturm', 'substr', 'sum', 'superellipsoid',
-        'switch', 'sys',
+        'strlen', 'strlwr', 'strupr', 'sturm', 'substr', 'sum',
+        'superellipsoid', 'switch', 'sys',
         't', 'tan', 'tanh', 'target', 'text', 'texture', 'texture_list',
         'texture_map', 'tga', 'thickness', 'threshold', 'tiff', 'tightness',
-        'tile2', 'tiles', 'tolerance', 'toroidal', 'torus', 'trace', 'transform',
+        'tile2', 'tiles', 'tolerance', 'toroidal', 'torus', 'trace',
+        'transform',
         'translate', 'transmit', 'triangle', 'triangle_wave', 'true', 'ttf',
         'turb_depth', 'turbulence', 'type',
         'u', 'u_steps', 'ultra_wide_angle', 'undef', 'union', 'up', 'use_alpha',
@@ -134,7 +137,8 @@ class SceneItem(object):
 
             @param name: POV object name
             @type name: string
-            @param args: compulsory (comma separated?) pov args XX commas don't seem to matter?
+            @param args: compulsory (comma separated?) pov args XX commas
+                         don't seem to matter?
             @type args: list
             @param opts: eg. CSG items
             @type opts: list
@@ -145,6 +149,10 @@ class SceneItem(object):
         """
         debug("%s: SceneItem.__init__(): Start: %s, %s, %s, %s" %
               (self.__class__.__name__, name, args, opts, kwargs))
+
+        self.args = []
+        self.opts = []
+        self.kwargs = {}
 
         # format parameters
         self._format_args(args)
@@ -191,7 +199,7 @@ class SceneItem(object):
         indentation -= 1
         debug("dedent: %s", indentation)
 
-    def _getIndent(self):
+    def _get_indent(self):
         """
             Get indentation
         """
@@ -205,7 +213,7 @@ class SceneItem(object):
                 * increase indentation
         """
         debug("begin block")
-        code = " {" + os.linesep
+        code = " {" + linesep
 
         self._indent()
 
@@ -221,20 +229,20 @@ class SceneItem(object):
 
         if indentation == 0:
             # blank line if this is a top level end
-            code = self._getLine()
+            code = self._get_line()
         else:
             self._dedent()
-            code = self._getLine("}")
+            code = self._get_line("}")
 
         return code
 
-    def _getLine(self, s=""):
+    def _get_line(self, string=""):
         """
             format line of code with indentation and line separator
         """
         global indentation
-        info("'" + "  " * indentation + s + "'")
-        return "  " * indentation + s + os.linesep
+        info("'" + "  " * indentation + string + "'")
+        return "  " * indentation + string + linesep
 
     def _check_opts(self):
         '''
@@ -272,12 +280,19 @@ class SceneItem(object):
             if i < len(valid_args):
                 if isinstance(valid_args[i], (list, tuple)):
                     if not self.args[i].__class__.__name__ in valid_args[i]:
-                        raise SdlSyntaxException('Value of Argument %s is expectet to be type %s but got %s' %
-                                                 (i, valid_args[i], self.args[i].__class__.__name__))
+                        raise SdlSyntaxException(
+                            'Value of Argument %s is expectet to be type %s'
+                            + ' but got %s'
+                            % (i, valid_args[i],
+                                self.args[i].__class__.__name__)
+                        )
                 else:
                     if not self.args[i].__class__.__name__ == valid_args[i]:
-                        raise SdlSyntaxException('Value of Argument %s is expectet to be type %s but got %s' %
-                                                 (i, valid_args[i], self.args[i].__class__.__name__))
+                        raise SdlSyntaxException(
+                            'Value of Argument %s is expectet '
+                            + 'to be type %s but got %s' %
+                            (i, valid_args[i], self.args[i].__class__.__name__)
+                        )
 
     def _validate_opts(self, valid_opts):
         '''
@@ -286,8 +301,10 @@ class SceneItem(object):
         # make sure only valid object modifiers are passed
         for i in range(len(self.opts)):
             if not self.opts[i].__class__.__name__ in valid_opts:
-                raise SdlSyntaxException('Invalid option type %s not in allowed opts \n%s' %
-                                         (self.opts[i].__class__.__name__, valid_opts))
+                raise SdlSyntaxException(
+                        'Invalid option type %s not in allowed opts \n%s' %
+                         (self.opts[i].__class__.__name__, valid_opts)
+                )
 
     def _validate_kwargs(self, valid_kw):
         '''
@@ -301,12 +318,16 @@ class SceneItem(object):
 
             # allowed keywords
             if not key in valid_kw:
-                raise SdlSyntaxException('Keyword %s not allowed for object %s' %
-                                         (key, self.__class__.__name__))
+                raise SdlSyntaxException('Keyword %s not allowed for object %s'
+                    % (key, self.__class__.__name__)
+                )
             # type of kw arguments
             if not val.__class__.__name__ in valid_kw[key]:
-                raise SdlSyntaxException('Value of KW Argument %s is expectet to be type %s but got %s' %
-                                         (key, valid_kw[key], val.__class__.__name__))
+                raise SdlSyntaxException(
+                    'Value of KW Argument %s is expectet to be type %s'
+                    + ' but got %s' %
+                    (key, valid_kw[key], val.__class__.__name__)
+                )
 
     def _checkKwargValue(self, kwarg, validvalues):
         '''
@@ -316,7 +337,8 @@ class SceneItem(object):
         if kwarg in self.kwargs:
             if not self.kwargs[kwarg] in validvalues:
                 raise SdlSyntaxException(
-                    'Value of KW Argument %s is expectet to be in %s but got %s' %
+                    'Value of KW Argument %s is expectet '
+                    + 'to be in %s but got %s' %
                     (kwarg, validvalues, self.kwargs[kwarg])
                 )
 
@@ -435,15 +457,15 @@ class SceneItem(object):
         '''
         if not isinstance(other, SceneItem):
             raise TypeError('can only be compared to objects of same type')
-        a = self.name == other.name
+        va = self.name == other.name
         debug(str(self.name) + ' = ' + str(self.name))
-        b = self.args == other.args
+        vb = self.args == other.args
         debug(str(self.args) + ' = ' + str(self.args))
-        c = self.opts == other.opts
+        vc = self.opts == other.opts
         debug(str(self.opts) + ' = ' + str(self.opts))
-        d = self.kwargs == other.kwargs
+        vd = self.kwargs == other.kwargs
         debug(str(self.kwargs) + ' = ' + str(self.kwargs))
-        return a & b & c & d
+        return va & vb & vc & vd
 
     def __len__(self):
         return len(self.args) + len(self.opts)
@@ -488,8 +510,8 @@ class SceneItem(object):
         i = 0
         while i < len(seq):
             if type(seq[i]) in (list, tuple):
-                x = seq.pop(i)
-                for item in x:
+                listarg = seq.pop(i)
+                for item in listarg:
                     seq.insert(i, item)
                     i += 1
             else:

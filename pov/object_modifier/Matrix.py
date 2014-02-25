@@ -11,7 +11,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 import os
-from pov.basic.Vector import Vector
 from pov.other.SdlSyntaxException import SdlSyntaxException
 from pov.object_modifier.ObjectModifier import ObjectModifier
 
@@ -19,7 +18,8 @@ from pov.object_modifier.ObjectModifier import ObjectModifier
 class Matrix(ObjectModifier):
     '''
         MATRIX:
-            matrix < F_VAL00, F_VAL01, F_VAL02, F_VAL10, F_VAL11, F_VAL12, F_VAL20, F_VAL21, F_VAL22, F_VAL30, F_VAL31, F_VAL32 >
+            matrix < F_VAL00, F_VAL01, F_VAL02, F_VAL10, F_VAL11, F_VAL12,
+            F_VAL20, F_VAL21, F_VAL22, F_VAL30, F_VAL31, F_VAL32 >
     '''
 
     def __init__(self, rvector):
@@ -39,12 +39,15 @@ class Matrix(ObjectModifier):
 
         # param syntax checks
         if not len(self.args[0].v) == 12:
-            raise SdlSyntaxException('Vector RVector has more or less than 12 dimensions')
+            raise SdlSyntaxException(
+                'Vector RVector has more or less than 12 dimensions'
+            )
 
     def __str__(self):
         code = ''
 
-        code += "  " * self._getIndent() + self.name + ' ' + str(self.args[0]) + os.linesep
+        code += "  " * self._get_indent() + self.name + ' '
+        code += str(self.args[0]) + os.linesep
 
         return code
 

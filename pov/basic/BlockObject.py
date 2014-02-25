@@ -30,7 +30,7 @@ class BlockObject(SceneItem):
             if isinstance(opt, SceneItem):
                 code += str(opt)
             else:
-                code += self._getLine(str(opt))
+                code += self._get_line(str(opt))
         code += self._get_end_code()
 
         debug("BlockObject.__str__ Code: \n%s", code)
@@ -42,9 +42,9 @@ class BlockObject(SceneItem):
             Start block of code
         """
 
-        code = "  " * self._getIndent() + self.name + self._block_begin()
+        code = "  " * self._get_indent() + self.name + self._block_begin()
         if self.args:
-            code = code + self._getLine(
+            code = code + self._get_line(
                             ", ".join([str(arg) for arg in self.args])
                         )
         return code
@@ -62,6 +62,6 @@ class BlockObject(SceneItem):
         #debug('kwargs: %s', kwargs)
 
         for key, val in kwargs:
-            code += self._getLine("%s %s" % (key, str(val).strip()))
+            code += self._get_line("%s %s" % (key, str(val).strip()))
         code += self._block_end()
         return code

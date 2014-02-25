@@ -35,7 +35,7 @@ class Gradient(SceneItem):
         '''
             Generate PoV source code
         '''
-        code = self._getLine(self.name + ' ' + str(self.args[0]))
+        code = self._get_line(self.name + ' ' + str(self.args[0]))
 
         debug("Gradient.__str__(): %s\n%s" % (self.args[0], code))
 

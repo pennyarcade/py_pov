@@ -43,14 +43,14 @@ class ColorMap(BlockObject):
         """
             Start block of code
         """
-        code = "  " * self._getIndent() + self.name + self._block_begin()
+        code = "  " * self._get_indent() + self.name + self._block_begin()
 
         cmap = self.args[0]
 
         debug(str(cmap))
 
         for key in cmap:
-            code += self._getLine('[%s %s]' % (key, str(cmap[key]).strip()))
+            code += self._get_line('[%s %s]' % (key, str(cmap[key]).strip()))
 
         return code
 

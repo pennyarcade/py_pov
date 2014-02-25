@@ -36,7 +36,7 @@ class Version(LanguageDirective):
         '''
             Generate PoV source code
         '''
-        code = self._getLine('#' + 'version ' + str(self.args[0]) + ';')
+        code = self._get_line('#' + 'version ' + str(self.args[0]) + ';')
 
         debug("Version.__str__(): %s\n%s" % (self.args[0], code))
 
