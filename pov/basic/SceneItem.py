@@ -17,6 +17,9 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 from pov.other.IllegalStateException import IllegalStateException
 
 
+global indentation
+
+
 class SceneItem(object):
     """
         Base class for POV objects.
@@ -131,7 +134,7 @@ class SceneItem(object):
         'ObjectModifier', 'Texture', 'Translate'
     ]
 
-    def __init__(self, name, args=[], opts=[], kwargs={}):
+    def __init__(self, name, args=None, opts=None, kwargs=None):
         """
             Base class for POV objects.
 
@@ -147,6 +150,13 @@ class SceneItem(object):
 
             @TODO: move indentation check to own function
         """
+        if args is None:
+            args=[]
+        if opts is None:
+            opts=[]
+        if kwargs is None:
+            kwargs={}
+
         debug("%s: SceneItem.__init__(): Start: %s, %s, %s, %s" %
               (self.__class__.__name__, name, args, opts, kwargs))
 

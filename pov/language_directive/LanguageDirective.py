@@ -38,9 +38,16 @@ class LanguageDirective(SceneItem):
         @Todo: Is this superclass deprecated?
         @Todo: Implement subclasses
     """
-    def __init__(self, name, args=[], opts=[], kwargs=[]):
+    def __init__(self, name, args=None, opts=None, kwargs=None):
         debug("%s: LanguageDirective.__init__(): %s, %s, %s, %s" %
               (self.__class__.__name__, name, args, opts, kwargs))
+
+        if args is None:
+            args = []
+        if opts is None:
+            opts = []
+        if kwargs is None:
+            kwargs = []
 
         super(LanguageDirective, self).__init__(name, args, opts, kwargs)
 
