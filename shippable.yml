@@ -10,7 +10,8 @@ install:
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
-
+  - git config --global push.default simple
+  
 script:
   - pylint --rcfile=.pylintrc pov > metrics/pylint.txt || true
   - pep8 --verbose --show-pep8 --statistics --count pov > metrics/pep8.txt || true
