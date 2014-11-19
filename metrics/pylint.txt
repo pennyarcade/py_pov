@@ -9,7 +9,6 @@ C: 29, 0: Wrong hanging indentation before block.
         self, basepoint, baseradius, cappoint, capradius, *opts, **kwargs
         ^   | (bad-continuation)
 ************* Module pov.basic.Vector
-C: 18, 0: Old-style class defined. (old-style-class)
 C:105, 0: Invalid constant name "x" (invalid-name)
 C:106, 0: Invalid constant name "y" (invalid-name)
 C:107, 0: Invalid constant name "z" (invalid-name)
@@ -673,7 +672,7 @@ Messages by category
 +-----------+-------+---------+-----------+
 |type       |number |previous |difference |
 +===========+=======+=========+===========+
-|convention |167    |NC       |NC         |
+|convention |166    |NC       |NC         |
 +-----------+-------+---------+-----------+
 |refactor   |51     |NC       |NC         |
 +-----------+-------+---------+-----------+
@@ -690,23 +689,23 @@ Messages by category
 +----------------------------+------+--------+---------+-----------+
 |module                      |error |warning |refactor |convention |
 +============================+======+========+=========+===========+
-|pov.test.EndToEndTest       |66.67 |0.53    |7.84     |2.99       |
+|pov.test.EndToEndTest       |66.67 |0.53    |7.84     |3.01       |
 +----------------------------+------+--------+---------+-----------+
 |pov.test.IncludeTest        |33.33 |0.00    |0.00     |0.00       |
 +----------------------------+------+--------+---------+-----------+
-|pov.test.OtherTest          |0.00  |24.74   |3.92     |4.19       |
+|pov.test.OtherTest          |0.00  |24.74   |3.92     |4.22       |
 +----------------------------+------+--------+---------+-----------+
-|pov.test.TextureTest        |0.00  |20.53   |9.80     |13.77      |
+|pov.test.TextureTest        |0.00  |20.53   |9.80     |13.86      |
 +----------------------------+------+--------+---------+-----------+
-|pov.test.GlobalSettingsTest |0.00  |20.53   |1.96     |3.59       |
+|pov.test.GlobalSettingsTest |0.00  |20.53   |1.96     |3.61       |
 +----------------------------+------+--------+---------+-----------+
-|pov.test.AthEffTest         |0.00  |20.00   |3.92     |3.59       |
+|pov.test.AthEffTest         |0.00  |20.00   |3.92     |3.61       |
 +----------------------------+------+--------+---------+-----------+
-|pov.test.BasicTest          |0.00  |8.42    |9.80     |14.37      |
+|pov.test.BasicTest          |0.00  |8.42    |9.80     |14.46      |
 +----------------------------+------+--------+---------+-----------+
-|pov.basic.SceneItem         |0.00  |4.21    |9.80     |4.19       |
+|pov.basic.SceneItem         |0.00  |4.21    |9.80     |4.22       |
 +----------------------------+------+--------+---------+-----------+
-|pov.test.FiniteSolidTest    |0.00  |0.53    |15.69    |17.96      |
+|pov.test.FiniteSolidTest    |0.00  |0.53    |15.69    |18.07      |
 +----------------------------+------+--------+---------+-----------+
 |pov.test.InfiniteSolidTest  |0.00  |0.53    |1.96     |0.60       |
 +----------------------------+------+--------+---------+-----------+
@@ -760,8 +759,6 @@ Messages
 |syntax-error                 |1           |
 +-----------------------------+------------+
 |superfluous-parens           |1           |
-+-----------------------------+------------+
-|old-style-class              |1           |
 +-----------------------------+------------+
 |global-at-module-level       |1           |
 +-----------------------------+------------+
