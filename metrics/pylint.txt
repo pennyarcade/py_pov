@@ -1,0 +1,899 @@
+************* Module pov.finite_solid.Torus
+C: 35, 0: Final newline missing (missing-final-newline)
+************* Module pov.finite_solid.HeightField
+C:108, 0: Wrong continued indentation.
+            'ppm', 'jpeg', 'tiff', 'sys', 'function']
+            ^| (bad-continuation)
+************* Module pov.finite_solid.Cone
+C: 29, 0: Wrong hanging indentation before block.
+        self, basepoint, baseradius, cappoint, capradius, *opts, **kwargs
+        ^   | (bad-continuation)
+************* Module pov.basic.Vector
+C: 18, 0: Old-style class defined. (old-style-class)
+C:105, 0: Invalid constant name "x" (invalid-name)
+C:106, 0: Invalid constant name "y" (invalid-name)
+C:107, 0: Invalid constant name "z" (invalid-name)
+************* Module pov.basic.BlockObject
+C: 48, 0: Wrong hanging indentation.
+                            ", ".join([str(arg) for arg in self.args])
+                |           ^ (bad-continuation)
+C: 49, 0: Wrong hanging indentation.
+                        )
+            |   |       ^ (bad-continuation)
+C: 67, 0: Final newline missing (missing-final-newline)
+************* Module pov.basic.Color
+C: 35, 0: Line too long (90/80) (line-too-long)
+C: 37, 0: Line too long (87/80) (line-too-long)
+************* Module pov.basic.SceneItem
+C:154, 0: Exactly one space required around assignment
+            args=[]
+                ^ (bad-whitespace)
+C:156, 0: Exactly one space required around assignment
+            opts=[]
+                ^ (bad-whitespace)
+C:158, 0: Exactly one space required around assignment
+            kwargs={}
+                  ^ (bad-whitespace)
+W: 20, 0: Using the global statement at the module level (global-at-module-level)
+C: 20, 0: Invalid constant name "indentation" (invalid-name)
+W:174,12: Global variable 'indentation' undefined at the module level (global-variable-undefined)
+C:174,12: Invalid constant name "indentation" (invalid-name)
+W:196, 8: Global variable 'indentation' undefined at the module level (global-variable-undefined)
+C:196, 8: Invalid constant name "indentation" (invalid-name)
+R:192, 4: Method could be a function (no-self-use)
+W:204, 8: Global variable 'indentation' undefined at the module level (global-variable-undefined)
+C:204, 8: Invalid constant name "indentation" (invalid-name)
+R:200, 4: Method could be a function (no-self-use)
+W:216, 8: Using global for 'indentation' but no assignment is done (global-variable-not-assigned)
+W:216, 8: Global variable 'indentation' undefined at the module level (global-variable-undefined)
+C:216, 8: Invalid constant name "indentation" (invalid-name)
+R:212, 4: Method could be a function (no-self-use)
+C:341, 4: Invalid method name "_checkKwargValue" (invalid-name)
+R:503, 4: Method could be a function (no-self-use)
+R:514, 4: Method could be a function (no-self-use)
+************* Module pov.test.ObjectModifierTest
+C: 32, 4: Invalid method name "test_Creation" (invalid-name)
+C: 32, 4: Missing method docstring (missing-docstring)
+C: 36, 4: Missing method docstring (missing-docstring)
+C: 40, 4: Missing method docstring (missing-docstring)
+C: 47, 4: Invalid method name "test_create_arg_wrong_length_vector" (invalid-name)
+C: 47, 4: Missing method docstring (missing-docstring)
+R: 22, 0: Too many public methods (49/20) (too-many-public-methods)
+************* Module pov.test.OtherTest
+C: 40, 0: Final newline missing (missing-final-newline)
+W: 18, 0: Wildcard import logging (wildcard-import)
+W: 20, 0: Wildcard import pov.basic.SceneItem (wildcard-import)
+W: 21, 0: Wildcard import pov.other.Camera (wildcard-import)
+C: 27, 8: Invalid attribute name "SUT" (invalid-name)
+C: 25, 0: Missing class docstring (missing-docstring)
+C: 29, 4: Missing method docstring (missing-docstring)
+R: 25, 0: Too many public methods (46/20) (too-many-public-methods)
+C: 36, 8: Invalid attribute name "SUT" (invalid-name)
+C: 34, 0: Missing class docstring (missing-docstring)
+C: 38, 4: Missing method docstring (missing-docstring)
+R: 34, 0: Too many public methods (46/20) (too-many-public-methods)
+W: 18, 0: Unused import INFO from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import LogRecord from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import Logger from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import Formatter from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import BASIC_FORMAT from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import getLevelName from wildcard import (unused-wildcard-import)
+W: 21, 0: Unused import BlockObject from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import addLevelName from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import log from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import FileHandler from wildcard import (unused-wildcard-import)
+W: 20, 0: Unused import linesep from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import WARNING from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import LoggerAdapter from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import StreamHandler from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import fatal from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import setLoggerClass from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import getLoggerClass from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import CRITICAL from wildcard import (unused-wildcard-import)
+W: 20, 0: Unused import nested_scopes from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import NullHandler from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import disable from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import WARN from wildcard import (unused-wildcard-import)
+W: 20, 0: Unused import Vector from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import ERROR from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import DEBUG from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import FATAL from wildcard import (unused-wildcard-import)
+W: 20, 0: Unused import IllegalStateException from wildcard import (unused-wildcard-import)
+W: 20, 0: Unused import SdlSyntaxException from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import info from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import Filter from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import exception from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import NOTSET from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import BufferingFormatter from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import makeLogRecord from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import warn from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import getLogger from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import captureWarnings from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import Handler from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import critical from wildcard import (unused-wildcard-import)
+W: 20, 0: Unused import indentation from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import error from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import debug from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import warning from wildcard import (unused-wildcard-import)
+W: 18, 0: Unused import basicConfig from wildcard import (unused-wildcard-import)
+************* Module pov.test.AthEffTest
+W: 17, 0: Wildcard import logging (wildcard-import)
+C: 28, 8: Invalid attribute name "SUT" (invalid-name)
+C: 26, 0: Missing class docstring (missing-docstring)
+C: 30, 4: Missing method docstring (missing-docstring)
+R: 26, 0: Too many public methods (46/20) (too-many-public-methods)
+C: 36, 8: Invalid attribute name "SUT" (invalid-name)
+C: 34, 0: Missing class docstring (missing-docstring)
+C: 38, 4: Missing method docstring (missing-docstring)
+R: 34, 0: Too many public methods (46/20) (too-many-public-methods)
+W: 17, 0: Unused import Handler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import LogRecord from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import Logger from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import Formatter from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import BASIC_FORMAT from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import getLevelName from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import INFO from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import addLevelName from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import log from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import FileHandler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import WARNING from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import LoggerAdapter from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import StreamHandler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import fatal from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import setLoggerClass from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import getLoggerClass from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import CRITICAL from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import NullHandler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import WARN from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import ERROR from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import DEBUG from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import FATAL from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import info from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import Filter from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import exception from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import NOTSET from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import BufferingFormatter from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import makeLogRecord from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import warn from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import getLogger from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import captureWarnings from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import disable from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import critical from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import error from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import debug from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import warning from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import basicConfig from wildcard import (unused-wildcard-import)
+************* Module pov.test.FiniteSolidTest
+C:659, 0: Line too long (85/80) (line-too-long)
+C:679, 0: Line too long (81/80) (line-too-long)
+C:689, 0: Line too long (84/80) (line-too-long)
+C:699, 0: Line too long (83/80) (line-too-long)
+C:709, 0: Line too long (175/80) (line-too-long)
+C:731, 0: Line too long (87/80) (line-too-long)
+C:789, 0: Line too long (89/80) (line-too-long)
+C:798, 0: Wrong hanging indentation.
+             SdlSyntaxException, 'No such Keyword: foo'
+            |^ (bad-continuation)
+C:912, 0: Line too long (93/80) (line-too-long)
+R: 32, 0: Too many public methods (46/20) (too-many-public-methods)
+C:185, 4: Missing method docstring (missing-docstring)
+C:186, 8: Invalid variable name "SUT" (invalid-name)
+R: 67, 0: Too many public methods (52/20) (too-many-public-methods)
+C:280, 8: Invalid variable name "le" (invalid-name)
+C:290, 4: Invalid method name "test_creation_with_option_and_kwarg" (invalid-name)
+C:338, 4: Invalid method name "test_create_baseradius_wrong_type" (invalid-name)
+C:355, 4: Invalid method name "test_create_capradius_wrong_type" (invalid-name)
+C:389, 4: Invalid method name "test_create_basepoint_wrong_type" (invalid-name)
+C:421, 4: Invalid method name "test_create_basepoint_wrong_length" (invalid-name)
+C:438, 4: Invalid method name "test_create_cappoint_wrong_length" (invalid-name)
+R:258, 0: Too many public methods (56/20) (too-many-public-methods)
+C:486, 4: Invalid method name "test_creation_with_option_and_kwarg" (invalid-name)
+C:531, 4: Invalid method name "test_create_basepoint_wrong_type" (invalid-name)
+C:561, 4: Invalid method name "test_create_basepoint_wrong_length" (invalid-name)
+C:577, 4: Invalid method name "test_create_cappoint_wrong_length" (invalid-name)
+C:609, 4: Invalid method name "test_create_object_modifier_wrong_type" (invalid-name)
+R:456, 0: Too many public methods (55/20) (too-many-public-methods)
+C:683, 4: Invalid method name "test_create_hierarchy_wrong_type" (invalid-name)
+C:703, 4: Invalid method name "test_create_hf_type_non_existant_value" (invalid-name)
+C:713, 4: Invalid method name "test_create_hf_non_existant_file" (invalid-name)
+C:725, 4: Invalid method name "test_create_waterlevel_not_float" (invalid-name)
+R:626, 0: Too many public methods (56/20) (too-many-public-methods)
+C:773, 4: Invalid method name "test_create_vector_wrong_dimension" (invalid-name)
+R:746, 0: Too many public methods (51/20) (too-many-public-methods)
+C:839, 8: Invalid variable name "le" (invalid-name)
+C:921, 4: Invalid method name "test_create_object_modifier_wrong_type" (invalid-name)
+R:813, 0: Too many public methods (52/20) (too-many-public-methods)
+R:937, 0: Too many public methods (47/20) (too-many-public-methods)
+W: 15, 0: Unused import traceback (unused-import)
+************* Module pov.test.IncludeTest
+E: 21, 0: invalid syntax (syntax-error)
+************* Module pov.test.GlobalSettingsTest
+C: 30, 0: Line too long (137/80) (line-too-long)
+W: 15, 0: Wildcard import logging (wildcard-import)
+C: 23, 8: Invalid attribute name "SUT" (invalid-name)
+C: 21, 0: Missing class docstring (missing-docstring)
+C: 25, 4: Missing method docstring (missing-docstring)
+C: 29, 4: Invalid method name "test_create_Option_wrong_type" (invalid-name)
+C: 29, 4: Missing method docstring (missing-docstring)
+R: 21, 0: Too many public methods (47/20) (too-many-public-methods)
+W: 15, 0: Unused import Handler from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import LogRecord from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import Logger from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import Formatter from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import BASIC_FORMAT from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import getLevelName from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import INFO from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import addLevelName from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import log from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import FileHandler from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import WARNING from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import LoggerAdapter from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import StreamHandler from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import fatal from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import setLoggerClass from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import getLoggerClass from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import CRITICAL from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import WARN from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import NullHandler from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import disable from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import ERROR from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import DEBUG from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import FATAL from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import info from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import Filter from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import exception from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import NOTSET from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import BufferingFormatter from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import makeLogRecord from wildcard import (unused-wildcard-import)
+W: 14, 0: Unused import traceback (unused-import)
+W: 15, 0: Unused import warn from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import getLogger from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import captureWarnings from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import warning from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import critical from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import error from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import debug from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import basicConfig from wildcard import (unused-wildcard-import)
+************* Module pov.test.BasicTest
+W:172,25: Access to a protected member _block_end of a client class (protected-access)
+W:215,12: Access to a protected member _dedent of a client class (protected-access)
+C:217, 4: Invalid method name "test__validate_kwargs_invanild_kwarg" (invalid-name)
+W:228,12: Access to a protected member _validate_kwargs of a client class (protected-access)
+C:230, 4: Invalid method name "test__validate_kwargs_invanild_kwarg_type" (invalid-name)
+W:242,12: Access to a protected member _validate_kwargs of a client class (protected-access)
+W:249,12: Access to a protected member _is_valid_identifier of a client class (protected-access)
+W:252,12: Access to a protected member _is_valid_identifier of a client class (protected-access)
+C:255, 4: Invalid method name "test___eq__WrongType" (invalid-name)
+C:266, 4: Invalid method name "test__check_kwarg_value_invalid_value" (invalid-name)
+W:276,12: Access to a protected member _checkKwargValue of a client class (protected-access)
+R: 29, 0: Too many public methods (64/20) (too-many-public-methods)
+C:295, 4: Invalid method name "test_createWithVector" (invalid-name)
+C:314, 4: Invalid method name "test_equalsNoVector" (invalid-name)
+C:373, 8: Invalid variable name "SUT" (invalid-name)
+C:380, 8: Invalid variable name "SUT" (invalid-name)
+W:397,12: Statement seems to have no effect (pointless-statement)
+C:399, 4: Invalid method name "test_rmul__WrongType" (invalid-name)
+W:406,12: Statement seems to have no effect (pointless-statement)
+C:408, 4: Invalid method name "test_div__WrongType" (invalid-name)
+W:415,12: Statement seems to have no effect (pointless-statement)
+C:417, 4: Invalid method name "test_add__WrongType" (invalid-name)
+W:424,12: Statement seems to have no effect (pointless-statement)
+C:426, 4: Invalid method name "test_sub__WrongType" (invalid-name)
+W:434,12: Statement seems to have no effect (pointless-statement)
+C:436, 4: Invalid method name "test_dotWrongType" (invalid-name)
+R:279, 0: Too many public methods (67/20) (too-many-public-methods)
+C:478, 4: Invalid method name "test_createFnamWrongType" (invalid-name)
+C:487, 4: Invalid method name "test_appendWrongType" (invalid-name)
+W:503, 8: Unused variable 'second' (unused-variable)
+W:501, 8: Unused variable 'first' (unused-variable)
+R:446, 0: Too many public methods (50/20) (too-many-public-methods)
+C:509, 0: Missing class docstring (missing-docstring)
+C:531, 4: Invalid method name "test_to_string_with_object_option" (invalid-name)
+W:555, 8: Access to a protected member _indent of a client class (protected-access)
+W:557, 8: Access to a protected member _dedent of a client class (protected-access)
+R:509, 0: Too many public methods (48/20) (too-many-public-methods)
+C:602, 4: Invalid method name "test_CreateRgbColor" (invalid-name)
+C:609, 4: Invalid method name "test_CreateRgbfColor" (invalid-name)
+C:617, 4: Invalid method name "test_CreateRgbtColor" (invalid-name)
+C:625, 4: Invalid method name "test_CreateRgbftColor" (invalid-name)
+C:633, 4: Invalid method name "test_toStringRGB" (invalid-name)
+C:637, 8: Invalid variable name "le" (invalid-name)
+C:643, 4: Invalid method name "test_mulColor" (invalid-name)
+R:565, 0: Too many public methods (52/20) (too-many-public-methods)
+************* Module pov.test.InfiniteSolidTest
+C: 42, 0: Line too long (109/80) (line-too-long)
+R: 20, 0: Too many public methods (47/20) (too-many-public-methods)
+W: 14, 0: Unused import debug (unused-import)
+************* Module pov.test.LanguageDirectiveTest
+C: 27, 8: Invalid attribute name "SUT" (invalid-name)
+C: 25, 0: Missing class docstring (missing-docstring)
+C: 29, 4: Invalid method name "test_Creation" (invalid-name)
+C: 29, 4: Missing method docstring (missing-docstring)
+C: 33, 4: Missing method docstring (missing-docstring)
+R: 25, 0: Too many public methods (47/20) (too-many-public-methods)
+C: 41, 8: Invalid attribute name "SUT" (invalid-name)
+C: 39, 0: Missing class docstring (missing-docstring)
+C: 43, 4: Missing method docstring (missing-docstring)
+C: 47, 4: Missing method docstring (missing-docstring)
+C: 48, 8: Invalid variable name "le" (invalid-name)
+C: 53, 4: Missing method docstring (missing-docstring)
+R: 39, 0: Too many public methods (48/20) (too-many-public-methods)
+C: 65, 8: Invalid attribute name "SUT" (invalid-name)
+C: 63, 0: Missing class docstring (missing-docstring)
+C: 67, 4: Missing method docstring (missing-docstring)
+C: 71, 4: Missing method docstring (missing-docstring)
+C: 72, 8: Invalid variable name "le" (invalid-name)
+C: 77, 4: Missing method docstring (missing-docstring)
+R: 63, 0: Too many public methods (48/20) (too-many-public-methods)
+C: 88, 8: Invalid attribute name "SUT" (invalid-name)
+C: 85, 0: Missing class docstring (missing-docstring)
+C: 90, 4: Missing method docstring (missing-docstring)
+C: 94, 4: Invalid method name "test_toString" (invalid-name)
+C: 94, 4: Missing method docstring (missing-docstring)
+C: 96, 8: Invalid variable name "le" (invalid-name)
+R: 85, 0: Too many public methods (47/20) (too-many-public-methods)
+************* Module pov.test.TextureTest
+C: 70, 0: Exactly one space required after assignment
+        second =  'color_map {' + le
+               ^ (bad-whitespace)
+W: 17, 0: Wildcard import logging (wildcard-import)
+C: 33, 8: Invalid attribute name "SUT" (invalid-name)
+C: 31, 0: Missing class docstring (missing-docstring)
+C: 35, 4: Missing method docstring (missing-docstring)
+C: 40, 4: Invalid method name "test_toString" (invalid-name)
+C: 40, 4: Missing method docstring (missing-docstring)
+C: 41, 8: Invalid variable name "le" (invalid-name)
+R: 31, 0: Too many public methods (47/20) (too-many-public-methods)
+C: 54, 8: Invalid attribute name "SUT" (invalid-name)
+C: 52, 0: Missing class docstring (missing-docstring)
+C: 56, 4: Missing method docstring (missing-docstring)
+C: 61, 4: Missing method docstring (missing-docstring)
+C: 67, 4: Invalid method name "test_toString" (invalid-name)
+C: 67, 4: Missing method docstring (missing-docstring)
+C: 68, 8: Invalid variable name "le" (invalid-name)
+R: 52, 0: Too many public methods (48/20) (too-many-public-methods)
+C: 79, 8: Invalid attribute name "SUT" (invalid-name)
+C: 77, 0: Missing class docstring (missing-docstring)
+C: 81, 4: Missing method docstring (missing-docstring)
+R: 77, 0: Too many public methods (46/20) (too-many-public-methods)
+C: 89, 8: Invalid attribute name "SUT" (invalid-name)
+C: 87, 0: Missing class docstring (missing-docstring)
+C: 91, 4: Missing method docstring (missing-docstring)
+R: 87, 0: Too many public methods (46/20) (too-many-public-methods)
+C: 99, 8: Invalid attribute name "SUT" (invalid-name)
+C: 97, 0: Missing class docstring (missing-docstring)
+C:101, 4: Missing method docstring (missing-docstring)
+R: 97, 0: Too many public methods (46/20) (too-many-public-methods)
+W: 17, 0: Unused import Handler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import LogRecord from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import Logger from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import Formatter from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import BASIC_FORMAT from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import getLevelName from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import INFO from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import addLevelName from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import log from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import FileHandler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import WARNING from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import LoggerAdapter from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import StreamHandler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import fatal from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import setLoggerClass from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import getLoggerClass from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import CRITICAL from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import error from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import NullHandler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import disable from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import Filter from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import ERROR from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import DEBUG from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import FATAL from wildcard import (unused-wildcard-import)
+W: 28, 0: Unused import SdlSyntaxException (unused-import)
+W: 17, 0: Unused import info from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import WARN from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import exception from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import NOTSET from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import BufferingFormatter from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import makeLogRecord from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import warn from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import getLogger from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import captureWarnings from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import critical from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import debug from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import warning from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import basicConfig from wildcard import (unused-wildcard-import)
+************* Module pov.test.EndToEndTest
+C: 56, 0: Exactly one space required after assignment
+        ref =  "#version 3.6;" + lsep
+            ^ (bad-whitespace)
+C:260, 0: Exactly one space required after assignment
+        ref =  '#version 3.6;' + lsep
+            ^ (bad-whitespace)
+C:389, 0: Exactly one space required after assignment
+        ref =  '#version 3.6;' + lsep
+            ^ (bad-whitespace)
+C:605, 0: No space allowed after keyword argument assignment
+                direction= 2 * z,
+                         ^ (bad-whitespace)
+C:628, 0: No space allowed before bracket
+                Texture (
+                        ^ (bad-whitespace)
+R: 49, 4: Too many statements (96/50) (too-many-statements)
+R:254, 4: Too many statements (61/50) (too-many-statements)
+R:383, 4: Too many statements (71/50) (too-many-statements)
+E:648,28: Undefined variable 'Filter' (undefined-variable)
+E:649,28: Undefined variable 'Filter' (undefined-variable)
+R: 43, 0: Too many public methods (49/20) (too-many-public-methods)
+W: 18, 0: Unused import debug (unused-import)
+************* Module pov.texture.Texture
+C: 42, 0: Line too long (132/80) (line-too-long)
+C: 71, 0: Line too long (83/80) (line-too-long)
+************* Module pov.texture.Pigment
+C: 42, 0: Line too long (84/80) (line-too-long)
+************* Module pov.texture.Finish
+C: 21, 0: Line too long (156/80) (line-too-long)
+C: 30, 0: Line too long (84/80) (line-too-long)
+C: 31, 0: Line too long (82/80) (line-too-long)
+************* Module pov.texture.Normal
+C: 34, 0: Line too long (84/80) (line-too-long)
+C: 37, 0: Line too long (88/80) (line-too-long)
+************* Module pov.texture.Reflection
+C: 23, 0: Line too long (156/80) (line-too-long)
+C: 32, 0: Line too long (84/80) (line-too-long)
+C: 33, 0: Line too long (82/80) (line-too-long)
+************* Module pov.csg.Intersection
+C: 20, 0: Line too long (82/80) (line-too-long)
+C: 22, 0: Line too long (81/80) (line-too-long)
+************* Module pov.include.colors_inc
+C:303, 0: Unnecessary parens after u'if' keyword (superfluous-parens)
+W:211, 8: Attempting to unpack a non-sequence 0 (unpacking-non-sequence)
+************* Module pov.other.LightSource
+C: 21, 0: Line too long (87/80) (line-too-long)
+C: 33, 0: Line too long (84/80) (line-too-long)
+C: 42, 0: Line too long (268/80) (line-too-long)
+************* Module pov.language_directive.Include
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.HeightField:58
+==pov.global_settings.Radiosity:43
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+        '''
+        valid_args = ['str']
+
+        self._validate_args(valid_args)
+
+        # param syntax checks
+        if not os.path.isfile(self.args[0]):
+            raise IOError(
+                'No such file: %s%s%s' % (os.getcwd(), os.sep, self.args[0])
+            )
+        #@TODO: check file type
+
+    def _check_opts(self):
+        '''
+            Option Syntax checks
+
+            @Todo: get rid of Object Modifier superclass?
+        '''
+        valid_opts = ['ObjectModifier']
+
+        self._validate_opts(valid_opts)
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+        '''
+
+        valid_kw = {
+            'hf_type': 'str',
+            'hierarchy': 'bool',
+            'smooth': 'bool',
+            'water_level': 'float',
+            # Object modifier kw
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool',
+            'hollow': 'bool'
+        }
+
+        self._validate_kwargs(valid_kw)
+ (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.JuliaFractal:62
+==pov.finite_solid.Lathe:84
+                )
+
+    def _check_opts(self):
+        '''
+            Option Syntax checks
+
+            @Todo: get rid of Object Modifier superclass?
+        '''
+        valid_opts = ['ObjectModifier']
+
+        self._validate_opts(valid_opts)
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+
+            @Todo: Finish syntax checks
+        '''
+
+        valid_kw = { (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Cone:72
+==pov.finite_solid.Cylinder:60
+        for i in range(len(opts)):
+            if not isinstance(opts[i], ObjectModifier):
+                raise SdlSyntaxException(
+                    'Only ObjectModifier objects may be passed as options'
+                )
+
+        for key, val in kwargs.items():
+            if not key in ['open']:
+                raise SdlSyntaxException('Invalid keyword: ' + str(key))
+            if not type(val) == bool:
+                raise SdlSyntaxException(
+                    'Value of keyword %s is not boolean' % key
+                )
+ (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==pov.object_modifier.Rotate:29
+==pov.object_modifier.Scale:29
+==pov.object_modifier.Translate:29
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+        '''
+        valid_args = ['Vector']
+
+        self._validate_args(valid_args)
+
+        # param syntax checks
+        if not len(self.args[0].v) == 3:
+            raise SdlSyntaxException( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Blob:67
+==pov.finite_solid.Lathe:105
+            'sturm': 'bool',
+            # Object modifier kw
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool',
+            'hollow': 'bool'
+        }
+
+        self._validate_kwargs(valid_kw) (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==pov.finite_solid.HeightField:94
+==pov.finite_solid.JuliaFractal:88
+==pov.global_settings.Radiosity:79
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool',
+            'hollow': 'bool'
+        }
+
+        self._validate_kwargs(valid_kw)
+ (duplicate-code)
+R:  1, 0: Similar lines in 4 files
+==pov.object_modifier.Matrix:43
+==pov.object_modifier.Rotate:41
+==pov.object_modifier.Scale:41
+==pov.object_modifier.Translate:41
+            )
+
+    def __str__(self):
+        code = ''
+
+        code += "  " * self._get_indent() + self.name + ' '
+        code += str(self.args[0]) + os.linesep
+
+        return code (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Box:74
+==pov.finite_solid.Cone:69
+            )
+
+        # make sure only valid object modifiers are passed
+        for i in range(len(opts)):
+            if not isinstance(opts[i], ObjectModifier):
+                raise SdlSyntaxException(
+                    'Only ObjectModifier objects may be passed as options'
+                )
+ (duplicate-code)
+R:  1, 0: Similar lines in 6 files
+==pov.finite_solid.Blob:69
+==pov.finite_solid.HeightField:94
+==pov.finite_solid.JuliaFractal:88
+==pov.finite_solid.Lathe:107
+==pov.finite_solid.Sphere:68
+==pov.global_settings.Radiosity:79
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool',
+            'hollow': 'bool'
+        }
+
+        self._validate_kwargs(valid_kw) (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Cone:46
+==pov.finite_solid.Cylinder:42
+        if not isinstance(basepoint, Vector):
+            raise SdlSyntaxException(
+                'Parameter basepoint is not of type Vector'
+            )
+        if not len(basepoint.v) == 3:
+            raise SdlSyntaxException(
+                'Base point Vector has more or less than 3 dimensions'
+            ) (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Sphere:66
+==pov.infinite_solid.Plane:66
+        valid_kw = {
+            # Object modifier kw
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool', (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Box:77
+==pov.finite_solid.Cylinder:60
+        for i in range(len(opts)):
+            if not isinstance(opts[i], ObjectModifier):
+                raise SdlSyntaxException(
+                    'Only ObjectModifier objects may be passed as options'
+                )
+ (duplicate-code)
+R:  1, 0: Similar lines in 6 files
+==pov.finite_solid.Blob:69
+==pov.finite_solid.HeightField:94
+==pov.finite_solid.JuliaFractal:88
+==pov.finite_solid.Lathe:107
+==pov.global_settings.Radiosity:79
+==pov.infinite_solid.Plane:68
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool', (duplicate-code)
+
+
+Report
+======
+2057 statements analysed.
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |169    |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |51     |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |189    |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |3      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++----------------------------+------+--------+---------+-----------+
+|module                      |error |warning |refactor |convention |
++============================+======+========+=========+===========+
+|pov.test.EndToEndTest       |66.67 |0.53    |7.84     |2.96       |
++----------------------------+------+--------+---------+-----------+
+|pov.test.IncludeTest        |33.33 |0.00    |0.00     |0.00       |
++----------------------------+------+--------+---------+-----------+
+|pov.test.OtherTest          |0.00  |24.87   |3.92     |4.14       |
++----------------------------+------+--------+---------+-----------+
+|pov.test.TextureTest        |0.00  |20.63   |9.80     |13.61      |
++----------------------------+------+--------+---------+-----------+
+|pov.test.GlobalSettingsTest |0.00  |20.63   |1.96     |3.55       |
++----------------------------+------+--------+---------+-----------+
+|pov.test.AthEffTest         |0.00  |20.11   |3.92     |3.55       |
++----------------------------+------+--------+---------+-----------+
+|pov.test.BasicTest          |0.00  |8.47    |9.80     |14.20      |
++----------------------------+------+--------+---------+-----------+
+|pov.basic.SceneItem         |0.00  |3.17    |9.80     |5.33       |
++----------------------------+------+--------+---------+-----------+
+|pov.test.FiniteSolidTest    |0.00  |0.53    |15.69    |17.75      |
++----------------------------+------+--------+---------+-----------+
+|pov.test.InfiniteSolidTest  |0.00  |0.53    |1.96     |0.59       |
++----------------------------+------+--------+---------+-----------+
+|pov.include.colors_inc      |0.00  |0.53    |0.00     |0.59       |
++----------------------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++-----------------------------+------------+
+|message id                   |occurrences |
++=============================+============+
+|unused-wildcard-import       |155         |
++-----------------------------+------------+
+|invalid-name                 |78          |
++-----------------------------+------------+
+|missing-docstring            |44          |
++-----------------------------+------------+
+|too-many-public-methods      |30          |
++-----------------------------+------------+
+|line-too-long                |28          |
++-----------------------------+------------+
+|duplicate-code               |13          |
++-----------------------------+------------+
+|protected-access             |9           |
++-----------------------------+------------+
+|bad-whitespace               |9           |
++-----------------------------+------------+
+|wildcard-import              |6           |
++-----------------------------+------------+
+|unused-import                |5           |
++-----------------------------+------------+
+|pointless-statement          |5           |
++-----------------------------+------------+
+|no-self-use                  |5           |
++-----------------------------+------------+
+|bad-continuation             |5           |
++-----------------------------+------------+
+|global-variable-undefined    |4           |
++-----------------------------+------------+
+|too-many-statements          |3           |
++-----------------------------+------------+
+|missing-final-newline        |3           |
++-----------------------------+------------+
+|unused-variable              |2           |
++-----------------------------+------------+
+|undefined-variable           |2           |
++-----------------------------+------------+
+|unpacking-non-sequence       |1           |
++-----------------------------+------------+
+|syntax-error                 |1           |
++-----------------------------+------------+
+|superfluous-parens           |1           |
++-----------------------------+------------+
+|old-style-class              |1           |
++-----------------------------+------------+
+|global-variable-not-assigned |1           |
++-----------------------------+------------+
+|global-at-module-level       |1           |
++-----------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 7.94/10
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |90     |NC         |NC         |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |92     |NC         |NC         |83.70       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |327    |NC         |NC         |91.13       |13.76    |
++---------+-------+-----------+-----------+------------+---------+
+|function |6      |NC         |NC         |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    os (pov.global_settings.Radiosity,pov.basic.SceneItem,pov.test.LanguageDirectiveTest,pov.test.FiniteSolidTest,pov.object_modifier.Matrix,pov.finite_solid.HeightField,pov.other.Comment,pov.test.ObjectModifierTest,pov.object_modifier.Rotate,pov.test.TextureTest,pov.basic.Color,pov.test.EndToEndTest,pov.test.BasicTest,pov.object_modifier.Scale,pov.object_modifier.Translate)
+    pov 
+      \-atmeff 
+      | \-Fog (pov.test.EndToEndTest,pov.test.AthEffTest)
+      | \-SkySphere (pov.test.EndToEndTest,pov.test.AthEffTest)
+      \-basic 
+      | \-BlockObject (pov.texture.Normal,pov.finite_solid.Prism,pov.other.Object,pov.texture.Reflection,pov.finite_solid.Blob,pov.finite_solid.HeightField,pov.texture.Texture,pov.texture.Pigment,pov.finite_solid.Torus,pov.global_settings.GlobalSettings,pov.finite_solid.SuperEllipsoid,pov.csg.Csg,pov.global_settings.Radiosity,pov.basic.PoVObject,pov.object_modifier.ClippedBy,pov.finite_solid.SphereSweep,pov.finite_solid.Cylinder,pov.other.ParametricObj,pov.other.IsoSurface,pov.language_directive.Default,pov.finite_patch.FinitePatch,pov.other.Camera,pov.texture.Irid,pov.texture.Finish,pov.texture.ImageMap,pov.global_settings.Photons,pov.finite_solid.Lathe,pov.finite_solid.Box,pov.finite_solid.Sor,pov.infinite_solid.Plane,pov.finite_solid.Sphere,pov.object_modifier.Transformation,pov.finite_solid.Cone,pov.test.BasicTest,pov.texture.ColorMap,pov.test.TextureTest,pov.finite_solid.Text,pov.other.LightSource,pov.finite_solid.JuliaFractal)
+      | \-Color (pov.test.TextureTest,pov.test.BasicTest,pov.include.colors_inc,pov.test.AthEffTest,pov.test.EndToEndTest)
+      | \-PoVObject (pov.atmeff.SkySphere,pov.atmeff.Fog)
+      | \-SceneFile (pov.test.BasicTest,pov.test.EndToEndTest)
+      | \-SceneItem (pov.basic.BlockObject,pov.test.LanguageDirectiveTest,pov.test.FiniteSolidTest,pov.basic.SceneFile,pov.test.BasicTest,pov.test.GlobalSettingsTest,pov.test.InfiniteSolidTest,pov.other.Comment,pov.test.TextureTest,pov.language_directive.LanguageDirective,pov.texture.pattern.Gradient,pov.basic.Color,pov.object_modifier.ObjectModifier)
+      | \-Vector (pov.finite_solid.Cone,pov.basic.Color,pov.test.FiniteSolidTest,pov.test.BasicTest,pov.basic.SceneItem,pov.test.ObjectModifierTest,pov.test.TextureTest,pov.finite_solid.Cylinder,pov.test.EndToEndTest,pov.test.AthEffTest,pov.finite_solid.Box,pov.include.colors_inc)
+      \-csg 
+      | \-Csg (pov.csg.Intersection,pov.csg.Union,pov.csg.Difference,pov.csg.Merge)
+      \-finite_solid 
+      | \-Blob (pov.test.FiniteSolidTest)
+      | \-Box (pov.test.FiniteSolidTest)
+      | \-Cone (pov.test.FiniteSolidTest)
+      | \-Cylinder (pov.test.FiniteSolidTest)
+      | \-HeightField (pov.test.FiniteSolidTest)
+      | \-JuliaFractal (pov.test.FiniteSolidTest)
+      | \-Lathe (pov.test.FiniteSolidTest)
+      | \-Sphere (pov.test.EndToEndTest,pov.test.FiniteSolidTest)
+      \-global_settings 
+      | \-GlobalSettings (pov.test.EndToEndTest,pov.test.GlobalSettingsTest)
+      \-infinite_solid 
+      | \-Plane (pov.test.EndToEndTest,pov.test.InfiniteSolidTest)
+      \-language_directive 
+      | \-Default (pov.test.EndToEndTest,pov.test.LanguageDirectiveTest)
+      | \-LanguageDirective (pov.language_directive.Include,pov.language_directive.Version,pov.language_directive.Default,pov.test.LanguageDirectiveTest)
+      | \-Version (pov.test.EndToEndTest,pov.include.colors_inc,pov.test.LanguageDirectiveTest)
+      \-object_modifier 
+      | \-ObjectModifier (pov.finite_solid.Cone,pov.object_modifier.ClippedBy,pov.object_modifier.Matrix,pov.test.FiniteSolidTest,pov.test.ObjectModifierTest,pov.object_modifier.Rotate,pov.finite_solid.Cylinder,pov.finite_solid.Box,pov.object_modifier.Scale,pov.object_modifier.Interior,pov.object_modifier.Translate)
+      | \-Translate (pov.test.EndToEndTest,pov.test.ObjectModifierTest)
+      \-other 
+      | \-Camera (pov.test.EndToEndTest)
+      | \-IllegalStateException (pov.test.BasicTest,pov.basic.SceneItem)
+      | \-LightSource (pov.test.OtherTest,pov.test.EndToEndTest)
+      | \-SdlSyntaxException (pov.finite_solid.Sphere,pov.test.TextureTest,pov.finite_solid.Cone,pov.test.LanguageDirectiveTest,pov.test.FiniteSolidTest,pov.basic.SceneFile,pov.object_modifier.Matrix,pov.test.GlobalSettingsTest,pov.basic.SceneItem,pov.test.ObjectModifierTest,pov.object_modifier.Scale,pov.test.BasicTest,pov.finite_solid.Cylinder,pov.test.InfiniteSolidTest,pov.finite_solid.Box,pov.finite_solid.Lathe,pov.basic.Vector,pov.object_modifier.Rotate,pov.infinite_solid.Plane,pov.object_modifier.Translate,pov.finite_solid.JuliaFractal)
+      \-test (pov)
+      | \-AthEffTest (pov.test)
+      | \-BasicTest (pov.test)
+      | \-CsgTest (pov.test)
+      | \-EndToEndTest (pov.test)
+      | \-FinitePatchTest (pov.test)
+      | \-FiniteSolidTest (pov.test)
+      | \-GlobalSettingsTest (pov.test)
+      | \-InfiniteSolidTest (pov.test)
+      | \-LanguageDirectiveTest (pov.test)
+      | \-ObjectModifierTest (pov.test)
+      | \-OtherTest (pov.test)
+      | \-TextureTest (pov.test)
+      \-texture 
+        \-ColorMap (pov.test.TextureTest,pov.test.EndToEndTest)
+        \-Finish (pov.test.TextureTest,pov.test.EndToEndTest,pov.test.LanguageDirectiveTest)
+        \-ImageMap (pov.test.EndToEndTest)
+        \-Normal (pov.test.TextureTest,pov.test.EndToEndTest)
+        \-Pigment (pov.test.TextureTest,pov.test.EndToEndTest,pov.test.AthEffTest)
+        \-Reflection (pov.test.EndToEndTest)
+        \-Texture (pov.test.TextureTest,pov.test.EndToEndTest)
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |260   |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |3.304 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |2849   |36.58 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |3916   |50.28 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |243    |3.12  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |781    |10.03 |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
