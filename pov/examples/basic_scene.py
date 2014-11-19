@@ -67,11 +67,11 @@ sphere {
 }
 '''
 
-from logging import *
+from logging import debug
 
 from pov.atmeff.SkySphere import SkySphere
 from pov.basic.SceneFile import SceneFile
-from pov.basic.Vector import *
+from pov.basic.Vector import Vector, x, y, z
 from pov.basic.Color import Color
 from pov.global_settings.GlobalSettings import GlobalSettings
 from pov.finite_solid.Sphere import Sphere
@@ -93,9 +93,9 @@ fix.append(
     GlobalSettings(assumed_gamma=1.0)
 )
 
-#@TODO: Read from Config
+# @TODO: Read from Config
 image_width = 800
-#@TODO: Read from Config
+# @TODO: Read from Config
 image_height = 600
 
 fix.append(

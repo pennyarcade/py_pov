@@ -17,7 +17,7 @@
 *                                                                           */
 ***************************************************************************'''
 
-from math import *
+import math
 
 from lgeo.config.lgeo_cfg import *
 

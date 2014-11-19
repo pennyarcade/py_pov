@@ -1,19 +1,19 @@
-'''****************************************************************************/
-*                                                                             */
-* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)      */
-*                                                                             */
-* 19970801 Lutz Uhlmann                                                       */
-* 20080102 Lutz Uhlmann fixed stud orientation                                */
-*                                                                             */
-* This file is in no way related to the LEGO(tm) Group.                       */
-* It is provided for private non-commercial use only.                         */
-*                                                                             */
-* lg_3788: Car Mudguard 2 x 4                                                 */
-*                                                                             */
-*****************************************************************************'''
+'''**************************************************************************/
+*                                                                           */
+* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)    */
+*                                                                           */
+* 19970801 Lutz Uhlmann                                                     */
+* 20080102 Lutz Uhlmann fixed stud orientation                              */
+*                                                                           */
+* This file is in no way related to the LEGO(tm) Group.                     */
+* It is provided for private non-commercial use only.                       */
+*                                                                           */
+* lg_3788: Car Mudguard 2 x 4                                               */
+*                                                                           */
+***************************************************************************'''
 
 from lgeo.include.common.lg_defs import *
-from lgeo.include.common.brick_subparts import *
+from lgeo.include.common.brick_subparts import lg_knob, lg_plate_cylinder
 
 from pov.basic.Vector import Vector
 
@@ -31,7 +31,7 @@ lg_angle = atan2(0.44, 0.38)*180/pi
 
 
 def solid():
-    mainpart= Union()
+    mainpart = Union()
 
     ROT = 0
     while (ROT < 2):
@@ -668,4 +668,3 @@ merge {
 
 #end
 '''
-

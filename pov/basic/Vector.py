@@ -15,7 +15,7 @@ from math import sqrt
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
-class Vector:
+class Vector(object):
     """Generalized Vector class.
 
     Handles arbitrary component vectors."""

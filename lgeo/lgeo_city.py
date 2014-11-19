@@ -19,7 +19,7 @@ Includes
 ***************************************************************************'''
 # ==== System Includes ====
 # import sys
-import logging
+# import logging
 
 # ==== py_pov Inchudes
 from pov.atmeff.SkySphere import SkySphere
