@@ -1,21 +1,21 @@
-'''****************************************************************************/
-*                                                                             */
-* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)      */
-*                                                                             */
-* 19970623 Lutz Uhlmann                                                       */
-* 2002xxxx Lutz Uhlmann added LGEO logo derived from Larc C. Hassings L3Logo  */
-* 20071112 Lutz Uhlmann added lg_knob_dot for patterned baseplates            */
-* 20071124 Lutz Uhlmann added lg_quality for L3P comptibility                 */
-* 20071129 Lutz Uhlmann added lg_tech_knob_logo for lg_quality > 3            */
-* 20080229 Lutz Uhlmann added lg_test variable for development                */
-* 20080720 Lutz Uhlmann added lg_studs variable                               */
-*                                                                             */
-* This file is in no way related to the LEGO(tm) Group.                       */
-* It is provided for private non-commercial use only.                         */
-*                                                                             */
-* lg_defs: Definitions of standard sub-parts and sizes                        */
-*                                                                             */
-*****************************************************************************'''
+'''**************************************************************************/
+*                                                                           */
+* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)    */
+*                                                                           */
+* 19970623 Lutz Uhlmann                                                     */
+* 2002xxxx Lutz Uhlmann added LGEO logo derived from Larc C. Hassings L3Logo*/
+* 20071112 Lutz Uhlmann added lg_knob_dot for patterned baseplates          */
+* 20071124 Lutz Uhlmann added lg_quality for L3P comptibility               */
+* 20071129 Lutz Uhlmann added lg_tech_knob_logo for lg_quality > 3          */
+* 20080229 Lutz Uhlmann added lg_test variable for development              */
+* 20080720 Lutz Uhlmann added lg_studs variable                             */
+*                                                                           */
+* This file is in no way related to the LEGO(tm) Group.                     */
+* It is provided for private non-commercial use only.                       */
+*                                                                           */
+* lg_defs: Definitions of standard sub-parts and sizes                      */
+*                                                                           */
+***************************************************************************'''
 
 from math import *
 
@@ -66,9 +66,9 @@ LG_GRID_WIDTH = LG_BRICK_WIDTH/sqrt(2)-2*LG_KNOB_RADIUS
 LG_E = 0.01
 
 
-'''*****************************************************************************
+'''***************************************************************************
 Custom Shorthands
-*****************************************************************************'''
+***************************************************************************'''
 LDU = 0.8/20
 LGBW = LG_BRICK_WIDTH
 LGBH = LG_BRICK_HEIGHT
@@ -105,14 +105,22 @@ def lego_logo_text():
     letter_g = Union(
         # Letter G
         Sphere(Vector(-35.95, 0, 57), 6),
-        Torus(18.45, 6, ClippedBy(Plane(Vector(40, 0, -9), 0)), Translate(Vector(-40, 0, 39))),
+        Torus(
+            18.45, 6,
+            ClippedBy(Plane(Vector(40, 0, -9), 0)),
+            Translate(Vector(-40, 0, 39))
+        ),
         Cylinder(Vector(-44.05, 0, 21), Vector(35.95, 0, 3), 6),
-        Torus(18.45, 6, ClippedBy(Plane(Vector(-40, 0, 9), 0),), Translate(Vector(40, 0, 21))),
+        Torus(
+            18.45, 6,
+            ClippedBy(Plane(Vector(-40, 0, 9), 0),),
+            Translate(Vector(40, 0, 21))
+        ),
         Cylinder(Vector(44.05, 0, 39), Vector(0, 0, 49), 6),
         Sphere(Vector(0, 0, 49), 6),
         Cylinder(Vector(0, 0, 49), Vector(0, 0, 34), 6),
         Sphere(Vector(0, 0, 34), 6),
-    ),
+    )
     if (lg_stud_logo > 0):
         letter_g.append(
             Translate(Vector(0, 0, -65))
@@ -132,9 +140,17 @@ def lego_logo_text():
             letter_g,
             Union(
                 # Letter O
-                Torus(18.45, 6, ClippedBy(Plane(Vector(40, 0, -9), 0)), Translate(Vector(-40, 0, 99))),
+                Torus(
+                    18.45, 6,
+                    ClippedBy(Plane(Vector(40, 0, -9), 0)),
+                    Translate(Vector(-40, 0, 99))
+                ),
                 Cylinder(Vector(-44.05, 0, 81), Vector(35.95, 0, 63), 6),
-                Torus(18.45, 6, ClippedBy(Plane(Vector(-40, 0, 9), 0)), Translate(Vector(40, 0, 81))),
+                Torus(
+                    18.45, 6,
+                    ClippedBy(Plane(Vector(-40, 0, 9), 0)),
+                    Translate(Vector(40, 0, 81))
+                ),
                 Cylinder(Vector(44.05, 0, 99), Vector(-35.95, 0, 117), 6),
             ),
             Scale(Vector(4.5/128, 4.5/128, 4.5/128)),
@@ -168,9 +184,17 @@ def lego_logo_text_clear():
     letter_g = Merge(
         #Letter G
         Sphere(Vector(-35.95, 0, 57), 6),
-        Torus(18.45, 6, ClippedBy(Plane(Vector(40, 0, -9), 0)), Translate(Vector(-40, 0, 39))),
+        Torus(
+            18.45, 6,
+            ClippedBy(Plane(Vector(40, 0, -9), 0)),
+            Translate(Vector(-40, 0, 39))
+        ),
         Cylinder(Vector(-44.05, 0, 21), Vector(35.95, 0, 3), 6),
-        Torus(18.45, 6, ClippedBy(Plane(Vector(-40, 0, 9), 0)), Translate(Vector(40, 0, 21))),
+        Torus(
+            18.45, 6,
+            ClippedBy(Plane(Vector(-40, 0, 9), 0)),
+            Translate(Vector(40, 0, 21))
+        ),
         Cylinder(Vector(44.05, 0, 39), Vector(0, 0, 49), 6),
         Sphere(Vector(0, 0, 49), 6),
         Cylinder(Vector(0, 0, 49), Vector(0, 0, 34), 6),
@@ -194,9 +218,17 @@ def lego_logo_text_clear():
         letter_g,
         Merge(
             # Letter O
-            Torus(18.45, 6, ClippedBy(Plane(Vector(40, 0, -9), 0)), Translate(Vector(-40, 0, 99))),
+            Torus(
+                18.45, 6,
+                ClippedBy(Plane(Vector(40, 0, -9), 0)),
+                Translate(Vector(-40, 0, 99))
+            ),
             Cylinder(Vector(-44.05, 0, 81), Vector(35.95, 0, 63), 6),
-            Torus(18.45, 6, ClippedBy(Plane(Vector(-40, 0, 9), 0)), Translate(Vector(40, 0, 81))),
+            Torus(
+                18.45, 6,
+                ClippedBy(Plane(Vector(-40, 0, 9), 0)),
+                Translate(Vector(40, 0, 81))
+            ),
             Cylinder(Vector(44.05, 0, 99), Vector(-35.95, 0, 117), 6),
         ),
         Scale(4.5/128),
@@ -244,7 +276,6 @@ def lg_knob():
         )
 
     return result
-
 
 
 # solid stud top for dotted baseplates
@@ -395,7 +426,11 @@ lg_plate_column = Difference(
 # wall between brick cylinder and brick wall
 lg_support_wall = Box(
     Vector(-LG_CYLINDER_WALL_WIDTH/2, -LG_E, 0.225),
-    Vector(LG_CYLINDER_WALL_WIDTH/2, LG_BRICK_WIDTH-LG_CYLINDER_RADIUS-LG_WALL_WIDTH+LG_E, LG_BRICK_HEIGHT)
+    Vector(
+        LG_CYLINDER_WALL_WIDTH/2,
+        LG_BRICK_WIDTH-LG_CYLINDER_RADIUS-LG_WALL_WIDTH+LG_E,
+        LG_BRICK_HEIGHT
+    )
 )
 
 
@@ -561,7 +596,11 @@ lg_plate_column_clear = Difference(
 
 lg_support_wall_clear = Box(
     Vector(-LG_CYLINDER_WALL_WIDTH/2, -LG_E, 0.225),
-    Vector(LG_CYLINDER_WALL_WIDTH/2, LG_BRICK_WIDTH-LG_CYLINDER_RADIUS-LG_WALL_WIDTH+LG_E, LG_BRICK_HEIGHT)
+    Vector(
+        LG_CYLINDER_WALL_WIDTH/2,
+        LG_BRICK_WIDTH-LG_CYLINDER_RADIUS-LG_WALL_WIDTH+LG_E,
+        LG_BRICK_HEIGHT
+    )
 )
 
 

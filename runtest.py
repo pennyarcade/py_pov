@@ -13,7 +13,9 @@ Unittests File
 """
 
 import unittest
-from pov.test import *
+from pov.test import BasicTest
+from pov.test import FiniteSolidTest
+from pov.test import LanguageDirectiveTest
 
 
 def suite():
@@ -21,7 +23,9 @@ def suite():
 
     suite.addTests(unittest.TestLoader.loadTestsFromModule(BasicTest))
     suite.addTests(unittest.TestLoader.loadTestsFromModule(FiniteSolidTest))
-    suite.addTests(unittest.TestLoader.loadTestsFromModule(LanguageDirectiveTest))
+    suite.addTests(
+        unittest.TestLoader.loadTestsFromModule(LanguageDirectiveTest)
+    )
 
     return suite
 

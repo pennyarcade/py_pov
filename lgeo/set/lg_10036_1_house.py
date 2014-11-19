@@ -1,4 +1,4 @@
-/*******************************************************************************
+'''***************************************************************************
  Persistence of Vision Ray Tracer Scene Description File
  File: 10036-1_car.pov
  Vers: 3.6
@@ -6,9 +6,9 @@
  Link: www.peeron.com/inv/sets/10036-1
  Date: 04/2013
  Auth: Chocokiko
-*******************************************************************************/
+**************************************************************************'''
 
-/*******************************************************************************
+'''**************************************************************************
 Parts List
 ----------
 
@@ -49,10 +49,10 @@ Parts List
 2412b   Yellow  Tile 1 x 2 Grille with Groove (Pic)
 4150p02 Yellow  Tile 2 x 2 Round with Pizza Pattern (Pic)
 3068b   Black   Tile 2 x 2 with Groove (Pic)
-*******************************************************************************/
+***************************************************************************'''
 
 
-/*******************************************************************************
+'''***************************************************************************
 LGEO Disclaimer
 Well, it is possible but not recommended. LGEO uses a different coordinate
 system and scaling than LDRAW, so it may be pretty hard to build a model by
@@ -62,15 +62,15 @@ Sorry for that, but my understanding of coordinate to this time was a flat
 standard XY coordinate system with a third Z axis coming out of the plane.
 Scaling is to real measurements, where 1 POV-Ray unit is 10mm. So 0.8 is 20 LDU
 (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
-*******************************************************************************/
+***************************************************************************'''
 
-//Only load once
-#ifndef(set_10036_1_car)
-#declare set_10036_1_car = 1;
+# Only load once
+# #ifndef(set_10036_1_car)
+# #declare set_10036_1_car = 1;
 
-/*******************************************************************************
+'''***************************************************************************
 Includes
-*******************************************************************************/
+***************************************************************************'''
 // ==== Standard POV-Ray Includes ====
 #include "colors.inc"     // Standard Color definitions
 // #include "textures.inc"   // Standard Texture definitions
@@ -347,16 +347,16 @@ Objects (Step 1)
         // 4589    Black   Cone 1 x 1
         StdBrick(lg_4589, lg_black, -1.5*LGBW, 34*LGPH, 4*LGBW, -90, 0, 0)
     }
-#declare set_10036_1_house_nonmoving_ox= 0;
-#declare set_10036_1_house_nonmoving_oy= 0;
-#declare set_10036_1_house_nonmoving_oz= 0;
+# declare set_10036_1_house_nonmoving_ox= 0;
+# declare set_10036_1_house_nonmoving_oy= 0;
+# declare set_10036_1_house_nonmoving_oz= 0;
 
 
 // 3192 Black   Door 1 x 3 x 3 Right
-#declare set_10036_1_house_oven_door=
-    StdBrick(lg_3192, lg_black, -3.5*LGBW, 12*LGPH, 3.5*LGBW, -90, 90, 0)
-#declare set_10036_1_house_oven_door_ox= -3.5*LGBW;
-#declare set_10036_1_house_oven_door_oy=   12*LGPH;
-#declare set_10036_1_house_oven_door_oz=  3.5*LGBW;
+# declare set_10036_1_house_oven_door= 
+#     StdBrick(lg_3192, lg_black, -3.5*LGBW, 12*LGPH, 3.5*LGBW, -90, 90, 0)
+# declare set_10036_1_house_oven_door_ox= -3.5*LGBW;
+# declare set_10036_1_house_oven_door_oy=   12*LGPH;
+# declare set_10036_1_house_oven_door_oz=  3.5*LGBW;
 
-#end
+# end

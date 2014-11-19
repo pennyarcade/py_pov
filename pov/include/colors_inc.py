@@ -208,7 +208,9 @@ def crgb2h(rgb, maximum, span):
     green = rgb.green
     blue = rgb.blue
     if span > 0:
-        val_t1, val_t2, val_t3 = 0
+        val_t1 = 0
+        val_t2 = 0
+        val_t3 = 0
         if red == maximum & green != maximum:
             val_t1 = 0 + (green - blue) / span
         if green == maximum & blue != maximum:
@@ -238,7 +240,9 @@ def chsl2rgb(vector):
         rgb = lightness * col
     else:
         rgb = (1 - lightness) * col + (2 * lightness - 1) * Vector(1, 1, 1)
-    return Color(rgb.red, rgb.green, rgb.blue, incolor.filter, incolor.transmit)
+    return Color(
+        rgb.red, rgb.green, rgb.blue, incolor.filter, incolor.transmit
+    )
 
 
 def crgb2hsl(incolor):
@@ -281,7 +285,9 @@ def chsv2rgb(vector):
     rgb = ((1-saturation) * Color(rgb=Vector(1, 1, 1)) + saturation * sat_rgb)
     rgb *= value
     return Color(
-        rgbft=Vector(rgb.red, rgb.green, rgb.blue, hsvft.filter, hsvft.transmit)
+        rgbft=Vector(
+            rgb.red, rgb.green, rgb.blue, hsvft.filter, hsvft.transmit
+        )
     )
 
 
@@ -303,5 +309,7 @@ def crgb2hsv(vector):
     if (maximum != 0):
         saturation = span / maximum
     return Color(
-        rgbft=Vector(hue, saturation, maximum, incolor.filter, incolor.transmit)
+        rgbft=Vector(
+            hue, saturation, maximum, incolor.filter, incolor.transmit
+        )
     )

@@ -1,5 +1,4 @@
-﻿# coding=UTF-8
-"""
+﻿"""
 Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -39,8 +38,8 @@ class SceneItem(object):
         'acosh', 'adaptive', 'adc_bailout', 'agate', 'agate_turb', 'all',
         'all_intersections', 'alpha', 'altitude', 'always_sample', 'ambient',
         'ambient_light', 'angle', 'aperture', 'append', 'arc_angle',
-        'area_light', 'array', 'asc', 'ascii', 'asin', 'asinh', 'assumed_gamma',
-        'atan', 'atan2', 'atanh', 'autostop', 'average',
+        'area_light', 'array', 'asc', 'ascii', 'asin', 'asinh',
+        'assumed_gamma', 'atan', 'atan2', 'atanh', 'autostop', 'average',
         'b_spline', 'background', 'bezier_spline', 'bicubic_patch',
         'black_hole', 'blob', 'blue', 'blur_samples', 'bounded_by', 'box',
         'boxed', 'bozo', 'break', 'brick', 'brick_size', 'brightness',
@@ -64,21 +63,21 @@ class SceneItem(object):
         'face_indices', 'facets', 'fade_color', 'fade_colour', 'fade_distance',
         'fade_power', 'falloff', 'falloff_angle', 'false', 'fclose',
         'file_exists', 'filter', 'final_clock', 'final_frame', 'finish',
-        'fisheye', 'flatness', 'flip', 'floor', 'focal_point', 'fog', 'fog_alt',
-        'fog_offset', 'fog_type', 'fopen', 'form', 'frame_number', 'frequency',
-        'fresnel', 'function',
+        'fisheye', 'flatness', 'flip', 'floor', 'focal_point', 'fog',
+        'fog_alt', 'fog_offset', 'fog_type', 'fopen', 'form', 'frame_number',
+        'frequency', 'fresnel', 'function',
         'gather', 'gif', 'global_lights', 'global_settings', 'gradient',
-        'granite', 'gray', 'gray_threshold', 'green', 'height_field', 'hexagon',
-        'hf_gray_16', 'hierarchy', 'hypercomplex', 'hollow', 'if', 'ifdef',
-        'iff', 'ifndef', 'image_height', 'image_map', 'image_pattern',
+        'granite', 'gray', 'gray_threshold', 'green', 'height_field',
+        'hexagon', 'hf_gray_16', 'hierarchy', 'hypercomplex', 'hollow', 'if',
+        'ifdef', 'iff', 'ifndef', 'image_height', 'image_map', 'image_pattern',
         'image_width', 'include', 'initial_clock', 'initial_frame', 'inside',
         'inside_vector', 'int', 'interior', 'interior_texture', 'internal',
         'interpolate', 'intersection', 'intervals', 'inverse', 'ior', 'irid',
         'irid_wavelength', 'isosurface',
         'jitter', 'jpeg', 'julia', 'julia_fractal',
         'lambda', 'lathe', 'leopard', 'light_group', 'light_source',
-        'linear_spline', 'linear_sweep', 'ln', 'load_file', 'local', 'location',
-        'log', 'look_at', 'looks_like', 'low_error_factor',
+        'linear_spline', 'linear_sweep', 'ln', 'load_file', 'local',
+        'location', 'log', 'look_at', 'looks_like', 'low_error_factor',
         'macro', 'magnet', 'major_radius', 'mandel', 'map_type', 'marble',
         'material', 'material_map', 'matrix', 'max', 'max_extent',
         'max_gradient', 'max_intersections', 'max_iteration', 'max_sample',
@@ -108,9 +107,9 @@ class SceneItem(object):
         'sky_sphere', 'slice', 'slope', 'slope_map', 'smooth',
         'smooth_triangle',
         'solid', 'sor', 'spacing', 'specular', 'sphere', 'sphere_sweep',
-        'spherical', 'spiral1', 'spiral2', 'spline', 'split_union', 'spotlight',
-        'spotted', 'sqr', 'sqrt', 'statistics', 'str', 'strcmp', 'strength',
-        'strlen', 'strlwr', 'strupr', 'sturm', 'substr', 'sum',
+        'spherical', 'spiral1', 'spiral2', 'spline', 'split_union',
+        'spotlight', 'spotted', 'sqr', 'sqrt', 'statistics', 'str', 'strcmp',
+        'strength', 'strlen', 'strlwr', 'strupr', 'sturm', 'substr', 'sum',
         'superellipsoid', 'switch', 'sys',
         't', 'tan', 'tanh', 'target', 'text', 'texture', 'texture_list',
         'texture_map', 'tga', 'thickness', 'threshold', 'tiff', 'tightness',
@@ -118,12 +117,12 @@ class SceneItem(object):
         'transform',
         'translate', 'transmit', 'triangle', 'triangle_wave', 'true', 'ttf',
         'turb_depth', 'turbulence', 'type',
-        'u', 'u_steps', 'ultra_wide_angle', 'undef', 'union', 'up', 'use_alpha',
-        'use_color', 'use_colour', 'use_index', 'utf8', 'uv_indices',
-        'uv_mapping', 'uv_vectors',
+        'u', 'u_steps', 'ultra_wide_angle', 'undef', 'union', 'up',
+        'use_alpha', 'use_color', 'use_colour', 'use_index', 'utf8',
+        'uv_indices', 'uv_mapping', 'uv_vectors',
         'v', 'v_steps', 'val', 'variance', 'vaxis_rotate', 'vcross', 'vdot',
-        'version', 'vertex_vectors', 'vlength', 'vnormalize', 'vrotate', 'vstr',
-        'vturbulence',
+        'version', 'vertex_vectors', 'vlength', 'vnormalize', 'vrotate',
+        'vstr', 'vturbulence',
         'warning', 'warp', 'water_level', 'waves', 'while', 'width', 'wood',
         'wrinkles', 'write',
         'x', 'y', 'yes', 'z',
@@ -151,11 +150,11 @@ class SceneItem(object):
             @TODO: move indentation check to own function
         """
         if args is None:
-            args=[]
+            args = []
         if opts is None:
-            opts=[]
+            opts = []
         if kwargs is None:
-            kwargs={}
+            kwargs = {}
 
         debug("%s: SceneItem.__init__(): Start: %s, %s, %s, %s" %
               (self.__class__.__name__, name, args, opts, kwargs))
@@ -185,9 +184,9 @@ class SceneItem(object):
         debug("%s: SceneItem.__init__(): Stop: %s, %s, %s, %s" %
               (self.__class__.__name__, name, args, opts, kwargs))
 
-    #---------------------------------------------------------------------------
+    #------------------------------------------------------------------------
     # Pseudo private  methods
-    #---------------------------------------------------------------------------
+    #------------------------------------------------------------------------
 
     def _indent(self):
         """
@@ -235,6 +234,7 @@ class SceneItem(object):
                 * reduce indentation
                 * add line with closing bracket
         """
+        global indentation
         debug("end block: indentation= %s", indentation)
 
         if indentation == 0:
@@ -400,9 +400,9 @@ class SceneItem(object):
             return True
         return False
 
-    #---------------------------------------------------------------------------
+    # ------------------------------------------------------------------------
     # Overloading magic methods
-    #---------------------------------------------------------------------------
+    # ------------------------------------------------------------------------
 
     def __str__(self):
         """
@@ -479,9 +479,9 @@ class SceneItem(object):
     def __len__(self):
         return len(self.args) + len(self.opts)
 
-    #---------------------------------------------------------------------------
+    # ------------------------------------------------------------------------
     # Public methods
-    #---------------------------------------------------------------------------
+    # ------------------------------------------------------------------------
 
     def append(self, *opts, **kwargs):
         """

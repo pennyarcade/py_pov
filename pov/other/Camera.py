@@ -100,7 +100,7 @@ class Camera(BlockObject):
 
         self._validate_kwargs(valid_kw)
 
-        #@TODO: Implement Camera type checking
+        # @TODO: Implement Camera type checking
         # camera_type = [
         #     'perspective',
         #     'orthographic',
