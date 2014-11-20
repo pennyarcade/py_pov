@@ -20,7 +20,6 @@ from pov.csg.Difference import Difference
 from pov.finite_solid.Box import Box
 from pov.finite_solid.Cylinder import Cylinder
 from pov.finite_solid.Sphere import Sphere
-from pov.finite_solid.Torus import Torus
 
 from pov.object_modifier.Rotate import Rotate
 from pov.object_modifier.Translate import Translate
