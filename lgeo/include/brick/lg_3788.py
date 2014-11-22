@@ -12,20 +12,19 @@
 *                                                                           */
 ***************************************************************************'''
 
-from math import atan2
+from math import atan2, pi
 
-# from lgeo.include.common.lg_defs import *
+from lgeo.include.common.lg_defs import LG_BRICK_WIDTH, LG_CORNER_SPACE, 
+    LG_PLATE_HEIGHT
 from lgeo.include.common.brick_subparts import lg_knob, lg_plate_cylinder
 
 from pov.basic.Vector import Vector
 
 from pov.csg.Union import Union
-
 from pov.finite_solid.Box import Box
-
+from pov.finite_solid.Sphere import Sphere
 from pov.object_modifier.Translate import Translate
 from pov.object_modifier.Rotate import Rotate
-
 from pov.other.Object import Object
 
 
@@ -38,70 +37,63 @@ def solid():
     """
     mainpart = Union()
 
-    rot = 0
-    while rot < 2:
+    for rot in (0, 1):
         rotpart = Union(
             Sphere(
                 Vector(
                     LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Sphere(
                 Vector(
                     LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Sphere(
                 Vector(
                     -LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Sphere(
                 Vector(
                     -LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Sphere(
                 Vector(
                     -LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     LG_BRICK_WIDTH+LG_CORNER_SPACE,
-                    -LG_CORNER_SPACE),
-                LG_CORNER_SPACE
+                    -LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Sphere(
-                Vector(LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                Vector(
+                    LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     -LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Sphere(
                 Vector(
                     -LG_BRICK_WIDTH+0.12-LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Sphere(
                 Vector(
                     LG_BRICK_WIDTH-0.12+LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -113,8 +105,7 @@ def solid():
                     LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -126,8 +117,7 @@ def solid():
                     -LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -139,8 +129,7 @@ def solid():
                     LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     -LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -152,8 +141,7 @@ def solid():
                     LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -165,8 +153,7 @@ def solid():
                     -LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -178,8 +165,7 @@ def solid():
                     LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -191,8 +177,7 @@ def solid():
                     -LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     -LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -204,8 +189,7 @@ def solid():
                     LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     -LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -217,8 +201,7 @@ def solid():
                     LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -230,8 +213,7 @@ def solid():
                     LG_BRICK_WIDTH-0.12+LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -243,8 +225,7 @@ def solid():
                     -LG_BRICK_WIDTH+0.12-LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -256,8 +237,7 @@ def solid():
                     -LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     -LG_PLATE_HEIGHT-LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -269,8 +249,7 @@ def solid():
                     LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     -LG_PLATE_HEIGHT-LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -282,8 +261,7 @@ def solid():
                     -LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     -LG_BRICK_WIDTH-LG_CORNER_SPACE, 
                     -LG_PLATE_HEIGHT-LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -295,8 +273,7 @@ def solid():
                     LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -LG_PLATE_HEIGHT-LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -308,8 +285,7 @@ def solid():
                     -LG_BRICK_WIDTH+0.12-LG_CORNER_SPACE,
                     LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -321,8 +297,7 @@ def solid():
                     -LG_BRICK_WIDTH+0.12-LG_CORNER_SPACE,
                     -LG_BRICK_WIDTH+LG_CORNER_SPACE,
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(
@@ -334,8 +309,7 @@ def solid():
                     0.3+LG_CORNER_SPACE,
                     2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     -0.2+LG_CORNER_SPACE
-                ),
-                LG_CORNER_SPACE
+                ), LG_CORNER_SPACE
             ),
             Cylinder(
                 Vector(0, 0, 0),
@@ -697,10 +671,7 @@ def solid():
             rotpart.append(
                 Rotate(Vector(0, 0, 180))
             )
-
         mainpart.append(rotpart)
-        rot = rot + 1
-    #end
 
     mainpart.append(
         Difference(
@@ -1080,6 +1051,4 @@ merge {
   Translate(Vector(0, 0, -2*LG_PLATE_HEIGHT>
  }
 }
-
-#end
 '''
