@@ -363,4 +363,51 @@ W: 17, 0: Unused import Logger from wildcard import (unused-wildcard-import)
 W: 17, 0: Unused import Formatter from wildcard import (unused-wildcard-import)
 W: 17, 0: Unused import BASIC_FORMAT from wildcard import (unused-wildcard-import)
 W: 17, 0: Unused import getLevelName from wildcard import (unused-wildcard-import)
-W: 17, 0: Unused import INFO from wil
+W: 17, 0: Unused import INFO from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import addLevelName from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import log from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import FileHandler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import WARNING from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import LoggerAdapter from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import StreamHandler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import fatal from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import setLoggerClass from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import getLoggerClass from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import CRITICAL from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import error from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import NullHandler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import disable from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import Filter from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import ERROR from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import DEBUG from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import FATAL from wildcard import (unused-wildcard-import)
+W: 28, 0: Unused import SdlSyntaxException (unused-import)
+W: 17, 0: Unused import info from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import WARN from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import exception from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import NOTSET from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import BufferingFormatter from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import makeLogRecord from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import warn from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import getLogger from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import captureWarnings from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import critical from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import debug from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import warning from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import basicConfig from wildcard import (unused-wildcard-import)
+************* Module pov.test.EndToEndTest
+C: 56, 0: Exactly one space required after assignment
+        ref =  "#version 3.6;" + lsep
+            ^ (bad-whitespace)
+C:260, 0: Exactly one space required after assignment
+        ref =  '#version 3.6;' + lsep
+            ^ (bad-whitespace)
+C:389, 0: Exactly one space required after assignment
+        ref =  '#version 3.6;' + lsep
+            ^ (bad-whitespace)
+C:605, 0: No space allowed after keyword argument assignment
+                direction= 2 * z,
+                         ^ (bad-whitespace)
+C:628, 0: No space allowed before bracket
+                Texture (
+                        ^ (bad-whitespace)
