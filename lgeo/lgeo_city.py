@@ -26,7 +26,7 @@ from pov.atmeff.SkySphere import SkySphere
 
 from pov.basic.SceneFile import SceneFile
 from pov.basic.Color import Color
-from pov.basic.Vector import *
+from pov.basic.Vector import Vector, x, y, z
 
 from pov.global_settings.GlobalSettings import GlobalSettings
 
@@ -51,58 +51,58 @@ from pov.texture.pattern.Gradient import Gradient
 # Standard Color definitions
 from pov.include.colors_inc import *
 
-'''
-// Standard Texture definitions
-// #include "textures.inc"
-// internal functions usable in user defined functions
-// #include "functions.inc"
 
-// ==== Additional Includes ====
-// Don't have all of the following included at once, it'll cost memory and time
-// to parse!
-// --- general include files ---
-// macros for manipulating arrays
-// #include "arrays.inc"
-// A complete library of character objects, by Ken Maeno
-// #include "chars.inc"
-// Various constants and alias definitions
-// #include "consts.inc"
-// contains various macros for debugging scene files
-// #include "debug.inc"
-// The official POV-Ray Logo in various forms
-// #include "logo.inc"
-// general math functions and macros
-// #include "math.inc"
-// Some common radiosity settings
-// #include "rad_def.inc"
-// macros for generating random numbers
-// #include "rand.inc"
-// #include "shapes.inc"     // macros for generating various shapes
-// #include "shapes2.inc"    // some not built in basic shapes
-// #include "shapesq.inc"    // Pre-defined quartic shapes
-// #include "skies.inc"      // Ready defined sky spheres
-// macros for generating and manipulating text strings
-// #include "strings.inc"
-// macro for sun position on a given date, time, and location on earth
-// #include "sunpos.inc"
-// #include "transforms.inc" // transformation macros
+# Standard Texture definitions
+# #include "textures.inc"
+# internal functions usable in user defined functions
+# #include "functions.inc"
 
-// --- textures ---
-// #include "finish.inc"     // Some basic finishes
-// #include "glass.inc"      // Glass textures/interiors
-// #include "golds.inc"      // Gold textures
-// #include "metals.inc"     // Metallic pigments, finishes, and textures
-// #include "stones.inc"     // Binding include-file for STONES1 and STONES2
-// #include "stones1.inc"    // Great stone-textures created by Mike Miller
-// #include "stones2.inc"    // More, done by Dan Farmer and Paul Novak
-// #include "woodmaps.inc"   // Basic wooden colormaps
-// Great wooden textures created by Dan Farmer and Paul Novak
-// #include "woods.inc"
-'''
+# ==== Additional Includes ====
+# Don't have all of the following included at once, it'll cost memory and time
+# to parse!
+# --- general include files ---
+# macros for manipulating arrays
+# #include "arrays.inc"
+# A complete library of character objects, by Ken Maeno
+# #include "chars.inc"
+# Various constants and alias definitions
+# #include "consts.inc"
+# contains various macros for debugging scene files
+# #include "debug.inc"
+# The official POV-Ray Logo in various forms
+# #include "logo.inc"
+# general math functions and macros
+# #include "math.inc"
+# Some common radiosity settings
+# #include "rad_def.inc"
+# macros for generating random numbers
+# #include "rand.inc"
+# #include "shapes.inc"     # macros for generating various shapes
+# #include "shapes2.inc"    # some not built in basic shapes
+# #include "shapesq.inc"    # Pre-defined quartic shapes
+# #include "skies.inc"      # Ready defined sky spheres
+# macros for generating and manipulating text strings
+# #include "strings.inc"
+# macro for sun position on a given date, time, and location on earth
+# #include "sunpos.inc"
+# #include "transforms.inc" # transformation macros
+
+# --- textures ---
+# #include "finish.inc"     # Some basic finishes
+# #include "glass.inc"      # Glass textures/interiors
+# #include "golds.inc"      # Gold textures
+# #include "metals.inc"     # Metallic pigments, finishes, and textures
+# #include "stones.inc"     # Binding include-file for STONES1 and STONES2
+# #include "stones1.inc"    # Great stone-textures created by Mike Miller
+# #include "stones2.inc"    # More, done by Dan Farmer and Paul Novak
+# #include "woodmaps.inc"   # Basic wooden colormaps
+# Great wooden textures created by Dan Farmer and Paul Novak
+# #include "woods.inc"
+
 
 # ==== LGEO Colors and Definitions ====
-#include "lg_color.inc"
-#include "lg_defs.inc"
+# include "lg_color.inc"
+# include "lg_defs.inc"
 
 # ==== LGEO fixed parts ====
 
@@ -110,8 +110,8 @@ from pov.include.colors_inc import *
 
 # ==== Object includes ====
 from lgeo.set import lg_10036_1_car
-#include "10036-1_house.pov"
-#include "10036-1_main.pov"
+# include "10036-1_house.pov"
+# include "10036-1_main.pov"
 
 
 def main():
@@ -197,13 +197,13 @@ def main():
     Light
     ***********************************************************************'''
     fix.append(
-        #LightSource(
+        # LightSource(
         #  Vector(0, 0, 0)      # light's position (translated below)
         #  Color(rgb=(1, 1, 1)  # light's color
         #  Translate(
         #      Vector(-3000, 3000, -3000)
         #  )
-        #)
+        # )
 
         LightSource(
             Vector(0, 0, 0),             # light's position (translated below)
@@ -236,19 +236,19 @@ def main():
             lg_10036_1_car.nonmoving()
         )
 
-        #object {set_10036_1_car_steering_wheel}
-        #object {set_10036_1_car_schutter_l}
-        #object {set_10036_1_car_schutter_r}
-        #object {set_10036_1_car_sunroof}
-        #object {set_10036_1_car_sunroof_glass}
-        #object {set_10036_1_car_wheel_fr}
-        #object {set_10036_1_car_wheel_fl}
-        #object {set_10036_1_car_wheel_rr}
-        #object {set_10036_1_car_wheel_rl}
+        # object {set_10036_1_car_steering_wheel}
+        # object {set_10036_1_car_schutter_l}
+        # object {set_10036_1_car_schutter_r}
+        # object {set_10036_1_car_sunroof}
+        # object {set_10036_1_car_sunroof_glass}
+        # object {set_10036_1_car_wheel_fr}
+        # object {set_10036_1_car_wheel_fl}
+        # object {set_10036_1_car_wheel_rr}
+        # object {set_10036_1_car_wheel_rl}
 
-        #object {set_10036_1_house_base}
-        #object {set_10036_1_house_nonmoving}
-        #object {set_10036_1_house_oven_door}
+        # object {set_10036_1_house_base}
+        # object {set_10036_1_house_nonmoving}
+        # object {set_10036_1_house_oven_door}
     )
 
     return fix
