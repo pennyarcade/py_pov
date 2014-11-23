@@ -1590,80 +1590,188 @@ def solid():
                     LG_BRICK_WIDTH-LG_CORNER_SPACE,
                     0
                 ),
-                Vector(-3*LG_BRICK_WIDTH+LG_CORNER_SPACE, -LG_BRICK_WIDTH+LG_CORNER_SPACE, -LG_TOP_HEIGHT)
+                Vector(
+                    -3*LG_BRICK_WIDTH+LG_CORNER_SPACE,
+                    -LG_BRICK_WIDTH+LG_CORNER_SPACE,
+                    -LG_TOP_HEIGHT
+                )
             ),
             Union(
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(-2.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, -LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            -2.5*LG_BRICK_WIDTH,
+                            LG_BRICK_WIDTH/2,
+                            -LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(-1.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, -LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            -1.5*LG_BRICK_WIDTH,
+                            LG_BRICK_WIDTH/2,
+                            -LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(-2.5*LG_BRICK_WIDTH, -LG_BRICK_WIDTH/2, -LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            -2.5*LG_BRICK_WIDTH,
+                            -LG_BRICK_WIDTH/2,
+                            -LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(-1.5*LG_BRICK_WIDTH, -LG_BRICK_WIDTH/2, -LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            -1.5*LG_BRICK_WIDTH,
+                            -LG_BRICK_WIDTH/2,
+                            -LG_TOP_HEIGHT
+                        )
+                    )
                 )
             )
         ),
         Difference(
             Box(
-                Vector(-LG_BRICK_WIDTH+LG_CORNER_SPACE, 2*LG_BRICK_WIDTH-LG_CORNER_SPACE, -LG_PLATE_HEIGHT),
-                Vector(2*LG_BRICK_WIDTH-LG_CORNER_SPACE, -2*LG_BRICK_WIDTH+LG_CORNER_SPACE, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT)
+                Vector(
+                    -LG_BRICK_WIDTH+LG_CORNER_SPACE,
+                    2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                    -LG_PLATE_HEIGHT
+                ),
+                Vector(
+                    2*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                    -2*LG_BRICK_WIDTH+LG_CORNER_SPACE,
+                    -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                )
             ),
             Union(
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(1.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            1.5*LG_BRICK_WIDTH,
+                            LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(0.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            0.5*LG_BRICK_WIDTH,
+                            LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(-0.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            -0.5*LG_BRICK_WIDTH,
+                            LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(1.5*LG_BRICK_WIDTH, -LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            1.5*LG_BRICK_WIDTH,
+                            -LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGH
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(0.5*LG_BRICK_WIDTH, -LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            0.5*LG_BRICK_WIDTH,
+                            -LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(-0.5*LG_BRICK_WIDTH, -LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            -0.5*LG_BRICK_WIDTH,
+                            -LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(1.5*LG_BRICK_WIDTH, 3*LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            1.5*LG_BRICK_WIDTH,
+                            3*LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(0.5*LG_BRICK_WIDTH, 3*LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            0.5*LG_BRICK_WIDTH,
+                            3*LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(-0.5*LG_BRICK_WIDTH, 3*LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            -0.5*LG_BRICK_WIDTH,
+                            3*LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(1.5*LG_BRICK_WIDTH, -3*LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            1.5*LG_BRICK_WIDTH,
+                            -3*LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(0.5*LG_BRICK_WIDTH, -3*LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            0.5*LG_BRICK_WIDTH,
+                            -3*LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
                 ),
                 Object(
                     lg_knob_inner_space,
-                    Translate(Vector(-0.5*LG_BRICK_WIDTH, -3*LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT-LG_TOP_HEIGHT))
+                    Translate(
+                        Vector(
+                            -0.5*LG_BRICK_WIDTH,
+                            -3*LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
                 )
             )
         ),
@@ -1672,8 +1780,6 @@ def solid():
     )
 
     return result
-
-
 
 
 
