@@ -4,102 +4,8 @@ directory pov/finite_solid
 checking pov/finite_solid/Blob.py
 checking pov/finite_solid/Box.py
 checking pov/finite_solid/Cone.py
-pov/finite_solid/Cone.py:80:16: E713 test for membership should be 'not in'
-    Negative comparison should be done using "not in" and "is not".
-
-    Okay: if x not in y:\n    pass
-    Okay: assert (X in Y or X is Z)
-    Okay: if not (X in Y):\n    pass
-    Okay: zz = x is not y
-    E713: Z = not X in Y
-    E713: if not X.B in Y:\n    pass
-    E714: if not X is Y:\n    pass
-    E714: Z = not X.B is Y
 checking pov/finite_solid/Cylinder.py
-pov/finite_solid/Cylinder.py:52:80: E501 line too long (80 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-pov/finite_solid/Cylinder.py:58:80: E501 line too long (80 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-pov/finite_solid/Cylinder.py:68:16: E713 test for membership should be 'not in'
-    Negative comparison should be done using "not in" and "is not".
-
-    Okay: if x not in y:\n    pass
-    Okay: assert (X in Y or X is Z)
-    Okay: if not (X in Y):\n    pass
-    Okay: zz = x is not y
-    E713: Z = not X in Y
-    E713: if not X.B in Y:\n    pass
-    E714: if not X is Y:\n    pass
-    E714: Z = not X.B is Y
-pov/finite_solid/Cylinder.py:80:1: W391 blank line at end of file
-    Trailing blank lines are superfluous.
-
-    Okay: spam(1)
-    W391: spam(1)\n
-
-    However the last line should end with a new line (warning W292).
 checking pov/finite_solid/HeightField.py
-pov/finite_solid/HeightField.py:72:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/finite_solid/HeightField.py:108:13: E128 continuation line under-indented for visual indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
 checking pov/finite_solid/JuliaFractal.py
 checking pov/finite_solid/Lathe.py
 checking pov/finite_solid/Prism.py
@@ -109,354 +15,49 @@ checking pov/finite_solid/SphereSweep.py
 checking pov/finite_solid/SuperEllipsoid.py
 checking pov/finite_solid/Text.py
 checking pov/finite_solid/Torus.py
-pov/finite_solid/Torus.py:35:75: W292 no newline at end of file
-    Trailing blank lines are superfluous.
-
-    Okay: spam(1)
-    W391: spam(1)\n
-
-    However the last line should end with a new line (warning W292).
 checking pov/finite_solid/__init__.py
 directory pov/object_modifier
 checking pov/object_modifier/ClippedBy.py
 checking pov/object_modifier/Interior.py
-pov/object_modifier/Interior.py:47:1: E303 too many blank lines (4)
-    Separate top-level function and class definitions with two blank lines.
-
-    Method definitions inside a class are separated by a single blank line.
-
-    Extra blank lines may be used (sparingly) to separate groups of related
-    functions.  Blank lines may be omitted between a bunch of related
-    one-liners (e.g. a set of dummy implementations).
-
-    Use blank lines in functions, sparingly, to indicate logical sections.
-
-    Okay: def a():\n    pass\n\n\ndef b():\n    pass
-    Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
-
-    E301: class Foo:\n    b = 0\n    def bar():\n        pass
-    E302: def a():\n    pass\n\ndef b(n):\n    pass
-    E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
-    E303: def a():\n\n\n\n    pass
-    E304: @decorator\n\ndef a():\n    pass
 checking pov/object_modifier/Matrix.py
-pov/object_modifier/Matrix.py:53:1: W391 blank line at end of file
-    Trailing blank lines are superfluous.
-
-    Okay: spam(1)
-    W391: spam(1)\n
-
-    However the last line should end with a new line (warning W292).
 checking pov/object_modifier/ObjectModifier.py
 checking pov/object_modifier/Rotate.py
 checking pov/object_modifier/Scale.py
 checking pov/object_modifier/Transformation.py
-pov/object_modifier/Transformation.py:14:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
+pov/object_modifier/Transformation.py:22:60: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/object_modifier/Transformation.py:15:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/object_modifier/Transformation.py:16:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/object_modifier/Transformation.py:22:80: E501 line too long (80 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
 checking pov/object_modifier/Translate.py
 checking pov/object_modifier/__init__.py
 directory pov/basic
 checking pov/basic/BlockObject.py
-pov/basic/BlockObject.py:25:80: E501 line too long (80 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-pov/basic/BlockObject.py:48:29: E126 continuation line over-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/basic/BlockObject.py:49:25: E126 continuation line over-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/basic/BlockObject.py:58:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/basic/BlockObject.py:60:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/basic/BlockObject.py:62:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/basic/BlockObject.py:67:20: W292 no newline at end of file
-    Trailing blank lines are superfluous.
-
-    Okay: spam(1)
-    W391: spam(1)\n
-
-    However the last line should end with a new line (warning W292).
 checking pov/basic/Color.py
-pov/basic/Color.py:35:80: E501 line too long (90 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+pov/basic/Color.py:29:60: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
-pov/basic/Color.py:37:80: E501 line too long (87 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/basic/Color.py:39:53: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
 checking pov/basic/PoVObject.py
-pov/basic/PoVObject.py:25:1: W391 blank line at end of file
-    Trailing blank lines are superfluous.
-
-    Okay: spam(1)
-    W391: spam(1)\n
-
-    However the last line should end with a new line (warning W292).
 checking pov/basic/SceneFile.py
-pov/basic/SceneFile.py:17:1: E302 expected 2 blank lines, found 1
-    Separate top-level function and class definitions with two blank lines.
-
-    Method definitions inside a class are separated by a single blank line.
-
-    Extra blank lines may be used (sparingly) to separate groups of related
-    functions.  Blank lines may be omitted between a bunch of related
-    one-liners (e.g. a set of dummy implementations).
-
-    Use blank lines in functions, sparingly, to indicate logical sections.
-
-    Okay: def a():\n    pass\n\n\ndef b():\n    pass
-    Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
-
-    E301: class Foo:\n    b = 0\n    def bar():\n        pass
-    E302: def a():\n    pass\n\ndef b(n):\n    pass
-    E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
-    E303: def a():\n\n\n\n    pass
-    E304: @decorator\n\ndef a():\n    pass
-pov/basic/SceneFile.py:49:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/basic/SceneFile.py:56:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/basic/SceneFile.py:93:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/basic/SceneFile.py:106:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
 checking pov/basic/SceneItem.py
 pov/basic/SceneItem.py:172:12: E713 test for membership should be 'not in'
     Negative comparison should be done using "not in" and "is not".
@@ -10113,8 +9714,8 @@ checking pov/language_directive/__init__.py
 49      E121 continuation line under-indented for hanging indent
 10      E122 continuation line missing indentation or outdented
 3       E124 closing bracket does not match visual indentation
-3       E126 continuation line over-indented for hanging indent
-11      E128 continuation line under-indented for visual indent
+1       E126 continuation line over-indented for hanging indent
+10      E128 continuation line under-indented for visual indent
 4       E131 continuation line unaligned for hanging indent
 16      E201 whitespace after '{'
 14      E202 whitespace before '}'
@@ -10124,12 +9725,12 @@ checking pov/language_directive/__init__.py
 102     E225 missing whitespace around operator
 41      E231 missing whitespace after ','
 1       E251 unexpected spaces around keyword / parameter equals
-85      E265 block comment should start with '# '
-1       E302 expected 2 blank lines, found 1
-3       E303 too many blank lines (4)
-42      E501 line too long (80 > 79 characters)
+74      E265 block comment should start with '# '
+2       E303 too many blank lines (3)
+36      E501 line too long (80 > 79 characters)
 25      E701 multiple statements on one line (colon)
-5       E713 test for membership should be 'not in'
+3       E713 test for membership should be 'not in'
 2       E901 TokenError: EOF in multi-line statement
-3       W292 no newline at end of file
-15      W391 blank line at end of file
+3       W291 trailing whitespace
+1       W292 no newline at end of file
+12      W391 blank line at end of file
