@@ -19,15 +19,18 @@ from pov.test import LanguageDirectiveTest
 
 
 def suite():
-    suite = unittest.TestSuite()
+	'''
+		Test Suite
+	'''
+    tsuite = unittest.TestSuite()
 
-    suite.addTests(unittest.TestLoader.loadTestsFromModule(BasicTest))
-    suite.addTests(unittest.TestLoader.loadTestsFromModule(FiniteSolidTest))
-    suite.addTests(
+    tsuite.addTests(unittest.TestLoader.loadTestsFromModule(BasicTest))
+    tsuite.addTests(unittest.TestLoader.loadTestsFromModule(FiniteSolidTest))
+    tsuite.addTests(
         unittest.TestLoader.loadTestsFromModule(LanguageDirectiveTest)
     )
 
-    return suite
+    return tsuite
 
 
 if __name__ == '__main__':
