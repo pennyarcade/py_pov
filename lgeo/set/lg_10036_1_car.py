@@ -59,9 +59,9 @@
 # ifndef(set_10036_1_car)
 # declare set_10036_1_car = 1;
 
-'''*****************************************************************************
+'''***************************************************************************
 Includes
-*****************************************************************************'''
+***************************************************************************'''
 # ==== Py Pov Includes ====
 from pov.csg.Union import Union
 
@@ -71,14 +71,14 @@ from pov.other.Comment import Comment
 # include "colors.inc"     # Standard Color definitions
 
 # #include "textures.inc"   # Standard Texture definitions
-# #include "functions.inc"  # internal functions usable in user defined functions
+# #include "functions.inc"  # internal func. usable in user defined functions
 
 # ==== Additional Includes ====
 # Don't have all of the following included at once, it'll cost memory and time
 # to parse!
 # --- general include files ---
 # #include "arrays.inc"     # macros for manipulating arrays
-# #include "chars.inc"      # A complete library of character objects, by Ken Maeno
+# #include "chars.inc"      # A library of character objects, by Ken Maeno
 # #include "consts.inc"     # Various constants and alias definitions
 # #include "debug.inc"      # contains various macros for debugging scene files
 # #include "logo.inc"       # The official POV-Ray Logo in various forms
@@ -89,8 +89,9 @@ from pov.other.Comment import Comment
 # #include "shapes2.inc"    # some not built in basic shapes
 # #include "shapesq.inc"    # Pre-defined quartic shapes
 # #include "skies.inc"      # Ready defined sky spheres
-# #include "strings.inc"    # macros for generating and manipulating text strings
-# #include "sunpos.inc"     # macro for sun position on a given date, time, and location on earth
+# #include "strings.inc"    # macros for generating and manipulating text
+# #include "sunpos.inc"     # macro for sun position on a given date, 
+# time, and location on earth
 # #include "transforms.inc" # transformation macros
 
 # --- textures ---
@@ -102,7 +103,8 @@ from pov.other.Comment import Comment
 # #include "stones1.inc"    # Great stone-textures created by Mike Miller
 # #include "stones2.inc"    # More, done by Dan Farmer and Paul Novak
 # #include "woodmaps.inc"   # Basic wooden colormaps
-# #include "woods.inc"      # Great wooden textures created by Dan Farmer and Paul Novak
+# #include "woods.inc"      # Great wooden textures created by 
+# Dan Farmer and Paul Novak
 
 '''
 # ==== LGEO Colors and Definitions ====
@@ -163,11 +165,11 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
     """
 
     part = Union(
-        Comment('''
+        Comment(
         # *******************************************************************
         # Objects (Step 1)
         # *******************************************************************
-        '''),
+        ),
         Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
         custom_macros.StdBrick(
             lg_2441.solid(),
@@ -176,11 +178,11 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             -90, 0, 0),
 
         Comment('**** End 2441 Red Car Base 7 x 4 x 2/3 ****'),
-        Comment('''
+        Comment(
         # *******************************************************************
         # Objects (Step 2)
         # *******************************************************************
-        '''),
+        ),
         Comment('**** Start 3022 White Plate 2 x 2 ****'),
         custom_macros.StdBrick(
             lg_3022.solid(),
@@ -272,16 +274,12 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         ),
         Comment('****  ****'),
 
-
-
-
 # 3021    Red     Plate 2 x 3
-StdBrick(lg_3021 ,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
+StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
 # 3024    White   Plate 1 x 1
-StdBrick(lg_3024 ,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
+StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
 # 4085c   White   Plate 1 x 1 with Clip Vertical - Type 3
 StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
-
 
 '''*************************************************************************
 Objects (Step 6)
@@ -298,14 +296,14 @@ Objects (Step 7)
 *************************************************************************'''
 '''
 # 4073    TrYello Plate 1 x 1 Round
-StdBrick(lg_4073 , lg_clear_yellow, 4.1*LGBW, 5*LGPH,  -1.5*LGBW,    0, 90,   0)
-StdBrick(lg_4073 , lg_clear_yellow, 4.1*LGBW, 5*LGPH,   1.5*LGBW,    0, 90,   0)
+StdBrick(lg_4073 , lg_clear_yellow, 4.1*LGBW, 5*LGPH, -1.5*LGBW,   0, 90,   0)
+StdBrick(lg_4073 , lg_clear_yellow, 4.1*LGBW, 5*LGPH,  1.5*LGBW,   0, 90,   0)
 # 2412b   Red     Tile 1 x 2 Grille with Groove
-StdBrick(lg_2412b, lg_red   ,  4.0*LGBW,   4.7*LGPH,    0*LGBW,  -90,   0,  -90)
+StdBrick(lg_2412b, lg_red   ,  4.0*LGBW,   4.7*LGPH,   0*LGBW, -90,   0,  -90)
 # 3069b   Black   Tile 1 x 2 with Groove
-StdBrick(lg_3069b, lg_black ,     -2*LGBW,   8*LGPH,    0*LGBW,  -90,  180,   0)
+StdBrick(lg_3069b, lg_black ,     -2*LGBW,   8*LGPH,   0*LGBW, -90,  180,   0)
 # 4865    Black   Panel 1 x 2 x 1
-StdBrick(lg_4865 ,  lg_black,     -1*LGBW,  10*LGPH,    0*LGBW,  -90,  180,   0)
+StdBrick(lg_4865 ,  lg_black,     -1*LGBW,  10*LGPH,   0*LGBW, -90,  180,   0)
 '''
 
 '''*************************************************************************
@@ -345,12 +343,12 @@ Objects (Step 11)
 *************************************************************************'''
 '''
 # 3853    White   Window 1 x 4 x 3
-StdBrick(lg_3853,   lg_white,    -3*LGBW,  15*LGPH,    0*LGBW,  -90,   180,   0)
+StdBrick(lg_3853,   lg_white,    -3*LGBW,  15*LGPH,    0*LGBW,  -90,  180, 0)
 # 3004    White   Brick 1 x 2
-StdBrick(lg_3004,   lg_white,  -1.5*LGBW,  14*LGPH, -1.5*LGBW,  -90,  90,   0)
-StdBrick(lg_3004,   lg_white,  -1.5*LGBW,  14*LGPH,  1.5*LGBW,  -90,  90,   0)
+StdBrick(lg_3004,   lg_white,  -1.5*LGBW,  14*LGPH, -1.5*LGBW,  -90,  90,  0)
+StdBrick(lg_3004,   lg_white,  -1.5*LGBW,  14*LGPH,  1.5*LGBW,  -90,  90,  0)
 # 3010    White   Plate 1 x 4
-StdBrick(lg_3010,   lg_white,    -2*LGBW,  15*LGPH,    0*LGBW,  -90,   0,   0)
+StdBrick(lg_3010,   lg_white,    -2*LGBW,  15*LGPH,    0*LGBW,  -90,   0,  0)
 '''
 
 '''*************************************************************************
@@ -382,7 +380,7 @@ StdBrick(lg_4865,   lg_white,     2*LGBW,  19*LGPH,    0*LGBW,  -90, 180,   0)
 #declare set_10036_1_car_steering_wheel_oy= 6*LGPH;
 #declare set_10036_1_car_steering_wheel_oz= 0;
 #declare set_10036_1_car_steering_wheel =
-StdBrick(lg_3829c01, lg_grey,      2*LGBW,   6*LGPH,    0*LGBW,  -90,   0,   0)
+StdBrick(lg_3829c01, lg_grey,      2*LGBW,   6*LGPH,    0*LGBW,  -90,   0,  0)
 
 # 3856    White   Window 1 x 2 x 3 Shutter
 #declare set_10036_1_car_schutter_l=
@@ -407,7 +405,7 @@ StdBrick(lg_2349,   lg_white,   0.5*LGBW,  16*LGPH,    0*LGBW,  -90,   0,   0)
 
 # 2348b   TrBlue  Glass for Hinge Car Roof 4 x 4 Sunroof with Ridges
 #declare set_10036_1_car_sunroof_glass=
-StdBrick(lg_2348b, lg_clear_cyan, 1.35*LGBW,15.5*LGPH,   0*LGBW,  -90,   0,   0)
+StdBrick(lg_2348b, lg_clear_cyan, 1.35*LGBW,15.5*LGPH, 0*LGBW,  -90,   0,   0)
 #declare set_10036_1_car_sunroof_glass_ox= 1.35*LGBW;
 #declare set_10036_1_car_sunroof_glass_oy= 15.5*LGPH;
 #declare set_10036_1_car_sunroof_glass_oz= 0;
