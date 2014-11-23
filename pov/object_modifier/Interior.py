@@ -41,9 +41,6 @@ class Interior(ObjectModifier):
 #            raise SdlSyntaxException(
 #                'Vector SVector has more or less than 3 dimensions')
 
-
-
-
 #    def __str__(self):
 #        code = ''
 #

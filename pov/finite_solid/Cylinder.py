@@ -49,13 +49,17 @@ class Cylinder(BlockObject):
                 'Base point Vector has more or less than 3 dimensions'
             )
         if not isinstance(cappoint, Vector):
-            raise SdlSyntaxException('Parameter cappoint is not of type Vector')
+            raise SdlSyntaxException(
+                'Parameter cappoint is not of type Vector'
+            )
         if not len(cappoint.v) == 3:
             raise SdlSyntaxException(
                 'Cap point Vector has more or less than 3 dimensions'
             )
         if not type(radius) in (int, float):
-            raise SdlSyntaxException('Param radius is not of type int or float')
+            raise SdlSyntaxException(
+                'Param radius is not of type int or float'
+            )
 
         # Make sure only valid Object Modifiers are passed
         for i in range(len(opts)):
@@ -65,7 +69,7 @@ class Cylinder(BlockObject):
                 )
 
         for key, val in kwargs.items():
-            if not key in ['open']:
+            if key not in ['open']:
                 raise SdlSyntaxException('Invalid keyword: ' + str(key))
             if not type(val) == bool:
                 raise SdlSyntaxException(
@@ -77,4 +81,3 @@ class Cylinder(BlockObject):
             (basepoint, cappoint, radius),
             opts, kwargs
         )
-

@@ -50,4 +50,3 @@ class Matrix(ObjectModifier):
         code += str(self.args[0]) + os.linesep
 
         return code
-

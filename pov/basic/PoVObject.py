@@ -21,5 +21,3 @@ class PoVObject(BlockObject):
             CSG_OBJECT | LIGHT_SOURCE |
             object { OBJECT_IDENTIFIER [OBJECT_MODIFIERS...] }
     """
-
-

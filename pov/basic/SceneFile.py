@@ -14,6 +14,7 @@ from logging import info
 from pov.basic.SceneItem import SceneItem
 from pov.other.SdlSyntaxException import SdlSyntaxException
 
+
 class SceneFile(object):
     """
         POV-Ray scene file object.
@@ -46,14 +47,14 @@ class SceneFile(object):
                 % fnam.__class__.__name__
             )
 
-        #initialize item list
+        # initialize item list
         self.items = list()
 
         items = list(items)
         for i in items:
             self.append(i)
 
-        #self.file = open(fnam, "w")
+        # self.file = open(fnam, "w")
 
     def __str__(self):
         '''
@@ -90,7 +91,7 @@ class SceneFile(object):
             @Todo: Write to file code
         """
 
-        #for item in items:
+        # for item in items:
         #    if type(item) == list:
         #        for _item in item:
         #            self.write(_item)
@@ -103,4 +104,4 @@ class SceneFile(object):
         """
             Close POV-Ray scene file.
         """
-        #self.file.close()
+        # self.file.close()

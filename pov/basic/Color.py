@@ -26,15 +26,18 @@ class Color(SceneItem):
             COLOR_VECTOR | COLOR_KEYWORD_GROUP | COLOR_IDENTIFIER
 
         COLOR_VECTOR:
-            rgb 3D_VECTOR | rgbf 4D_VECTOR | rgbt 4D_VECTOR | [rgbft] 5D_VECTOR
+            rgb 3D_VECTOR | rgbf 4D_VECTOR | rgbt 4D_VECTOR 
+                | [rgbft] 5D_VECTOR
 
         COLOR_KEYWORD_GROUP:
             [COLOR_IDENTIFIER] COLOR_KEYWORD_ITEMS
 
         COLOR_KEYWORD_ITEMS:
-            [red FLOAT] & [green FLOAT] & [blue FLOAT] & [filter FLOAT] & [transmit FLOAT]
+            [red FLOAT] & [green FLOAT] & [blue FLOAT]
+            & [filter FLOAT] & [transmit FLOAT]
 
-        @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
+        @TODO: enable setting color by passing float 
+            options e.g. Color(0.0, 0.2, 0.75)
         @TODO: check syntax of kwargs
     '''
 

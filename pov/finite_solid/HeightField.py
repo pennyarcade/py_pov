@@ -69,7 +69,7 @@ class HeightField(BlockObject):
             raise IOError(
                 'No such file: %s%s%s' % (os.getcwd(), os.sep, self.args[0])
             )
-        #@TODO: check file type
+        # @TODO: check file type
 
     def _check_opts(self):
         '''
@@ -105,5 +105,5 @@ class HeightField(BlockObject):
         self._checkKwargValue(
             'hf_type',
             ['gif', 'tga', 'pot', 'png', 'pgm',
-            'ppm', 'jpeg', 'tiff', 'sys', 'function']
+             'ppm', 'jpeg', 'tiff', 'sys', 'function']
         )

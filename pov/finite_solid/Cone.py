@@ -77,7 +77,7 @@ class Cone(BlockObject):
                 )
 
         for key, val in kwargs.items():
-            if not key in ['open']:
+            if key not in ['open']:
                 raise SdlSyntaxException('Invalid keyword: ' + str(key))
             if not type(val) == bool:
                 raise SdlSyntaxException(

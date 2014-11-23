@@ -22,7 +22,10 @@ class BlockObject(SceneItem):
         """
             return PoV code as string representation
         """
-        debug("BlockObject.__str__ %s, %s, %s", self.name, self.args, self.opts)
+        debug(
+            "BlockObject.__str__ %s, %s, %s",
+            self.name, self.args, self.opts
+        )
 
         code = ""
         code += self._get_begin_code()
@@ -45,8 +48,8 @@ class BlockObject(SceneItem):
         code = "  " * self._get_indent() + self.name + self._block_begin()
         if self.args:
             code = code + self._get_line(
-                            ", ".join([str(arg) for arg in self.args])
-                        )
+                ", ".join([str(arg) for arg in self.args])
+            )
         return code
 
     def _get_end_code(self):
@@ -55,11 +58,11 @@ class BlockObject(SceneItem):
         """
         code = ""
 
-        #debug('kwargs: %s', self.kwargs)
+        # debug('kwargs: %s', self.kwargs)
         kwargs = self.kwargs.items()
-        #debug('kwargs: %s', kwargs)
+        # debug('kwargs: %s', kwargs)
         kwargs.reverse()
-        #debug('kwargs: %s', kwargs)
+        # debug('kwargs: %s', kwargs)
 
         for key, val in kwargs:
             code += self._get_line("%s %s" % (key, str(val).strip()))

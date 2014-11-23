@@ -11,15 +11,16 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 from pov.basic.BlockObject import BlockObject
-#from pov.basic.Vector import Vector
-#from pov.object_modifier.ObjectModifier import ObjectModifier
-#from pov.other.SdlSyntaxException import SdlSyntaxException
+# from pov.basic.Vector import Vector
+# from pov.object_modifier.ObjectModifier import ObjectModifier
+# from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class Transformation(BlockObject):
     '''
         TRANSFORMATION:
-            rotate VECTOR | scale VECTOR | translate VECTOR | TRANSFORM | MATRIX
+            rotate VECTOR | scale VECTOR | translate VECTOR 
+                    | TRANSFORM | MATRIX
         TRANSFORM:
             transform TRANSFORM_IDENTIFIER | transform { [TRANSFORM_ITEM...] }
         TRANSFORM_ITEM:
