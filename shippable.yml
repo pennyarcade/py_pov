@@ -14,9 +14,9 @@ before_script:
 script:
   - git config --global push.default simple
   - pylint --rcfile=.pylintrc pov > metrics/pylint.txt || true
-  - pylint --rcfile=.pylintrc lgeo > metrics/pylint.txt || true
+  - pylint --rcfile=.pylintrc lgeo > metrics/pylint_lgeo.txt || true
   - pep8 --verbose --show-pep8 --statistics --count pov > metrics/pep8.txt || true
-  - pep8 --verbose --show-pep8 --statistics --count lgeo > metrics/pep8.txt || true
+  - pep8 --verbose --show-pep8 --statistics --count lgeo > metrics/pep8_lgeo.txt || true
   - cat metrics/pylint.txt | python metrics/extract.py >> metrics/stats.csv
   - git add metrics
   - git commit -m "[skip ci] shippable build $BUILD_NUMBER"
