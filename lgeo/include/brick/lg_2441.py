@@ -1783,6 +1783,7 @@ def solid():
 
 
 
+# noqa
 '''
 #declare lg_2441_clear =
 merge {
