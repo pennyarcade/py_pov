@@ -169,6 +169,8 @@ W: 52, 0: Unused import GRAY70 from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include
 C:  1, 0: Missing module docstring (missing-docstring)
 ************* Module lgeo.include.brick.lg_3788
+E: 20, 0: No name 'lg_knob' in module 'lgeo.include.common.brick_subparts' (no-name-in-module)
+E: 20, 0: No name 'lg_plate_cylinder' in module 'lgeo.include.common.brick_subparts' (no-name-in-module)
 E:319,32: Undefined variable 'lg_angle' (undefined-variable)
 E:321,34: Undefined variable 'lg_angle' (undefined-variable)
 E:332,33: Undefined variable 'lg_angle' (undefined-variable)
@@ -460,63 +462,63 @@ C: 33, 0: Invalid argument name "LENGTH" (invalid-name)
 C: 33, 0: Invalid argument name "WIDTH" (invalid-name)
 C: 33, 0: Missing function docstring (missing-docstring)
 W:284,-1: String statement has no effect (pointless-string-statement)
-W: 15, 0: Unused import Scale from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_plate_cylinder from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_CROSSAXLE_WIDTH from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_tech_knob_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_CYLINDER_WALL_WIDTH from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_WALL_WIDTH from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_brick_cylinder from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_PLATE_HEIGHT from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import y from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_test from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_E from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_GRID_WIDTH from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_brick_column_clear from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import Object from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_KNOB_RADIUS from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import sqrt from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_quality from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lego_logo_text from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import Plane from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LDU from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_plate_column_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import Intersection from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_support_wall_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import math from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_CYLINDER_RADIUS from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_KNOB_HEIGHT_LOGO from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_plate_cylinder_clear from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_BRICK_INNER_HEIGHT from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_brick_column from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_knob_dot from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import Torus from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_knob_inner_space from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_KNOB_CORNER_SPACE from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LGBH from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_KNOB_INNER_RADIUS from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import Merge from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_KNOB_HEIGHT from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import ClippedBy from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import SdlSyntaxException from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_plate_column from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_stud_logo from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LGPH from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LGBW from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_PLATE_INNER_HEIGHT from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_brick_cylinder_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_tech_knob_logo_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_knob_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_knob from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import debug from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import x from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import z from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import Scale from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_plate_cylinder from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_CROSSAXLE_WIDTH from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_tech_knob_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_CYLINDER_WALL_WIDTH from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_brick_cylinder from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_brick_cylinder_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import y from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_test from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_E from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_GRID_WIDTH from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_brick_column_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_KNOB_RADIUS from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import sqrt from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_quality from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lego_logo_text from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import Plane from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LDU from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_plate_column_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import Intersection from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_support_wall_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import math from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_CYLINDER_RADIUS from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_KNOB_HEIGHT_LOGO from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_plate_cylinder_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_brick_column from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_knob_dot from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import Torus from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_knob_inner_space from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_KNOB_CORNER_SPACE from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LGBH from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_KNOB_INNER_RADIUS from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import Merge from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_KNOB_HEIGHT from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import ClippedBy from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import x from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import SdlSyntaxException from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_plate_column from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import z from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_stud_logo from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LGPH from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LGBW from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_PLATE_HEIGHT from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_tech_knob_logo_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_knob_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_knob from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import debug from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.brick.lg_3003
 C: 36, 0: Line too long (86/80) (line-too-long)
 C: 40, 0: Line too long (94/80) (line-too-long)
@@ -555,144 +557,87 @@ C: 33, 0: Invalid argument name "LENGTH" (invalid-name)
 C: 33, 0: Invalid argument name "WIDTH" (invalid-name)
 C: 33, 0: Missing function docstring (missing-docstring)
 W:282,-1: String statement has no effect (pointless-string-statement)
-W: 15, 0: Unused import Scale from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_plate_cylinder from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_tech_knob_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_CYLINDER_WALL_WIDTH from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_WALL_WIDTH from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_CROSSAXLE_WIDTH from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_PLATE_HEIGHT from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import get_brick_coloumn from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_test from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import y from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_E from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_GRID_WIDTH from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_brick_column_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_KNOB_RADIUS from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import sqrt from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_quality from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lego_logo_text from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import Plane from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LDU from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_plate_column_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import Intersection from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_support_wall_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import math from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_CYLINDER_RADIUS from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_KNOB_HEIGHT_LOGO from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_plate_cylinder_clear from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_BRICK_INNER_HEIGHT from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_brick_column from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_knob_dot from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import Torus from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_knob_inner_space from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_KNOB_CORNER_SPACE from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LGBH from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_KNOB_INNER_RADIUS from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import Merge from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_KNOB_HEIGHT from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import ClippedBy from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import SdlSyntaxException from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_plate_column from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_stud_logo from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LGPH from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LGBW from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_PLATE_INNER_HEIGHT from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_brick_cylinder_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_tech_knob_logo_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_knob_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_knob from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import debug from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import x from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import z from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import Scale from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_plate_cylinder from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_tech_knob_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_CYLINDER_WALL_WIDTH from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_CROSSAXLE_WIDTH from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_brick_cylinder_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_test from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import y from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_E from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_GRID_WIDTH from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_brick_column_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_KNOB_RADIUS from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import sqrt from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_quality from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lego_logo_text from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import Plane from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LDU from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_plate_column_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import Intersection from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_support_wall_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import math from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_CYLINDER_RADIUS from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_KNOB_HEIGHT_LOGO from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_plate_cylinder_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_brick_column from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_knob_dot from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import Torus from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_knob_inner_space from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_KNOB_CORNER_SPACE from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LGBH from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_KNOB_INNER_RADIUS from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import Merge from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_KNOB_HEIGHT from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import ClippedBy from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import x from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import SdlSyntaxException from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_plate_column from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import z from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_stud_logo from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LGPH from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LGBW from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_PLATE_HEIGHT from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_tech_knob_logo_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_knob_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_knob from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import debug from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.common.brick_subparts
-C: 19, 0: Trailing whitespace (trailing-whitespace)
-C: 53, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
-C: 55, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
-C: 78, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
-C: 80, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
-C:104, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
+C: 56, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
+C: 58, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
+C: 81, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
+C: 83, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
+C:107, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
 W: 21,-1: String statement has no effect (pointless-string-statement)
-W: 34, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
-W: 38,-1: String statement has no effect (pointless-string-statement)
-C: 40, 0: Invalid argument name "LENGTH" (invalid-name)
-C: 40, 0: Invalid argument name "WIDTH" (invalid-name)
-C: 40, 0: Missing function docstring (missing-docstring)
-C: 52, 4: Invalid variable name "KS_X" (invalid-name)
-C: 54, 8: Invalid variable name "KS_Y" (invalid-name)
-C: 68,12: Invalid variable name "KS_Y" (invalid-name)
-C: 69, 8: Invalid variable name "KS_X" (invalid-name)
-C: 74, 0: Invalid argument name "LENGTH" (invalid-name)
-C: 74, 0: Invalid argument name "WIDTH" (invalid-name)
-C: 74, 0: Invalid argument name "HEIGHT" (invalid-name)
-C: 74, 0: Missing function docstring (missing-docstring)
-C: 77, 4: Invalid variable name "KNOB_X" (invalid-name)
-C: 79, 8: Invalid variable name "KNOB_Y" (invalid-name)
-C: 94,12: Invalid variable name "KNOB_Y" (invalid-name)
-C: 95, 8: Invalid variable name "KNOB_X" (invalid-name)
-C:100, 0: Invalid argument name "LENGTH" (invalid-name)
-C:100, 0: Missing function docstring (missing-docstring)
-C:103, 4: Invalid variable name "COL_X" (invalid-name)
-C:117, 8: Invalid variable name "COL_X" (invalid-name)
-W: 34, 0: Unused import Scale from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_plate_cylinder from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LG_CROSSAXLE_WIDTH from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_tech_knob_clear from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LG_CYLINDER_WALL_WIDTH from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_brick_cylinder from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_brick_cylinder_clear from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_test from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LG_E from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LG_GRID_WIDTH from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import Sphere from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_brick_column_clear from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import z from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LG_KNOB_RADIUS from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import sqrt from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_quality from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lego_logo_text from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import Plane from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LDU from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_plate_column_clear from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import Difference from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_support_wall_clear from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import math from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LG_CYLINDER_RADIUS from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LG_KNOB_HEIGHT_LOGO from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_plate_cylinder_clear from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import y from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_knob_dot from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import Torus from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LG_KNOB_CORNER_SPACE from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LGBH from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LG_KNOB_INNER_RADIUS from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import Merge from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LG_KNOB_HEIGHT from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import ClippedBy from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import x from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import SdlSyntaxException from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_plate_column from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import Cylinder from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import Intersection from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_stud_logo from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LGPH from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LGBW from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LG_PLATE_HEIGHT from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_tech_knob_logo_clear from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_knob_clear from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import debug from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
-W: 34, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
+W: 40,-1: String statement has no effect (pointless-string-statement)
+C: 43, 0: Missing function docstring (missing-docstring)
+C: 55, 4: Invalid variable name "KS_X" (invalid-name)
+C: 57, 8: Invalid variable name "KS_Y" (invalid-name)
+E: 61,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
+C: 71,12: Invalid variable name "KS_Y" (invalid-name)
+C: 72, 8: Invalid variable name "KS_X" (invalid-name)
+C: 77, 0: Missing function docstring (missing-docstring)
+E: 77,47: Undefined variable 'LG_BRICK_HEIGHT' (undefined-variable)
+C: 80, 4: Invalid variable name "KNOB_X" (invalid-name)
+C: 82, 8: Invalid variable name "KNOB_Y" (invalid-name)
+E: 86,20: Undefined variable 'lg_knob' (undefined-variable)
+C: 97,12: Invalid variable name "KNOB_Y" (invalid-name)
+C: 98, 8: Invalid variable name "KNOB_X" (invalid-name)
+C:103, 0: Missing function docstring (missing-docstring)
+C:106, 4: Invalid variable name "COL_X" (invalid-name)
+E:110,16: Undefined variable 'lg_brick_column' (undefined-variable)
+C:120, 8: Invalid variable name "COL_X" (invalid-name)
 ************* Module lgeo.include.common.lg_defs
 C:100, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
 C:124, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
@@ -1278,7 +1223,7 @@ R:  1, 0: Similar lines in 4 files
 
 Report
 ======
-381 statements analysed.
+383 statements analysed.
 
 Statistics by type
 ------------------
@@ -1305,7 +1250,7 @@ External dependencies
       \-include 
       | \-common 
       |   \-brick_subparts (lgeo.include.brick.lg_3788)
-      |   \-lg_defs (lgeo.include.brick.lg_3788)
+      |   \-lg_defs (lgeo.include.brick.lg_3788,lgeo.include.common.brick_subparts)
       \-set 
         \-lg_10036_1_car (lgeo.lgeo_city)
     pov 
@@ -1359,13 +1304,13 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |3216   |72.27 |NC       |NC         |
+|code      |3218   |72.27 |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|docstring |452    |10.16 |NC       |NC         |
+|docstring |452    |10.15 |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|comment   |513    |11.53 |NC       |NC         |
+|comment   |513    |11.52 |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|empty     |269    |6.04  |NC       |NC         |
+|empty     |270    |6.06  |NC       |NC         |
 +----------+-------+------+---------+-----------+
 
 
@@ -1378,7 +1323,7 @@ Duplication
 +=========================+======+=========+===========+
 |nb duplicated lines      |263   |NC       |NC         |
 +-------------------------+------+---------+-----------+
-|percent duplicated lines |5.751 |NC       |NC         |
+|percent duplicated lines |5.747 |NC       |NC         |
 +-------------------------+------+---------+-----------+
 
 
@@ -1389,13 +1334,13 @@ Messages by category
 +-----------+-------+---------+-----------+
 |type       |number |previous |difference |
 +===========+=======+=========+===========+
-|convention |381    |NC       |NC         |
+|convention |374    |NC       |NC         |
 +-----------+-------+---------+-----------+
 |refactor   |11     |NC       |NC         |
 +-----------+-------+---------+-----------+
-|warning    |607    |NC       |NC         |
+|warning    |553    |NC       |NC         |
 +-----------+-------+---------+-----------+
-|error      |19     |NC       |NC         |
+|error      |25     |NC       |NC         |
 +-----------+-------+---------+-----------+
 
 
@@ -1406,45 +1351,45 @@ Messages by category
 +-----------------------------------+------+--------+---------+-----------+
 |module                             |error |warning |refactor |convention |
 +===================================+======+========+=========+===========+
-|lgeo.include.brick.lg_3788         |63.16 |0.00    |0.00     |0.00       |
+|lgeo.include.brick.lg_3788         |56.00 |0.00    |0.00     |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_defs        |15.79 |1.48    |0.00     |7.35       |
+|lgeo.include.common.brick_subparts |16.00 |0.36    |0.00     |4.81       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.lgeo_city                     |5.26  |25.54   |0.00     |2.89       |
+|lgeo.include.common.lg_defs        |12.00 |1.63    |0.00     |7.49       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_house          |5.26  |0.66    |0.00     |1.57       |
+|lgeo.lgeo_city                     |4.00  |28.03   |0.00     |2.94       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_car            |5.26  |0.00    |0.00     |0.00       |
+|lgeo.set.lg_10036_1_house          |4.00  |0.72    |0.00     |1.60       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_2441         |5.26  |0.00    |0.00     |0.00       |
+|lgeo.set.lg_10036_1_car            |4.00  |0.00    |0.00     |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_color       |0.00  |23.56   |0.00     |24.15      |
+|lgeo.include.brick.lg_2441         |4.00  |0.00    |0.00     |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3010         |0.00  |9.88    |0.00     |9.45       |
+|lgeo.include.common.lg_color       |0.00  |25.86   |0.00     |24.60      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3022         |0.00  |9.72    |0.00     |9.45       |
+|lgeo.include.brick.lg_3010         |0.00  |10.85   |0.00     |9.63       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3003         |0.00  |9.72    |0.00     |8.92       |
+|lgeo.include.brick.lg_3022         |0.00  |10.67   |0.00     |9.63       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.brick_subparts |0.00  |9.23    |0.00     |6.56       |
+|lgeo.include.brick.lg_3003         |0.00  |10.67   |0.00     |9.09       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_2412b        |0.00  |9.06    |0.00     |21.78      |
+|lgeo.include.brick.lg_2412b        |0.00  |9.95    |0.00     |22.19      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_main           |0.00  |0.66    |90.91    |2.10       |
+|lgeo.set.lg_10036_1_main           |0.00  |0.72    |90.91    |2.14       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.custom_macros  |0.00  |0.49    |9.09     |3.41       |
+|lgeo.include.common.custom_macros  |0.00  |0.54    |9.09     |3.48       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.config.lgeo_cfg               |0.00  |0.00    |0.00     |1.05       |
+|lgeo.config.lgeo_cfg               |0.00  |0.00    |0.00     |1.07       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.set.__init__                  |0.00  |0.00    |0.00     |0.26       |
+|lgeo.set.__init__                  |0.00  |0.00    |0.00     |0.27       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.__init__       |0.00  |0.00    |0.00     |0.26       |
+|lgeo.include.common.__init__       |0.00  |0.00    |0.00     |0.27       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.__init__        |0.00  |0.00    |0.00     |0.26       |
+|lgeo.include.brick.__init__        |0.00  |0.00    |0.00     |0.27       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.__init__              |0.00  |0.00    |0.00     |0.26       |
+|lgeo.include.__init__              |0.00  |0.00    |0.00     |0.27       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.config.__init__               |0.00  |0.00    |0.00     |0.26       |
+|lgeo.config.__init__               |0.00  |0.00    |0.00     |0.27       |
 +-----------------------------------+------+--------+---------+-----------+
 
 
@@ -1455,27 +1400,29 @@ Messages
 +---------------------------+------------+
 |message id                 |occurrences |
 +===========================+============+
-|unused-wildcard-import     |558         |
+|unused-wildcard-import     |505         |
 +---------------------------+------------+
 |line-too-long              |182         |
 +---------------------------+------------+
-|invalid-name               |148         |
+|invalid-name               |142         |
 +---------------------------+------------+
 |pointless-string-statement |25          |
 +---------------------------+------------+
 |missing-docstring          |19          |
 +---------------------------+------------+
+|undefined-variable         |17          |
++---------------------------+------------+
 |superfluous-parens         |16          |
 +---------------------------+------------+
-|wildcard-import            |13          |
+|wildcard-import            |12          |
 +---------------------------+------------+
-|undefined-variable         |13          |
-+---------------------------+------------+
-|trailing-whitespace        |13          |
+|trailing-whitespace        |12          |
 +---------------------------+------------+
 |unused-variable            |10          |
 +---------------------------+------------+
 |duplicate-code             |10          |
++---------------------------+------------+
+|no-name-in-module          |3           |
 +---------------------------+------------+
 |no-member                  |3           |
 +---------------------------+------------+
@@ -1487,12 +1434,10 @@ Messages
 +---------------------------+------------+
 |too-many-arguments         |1           |
 +---------------------------+------------+
-|no-name-in-module          |1           |
-+---------------------------+------------+
 
 
 
 Global evaluation
 -----------------
-Your code has been rated at -18.71/10
+Your code has been rated at -17.75/10
 

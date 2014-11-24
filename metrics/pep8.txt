@@ -24,15 +24,6 @@ checking pov/object_modifier/ObjectModifier.py
 checking pov/object_modifier/Rotate.py
 checking pov/object_modifier/Scale.py
 checking pov/object_modifier/Transformation.py
-pov/object_modifier/Transformation.py:22:60: W291 trailing whitespace
-    Trailing whitespace is superfluous.
-
-    The warning returned varies on whether the line itself is blank, for easier
-    filtering for those who want to indent their blank lines.
-
-    Okay: spam(1)\n#
-    W291: spam(1) \n#
-    W293: class Foo(object):\n    \n    bang = 12
 checking pov/object_modifier/Translate.py
 checking pov/object_modifier/__init__.py
 directory pov/basic
@@ -47,521 +38,17 @@ pov/basic/Color.py:29:60: W291 trailing whitespace
     Okay: spam(1)\n#
     W291: spam(1) \n#
     W293: class Foo(object):\n    \n    bang = 12
-pov/basic/Color.py:39:53: W291 trailing whitespace
-    Trailing whitespace is superfluous.
-
-    The warning returned varies on whether the line itself is blank, for easier
-    filtering for those who want to indent their blank lines.
-
-    Okay: spam(1)\n#
-    W291: spam(1) \n#
-    W293: class Foo(object):\n    \n    bang = 12
 checking pov/basic/PoVObject.py
 checking pov/basic/SceneFile.py
 checking pov/basic/SceneItem.py
-pov/basic/SceneItem.py:172:12: E713 test for membership should be 'not in'
-    Negative comparison should be done using "not in" and "is not".
-
-    Okay: if x not in y:\n    pass
-    Okay: assert (X in Y or X is Z)
-    Okay: if not (X in Y):\n    pass
-    Okay: zz = x is not y
-    E713: Z = not X in Y
-    E713: if not X.B in Y:\n    pass
-    E714: if not X is Y:\n    pass
-    E714: Z = not X.B is Y
-pov/basic/SceneItem.py:187:5: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/basic/SceneItem.py:189:5: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/basic/SceneItem.py:330:16: E713 test for membership should be 'not in'
-    Negative comparison should be done using "not in" and "is not".
-
-    Okay: if x not in y:\n    pass
-    Okay: assert (X in Y or X is Z)
-    Okay: if not (X in Y):\n    pass
-    Okay: zz = x is not y
-    E713: Z = not X in Y
-    E713: if not X.B in Y:\n    pass
-    E714: if not X is Y:\n    pass
-    E714: Z = not X.B is Y
-pov/basic/SceneItem.py:334:16: E713 test for membership should be 'not in'
-    Negative comparison should be done using "not in" and "is not".
-
-    Okay: if x not in y:\n    pass
-    Okay: assert (X in Y or X is Z)
-    Okay: if not (X in Y):\n    pass
-    Okay: zz = x is not y
-    E713: Z = not X in Y
-    E713: if not X.B in Y:\n    pass
-    E714: if not X is Y:\n    pass
-    E714: Z = not X.B is Y
-pov/basic/SceneItem.py:376:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/basic/SceneItem.py:379:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/basic/SceneItem.py:381:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
 checking pov/basic/Vector.py
 checking pov/basic/__init__.py
 directory pov/test
 checking pov/test/AthEffTest.py
-pov/test/AthEffTest.py:13:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/AthEffTest.py:15:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/AthEffTest.py:16:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
 checking pov/test/BasicTest.py
-pov/test/BasicTest.py:180:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/BasicTest.py:187:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/BasicTest.py:222:80: E501 line too long (80 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-pov/test/BasicTest.py:461:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/BasicTest.py:506:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/BasicTest.py:542:26: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
 checking pov/test/CsgTest.py
-pov/test/CsgTest.py:1:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/CsgTest.py:13:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/CsgTest.py:14:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/CsgTest.py:15:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/CsgTest.py:16:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/CsgTest.py:17:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
 checking pov/test/EndToEndTest.py
-pov/test/EndToEndTest.py:48:5: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/EndToEndTest.py:56:14: E222 multiple spaces after operator
-    Avoid extraneous whitespace around an operator.
-
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
-pov/test/EndToEndTest.py:156:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/EndToEndTest.py:158:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
 pov/test/EndToEndTest.py:245:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/EndToEndTest.py:253:5: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/EndToEndTest.py:260:14: E222 multiple spaces after operator
-    Avoid extraneous whitespace around an operator.
-
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
-pov/test/EndToEndTest.py:316:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/EndToEndTest.py:318:9: E265 block comment should start with '# '
     Separate inline comments by at least two spaces.
 
     An inline comment is a comment on the same line as a statement.  Inline
@@ -595,117 +82,7 @@ pov/test/EndToEndTest.py:374:9: E265 block comment should start with '# '
     E262: x = x + 1  #Increment x
     E262: x = x + 1  #  Increment x
     E265: #Block comment
-pov/test/EndToEndTest.py:382:5: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/EndToEndTest.py:389:14: E222 multiple spaces after operator
-    Avoid extraneous whitespace around an operator.
-
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
-pov/test/EndToEndTest.py:459:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/EndToEndTest.py:461:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
 pov/test/EndToEndTest.py:523:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/EndToEndTest.py:531:5: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/EndToEndTest.py:597:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/EndToEndTest.py:599:9: E265 block comment should start with '# '
     Separate inline comments by at least two spaces.
 
     An inline comment is a comment on the same line as a statement.  Inline
@@ -751,109 +128,7 @@ pov/test/EndToEndTest.py:628:24: E211 whitespace before '('
     Okay: dict['key'] = list[index]
     E211: dict ['key'] = list[index]
     E211: dict['key'] = list [index]
-pov/test/EndToEndTest.py:663:9: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
 checking pov/test/FinitePatchTest.py
-pov/test/FinitePatchTest.py:13:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/FinitePatchTest.py:14:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/FinitePatchTest.py:15:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/FinitePatchTest.py:16:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/FinitePatchTest.py:17:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
 checking pov/test/FiniteSolidTest.py
 pov/test/FiniteSolidTest.py:125:80: E501 line too long (80 > 79 characters)
     Limit all lines to a maximum of 79 characters.
@@ -981,7 +256,41 @@ pov/test/FiniteSolidTest.py:912:80: E501 line too long (93 > 79 characters)
 
     Reports error E501.
 checking pov/test/GlobalSettingsTest.py
-pov/test/GlobalSettingsTest.py:30:80: E501 line too long (137 > 79 characters)
+pov/test/GlobalSettingsTest.py:31:9: E101 indentation contains mixed spaces and tabs
+    Never mix tabs and spaces.
+
+    The most popular way of indenting Python is with spaces only.  The
+    second-most popular way is with tabs only.  Code indented with a mixture
+    of tabs and spaces should be converted to using spaces exclusively.  When
+    invoking the Python command line interpreter with the -t option, it issues
+    warnings about code that illegally mixes tabs and spaces.  When using -tt
+    these warnings become errors.  These options are highly recommended!
+
+    Okay: if a == 0:\n        a = 1\n        b = 1
+    E101: if a == 0:\n        a = 1\n\tb = 1
+pov/test/GlobalSettingsTest.py:31:9: W191 indentation contains tabs
+    For new projects, spaces-only are strongly recommended over tabs.
+
+    Okay: if True:\n    return
+    W191: if True:\n\treturn
+pov/test/GlobalSettingsTest.py:32:9: E101 indentation contains mixed spaces and tabs
+    Never mix tabs and spaces.
+
+    The most popular way of indenting Python is with spaces only.  The
+    second-most popular way is with tabs only.  Code indented with a mixture
+    of tabs and spaces should be converted to using spaces exclusively.  When
+    invoking the Python command line interpreter with the -t option, it issues
+    warnings about code that illegally mixes tabs and spaces.  When using -tt
+    these warnings become errors.  These options are highly recommended!
+
+    Okay: if a == 0:\n        a = 1\n        b = 1
+    E101: if a == 0:\n        a = 1\n\tb = 1
+pov/test/GlobalSettingsTest.py:32:9: W191 indentation contains tabs
+    For new projects, spaces-only are strongly recommended over tabs.
+
+    Okay: if True:\n    return
+    W191: if True:\n\treturn
+pov/test/GlobalSettingsTest.py:32:80: E501 line too long (87 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -993,341 +302,121 @@ pov/test/GlobalSettingsTest.py:30:80: E501 line too long (137 > 79 characters)
 
     Reports error E501.
 checking pov/test/IncludeTest.py
-pov/test/IncludeTest.py:14:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/IncludeTest.py:16:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/IncludeTest.py:17:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
 checking pov/test/InfiniteSolidTest.py
-pov/test/InfiniteSolidTest.py:42:80: E501 line too long (109 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
 checking pov/test/LanguageDirectiveTest.py
 checking pov/test/ObjectModifierTest.py
-pov/test/ObjectModifierTest.py:15:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
 checking pov/test/OtherTest.py
-pov/test/OtherTest.py:13:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/OtherTest.py:15:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/OtherTest.py:16:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/OtherTest.py:17:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/OtherTest.py:40:51: W292 no newline at end of file
-    Trailing blank lines are superfluous.
-
-    Okay: spam(1)
-    W391: spam(1)\n
-
-    However the last line should end with a new line (warning W292).
 checking pov/test/TextureTest.py
-pov/test/TextureTest.py:15:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/TextureTest.py:16:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/test/TextureTest.py:70:17: E222 multiple spaces after operator
-    Avoid extraneous whitespace around an operator.
-
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
 checking pov/test/__init__.py
 directory pov/test/fixture
 directory pov/texture
 checking pov/texture/ColorMap.py
-pov/texture/ColorMap.py:16:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/texture/ColorMap.py:78:1: W391 blank line at end of file
-    Trailing blank lines are superfluous.
-
-    Okay: spam(1)
-    W391: spam(1)\n
-
-    However the last line should end with a new line (warning W292).
 checking pov/texture/Finish.py
-pov/texture/Finish.py:21:80: E501 line too long (156 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+pov/texture/Finish.py:21:67: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
-pov/texture/Finish.py:30:80: E501 line too long (84 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/texture/Finish.py:22:63: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
-pov/texture/Finish.py:31:80: E501 line too long (82 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/texture/Finish.py:32:64: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/texture/Finish.py:34:61: W291 trailing whitespace
+    Trailing whitespace is superfluous.
+
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
+
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
 checking pov/texture/ImageMap.py
 checking pov/texture/Irid.py
 checking pov/texture/Normal.py
-pov/texture/Normal.py:34:80: E501 line too long (84 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+pov/texture/Normal.py:34:51: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
-pov/texture/Normal.py:37:80: E501 line too long (88 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/texture/Normal.py:38:54: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
 checking pov/texture/Pigment.py
-pov/texture/Pigment.py:42:80: E501 line too long (84 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+pov/texture/Pigment.py:42:64: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
 checking pov/texture/Reflection.py
-pov/texture/Reflection.py:23:80: E501 line too long (156 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+pov/texture/Reflection.py:23:67: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
-pov/texture/Reflection.py:32:80: E501 line too long (84 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/texture/Reflection.py:24:63: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
-pov/texture/Reflection.py:33:80: E501 line too long (82 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/texture/Reflection.py:34:64: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
-pov/texture/Reflection.py:52:1: W391 blank line at end of file
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/texture/Reflection.py:36:61: W291 trailing whitespace
+    Trailing whitespace is superfluous.
+
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
+
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/texture/Reflection.py:56:1: W391 blank line at end of file
     Trailing blank lines are superfluous.
 
     Okay: spam(1)
@@ -1335,46 +424,42 @@ pov/texture/Reflection.py:52:1: W391 blank line at end of file
 
     However the last line should end with a new line (warning W292).
 checking pov/texture/Texture.py
-pov/texture/Texture.py:29:80: E501 line too long (80 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+pov/texture/Texture.py:29:59: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
-pov/texture/Texture.py:42:80: E501 line too long (132 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/texture/Texture.py:43:60: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
-pov/texture/Texture.py:71:80: E501 line too long (83 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/texture/Texture.py:44:58: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    Reports error E501.
-pov/texture/Texture.py:84:1: W391 blank line at end of file
-    Trailing blank lines are superfluous.
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/texture/Texture.py:74:59: W291 trailing whitespace
+    Trailing whitespace is superfluous.
 
-    Okay: spam(1)
-    W391: spam(1)\n
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
 
-    However the last line should end with a new line (warning W292).
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
 checking pov/texture/__init__.py
 directory pov/texture/pattern
 checking pov/texture/pattern/Gradient.py
@@ -1382,1053 +467,8 @@ checking pov/texture/pattern/__init__.py
 directory pov/examples
 checking pov/examples/basic_scene.py
 checking pov/examples/basic_sphere.py
-pov/examples/basic_sphere.py:37:1: E303 too many blank lines (3)
-    Separate top-level function and class definitions with two blank lines.
-
-    Method definitions inside a class are separated by a single blank line.
-
-    Extra blank lines may be used (sparingly) to separate groups of related
-    functions.  Blank lines may be omitted between a bunch of related
-    one-liners (e.g. a set of dummy implementations).
-
-    Use blank lines in functions, sparingly, to indicate logical sections.
-
-    Okay: def a():\n    pass\n\n\ndef b():\n    pass
-    Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
-
-    E301: class Foo:\n    b = 0\n    def bar():\n        pass
-    E302: def a():\n    pass\n\ndef b(n):\n    pass
-    E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
-    E303: def a():\n\n\n\n    pass
-    E304: @decorator\n\ndef a():\n    pass
-pov/examples/basic_sphere.py:55:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/examples/basic_sphere.py:57:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
 checking pov/examples/checkered_floor.py
 checking pov/examples/image_map.py
-pov/examples/image_map.py:2:8: E701 multiple statements on one line (colon)
-    Compound statements (on the same line) are generally discouraged.
-
-    While sometimes it's okay to put an if/for/while with a small body
-    on the same line, never do this for multi-clause statements.
-    Also avoid folding such long lines!
-
-    Okay: if foo == 'blah':\n    do_blah_thing()
-    Okay: do_one()
-    Okay: do_two()
-    Okay: do_three()
-
-    E701: if foo == 'blah': do_blah_thing()
-    E701: for x in lst: total += x
-    E701: while t < 10: t = delay()
-    E701: if foo == 'blah': do_blah_thing()
-    E701: else: do_non_blah_thing()
-    E701: try: something()
-    E701: finally: cleanup()
-    E701: if foo == 'blah': one(); two(); three()
-
-    E702: do_one(); do_two(); do_three()
-    E703: do_four();  # useless semicolon
-pov/examples/image_map.py:3:8: E701 multiple statements on one line (colon)
-    Compound statements (on the same line) are generally discouraged.
-
-    While sometimes it's okay to put an if/for/while with a small body
-    on the same line, never do this for multi-clause statements.
-    Also avoid folding such long lines!
-
-    Okay: if foo == 'blah':\n    do_blah_thing()
-    Okay: do_one()
-    Okay: do_two()
-    Okay: do_three()
-
-    E701: if foo == 'blah': do_blah_thing()
-    E701: for x in lst: total += x
-    E701: while t < 10: t = delay()
-    E701: if foo == 'blah': do_blah_thing()
-    E701: else: do_non_blah_thing()
-    E701: try: something()
-    E701: finally: cleanup()
-    E701: if foo == 'blah': one(); two(); three()
-
-    E702: do_one(); do_two(); do_three()
-    E703: do_four();  # useless semicolon
-pov/examples/image_map.py:4:8: E701 multiple statements on one line (colon)
-    Compound statements (on the same line) are generally discouraged.
-
-    While sometimes it's okay to put an if/for/while with a small body
-    on the same line, never do this for multi-clause statements.
-    Also avoid folding such long lines!
-
-    Okay: if foo == 'blah':\n    do_blah_thing()
-    Okay: do_one()
-    Okay: do_two()
-    Okay: do_three()
-
-    E701: if foo == 'blah': do_blah_thing()
-    E701: for x in lst: total += x
-    E701: while t < 10: t = delay()
-    E701: if foo == 'blah': do_blah_thing()
-    E701: else: do_non_blah_thing()
-    E701: try: something()
-    E701: finally: cleanup()
-    E701: if foo == 'blah': one(); two(); three()
-
-    E702: do_one(); do_two(); do_three()
-    E703: do_four();  # useless semicolon
-pov/examples/image_map.py:5:8: E701 multiple statements on one line (colon)
-    Compound statements (on the same line) are generally discouraged.
-
-    While sometimes it's okay to put an if/for/while with a small body
-    on the same line, never do this for multi-clause statements.
-    Also avoid folding such long lines!
-
-    Okay: if foo == 'blah':\n    do_blah_thing()
-    Okay: do_one()
-    Okay: do_two()
-    Okay: do_three()
-
-    E701: if foo == 'blah': do_blah_thing()
-    E701: for x in lst: total += x
-    E701: while t < 10: t = delay()
-    E701: if foo == 'blah': do_blah_thing()
-    E701: else: do_non_blah_thing()
-    E701: try: something()
-    E701: finally: cleanup()
-    E701: if foo == 'blah': one(); two(); three()
-
-    E702: do_one(); do_two(); do_three()
-    E703: do_four();  # useless semicolon
-pov/examples/image_map.py:6:8: E701 multiple statements on one line (colon)
-    Compound statements (on the same line) are generally discouraged.
-
-    While sometimes it's okay to put an if/for/while with a small body
-    on the same line, never do this for multi-clause statements.
-    Also avoid folding such long lines!
-
-    Okay: if foo == 'blah':\n    do_blah_thing()
-    Okay: do_one()
-    Okay: do_two()
-    Okay: do_three()
-
-    E701: if foo == 'blah': do_blah_thing()
-    E701: for x in lst: total += x
-    E701: while t < 10: t = delay()
-    E701: if foo == 'blah': do_blah_thing()
-    E701: else: do_non_blah_thing()
-    E701: try: something()
-    E701: finally: cleanup()
-    E701: if foo == 'blah': one(); two(); three()
-
-    E702: do_one(); do_two(); do_three()
-    E703: do_four();  # useless semicolon
-pov/examples/image_map.py:9:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/examples/image_map.py:11:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-pov/examples/image_map.py:14:3: E121 continuation line under-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/examples/image_map.py:20:3: E121 continuation line under-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/examples/image_map.py:20:11: E221 multiple spaces before operator
-    Avoid extraneous whitespace around an operator.
-
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
-pov/examples/image_map.py:20:14: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-pov/examples/image_map.py:20:28: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-pov/examples/image_map.py:23:10: E221 multiple spaces before operator
-    Avoid extraneous whitespace around an operator.
-
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
-pov/examples/image_map.py:23:14: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-pov/examples/image_map.py:23:28: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-pov/examples/image_map.py:27:3: E121 continuation line under-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/examples/image_map.py:28:5: E121 continuation line under-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/examples/image_map.py:30:7: E121 continuation line under-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/examples/image_map.py:37:3: E121 continuation line under-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/examples/image_map.py:37:4: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-pov/examples/image_map.py:37:11: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-pov/examples/image_map.py:37:12: E222 multiple spaces after operator
-    Avoid extraneous whitespace around an operator.
-
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
-pov/examples/image_map.py:37:43: E211 whitespace before '('
-    Avoid extraneous whitespace.
-
-    Avoid extraneous whitespace in the following situations:
-    - before the open parenthesis that starts the argument list of a
-      function call.
-    - before the open parenthesis that starts an indexing or slicing.
-
-    Okay: spam(1)
-    E211: spam (1)
-
-    Okay: dict['key'] = list[index]
-    E211: dict ['key'] = list[index]
-    E211: dict['key'] = list [index]
-pov/examples/image_map.py:38:14: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-pov/examples/image_map.py:38:21: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-pov/examples/image_map.py:38:22: E222 multiple spaces after operator
-    Avoid extraneous whitespace around an operator.
-
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
-pov/examples/image_map.py:39:14: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-pov/examples/image_map.py:39:26: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-pov/examples/image_map.py:45:3: E121 continuation line under-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/examples/image_map.py:47:5: E121 continuation line under-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/examples/image_map.py:47:14: E201 whitespace after '{'
-    Avoid extraneous whitespace.
-
-    Avoid extraneous whitespace in these situations:
-    - Immediately inside parentheses, brackets or braces.
-    - Immediately before a comma, semicolon, or colon.
-
-    Okay: spam(ham[1], {eggs: 2})
-    E201: spam( ham[1], {eggs: 2})
-    E201: spam(ham[ 1], {eggs: 2})
-    E201: spam(ham[1], { eggs: 2})
-    E202: spam(ham[1], {eggs: 2} )
-    E202: spam(ham[1 ], {eggs: 2})
-    E202: spam(ham[1], {eggs: 2 })
-
-    E203: if x == 4: print x, y; x, y = y , x
-    E203: if x == 4: print x, y ; x, y = y, x
-    E203: if x == 4 : print x, y; x, y = y, x
-pov/examples/image_map.py:47:57: E202 whitespace before '}'
-    Avoid extraneous whitespace.
-
-    Avoid extraneous whitespace in these situations:
-    - Immediately inside parentheses, brackets or braces.
-    - Immediately before a comma, semicolon, or colon.
-
-    Okay: spam(ham[1], {eggs: 2})
-    E201: spam( ham[1], {eggs: 2})
-    E201: spam(ham[ 1], {eggs: 2})
-    E201: spam(ham[1], { eggs: 2})
-    E202: spam(ham[1], {eggs: 2} )
-    E202: spam(ham[1 ], {eggs: 2})
-    E202: spam(ham[1], {eggs: 2 })
-
-    E203: if x == 4: print x, y; x, y = y , x
-    E203: if x == 4: print x, y ; x, y = y, x
-    E203: if x == 4 : print x, y; x, y = y, x
-pov/examples/image_map.py:48:13: E201 whitespace after '{'
-    Avoid extraneous whitespace.
-
-    Avoid extraneous whitespace in these situations:
-    - Immediately inside parentheses, brackets or braces.
-    - Immediately before a comma, semicolon, or colon.
-
-    Okay: spam(ham[1], {eggs: 2})
-    E201: spam( ham[1], {eggs: 2})
-    E201: spam(ham[ 1], {eggs: 2})
-    E201: spam(ham[1], { eggs: 2})
-    E202: spam(ham[1], {eggs: 2} )
-    E202: spam(ham[1 ], {eggs: 2})
-    E202: spam(ham[1], {eggs: 2 })
-
-    E203: if x == 4: print x, y; x, y = y , x
-    E203: if x == 4: print x, y ; x, y = y, x
-    E203: if x == 4 : print x, y; x, y = y, x
-pov/examples/image_map.py:48:28: E202 whitespace before '}'
-    Avoid extraneous whitespace.
-
-    Avoid extraneous whitespace in these situations:
-    - Immediately inside parentheses, brackets or braces.
-    - Immediately before a comma, semicolon, or colon.
-
-    Okay: spam(ham[1], {eggs: 2})
-    E201: spam( ham[1], {eggs: 2})
-    E201: spam(ham[ 1], {eggs: 2})
-    E201: spam(ham[1], { eggs: 2})
-    E202: spam(ham[1], {eggs: 2} )
-    E202: spam(ham[1 ], {eggs: 2})
-    E202: spam(ham[1], {eggs: 2 })
-
-    E203: if x == 4: print x, y; x, y = y , x
-    E203: if x == 4: print x, y ; x, y = y, x
-    E203: if x == 4 : print x, y; x, y = y, x
-pov/examples/image_map.py:53:3: E121 continuation line under-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/examples/image_map.py:55:5: E121 continuation line under-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/examples/image_map.py:56:7: E121 continuation line under-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/examples/image_map.py:57:9: E121 continuation line under-indented for hanging indent
-    Continuation lines indentation.
-
-    Continuation lines should align wrapped elements either vertically
-    using Python's implicit line joining inside parentheses, brackets
-    and braces, or using a hanging indent.
-
-    When using a hanging indent these considerations should be applied:
-    - there should be no arguments on the first line, and
-    - further indentation should be used to clearly distinguish itself as a
-      continuation line.
-
-    Okay: a = (\n)
-    E123: a = (\n    )
-
-    Okay: a = (\n    42)
-    E121: a = (\n   42)
-    E122: a = (\n42)
-    E123: a = (\n    42\n    )
-    E124: a = (24,\n     42\n)
-    E125: if (\n    b):\n    pass
-    E126: a = (\n        42)
-    E127: a = (24,\n      42)
-    E128: a = (24,\n    42)
-    E129: if (a or\n    b):\n    pass
-    E131: a = (\n    42\n 24)
-pov/examples/image_map.py:59:13: E221 multiple spaces before operator
-    Avoid extraneous whitespace around an operator.
-
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
-pov/examples/image_map.py:60:21: E221 multiple spaces before operator
-    Avoid extraneous whitespace around an operator.
-
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
-pov/examples/image_map.py:61:21: E221 multiple spaces before operator
-    Avoid extraneous whitespace around an operator.
-
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
-pov/examples/image_map.py:63:35: E211 whitespace before '('
-    Avoid extraneous whitespace.
-
-    Avoid extraneous whitespace in the following situations:
-    - before the open parenthesis that starts the argument list of a
-      function call.
-    - before the open parenthesis that starts an indexing or slicing.
-
-    Okay: spam(1)
-    E211: spam (1)
-
-    Okay: dict['key'] = list[index]
-    E211: dict ['key'] = list[index]
-    E211: dict['key'] = list [index]
-pov/examples/image_map.py:63:44: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-pov/examples/image_map.py:64:18: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
-
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
-
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
-
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
-
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-pov/examples/image_map.py:65:14: E221 multiple spaces before operator
-    Avoid extraneous whitespace around an operator.
-
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
-pov/examples/image_map.py:67:13: E201 whitespace after '{'
-    Avoid extraneous whitespace.
-
-    Avoid extraneous whitespace in these situations:
-    - Immediately inside parentheses, brackets or braces.
-    - Immediately before a comma, semicolon, or colon.
-
-    Okay: spam(ham[1], {eggs: 2})
-    E201: spam( ham[1], {eggs: 2})
-    E201: spam(ham[ 1], {eggs: 2})
-    E201: spam(ham[1], { eggs: 2})
-    E202: spam(ham[1], {eggs: 2} )
-    E202: spam(ham[1 ], {eggs: 2})
-    E202: spam(ham[1], {eggs: 2 })
-
-    E203: if x == 4: print x, y; x, y = y , x
-    E203: if x == 4: print x, y ; x, y = y, x
-    E203: if x == 4 : print x, y; x, y = y, x
-pov/examples/image_map.py:67:25: E202 whitespace before '}'
-    Avoid extraneous whitespace.
-
-    Avoid extraneous whitespace in these situations:
-    - Immediately inside parentheses, brackets or braces.
-    - Immediately before a comma, semicolon, or colon.
-
-    Okay: spam(ham[1], {eggs: 2})
-    E201: spam( ham[1], {eggs: 2})
-    E201: spam(ham[ 1], {eggs: 2})
-    E201: spam(ham[1], { eggs: 2})
-    E202: spam(ham[1], {eggs: 2} )
-    E202: spam(ham[1 ], {eggs: 2})
-    E202: spam(ham[1], {eggs: 2 })
-
-    E203: if x == 4: print x, y; x, y = y , x
-    E203: if x == 4: print x, y ; x, y = y, x
-    E203: if x == 4 : print x, y; x, y = y, x
-pov/examples/image_map.py:70:1: W391 blank line at end of file
-    Trailing blank lines are superfluous.
-
-    Okay: spam(1)
-    W391: spam(1)\n
-
-    However the last line should end with a new line (warning W292).
 checking pov/examples/orthographic_scene.py
 pov/examples/orthographic_scene.py:2:8: E701 multiple statements on one line (colon)
     Compound statements (on the same line) are generally discouraged.
@@ -9709,28 +7749,28 @@ checking pov/language_directive/Include.py
 checking pov/language_directive/LanguageDirective.py
 checking pov/language_directive/Version.py
 checking pov/language_directive/__init__.py
+2       E101 indentation contains mixed spaces and tabs
 25      E111 indentation is not a multiple of four
 9       E113 unexpected indentation
-49      E121 continuation line under-indented for hanging indent
+37      E121 continuation line under-indented for hanging indent
 10      E122 continuation line missing indentation or outdented
 3       E124 closing bracket does not match visual indentation
 1       E126 continuation line over-indented for hanging indent
 10      E128 continuation line under-indented for visual indent
 4       E131 continuation line unaligned for hanging indent
-16      E201 whitespace after '{'
-14      E202 whitespace before '}'
-21      E211 whitespace before '('
-50      E221 multiple spaces before operator
-13      E222 multiple spaces after operator
-102     E225 missing whitespace around operator
+13      E201 whitespace after '{'
+11      E202 whitespace before ']'
+19      E211 whitespace before '('
+44      E221 multiple spaces before operator
+7       E222 multiple spaces after operator
+89      E225 missing whitespace around operator
 41      E231 missing whitespace after ','
 1       E251 unexpected spaces around keyword / parameter equals
-74      E265 block comment should start with '# '
-2       E303 too many blank lines (3)
-36      E501 line too long (80 > 79 characters)
-25      E701 multiple statements on one line (colon)
-3       E713 test for membership should be 'not in'
+23      E265 block comment should start with '# '
+1       E303 too many blank lines (2)
+22      E501 line too long (80 > 79 characters)
+20      E701 multiple statements on one line (colon)
 2       E901 TokenError: EOF in multi-line statement
-3       W291 trailing whitespace
-1       W292 no newline at end of file
-12      W391 blank line at end of file
+2       W191 indentation contains tabs
+16      W291 trailing whitespace
+9       W391 blank line at end of file
