@@ -36,7 +36,7 @@ class Color(SceneItem):
             [red FLOAT] & [green FLOAT] & [blue FLOAT]
             & [filter FLOAT] & [transmit FLOAT]
 
-        @TODO: enable setting color by passing float 
+        @TODO: enable setting color by passing float
             options e.g. Color(0.0, 0.2, 0.75)
         @TODO: check syntax of kwargs
     '''

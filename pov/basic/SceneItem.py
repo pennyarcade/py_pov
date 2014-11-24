@@ -169,7 +169,7 @@ class SceneItem(object):
         self._format_kwargs(kwargs)
 
         # @todo: Does indentation really have to stay in the constructor??
-        if not "indentation" in globals():
+        if "indentation" not in globals():
             global indentation
             indentation = 0
             debug("set initial indentation to 0")
@@ -184,9 +184,9 @@ class SceneItem(object):
         debug("%s: SceneItem.__init__(): Stop: %s, %s, %s, %s" %
               (self.__class__.__name__, name, args, opts, kwargs))
 
-    #------------------------------------------------------------------------
+    # ------------------------------------------------------------------------
     # Pseudo private  methods
-    #------------------------------------------------------------------------
+    # ------------------------------------------------------------------------
 
     def _indent(self):
         """
@@ -327,11 +327,11 @@ class SceneItem(object):
                 raise SdlSyntaxException('No such Keyword: ' + str(key))
 
             # allowed keywords
-            if not key in valid_kw:
+            if key not in valid_kw:
                 msg = 'Keyword %s not allowed for object %s'
                 raise SdlSyntaxException(msg % (key, self.__class__.__name__))
             # type of kw arguments
-            if not val.__class__.__name__ in valid_kw[key]:
+            if val.__class__.__name__ not in valid_kw[key]:
                 msg = 'Value of KW Argument %s is expectet to be type %s'
                 msg += ' but got %s'
                 raise SdlSyntaxException(
@@ -373,12 +373,12 @@ class SceneItem(object):
         '''
             format keyword parameters
         '''
-        #debug('kwargs: %s', kwargs)
+        # debug('kwargs: %s', kwargs)
         self.kwargs = dict(kwargs)  # take a copy
         kwargs = dict(kwargs).items()
-        #debug('kwargs: %s', kwargs)
+        # debug('kwargs: %s', kwargs)
         kwargs.reverse()
-        #debug('kwargs: %s', kwargs)
+        # debug('kwargs: %s', kwargs)
 
         for key, val in kwargs:
             if type(val) == tuple or type(val) == list:

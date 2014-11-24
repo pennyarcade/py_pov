@@ -177,14 +177,14 @@ class SceneItemTestCase(unittest.TestCase):
         '''
         self.sut = SceneItem('foo', [1, 2, 3], [4, 5, 6], {'bar': 7})
 
-        #before
+        # before
         self.assertEqual(self.sut.args, [1, 2, 3])
         self.assertEqual(self.sut.opts, [4, 5, 6])
         self.assertEqual(self.sut.kwargs, {'bar': 7})
 
         self.sut[4] = 0
 
-        #after
+        # after
         self.assertEqual(self.sut.args, [1, 2, 3])
         self.assertEqual(self.sut.opts, [4, 0, 6])
         self.assertEqual(self.sut.kwargs, {'bar': 7})
@@ -219,7 +219,8 @@ class SceneItemTestCase(unittest.TestCase):
             Test pseudo private method
         '''
         with self.assertRaisesRegexp(
-            SdlSyntaxException, 'Keyword agate not allowed for object SceneItem'
+            SdlSyntaxException,
+            'Keyword agate not allowed for object SceneItem'
         ):
             self.sut = SceneItem(
                 'foo', [], [],
@@ -458,7 +459,7 @@ class SceneFileTestCase(unittest.TestCase):
             Cleanup after tests
         '''
         self.sut.close()
-        #os.remove(self.sut.file.name)
+        # os.remove(self.sut.file.name)
 
     def test_create(self):
         '''
@@ -503,7 +504,7 @@ class SceneFileTestCase(unittest.TestCase):
         second = 'foo {' + os.linesep
         second += '}' + os.linesep
 
-        #@TODO: No Assertion!
+        # @TODO: No Assertion!
 
 
 class BlockObjectTestCase(unittest.TestCase):
@@ -539,7 +540,7 @@ class BlockObjectTestCase(unittest.TestCase):
         second += '  1, 2, 3' + os.linesep
         second += '  4' + os.linesep
         second += '  bar {' + os.linesep
-        second += '  }' +os.linesep
+        second += '  }' + os.linesep
         second += '  6' + os.linesep
         second += '  bar 7' + os.linesep
         second += '}' + os.linesep

@@ -10,11 +10,11 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-#import os
+# import os
 import unittest
-#import difflib
-#import copy
-#import traceback
+# import difflib
+# import copy
+# import traceback
 from logging import *
 
 from pov.basic.SceneItem import *

@@ -39,5 +39,8 @@ class PlaneTestCase(unittest.TestCase):
         '''
             Test vector parameter
         '''
-        with self.assertRaisesRegexp(SdlSyntaxException, 'Normal vector has more or less than 3 dimensions'):
+        with self.assertRaisesRegexp(
+            SdlSyntaxException,
+            'Normal vector has more or less than 3 dimensions'
+        ):
             self.sut = Plane((1, 2, 3, 4), 5)

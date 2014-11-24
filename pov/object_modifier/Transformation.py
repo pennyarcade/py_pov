@@ -19,7 +19,7 @@ from pov.basic.BlockObject import BlockObject
 class Transformation(BlockObject):
     '''
         TRANSFORMATION:
-            rotate VECTOR | scale VECTOR | translate VECTOR 
+            rotate VECTOR | scale VECTOR | translate VECTOR
                     | TRANSFORM | MATRIX
         TRANSFORM:
             transform TRANSFORM_IDENTIFIER | transform { [TRANSFORM_ITEM...] }

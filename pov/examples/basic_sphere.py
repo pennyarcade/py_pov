@@ -33,7 +33,6 @@ from pov.texture.ColorMap import ColorMap
 from pov.texture.Normal import Normal
 
 
-
 fix = SceneFile('test.pov')
 fix.append(Version(3.6))
 fix.append(
@@ -52,9 +51,9 @@ fix.append(
     Include('textures.inc')
 )
 
-#@TODO: Read from Config
+# @TODO: Read from Config
 image_width = 800
-#@TODO: Read from Config
+# @TODO: Read from Config
 image_height = 600
 
 fix.append(

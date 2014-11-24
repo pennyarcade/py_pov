@@ -13,7 +13,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 from logging import debug
 
 from pov.basic.BlockObject import BlockObject
-#from pov.other.SdlSyntaxException import SdlSyntaxException
+# from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class ColorMap(BlockObject):
@@ -75,4 +75,3 @@ class ColourMap(ColorMap):
             Create ColorMap object
         '''
         super(ColourMap, self).__init__('colour_map', [cmap], opts, kwargs)
-

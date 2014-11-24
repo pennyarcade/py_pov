@@ -12,7 +12,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 import unittest
 import os
-#import logging
+# import logging
 from pov.object_modifier.Translate import Translate
 from pov.object_modifier.ObjectModifier import ObjectModifier
 from pov.basic.Vector import Vector

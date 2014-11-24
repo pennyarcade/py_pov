@@ -26,7 +26,8 @@ class Texture(BlockObject):
                 [PLAIN_TEXTURE_IDENT] [PNF_IDENTIFIERS] [PNF_ITEMS]
 
             PNF_IDENTIFIERS:
-                [PIGMENT_IDENTIFIER] & [NORMAL_IDENTIFIER] & [FINISH_IDENTIFIER]
+                [PIGMENT_IDENTIFIER] & [NORMAL_IDENTIFIER] 
+                    & [FINISH_IDENTIFIER]
 
             PNF_ITEMS:
                 [PIGMENT] & [NORMAL] & [FINISH] & [TRANSFORMATION...]
@@ -39,7 +40,9 @@ class Texture(BlockObject):
             texture { PATTERNED_TEXTURE_BODY }
 
             PATTERNED_TEXTURE_BODY:
-                PATTERNED_TEXTURE_IDENT [TRANSFORMATION...] | TEXTURE_PATTERN [PATTERN_MODIFIERS] | MATERIAL_MAP [TRANSFORMATION...]
+                PATTERNED_TEXTURE_IDENT [TRANSFORMATION...] 
+                    | TEXTURE_PATTERN [PATTERN_MODIFIERS] 
+                    | MATERIAL_MAP [TRANSFORMATION...]
 
             TEXTURE_PATTERN:
                 TEXTURE_LIST_PATTERN | MAP_PATTERN TEXTURE_MAP
@@ -68,7 +71,8 @@ class Texture(BlockObject):
                 The brackets here are part of the map entry.
 
             TEXTURE_BODY:
-                PLAIN_TEXTURE_BODY | LAYERED_TEXTURE_IDENT | PATTERNED_TEXTURE_BODY
+                PLAIN_TEXTURE_BODY | LAYERED_TEXTURE_IDENT 
+                    | PATTERNED_TEXTURE_BODY
 
             MATERIAL_MAP:
                 material_map { BITMAP_IMAGE [BITMAP_MODIFIERS] TEXTURE... }
@@ -81,4 +85,3 @@ class Texture(BlockObject):
             @Todo: Syntax Checks
         '''
         super(Texture, self).__init__('texture', [], opts, kwargs)
-

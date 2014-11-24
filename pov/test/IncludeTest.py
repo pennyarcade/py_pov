@@ -11,10 +11,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 import sys
-#import os
+# import os
 import unittest
-#import traceback
-#from logging import *
+# import traceback
+# from logging import *
 
 sys.path.append('../../')
 

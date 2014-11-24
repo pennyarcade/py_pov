@@ -10,10 +10,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-#import os
+# import os
 import unittest
-#import difflib
-#import copy
+# import difflib
+# import copy
 from logging import *
 
 from pov.atmeff.Fog import Fog

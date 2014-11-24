@@ -45,7 +45,7 @@ class EndToEndTestCase(unittest.TestCase):
         End To End Tests
     '''
 
-    #@unittest.skip
+    # @unittest.skip
     def test_scene1(self):
         '''
             Example taken from:
@@ -53,7 +53,7 @@ class EndToEndTestCase(unittest.TestCase):
         '''
         lsep = os.linesep
 
-        ref =  "#version 3.6;" + lsep
+        ref = "#version 3.6;" + lsep
         ref += "global_settings {" + lsep
         ref += "  assumed_gamma 1.0" + lsep
         ref += "}" + lsep
@@ -153,9 +153,9 @@ class EndToEndTestCase(unittest.TestCase):
             Include('fixture/textures.inc')
         )
 
-        #@TODO: Read from Config
+        # @TODO: Read from Config
         image_width = 800
-        #@TODO: Read from Config
+        # @TODO: Read from Config
         image_height = 600
 
         fix.append(
@@ -250,14 +250,14 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    #@unittest.skip
+    # @unittest.skip
     def test_examples_basic_scene(self):
         '''
             examples/basic_scene.pov
         '''
         lsep = os.linesep
 
-        ref =  '#version 3.6;' + lsep
+        ref = '#version 3.6;' + lsep
         ref += '#include "fixture/colors.inc"' + lsep
         ref += 'global_settings {' + lsep
         ref += '  assumed_gamma 1.0' + lsep
@@ -313,9 +313,9 @@ class EndToEndTestCase(unittest.TestCase):
             GlobalSettings(assumed_gamma=1.0)
         )
 
-        #@TODO: Read from Config
+        # @TODO: Read from Config
         image_width = 800
-        #@TODO: Read from Config
+        # @TODO: Read from Config
         image_height = 600
 
         fix.append(
@@ -379,14 +379,14 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    #@unittest.skip
+    # @unittest.skip
     def test_checkered_floor_example(self):
         '''
             examples/checkered_floor.pov
         '''
         lsep = os.linesep
 
-        ref =  '#version 3.6;' + lsep
+        ref = '#version 3.6;' + lsep
         ref += '#include "fixture/colors.inc"' + lsep
         ref += 'global_settings {' + lsep
         ref += '  assumed_gamma 1.0' + lsep
@@ -456,9 +456,9 @@ class EndToEndTestCase(unittest.TestCase):
             )
         )
 
-        #@TODO: Read from Config
+        # @TODO: Read from Config
         image_width = 800
-        #@TODO: Read from Config
+        # @TODO: Read from Config
         image_height = 600
 
         fix.append(
@@ -528,7 +528,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         self.assertEqual(ref, str(fix), msg)
 
-    #@unittest.skip
+    # @unittest.skip
     def test_image_map_example(self):
         '''
             @TODO: Apidoc
@@ -594,9 +594,9 @@ class EndToEndTestCase(unittest.TestCase):
             )
         )
 
-        #@TODO: Read from Config
+        # @TODO: Read from Config
         image_width = 800
-        #@TODO: Read from Config
+        # @TODO: Read from Config
         image_height = 600
 
         fix.append(
@@ -660,7 +660,7 @@ class EndToEndTestCase(unittest.TestCase):
             )
         )
 
-        #----------------------------------------------------
+        # ----------------------------------------------------
         msg = '\n' + ''.join(difflib.ndiff(
             ref.splitlines(1),
             str(fix).splitlines(1)

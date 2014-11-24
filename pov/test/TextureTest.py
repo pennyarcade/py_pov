@@ -12,8 +12,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 import os
 import unittest
-#import difflib
-#import copy
+# import difflib
+# import copy
 from logging import *
 from pov.texture.Finish import Finish
 from pov.texture.ColorMap import ColorMap
@@ -67,7 +67,7 @@ class ColorMapTestCase(unittest.TestCase):
     def test_toString(self):
         le = os.linesep
         first = str(self.SUT)
-        second =  'color_map {' + le
+        second = 'color_map {' + le
         second += '  [0.3 color rgb <0.1, 0.2, 0.3>]' + le
         second += '}' + le
 

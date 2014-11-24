@@ -39,7 +39,8 @@ class Pigment(BlockObject):
                 object { LIST_OBJECT PIGMENT, PIGMENT }
 
             IMAGE_MAP:
-                image_map {BITMAP_IMAGE [IMAGE_MAP_MODIFIER...] [BITMAP_MODIFIERS] }
+                image_map {BITMAP_IMAGE [IMAGE_MAP_MODIFIER...] 
+                    [BITMAP_MODIFIERS] }
 
             IMAGE_MAP_MODIFIER:
                 filter I_PALETTE, F_AMOUNT | filter all F_AMOUNT |
