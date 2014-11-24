@@ -5,12 +5,8 @@ R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.finite_solid.Blob
 R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.finite_solid.Torus
-C: 35, 0: Final newline missing (missing-final-newline)
 R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.finite_solid.HeightField
-C:108, 0: Wrong continued indentation.
-            'ppm', 'jpeg', 'tiff', 'sys', 'function']
-            ^| (bad-continuation)
 R: 17, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.finite_solid.Box
 R: 19, 0: Too few public methods (0/2) (too-few-public-methods)
@@ -34,6 +30,7 @@ R: 19, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.finite_solid.Text
 R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.object_modifier.Transformation
+C: 22, 0: Trailing whitespace (trailing-whitespace)
 R: 19, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.object_modifier.Scale
 R: 18, 0: Too few public methods (0/2) (too-few-public-methods)
@@ -56,17 +53,10 @@ C:105, 0: Invalid constant name "x" (invalid-name)
 C:106, 0: Invalid constant name "y" (invalid-name)
 C:107, 0: Invalid constant name "z" (invalid-name)
 ************* Module pov.basic.BlockObject
-C: 48, 0: Wrong hanging indentation.
-                            ", ".join([str(arg) for arg in self.args])
-                |           ^ (bad-continuation)
-C: 49, 0: Wrong hanging indentation.
-                        )
-            |   |       ^ (bad-continuation)
-C: 67, 0: Final newline missing (missing-final-newline)
 R: 17, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.basic.Color
-C: 35, 0: Line too long (90/80) (line-too-long)
-C: 37, 0: Line too long (87/80) (line-too-long)
+C: 29, 0: Trailing whitespace (trailing-whitespace)
+C: 39, 0: Trailing whitespace (trailing-whitespace)
 R: 18, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.basic.SceneItem
 W: 19, 0: Using the global statement at the module level (global-at-module-level)
@@ -371,4 +361,10 @@ C: 81, 4: Missing method docstring (missing-docstring)
 C: 89, 8: Invalid attribute name "SUT" (invalid-name)
 C: 87, 0: Missing class docstring (missing-docstring)
 C: 91, 4: Missing method docstring (missing-docstring)
-C: 99, 8: Invalid 
+C: 99, 8: Invalid attribute name "SUT" (invalid-name)
+C: 97, 0: Missing class docstring (missing-docstring)
+C:101, 4: Missing method docstring (missing-docstring)
+W: 17, 0: Unused import info from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import setLoggerClass from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import Handler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import LogRecord from wildcard import (unuse
