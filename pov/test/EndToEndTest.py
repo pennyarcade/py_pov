@@ -242,7 +242,7 @@ class EndToEndTestCase(unittest.TestCase):
             )
         )
 
-        #----------------------------------------------------
+        # ----------------------------------------------------
         msg = '\n' + ''.join(difflib.ndiff(
             ref.splitlines(1),
             str(fix).splitlines(1)
@@ -371,7 +371,7 @@ class EndToEndTestCase(unittest.TestCase):
             )
         )
 
-        #----------------------------------------------------
+        # ----------------------------------------------------
         msg = '\n' + ''.join(difflib.ndiff(
             ref.splitlines(1),
             str(fix).splitlines(1)
@@ -520,7 +520,7 @@ class EndToEndTestCase(unittest.TestCase):
             )
         )
 
-        #----------------------------------------------------
+        # ----------------------------------------------------
         msg = '\n' + ''.join(difflib.ndiff(
             ref.splitlines(1),
             str(fix).splitlines(1)
@@ -602,7 +602,7 @@ class EndToEndTestCase(unittest.TestCase):
         fix.append(
             Camera(
                 location=Vector(0.0, 0.0, -4.0),
-                direction= 2 * z,
+                direction=2 * z,
                 right=x * image_width / image_height,
                 look_at=Vector(0.0, 0.0, 0.0)
             ),
@@ -625,7 +625,7 @@ class EndToEndTestCase(unittest.TestCase):
         fix.append(
             Plane(
                 y, -1,
-                Texture (
+                Texture(
                     Pigment(
                         Color(rgb=Vector(1, 1, 1)),
                         Color(blue=1),

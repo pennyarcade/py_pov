@@ -122,9 +122,11 @@ class BoxTestCase(unittest.TestCase):
             finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }
 
         TRANSFORMATION:
-            rotate VECTOR | scale VECTOR | translate VECTOR | TRANSFORM | MATRIX
-            TRANSFORM:
-            transform TRANSFORM_IDENTIFIER | transform { [TRANSFORM_ITEM...] }
+            rotate VECTOR | scale VECTOR | translate VECTOR 
+                | TRANSFORM | MATRIX
+        TRANSFORM:
+            transform TRANSFORM_IDENTIFIER 
+                | transform { [TRANSFORM_ITEM...] }
 
         MATRIX:
             matrix < F_VAL00, F_VAL01, F_VAL02,
@@ -656,7 +658,10 @@ class HeightFieldTestCase(unittest.TestCase):
         '''
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Invalid option type Vector not in allowed opts \n\\[\'ObjectModifier\']'
+            ' '.join((
+                'Invalid option type Vector not in allowed opts',
+                '\n\\[\'ObjectModifier\']'
+            ))
         ):
             self.sut = HeightField('fixture/test.gif', Vector(1, 2, 3, 4))
 
@@ -676,7 +681,10 @@ class HeightFieldTestCase(unittest.TestCase):
         '''
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Value of KW Argument smooth is expectet to be type bool but got str'
+            ' '.join((
+                'Value of KW Argument smooth is',
+                'expectet to be type bool but got str'
+            ))
         ):
             self.sut = HeightField('fixture/test.gif', smooth='bar')
 
@@ -686,7 +694,10 @@ class HeightFieldTestCase(unittest.TestCase):
         '''
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Value of KW Argument hierarchy is expectet to be type bool but got str'
+            ' '.join((
+                'Value of KW Argument hierarchy is expectet',
+                'to be type bool but got str'
+            ))
         ):
             self.sut = HeightField('fixture/test.gif', hierarchy='bar')
 
@@ -706,7 +717,11 @@ class HeightFieldTestCase(unittest.TestCase):
         '''
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Value of KW Argument hf_type is expectet to be in \\[\'gif\', \'tga\', \'pot\', \'png\', \'pgm\', \'ppm\', \'jpeg\', \'tiff\', \'sys\', \'function\'] but got bar'
+            ' '.join((
+                'Value of KW Argument hf_type is expectet to be in', 
+                '\\[\'gif\', \'tga\', \'pot\', \'png\', \'pgm\', \'ppm\',',
+                '\'jpeg\', \'tiff\', \'sys\', \'function\'] but got bar'
+            ))
         ):
             self.sut = HeightField('fixture/test.gif', hf_type='bar')
 
@@ -728,7 +743,10 @@ class HeightFieldTestCase(unittest.TestCase):
         '''
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Value of KW Argument water_level is expectet to be type float but got str'
+            ' '.join((
+                'Value of KW Argument water_level is',
+                'expectet to be type float but got str'
+            ))
         ):
             self.sut = HeightField('fixture/test.gif', water_level='bar')
 
@@ -786,7 +804,10 @@ class JuliaFractalTestCase(unittest.TestCase):
         '''
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Invalid option type Vector not in allowed opts \n\\[\\\'ObjectModifier\\\']'
+            ' '.join((
+                'Invalid option type Vector not in allowed',
+                'opts \n\\[\\\'ObjectModifier\\\']'
+            ))
         ):
             self.sut = JuliaFractal(Vector(1, 2, 3, 4), Vector(1, 2, 3, 4))
 
@@ -909,7 +930,10 @@ class SphereTestCase(unittest.TestCase):
         '''
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Value of Argument 1 is expectet to be type \\(\'float\', \'int\'\\) but got str'
+            ' '.join((
+                'Value of Argument 1 is expectet to be type',
+                '\\(\'float\', \'int\'\\) but got str'
+            ))
         ):
             self.sut = Sphere(
                 Vector(1, 2, 3),

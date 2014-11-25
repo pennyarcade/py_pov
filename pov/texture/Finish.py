@@ -18,8 +18,8 @@ class Finish(BlockObject):
         FINISH:
             finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }
         FINISH_ITEMS:
-            [ambient COLOR] & [diffuse FLOAT] & [brilliance FLOAT] 
-                & [PHONG] & [SPECULAR] & [REFLECTION] & [IRID] 
+            [ambient COLOR] & [diffuse FLOAT] & [brilliance FLOAT]
+                & [PHONG] & [SPECULAR] & [REFLECTION] & [IRID]
                 & [crand FLOAT] & [conserve_energy [BOOL]]
         PHONG:
             phong FLOAT & [phong_size FLOAT] & [metallic [FLOAT]]
@@ -29,9 +29,9 @@ class Finish(BlockObject):
             reflection COLOR [reflection_exponent FLOAT] |
             reflection { [COLOR,] COLOR [REFLECTION_ITEMS] }
         REFLECTION_ITEMS:
-            [fresnel BOOL] & [falloff FLOAT] & [exponent FLOAT] 
+            [fresnel BOOL] & [falloff FLOAT] & [exponent FLOAT]
                 & [metallic [FLOAT]]
-            Must also use interior {ior FLOAT} in the object 
+            Must also use interior {ior FLOAT} in the object
             when fresnel is used.
         IRID:
             irid { F_AMOUNT [IRID_ITEMS] }

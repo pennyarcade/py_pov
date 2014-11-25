@@ -31,11 +31,11 @@ class Normal(BlockObject):
                 MAP_PATTERN NORMAL_MAP
 
             NORMAL_LIST_PATTERN:
-                brick NORMAL, NORMAL [BRICK_ITEMS] 
+                brick NORMAL, NORMAL [BRICK_ITEMS]
                     | brick [F_DEPTH] [BRICK_ITEMS] |
                 checker NORMAL, NORMAL | checker [F_DEPTH] |
                 hexagon NORMAL, NORMAL, NORMAL | hexagon [F_DEPTH] |
-                object { LIST_OBJECT NORMAL, NORMAL } 
+                object { LIST_OBJECT NORMAL, NORMAL }
                     | object { LIST_OBJECT } [F_DEPTH]
 
             NORMAL_MAP:

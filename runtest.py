@@ -19,9 +19,9 @@ from pov.test import LanguageDirectiveTest
 
 
 def suite():
-	'''
-		Test Suite
-	'''
+    '''
+        Test Suite
+    '''
     tsuite = unittest.TestSuite()
 
     tsuite.addTests(unittest.TestLoader.loadTestsFromModule(BasicTest))

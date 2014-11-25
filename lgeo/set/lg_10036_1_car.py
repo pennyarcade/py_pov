@@ -90,7 +90,7 @@ from pov.other.Comment import Comment
 # #include "shapesq.inc"    # Pre-defined quartic shapes
 # #include "skies.inc"      # Ready defined sky spheres
 # #include "strings.inc"    # macros for generating and manipulating text
-# #include "sunpos.inc"     # macro for sun position on a given date, 
+# #include "sunpos.inc"     # macro for sun position on a given date,
 # time, and location on earth
 # #include "transforms.inc" # transformation macros
 
@@ -103,7 +103,7 @@ from pov.other.Comment import Comment
 # #include "stones1.inc"    # Great stone-textures created by Mike Miller
 # #include "stones2.inc"    # More, done by Dan Farmer and Paul Novak
 # #include "woodmaps.inc"   # Basic wooden colormaps
-# #include "woods.inc"      # Great wooden textures created by 
+# #include "woods.inc"      # Great wooden textures created by
 # Dan Farmer and Paul Novak
 
 '''
@@ -267,12 +267,12 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
     return part
 
 
-'''
         Comment('****  ****'),
         custom_macros.StdBrick(
 
         ),
         Comment('****  ****'),
+'''
 
 # 3021    Red     Plate 2 x 3
 StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)

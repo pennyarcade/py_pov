@@ -26,7 +26,7 @@ class Color(SceneItem):
             COLOR_VECTOR | COLOR_KEYWORD_GROUP | COLOR_IDENTIFIER
 
         COLOR_VECTOR:
-            rgb 3D_VECTOR | rgbf 4D_VECTOR | rgbt 4D_VECTOR 
+            rgb 3D_VECTOR | rgbf 4D_VECTOR | rgbt 4D_VECTOR
                 | [rgbft] 5D_VECTOR
 
         COLOR_KEYWORD_GROUP:

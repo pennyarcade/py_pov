@@ -1050,7 +1050,7 @@ def solid():
                             -LG_PLATE_HEIGHT-LG_TOP_HEIGHT+LG_E
                         )
                     ),
-                    Box()
+                    Box(
                         Vector(
                             2*LG_BRICK_WIDTH+LG_CORNER_SPACE,
                             2*LG_WALL_WIDTH,

@@ -28,7 +28,10 @@ class GlobalSettingsTestCase(unittest.TestCase):
 
     def test_create_Option_wrong_type(self):
         with self.assertRaisesRegexp(
-        	SdlSyntaxException,
-        	'Invalid option type str not in allowed opts \n\\[\'Radiosity\', \'Photons\']'
+            SdlSyntaxException,
+            ' '.join((
+                'Invalid option type str not in allowed opts',
+                '\n\\[\'Radiosity\', \'Photons\']'
+            ))
         ):
             self.SUT = GlobalSettings('foo', 'bar')
