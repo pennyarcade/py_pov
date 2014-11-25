@@ -1,7 +1,6 @@
 ************* Module lgeo.lgeo_city
 W: 19,-1: String statement has no effect (pointless-string-statement)
 W: 52, 0: Wildcard import pov.include.colors_inc (wildcard-import)
-E:112, 0: No name 'lg_10036_1_car' in module 'lgeo.set' (no-name-in-module)
 C:117, 0: Missing function docstring (missing-docstring)
 W:124,-1: String statement has no effect (pointless-string-statement)
 C:147, 4: Invalid variable name "L3SW" (invalid-name)
@@ -19,6 +18,7 @@ W:183,-1: String statement has no effect (pointless-string-statement)
 W:198,-1: String statement has no effect (pointless-string-statement)
 W:219,-1: String statement has no effect (pointless-string-statement)
 W:231,-1: String statement has no effect (pointless-string-statement)
+E:236,12: Module 'lgeo.set.lg_10036_1_car' has no 'nonmoving' member (no-member)
 W:151, 4: Unused variable 'L3Ambient' (unused-variable)
 W:152, 4: Unused variable 'L3Diffuse' (unused-variable)
 W:143, 4: Unused variable 'l3_version' (unused-variable)
@@ -184,88 +184,161 @@ E:578,34: Undefined variable 'lg_angle' (undefined-variable)
 E:589,33: Undefined variable 'lg_angle' (undefined-variable)
 E:590,33: Undefined variable 'lg_angle' (undefined-variable)
 ************* Module lgeo.include.brick.lg_2441
-E:1054, 0: invalid syntax (syntax-error)
+C:1148, 0: Line too long (90/79) (line-too-long)
+C:1156, 0: Line too long (90/79) (line-too-long)
+C:  1, 0: Too many lines in module (2530/2000) (too-many-lines)
+W: 31, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
+C: 34, 0: Invalid constant name "lg_angle" (invalid-name)
+C: 37, 0: Missing function docstring (missing-docstring)
+C: 40, 4: Invalid variable name "MIR" (invalid-name)
+C: 44, 8: Invalid variable name "PIN" (invalid-name)
+E:107,52: Undefined variable 'cos' (undefined-variable)
+E:107,65: Undefined variable 'pi' (undefined-variable)
+E:124,53: Undefined variable 'cos' (undefined-variable)
+E:124,66: Undefined variable 'pi' (undefined-variable)
+E:170,52: Undefined variable 'cos' (undefined-variable)
+E:170,65: Undefined variable 'pi' (undefined-variable)
+E:187,53: Undefined variable 'cos' (undefined-variable)
+E:187,66: Undefined variable 'pi' (undefined-variable)
+E:254,53: Undefined variable 'cos' (undefined-variable)
+E:254,66: Undefined variable 'pi' (undefined-variable)
+E:270,53: Undefined variable 'cos' (undefined-variable)
+E:270,66: Undefined variable 'pi' (undefined-variable)
+E:286,52: Undefined variable 'cos' (undefined-variable)
+E:286,65: Undefined variable 'pi' (undefined-variable)
+E:302,52: Undefined variable 'cos' (undefined-variable)
+E:302,65: Undefined variable 'pi' (undefined-variable)
+C:424,12: Invalid variable name "PIN" (invalid-name)
+C:1227,12: Invalid variable name "MIR" (invalid-name)
+E:1692,45: Undefined variable 'LG_TOP_HEIGH' (undefined-variable)
+W:2530,-1: String statement has no effect (pointless-string-statement)
+W: 31, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LG_CROSSAXLE_WIDTH from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_tech_knob_clear from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LG_CYLINDER_WALL_WIDTH from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_brick_cylinder from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import y from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_test from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import ClippedBy from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LG_GRID_WIDTH from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_brick_column_clear from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import sqrt from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_quality from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lego_logo_text from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LG_BRICK_HEIGHT from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import Plane from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LDU from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_plate_column_clear from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import Intersection from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_support_wall_clear from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import math from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LG_CYLINDER_RADIUS from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LG_KNOB_HEIGHT_LOGO from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_plate_cylinder_clear from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_brick_column from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_knob_dot from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LG_KNOB_CORNER_SPACE from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LGBH from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import Merge from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LG_KNOB_HEIGHT from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import x from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import SdlSyntaxException from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_plate_column from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import z from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_stud_logo from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LGPH from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LGBW from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LG_PLATE_INNER_HEIGHT from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_brick_cylinder_clear from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_tech_knob_logo_clear from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_knob_clear from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import LG_BRICK_INNER_HEIGHT from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import debug from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
+W: 31, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.brick.lg_2412b
-C:177, 0: Line too long (126/80) (line-too-long)
-C:178, 0: Line too long (139/80) (line-too-long)
-C:182, 0: Line too long (155/80) (line-too-long)
-C:185, 0: Line too long (139/80) (line-too-long)
-C:186, 0: Line too long (113/80) (line-too-long)
-C:190, 0: Line too long (130/80) (line-too-long)
-C:191, 0: Line too long (104/80) (line-too-long)
-C:195, 0: Line too long (132/80) (line-too-long)
-C:196, 0: Line too long (106/80) (line-too-long)
-C:200, 0: Line too long (132/80) (line-too-long)
-C:201, 0: Line too long (106/80) (line-too-long)
-C:205, 0: Line too long (132/80) (line-too-long)
-C:206, 0: Line too long (106/80) (line-too-long)
-C:210, 0: Line too long (86/80) (line-too-long)
-C:211, 0: Line too long (100/80) (line-too-long)
-C:215, 0: Line too long (102/80) (line-too-long)
-C:216, 0: Line too long (102/80) (line-too-long)
-C:220, 0: Line too long (102/80) (line-too-long)
-C:221, 0: Line too long (102/80) (line-too-long)
-C:225, 0: Line too long (108/80) (line-too-long)
-C:226, 0: Line too long (122/80) (line-too-long)
-C:230, 0: Line too long (124/80) (line-too-long)
-C:231, 0: Line too long (124/80) (line-too-long)
-C:235, 0: Line too long (124/80) (line-too-long)
-C:236, 0: Line too long (124/80) (line-too-long)
-C:240, 0: Line too long (106/80) (line-too-long)
-C:241, 0: Line too long (100/80) (line-too-long)
-C:245, 0: Line too long (128/80) (line-too-long)
-C:246, 0: Line too long (122/80) (line-too-long)
-C:250, 0: Line too long (108/80) (line-too-long)
-C:251, 0: Line too long (102/80) (line-too-long)
-C:255, 0: Line too long (130/80) (line-too-long)
-C:256, 0: Line too long (124/80) (line-too-long)
-C:260, 0: Line too long (108/80) (line-too-long)
-C:261, 0: Line too long (102/80) (line-too-long)
-C:265, 0: Line too long (130/80) (line-too-long)
-C:266, 0: Line too long (124/80) (line-too-long)
-C:270, 0: Line too long (108/80) (line-too-long)
-C:271, 0: Line too long (102/80) (line-too-long)
-C:275, 0: Line too long (130/80) (line-too-long)
-C:276, 0: Line too long (124/80) (line-too-long)
-C:280, 0: Line too long (116/80) (line-too-long)
-C:283, 0: Line too long (138/80) (line-too-long)
-C:286, 0: Line too long (118/80) (line-too-long)
-C:289, 0: Line too long (140/80) (line-too-long)
-C:292, 0: Line too long (118/80) (line-too-long)
-C:295, 0: Line too long (140/80) (line-too-long)
-C:298, 0: Line too long (118/80) (line-too-long)
-C:301, 0: Line too long (140/80) (line-too-long)
-C:304, 0: Line too long (128/80) (line-too-long)
-C:305, 0: Line too long (130/80) (line-too-long)
-C:309, 0: Line too long (106/80) (line-too-long)
-C:310, 0: Line too long (108/80) (line-too-long)
-C:314, 0: Line too long (130/80) (line-too-long)
-C:315, 0: Line too long (130/80) (line-too-long)
-C:319, 0: Line too long (108/80) (line-too-long)
-C:320, 0: Line too long (108/80) (line-too-long)
-C:327, 0: Line too long (120/80) (line-too-long)
-C:331, 0: Line too long (120/80) (line-too-long)
-C:335, 0: Line too long (120/80) (line-too-long)
-C:339, 0: Line too long (96/80) (line-too-long)
-C:345, 0: Line too long (127/80) (line-too-long)
-C:348, 0: Line too long (87/80) (line-too-long)
-C:349, 0: Line too long (115/80) (line-too-long)
-C:352, 0: Line too long (108/80) (line-too-long)
-C:353, 0: Line too long (137/80) (line-too-long)
-C:356, 0: Line too long (83/80) (line-too-long)
-C:357, 0: Line too long (115/80) (line-too-long)
-C:361, 0: Line too long (89/80) (line-too-long)
-C:364, 0: Line too long (89/80) (line-too-long)
-C:365, 0: Line too long (115/80) (line-too-long)
-C:368, 0: Line too long (110/80) (line-too-long)
-C:369, 0: Line too long (137/80) (line-too-long)
-C:372, 0: Line too long (85/80) (line-too-long)
-C:373, 0: Line too long (115/80) (line-too-long)
-C:377, 0: Line too long (89/80) (line-too-long)
-C:383, 0: Line too long (85/80) (line-too-long)
-C:390, 0: Line too long (97/80) (line-too-long)
-C:394, 0: Line too long (97/80) (line-too-long)
-C:398, 0: Line too long (82/80) (line-too-long)
+C:177, 0: Line too long (126/79) (line-too-long)
+C:178, 0: Line too long (139/79) (line-too-long)
+C:182, 0: Line too long (155/79) (line-too-long)
+C:185, 0: Line too long (139/79) (line-too-long)
+C:186, 0: Line too long (113/79) (line-too-long)
+C:190, 0: Line too long (130/79) (line-too-long)
+C:191, 0: Line too long (104/79) (line-too-long)
+C:195, 0: Line too long (132/79) (line-too-long)
+C:196, 0: Line too long (106/79) (line-too-long)
+C:200, 0: Line too long (132/79) (line-too-long)
+C:201, 0: Line too long (106/79) (line-too-long)
+C:205, 0: Line too long (132/79) (line-too-long)
+C:206, 0: Line too long (106/79) (line-too-long)
+C:210, 0: Line too long (86/79) (line-too-long)
+C:211, 0: Line too long (100/79) (line-too-long)
+C:215, 0: Line too long (102/79) (line-too-long)
+C:216, 0: Line too long (102/79) (line-too-long)
+C:220, 0: Line too long (102/79) (line-too-long)
+C:221, 0: Line too long (102/79) (line-too-long)
+C:225, 0: Line too long (108/79) (line-too-long)
+C:226, 0: Line too long (122/79) (line-too-long)
+C:230, 0: Line too long (124/79) (line-too-long)
+C:231, 0: Line too long (124/79) (line-too-long)
+C:235, 0: Line too long (124/79) (line-too-long)
+C:236, 0: Line too long (124/79) (line-too-long)
+C:240, 0: Line too long (106/79) (line-too-long)
+C:241, 0: Line too long (100/79) (line-too-long)
+C:245, 0: Line too long (128/79) (line-too-long)
+C:246, 0: Line too long (122/79) (line-too-long)
+C:250, 0: Line too long (108/79) (line-too-long)
+C:251, 0: Line too long (102/79) (line-too-long)
+C:255, 0: Line too long (130/79) (line-too-long)
+C:256, 0: Line too long (124/79) (line-too-long)
+C:260, 0: Line too long (108/79) (line-too-long)
+C:261, 0: Line too long (102/79) (line-too-long)
+C:265, 0: Line too long (130/79) (line-too-long)
+C:266, 0: Line too long (124/79) (line-too-long)
+C:270, 0: Line too long (108/79) (line-too-long)
+C:271, 0: Line too long (102/79) (line-too-long)
+C:275, 0: Line too long (130/79) (line-too-long)
+C:276, 0: Line too long (124/79) (line-too-long)
+C:280, 0: Line too long (116/79) (line-too-long)
+C:283, 0: Line too long (138/79) (line-too-long)
+C:286, 0: Line too long (118/79) (line-too-long)
+C:289, 0: Line too long (140/79) (line-too-long)
+C:292, 0: Line too long (118/79) (line-too-long)
+C:295, 0: Line too long (140/79) (line-too-long)
+C:298, 0: Line too long (118/79) (line-too-long)
+C:301, 0: Line too long (140/79) (line-too-long)
+C:304, 0: Line too long (128/79) (line-too-long)
+C:305, 0: Line too long (130/79) (line-too-long)
+C:309, 0: Line too long (106/79) (line-too-long)
+C:310, 0: Line too long (108/79) (line-too-long)
+C:314, 0: Line too long (130/79) (line-too-long)
+C:315, 0: Line too long (130/79) (line-too-long)
+C:319, 0: Line too long (108/79) (line-too-long)
+C:320, 0: Line too long (108/79) (line-too-long)
+C:327, 0: Line too long (120/79) (line-too-long)
+C:331, 0: Line too long (120/79) (line-too-long)
+C:335, 0: Line too long (120/79) (line-too-long)
+C:339, 0: Line too long (96/79) (line-too-long)
+C:345, 0: Line too long (127/79) (line-too-long)
+C:348, 0: Line too long (87/79) (line-too-long)
+C:349, 0: Line too long (115/79) (line-too-long)
+C:352, 0: Line too long (108/79) (line-too-long)
+C:353, 0: Line too long (137/79) (line-too-long)
+C:356, 0: Line too long (83/79) (line-too-long)
+C:357, 0: Line too long (115/79) (line-too-long)
+C:361, 0: Line too long (89/79) (line-too-long)
+C:364, 0: Line too long (89/79) (line-too-long)
+C:365, 0: Line too long (115/79) (line-too-long)
+C:368, 0: Line too long (110/79) (line-too-long)
+C:369, 0: Line too long (137/79) (line-too-long)
+C:372, 0: Line too long (85/79) (line-too-long)
+C:373, 0: Line too long (115/79) (line-too-long)
+C:377, 0: Line too long (89/79) (line-too-long)
+C:383, 0: Line too long (85/79) (line-too-long)
+C:390, 0: Line too long (97/79) (line-too-long)
+C:394, 0: Line too long (97/79) (line-too-long)
+C:398, 0: Line too long (82/79) (line-too-long)
 W: 27, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
 C: 30, 0: Invalid argument name "LENGTH" (invalid-name)
 C: 30, 0: Invalid argument name "WIDTH" (invalid-name)
@@ -327,39 +400,53 @@ W: 27, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-w
 ************* Module lgeo.include.brick
 C:  1, 0: Missing module docstring (missing-docstring)
 ************* Module lgeo.include.brick.lg_3022
-C: 33, 0: Line too long (86/80) (line-too-long)
-C: 37, 0: Line too long (94/80) (line-too-long)
-C: 41, 0: Line too long (110/80) (line-too-long)
-C: 44, 0: Line too long (96/80) (line-too-long)
-C: 45, 0: Line too long (114/80) (line-too-long)
-C: 49, 0: Line too long (130/80) (line-too-long)
-C: 52, 0: Line too long (114/80) (line-too-long)
-C: 53, 0: Line too long (88/80) (line-too-long)
-C: 57, 0: Line too long (104/80) (line-too-long)
-C: 61, 0: Line too long (88/80) (line-too-long)
-C: 66, 0: Line too long (95/80) (line-too-long)
-C: 70, 0: Line too long (111/80) (line-too-long)
-C: 73, 0: Line too long (95/80) (line-too-long)
-C: 74, 0: Line too long (113/80) (line-too-long)
-C: 78, 0: Line too long (129/80) (line-too-long)
-C: 81, 0: Line too long (88/80) (line-too-long)
-C: 82, 0: Line too long (113/80) (line-too-long)
-C: 86, 0: Line too long (96/80) (line-too-long)
-C: 87, 0: Line too long (121/80) (line-too-long)
-C: 91, 0: Line too long (137/80) (line-too-long)
-C: 94, 0: Line too long (121/80) (line-too-long)
-C: 95, 0: Line too long (95/80) (line-too-long)
-C: 99, 0: Line too long (121/80) (line-too-long)
-C:100, 0: Line too long (139/80) (line-too-long)
-C:104, 0: Line too long (155/80) (line-too-long)
-C:107, 0: Line too long (139/80) (line-too-long)
-C:108, 0: Line too long (113/80) (line-too-long)
-C:112, 0: Line too long (114/80) (line-too-long)
-C:113, 0: Line too long (139/80) (line-too-long)
-C:120, 0: Line too long (120/80) (line-too-long)
-C:124, 0: Line too long (120/80) (line-too-long)
-C:128, 0: Line too long (120/80) (line-too-long)
-C:138, 0: Line too long (87/80) (line-too-long)
+C:  1, 0: Line too long (80/79) (line-too-long)
+C:  2, 0: Line too long (80/79) (line-too-long)
+C:  3, 0: Line too long (80/79) (line-too-long)
+C:  4, 0: Line too long (80/79) (line-too-long)
+C:  5, 0: Line too long (80/79) (line-too-long)
+C:  6, 0: Line too long (80/79) (line-too-long)
+C:  7, 0: Line too long (80/79) (line-too-long)
+C:  8, 0: Line too long (80/79) (line-too-long)
+C:  9, 0: Line too long (80/79) (line-too-long)
+C: 10, 0: Line too long (80/79) (line-too-long)
+C: 11, 0: Line too long (80/79) (line-too-long)
+C: 12, 0: Line too long (80/79) (line-too-long)
+C: 13, 0: Line too long (80/79) (line-too-long)
+C: 13, 0: Line too long (80/79) (line-too-long)
+C: 33, 0: Line too long (86/79) (line-too-long)
+C: 37, 0: Line too long (94/79) (line-too-long)
+C: 41, 0: Line too long (110/79) (line-too-long)
+C: 44, 0: Line too long (96/79) (line-too-long)
+C: 45, 0: Line too long (114/79) (line-too-long)
+C: 49, 0: Line too long (130/79) (line-too-long)
+C: 52, 0: Line too long (114/79) (line-too-long)
+C: 53, 0: Line too long (88/79) (line-too-long)
+C: 57, 0: Line too long (104/79) (line-too-long)
+C: 61, 0: Line too long (88/79) (line-too-long)
+C: 66, 0: Line too long (95/79) (line-too-long)
+C: 70, 0: Line too long (111/79) (line-too-long)
+C: 73, 0: Line too long (95/79) (line-too-long)
+C: 74, 0: Line too long (113/79) (line-too-long)
+C: 78, 0: Line too long (129/79) (line-too-long)
+C: 81, 0: Line too long (88/79) (line-too-long)
+C: 82, 0: Line too long (113/79) (line-too-long)
+C: 86, 0: Line too long (96/79) (line-too-long)
+C: 87, 0: Line too long (121/79) (line-too-long)
+C: 91, 0: Line too long (137/79) (line-too-long)
+C: 94, 0: Line too long (121/79) (line-too-long)
+C: 95, 0: Line too long (95/79) (line-too-long)
+C: 99, 0: Line too long (121/79) (line-too-long)
+C:100, 0: Line too long (139/79) (line-too-long)
+C:104, 0: Line too long (155/79) (line-too-long)
+C:107, 0: Line too long (139/79) (line-too-long)
+C:108, 0: Line too long (113/79) (line-too-long)
+C:112, 0: Line too long (114/79) (line-too-long)
+C:113, 0: Line too long (139/79) (line-too-long)
+C:120, 0: Line too long (120/79) (line-too-long)
+C:124, 0: Line too long (120/79) (line-too-long)
+C:128, 0: Line too long (120/79) (line-too-long)
+C:138, 0: Line too long (87/79) (line-too-long)
 W: 15, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
 W: 16, 0: Wildcard import lgeo.include.common.brick_subparts (wildcard-import)
 C: 30, 0: Invalid argument name "LENGTH" (invalid-name)
@@ -423,39 +510,53 @@ W: 15, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-impo
 W: 15, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import get_brick_coloumn from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.brick.lg_3010
-C: 36, 0: Line too long (86/80) (line-too-long)
-C: 40, 0: Line too long (94/80) (line-too-long)
-C: 44, 0: Line too long (110/80) (line-too-long)
-C: 47, 0: Line too long (96/80) (line-too-long)
-C: 48, 0: Line too long (114/80) (line-too-long)
-C: 52, 0: Line too long (130/80) (line-too-long)
-C: 55, 0: Line too long (114/80) (line-too-long)
-C: 56, 0: Line too long (88/80) (line-too-long)
-C: 60, 0: Line too long (104/80) (line-too-long)
-C: 64, 0: Line too long (88/80) (line-too-long)
-C: 69, 0: Line too long (95/80) (line-too-long)
-C: 73, 0: Line too long (111/80) (line-too-long)
-C: 76, 0: Line too long (95/80) (line-too-long)
-C: 77, 0: Line too long (113/80) (line-too-long)
-C: 81, 0: Line too long (129/80) (line-too-long)
-C: 84, 0: Line too long (88/80) (line-too-long)
-C: 85, 0: Line too long (113/80) (line-too-long)
-C: 89, 0: Line too long (96/80) (line-too-long)
-C: 90, 0: Line too long (121/80) (line-too-long)
-C: 94, 0: Line too long (137/80) (line-too-long)
-C: 97, 0: Line too long (121/80) (line-too-long)
-C: 98, 0: Line too long (95/80) (line-too-long)
-C:102, 0: Line too long (121/80) (line-too-long)
-C:103, 0: Line too long (139/80) (line-too-long)
-C:107, 0: Line too long (155/80) (line-too-long)
-C:110, 0: Line too long (139/80) (line-too-long)
-C:111, 0: Line too long (113/80) (line-too-long)
-C:115, 0: Line too long (114/80) (line-too-long)
-C:116, 0: Line too long (139/80) (line-too-long)
-C:123, 0: Line too long (121/80) (line-too-long)
-C:127, 0: Line too long (121/80) (line-too-long)
-C:131, 0: Line too long (121/80) (line-too-long)
-C:138, 0: Line too long (89/80) (line-too-long)
+C:  1, 0: Line too long (80/79) (line-too-long)
+C:  2, 0: Line too long (80/79) (line-too-long)
+C:  3, 0: Line too long (80/79) (line-too-long)
+C:  4, 0: Line too long (80/79) (line-too-long)
+C:  5, 0: Line too long (80/79) (line-too-long)
+C:  6, 0: Line too long (80/79) (line-too-long)
+C:  7, 0: Line too long (80/79) (line-too-long)
+C:  8, 0: Line too long (80/79) (line-too-long)
+C:  9, 0: Line too long (80/79) (line-too-long)
+C: 10, 0: Line too long (80/79) (line-too-long)
+C: 11, 0: Line too long (80/79) (line-too-long)
+C: 12, 0: Line too long (80/79) (line-too-long)
+C: 13, 0: Line too long (80/79) (line-too-long)
+C: 13, 0: Line too long (80/79) (line-too-long)
+C: 36, 0: Line too long (86/79) (line-too-long)
+C: 40, 0: Line too long (94/79) (line-too-long)
+C: 44, 0: Line too long (110/79) (line-too-long)
+C: 47, 0: Line too long (96/79) (line-too-long)
+C: 48, 0: Line too long (114/79) (line-too-long)
+C: 52, 0: Line too long (130/79) (line-too-long)
+C: 55, 0: Line too long (114/79) (line-too-long)
+C: 56, 0: Line too long (88/79) (line-too-long)
+C: 60, 0: Line too long (104/79) (line-too-long)
+C: 64, 0: Line too long (88/79) (line-too-long)
+C: 69, 0: Line too long (95/79) (line-too-long)
+C: 73, 0: Line too long (111/79) (line-too-long)
+C: 76, 0: Line too long (95/79) (line-too-long)
+C: 77, 0: Line too long (113/79) (line-too-long)
+C: 81, 0: Line too long (129/79) (line-too-long)
+C: 84, 0: Line too long (88/79) (line-too-long)
+C: 85, 0: Line too long (113/79) (line-too-long)
+C: 89, 0: Line too long (96/79) (line-too-long)
+C: 90, 0: Line too long (121/79) (line-too-long)
+C: 94, 0: Line too long (137/79) (line-too-long)
+C: 97, 0: Line too long (121/79) (line-too-long)
+C: 98, 0: Line too long (95/79) (line-too-long)
+C:102, 0: Line too long (121/79) (line-too-long)
+C:103, 0: Line too long (139/79) (line-too-long)
+C:107, 0: Line too long (155/79) (line-too-long)
+C:110, 0: Line too long (139/79) (line-too-long)
+C:111, 0: Line too long (113/79) (line-too-long)
+C:115, 0: Line too long (114/79) (line-too-long)
+C:116, 0: Line too long (139/79) (line-too-long)
+C:123, 0: Line too long (121/79) (line-too-long)
+C:127, 0: Line too long (121/79) (line-too-long)
+C:131, 0: Line too long (121/79) (line-too-long)
+C:138, 0: Line too long (89/79) (line-too-long)
 W: 15, 0: Wildcard import lgeo.include.common.brick_subparts (wildcard-import)
 W: 16, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
 C: 33, 0: Invalid argument name "LENGTH" (invalid-name)
@@ -520,37 +621,51 @@ W: 16, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-im
 W: 16, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.brick.lg_3003
-C: 36, 0: Line too long (86/80) (line-too-long)
-C: 40, 0: Line too long (94/80) (line-too-long)
-C: 44, 0: Line too long (110/80) (line-too-long)
-C: 47, 0: Line too long (96/80) (line-too-long)
-C: 48, 0: Line too long (114/80) (line-too-long)
-C: 52, 0: Line too long (130/80) (line-too-long)
-C: 55, 0: Line too long (114/80) (line-too-long)
-C: 56, 0: Line too long (88/80) (line-too-long)
-C: 60, 0: Line too long (104/80) (line-too-long)
-C: 64, 0: Line too long (88/80) (line-too-long)
-C: 69, 0: Line too long (95/80) (line-too-long)
-C: 73, 0: Line too long (111/80) (line-too-long)
-C: 76, 0: Line too long (95/80) (line-too-long)
-C: 77, 0: Line too long (113/80) (line-too-long)
-C: 81, 0: Line too long (129/80) (line-too-long)
-C: 84, 0: Line too long (88/80) (line-too-long)
-C: 85, 0: Line too long (113/80) (line-too-long)
-C: 89, 0: Line too long (96/80) (line-too-long)
-C: 90, 0: Line too long (121/80) (line-too-long)
-C: 94, 0: Line too long (137/80) (line-too-long)
-C: 97, 0: Line too long (121/80) (line-too-long)
-C: 98, 0: Line too long (95/80) (line-too-long)
-C:102, 0: Line too long (121/80) (line-too-long)
-C:103, 0: Line too long (139/80) (line-too-long)
-C:107, 0: Line too long (155/80) (line-too-long)
-C:110, 0: Line too long (139/80) (line-too-long)
-C:111, 0: Line too long (113/80) (line-too-long)
-C:115, 0: Line too long (114/80) (line-too-long)
-C:116, 0: Line too long (139/80) (line-too-long)
-C:123, 0: Line too long (121/80) (line-too-long)
-C:127, 0: Line too long (105/80) (line-too-long)
+C:  1, 0: Line too long (80/79) (line-too-long)
+C:  2, 0: Line too long (80/79) (line-too-long)
+C:  3, 0: Line too long (80/79) (line-too-long)
+C:  4, 0: Line too long (80/79) (line-too-long)
+C:  5, 0: Line too long (80/79) (line-too-long)
+C:  6, 0: Line too long (80/79) (line-too-long)
+C:  7, 0: Line too long (80/79) (line-too-long)
+C:  8, 0: Line too long (80/79) (line-too-long)
+C:  9, 0: Line too long (80/79) (line-too-long)
+C: 10, 0: Line too long (80/79) (line-too-long)
+C: 11, 0: Line too long (80/79) (line-too-long)
+C: 12, 0: Line too long (80/79) (line-too-long)
+C: 13, 0: Line too long (80/79) (line-too-long)
+C: 13, 0: Line too long (80/79) (line-too-long)
+C: 36, 0: Line too long (86/79) (line-too-long)
+C: 40, 0: Line too long (94/79) (line-too-long)
+C: 44, 0: Line too long (110/79) (line-too-long)
+C: 47, 0: Line too long (96/79) (line-too-long)
+C: 48, 0: Line too long (114/79) (line-too-long)
+C: 52, 0: Line too long (130/79) (line-too-long)
+C: 55, 0: Line too long (114/79) (line-too-long)
+C: 56, 0: Line too long (88/79) (line-too-long)
+C: 60, 0: Line too long (104/79) (line-too-long)
+C: 64, 0: Line too long (88/79) (line-too-long)
+C: 69, 0: Line too long (95/79) (line-too-long)
+C: 73, 0: Line too long (111/79) (line-too-long)
+C: 76, 0: Line too long (95/79) (line-too-long)
+C: 77, 0: Line too long (113/79) (line-too-long)
+C: 81, 0: Line too long (129/79) (line-too-long)
+C: 84, 0: Line too long (88/79) (line-too-long)
+C: 85, 0: Line too long (113/79) (line-too-long)
+C: 89, 0: Line too long (96/79) (line-too-long)
+C: 90, 0: Line too long (121/79) (line-too-long)
+C: 94, 0: Line too long (137/79) (line-too-long)
+C: 97, 0: Line too long (121/79) (line-too-long)
+C: 98, 0: Line too long (95/79) (line-too-long)
+C:102, 0: Line too long (121/79) (line-too-long)
+C:103, 0: Line too long (139/79) (line-too-long)
+C:107, 0: Line too long (155/79) (line-too-long)
+C:110, 0: Line too long (139/79) (line-too-long)
+C:111, 0: Line too long (113/79) (line-too-long)
+C:115, 0: Line too long (114/79) (line-too-long)
+C:116, 0: Line too long (139/79) (line-too-long)
+C:123, 0: Line too long (121/79) (line-too-long)
+C:127, 0: Line too long (105/79) (line-too-long)
 W: 15, 0: Wildcard import lgeo.include.common.brick_subparts (wildcard-import)
 W: 16, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
 C: 33, 0: Invalid argument name "LENGTH" (invalid-name)
@@ -700,6 +815,20 @@ R:107, 0: Too many arguments (8/5) (too-many-arguments)
 ************* Module lgeo.include.common
 C:  1, 0: Missing module docstring (missing-docstring)
 ************* Module lgeo.include.common.lg_color
+C:  1, 0: Line too long (80/79) (line-too-long)
+C:  2, 0: Line too long (80/79) (line-too-long)
+C:  3, 0: Line too long (80/79) (line-too-long)
+C:  4, 0: Line too long (80/79) (line-too-long)
+C:  5, 0: Line too long (80/79) (line-too-long)
+C:  6, 0: Line too long (80/79) (line-too-long)
+C:  7, 0: Line too long (80/79) (line-too-long)
+C:  8, 0: Line too long (80/79) (line-too-long)
+C:  9, 0: Line too long (80/79) (line-too-long)
+C: 10, 0: Line too long (80/79) (line-too-long)
+C: 11, 0: Line too long (80/79) (line-too-long)
+C: 12, 0: Line too long (80/79) (line-too-long)
+C: 13, 0: Line too long (80/79) (line-too-long)
+C: 14, 0: Line too long (80/79) (line-too-long)
 C: 60, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
 C: 81, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
 C:270, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
@@ -947,7 +1076,106 @@ C: 23, 0: Invalid constant name "lg_stud_logo" (invalid-name)
 ************* Module lgeo.config
 C:  1, 0: Missing module docstring (missing-docstring)
 ************* Module lgeo.set.lg_10036_1_car
-E:271, 0: unexpected indent (syntax-error)
+C:278, 0: Exactly one space required after comma
+StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
+                ^ (bad-whitespace)
+C:278, 0: Exactly one space required after comma
+StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
+                           ^ (bad-whitespace)
+C:278, 0: Exactly one space required after comma
+StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
+                                      ^ (bad-whitespace)
+C:278, 0: Exactly one space required after comma
+StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
+                                                ^ (bad-whitespace)
+C:278, 0: Exactly one space required after comma
+StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
+                                                           ^ (bad-whitespace)
+C:278, 0: Exactly one space required after comma
+StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
+                                                                 ^ (bad-whitespace)
+C:278, 0: Exactly one space required after comma
+StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
+                                                                      ^ (bad-whitespace)
+C:280, 0: Exactly one space required after comma
+StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
+                ^ (bad-whitespace)
+C:280, 0: Exactly one space required after comma
+StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
+                           ^ (bad-whitespace)
+C:280, 0: Exactly one space required after comma
+StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
+                                      ^ (bad-whitespace)
+C:280, 0: Exactly one space required after comma
+StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
+                                                           ^ (bad-whitespace)
+C:280, 0: Exactly one space required after comma
+StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
+                                                                 ^ (bad-whitespace)
+C:280, 0: Exactly one space required after comma
+StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
+                                                                      ^ (bad-whitespace)
+C:282, 0: Exactly one space required after comma
+StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
+                 ^ (bad-whitespace)
+C:282, 0: Exactly one space required after comma
+StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
+                            ^ (bad-whitespace)
+C:282, 0: Exactly one space required after comma
+StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
+                                       ^ (bad-whitespace)
+C:282, 0: Exactly one space required after comma
+StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
+                                                 ^ (bad-whitespace)
+C:282, 0: Exactly one space required after comma
+StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
+                                                            ^ (bad-whitespace)
+C:282, 0: Exactly one space required after comma
+StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
+                                                                  ^ (bad-whitespace)
+C:282, 0: Exactly one space required after comma
+StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
+                                                                       ^ (bad-whitespace)
+W: 43,-1: String statement has no effect (pointless-string-statement)
+W: 56,-1: String statement has no effect (pointless-string-statement)
+W: 64,-1: String statement has no effect (pointless-string-statement)
+W:275,-1: String statement has no effect (pointless-string-statement)
+E:278, 0: Undefined variable 'StdBrick' (undefined-variable)
+E:278, 9: Undefined variable 'lg_3021' (undefined-variable)
+E:278,21: Undefined variable 'lg_red' (undefined-variable)
+E:278,34: Undefined variable 'LGBW' (undefined-variable)
+E:278,44: Undefined variable 'LGPH' (undefined-variable)
+E:280, 0: Undefined variable 'StdBrick' (undefined-variable)
+E:280, 9: Undefined variable 'lg_3024' (undefined-variable)
+E:280,19: Undefined variable 'lg_white' (undefined-variable)
+E:280,34: Undefined variable 'LGBW' (undefined-variable)
+E:280,44: Undefined variable 'LGPH' (undefined-variable)
+E:280,55: Undefined variable 'LGBW' (undefined-variable)
+E:282, 0: Undefined variable 'StdBrick' (undefined-variable)
+E:282, 9: Undefined variable 'lg_4085c' (undefined-variable)
+E:282,20: Undefined variable 'lg_white' (undefined-variable)
+E:282,35: Undefined variable 'LGBW' (undefined-variable)
+E:282,45: Undefined variable 'LGPH' (undefined-variable)
+E:282,56: Undefined variable 'LGBW' (undefined-variable)
+W:286,-1: String statement has no effect (pointless-string-statement)
+W:292,-1: String statement has no effect (pointless-string-statement)
+W:296,-1: String statement has no effect (pointless-string-statement)
+W:307,-1: String statement has no effect (pointless-string-statement)
+W:311,-1: String statement has no effect (pointless-string-statement)
+W:316,-1: String statement has no effect (pointless-string-statement)
+W:320,-1: String statement has no effect (pointless-string-statement)
+W:327,-1: String statement has no effect (pointless-string-statement)
+W:331,-1: String statement has no effect (pointless-string-statement)
+W:339,-1: String statement has no effect (pointless-string-statement)
+W:343,-1: String statement has no effect (pointless-string-statement)
+W:352,-1: String statement has no effect (pointless-string-statement)
+W:356,-1: String statement has no effect (pointless-string-statement)
+W:360,-1: String statement has no effect (pointless-string-statement)
+W:364,-1: String statement has no effect (pointless-string-statement)
+W:371,-1: String statement has no effect (pointless-string-statement)
+W:467,-1: String statement has no effect (pointless-string-statement)
+W: 66, 0: Unused Union imported from pov.csg.Union (unused-import)
+W: 68, 0: Unused Comment imported from pov.other.Comment (unused-import)
 ************* Module lgeo.set.lg_10036_1_house
 C: 78, 0: Trailing whitespace (trailing-whitespace)
 C: 98, 0: Trailing whitespace (trailing-whitespace)
@@ -968,11 +1196,11 @@ C:  1, 0: Missing module docstring (missing-docstring)
 C: 56, 0: Trailing whitespace (trailing-whitespace)
 C: 86, 0: Trailing whitespace (trailing-whitespace)
 C:116, 0: Trailing whitespace (trailing-whitespace)
-C:130, 0: Line too long (81/80) (line-too-long)
-C:137, 0: Line too long (83/80) (line-too-long)
-C:148, 0: Line too long (81/80) (line-too-long)
-C:149, 0: Line too long (97/80) (line-too-long)
-C:161, 0: Line too long (88/80) (line-too-long)
+C:130, 0: Line too long (81/79) (line-too-long)
+C:137, 0: Line too long (83/79) (line-too-long)
+C:148, 0: Line too long (81/79) (line-too-long)
+C:149, 0: Line too long (97/79) (line-too-long)
+C:161, 0: Line too long (88/79) (line-too-long)
 W:106,-1: String statement has no effect (pointless-string-statement)
 W:118,-1: String statement has no effect (pointless-string-statement)
 W:126,-1: String statement has no effect (pointless-string-statement)
@@ -1200,6 +1428,107 @@ R:  1, 0: Similar lines in 2 files
         ),
         Cylinder( (duplicate-code)
 R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_2441:1700
+==lgeo.include.brick.lg_2441:1710
+==lgeo.include.brick.lg_3788:718
+                            -LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
+                ),
+                Object(
+                    lg_knob_inner_space,
+                    Translate(
+                        Vector( (duplicate-code)
+R:  1, 0: Similar lines in 5 files
+==lgeo.include.brick.lg_2441:1660
+==lgeo.include.brick.lg_2441:1670
+==lgeo.include.brick.lg_2441:1680
+==lgeo.include.brick.lg_3788:698
+==lgeo.include.brick.lg_3788:708
+                            LG_BRICK_WIDTH/2,
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
+                ),
+                Object(
+                    lg_knob_inner_space,
+                    Translate(
+                        Vector( (duplicate-code)
+R:  1, 0: Similar lines in 4 files
+==lgeo.include.brick.lg_2412b:14
+==lgeo.include.brick.lg_2441:14
+==lgeo.include.brick.lg_3003:17
+==lgeo.include.brick.lg_3010:17
+from pov.basic.Vector import Vector
+
+from pov.csg.Union import Union
+from pov.csg.Difference import Difference
+
+from pov.finite_solid.Box import Box
+from pov.finite_solid.Cylinder import Cylinder
+from pov.finite_solid.Sphere import Sphere (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2441:1651
+==lgeo.include.brick.lg_3788:689
+                    -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                )
+            ),
+            Union(
+                Object(
+                    lg_knob_inner_space,
+                    Translate(
+                        Vector( (duplicate-code)
+R:  1, 0: Similar lines in 7 files
+==lgeo.include.brick.lg_2441:1549
+==lgeo.include.brick.lg_2441:1559
+==lgeo.include.brick.lg_2441:1569
+==lgeo.include.brick.lg_2441:1605
+==lgeo.include.brick.lg_2441:1615
+==lgeo.include.brick.lg_2441:1625
+==lgeo.include.brick.lg_3788:388
+                            -LG_TOP_HEIGHT
+                        )
+                    )
+                ),
+                Object(
+                    lg_knob_inner_space,
+                    Translate(
+                        Vector( (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_2441:1165
+==lgeo.include.brick.lg_3788:640
+==lgeo.include.brick.lg_3788:651
+                                LG_BRICK_WIDTH/2,
+                                -LG_PLATE_HEIGHT
+                            )
+                        )
+                    ),
+                    Object(
+                        lg_knob(), (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2441:1637
+==lgeo.include.brick.lg_3788:468
+                        )
+                    )
+                )
+            ),
+            Difference(
+                Box(
+                    Vector( (duplicate-code)
+R:  1, 0: Similar lines in 4 files
+==lgeo.include.brick.lg_2441:1540
+==lgeo.include.brick.lg_2441:1596
+==lgeo.include.brick.lg_2441:1652
+==lgeo.include.brick.lg_3788:379
+                )
+            ),
+            Union(
+                Object(
+                    lg_knob_inner_space,
+                    Translate(
+                        Vector( (duplicate-code)
+R:  1, 0: Similar lines in 3 files
 ==lgeo.include.brick.lg_3003:116
 ==lgeo.include.brick.lg_3010:116
 ==lgeo.include.brick.lg_3022:113
@@ -1209,6 +1538,15 @@ R:  1, 0: Similar lines in 3 files
             Union(
                 Box(
                     Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, 0), (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2441:1489
+==lgeo.include.brick.lg_3788:534
+                    -LG_BRICK_WIDTH+LG_CORNER_SPACE,
+                    -2*LG_PLATE_HEIGHT
+                )
+            ),
+            Box(
+                Vector( (duplicate-code)
 R:  1, 0: Similar lines in 4 files
 ==lgeo.include.brick.lg_2412b:320
 ==lgeo.include.brick.lg_3003:116
@@ -1219,11 +1557,140 @@ R:  1, 0: Similar lines in 4 files
         Difference(
             Union(
                 Box( (duplicate-code)
+R:  1, 0: Similar lines in 37 files
+==lgeo.include.brick.lg_2412b:117
+==lgeo.include.brick.lg_2412b:138
+==lgeo.include.brick.lg_2412b:159
+==lgeo.include.brick.lg_2412b:49
+==lgeo.include.brick.lg_2412b:70
+==lgeo.include.brick.lg_2441:1239
+==lgeo.include.brick.lg_2441:1252
+==lgeo.include.brick.lg_2441:1265
+==lgeo.include.brick.lg_2441:1278
+==lgeo.include.brick.lg_2441:1291
+==lgeo.include.brick.lg_2441:1304
+==lgeo.include.brick.lg_2441:1317
+==lgeo.include.brick.lg_2441:150
+==lgeo.include.brick.lg_2441:210
+==lgeo.include.brick.lg_2441:495
+==lgeo.include.brick.lg_2441:508
+==lgeo.include.brick.lg_2441:521
+==lgeo.include.brick.lg_2441:534
+==lgeo.include.brick.lg_2441:547
+==lgeo.include.brick.lg_2441:560
+==lgeo.include.brick.lg_2441:573
+==lgeo.include.brick.lg_2441:586
+==lgeo.include.brick.lg_2441:599
+==lgeo.include.brick.lg_2441:612
+==lgeo.include.brick.lg_2441:625
+==lgeo.include.brick.lg_2441:654
+==lgeo.include.brick.lg_2441:683
+==lgeo.include.brick.lg_2441:696
+==lgeo.include.brick.lg_2441:709
+==lgeo.include.brick.lg_2441:722
+==lgeo.include.brick.lg_2441:735
+==lgeo.include.brick.lg_2441:748
+==lgeo.include.brick.lg_2441:761
+==lgeo.include.brick.lg_2441:774
+==lgeo.include.brick.lg_2441:787
+==lgeo.include.brick.lg_2441:800
+==lgeo.include.brick.lg_2441:87
+                        ),
+                        LG_CORNER_SPACE
+                    ),
+                    Cylinder(
+                        Vector( (duplicate-code)
+R:  1, 0: Similar lines in 19 files
+==lgeo.include.brick.lg_2412b:109
+==lgeo.include.brick.lg_2412b:130
+==lgeo.include.brick.lg_2412b:151
+==lgeo.include.brick.lg_2412b:41
+==lgeo.include.brick.lg_2412b:62
+==lgeo.include.brick.lg_2412b:83
+==lgeo.include.brick.lg_2441:142
+==lgeo.include.brick.lg_2441:439
+==lgeo.include.brick.lg_2441:447
+==lgeo.include.brick.lg_2441:455
+==lgeo.include.brick.lg_2441:463
+==lgeo.include.brick.lg_2441:471
+==lgeo.include.brick.lg_2441:479
+==lgeo.include.brick.lg_2441:487
+==lgeo.include.brick.lg_2441:638
+==lgeo.include.brick.lg_2441:646
+==lgeo.include.brick.lg_2441:667
+==lgeo.include.brick.lg_2441:675
+==lgeo.include.brick.lg_2441:79
+                        ),
+                        LG_CORNER_SPACE
+                    ),
+                    Sphere(
+                        Vector( (duplicate-code)
+R:  1, 0: Similar lines in 4 files
+==lgeo.include.brick.lg_2441:1001
+==lgeo.include.brick.lg_2441:1013
+==lgeo.include.brick.lg_2441:989
+==lgeo.include.brick.lg_3788:559
+                    -LG_PLATE_HEIGHT-LG_CORNER_SPACE
+                )
+            ),
+            Box(
+                Vector( (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_2441:1406
+==lgeo.include.brick.lg_2441:1418
+==lgeo.include.brick.lg_3788:547
+                -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE+LG_E
+            )
+        ),
+        Box(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_2441:311
+==lgeo.include.brick.lg_3788:455
+==lgeo.include.brick.lg_3788:595
+                            )
+                        )
+                    ),
+                    Box(
+                        Vector( (duplicate-code)
+R:  1, 0: Similar lines in 6 files
+==lgeo.include.brick.lg_2441:1454
+==lgeo.include.brick.lg_2441:1466
+==lgeo.include.brick.lg_2441:894
+==lgeo.include.brick.lg_3788:365
+==lgeo.include.brick.lg_3788:511
+==lgeo.include.brick.lg_3788:619
+                            -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE
+                        )
+                    ),
+                    Box(
+                        Vector( (duplicate-code)
+R:  1, 0: Similar lines in 6 files
+==lgeo.include.brick.lg_2441:1490
+==lgeo.include.brick.lg_2441:953
+==lgeo.include.brick.lg_2441:965
+==lgeo.include.brick.lg_2441:977
+==lgeo.include.brick.lg_3788:353
+==lgeo.include.brick.lg_3788:523
+                -2*LG_PLATE_HEIGHT
+            )
+        ),
+        Box(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_2441:117
+==lgeo.include.brick.lg_2441:180
+==lgeo.include.brick.lg_3788:326
+                            )
+                        )
+                    ),
+                    Cylinder(
+                        Vector(0, 0, 0), (duplicate-code)
 
 
 Report
 ======
-383 statements analysed.
+442 statements analysed.
 
 Statistics by type
 ------------------
@@ -1231,13 +1698,13 @@ Statistics by type
 +---------+-------+-----------+-----------+------------+---------+
 |type     |number |old number |difference |%documented |%badname |
 +=========+=======+===========+===========+============+=========+
-|module   |19     |NC         |NC         |73.68       |0.00     |
+|module   |21     |NC         |NC         |76.19       |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
 |class    |0      |NC         |NC         |0           |0        |
 +---------+-------+-----------+-----------+------------+---------+
 |method   |0      |NC         |NC         |0           |0        |
 +---------+-------+-----------+-----------+------------+---------+
-|function |17     |NC         |NC         |17.65       |11.76    |
+|function |18     |NC         |NC         |16.67       |11.11    |
 +---------+-------+-----------+-----------+------------+---------+
 
 
@@ -1259,17 +1726,17 @@ External dependencies
       \-basic 
       | \-Color (lgeo.lgeo_city,lgeo.include.common.lg_color)
       | \-SceneFile (lgeo.lgeo_city)
-      | \-Vector (lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3788,lgeo.include.common.brick_subparts,lgeo.include.common.lg_color,lgeo.include.brick.lg_3022)
+      | \-Vector (lgeo.include.common.brick_subparts,lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.common.lg_color,lgeo.include.brick.lg_3022)
       \-csg 
-      | \-Difference (lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs)
+      | \-Difference (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441)
       | \-Intersection (lgeo.include.common.lg_defs)
       | \-Merge (lgeo.include.common.lg_defs)
-      | \-Union (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.common.brick_subparts,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3022)
+      | \-Union (lgeo.set.lg_10036_1_car,lgeo.include.common.brick_subparts,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
       \-finite_solid 
-      | \-Box (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.common.brick_subparts,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3022)
-      | \-Cylinder (lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs)
-      | \-Sphere (lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs)
-      | \-Torus (lgeo.include.common.lg_defs)
+      | \-Box (lgeo.include.common.brick_subparts,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
+      | \-Cylinder (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441)
+      | \-Sphere (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441)
+      | \-Torus (lgeo.include.brick.lg_2441,lgeo.include.common.lg_defs)
       \-global_settings 
       | \-GlobalSettings (lgeo.lgeo_city)
       \-infinite_solid 
@@ -1279,13 +1746,15 @@ External dependencies
       \-object_modifier 
       | \-ClippedBy (lgeo.include.common.lg_defs)
       | \-Interior (lgeo.include.common.lg_color)
-      | \-Rotate (lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.common.brick_subparts,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3022)
+      | \-Matrix (lgeo.include.brick.lg_2441)
+      | \-Rotate (lgeo.include.common.brick_subparts,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
       | \-Scale (lgeo.include.common.lg_defs)
-      | \-Translate (lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.common.brick_subparts,lgeo.include.brick.lg_3022)
+      | \-Translate (lgeo.include.common.brick_subparts,lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
       \-other 
       | \-Camera (lgeo.lgeo_city)
+      | \-Comment (lgeo.set.lg_10036_1_car)
       | \-LightSource (lgeo.lgeo_city)
-      | \-Object (lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_3010,lgeo.include.common.brick_subparts,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3022)
+      | \-Object (lgeo.include.common.brick_subparts,lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
       \-texture 
         \-ColorMap (lgeo.lgeo_city)
         \-Finish (lgeo.include.common.lg_color)
@@ -1304,13 +1773,13 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |3218   |72.27 |NC       |NC         |
+|code      |5717   |76.68 |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|docstring |452    |10.15 |NC       |NC         |
+|docstring |860    |11.53 |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|comment   |513    |11.52 |NC       |NC         |
+|comment   |556    |7.46  |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|empty     |270    |6.06  |NC       |NC         |
+|empty     |323    |4.33  |NC       |NC         |
 +----------+-------+------+---------+-----------+
 
 
@@ -1318,13 +1787,13 @@ Raw metrics
 Duplication
 -----------
 
-+-------------------------+------+---------+-----------+
-|                         |now   |previous |difference |
-+=========================+======+=========+===========+
-|nb duplicated lines      |263   |NC       |NC         |
-+-------------------------+------+---------+-----------+
-|percent duplicated lines |5.747 |NC       |NC         |
-+-------------------------+------+---------+-----------+
++-------------------------+-------+---------+-----------+
+|                         |now    |previous |difference |
++=========================+=======+=========+===========+
+|nb duplicated lines      |810    |NC       |NC         |
++-------------------------+-------+---------+-----------+
+|percent duplicated lines |10.696 |NC       |NC         |
++-------------------------+-------+---------+-----------+
 
 
 
@@ -1334,13 +1803,13 @@ Messages by category
 +-----------+-------+---------+-----------+
 |type       |number |previous |difference |
 +===========+=======+=========+===========+
-|convention |374    |NC       |NC         |
+|convention |459    |NC       |NC         |
 +-----------+-------+---------+-----------+
-|refactor   |11     |NC       |NC         |
+|refactor   |28     |NC       |NC         |
 +-----------+-------+---------+-----------+
-|warning    |553    |NC       |NC         |
+|warning    |624    |NC       |NC         |
 +-----------+-------+---------+-----------+
-|error      |25     |NC       |NC         |
+|error      |57     |NC       |NC         |
 +-----------+-------+---------+-----------+
 
 
@@ -1351,45 +1820,45 @@ Messages by category
 +-----------------------------------+------+--------+---------+-----------+
 |module                             |error |warning |refactor |convention |
 +===================================+======+========+=========+===========+
-|lgeo.include.brick.lg_3788         |56.00 |0.00    |0.00     |0.00       |
+|lgeo.include.brick.lg_2441         |29.82 |7.69    |0.00     |1.96       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.brick_subparts |16.00 |0.36    |0.00     |4.81       |
+|lgeo.set.lg_10036_1_car            |29.82 |3.69    |0.00     |4.36       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_defs        |12.00 |1.63    |0.00     |7.49       |
+|lgeo.include.brick.lg_3788         |24.56 |0.00    |0.00     |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.lgeo_city                     |4.00  |28.03   |0.00     |2.94       |
+|lgeo.include.common.brick_subparts |7.02  |0.32    |0.00     |3.92       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_house          |4.00  |0.72    |0.00     |1.60       |
+|lgeo.include.common.lg_defs        |5.26  |1.44    |0.00     |6.10       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_car            |4.00  |0.00    |0.00     |0.00       |
+|lgeo.lgeo_city                     |1.75  |24.84   |0.00     |2.40       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_2441         |4.00  |0.00    |0.00     |0.00       |
+|lgeo.set.lg_10036_1_house          |1.75  |0.64    |0.00     |1.31       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_color       |0.00  |25.86   |0.00     |24.60      |
+|lgeo.include.common.lg_color       |0.00  |22.92   |0.00     |23.09      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3010         |0.00  |10.85   |0.00     |9.63       |
+|lgeo.include.brick.lg_3010         |0.00  |9.62    |0.00     |10.89      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3022         |0.00  |10.67   |0.00     |9.63       |
+|lgeo.include.brick.lg_3022         |0.00  |9.46    |0.00     |10.89      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3003         |0.00  |10.67   |0.00     |9.09       |
+|lgeo.include.brick.lg_3003         |0.00  |9.46    |0.00     |10.46      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_2412b        |0.00  |9.95    |0.00     |22.19      |
+|lgeo.include.brick.lg_2412b        |0.00  |8.81    |0.00     |18.08      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_main           |0.00  |0.72    |90.91    |2.14       |
+|lgeo.set.lg_10036_1_main           |0.00  |0.64    |96.43    |1.74       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.custom_macros  |0.00  |0.54    |9.09     |3.48       |
+|lgeo.include.common.custom_macros  |0.00  |0.48    |3.57     |2.83       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.config.lgeo_cfg               |0.00  |0.00    |0.00     |1.07       |
+|lgeo.config.lgeo_cfg               |0.00  |0.00    |0.00     |0.87       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.set.__init__                  |0.00  |0.00    |0.00     |0.27       |
+|lgeo.set.__init__                  |0.00  |0.00    |0.00     |0.22       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.__init__       |0.00  |0.00    |0.00     |0.27       |
+|lgeo.include.common.__init__       |0.00  |0.00    |0.00     |0.22       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.__init__        |0.00  |0.00    |0.00     |0.27       |
+|lgeo.include.brick.__init__        |0.00  |0.00    |0.00     |0.22       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.__init__              |0.00  |0.00    |0.00     |0.27       |
+|lgeo.include.__init__              |0.00  |0.00    |0.00     |0.22       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.config.__init__               |0.00  |0.00    |0.00     |0.27       |
+|lgeo.config.__init__               |0.00  |0.00    |0.00     |0.22       |
 +-----------------------------------+------+--------+---------+-----------+
 
 
@@ -1400,37 +1869,37 @@ Messages
 +---------------------------+------------+
 |message id                 |occurrences |
 +===========================+============+
-|unused-wildcard-import     |505         |
+|unused-wildcard-import     |551         |
 +---------------------------+------------+
-|line-too-long              |182         |
+|line-too-long              |240         |
 +---------------------------+------------+
-|invalid-name               |142         |
+|invalid-name               |147         |
 +---------------------------+------------+
-|pointless-string-statement |25          |
+|undefined-variable         |51          |
 +---------------------------+------------+
-|missing-docstring          |19          |
+|pointless-string-statement |47          |
 +---------------------------+------------+
-|undefined-variable         |17          |
+|duplicate-code             |27          |
++---------------------------+------------+
+|bad-whitespace             |23          |
++---------------------------+------------+
+|missing-docstring          |20          |
 +---------------------------+------------+
 |superfluous-parens         |16          |
 +---------------------------+------------+
-|wildcard-import            |12          |
+|wildcard-import            |13          |
 +---------------------------+------------+
 |trailing-whitespace        |12          |
 +---------------------------+------------+
 |unused-variable            |10          |
 +---------------------------+------------+
-|duplicate-code             |10          |
+|no-member                  |4           |
 +---------------------------+------------+
-|no-name-in-module          |3           |
+|unused-import              |3           |
 +---------------------------+------------+
-|no-member                  |3           |
+|no-name-in-module          |2           |
 +---------------------------+------------+
-|bad-whitespace             |3           |
-+---------------------------+------------+
-|syntax-error               |2           |
-+---------------------------+------------+
-|unused-import              |1           |
+|too-many-lines             |1           |
 +---------------------------+------------+
 |too-many-arguments         |1           |
 +---------------------------+------------+
@@ -1439,5 +1908,5 @@ Messages
 
 Global evaluation
 -----------------
-Your code has been rated at -17.75/10
+Your code has been rated at -21.58/10
 
