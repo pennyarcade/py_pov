@@ -23,9 +23,6 @@ R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.finite_solid.SuperEllipsoid
 R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.finite_solid.Cone
-C: 29, 0: Wrong hanging indentation before block.
-        self, basepoint, baseradius, cappoint, capradius, *opts, **kwargs
-        ^   | (bad-continuation)
 R: 19, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.finite_solid.Text
 R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
@@ -183,13 +180,6 @@ W: 17, 0: Unused import error from wildcard import (unused-wildcard-import)
 W: 17, 0: Unused import debug from wildcard import (unused-wildcard-import)
 W: 17, 0: Unused import basicConfig from wildcard import (unused-wildcard-import)
 ************* Module pov.test.FiniteSolidTest
-C:125, 0: Trailing whitespace (trailing-whitespace)
-C:128, 0: Trailing whitespace (trailing-whitespace)
-C:710, 0: Line too long (83/79) (line-too-long)
-C:721, 0: Trailing whitespace (trailing-whitespace)
-C:819, 0: Wrong hanging indentation.
-             SdlSyntaxException, 'No such Keyword: foo'
-            |^ (bad-continuation)
 C:187, 4: Missing method docstring (missing-docstring)
 C:188, 8: Invalid variable name "SUT" (invalid-name)
 C:282, 8: Invalid variable name "le" (invalid-name)
@@ -205,12 +195,12 @@ C:563, 4: Invalid method name "test_create_basepoint_wrong_length" (invalid-name
 C:579, 4: Invalid method name "test_create_cappoint_wrong_length" (invalid-name)
 C:611, 4: Invalid method name "test_create_object_modifier_wrong_type" (invalid-name)
 C:691, 4: Invalid method name "test_create_hierarchy_wrong_type" (invalid-name)
-C:714, 4: Invalid method name "test_create_hf_type_non_existant_value" (invalid-name)
-C:728, 4: Invalid method name "test_create_hf_non_existant_file" (invalid-name)
-C:740, 4: Invalid method name "test_create_waterlevel_not_float" (invalid-name)
-C:791, 4: Invalid method name "test_create_vector_wrong_dimension" (invalid-name)
-C:860, 8: Invalid variable name "le" (invalid-name)
-C:945, 4: Invalid method name "test_create_object_modifier_wrong_type" (invalid-name)
+C:717, 4: Invalid method name "test_create_hf_type_non_existant_value" (invalid-name)
+C:731, 4: Invalid method name "test_create_hf_non_existant_file" (invalid-name)
+C:743, 4: Invalid method name "test_create_waterlevel_not_float" (invalid-name)
+C:794, 4: Invalid method name "test_create_vector_wrong_dimension" (invalid-name)
+C:863, 8: Invalid variable name "le" (invalid-name)
+C:948, 4: Invalid method name "test_create_object_modifier_wrong_type" (invalid-name)
 W: 15, 0: Unused import traceback (unused-import)
 ************* Module pov.test.IncludeTest
 E: 21, 0: invalid syntax (syntax-error)
@@ -362,4 +352,10 @@ W: 17, 0: Unused import addLevelName from wildcard import (unused-wildcard-impor
 W: 17, 0: Unused import log from wildcard import (unused-wildcard-import)
 W: 17, 0: Unused import FileHandler from wildcard import (unused-wildcard-import)
 W: 17, 0: Unused import WARNING from wildcard import (unused-wildcard-import)
-W: 17, 0: Unused import LoggerAdapter fr
+W: 17, 0: Unused import LoggerAdapter from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import StreamHandler from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import fatal from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import CRITICAL from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import getLoggerClass from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import INFO from wildcard import (unused-wildcard-import)
+W: 17, 0: Unused import exception from wildca
