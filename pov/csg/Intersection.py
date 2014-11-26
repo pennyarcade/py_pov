@@ -17,9 +17,11 @@ from pov.csg.Csg import Csg
 class Intersection(Csg):
     """
         INTERSECTION:
-            intersection { SOLID_OBJECT SOLID_OBJECT... [INTERSECTION_MODIFIERS] }
+            intersection { SOLID_OBJECT SOLID_OBJECT...
+                [INTERSECTION_MODIFIERS] }
         SOLID_OBJECT:
-            FINITE_SOLID_OBJECT | INFINITE_SOLID_OBJECT | ISOSURFACE | CSG_OBJECT
+            FINITE_SOLID_OBJECT | INFINITE_SOLID_OBJECT
+                | ISOSURFACE | CSG_OBJECT
         INTERSECTION_MODIFIERS:
             [cutaway_textures] & [OBJECT_MODIFIERS]
          @Todo: Implement

@@ -26,7 +26,7 @@ class Cone(BlockObject):
             }
     """
     def __init__(
-        self, basepoint, baseradius, cappoint, capradius, *opts, **kwargs
+            self, basepoint, baseradius, cappoint, capradius, *opts, **kwargs
     ):
         """
             Construct a cone object

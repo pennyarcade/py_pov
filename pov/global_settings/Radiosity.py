@@ -40,7 +40,6 @@ class Radiosity(BlockObject):
         @Todo: Implement
     """
 
-
     def _check_arguments(self):
         '''
             Argument Syntax checks
@@ -54,7 +53,7 @@ class Radiosity(BlockObject):
             raise IOError(
                 'No such file: %s%s%s' % (os.getcwd(), os.sep, self.args[0])
             )
-        #@TODO: check file type
+        # @TODO: check file type
 
     def _check_opts(self):
         '''

@@ -1,3 +1,6 @@
+'''
+@Todo: Translate
+
 // Persistence of Vision Ray Tracer Scene Description File
 // File: ?.pov
 // Vers: 3.6
@@ -20,11 +23,13 @@ global_settings {
       count 35                      // higher -> higher quality (1..1600) [35]
       nearest_count 5               // higher -> higher quality (1..10) [5]
       error_bound 1.8               // higher -> smoother, less accurate [1.8]
-      recursion_limit 3             // how much interreflections are calculated (1..5+) [3]
-      low_error_factor .5           // reduce error_bound during last pretrace step
-      gray_threshold 0.0            // increase for weakening colors (0..1) [0]
+      recursion_limit 3             // how much interreflections are
+                                    // calculated (1..5+) [3]
+      low_error_factor .5           // reduce error_bound during last
+                                    // pretrace step
+      gray_threshold 0.0            // increase for weakening colors (0..1)
       minimum_reuse 0.015           // reuse of old radiosity samples [0.015]
-      brightness 1                  // brightness of radiosity effects (0..1) [1]
+      brightness 1                  // brightness of radiosity effects (0..1)
 
       adc_bailout 0.01/2
       //normal on                   // take surface normals into account [off]
@@ -97,3 +102,4 @@ sphere {
   <0,1,0>, 1
 }
 
+'''

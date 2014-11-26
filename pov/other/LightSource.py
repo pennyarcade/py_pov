@@ -18,7 +18,8 @@ class LightSource(BlockObject):
     '''
         LIGHT:
             LIGHT_SOURCE | LIGHT_GROUP
-            Describe the position, type and properties of a light source for the scene:
+            Describe the position, type and properties
+            of a light source for the scene:
 
         LIGHT_SOURCE:
             light_source { V_LOCATION, COLOR [LIGHT_SOURCE_ITEMS] }
@@ -30,16 +31,22 @@ class LightSource(BlockObject):
             spotlight [SPOTLIGHT_ITEMS] | cylinder [SPOTLIGHT_ITEMS]
 
         SPOTLIGHT_ITEMS:
-            [radius FLOAT] & [falloff FLOAT] & [tightness FLOAT] & [point_at VECTOR]
+            [radius FLOAT] & [falloff FLOAT] & [tightness FLOAT]
+                & [point_at VECTOR]
 
         AREA_LIGHT_ITEMS:
-            area_light V_AXIS1, V_AXIS2, I_SIZE1, I_SIZE2 [AREA_LIGHT_MODIFIERS]
+            area_light V_AXIS1, V_AXIS2, I_SIZE1, I_SIZE2
+                [AREA_LIGHT_MODIFIERS]
 
         AREA_LIGHT_MODIFIERS:
             [adaptive INT] & [jitter] & [circular] & [orient]
 
         LIGHT_MODIFIERS:
-            [LIGHT_PHOTONS] & [looks_like { OBJECT }] & [TRANSFORMATION...] & [fade_distance FLOAT] & [fade_power FLOAT] & [media_attenuation [BOOL]] & [media_interaction [BOOL]] & [shadowless] & [projected_through { OBJECT_IDENTIFIER }] & [parallel [point_at VECTOR]]
+            [LIGHT_PHOTONS] & [looks_like { OBJECT }] & [TRANSFORMATION...]
+                & [fade_distance FLOAT] & [fade_power FLOAT]
+                & [media_attenuation [BOOL]] & [media_interaction [BOOL]]
+                & [shadowless] & [projected_through { OBJECT_IDENTIFIER }]
+                & [parallel [point_at VECTOR]]
             Specify how a light source should interact with photons:
 
         LIGHT_PHOTONS:

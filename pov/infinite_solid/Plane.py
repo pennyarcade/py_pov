@@ -30,7 +30,7 @@ class Plane(BlockObject):
 
         super(Plane, self).__init__('plane', [normal, distance], opts, kwargs)
 
-        #@Todo: Generalize handling of boolean keywords
+        # @Todo: Generalize handling of boolean keywords
         if 'hollow' in self.kwargs and self.kwargs['hollow'] is True:
             del self.kwargs['hollow']
             self.opts.append('hollow')

@@ -1,3 +1,6 @@
+'''
+@Todo: Translate
+
 // Persistence of Vision Ray Tracer Scene Description File
 // File: ?.pov
 // Vers: 3.6
@@ -16,9 +19,11 @@ global_settings {
   #if (Photons)          // global photon block
     photons {
       spacing 0.02                 // specify the density of photons
-      //count 100000               // alternatively use a total number of photons
+      //count 100000               // alternatively use a 
+                                   //total number of photons
 
-      //gather min, max            // amount of photons gathered during render [20, 100]
+      //gather min, max            // amount of photons gathered
+                                   // during render [20, 100]
       //media max_steps [,factor]  // media photons
       //jitter 1.0                 // jitter phor photon rays
       //max_trace_level 5          // optional separate max_trace_level
@@ -120,3 +125,4 @@ cylinder {
     reflection on
   }
 }
+'''

@@ -39,7 +39,7 @@ class Pigment(BlockObject):
                 object { LIST_OBJECT PIGMENT, PIGMENT }
 
             IMAGE_MAP:
-                image_map {BITMAP_IMAGE [IMAGE_MAP_MODIFIER...] 
+                image_map {BITMAP_IMAGE [IMAGE_MAP_MODIFIER...]
                     [BITMAP_MODIFIERS] }
 
             IMAGE_MAP_MODIFIER:

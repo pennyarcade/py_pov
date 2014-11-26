@@ -122,10 +122,10 @@ class BoxTestCase(unittest.TestCase):
             finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }
 
         TRANSFORMATION:
-            rotate VECTOR | scale VECTOR | translate VECTOR 
+            rotate VECTOR | scale VECTOR | translate VECTOR
                 | TRANSFORM | MATRIX
         TRANSFORM:
-            transform TRANSFORM_IDENTIFIER 
+            transform TRANSFORM_IDENTIFIER
                 | transform { [TRANSFORM_ITEM...] }
 
         MATRIX:
@@ -707,7 +707,10 @@ class HeightFieldTestCase(unittest.TestCase):
         '''
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Value of KW Argument hf_type is expectet to be type str but got float'
+            ' '.join((
+                'Value of KW Argument hf_type is expectet',
+                'to be type str but got float'
+            ))
         ):
             self.sut = HeightField('fixture/test.gif', hf_type=0.2)
 
@@ -718,7 +721,7 @@ class HeightFieldTestCase(unittest.TestCase):
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
-                'Value of KW Argument hf_type is expectet to be in', 
+                'Value of KW Argument hf_type is expectet to be in',
                 '\\[\'gif\', \'tga\', \'pot\', \'png\', \'pgm\', \'ppm\',',
                 '\'jpeg\', \'tiff\', \'sys\', \'function\'] but got bar'
             ))
@@ -816,7 +819,7 @@ class JuliaFractalTestCase(unittest.TestCase):
             Test parameter syntax
         '''
         with self.assertRaisesRegexp(
-             SdlSyntaxException, 'No such Keyword: foo'
+            SdlSyntaxException, 'No such Keyword: foo'
         ):
             self.sut = JuliaFractal(Vector(1, 2, 3, 4), foo='bar')
 
