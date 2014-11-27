@@ -15,26 +15,44 @@ import unittest
 # import difflib
 # import copy
 # import traceback
-from logging import *
+# from logging import *
 
-from pov.basic.SceneItem import *
-from pov.other.Camera import *
+from pov.basic.SceneItem import SceneItem
+from pov.other.Camera import Camera
 from pov.other.LightSource import LightSource
 
 
 class CameraTestCase(unittest.TestCase):
+    '''
+        @Todo: DocString
+    '''    
     def setUp(self):
-        self.SUT = Camera()
+        '''
+            @Todo: DocString
+        '''
+        self.sut = Camera()
 
     def test_creation(self):
-        self.assertIsInstance(self.SUT, Camera)
-        self.assertIsInstance(self.SUT, SceneItem)
+        '''
+            @Todo: DocString
+        '''
+        self.assertIsInstance(self.sut, Camera)
+        self.assertIsInstance(self.sut, SceneItem)
 
 
 class LightSourceTestCase(unittest.TestCase):
+    '''
+        @Todo: DocString
+    '''
     def setUp(self):
-        self.SUT = LightSource((1, 2, 3))
+        '''
+            @Todo: DocString
+        '''
+        self.sut = LightSource((1, 2, 3))
 
     def test_creation(self):
-        self.assertIsInstance(self.SUT, LightSource)
-        self.assertIsInstance(self.SUT, SceneItem)
+        '''
+            @Todo: DocString
+        '''
+        self.assertIsInstance(self.sut, LightSource)
+        self.assertIsInstance(self.sut, SceneItem)

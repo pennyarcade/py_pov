@@ -21,7 +21,8 @@ camera {
   orthographic
   location <0,0,1>     // position & direction of view
   look_at  <0,0,0>
-  right 1*x            // horizontal size of view  \___ to be rendered at square size
+  right 1*x            // horizontal size of view  \___ 
+                            to be rendered at square size
   up 1*y               // vertical size of view    /
 }
 

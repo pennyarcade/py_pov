@@ -1,3 +1,4 @@
+# noqa
 '''
 @Todo: Translate
 
@@ -19,7 +20,7 @@ global_settings {
   #if (Photons)          // global photon block
     photons {
       spacing 0.02                 // specify the density of photons
-      //count 100000               // alternatively use a 
+      //count 100000               // alternatively use a
                                    //total number of photons
 
       //gather min, max            // amount of photons gathered

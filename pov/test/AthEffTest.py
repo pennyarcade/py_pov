@@ -14,7 +14,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 import unittest
 # import difflib
 # import copy
-from logging import *
+# from logging import *
 
 from pov.atmeff.Fog import Fog
 from pov.atmeff.SkySphere import SkySphere
@@ -25,15 +25,30 @@ from pov.basic.Vector import Vector
 
 class FogTestCase(unittest.TestCase):
     def setUp(self):
+        '''
+            @Todo: DocString
+        '''
         self.SUT = Fog(Color(rgb=Vector(100, 100, 100)))
 
     def test_creation(self):
+        '''
+            @Todo: DocString
+        '''
         self.assertIsInstance(self.SUT, Fog)
 
 
 class SkySphereTestCase(unittest.TestCase):
+    '''
+        @Todo: DocString
+    '''
     def setUp(self):
+        '''
+            @Todo: DocString
+        '''
         self.SUT = SkySphere(Pigment())
 
     def test_creation(self):
+        '''
+            @Todo: DocString
+        '''
         self.assertIsInstance(self.SUT, SkySphere)

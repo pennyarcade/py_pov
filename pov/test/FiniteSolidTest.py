@@ -12,7 +12,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 import os
 import unittest
-import traceback
+# import traceback
 
 from pov.other.SdlSyntaxException import SdlSyntaxException
 from pov.basic.Vector import Vector
@@ -185,10 +185,13 @@ class BoxTestCase(unittest.TestCase):
         )
 
     def test_create_with_option(self):
-        SUT = Box(Vector(1, 2, 3), Vector(4, 5, 6), ObjectModifier('foo'))
+        '''
+            @Todo: DocString
+        '''
+        sut = Box(Vector(1, 2, 3), Vector(4, 5, 6), ObjectModifier('foo'))
 
-        self.assertIsInstance(SUT, Box)
-        self.assertIsInstance(SUT, SceneItem)
+        self.assertIsInstance(sut, Box)
+        self.assertIsInstance(sut, SceneItem)
 
     def test_create_v1_wrong_type(self):
         '''
@@ -279,10 +282,10 @@ class ConeTestCase(unittest.TestCase):
         self.assertIsInstance(self.sut, Cone)
         self.assertIsInstance(self.sut, SceneItem)
 
-        le = os.linesep
-        second = 'cone {' + le
-        second += '  <1, 2, 3>, 4, <5, 6, 7>, 8' + le
-        second += '}' + le
+        lsp = os.linesep
+        second = 'cone {' + lsp
+        second += '  <1, 2, 3>, 4, <5, 6, 7>, 8' + lsp
+        second += '}' + lsp
 
         self.assertEqual(
             str(self.sut),
@@ -860,10 +863,10 @@ class SphereTestCase(unittest.TestCase):
         self.assertIsInstance(self.sut, Sphere)
         self.assertIsInstance(self.sut, SceneItem)
 
-        le = os.linesep
-        second = 'sphere {' + le
-        second += '  <1, 2, 3>, 8' + le
-        second += '}' + le
+        lsp = os.linesep
+        second = 'sphere {' + lsp
+        second += '  <1, 2, 3>, 8' + lsp
+        second += '}' + lsp
 
         self.assertEqual(
             str(self.sut),

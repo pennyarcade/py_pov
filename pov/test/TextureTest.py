@@ -14,8 +14,7 @@ import os
 import unittest
 # import difflib
 # import copy
-from logging import *
-from pov.texture.Finish import Finish
+# from pov.texture.Finish import Finish
 from pov.texture.ColorMap import ColorMap
 from pov.texture.ColorMap import ColourMap
 from pov.texture.Normal import Normal
@@ -29,76 +28,130 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class FinishTestCase(unittest.TestCase):
+    '''
+        @Todo: DocString
+    '''
     def setUp(self):
-        self.SUT = Finish(ambient=0.1, diffuse=0.9)
+        '''
+            @Todo: DocString
+        '''
+        self.sut = Finish(ambient=0.1, diffuse=0.9)
 
     def test_creation(self):
-        self.assertIsInstance(self.SUT, Finish)
-        self.assertIsInstance(self.SUT, BlockObject)
-        self.assertIsInstance(self.SUT, SceneItem)
+        '''
+            @Todo: DocString
+        '''
+        self.assertIsInstance(self.sut, Finish)
+        self.assertIsInstance(self.sut, BlockObject)
+        self.assertIsInstance(self.sut, SceneItem)
 
     def test_toString(self):
-        le = os.linesep
-        first = str(self.SUT)
+        '''
+            @Todo: DocString
+        '''
+        lsp = os.linesep
+        first = str(self.sut)
 
-        second = "finish {" + le
-        second += '  ambient 0.1' + le
-        second += '  diffuse 0.9' + le
-        second += '}' + le
+        second = "finish {" + lsp
+        second += '  ambient 0.1' + lsp
+        second += '  diffuse 0.9' + lsp
+        second += '}' + lsp
 
         self.assertEqual(first, second)
 
 
 class ColorMapTestCase(unittest.TestCase):
+    '''
+        @Todo: DocString
+    '''
     def setUp(self):
-        self.SUT = ColorMap({0.3: Color(rgb=Vector(0.1, 0.2, 0.3))})
+        '''
+            @Todo: DocString
+        '''
+        self.sut = ColorMap({0.3: Color(rgb=Vector(0.1, 0.2, 0.3))})
 
     def test_creation(self):
-        self.assertIsInstance(self.SUT, ColorMap)
-        self.assertIsInstance(self.SUT, BlockObject)
-        self.assertIsInstance(self.SUT, SceneItem)
+        '''
+            @Todo: DocString
+        '''
+        self.assertIsInstance(self.sut, ColorMap)
+        self.assertIsInstance(self.sut, BlockObject)
+        self.assertIsInstance(self.sut, SceneItem)
 
     def test_creation_britisch(self):
-        self.SUT = ColourMap({'foo': 'bar'})
-        self.assertIsInstance(self.SUT, ColourMap)
-        self.assertIsInstance(self.SUT, BlockObject)
-        self.assertIsInstance(self.SUT, SceneItem)
+        '''
+            @Todo: DocString
+        '''
+        self.sut = ColourMap({'foo': 'bar'})
+        self.assertIsInstance(self.sut, ColourMap)
+        self.assertIsInstance(self.sut, BlockObject)
+        self.assertIsInstance(self.sut, SceneItem)
 
     def test_toString(self):
-        le = os.linesep
-        first = str(self.SUT)
-        second = 'color_map {' + le
-        second += '  [0.3 color rgb <0.1, 0.2, 0.3>]' + le
-        second += '}' + le
+        '''
+            @Todo: DocString
+        '''
+        lsp = os.linesep
+        first = str(self.sut)
+        second = 'color_map {' + lsp
+        second += '  [0.3 color rgb <0.1, 0.2, 0.3>]' + lsp
+        second += '}' + lsp
 
         self.assertEqual(first, second)
 
 
 class NormalTestCase(unittest.TestCase):
+    '''
+        @Todo: DocString
+    '''
     def setUp(self):
-        self.SUT = Normal(bumps=0.1, diffuse=0.9)
+        '''
+            @Todo: DocString
+        '''
+        self.sut = Normal(bumps=0.1, diffuse=0.9)
 
     def test_creation(self):
-        self.assertIsInstance(self.SUT, Normal)
-        self.assertIsInstance(self.SUT, BlockObject)
-        self.assertIsInstance(self.SUT, SceneItem)
+        '''
+            @Todo: DocString
+        '''
+        self.assertIsInstance(self.sut, Normal)
+        self.assertIsInstance(self.sut, BlockObject)
+        self.assertIsInstance(self.sut, SceneItem)
 
 
 class PigmentTestCase(unittest.TestCase):
+    '''
+        @Todo: DocString
+    '''
     def setUp(self):
-        self.SUT = Pigment(bozo=True, diffuse=0.9)
+        '''
+            @Todo: DocString
+        '''
+        self.sut = Pigment(bozo=True, diffuse=0.9)
 
     def test_creation(self):
-        self.assertIsInstance(self.SUT, Pigment)
-        self.assertIsInstance(self.SUT, BlockObject)
-        self.assertIsInstance(self.SUT, SceneItem)
+        '''
+            @Todo: DocString
+        '''
+        self.assertIsInstance(self.sut, Pigment)
+        self.assertIsInstance(self.sut, BlockObject)
+        self.assertIsInstance(self.sut, SceneItem)
 
 
 class TextureTestCase(unittest.TestCase):
+    '''
+        @Todo: DocString
+    '''
     def setUp(self):
-        self.SUT = Texture()
+        '''
+            @Todo: DocString
+        '''
+        self.sut = Texture()
 
     def test_creation(self):
-        self.assertIsInstance(self.SUT, Texture)
-        self.assertIsInstance(self.SUT, BlockObject)
-        self.assertIsInstance(self.SUT, SceneItem)
+        '''
+            @Todo: DocString
+        '''
+        self.assertIsInstance(self.sut, Texture)
+        self.assertIsInstance(self.sut, BlockObject)
+        self.assertIsInstance(self.sut, SceneItem)

@@ -11,7 +11,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 import unittest
-from logging import debug
+# from logging import debug
 from pov.infinite_solid.Plane import Plane
 from pov.basic.SceneItem import SceneItem
 from pov.other.SdlSyntaxException import SdlSyntaxException

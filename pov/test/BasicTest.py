@@ -508,6 +508,9 @@ class SceneFileTestCase(unittest.TestCase):
 
 
 class BlockObjectTestCase(unittest.TestCase):
+    '''
+        @Todo: DocString
+    '''    
     def setUp(self):
         '''
             Set up fixture
@@ -635,9 +638,9 @@ class ColorTestCase(unittest.TestCase):
         '''
             Test sut.__str__()
         '''
-        le = os.linesep
+        lsp = os.linesep
         first = str(self.sut)
-        second = 'color rgb <100, 150, 200>' + le
+        second = 'color rgb <100, 150, 200>' + lsp
 
         self.assertEqual(first, second)
 
