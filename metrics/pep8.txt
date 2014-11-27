@@ -37,15 +37,6 @@ checking pov/basic/__init__.py
 directory pov/test
 checking pov/test/AthEffTest.py
 checking pov/test/BasicTest.py
-pov/test/BasicTest.py:513:8: W291 trailing whitespace
-    Trailing whitespace is superfluous.
-
-    The warning returned varies on whether the line itself is blank, for easier
-    filtering for those who want to indent their blank lines.
-
-    Okay: spam(1)\n#
-    W291: spam(1) \n#
-    W293: class Foo(object):\n    \n    bang = 12
 checking pov/test/CsgTest.py
 checking pov/test/EndToEndTest.py
 checking pov/test/FinitePatchTest.py
@@ -56,15 +47,6 @@ checking pov/test/InfiniteSolidTest.py
 checking pov/test/LanguageDirectiveTest.py
 checking pov/test/ObjectModifierTest.py
 checking pov/test/OtherTest.py
-pov/test/OtherTest.py:28:8: W291 trailing whitespace
-    Trailing whitespace is superfluous.
-
-    The warning returned varies on whether the line itself is blank, for easier
-    filtering for those who want to indent their blank lines.
-
-    Okay: spam(1)\n#
-    W291: spam(1) \n#
-    W293: class Foo(object):\n    \n    bang = 12
 checking pov/test/TextureTest.py
 checking pov/test/__init__.py
 directory pov/test/fixture
@@ -87,15 +69,6 @@ checking pov/examples/basic_sphere.py
 checking pov/examples/checkered_floor.py
 checking pov/examples/image_map.py
 checking pov/examples/orthographic_scene.py
-pov/examples/orthographic_scene.py:24:56: W291 trailing whitespace
-    Trailing whitespace is superfluous.
-
-    The warning returned varies on whether the line itself is blank, for easier
-    filtering for those who want to indent their blank lines.
-
-    Okay: spam(1)\n#
-    W291: spam(1) \n#
-    W293: class Foo(object):\n    \n    bang = 12
 checking pov/examples/photons_scene.py
 checking pov/examples/radiocity_scene.py
 checking pov/examples/text_fonts.py
@@ -203,4 +176,3 @@ checking pov/language_directive/Include.py
 checking pov/language_directive/LanguageDirective.py
 checking pov/language_directive/Version.py
 checking pov/language_directive/__init__.py
-3       W291 trailing whitespace

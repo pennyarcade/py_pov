@@ -1873,7 +1873,7 @@ lgeo/include/brick/lg_2412b.py:694:4: W292 no newline at end of file
 
     However the last line should end with a new line (warning W292).
 checking lgeo/include/brick/lg_2441.py
-lgeo/include/brick/lg_2441.py:1148:80: E501 line too long (90 > 79 characters)
+lgeo/include/brick/lg_2441.py:1807:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -1884,7 +1884,7 @@ lgeo/include/brick/lg_2441.py:1148:80: E501 line too long (90 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1156:80: E501 line too long (90 > 79 characters)
+lgeo/include/brick/lg_2441.py:1811:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -1895,26 +1895,7 @@ lgeo/include/brick/lg_2441.py:1156:80: E501 line too long (90 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1786:1: E303 too many blank lines (3)
-    Separate top-level function and class definitions with two blank lines.
-
-    Method definitions inside a class are separated by a single blank line.
-
-    Extra blank lines may be used (sparingly) to separate groups of related
-    functions.  Blank lines may be omitted between a bunch of related
-    one-liners (e.g. a set of dummy implementations).
-
-    Use blank lines in functions, sparingly, to indicate logical sections.
-
-    Okay: def a():\n    pass\n\n\ndef b():\n    pass
-    Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
-
-    E301: class Foo:\n    b = 0\n    def bar():\n        pass
-    E302: def a():\n    pass\n\ndef b(n):\n    pass
-    E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
-    E303: def a():\n\n\n\n    pass
-    E304: @decorator\n\ndef a():\n    pass
-lgeo/include/brick/lg_2441.py:1794:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:1815:80: E501 line too long (94 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -1925,7 +1906,7 @@ lgeo/include/brick/lg_2441.py:1794:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1798:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:1819:80: E501 line too long (96 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -1936,7 +1917,7 @@ lgeo/include/brick/lg_2441.py:1798:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1802:80: E501 line too long (94 > 79 characters)
+lgeo/include/brick/lg_2441.py:1823:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -1947,7 +1928,7 @@ lgeo/include/brick/lg_2441.py:1802:80: E501 line too long (94 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1806:80: E501 line too long (96 > 79 characters)
+lgeo/include/brick/lg_2441.py:1827:80: E501 line too long (111 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -1958,7 +1939,7 @@ lgeo/include/brick/lg_2441.py:1806:80: E501 line too long (96 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1810:80: E501 line too long (113 > 79 characters)
+lgeo/include/brick/lg_2441.py:1831:80: E501 line too long (114 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -1969,7 +1950,7 @@ lgeo/include/brick/lg_2441.py:1810:80: E501 line too long (113 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1814:80: E501 line too long (111 > 79 characters)
+lgeo/include/brick/lg_2441.py:1835:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -1980,7 +1961,7 @@ lgeo/include/brick/lg_2441.py:1814:80: E501 line too long (111 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1818:80: E501 line too long (114 > 79 characters)
+lgeo/include/brick/lg_2441.py:1839:80: E501 line too long (96 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -1991,7 +1972,7 @@ lgeo/include/brick/lg_2441.py:1818:80: E501 line too long (114 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1822:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:1840:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2002,7 +1983,7 @@ lgeo/include/brick/lg_2441.py:1822:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1826:80: E501 line too long (96 > 79 characters)
+lgeo/include/brick/lg_2441.py:1844:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2013,7 +1994,7 @@ lgeo/include/brick/lg_2441.py:1826:80: E501 line too long (96 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1827:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:1845:80: E501 line too long (111 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2024,7 +2005,7 @@ lgeo/include/brick/lg_2441.py:1827:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1831:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:1849:80: E501 line too long (94 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2035,7 +2016,7 @@ lgeo/include/brick/lg_2441.py:1831:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1832:80: E501 line too long (111 > 79 characters)
+lgeo/include/brick/lg_2441.py:1850:80: E501 line too long (110 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2046,7 +2027,7 @@ lgeo/include/brick/lg_2441.py:1832:80: E501 line too long (111 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1836:80: E501 line too long (94 > 79 characters)
+lgeo/include/brick/lg_2441.py:1854:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2057,7 +2038,7 @@ lgeo/include/brick/lg_2441.py:1836:80: E501 line too long (94 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1837:80: E501 line too long (110 > 79 characters)
+lgeo/include/brick/lg_2441.py:1855:80: E501 line too long (111 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2068,7 +2049,7 @@ lgeo/include/brick/lg_2441.py:1837:80: E501 line too long (110 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1841:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:1859:80: E501 line too long (114 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2079,7 +2060,7 @@ lgeo/include/brick/lg_2441.py:1841:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1842:80: E501 line too long (111 > 79 characters)
+lgeo/include/brick/lg_2441.py:1860:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2090,7 +2071,7 @@ lgeo/include/brick/lg_2441.py:1842:80: E501 line too long (111 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1846:80: E501 line too long (114 > 79 characters)
+lgeo/include/brick/lg_2441.py:1864:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2101,7 +2082,7 @@ lgeo/include/brick/lg_2441.py:1846:80: E501 line too long (114 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1847:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:1865:80: E501 line too long (111 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2112,7 +2093,7 @@ lgeo/include/brick/lg_2441.py:1847:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1851:80: E501 line too long (113 > 79 characters)
+lgeo/include/brick/lg_2441.py:1869:80: E501 line too long (111 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2123,7 +2104,7 @@ lgeo/include/brick/lg_2441.py:1851:80: E501 line too long (113 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1852:80: E501 line too long (111 > 79 characters)
+lgeo/include/brick/lg_2441.py:1870:80: E501 line too long (111 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2134,7 +2115,7 @@ lgeo/include/brick/lg_2441.py:1852:80: E501 line too long (111 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1856:80: E501 line too long (111 > 79 characters)
+lgeo/include/brick/lg_2441.py:1874:80: E501 line too long (114 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2145,7 +2126,7 @@ lgeo/include/brick/lg_2441.py:1856:80: E501 line too long (111 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1857:80: E501 line too long (111 > 79 characters)
+lgeo/include/brick/lg_2441.py:1875:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2156,7 +2137,7 @@ lgeo/include/brick/lg_2441.py:1857:80: E501 line too long (111 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1861:80: E501 line too long (114 > 79 characters)
+lgeo/include/brick/lg_2441.py:1879:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2167,7 +2148,7 @@ lgeo/include/brick/lg_2441.py:1861:80: E501 line too long (114 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1862:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:1880:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2178,7 +2159,7 @@ lgeo/include/brick/lg_2441.py:1862:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1866:80: E501 line too long (113 > 79 characters)
+lgeo/include/brick/lg_2441.py:1884:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2189,7 +2170,7 @@ lgeo/include/brick/lg_2441.py:1866:80: E501 line too long (113 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1867:80: E501 line too long (113 > 79 characters)
+lgeo/include/brick/lg_2441.py:1885:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2200,7 +2181,7 @@ lgeo/include/brick/lg_2441.py:1867:80: E501 line too long (113 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1871:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:1889:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2211,7 +2192,7 @@ lgeo/include/brick/lg_2441.py:1871:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1872:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:1890:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2222,7 +2203,7 @@ lgeo/include/brick/lg_2441.py:1872:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1876:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:1894:80: E501 line too long (114 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2233,7 +2214,7 @@ lgeo/include/brick/lg_2441.py:1876:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1877:80: E501 line too long (113 > 79 characters)
+lgeo/include/brick/lg_2441.py:1898:80: E501 line too long (115 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2244,73 +2225,7 @@ lgeo/include/brick/lg_2441.py:1877:80: E501 line too long (113 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1881:80: E501 line too long (114 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-lgeo/include/brick/lg_2441.py:1885:80: E501 line too long (115 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-lgeo/include/brick/lg_2441.py:1889:80: E501 line too long (114 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-lgeo/include/brick/lg_2441.py:1890:80: E501 line too long (115 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-lgeo/include/brick/lg_2441.py:1894:80: E501 line too long (112 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-lgeo/include/brick/lg_2441.py:1898:80: E501 line too long (113 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-lgeo/include/brick/lg_2441.py:1902:80: E501 line too long (113 > 79 characters)
+lgeo/include/brick/lg_2441.py:1902:80: E501 line too long (114 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2332,7 +2247,7 @@ lgeo/include/brick/lg_2441.py:1903:80: E501 line too long (115 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1907:80: E501 line too long (115 > 79 characters)
+lgeo/include/brick/lg_2441.py:1907:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2343,7 +2258,7 @@ lgeo/include/brick/lg_2441.py:1907:80: E501 line too long (115 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1908:80: E501 line too long (113 > 79 characters)
+lgeo/include/brick/lg_2441.py:1911:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2354,7 +2269,7 @@ lgeo/include/brick/lg_2441.py:1908:80: E501 line too long (113 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1912:80: E501 line too long (113 > 79 characters)
+lgeo/include/brick/lg_2441.py:1915:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2365,7 +2280,7 @@ lgeo/include/brick/lg_2441.py:1912:80: E501 line too long (113 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1913:80: E501 line too long (111 > 79 characters)
+lgeo/include/brick/lg_2441.py:1916:80: E501 line too long (115 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2376,7 +2291,7 @@ lgeo/include/brick/lg_2441.py:1913:80: E501 line too long (111 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1917:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:1920:80: E501 line too long (115 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2387,7 +2302,7 @@ lgeo/include/brick/lg_2441.py:1917:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1918:80: E501 line too long (114 > 79 characters)
+lgeo/include/brick/lg_2441.py:1921:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2398,7 +2313,7 @@ lgeo/include/brick/lg_2441.py:1918:80: E501 line too long (114 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1922:80: E501 line too long (114 > 79 characters)
+lgeo/include/brick/lg_2441.py:1925:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2409,7 +2324,7 @@ lgeo/include/brick/lg_2441.py:1922:80: E501 line too long (114 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1923:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:1926:80: E501 line too long (111 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2420,7 +2335,7 @@ lgeo/include/brick/lg_2441.py:1923:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1927:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:1930:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2431,7 +2346,7 @@ lgeo/include/brick/lg_2441.py:1927:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1928:80: E501 line too long (110 > 79 characters)
+lgeo/include/brick/lg_2441.py:1931:80: E501 line too long (114 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2442,7 +2357,7 @@ lgeo/include/brick/lg_2441.py:1928:80: E501 line too long (110 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1932:80: E501 line too long (110 > 79 characters)
+lgeo/include/brick/lg_2441.py:1935:80: E501 line too long (114 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2453,7 +2368,7 @@ lgeo/include/brick/lg_2441.py:1932:80: E501 line too long (110 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1933:80: E501 line too long (110 > 79 characters)
+lgeo/include/brick/lg_2441.py:1936:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2464,7 +2379,7 @@ lgeo/include/brick/lg_2441.py:1933:80: E501 line too long (110 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1937:80: E501 line too long (111 > 79 characters)
+lgeo/include/brick/lg_2441.py:1940:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2475,7 +2390,7 @@ lgeo/include/brick/lg_2441.py:1937:80: E501 line too long (111 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1938:80: E501 line too long (111 > 79 characters)
+lgeo/include/brick/lg_2441.py:1941:80: E501 line too long (110 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2486,7 +2401,7 @@ lgeo/include/brick/lg_2441.py:1938:80: E501 line too long (111 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1942:80: E501 line too long (96 > 79 characters)
+lgeo/include/brick/lg_2441.py:1945:80: E501 line too long (110 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2497,7 +2412,7 @@ lgeo/include/brick/lg_2441.py:1942:80: E501 line too long (96 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1943:80: E501 line too long (94 > 79 characters)
+lgeo/include/brick/lg_2441.py:1946:80: E501 line too long (110 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2508,7 +2423,7 @@ lgeo/include/brick/lg_2441.py:1943:80: E501 line too long (94 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1947:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:1950:80: E501 line too long (111 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2519,7 +2434,7 @@ lgeo/include/brick/lg_2441.py:1947:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1948:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:1951:80: E501 line too long (111 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2530,7 +2445,7 @@ lgeo/include/brick/lg_2441.py:1948:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1952:80: E501 line too long (117 > 79 characters)
+lgeo/include/brick/lg_2441.py:1955:80: E501 line too long (96 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2541,7 +2456,7 @@ lgeo/include/brick/lg_2441.py:1952:80: E501 line too long (117 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1953:80: E501 line too long (93 > 79 characters)
+lgeo/include/brick/lg_2441.py:1956:80: E501 line too long (94 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2552,7 +2467,7 @@ lgeo/include/brick/lg_2441.py:1953:80: E501 line too long (93 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1956:80: E501 line too long (96 > 79 characters)
+lgeo/include/brick/lg_2441.py:1960:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2563,7 +2478,7 @@ lgeo/include/brick/lg_2441.py:1956:80: E501 line too long (96 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1957:80: E501 line too long (91 > 79 characters)
+lgeo/include/brick/lg_2441.py:1961:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2574,7 +2489,7 @@ lgeo/include/brick/lg_2441.py:1957:80: E501 line too long (91 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1960:80: E501 line too long (116 > 79 characters)
+lgeo/include/brick/lg_2441.py:1965:80: E501 line too long (117 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2585,7 +2500,7 @@ lgeo/include/brick/lg_2441.py:1960:80: E501 line too long (116 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1961:80: E501 line too long (92 > 79 characters)
+lgeo/include/brick/lg_2441.py:1966:80: E501 line too long (93 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2596,7 +2511,7 @@ lgeo/include/brick/lg_2441.py:1961:80: E501 line too long (92 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1964:80: E501 line too long (109 > 79 characters)
+lgeo/include/brick/lg_2441.py:1969:80: E501 line too long (96 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2607,7 +2522,7 @@ lgeo/include/brick/lg_2441.py:1964:80: E501 line too long (109 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1968:80: E501 line too long (81 > 79 characters)
+lgeo/include/brick/lg_2441.py:1970:80: E501 line too long (91 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2618,7 +2533,7 @@ lgeo/include/brick/lg_2441.py:1968:80: E501 line too long (81 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1969:80: E501 line too long (107 > 79 characters)
+lgeo/include/brick/lg_2441.py:1973:80: E501 line too long (116 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2629,7 +2544,7 @@ lgeo/include/brick/lg_2441.py:1969:80: E501 line too long (107 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1972:80: E501 line too long (114 > 79 characters)
+lgeo/include/brick/lg_2441.py:1974:80: E501 line too long (92 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2640,7 +2555,7 @@ lgeo/include/brick/lg_2441.py:1972:80: E501 line too long (114 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1973:80: E501 line too long (96 > 79 characters)
+lgeo/include/brick/lg_2441.py:1977:80: E501 line too long (109 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2651,7 +2566,7 @@ lgeo/include/brick/lg_2441.py:1973:80: E501 line too long (96 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1976:80: E501 line too long (113 > 79 characters)
+lgeo/include/brick/lg_2441.py:1981:80: E501 line too long (81 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2662,7 +2577,7 @@ lgeo/include/brick/lg_2441.py:1976:80: E501 line too long (113 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1977:80: E501 line too long (97 > 79 characters)
+lgeo/include/brick/lg_2441.py:1982:80: E501 line too long (107 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2673,7 +2588,7 @@ lgeo/include/brick/lg_2441.py:1977:80: E501 line too long (97 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1980:80: E501 line too long (99 > 79 characters)
+lgeo/include/brick/lg_2441.py:1985:80: E501 line too long (114 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2684,7 +2599,7 @@ lgeo/include/brick/lg_2441.py:1980:80: E501 line too long (99 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1981:80: E501 line too long (118 > 79 characters)
+lgeo/include/brick/lg_2441.py:1986:80: E501 line too long (96 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2695,7 +2610,7 @@ lgeo/include/brick/lg_2441.py:1981:80: E501 line too long (118 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1984:80: E501 line too long (100 > 79 characters)
+lgeo/include/brick/lg_2441.py:1989:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2706,7 +2621,7 @@ lgeo/include/brick/lg_2441.py:1984:80: E501 line too long (100 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1985:80: E501 line too long (117 > 79 characters)
+lgeo/include/brick/lg_2441.py:1990:80: E501 line too long (97 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2717,7 +2632,7 @@ lgeo/include/brick/lg_2441.py:1985:80: E501 line too long (117 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1988:80: E501 line too long (114 > 79 characters)
+lgeo/include/brick/lg_2441.py:1993:80: E501 line too long (99 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2728,40 +2643,7 @@ lgeo/include/brick/lg_2441.py:1988:80: E501 line too long (114 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:1989:80: E501 line too long (101 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-lgeo/include/brick/lg_2441.py:1992:80: E501 line too long (113 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-lgeo/include/brick/lg_2441.py:1993:80: E501 line too long (100 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-lgeo/include/brick/lg_2441.py:1996:80: E501 line too long (117 > 79 characters)
+lgeo/include/brick/lg_2441.py:1994:80: E501 line too long (118 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2783,7 +2665,7 @@ lgeo/include/brick/lg_2441.py:1997:80: E501 line too long (100 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2000:80: E501 line too long (118 > 79 characters)
+lgeo/include/brick/lg_2441.py:1998:80: E501 line too long (117 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2794,7 +2676,7 @@ lgeo/include/brick/lg_2441.py:2000:80: E501 line too long (118 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2001:80: E501 line too long (101 > 79 characters)
+lgeo/include/brick/lg_2441.py:2001:80: E501 line too long (114 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2805,7 +2687,7 @@ lgeo/include/brick/lg_2441.py:2001:80: E501 line too long (101 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2004:80: E501 line too long (120 > 79 characters)
+lgeo/include/brick/lg_2441.py:2002:80: E501 line too long (101 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2816,7 +2698,7 @@ lgeo/include/brick/lg_2441.py:2004:80: E501 line too long (120 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2005:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:2005:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2827,7 +2709,7 @@ lgeo/include/brick/lg_2441.py:2005:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2008:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:2006:80: E501 line too long (100 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2838,7 +2720,7 @@ lgeo/include/brick/lg_2441.py:2008:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2009:80: E501 line too long (98 > 79 characters)
+lgeo/include/brick/lg_2441.py:2009:80: E501 line too long (117 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2849,7 +2731,7 @@ lgeo/include/brick/lg_2441.py:2009:80: E501 line too long (98 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2012:80: E501 line too long (113 > 79 characters)
+lgeo/include/brick/lg_2441.py:2010:80: E501 line too long (100 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2860,7 +2742,7 @@ lgeo/include/brick/lg_2441.py:2012:80: E501 line too long (113 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2013:80: E501 line too long (99 > 79 characters)
+lgeo/include/brick/lg_2441.py:2013:80: E501 line too long (118 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2871,7 +2753,7 @@ lgeo/include/brick/lg_2441.py:2013:80: E501 line too long (99 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2016:80: E501 line too long (99 > 79 characters)
+lgeo/include/brick/lg_2441.py:2014:80: E501 line too long (101 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2882,7 +2764,7 @@ lgeo/include/brick/lg_2441.py:2016:80: E501 line too long (99 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2017:80: E501 line too long (109 > 79 characters)
+lgeo/include/brick/lg_2441.py:2017:80: E501 line too long (120 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2893,7 +2775,7 @@ lgeo/include/brick/lg_2441.py:2017:80: E501 line too long (109 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2020:80: E501 line too long (80 > 79 characters)
+lgeo/include/brick/lg_2441.py:2018:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2904,7 +2786,7 @@ lgeo/include/brick/lg_2441.py:2020:80: E501 line too long (80 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2021:80: E501 line too long (80 > 79 characters)
+lgeo/include/brick/lg_2441.py:2021:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2915,7 +2797,7 @@ lgeo/include/brick/lg_2441.py:2021:80: E501 line too long (80 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2024:80: E501 line too long (81 > 79 characters)
+lgeo/include/brick/lg_2441.py:2022:80: E501 line too long (98 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2926,7 +2808,7 @@ lgeo/include/brick/lg_2441.py:2024:80: E501 line too long (81 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2025:80: E501 line too long (81 > 79 characters)
+lgeo/include/brick/lg_2441.py:2025:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2937,7 +2819,7 @@ lgeo/include/brick/lg_2441.py:2025:80: E501 line too long (81 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2028:80: E501 line too long (81 > 79 characters)
+lgeo/include/brick/lg_2441.py:2026:80: E501 line too long (99 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2948,7 +2830,7 @@ lgeo/include/brick/lg_2441.py:2028:80: E501 line too long (81 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2029:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:2029:80: E501 line too long (99 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2959,7 +2841,7 @@ lgeo/include/brick/lg_2441.py:2029:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2032:80: E501 line too long (82 > 79 characters)
+lgeo/include/brick/lg_2441.py:2030:80: E501 line too long (109 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2970,7 +2852,7 @@ lgeo/include/brick/lg_2441.py:2032:80: E501 line too long (82 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2033:80: E501 line too long (96 > 79 characters)
+lgeo/include/brick/lg_2441.py:2033:80: E501 line too long (80 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2981,7 +2863,7 @@ lgeo/include/brick/lg_2441.py:2033:80: E501 line too long (96 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2037:80: E501 line too long (102 > 79 characters)
+lgeo/include/brick/lg_2441.py:2034:80: E501 line too long (80 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -2992,7 +2874,7 @@ lgeo/include/brick/lg_2441.py:2037:80: E501 line too long (102 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2041:80: E501 line too long (102 > 79 characters)
+lgeo/include/brick/lg_2441.py:2037:80: E501 line too long (81 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3003,7 +2885,7 @@ lgeo/include/brick/lg_2441.py:2041:80: E501 line too long (102 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2045:80: E501 line too long (103 > 79 characters)
+lgeo/include/brick/lg_2441.py:2038:80: E501 line too long (81 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3014,7 +2896,7 @@ lgeo/include/brick/lg_2441.py:2045:80: E501 line too long (103 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2049:80: E501 line too long (84 > 79 characters)
+lgeo/include/brick/lg_2441.py:2041:80: E501 line too long (81 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3025,7 +2907,7 @@ lgeo/include/brick/lg_2441.py:2049:80: E501 line too long (84 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2121:80: E501 line too long (108 > 79 characters)
+lgeo/include/brick/lg_2441.py:2042:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3036,7 +2918,7 @@ lgeo/include/brick/lg_2441.py:2121:80: E501 line too long (108 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2125:80: E501 line too long (107 > 79 characters)
+lgeo/include/brick/lg_2441.py:2045:80: E501 line too long (82 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3047,7 +2929,7 @@ lgeo/include/brick/lg_2441.py:2125:80: E501 line too long (107 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2129:80: E501 line too long (108 > 79 characters)
+lgeo/include/brick/lg_2441.py:2046:80: E501 line too long (96 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3058,7 +2940,7 @@ lgeo/include/brick/lg_2441.py:2129:80: E501 line too long (108 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2130:80: E501 line too long (107 > 79 characters)
+lgeo/include/brick/lg_2441.py:2050:80: E501 line too long (102 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3069,7 +2951,7 @@ lgeo/include/brick/lg_2441.py:2130:80: E501 line too long (107 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2138:80: E501 line too long (116 > 79 characters)
+lgeo/include/brick/lg_2441.py:2054:80: E501 line too long (102 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3080,7 +2962,7 @@ lgeo/include/brick/lg_2441.py:2138:80: E501 line too long (116 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2145:80: E501 line too long (117 > 79 characters)
+lgeo/include/brick/lg_2441.py:2058:80: E501 line too long (103 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3091,7 +2973,7 @@ lgeo/include/brick/lg_2441.py:2145:80: E501 line too long (117 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2148:80: E501 line too long (96 > 79 characters)
+lgeo/include/brick/lg_2441.py:2062:80: E501 line too long (84 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3102,7 +2984,7 @@ lgeo/include/brick/lg_2441.py:2148:80: E501 line too long (96 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2152:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:2134:80: E501 line too long (108 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3113,7 +2995,7 @@ lgeo/include/brick/lg_2441.py:2152:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2156:80: E501 line too long (96 > 79 characters)
+lgeo/include/brick/lg_2441.py:2138:80: E501 line too long (107 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3124,7 +3006,7 @@ lgeo/include/brick/lg_2441.py:2156:80: E501 line too long (96 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2157:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:2142:80: E501 line too long (108 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3135,7 +3017,7 @@ lgeo/include/brick/lg_2441.py:2157:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2165:80: E501 line too long (104 > 79 characters)
+lgeo/include/brick/lg_2441.py:2143:80: E501 line too long (107 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3146,7 +3028,7 @@ lgeo/include/brick/lg_2441.py:2165:80: E501 line too long (104 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2172:80: E501 line too long (105 > 79 characters)
+lgeo/include/brick/lg_2441.py:2151:80: E501 line too long (116 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3157,7 +3039,7 @@ lgeo/include/brick/lg_2441.py:2172:80: E501 line too long (105 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2175:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:2158:80: E501 line too long (117 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3168,7 +3050,7 @@ lgeo/include/brick/lg_2441.py:2175:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2176:80: E501 line too long (107 > 79 characters)
+lgeo/include/brick/lg_2441.py:2161:80: E501 line too long (96 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3179,7 +3061,7 @@ lgeo/include/brick/lg_2441.py:2176:80: E501 line too long (107 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2180:80: E501 line too long (96 > 79 characters)
+lgeo/include/brick/lg_2441.py:2165:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3190,7 +3072,7 @@ lgeo/include/brick/lg_2441.py:2180:80: E501 line too long (96 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2181:80: E501 line too long (108 > 79 characters)
+lgeo/include/brick/lg_2441.py:2169:80: E501 line too long (96 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3201,7 +3083,7 @@ lgeo/include/brick/lg_2441.py:2181:80: E501 line too long (108 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2185:80: E501 line too long (80 > 79 characters)
+lgeo/include/brick/lg_2441.py:2170:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3212,7 +3094,7 @@ lgeo/include/brick/lg_2441.py:2185:80: E501 line too long (80 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2186:80: E501 line too long (101 > 79 characters)
+lgeo/include/brick/lg_2441.py:2178:80: E501 line too long (104 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3223,7 +3105,7 @@ lgeo/include/brick/lg_2441.py:2186:80: E501 line too long (101 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2189:80: E501 line too long (80 > 79 characters)
+lgeo/include/brick/lg_2441.py:2185:80: E501 line too long (105 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3234,7 +3116,7 @@ lgeo/include/brick/lg_2441.py:2189:80: E501 line too long (80 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2190:80: E501 line too long (85 > 79 characters)
+lgeo/include/brick/lg_2441.py:2188:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3245,7 +3127,7 @@ lgeo/include/brick/lg_2441.py:2190:80: E501 line too long (85 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2194:80: E501 line too long (100 > 79 characters)
+lgeo/include/brick/lg_2441.py:2189:80: E501 line too long (107 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3256,7 +3138,7 @@ lgeo/include/brick/lg_2441.py:2194:80: E501 line too long (100 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2196:80: E501 line too long (86 > 79 characters)
+lgeo/include/brick/lg_2441.py:2193:80: E501 line too long (96 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3267,7 +3149,7 @@ lgeo/include/brick/lg_2441.py:2196:80: E501 line too long (86 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2200:80: E501 line too long (84 > 79 characters)
+lgeo/include/brick/lg_2441.py:2194:80: E501 line too long (108 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3278,7 +3160,7 @@ lgeo/include/brick/lg_2441.py:2200:80: E501 line too long (84 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2202:80: E501 line too long (86 > 79 characters)
+lgeo/include/brick/lg_2441.py:2198:80: E501 line too long (80 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3289,7 +3171,7 @@ lgeo/include/brick/lg_2441.py:2202:80: E501 line too long (86 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2206:80: E501 line too long (99 > 79 characters)
+lgeo/include/brick/lg_2441.py:2199:80: E501 line too long (101 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3300,7 +3182,7 @@ lgeo/include/brick/lg_2441.py:2206:80: E501 line too long (99 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2208:80: E501 line too long (85 > 79 characters)
+lgeo/include/brick/lg_2441.py:2202:80: E501 line too long (80 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3311,7 +3193,7 @@ lgeo/include/brick/lg_2441.py:2208:80: E501 line too long (85 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2212:80: E501 line too long (83 > 79 characters)
+lgeo/include/brick/lg_2441.py:2203:80: E501 line too long (85 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3322,7 +3204,7 @@ lgeo/include/brick/lg_2441.py:2212:80: E501 line too long (83 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2214:80: E501 line too long (85 > 79 characters)
+lgeo/include/brick/lg_2441.py:2207:80: E501 line too long (100 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3333,7 +3215,7 @@ lgeo/include/brick/lg_2441.py:2214:80: E501 line too long (85 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2218:80: E501 line too long (87 > 79 characters)
+lgeo/include/brick/lg_2441.py:2209:80: E501 line too long (86 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3344,7 +3226,7 @@ lgeo/include/brick/lg_2441.py:2218:80: E501 line too long (87 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2299:80: E501 line too long (93 > 79 characters)
+lgeo/include/brick/lg_2441.py:2213:80: E501 line too long (84 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3355,7 +3237,7 @@ lgeo/include/brick/lg_2441.py:2299:80: E501 line too long (93 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2300:80: E501 line too long (94 > 79 characters)
+lgeo/include/brick/lg_2441.py:2215:80: E501 line too long (86 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3366,7 +3248,7 @@ lgeo/include/brick/lg_2441.py:2300:80: E501 line too long (94 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2304:80: E501 line too long (93 > 79 characters)
+lgeo/include/brick/lg_2441.py:2219:80: E501 line too long (99 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3377,7 +3259,7 @@ lgeo/include/brick/lg_2441.py:2304:80: E501 line too long (93 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2305:80: E501 line too long (94 > 79 characters)
+lgeo/include/brick/lg_2441.py:2221:80: E501 line too long (85 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3388,7 +3270,7 @@ lgeo/include/brick/lg_2441.py:2305:80: E501 line too long (94 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2309:80: E501 line too long (92 > 79 characters)
+lgeo/include/brick/lg_2441.py:2225:80: E501 line too long (83 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3399,7 +3281,7 @@ lgeo/include/brick/lg_2441.py:2309:80: E501 line too long (92 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2310:80: E501 line too long (93 > 79 characters)
+lgeo/include/brick/lg_2441.py:2227:80: E501 line too long (85 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3410,7 +3292,7 @@ lgeo/include/brick/lg_2441.py:2310:80: E501 line too long (93 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2314:80: E501 line too long (94 > 79 characters)
+lgeo/include/brick/lg_2441.py:2231:80: E501 line too long (87 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3421,7 +3303,7 @@ lgeo/include/brick/lg_2441.py:2314:80: E501 line too long (94 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2315:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:2312:80: E501 line too long (93 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3432,7 +3314,7 @@ lgeo/include/brick/lg_2441.py:2315:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2319:80: E501 line too long (111 > 79 characters)
+lgeo/include/brick/lg_2441.py:2313:80: E501 line too long (94 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3443,7 +3325,7 @@ lgeo/include/brick/lg_2441.py:2319:80: E501 line too long (111 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2320:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:2317:80: E501 line too long (93 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3454,7 +3336,7 @@ lgeo/include/brick/lg_2441.py:2320:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2324:80: E501 line too long (109 > 79 characters)
+lgeo/include/brick/lg_2441.py:2318:80: E501 line too long (94 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3465,7 +3347,7 @@ lgeo/include/brick/lg_2441.py:2324:80: E501 line too long (109 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2325:80: E501 line too long (110 > 79 characters)
+lgeo/include/brick/lg_2441.py:2322:80: E501 line too long (92 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3476,7 +3358,7 @@ lgeo/include/brick/lg_2441.py:2325:80: E501 line too long (110 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2329:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:2323:80: E501 line too long (93 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3487,7 +3369,7 @@ lgeo/include/brick/lg_2441.py:2329:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2330:80: E501 line too long (113 > 79 characters)
+lgeo/include/brick/lg_2441.py:2327:80: E501 line too long (94 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3498,7 +3380,7 @@ lgeo/include/brick/lg_2441.py:2330:80: E501 line too long (113 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2334:80: E501 line too long (110 > 79 characters)
+lgeo/include/brick/lg_2441.py:2328:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3509,7 +3391,7 @@ lgeo/include/brick/lg_2441.py:2334:80: E501 line too long (110 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2335:80: E501 line too long (111 > 79 characters)
+lgeo/include/brick/lg_2441.py:2332:80: E501 line too long (111 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3520,7 +3402,7 @@ lgeo/include/brick/lg_2441.py:2335:80: E501 line too long (111 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2375:80: E501 line too long (93 > 79 characters)
+lgeo/include/brick/lg_2441.py:2333:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3531,7 +3413,7 @@ lgeo/include/brick/lg_2441.py:2375:80: E501 line too long (93 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2376:80: E501 line too long (112 > 79 characters)
+lgeo/include/brick/lg_2441.py:2337:80: E501 line too long (109 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3542,7 +3424,7 @@ lgeo/include/brick/lg_2441.py:2376:80: E501 line too long (112 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2379:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:2338:80: E501 line too long (110 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3553,7 +3435,7 @@ lgeo/include/brick/lg_2441.py:2379:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2380:80: E501 line too long (114 > 79 characters)
+lgeo/include/brick/lg_2441.py:2342:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3564,7 +3446,7 @@ lgeo/include/brick/lg_2441.py:2380:80: E501 line too long (114 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2383:80: E501 line too long (96 > 79 characters)
+lgeo/include/brick/lg_2441.py:2343:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3575,7 +3457,7 @@ lgeo/include/brick/lg_2441.py:2383:80: E501 line too long (96 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2384:80: E501 line too long (115 > 79 characters)
+lgeo/include/brick/lg_2441.py:2347:80: E501 line too long (110 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3586,7 +3468,7 @@ lgeo/include/brick/lg_2441.py:2384:80: E501 line too long (115 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2387:80: E501 line too long (94 > 79 characters)
+lgeo/include/brick/lg_2441.py:2348:80: E501 line too long (111 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3597,7 +3479,7 @@ lgeo/include/brick/lg_2441.py:2387:80: E501 line too long (94 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2388:80: E501 line too long (113 > 79 characters)
+lgeo/include/brick/lg_2441.py:2388:80: E501 line too long (93 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3608,7 +3490,7 @@ lgeo/include/brick/lg_2441.py:2388:80: E501 line too long (113 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2392:80: E501 line too long (107 > 79 characters)
+lgeo/include/brick/lg_2441.py:2389:80: E501 line too long (112 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3619,7 +3501,7 @@ lgeo/include/brick/lg_2441.py:2392:80: E501 line too long (107 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2396:80: E501 line too long (109 > 79 characters)
+lgeo/include/brick/lg_2441.py:2392:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3630,7 +3512,7 @@ lgeo/include/brick/lg_2441.py:2396:80: E501 line too long (109 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2400:80: E501 line too long (110 > 79 characters)
+lgeo/include/brick/lg_2441.py:2393:80: E501 line too long (114 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3641,7 +3523,7 @@ lgeo/include/brick/lg_2441.py:2400:80: E501 line too long (110 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2404:80: E501 line too long (108 > 79 characters)
+lgeo/include/brick/lg_2441.py:2396:80: E501 line too long (96 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3652,7 +3534,7 @@ lgeo/include/brick/lg_2441.py:2404:80: E501 line too long (108 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2408:80: E501 line too long (93 > 79 characters)
+lgeo/include/brick/lg_2441.py:2397:80: E501 line too long (115 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3663,7 +3545,7 @@ lgeo/include/brick/lg_2441.py:2408:80: E501 line too long (93 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2411:80: E501 line too long (98 > 79 characters)
+lgeo/include/brick/lg_2441.py:2400:80: E501 line too long (94 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3674,7 +3556,7 @@ lgeo/include/brick/lg_2441.py:2411:80: E501 line too long (98 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2412:80: E501 line too long (107 > 79 characters)
+lgeo/include/brick/lg_2441.py:2401:80: E501 line too long (113 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3685,7 +3567,7 @@ lgeo/include/brick/lg_2441.py:2412:80: E501 line too long (107 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2415:80: E501 line too long (97 > 79 characters)
+lgeo/include/brick/lg_2441.py:2405:80: E501 line too long (107 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3696,7 +3578,7 @@ lgeo/include/brick/lg_2441.py:2415:80: E501 line too long (97 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2416:80: E501 line too long (106 > 79 characters)
+lgeo/include/brick/lg_2441.py:2409:80: E501 line too long (109 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3707,7 +3589,7 @@ lgeo/include/brick/lg_2441.py:2416:80: E501 line too long (106 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2420:80: E501 line too long (92 > 79 characters)
+lgeo/include/brick/lg_2441.py:2413:80: E501 line too long (110 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3718,7 +3600,7 @@ lgeo/include/brick/lg_2441.py:2420:80: E501 line too long (92 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2425:80: E501 line too long (92 > 79 characters)
+lgeo/include/brick/lg_2441.py:2417:80: E501 line too long (108 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3729,7 +3611,7 @@ lgeo/include/brick/lg_2441.py:2425:80: E501 line too long (92 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2449:80: E501 line too long (93 > 79 characters)
+lgeo/include/brick/lg_2441.py:2421:80: E501 line too long (93 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3740,7 +3622,7 @@ lgeo/include/brick/lg_2441.py:2449:80: E501 line too long (93 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2472:80: E501 line too long (95 > 79 characters)
+lgeo/include/brick/lg_2441.py:2424:80: E501 line too long (98 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3751,7 +3633,7 @@ lgeo/include/brick/lg_2441.py:2472:80: E501 line too long (95 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2473:80: E501 line too long (110 > 79 characters)
+lgeo/include/brick/lg_2441.py:2425:80: E501 line too long (107 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3762,7 +3644,7 @@ lgeo/include/brick/lg_2441.py:2473:80: E501 line too long (110 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2478:80: E501 line too long (90 > 79 characters)
+lgeo/include/brick/lg_2441.py:2428:80: E501 line too long (97 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3773,7 +3655,7 @@ lgeo/include/brick/lg_2441.py:2478:80: E501 line too long (90 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2482:80: E501 line too long (90 > 79 characters)
+lgeo/include/brick/lg_2441.py:2429:80: E501 line too long (106 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3784,7 +3666,7 @@ lgeo/include/brick/lg_2441.py:2482:80: E501 line too long (90 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2486:80: E501 line too long (91 > 79 characters)
+lgeo/include/brick/lg_2441.py:2433:80: E501 line too long (92 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3795,7 +3677,7 @@ lgeo/include/brick/lg_2441.py:2486:80: E501 line too long (91 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2490:80: E501 line too long (91 > 79 characters)
+lgeo/include/brick/lg_2441.py:2438:80: E501 line too long (92 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3806,7 +3688,7 @@ lgeo/include/brick/lg_2441.py:2490:80: E501 line too long (91 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2494:80: E501 line too long (91 > 79 characters)
+lgeo/include/brick/lg_2441.py:2462:80: E501 line too long (93 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3817,7 +3699,7 @@ lgeo/include/brick/lg_2441.py:2494:80: E501 line too long (91 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2498:80: E501 line too long (92 > 79 characters)
+lgeo/include/brick/lg_2441.py:2485:80: E501 line too long (95 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3828,7 +3710,7 @@ lgeo/include/brick/lg_2441.py:2498:80: E501 line too long (92 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2502:80: E501 line too long (92 > 79 characters)
+lgeo/include/brick/lg_2441.py:2486:80: E501 line too long (110 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3839,7 +3721,7 @@ lgeo/include/brick/lg_2441.py:2502:80: E501 line too long (92 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2506:80: E501 line too long (92 > 79 characters)
+lgeo/include/brick/lg_2441.py:2491:80: E501 line too long (90 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3850,7 +3732,7 @@ lgeo/include/brick/lg_2441.py:2506:80: E501 line too long (92 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2510:80: E501 line too long (93 > 79 characters)
+lgeo/include/brick/lg_2441.py:2495:80: E501 line too long (90 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3861,7 +3743,7 @@ lgeo/include/brick/lg_2441.py:2510:80: E501 line too long (93 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2514:80: E501 line too long (93 > 79 characters)
+lgeo/include/brick/lg_2441.py:2499:80: E501 line too long (91 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3872,7 +3754,7 @@ lgeo/include/brick/lg_2441.py:2514:80: E501 line too long (93 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2518:80: E501 line too long (93 > 79 characters)
+lgeo/include/brick/lg_2441.py:2503:80: E501 line too long (91 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3883,7 +3765,7 @@ lgeo/include/brick/lg_2441.py:2518:80: E501 line too long (93 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2522:80: E501 line too long (94 > 79 characters)
+lgeo/include/brick/lg_2441.py:2507:80: E501 line too long (91 > 79 characters)
     Limit all lines to a maximum of 79 characters.
 
     There are still many devices around that are limited to 80 character
@@ -3894,13 +3776,83 @@ lgeo/include/brick/lg_2441.py:2522:80: E501 line too long (94 > 79 characters)
     length to 72 characters is recommended.
 
     Reports error E501.
-lgeo/include/brick/lg_2441.py:2530:4: W292 no newline at end of file
-    Trailing blank lines are superfluous.
+lgeo/include/brick/lg_2441.py:2511:80: E501 line too long (92 > 79 characters)
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to have
+    several windows side-by-side.  The default wrapping on such devices looks
+    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
+    For flowing long blocks of text (docstrings or comments), limiting the
+    length to 72 characters is recommended.
+
+    Reports error E501.
+lgeo/include/brick/lg_2441.py:2515:80: E501 line too long (92 > 79 characters)
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to have
+    several windows side-by-side.  The default wrapping on such devices looks
+    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
+    For flowing long blocks of text (docstrings or comments), limiting the
+    length to 72 characters is recommended.
+
+    Reports error E501.
+lgeo/include/brick/lg_2441.py:2519:80: E501 line too long (92 > 79 characters)
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to have
+    several windows side-by-side.  The default wrapping on such devices looks
+    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
+    For flowing long blocks of text (docstrings or comments), limiting the
+    length to 72 characters is recommended.
+
+    Reports error E501.
+lgeo/include/brick/lg_2441.py:2523:80: E501 line too long (93 > 79 characters)
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to have
+    several windows side-by-side.  The default wrapping on such devices looks
+    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
+    For flowing long blocks of text (docstrings or comments), limiting the
+    length to 72 characters is recommended.
+
+    Reports error E501.
+lgeo/include/brick/lg_2441.py:2527:80: E501 line too long (93 > 79 characters)
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to have
+    several windows side-by-side.  The default wrapping on such devices looks
+    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
+    For flowing long blocks of text (docstrings or comments), limiting the
+    length to 72 characters is recommended.
+
+    Reports error E501.
+lgeo/include/brick/lg_2441.py:2531:80: E501 line too long (93 > 79 characters)
+    Limit all lines to a maximum of 79 characters.
 
-    Okay: spam(1)
-    W391: spam(1)\n
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to have
+    several windows side-by-side.  The default wrapping on such devices looks
+    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
+    For flowing long blocks of text (docstrings or comments), limiting the
+    length to 72 characters is recommended.
+
+    Reports error E501.
+lgeo/include/brick/lg_2441.py:2535:80: E501 line too long (94 > 79 characters)
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to have
+    several windows side-by-side.  The default wrapping on such devices looks
+    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
+    For flowing long blocks of text (docstrings or comments), limiting the
+    length to 72 characters is recommended.
 
-    However the last line should end with a new line (warning W292).
+    Reports error E501.
 checking lgeo/include/brick/lg_3003.py
 lgeo/include/brick/lg_3003.py:2:80: E501 line too long (80 > 79 characters)
     Limit all lines to a maximum of 79 characters.
@@ -6788,7 +6740,7 @@ directory lgeo/set
 checking lgeo/set/__init__.py
 checking lgeo/set/lg_10036_1_car.py
 checking lgeo/set/lg_10036_1_house.py
-lgeo/set/lg_10036_1_house.py:78:27: W291 trailing whitespace
+lgeo/set/lg_10036_1_house.py:79:27: W291 trailing whitespace
     Trailing whitespace is superfluous.
 
     The warning returned varies on whether the line itself is blank, for easier
@@ -6797,7 +6749,7 @@ lgeo/set/lg_10036_1_house.py:78:27: W291 trailing whitespace
     Okay: spam(1)\n#
     W291: spam(1) \n#
     W293: class Foo(object):\n    \n    bang = 12
-lgeo/set/lg_10036_1_house.py:87:29: E113 unexpected indentation
+lgeo/set/lg_10036_1_house.py:88:29: E113 unexpected indentation
     Use 4 spaces per indentation level.
 
     For really old code that you don't want to mess up, you can continue to
@@ -6812,7 +6764,7 @@ lgeo/set/lg_10036_1_house.py:87:29: E113 unexpected indentation
 
     Okay: a = 1\nb = 2
     E113: a = 1\n    b = 2
-lgeo/set/lg_10036_1_house.py:98:56: W291 trailing whitespace
+lgeo/set/lg_10036_1_house.py:99:56: W291 trailing whitespace
     Trailing whitespace is superfluous.
 
     The warning returned varies on whether the line itself is blank, for easier
@@ -6821,7 +6773,7 @@ lgeo/set/lg_10036_1_house.py:98:56: W291 trailing whitespace
     Okay: spam(1)\n#
     W291: spam(1) \n#
     W293: class Foo(object):\n    \n    bang = 12
-lgeo/set/lg_10036_1_house.py:99:29: E113 unexpected indentation
+lgeo/set/lg_10036_1_house.py:100:29: E113 unexpected indentation
     Use 4 spaces per indentation level.
 
     For really old code that you don't want to mess up, you can continue to
@@ -6836,7 +6788,7 @@ lgeo/set/lg_10036_1_house.py:99:29: E113 unexpected indentation
 
     Okay: a = 1\nb = 2
     E113: a = 1\n    b = 2
-lgeo/set/lg_10036_1_house.py:100:70: W291 trailing whitespace
+lgeo/set/lg_10036_1_house.py:101:70: W291 trailing whitespace
     Trailing whitespace is superfluous.
 
     The warning returned varies on whether the line itself is blank, for easier
@@ -6845,7 +6797,7 @@ lgeo/set/lg_10036_1_house.py:100:70: W291 trailing whitespace
     Okay: spam(1)\n#
     W291: spam(1) \n#
     W293: class Foo(object):\n    \n    bang = 12
-lgeo/set/lg_10036_1_house.py:101:29: E113 unexpected indentation
+lgeo/set/lg_10036_1_house.py:102:29: E113 unexpected indentation
     Use 4 spaces per indentation level.
 
     For really old code that you don't want to mess up, you can continue to
@@ -6860,7 +6812,7 @@ lgeo/set/lg_10036_1_house.py:101:29: E113 unexpected indentation
 
     Okay: a = 1\nb = 2
     E113: a = 1\n    b = 2
-lgeo/set/lg_10036_1_house.py:113:60: W291 trailing whitespace
+lgeo/set/lg_10036_1_house.py:114:60: W291 trailing whitespace
     Trailing whitespace is superfluous.
 
     The warning returned varies on whether the line itself is blank, for easier
@@ -6869,7 +6821,7 @@ lgeo/set/lg_10036_1_house.py:113:60: W291 trailing whitespace
     Okay: spam(1)\n#
     W291: spam(1) \n#
     W293: class Foo(object):\n    \n    bang = 12
-lgeo/set/lg_10036_1_house.py:114:29: E113 unexpected indentation
+lgeo/set/lg_10036_1_house.py:115:29: E113 unexpected indentation
     Use 4 spaces per indentation level.
 
     For really old code that you don't want to mess up, you can continue to
@@ -6884,31 +6836,8 @@ lgeo/set/lg_10036_1_house.py:114:29: E113 unexpected indentation
 
     Okay: a = 1\nb = 2
     E113: a = 1\n    b = 2
-lgeo/set/lg_10036_1_house.py:168:36: E211 whitespace before '('
-    Avoid extraneous whitespace.
-
-    Avoid extraneous whitespace in the following situations:
-    - before the open parenthesis that starts the argument list of a
-      function call.
-    - before the open parenthesis that starts an indexing or slicing.
-
-    Okay: spam(1)
-    E211: spam (1)
-
-    Okay: dict['key'] = list[index]
-    E211: dict ['key'] = list[index]
-    E211: dict['key'] = list [index]
 checking lgeo/set/lg_10036_1_main.py
-lgeo/set/lg_10036_1_main.py:56:68: W291 trailing whitespace
-    Trailing whitespace is superfluous.
-
-    The warning returned varies on whether the line itself is blank, for easier
-    filtering for those who want to indent their blank lines.
-
-    Okay: spam(1)\n#
-    W291: spam(1) \n#
-    W293: class Foo(object):\n    \n    bang = 12
-lgeo/set/lg_10036_1_main.py:57:1: E101 indentation contains mixed spaces and tabs
+lgeo/set/lg_10036_1_main.py:58:1: E101 indentation contains mixed spaces and tabs
     Never mix tabs and spaces.
 
     The most popular way of indenting Python is with spaces only.  The
@@ -6920,21 +6849,12 @@ lgeo/set/lg_10036_1_main.py:57:1: E101 indentation contains mixed spaces and tab
 
     Okay: if a == 0:\n        a = 1\n        b = 1
     E101: if a == 0:\n        a = 1\n\tb = 1
-lgeo/set/lg_10036_1_main.py:57:1: W191 indentation contains tabs
+lgeo/set/lg_10036_1_main.py:58:1: W191 indentation contains tabs
     For new projects, spaces-only are strongly recommended over tabs.
 
     Okay: if True:\n    return
     W191: if True:\n\treturn
-lgeo/set/lg_10036_1_main.py:86:72: W291 trailing whitespace
-    Trailing whitespace is superfluous.
-
-    The warning returned varies on whether the line itself is blank, for easier
-    filtering for those who want to indent their blank lines.
-
-    Okay: spam(1)\n#
-    W291: spam(1) \n#
-    W293: class Foo(object):\n    \n    bang = 12
-lgeo/set/lg_10036_1_main.py:87:1: E101 indentation contains mixed spaces and tabs
+lgeo/set/lg_10036_1_main.py:88:1: E101 indentation contains mixed spaces and tabs
     Never mix tabs and spaces.
 
     The most popular way of indenting Python is with spaces only.  The
@@ -6946,190 +6866,59 @@ lgeo/set/lg_10036_1_main.py:87:1: E101 indentation contains mixed spaces and tab
 
     Okay: if a == 0:\n        a = 1\n        b = 1
     E101: if a == 0:\n        a = 1\n\tb = 1
-lgeo/set/lg_10036_1_main.py:116:76: W291 trailing whitespace
-    Trailing whitespace is superfluous.
+lgeo/set/lg_10036_1_main.py:134:29: E113 unexpected indentation
+    Use 4 spaces per indentation level.
 
-    The warning returned varies on whether the line itself is blank, for easier
-    filtering for those who want to indent their blank lines.
+    For really old code that you don't want to mess up, you can continue to
+    use 8-space tabs.
 
-    Okay: spam(1)\n#
-    W291: spam(1) \n#
-    W293: class Foo(object):\n    \n    bang = 12
-lgeo/set/lg_10036_1_main.py:128:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
+    Okay: a = 1
+    Okay: if a == 0:\n    a = 1
+    E111:   a = 1
 
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
+    Okay: for item in items:\n    pass
+    E112: for item in items:\npass
 
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
+    Okay: a = 1\nb = 2
+    E113: a = 1\n    b = 2
+lgeo/set/lg_10036_1_main.py:142:29: E113 unexpected indentation
+    Use 4 spaces per indentation level.
 
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-lgeo/set/lg_10036_1_main.py:130:80: E501 line too long (81 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    For really old code that you don't want to mess up, you can continue to
+    use 8-space tabs.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    Okay: a = 1
+    Okay: if a == 0:\n    a = 1
+    E111:   a = 1
 
-    Reports error E501.
-lgeo/set/lg_10036_1_main.py:137:80: E501 line too long (83 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    Okay: for item in items:\n    pass
+    E112: for item in items:\npass
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    Okay: a = 1\nb = 2
+    E113: a = 1\n    b = 2
+lgeo/set/lg_10036_1_main.py:155:29: E113 unexpected indentation
+    Use 4 spaces per indentation level.
 
-    Reports error E501.
-lgeo/set/lg_10036_1_main.py:148:80: E501 line too long (81 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    For really old code that you don't want to mess up, you can continue to
+    use 8-space tabs.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    Okay: a = 1
+    Okay: if a == 0:\n    a = 1
+    E111:   a = 1
 
-    Reports error E501.
-lgeo/set/lg_10036_1_main.py:149:80: E501 line too long (97 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    Okay: for item in items:\n    pass
+    E112: for item in items:\npass
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-lgeo/set/lg_10036_1_main.py:161:80: E501 line too long (88 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
-
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
-
-    Reports error E501.
-lgeo/set/lg_10036_1_main.py:164:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-lgeo/set/lg_10036_1_main.py:167:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-lgeo/set/lg_10036_1_main.py:168:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-lgeo/set/lg_10036_1_main.py:183:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-lgeo/set/lg_10036_1_main.py:183:1: E303 too many blank lines (3)
-    Separate top-level function and class definitions with two blank lines.
-
-    Method definitions inside a class are separated by a single blank line.
-
-    Extra blank lines may be used (sparingly) to separate groups of related
-    functions.  Blank lines may be omitted between a bunch of related
-    one-liners (e.g. a set of dummy implementations).
-
-    Use blank lines in functions, sparingly, to indicate logical sections.
-
-    Okay: def a():\n    pass\n\n\ndef b():\n    pass
-    Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
-
-    E301: class Foo:\n    b = 0\n    def bar():\n        pass
-    E302: def a():\n    pass\n\ndef b(n):\n    pass
-    E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
-    E303: def a():\n\n\n\n    pass
-    E304: @decorator\n\ndef a():\n    pass
-lgeo/set/lg_10036_1_main.py:184:1: W391 blank line at end of file
-    Trailing blank lines are superfluous.
-
-    Okay: spam(1)
-    W391: spam(1)\n
-
-    However the last line should end with a new line (warning W292).
+    Okay: a = 1\nb = 2
+    E113: a = 1\n    b = 2
 2       E101 indentation contains mixed spaces and tabs
-5       E113 unexpected indentation
+8       E113 unexpected indentation
 1       E201 whitespace after '('
 1       E202 whitespace before ')'
-1       E211 whitespace before '('
-10      E265 block comment should start with '# '
-5       E303 too many blank lines (3)
-594     E501 line too long (126 > 79 characters)
+5       E265 block comment should start with '# '
+3       E303 too many blank lines (3)
+587     E501 line too long (126 > 79 characters)
 1       W191 indentation contains tabs
-12      W291 trailing whitespace
-3       W292 no newline at end of file
-2       W391 blank line at end of file
+9       W291 trailing whitespace
+2       W292 no newline at end of file
+1       W391 blank line at end of file

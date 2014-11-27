@@ -75,13 +75,6 @@ R:503, 4: Method could be a function (no-self-use)
 R:514, 4: Method could be a function (no-self-use)
 ************* Module pov.test.ObjectModifierTest
 C: 56, 4: Invalid method name "test_create_arg_wrong_length_vector" (invalid-name)
-************* Module pov.test.OtherTest
-C: 28, 0: Trailing whitespace (trailing-whitespace)
-C: 28, 0: Trailing whitespace (trailing-whitespace)
-************* Module pov.test.AthEffTest
-C: 31, 8: Invalid attribute name "SUT" (invalid-name)
-C: 26, 0: Missing class docstring (missing-docstring)
-C: 48, 8: Invalid attribute name "SUT" (invalid-name)
 ************* Module pov.test.FiniteSolidTest
 C:295, 4: Invalid method name "test_creation_with_option_and_kwarg" (invalid-name)
 C:343, 4: Invalid method name "test_create_baseradius_wrong_type" (invalid-name)
@@ -101,14 +94,12 @@ C:746, 4: Invalid method name "test_create_waterlevel_not_float" (invalid-name)
 C:797, 4: Invalid method name "test_create_vector_wrong_dimension" (invalid-name)
 C:951, 4: Invalid method name "test_create_object_modifier_wrong_type" (invalid-name)
 ************* Module pov.test.IncludeTest
-C: 29, 4: Missing method docstring (missing-docstring)
-E: 31,16: Undefined variable 'colors_inc' (undefined-variable)
+E: 34,16: Undefined variable 'colors_inc' (undefined-variable)
 R: 25, 0: Too few public methods (1/2) (too-few-public-methods)
+W: 22, 0: Unused import pov.include.colors_inc (unused-import)
 ************* Module pov.test.GlobalSettingsTest
 C: 38, 4: Invalid method name "test_create_Option_wrong_type" (invalid-name)
 ************* Module pov.test.BasicTest
-C:513, 0: Trailing whitespace (trailing-whitespace)
-C:513, 0: Trailing whitespace (trailing-whitespace)
 W:172,25: Access to a protected member _block_end of a client class (protected-access)
 W:215,12: Access to a protected member _dedent of a client class (protected-access)
 C:217, 4: Invalid method name "test__validate_kwargs_invanild_kwarg" (invalid-name)
@@ -125,4 +116,11 @@ C:315, 4: Invalid method name "test_equalsNoVector" (invalid-name)
 C:374, 8: Invalid variable name "SUT" (invalid-name)
 C:381, 8: Invalid variable name "SUT" (invalid-name)
 W:398,12: Statement seems to have no effect (pointless-statement)
-C:400, 4: Invalid method name "test_rmul__WrongT
+C:400, 4: Invalid method name "test_rmul__WrongType" (invalid-name)
+W:407,12: Statement seems to have no effect (pointless-statement)
+C:409, 4: Invalid method name "test_div__WrongType" (invalid-name)
+W:416,12: Statement seems to have no effect (pointless-statement)
+C:418, 4: Invalid method name "test_add__WrongType" (invalid-name)
+W:425,12: Statement seems to have no effect (pointless-statement)
+C:427, 4: Invalid method name "test_sub__WrongType" (invalid-name)
+W:435,12: Statement seem
