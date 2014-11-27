@@ -25,7 +25,7 @@ from pov.other.LightSource import LightSource
 class CameraTestCase(unittest.TestCase):
     '''
         @Todo: DocString
-    '''    
+    '''
     def setUp(self):
         '''
             @Todo: DocString

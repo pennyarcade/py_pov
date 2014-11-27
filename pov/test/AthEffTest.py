@@ -24,17 +24,20 @@ from pov.basic.Vector import Vector
 
 
 class FogTestCase(unittest.TestCase):
+    '''
+        @Todo: DocString
+    '''
     def setUp(self):
         '''
             @Todo: DocString
         '''
-        self.SUT = Fog(Color(rgb=Vector(100, 100, 100)))
+        self.sut = Fog(Color(rgb=Vector(100, 100, 100)))
 
     def test_creation(self):
         '''
             @Todo: DocString
         '''
-        self.assertIsInstance(self.SUT, Fog)
+        self.assertIsInstance(self.sut, Fog)
 
 
 class SkySphereTestCase(unittest.TestCase):
@@ -45,10 +48,10 @@ class SkySphereTestCase(unittest.TestCase):
         '''
             @Todo: DocString
         '''
-        self.SUT = SkySphere(Pigment())
+        self.sut = SkySphere(Pigment())
 
     def test_creation(self):
         '''
             @Todo: DocString
         '''
-        self.assertIsInstance(self.SUT, SkySphere)
+        self.assertIsInstance(self.sut, SkySphere)

@@ -510,7 +510,7 @@ class SceneFileTestCase(unittest.TestCase):
 class BlockObjectTestCase(unittest.TestCase):
     '''
         @Todo: DocString
-    '''    
+    '''
     def setUp(self):
         '''
             Set up fixture

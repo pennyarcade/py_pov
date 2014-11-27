@@ -20,6 +20,7 @@
 
 ***************************************************************************'''
 
+# noqa
 '''***************************************************************************
 Parts List
 ----------
@@ -53,7 +54,7 @@ Parts List
 1   3899    Clear   Minifig Cup (Pic)
 1   x104    Black   Minifig Hair Ponytail (Pic)
 1   3626bp01    Yellow  Minifig Head with Standard Grin Pattern (Pic)
-1   3626bp03    Yellow  Minifig Head with Standard Grin and Pointed 
+1   3626bp03    Yellow  Minifig Head with Standard Grin and Pointed
 						Moustache Pattern (Pic)
 1   3626bp02    Yellow  Minifig Head with Standard Woman Pattern (Pic)
 1   970c00  Blue    Minifig Hips and Legs (Complete) (Pic)
@@ -83,7 +84,7 @@ Parts List
 4   3020    White   Plate 2 x 4 (Pic)
 1   3795    Red Plate 2 x 6 (Pic)
 1   4740    OldDkGray   Round Dish 2 x 2 Inverted (Pic)
-1   3960p01 White   Round Dish 4 x 4 Inverted with Red and Green Petals 
+1   3960p01 White   Round Dish 4 x 4 Inverted with Red and Green Petals
             Pattern (Pic)
 1   4515    Red Slope Brick 10 6 x 8 (Pic)
 4   3675    Red Slope Brick 33 3 x 3 Double Convex (Pic)
@@ -105,6 +106,7 @@ Parts List
 1   3823    TrLtBlue    Windscreen 2 x 4 x 2 (Pic)
 ***************************************************************************'''
 
+# noqa
 '''***************************************************************************
 LGEO Disclaimer
 Well, it is possible but not recommended. LGEO uses a different coordinate
@@ -113,7 +115,7 @@ placing the parts by hand. In LGEO, for historic reasons Y axis is the depth
 axis, and Z is the up axis, where also Z has switched sign to LDRAW Y axis.
 Sorry for that, but my understanding of coordinate to this time was a flat
 standard XY coordinate system with a third Z axis coming out of the plane.
-Scaling is to real measurements, where 1 POV-Ray unit is 10mm. So 0.8 is 20 
+Scaling is to real measurements, where 1 POV-Ray unit is 10mm. So 0.8 is 20
 LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 ***************************************************************************'''
 
@@ -121,22 +123,25 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # ifndef(set_10036_1_main)
 # declare set_10036_1_main = 1;
 
-'''***************************************************************************
-Includes
-***************************************************************************'''
+# ***************************************************************************
+# Includes
+# ***************************************************************************
+
 # ==== Standard POV-Ray Includes ====
-#include "colors.inc"     # Standard Color definitions
+# include "colors.inc"     # Standard Color definitions
 # #include "textures.inc"   # Standard Texture definitions
-# #include "functions.inc"  # internal functions usable in user defined functions
+# #include "functions.inc"  # internal functions usable in user
+                            # defined functions
 
 # ==== Additional Includes ====
 # Don't have all of the following included at once, it'll cost memory and time
 # to parse!
 # --- general include files ---
 # #include "arrays.inc"     # macros for manipulating arrays
-# #include "chars.inc"      # A complete library of character objects, by Ken Maeno
+# #include "chars.inc"      # A complete library of character objects,
+                            # by Ken Maeno
 # #include "consts.inc"     # Various constants and alias definitions
-# #include "debug.inc"      # contains various macros for debugging scene files
+# #include "debug.inc"      # contains various macros f. debugging scene files
 # #include "logo.inc"       # The official POV-Ray Logo in various forms
 # #include "math.inc"       # general math functions and macros
 # #include "rad_def.inc"    # Some common radiosity settings
@@ -145,8 +150,9 @@ Includes
 # #include "shapes2.inc"    # some not built in basic shapes
 # #include "shapesq.inc"    # Pre-defined quartic shapes
 # #include "skies.inc"      # Ready defined sky spheres
-# #include "strings.inc"    # macros for generating and manipulating text strings
-# #include "sunpos.inc"     # macro for sun position on a given date, time, and location on earth
+# #include "strings.inc"    # macros for generating and manipulating text
+# #include "sunpos.inc"     # macro for sun position on a given date,
+                            # time, and location on earth
 # #include "transforms.inc" # transformation macros
 
 # --- textures ---
@@ -158,14 +164,14 @@ Includes
 # #include "stones1.inc"    # Great stone-textures created by Mike Miller
 # #include "stones2.inc"    # More, done by Dan Farmer and Paul Novak
 # #include "woodmaps.inc"   # Basic wooden colormaps
-# #include "woods.inc"      # Great wooden textures created by Dan Farmer and Paul Novak
+# #include "woods.inc"      # Great wooden textures
 
 # ==== Custom Includes ====
-#include "custom_macros.inc"
+# include "custom_macros.inc"
 
 # ==== LGEO Colors and Definitions ====
-#include "lg_color.inc"
-#include "lg_defs.inc"
+# include "lg_color.inc"
+# include "lg_defs.inc"
 
 # ==== LGEO fixed parts ====
 
@@ -174,11 +180,6 @@ Includes
 # ==== Subparts ====
 
 
-'''***************************************************************************
-Objects
-***************************************************************************'''
-
-
-
-#end
-
+# ***************************************************************************
+# Objects
+# ***************************************************************************

@@ -19,7 +19,7 @@ import unittest
 sys.path.append('../../')
 
 # @Todo: translate
-# include pov.include.colors_inc
+import pov.include.colors_inc
 
 
 class ColorsIncTestCase(unittest.TestCase):
@@ -27,6 +27,9 @@ class ColorsIncTestCase(unittest.TestCase):
         Test colors_inc.py
     '''
     def test_red(self):
+        '''
+            @Todo: DocString
+        '''
         self.assertEqual(
             str(colors_inc.RED),
             'rgb <1.0, 0.0, 0.0>'

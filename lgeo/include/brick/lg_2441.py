@@ -12,6 +12,8 @@
 *                                                                            *
 ***************************************************************************'''
 
+from math import cos, pi
+
 from pov.basic.Vector import Vector
 
 from pov.csg.Union import Union
@@ -35,16 +37,20 @@ lg_angle = 23.57817847
 
 
 def solid():
+    '''
+        @Todo: DocString
+    '''
+
     result = Union()
 
-    MIR = 0
-    while MIR < 2:
+    mir = 0
+    while mir < 2:
         subpart = Union()
 
-        PIN = -2
-        while PIN < 4:
+        pin = -2
+        while pin < 4:
 
-            if PIN == -2:
+            if pin == -2:
                 pinbox = Box(
                     Vector(
                         0,
@@ -418,12 +424,12 @@ def solid():
                             ),
                         ),
                     ),
-                    Translate(Vector(PIN*LG_BRICK_WIDTH, 0, 0))
+                    Translate(Vector(pin*LG_BRICK_WIDTH, 0, 0))
                 )
             )
-            PIN = PIN + 5
+            pin = pin + 5
 
-            if MIR == 1:
+            if mir == 1:
                 mirmatrix = Matrix(
                     Vector(1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0)
                 )
@@ -1127,7 +1133,7 @@ def solid():
                     Object(
                         lg_knob(),
                         Rotate(Vector(0, 0, 90)),
-                        Scale(Vector(1, 1-2*MIR, 1)),
+                        Scale(Vector(1, 1-2*mir, 1)),
                         Translate(
                             Vector(3.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, 0)
                         )
@@ -1135,7 +1141,7 @@ def solid():
                     Object(
                         lg_knob(),
                         Rotate(Vector(0, 0, 90)),
-                        Scale(Vector(1, 1-2*MIR, 1)),
+                        Scale(Vector(1, 1-2*mir, 1)),
                         Translate(
                             Vector(2.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, 0)
                         )
@@ -1143,23 +1149,31 @@ def solid():
                     Object(
                         lg_knob(),
                         Rotate(Vector(0, 0, 90)),
-                        Scale(Vector(1, 1-2*MIR, 1)),
+                        Scale(Vector(1, 1-2*mir, 1)),
                         Translate(
-                            Vector(1.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT)
+                            Vector(
+                                1.5*LG_BRICK_WIDTH,
+                                LG_BRICK_WIDTH/2,
+                                -LG_PLATE_HEIGHT
+                            )
                         )
                     ),
                     Object(
                         lg_knob(),
                         Rotate(Vector(0, 0, 90)),
-                        Scale(Vector(1, 1-2*MIR, 1)),
+                        Scale(Vector(1, 1-2*mir, 1)),
                         Translate(
-                            Vector(0.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, -LG_PLATE_HEIGHT)
+                            Vector(
+                                0.5*LG_BRICK_WIDTH,
+                                LG_BRICK_WIDTH/2,
+                                -LG_PLATE_HEIGHT
+                            )
                         )
                     ),
                     Object(
                         lg_knob(),
                         Rotate(Vector(0, 0, 90)),
-                        Scale(Vector(1, 1-2*MIR, 1)),
+                        Scale(Vector(1, 1-2*mir, 1)),
                         Translate(
                             Vector(
                                 -0.5*LG_BRICK_WIDTH,
@@ -1171,7 +1185,7 @@ def solid():
                     Object(
                         lg_knob(),
                         Rotate(Vector(0, 0, 90)),
-                        Scale(Vector(1, 1-2*MIR, 1)),
+                        Scale(Vector(1, 1-2*mir, 1)),
                         Translate(
                             Vector(
                                 1.5*LG_BRICK_WIDTH,
@@ -1183,7 +1197,7 @@ def solid():
                     Object(
                         lg_knob(),
                         Rotate(Vector(0, 0, 90)),
-                        Scale(Vector(1, 1-2*MIR, 1)),
+                        Scale(Vector(1, 1-2*mir, 1)),
                         Translate(
                             Vector(
                                 0.5*LG_BRICK_WIDTH,
@@ -1195,7 +1209,7 @@ def solid():
                     Object(
                         lg_knob(),
                         Rotate(Vector(0, 0, 90)),
-                        Scale(Vector(1, 1-2*MIR, 1)),
+                        Scale(Vector(1, 1-2*mir, 1)),
                         Translate(
                             Vector(
                                 -0.5*LG_BRICK_WIDTH,
@@ -1207,7 +1221,7 @@ def solid():
                     Object(
                         lg_knob(),
                         Rotate(Vector(0, 0, 90)),
-                        Scale(Vector(1, 1-2*MIR, 1)),
+                        Scale(Vector(1, 1-2*mir, 1)),
                         Translate(
                             Vector(-1.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, 0)
                         )
@@ -1215,7 +1229,7 @@ def solid():
                     Object(
                         lg_knob(),
                         Rotate(Vector(0, 0, 90)),
-                        Scale(Vector(1, 1-2*MIR, 1)),
+                        Scale(Vector(1, 1-2*mir, 1)),
                         Translate(
                             Vector(-2.5*LG_BRICK_WIDTH, LG_BRICK_WIDTH/2, 0)
                         )
@@ -1224,7 +1238,7 @@ def solid():
                     mirmatrix
                 )
             )
-            MIR = MIR + 1
+            mir = mir + 1
 
     result.append(
         Cylinder(
@@ -1780,7 +1794,6 @@ def solid():
     )
 
     return result
-
 
 
 # noqa
