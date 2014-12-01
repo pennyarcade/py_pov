@@ -12,7 +12,7 @@
 *                                                                            *
 ***************************************************************************'''
 
-from lgeo.include.common.brick_subparts import *
+from lgeo.include.common.brick_subparts import get_knob_inner_space
 from lgeo.include.common.lg_defs import *
 
 from pov.basic.Vector import Vector

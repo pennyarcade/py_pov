@@ -33,7 +33,7 @@ from pov.other.Object import Object
 
 from lgeo.include.common.lg_defs import LG_WALL_WIDTH, LG_BRICK_WIDTH
 from lgeo.include.common.lg_defs import LG_PLATE_INNER_HEIGHT, LG_CORNER_SPACE
-from lgeo.include.common.lg_defs import LG_BRICK_INNER_HEIGHT, 
+from lgeo.include.common.lg_defs import LG_BRICK_INNER_HEIGHT
 from lgeo.include.common.lg_defs import lg_knob_inner_space, lg_knob
 from lgeo.include.common.lg_defs import LG_BRICK_HEIGHT, lg_brick_column
 
