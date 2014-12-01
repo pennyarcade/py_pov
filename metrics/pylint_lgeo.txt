@@ -1,10 +1,9 @@
 ************* Module lgeo.lgeo_city
 W:150, 4: Unused variable 'l3_quality' (unused-variable)
 W:148, 4: Unused variable 'l3_version' (unused-variable)
-W: 46, 0: Unused Normal imported from pov.texture.Normal (unused-import)
 ************* Module lgeo.include.brick.lg_3788
-E: 20, 0: No name 'lg_knob' in module 'lgeo.include.common.brick_subparts' (no-name-in-module)
-E: 20, 0: No name 'lg_plate_cylinder' in module 'lgeo.include.common.brick_subparts' (no-name-in-module)
+E: 20, 0: No name 'brick_subparts' in module 'lgeo.include.common' (no-name-in-module)
+F: 20, 0: Unable to import 'lgeo.include.common.brick_subparts' (trailing comma not allowed without surrounding parentheses (<string>, line 36)) (import-error)
 E:319,32: Undefined variable 'lg_angle' (undefined-variable)
 E:321,34: Undefined variable 'lg_angle' (undefined-variable)
 E:332,33: Undefined variable 'lg_angle' (undefined-variable)
@@ -70,674 +69,50 @@ W: 33, 0: Unused import debug from wildcard import (unused-wildcard-import)
 W: 33, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
 W: 33, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.brick.lg_2412b
-C:177, 0: Line too long (126/79) (line-too-long)
-C:178, 0: Line too long (139/79) (line-too-long)
-C:182, 0: Line too long (155/79) (line-too-long)
-C:185, 0: Line too long (139/79) (line-too-long)
-C:186, 0: Line too long (113/79) (line-too-long)
-C:190, 0: Line too long (130/79) (line-too-long)
-C:191, 0: Line too long (104/79) (line-too-long)
-C:195, 0: Line too long (132/79) (line-too-long)
-C:196, 0: Line too long (106/79) (line-too-long)
-C:200, 0: Line too long (132/79) (line-too-long)
-C:201, 0: Line too long (106/79) (line-too-long)
-C:205, 0: Line too long (132/79) (line-too-long)
-C:206, 0: Line too long (106/79) (line-too-long)
-C:210, 0: Line too long (86/79) (line-too-long)
-C:211, 0: Line too long (100/79) (line-too-long)
-C:215, 0: Line too long (102/79) (line-too-long)
-C:216, 0: Line too long (102/79) (line-too-long)
-C:220, 0: Line too long (102/79) (line-too-long)
-C:221, 0: Line too long (102/79) (line-too-long)
-C:225, 0: Line too long (108/79) (line-too-long)
-C:226, 0: Line too long (122/79) (line-too-long)
-C:230, 0: Line too long (124/79) (line-too-long)
-C:231, 0: Line too long (124/79) (line-too-long)
-C:235, 0: Line too long (124/79) (line-too-long)
-C:236, 0: Line too long (124/79) (line-too-long)
-C:240, 0: Line too long (106/79) (line-too-long)
-C:241, 0: Line too long (100/79) (line-too-long)
-C:245, 0: Line too long (128/79) (line-too-long)
-C:246, 0: Line too long (122/79) (line-too-long)
-C:250, 0: Line too long (108/79) (line-too-long)
-C:251, 0: Line too long (102/79) (line-too-long)
-C:255, 0: Line too long (130/79) (line-too-long)
-C:256, 0: Line too long (124/79) (line-too-long)
-C:260, 0: Line too long (108/79) (line-too-long)
-C:261, 0: Line too long (102/79) (line-too-long)
-C:265, 0: Line too long (130/79) (line-too-long)
-C:266, 0: Line too long (124/79) (line-too-long)
-C:270, 0: Line too long (108/79) (line-too-long)
-C:271, 0: Line too long (102/79) (line-too-long)
-C:275, 0: Line too long (130/79) (line-too-long)
-C:276, 0: Line too long (124/79) (line-too-long)
-C:280, 0: Line too long (116/79) (line-too-long)
-C:283, 0: Line too long (138/79) (line-too-long)
-C:286, 0: Line too long (118/79) (line-too-long)
-C:289, 0: Line too long (140/79) (line-too-long)
-C:292, 0: Line too long (118/79) (line-too-long)
-C:295, 0: Line too long (140/79) (line-too-long)
-C:298, 0: Line too long (118/79) (line-too-long)
-C:301, 0: Line too long (140/79) (line-too-long)
-C:304, 0: Line too long (128/79) (line-too-long)
-C:305, 0: Line too long (130/79) (line-too-long)
-C:309, 0: Line too long (106/79) (line-too-long)
-C:310, 0: Line too long (108/79) (line-too-long)
-C:314, 0: Line too long (130/79) (line-too-long)
-C:315, 0: Line too long (130/79) (line-too-long)
-C:319, 0: Line too long (108/79) (line-too-long)
-C:320, 0: Line too long (108/79) (line-too-long)
-C:327, 0: Line too long (120/79) (line-too-long)
-C:331, 0: Line too long (120/79) (line-too-long)
-C:335, 0: Line too long (120/79) (line-too-long)
-C:339, 0: Line too long (96/79) (line-too-long)
-C:345, 0: Line too long (127/79) (line-too-long)
-C:348, 0: Line too long (87/79) (line-too-long)
-C:349, 0: Line too long (115/79) (line-too-long)
-C:352, 0: Line too long (108/79) (line-too-long)
-C:353, 0: Line too long (137/79) (line-too-long)
-C:356, 0: Line too long (83/79) (line-too-long)
-C:357, 0: Line too long (115/79) (line-too-long)
-C:361, 0: Line too long (89/79) (line-too-long)
-C:364, 0: Line too long (89/79) (line-too-long)
-C:365, 0: Line too long (115/79) (line-too-long)
-C:368, 0: Line too long (110/79) (line-too-long)
-C:369, 0: Line too long (137/79) (line-too-long)
-C:372, 0: Line too long (85/79) (line-too-long)
-C:373, 0: Line too long (115/79) (line-too-long)
-C:377, 0: Line too long (89/79) (line-too-long)
-C:383, 0: Line too long (85/79) (line-too-long)
-C:390, 0: Line too long (97/79) (line-too-long)
-C:394, 0: Line too long (97/79) (line-too-long)
-C:398, 0: Line too long (82/79) (line-too-long)
-C: 30, 0: Invalid argument name "WIDTH" (invalid-name)
-C: 30, 0: Missing function docstring (missing-docstring)
-E: 33,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 33,36: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 33,53: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 34,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 37,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 37,36: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 37,53: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 39,24: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E: 39,39: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 40,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 41,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 43,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 47,24: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E: 47,39: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 48,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 49,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 51,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 55,25: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E: 55,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 56,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 57,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 60,25: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E: 60,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 61,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 62,17: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E: 62,33: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 64,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 68,25: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E: 68,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 69,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 70,17: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E: 70,33: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 72,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 76,25: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E: 76,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 77,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 78,17: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E: 78,33: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 81,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 82,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 83,17: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E: 83,33: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 85,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 89,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 90,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 91,17: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E: 91,33: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 93,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 96,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 96,36: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 96,53: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 98,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E: 99,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:100,17: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:100,33: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:102,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:105,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:105,36: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:105,53: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:107,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:108,24: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:108,40: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:109,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:111,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:115,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:116,24: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:116,40: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:117,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:119,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:123,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:124,24: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:124,40: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:125,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:128,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:129,24: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:129,40: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:130,17: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:130,33: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:132,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:136,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:137,24: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:137,40: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:138,17: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:138,33: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:140,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:144,25: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:144,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:145,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:146,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:149,25: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:149,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:150,24: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:150,40: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:151,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:153,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:157,25: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:157,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:158,24: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:158,40: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:159,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:161,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:165,25: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:165,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:166,24: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:166,40: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:167,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:170,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:171,24: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:171,40: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:172,16: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:174,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:177,28: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:177,44: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:177,70: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:177,86: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:177,104: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:178,28: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:178,44: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:178,70: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:178,86: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:178,105: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:178,121: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:179,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:182,28: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:182,44: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:182,70: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:182,86: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:182,105: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:182,121: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:182,140: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:185,28: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:185,44: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:185,70: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:185,86: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:185,105: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:185,121: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:186,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:186,44: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:186,60: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:186,79: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:186,95: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:187,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:190,28: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:190,44: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:190,63: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:190,77: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:190,96: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:190,112: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:191,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:191,37: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:191,51: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:191,70: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:191,86: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:192,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:195,28: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:195,44: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:195,65: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:195,79: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:195,98: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:195,114: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:196,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:196,39: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:196,53: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:196,72: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:196,88: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:197,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:200,28: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:200,44: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:200,65: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:200,79: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:200,98: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:200,114: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:201,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:201,39: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:201,53: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:201,72: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:201,88: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:202,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:205,28: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:205,44: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:205,65: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:205,79: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:205,98: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:205,114: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:206,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:206,39: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:206,53: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:206,72: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:206,88: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:207,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:210,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:210,36: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:210,53: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:210,69: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:211,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:211,36: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:211,50: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:211,67: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:211,83: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:212,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:215,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:215,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:215,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:215,69: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:215,85: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:216,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:216,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:216,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:216,69: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:216,85: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:217,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:220,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:220,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:220,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:220,69: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:220,85: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:221,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:221,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:221,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:221,69: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:221,85: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:222,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:225,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:225,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:225,58: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:225,75: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:225,91: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:226,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:226,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:226,58: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:226,72: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:226,89: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:226,105: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:227,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:230,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:230,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:230,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:230,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:230,91: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:230,107: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:231,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:231,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:231,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:231,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:231,91: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:231,107: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:232,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:235,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:235,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:235,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:235,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:235,91: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:235,107: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:236,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:236,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:236,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:236,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:236,91: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:236,107: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:237,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:240,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:240,36: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:240,50: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:240,67: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:240,89: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:241,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:241,36: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:241,50: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:241,67: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:241,83: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:242,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:245,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:245,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:245,58: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:245,72: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:245,89: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:245,111: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:246,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:246,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:246,58: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:246,72: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:246,89: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:246,105: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:247,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:250,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:250,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:250,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:250,69: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:250,91: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:251,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:251,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:251,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:251,69: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:251,85: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:252,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:255,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:255,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:255,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:255,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:255,91: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:255,113: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:256,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:256,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:256,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:256,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:256,91: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:256,107: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:257,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:260,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:260,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:260,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:260,69: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:260,91: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:261,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:261,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:261,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:261,69: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:261,85: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:262,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:265,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:265,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:265,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:265,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:265,91: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:265,113: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:266,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:266,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:266,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:266,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:266,91: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:266,107: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:267,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:270,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:270,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:270,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:270,69: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:270,91: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:271,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:271,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:271,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:271,69: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:271,85: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:272,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:275,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:275,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:275,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:275,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:275,91: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:275,113: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:276,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:276,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:276,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:276,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:276,91: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:276,107: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:277,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:280,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:280,36: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:280,50: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:280,67: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:280,83: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:280,101: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:283,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:283,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:283,58: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:283,72: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:283,89: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:283,105: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:283,123: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:286,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:286,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:286,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:286,69: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:286,85: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:286,103: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:289,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:289,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:289,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:289,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:289,91: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:289,107: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:289,125: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:292,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:292,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:292,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:292,69: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:292,85: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:292,103: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:295,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:295,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:295,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:295,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:295,91: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:295,107: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:295,125: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:298,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:298,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:298,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:298,69: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:298,85: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:298,103: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:301,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:301,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:301,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:301,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:301,91: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:301,107: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:301,125: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:304,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:304,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:304,58: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:304,72: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:304,89: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:304,111: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:305,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:305,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:305,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:305,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:305,91: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:305,113: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:306,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:309,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:309,36: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:309,50: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:309,67: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:309,89: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:310,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:310,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:310,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:310,69: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:310,91: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:311,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:314,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:314,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:314,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:314,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:314,91: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:314,113: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:315,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:315,41: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:315,60: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:315,74: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:315,91: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:315,113: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:316,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:319,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:319,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:319,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:319,69: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:319,91: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:320,19: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:320,38: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:320,52: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:320,69: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:320,91: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:321,12: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:326,27: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:326,44: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:327,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:327,49: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:327,72: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:327,87: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:327,104: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:330,30: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:330,47: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:331,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:331,56: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:331,71: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:331,88: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:331,104: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:334,27: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:334,47: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:335,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:335,49: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:335,72: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:335,88: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:335,104: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:339,35: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:339,64: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:339,91: Undefined variable 'LG_E' (undefined-variable)
-E:344,27: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:344,42: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:344,58: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:345,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:345,49: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:345,70: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:345,85: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:345,100: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:345,122: Undefined variable 'LG_E' (undefined-variable)
-E:348,28: Undefined variable 'LG_E' (undefined-variable)
-E:348,34: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:348,48: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:348,65: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:348,81: Undefined variable 'LG_E' (undefined-variable)
-E:349,27: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:349,46: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:349,60: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:349,77: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:349,99: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:352,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:352,49: Undefined variable 'LG_E' (undefined-variable)
-E:352,55: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:352,69: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:352,86: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:352,102: Undefined variable 'LG_E' (undefined-variable)
-E:353,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:353,49: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:353,68: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:353,82: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:353,99: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:353,121: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:356,30: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:356,44: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:356,61: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:356,77: Undefined variable 'LG_E' (undefined-variable)
-E:357,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:357,52: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:357,66: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:357,83: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:357,99: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:360,30: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:360,45: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:361,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:361,52: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:361,67: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:364,28: Undefined variable 'LG_E' (undefined-variable)
-E:364,36: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:364,50: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:364,67: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:364,83: Undefined variable 'LG_E' (undefined-variable)
-E:365,27: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:365,46: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:365,60: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:365,77: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:365,99: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:368,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:368,49: Undefined variable 'LG_E' (undefined-variable)
-E:368,57: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:368,71: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:368,88: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:368,104: Undefined variable 'LG_E' (undefined-variable)
-E:369,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:369,49: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:369,68: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:369,82: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:369,99: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:369,121: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:372,32: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:372,46: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:372,63: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:372,79: Undefined variable 'LG_E' (undefined-variable)
-E:373,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:373,52: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:373,66: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:373,83: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:373,99: Undefined variable 'LG_CORNER_SPACE' (undefined-variable)
-E:376,32: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:376,47: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:377,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:377,52: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:377,67: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:383,23: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:383,39: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:383,57: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
-E:383,79: Undefined variable 'LG_E' (undefined-variable)
-E:384,23: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:384,39: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:385,17: Undefined variable 'LG_KNOB_INNER_RADIUS' (undefined-variable)
-E:389,27: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:389,42: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:389,58: Undefined variable 'LG_E' (undefined-variable)
-E:390,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:390,49: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:390,66: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:390,81: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:393,27: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:393,44: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:393,60: Undefined variable 'LG_E' (undefined-variable)
-E:394,34: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:394,49: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:394,66: Undefined variable 'LG_WALL_WIDTH' (undefined-variable)
-E:394,81: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-E:398,26: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:398,47: Undefined variable 'LG_BRICK_WIDTH' (undefined-variable)
-E:398,64: Undefined variable 'LG_PLATE_HEIGHT' (undefined-variable)
-W:694,-1: String statement has no effect (pointless-string-statement)
+C:234, 0: Trailing whitespace (trailing-whitespace)
+C:256, 0: Trailing whitespace (trailing-whitespace)
+E:348,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:361,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:374,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:387,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:400,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:413,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:426,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:439,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:516,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:521,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:529,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:534,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:542,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:547,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:555,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:560,16: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:595,29: Undefined variable 'LG_E' (undefined-variable)
+E:605,24: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:605,46: Undefined variable 'LG_E' (undefined-variable)
+E:610,25: Undefined variable 'LG_E' (undefined-variable)
+E:612,40: Undefined variable 'LG_E' (undefined-variable)
+E:617,24: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:622,46: Undefined variable 'LG_E' (undefined-variable)
+E:624,40: Undefined variable 'LG_E' (undefined-variable)
+E:629,24: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:629,46: Undefined variable 'LG_CORNER_SPAC' (undefined-variable)
+E:636,40: Undefined variable 'LG_E' (undefined-variable)
+E:649,24: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:654,25: Undefined variable 'LG_E' (undefined-variable)
+E:656,40: Undefined variable 'LG_E' (undefined-variable)
+E:661,24: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:666,46: Undefined variable 'LG_E' (undefined-variable)
+E:668,40: Undefined variable 'LG_E' (undefined-variable)
+E:673,24: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:680,40: Undefined variable 'LG_E' (undefined-variable)
+E:697,24: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:707,20: Undefined variable 'LG_PLATE_INNER_HEIGHT' (undefined-variable)
+E:707,42: Undefined variable 'LG_E' (undefined-variable)
+E:710,17: Undefined variable 'LG_KNOB_INNER_RADIUS' (undefined-variable)
+E:714,58: Undefined variable 'LG_E' (undefined-variable)
+E:722,60: Undefined variable 'LG_E' (undefined-variable)
+W:1029,-1: String statement has no effect (pointless-string-statement)
 ************* Module lgeo.include.brick.lg_3022
 C:  1, 0: Line too long (80/79) (line-too-long)
 C:  2, 0: Line too long (80/79) (line-too-long)
@@ -787,10 +162,14 @@ C:124, 0: Line too long (120/79) (line-too-long)
 C:128, 0: Line too long (120/79) (line-too-long)
 C:138, 0: Line too long (87/79) (line-too-long)
 W: 15, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
+E: 16, 0: No name 'brick_subparts' in module 'lgeo.include.common' (no-name-in-module)
 W: 16, 0: Wildcard import lgeo.include.common.brick_subparts (wildcard-import)
+F: 16, 0: Unable to import 'lgeo.include.common.brick_subparts' (trailing comma not allowed without surrounding parentheses (<string>, line 36)) (import-error)
 C: 30, 0: Invalid argument name "LENGTH" (invalid-name)
 C: 30, 0: Invalid argument name "WIDTH" (invalid-name)
 C: 30, 0: Missing function docstring (missing-docstring)
+E:131,12: Undefined variable 'get_knob_inner_space' (undefined-variable)
+E:137, 8: Undefined variable 'get_knob_objects' (undefined-variable)
 W:289,-1: String statement has no effect (pointless-string-statement)
 W: 15, 0: Unused import Scale from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
@@ -799,6 +178,7 @@ W: 15, 0: Unused import lg_tech_knob_clear from wildcard import (unused-wildcard
 W: 15, 0: Unused import LG_CYLINDER_WALL_WIDTH from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_WALL_WIDTH from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import lg_brick_cylinder from wildcard import (unused-wildcard-import)
+W: 15, 0: Unused import y from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import lg_test from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_E from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
@@ -818,7 +198,6 @@ W: 15, 0: Unused import math from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_CYLINDER_RADIUS from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_KNOB_HEIGHT_LOGO from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import lg_plate_cylinder_clear from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import y from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import lg_brick_column from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import lg_knob_dot from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import Torus from wildcard import (unused-wildcard-import)
@@ -847,7 +226,6 @@ W: 15, 0: Unused import debug from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
-W: 16, 0: Unused import get_brick_coloumn from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.brick.lg_3010
 C:  1, 0: Line too long (80/79) (line-too-long)
 C:  2, 0: Line too long (80/79) (line-too-long)
@@ -896,22 +274,24 @@ C:123, 0: Line too long (121/79) (line-too-long)
 C:127, 0: Line too long (121/79) (line-too-long)
 C:131, 0: Line too long (121/79) (line-too-long)
 C:138, 0: Line too long (89/79) (line-too-long)
+E: 15, 0: No name 'brick_subparts' in module 'lgeo.include.common' (no-name-in-module)
 W: 15, 0: Wildcard import lgeo.include.common.brick_subparts (wildcard-import)
+F: 15, 0: Unable to import 'lgeo.include.common.brick_subparts' (trailing comma not allowed without surrounding parentheses (<string>, line 36)) (import-error)
 W: 16, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
 C: 33, 0: Invalid argument name "LENGTH" (invalid-name)
 C: 33, 0: Invalid argument name "WIDTH" (invalid-name)
 C: 33, 0: Missing function docstring (missing-docstring)
+E:134,12: Undefined variable 'get_knob_inner_space' (undefined-variable)
+E:136, 8: Undefined variable 'get_brick_coloumn' (undefined-variable)
+E:137, 8: Undefined variable 'get_knob_objects' (undefined-variable)
 W:284,-1: String statement has no effect (pointless-string-statement)
-W: 15, 0: Unused import LG_WALL_WIDTH from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import Object from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_BRICK_INNER_HEIGHT from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_PLATE_INNER_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import Scale from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_plate_cylinder from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_CROSSAXLE_WIDTH from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_tech_knob_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_CYLINDER_WALL_WIDTH from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_WALL_WIDTH from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_brick_cylinder from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_brick_cylinder_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import y from wildcard import (unused-wildcard-import)
@@ -920,6 +300,7 @@ W: 16, 0: Unused import LG_E from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_GRID_WIDTH from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_brick_column_clear from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import Object from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_KNOB_RADIUS from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import sqrt from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_quality from wildcard import (unused-wildcard-import)
@@ -944,17 +325,19 @@ W: 16, 0: Unused import Merge from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_KNOB_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import ClippedBy from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import x from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import SdlSyntaxException from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_plate_column from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import z from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_stud_logo from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LGPH from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LGBW from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_PLATE_INNER_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_PLATE_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_tech_knob_logo_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_knob_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_knob from wildcard import (unused-wildcard-import)
-W: 16, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_BRICK_INNER_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import debug from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
@@ -1005,25 +388,26 @@ C:115, 0: Line too long (114/79) (line-too-long)
 C:116, 0: Line too long (139/79) (line-too-long)
 C:123, 0: Line too long (121/79) (line-too-long)
 C:127, 0: Line too long (105/79) (line-too-long)
+E: 15, 0: No name 'brick_subparts' in module 'lgeo.include.common' (no-name-in-module)
 W: 15, 0: Wildcard import lgeo.include.common.brick_subparts (wildcard-import)
+F: 15, 0: Unable to import 'lgeo.include.common.brick_subparts' (trailing comma not allowed without surrounding parentheses (<string>, line 36)) (import-error)
 W: 16, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
 C: 33, 0: Invalid argument name "LENGTH" (invalid-name)
 C: 33, 0: Invalid argument name "WIDTH" (invalid-name)
 C: 33, 0: Missing function docstring (missing-docstring)
+E:130,12: Undefined variable 'get_knob_inner_space' (undefined-variable)
+E:136, 8: Undefined variable 'get_knob_objects' (undefined-variable)
 W:282,-1: String statement has no effect (pointless-string-statement)
-W: 15, 0: Unused import LG_WALL_WIDTH from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import get_brick_coloumn from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_BRICK_INNER_HEIGHT from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_PLATE_INNER_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import Scale from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_plate_cylinder from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_tech_knob_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_CYLINDER_WALL_WIDTH from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_WALL_WIDTH from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_CROSSAXLE_WIDTH from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_brick_cylinder_clear from wildcard import (unused-wildcard-import)
-W: 16, 0: Unused import lg_test from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import y from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_test from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_E from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_GRID_WIDTH from wildcard import (unused-wildcard-import)
@@ -1052,46 +436,25 @@ W: 16, 0: Unused import Merge from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_KNOB_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import ClippedBy from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import x from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import SdlSyntaxException from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_plate_column from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import z from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_stud_logo from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LGPH from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LGBW from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_PLATE_INNER_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_PLATE_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_tech_knob_logo_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_knob_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_knob from wildcard import (unused-wildcard-import)
-W: 16, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
+W: 16, 0: Unused import LG_BRICK_INNER_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import debug from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.common.brick_subparts
-C: 56, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
-C: 58, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
-C: 81, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
-C: 83, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
-C:107, 0: Unnecessary parens after 'while' keyword (superfluous-parens)
-W: 21,-1: String statement has no effect (pointless-string-statement)
-W: 40,-1: String statement has no effect (pointless-string-statement)
-C: 43, 0: Missing function docstring (missing-docstring)
-C: 55, 4: Invalid variable name "KS_X" (invalid-name)
-C: 57, 8: Invalid variable name "KS_Y" (invalid-name)
-E: 61,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-C: 71,12: Invalid variable name "KS_Y" (invalid-name)
-C: 72, 8: Invalid variable name "KS_X" (invalid-name)
-C: 77, 0: Missing function docstring (missing-docstring)
-E: 77,47: Undefined variable 'LG_BRICK_HEIGHT' (undefined-variable)
-C: 80, 4: Invalid variable name "KNOB_X" (invalid-name)
-C: 82, 8: Invalid variable name "KNOB_Y" (invalid-name)
-E: 86,20: Undefined variable 'lg_knob' (undefined-variable)
-C: 97,12: Invalid variable name "KNOB_Y" (invalid-name)
-C: 98, 8: Invalid variable name "KNOB_X" (invalid-name)
-C:103, 0: Missing function docstring (missing-docstring)
-C:106, 4: Invalid variable name "COL_X" (invalid-name)
-E:110,16: Undefined variable 'lg_brick_column' (undefined-variable)
-C:120, 8: Invalid variable name "COL_X" (invalid-name)
+E: 36, 0: trailing comma not allowed without surrounding parentheses (syntax-error)
 ************* Module lgeo.include.common.lg_defs
 C:100, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
 C:124, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
@@ -1853,7 +1216,7 @@ R:  1, 0: Similar lines in 2 files
         Box(
             Vector( (duplicate-code)
 R:  1, 0: Similar lines in 4 files
-==lgeo.include.brick.lg_2412b:320
+==lgeo.include.brick.lg_2412b:561
 ==lgeo.include.brick.lg_3003:116
 ==lgeo.include.brick.lg_3010:116
 ==lgeo.include.brick.lg_3022:113
@@ -1862,12 +1225,36 @@ R:  1, 0: Similar lines in 4 files
         Difference(
             Union(
                 Box( (duplicate-code)
-R:  1, 0: Similar lines in 37 files
-==lgeo.include.brick.lg_2412b:117
-==lgeo.include.brick.lg_2412b:138
-==lgeo.include.brick.lg_2412b:159
-==lgeo.include.brick.lg_2412b:49
-==lgeo.include.brick.lg_2412b:70
+R:  1, 0: Similar lines in 61 files
+==lgeo.include.brick.lg_2412b:121
+==lgeo.include.brick.lg_2412b:142
+==lgeo.include.brick.lg_2412b:163
+==lgeo.include.brick.lg_2412b:176
+==lgeo.include.brick.lg_2412b:197
+==lgeo.include.brick.lg_2412b:210
+==lgeo.include.brick.lg_2412b:223
+==lgeo.include.brick.lg_2412b:236
+==lgeo.include.brick.lg_2412b:249
+==lgeo.include.brick.lg_2412b:262
+==lgeo.include.brick.lg_2412b:275
+==lgeo.include.brick.lg_2412b:288
+==lgeo.include.brick.lg_2412b:301
+==lgeo.include.brick.lg_2412b:314
+==lgeo.include.brick.lg_2412b:327
+==lgeo.include.brick.lg_2412b:340
+==lgeo.include.brick.lg_2412b:353
+==lgeo.include.brick.lg_2412b:366
+==lgeo.include.brick.lg_2412b:379
+==lgeo.include.brick.lg_2412b:392
+==lgeo.include.brick.lg_2412b:405
+==lgeo.include.brick.lg_2412b:418
+==lgeo.include.brick.lg_2412b:431
+==lgeo.include.brick.lg_2412b:508
+==lgeo.include.brick.lg_2412b:521
+==lgeo.include.brick.lg_2412b:53
+==lgeo.include.brick.lg_2412b:534
+==lgeo.include.brick.lg_2412b:547
+==lgeo.include.brick.lg_2412b:74
 ==lgeo.include.brick.lg_2441:1253
 ==lgeo.include.brick.lg_2441:1266
 ==lgeo.include.brick.lg_2441:1279
@@ -1905,13 +1292,22 @@ R:  1, 0: Similar lines in 37 files
         ),
         Cylinder(
             Vector( (duplicate-code)
-R:  1, 0: Similar lines in 19 files
-==lgeo.include.brick.lg_2412b:109
-==lgeo.include.brick.lg_2412b:130
-==lgeo.include.brick.lg_2412b:151
-==lgeo.include.brick.lg_2412b:41
-==lgeo.include.brick.lg_2412b:62
-==lgeo.include.brick.lg_2412b:83
+R:  1, 0: Similar lines in 28 files
+==lgeo.include.brick.lg_2412b:113
+==lgeo.include.brick.lg_2412b:134
+==lgeo.include.brick.lg_2412b:155
+==lgeo.include.brick.lg_2412b:189
+==lgeo.include.brick.lg_2412b:444
+==lgeo.include.brick.lg_2412b:45
+==lgeo.include.brick.lg_2412b:452
+==lgeo.include.brick.lg_2412b:460
+==lgeo.include.brick.lg_2412b:468
+==lgeo.include.brick.lg_2412b:476
+==lgeo.include.brick.lg_2412b:484
+==lgeo.include.brick.lg_2412b:492
+==lgeo.include.brick.lg_2412b:500
+==lgeo.include.brick.lg_2412b:66
+==lgeo.include.brick.lg_2412b:87
 ==lgeo.include.brick.lg_2441:148
 ==lgeo.include.brick.lg_2441:445
 ==lgeo.include.brick.lg_2441:453
@@ -1925,11 +1321,19 @@ R:  1, 0: Similar lines in 19 files
 ==lgeo.include.brick.lg_2441:673
 ==lgeo.include.brick.lg_2441:681
 ==lgeo.include.brick.lg_2441:85
-                        ),
-                        LG_CORNER_SPACE
-                    ),
-                    Sphere(
-                        Vector( (duplicate-code)
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2412b:697
+==lgeo.include.brick.lg_3788:468
+                        )
+                    )
+                )
+            ),
+            Difference( (duplicate-code)
 R:  1, 0: Similar lines in 4 files
 ==lgeo.include.brick.lg_2441:1007
 ==lgeo.include.brick.lg_2441:1019
@@ -1995,7 +1399,7 @@ R:  1, 0: Similar lines in 3 files
 
 Report
 ======
-418 statements analysed.
+381 statements analysed.
 
 Statistics by type
 ------------------
@@ -2003,13 +1407,13 @@ Statistics by type
 +---------+-------+-----------+-----------+------------+---------+
 |type     |number |old number |difference |%documented |%badname |
 +=========+=======+===========+===========+============+=========+
-|module   |21     |NC         |NC         |100.00      |0.00     |
+|module   |20     |NC         |NC         |100.00      |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
 |class    |0      |NC         |NC         |0           |0        |
 +---------+-------+-----------+-----------+------------+---------+
 |method   |0      |NC         |NC         |0           |0        |
 +---------+-------+-----------+-----------+------------+---------+
-|function |18     |NC         |NC         |27.78       |11.11    |
+|function |15     |NC         |NC         |40.00       |13.33    |
 +---------+-------+-----------+-----------+------------+---------+
 
 
@@ -2021,22 +1425,21 @@ External dependencies
     lgeo 
       \-include 
         \-common 
-          \-brick_subparts (lgeo.include.brick.lg_3788)
-          \-lg_defs (lgeo.include.brick.lg_3788,lgeo.include.common.brick_subparts)
+          \-lg_defs (lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2412b)
     pov 
       \-atmeff 
       | \-SkySphere (lgeo.lgeo_city)
       \-basic 
       | \-Color (lgeo.lgeo_city,lgeo.include.common.lg_color)
       | \-SceneFile (lgeo.lgeo_city)
-      | \-Vector (lgeo.include.common.brick_subparts,lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.common.lg_color,lgeo.include.brick.lg_3022)
+      | \-Vector (lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.common.lg_color,lgeo.include.brick.lg_3022)
       \-csg 
       | \-Difference (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441)
       | \-Intersection (lgeo.include.common.lg_defs)
       | \-Merge (lgeo.include.common.lg_defs)
-      | \-Union (lgeo.set.lg_10036_1_car,lgeo.include.common.brick_subparts,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
+      | \-Union (lgeo.set.lg_10036_1_car,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
       \-finite_solid 
-      | \-Box (lgeo.include.common.brick_subparts,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
+      | \-Box (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
       | \-Cylinder (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441)
       | \-Sphere (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441)
       | \-Torus (lgeo.include.brick.lg_2441,lgeo.include.common.lg_defs)
@@ -2050,19 +1453,18 @@ External dependencies
       | \-ClippedBy (lgeo.include.common.lg_defs)
       | \-Interior (lgeo.include.common.lg_color)
       | \-Matrix (lgeo.include.brick.lg_2441)
-      | \-Rotate (lgeo.include.common.brick_subparts,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
+      | \-Rotate (lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
       | \-Scale (lgeo.include.common.lg_defs)
-      | \-Translate (lgeo.include.common.brick_subparts,lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
+      | \-Translate (lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
       \-other 
       | \-Camera (lgeo.lgeo_city)
       | \-Comment (lgeo.set.lg_10036_1_car)
       | \-LightSource (lgeo.lgeo_city)
-      | \-Object (lgeo.include.common.brick_subparts,lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
+      | \-Object (lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
       \-texture 
         \-ColorMap (lgeo.lgeo_city)
         \-Finish (lgeo.include.common.lg_color)
         \-Irid (lgeo.include.common.lg_color)
-        \-Normal (lgeo.lgeo_city)
         \-Pigment (lgeo.lgeo_city,lgeo.include.common.lg_color)
         \-Texture (lgeo.include.common.custom_macros,lgeo.include.common.lg_color)
         \-pattern 
@@ -2076,13 +1478,13 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |5701   |76.04 |NC       |NC         |
+|code      |5954   |77.11 |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|docstring |828    |11.04 |NC       |NC         |
+|docstring |808    |10.46 |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|comment   |658    |8.78  |NC       |NC         |
+|comment   |658    |8.52  |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|empty     |310    |4.13  |NC       |NC         |
+|empty     |301    |3.90  |NC       |NC         |
 +----------+-------+------+---------+-----------+
 
 
@@ -2093,9 +1495,9 @@ Duplication
 +-------------------------+-------+---------+-----------+
 |                         |now    |previous |difference |
 +=========================+=======+=========+===========+
-|nb duplicated lines      |812    |NC       |NC         |
+|nb duplicated lines      |982    |NC       |NC         |
 +-------------------------+-------+---------+-----------+
-|percent duplicated lines |10.649 |NC       |NC         |
+|percent duplicated lines |12.529 |NC       |NC         |
 +-------------------------+-------+---------+-----------+
 
 
@@ -2106,13 +1508,13 @@ Messages by category
 +-----------+-------+---------+-----------+
 |type       |number |previous |difference |
 +===========+=======+=========+===========+
-|convention |426    |NC       |NC         |
+|convention |328    |NC       |NC         |
 +-----------+-------+---------+-----------+
-|refactor   |27     |NC       |NC         |
+|refactor   |28     |NC       |NC         |
 +-----------+-------+---------+-----------+
-|warning    |414    |NC       |NC         |
+|warning    |409    |NC       |NC         |
 +-----------+-------+---------+-----------+
-|error      |625    |NC       |NC         |
+|error      |87     |NC       |NC         |
 +-----------+-------+---------+-----------+
 
 
@@ -2123,35 +1525,35 @@ Messages by category
 +-----------------------------------+------+--------+---------+-----------+
 |module                             |error |warning |refactor |convention |
 +===================================+======+========+=========+===========+
-|lgeo.include.brick.lg_2412b        |93.60 |0.24    |0.00     |19.25      |
+|lgeo.include.brick.lg_2412b        |47.13 |0.24    |0.00     |0.61       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_car            |2.72  |5.56    |0.00     |4.69       |
+|lgeo.set.lg_10036_1_car            |19.54 |5.62    |0.00     |6.10       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3788         |2.24  |0.00    |0.00     |0.00       |
+|lgeo.include.brick.lg_3788         |14.94 |0.00    |0.00     |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.brick_subparts |0.64  |0.48    |0.00     |4.23       |
+|lgeo.include.brick.lg_3010         |4.60  |14.67   |0.00     |15.24      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_defs        |0.48  |2.17    |0.00     |6.57       |
+|lgeo.include.brick.lg_3022         |3.45  |14.18   |0.00     |15.24      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_2441         |0.16  |11.59   |0.00     |0.47       |
+|lgeo.include.brick.lg_3003         |3.45  |14.18   |0.00     |14.63      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_house          |0.16  |0.48    |0.00     |1.17       |
+|lgeo.include.common.lg_defs        |3.45  |2.20    |0.00     |8.54       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_color       |0.00  |34.54   |0.00     |24.88      |
+|lgeo.include.brick.lg_2441         |1.15  |11.74   |0.00     |0.61       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3010         |0.00  |14.49   |0.00     |11.74      |
+|lgeo.set.lg_10036_1_house          |1.15  |0.49    |0.00     |1.52       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3022         |0.00  |14.25   |0.00     |11.74      |
+|lgeo.include.common.brick_subparts |1.15  |0.00    |0.00     |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3003         |0.00  |14.25   |0.00     |11.27      |
+|lgeo.include.common.lg_color       |0.00  |34.96   |0.00     |32.32      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.custom_macros  |0.00  |0.72    |3.70     |3.05       |
+|lgeo.include.common.custom_macros  |0.00  |0.73    |3.57     |3.96       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.lgeo_city                     |0.00  |0.72    |0.00     |0.00       |
+|lgeo.set.lg_10036_1_main           |0.00  |0.49    |96.43    |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_main           |0.00  |0.48    |96.30    |0.00       |
+|lgeo.lgeo_city                     |0.00  |0.49    |0.00     |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.config.lgeo_cfg               |0.00  |0.00    |0.00     |0.94       |
+|lgeo.config.lgeo_cfg               |0.00  |0.00    |0.00     |1.22       |
 +-----------------------------------+------+--------+---------+-----------+
 
 
@@ -2162,44 +1564,48 @@ Messages
 +---------------------------+------------+
 |message id                 |occurrences |
 +===========================+============+
-|undefined-variable         |620         |
+|unused-wildcard-import     |359         |
 +---------------------------+------------+
-|unused-wildcard-import     |361         |
+|line-too-long              |153         |
 +---------------------------+------------+
-|line-too-long              |233         |
+|invalid-name               |121         |
 +---------------------------+------------+
-|invalid-name               |132         |
+|undefined-variable         |79          |
 +---------------------------+------------+
-|pointless-string-statement |36          |
+|pointless-string-statement |34          |
 +---------------------------+------------+
-|duplicate-code             |26          |
+|duplicate-code             |27          |
 +---------------------------+------------+
 |bad-whitespace             |22          |
 +---------------------------+------------+
-|superfluous-parens         |16          |
-+---------------------------+------------+
-|missing-docstring          |13          |
-+---------------------------+------------+
 |wildcard-import            |11          |
 +---------------------------+------------+
-|trailing-whitespace        |9           |
+|trailing-whitespace        |11          |
 +---------------------------+------------+
-|unused-import              |4           |
+|superfluous-parens         |11          |
++---------------------------+------------+
+|missing-docstring          |9           |
++---------------------------+------------+
+|no-name-in-module          |4           |
++---------------------------+------------+
+|import-error               |4           |
++---------------------------+------------+
+|unused-import              |3           |
 +---------------------------+------------+
 |no-member                  |3           |
 +---------------------------+------------+
 |unused-variable            |2           |
 +---------------------------+------------+
-|no-name-in-module          |2           |
-+---------------------------+------------+
 |too-many-lines             |1           |
 +---------------------------+------------+
 |too-many-arguments         |1           |
++---------------------------+------------+
+|syntax-error               |1           |
 +---------------------------+------------+
 
 
 
 Global evaluation
 -----------------
-Your code has been rated at -85.50/10
+Your code has been rated at -21.50/10
 
