@@ -111,7 +111,7 @@ from pov.texture.pattern.Gradient import Gradient
 # ==== LGEO parts ====
 
 # ==== Object includes ====
-from lgeo.set import lg_10036_1_car
+# from lgeo.set import lg_10036_1_car
 # include "10036-1_house.pov"
 # include "10036-1_main.pov"
 
@@ -149,27 +149,27 @@ def main():
     # Quality level, 0=BBox, 1=no refr, 2=normal, 3=studlogo, 4=stud2logo
     l3_quality = lg_quality
     # Width of seam between two bricks
-    L3SW = 0.5
-    L3Studs = 1  # 1=on 0=off
-    L3Bumps = 0  # 1=on 0=off
+    # L3SW = 0.5
+    # L3Studs = 1  # 1=on 0=off
+    # L3Bumps = 0  # 1=on 0=off
 
-    L3Ambient = 0.4
-    L3Diffuse = 0.4
-    L3Ior = 1.25
-    L3NormalBumps = Normal(
-        bumps=0.01,
-        scale=20
-    )
-    L3NormalSlope = Normal(
-        bumps=0.3,
-        scale=0.5
-    )
+    # L3Ambient = 0.4
+    # L3Diffuse = 0.4
+    # L3Ior = 1.25
+    # L3NormalBumps = Normal(
+    #     bumps=0.01,
+    #     scale=20
+    # )
+    # L3NormalSlope = Normal(
+    #     bumps=0.3,
+    #     scale=0.5
+    # )
 
     # At least a small seam when transparent
-    if L3SW:
-        L3SWT = L3SW
-    else:
-        L3SWT = 0.001
+    # if L3SW:
+    #     L3SWT = L3SW
+    # else:
+    #     L3SWT = 0.001
 
     # ***********************************************************************
     # Camera
@@ -238,7 +238,8 @@ def main():
 
     fix.append(
         Object(
-            lg_10036_1_car.nonmoving()
+            # @Todo: fix file below
+            # lg_10036_1_car.nonmoving()
         )
 
         # object {set_10036_1_car_steering_wheel}

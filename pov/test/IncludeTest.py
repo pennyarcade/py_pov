@@ -18,8 +18,7 @@ import unittest
 
 sys.path.append('../../')
 
-# @Todo: translate
-import pov.include.colors_inc
+from pov.include import colors_inc
 
 
 class ColorsIncTestCase(unittest.TestCase):

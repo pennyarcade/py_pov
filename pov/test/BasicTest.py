@@ -253,7 +253,7 @@ class SceneItemTestCase(unittest.TestCase):
             self.sut._is_valid_identifier('agate'), msg='Invalid Identifier'
         )
 
-    def test___eq__WrongType(self):
+    def test___eq__wrong_type(self):
         '''
             Test magic method
         '''
@@ -293,7 +293,7 @@ class VectorTestCase(unittest.TestCase):
         '''
         self.assertIsInstance(self.sut, Vector)
 
-    def test_createWithVector(self):
+    def test_create_with_vector(self):
         '''
             Test creation and inheritance
         '''
@@ -312,7 +312,7 @@ class VectorTestCase(unittest.TestCase):
         '''
         self.assertEqual(self.sut, Vector(1, 2, 3))
 
-    def test_equalsNoVector(self):
+    def test_equals_no_vector(self):
         '''
             Test magic method
         '''
@@ -397,7 +397,7 @@ class VectorTestCase(unittest.TestCase):
         ):
             self.sut * 'foo'
 
-    def test_rmul__WrongType(self):
+    def test_rmul__wrong_type(self):
         '''
             Test magic method
         '''
@@ -406,7 +406,7 @@ class VectorTestCase(unittest.TestCase):
         ):
             'foo' * self.sut
 
-    def test_div__WrongType(self):
+    def test_div__wrong_type(self):
         '''
             Test magic method
         '''
@@ -415,7 +415,7 @@ class VectorTestCase(unittest.TestCase):
         ):
             self.sut / 'foo'
 
-    def test_add__WrongType(self):
+    def test_add__wrong_type(self):
         '''
             Test magic method
         '''
@@ -424,7 +424,7 @@ class VectorTestCase(unittest.TestCase):
         ):
             self.sut + 'foo'
 
-    def test_sub__WrongType(self):
+    def test_sub__wrong_type(self):
         '''
             Test magic method
         '''
@@ -434,7 +434,7 @@ class VectorTestCase(unittest.TestCase):
         ):
             self.sut - 'foo'
 
-    def test_dotWrongType(self):
+    def test_dot_wrong_type(self):
         '''
             Test sut.dot()
         '''
@@ -476,7 +476,7 @@ class SceneFileTestCase(unittest.TestCase):
 
         self.assertIn(item, self.sut.items)
 
-    def test_createFnamWrongType(self):
+    def test_create_fnam_wrong_type(self):
         '''
             Test creation and inheritance
         '''
@@ -485,7 +485,7 @@ class SceneFileTestCase(unittest.TestCase):
         ):
             self.sut = SceneFile(0, SceneItem('foo'), SceneItem('bar'))
 
-    def test_appendWrongType(self):
+    def test_append_wrong_type(self):
         '''
             Test sut.append()
         '''
@@ -603,14 +603,14 @@ class ColorTestCase(unittest.TestCase):
         self.assertIsInstance(self.sut, Color)
         self.assertIsInstance(self.sut, SceneItem)
 
-    def test_CreateRgbColor(self):
+    def test_create_rgb_color(self):
         '''
             Test creation and inheritance
         '''
         self.assertEqual(self.sut.type, 'rgb')
         self.assertEqual(self.sut.vector, Vector(100, 150, 200))
 
-    def test_CreateRgbfColor(self):
+    def test_create_rgbf_color(self):
         '''
             Test creation and inheritance
         '''
@@ -618,7 +618,7 @@ class ColorTestCase(unittest.TestCase):
         self.assertEqual(self.sut.type, 'rgbf')
         self.assertEqual(self.sut.vector, Vector(100, 150, 200, 1))
 
-    def test_CreateRgbtColor(self):
+    def test_create_rgbt_color(self):
         '''
             Test creation and inheritance
         '''
@@ -626,7 +626,7 @@ class ColorTestCase(unittest.TestCase):
         self.assertEqual(self.sut.type, 'rgbt')
         self.assertEqual(self.sut.vector, Vector(100, 150, 200, 2))
 
-    def test_CreateRgbftColor(self):
+    def test_create_rgbft_color(self):
         '''
             Test creation and inheritance
         '''
@@ -634,7 +634,7 @@ class ColorTestCase(unittest.TestCase):
         self.assertEqual(self.sut.type, 'rgbft')
         self.assertEqual(self.sut.vector, Vector(100, 150, 200, 1, 2))
 
-    def test_toStringRGB(self):
+    def test_to_string_rgb(self):
         '''
             Test sut.__str__()
         '''
@@ -644,7 +644,7 @@ class ColorTestCase(unittest.TestCase):
 
         self.assertEqual(first, second)
 
-    def test_mulColor(self):
+    def test_mul_color(self):
         '''
             Test sut.__mul__()
         '''
