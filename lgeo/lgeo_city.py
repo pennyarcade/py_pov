@@ -43,7 +43,7 @@ from pov.other.LightSource import LightSource
 from pov.other.Object import Object
 
 from pov.texture.ColorMap import ColorMap
-from pov.texture.Normal import Normal
+# from pov.texture.Normal import Normal
 from pov.texture.Pigment import Pigment
 
 from pov.texture.pattern.Gradient import Gradient

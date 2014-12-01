@@ -33,14 +33,19 @@ from pov.other.Object import Object
 
 from lgeo.include.common.lg_defs import LG_WALL_WIDTH, LG_BRICK_WIDTH
 from lgeo.include.common.lg_defs import LG_PLATE_INNER_HEIGHT, LG_CORNER_SPACE
-from lgeo.include.common.lg_defs import LG_BRICK_INNER_HEIGHT
+from lgeo.include.common.lg_defs import LG_BRICK_INNER_HEIGHT, 
+from lgeo.include.common.lg_defs import lg_knob_inner_space, lg_knob
+from lgeo.include.common.lg_defs import LG_BRICK_HEIGHT, lg_brick_column
 
-'''**************************************************************************
-LGEO Standard Brick common subparts
-**************************************************************************'''
+# **************************************************************************
+# LGEO Standard Brick common subparts
+# **************************************************************************
 
 
 def get_knob_inner_space(length=1, width=1):
+    '''
+        @Todo: Docstring
+    '''
     result = Union(
         Box(
             Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LG_CORNER_SPACE),
@@ -52,71 +57,77 @@ def get_knob_inner_space(length=1, width=1):
         )
     )
 
-    KS_X = 0
-    while (KS_X < length):
-        KS_Y = 0
-        while (KS_Y < width):
+    ks_x = 0
+    while (ks_x < length):
+        ks_y = 0
+        while (ks_y < width):
             result.append(
                 Object(
                     lg_knob_inner_space,
                     Translate(
                         Vector(
-                            (KS_X+0.5)*LG_BRICK_WIDTH,
-                            (KS_Y+0.5)*LG_BRICK_WIDTH,
+                            (ks_x+0.5)*LG_BRICK_WIDTH,
+                            (ks_y+0.5)*LG_BRICK_WIDTH,
                             LG_BRICK_INNER_HEIGHT
                         )
                     )
                 )
             )
-            KS_Y = KS_Y + 1
-        KS_X = KS_X + 1
+            ks_y = ks_y + 1
+        ks_x = ks_x + 1
 
     return result
 
 
 def get_knob_objects(length=1, width=1, height=LG_BRICK_HEIGHT):
+    '''
+        @Todo: Docstring
+    '''
     result = Union()
 
-    KNOB_X = 0
-    while (KNOB_X < length):
-        KNOB_Y = 0
-        while (KNOB_Y < width):
+    knob_x = 0
+    while (knob_x < length):
+        knob_y = 0
+        while (knob_y < width):
             result.append(
                 Object(
                     lg_knob(),
                     Rotate(Vector(0, 0, -90)),
                     Translate(
                         Vector(
-                            (0.5+KNOB_X)*LG_BRICK_WIDTH,
-                            (0.5+KNOB_Y)*LG_BRICK_WIDTH,
+                            (0.5+knob_x)*LG_BRICK_WIDTH,
+                            (0.5+knob_y)*LG_BRICK_WIDTH,
                             height
                         )
                     ),
                 )
             )
-            KNOB_Y = KNOB_Y + 1
-        KNOB_X = KNOB_X + 1
+            knob_y = knob_y + 1
+        knob_x = knob_x + 1
 
     return result
 
 
 def get_brick_coloumn(length=1):
+    '''
+        @Todo: Docstring
+    '''
     result = Union()
 
-    COL_X = 1
-    while (COL_X < length):
+    col_x = 1
+    while (col_x < length):
         result.append(
             Object(
                 lg_brick_column,
                 Translate(
                     Vector(
-                        COL_X*LG_BRICK_WIDTH,
+                        col_x*LG_BRICK_WIDTH,
                         0.5*LG_BRICK_WIDTH,
                         0
                     )
                 ),
             )
         )
-        COL_X = COL_X + 1
+        col_x = col_x + 1
 
     return result
