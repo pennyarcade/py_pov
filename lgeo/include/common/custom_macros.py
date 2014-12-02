@@ -6,9 +6,8 @@
  Link: -
  Date: 04/2013
  Auth: Chocokiko
-**************************************************************************'''
 
-'''***************************************************************************
+
 LGEO Disclaimer
 Well, it is possible but not recommended. LGEO uses a different coordinate
 system and scaling than LDRAW, so it may be pretty hard to build a model by
@@ -26,24 +25,24 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # else
 # declare custom_macros = 1;
 
-'''**************************************************************************
-Includes
-**************************************************************************'''
+# **************************************************************************
+# Includes
+# **************************************************************************
 # ==== Standard POV-Ray Includes ====
 # include "colors.inc"     # Standard Color definitions
 # #include "textures.inc"   # Standard Texture definitions
-# #include "functions.inc"  # internal functions usable in user defined 
+# #include "functions.inc"  # internal functions usable in user defined
     # functions
 
 # ==== Additional Includes ====
-# Don't have all of the following included at once, it'll cost memory 
+# Don't have all of the following included at once, it'll cost memory
 # and time to parse!
 # --- general include files ---
 # #include "arrays.inc"     # macros for manipulating arrays
-# #include "chars.inc"      # A complete library of character objects, 
+# #include "chars.inc"      # A complete library of character objects,
 # by Ken Maeno
 # #include "consts.inc"     # Various constants and alias definitions
-# #include "debug.inc"      # contains various macros for 
+# #include "debug.inc"      # contains various macros for
 # debugging scene files
 # #include "logo.inc"       # The official POV-Ray Logo in various forms
 # #include "math.inc"       # general math functions and macros
@@ -67,7 +66,7 @@ Includes
 # #include "stones1.inc"    # Great stone-textures created by Mike Miller
 # #include "stones2.inc"    # More, done by Dan Farmer and Paul Novak
 # #include "woodmaps.inc"   # Basic wooden colormaps
-# #include "woods.inc"      # Great wooden textures created by 
+# #include "woods.inc"      # Great wooden textures created by
 # Dan Farmer and Paul Novak
 
 # ==== LGEO Colors and Definitions ====
@@ -89,9 +88,9 @@ from pov.object_modifier.Translate import Translate
 from pov.texture.Texture import Texture
 
 
-'''***************************************************************************
- Macros
-***************************************************************************'''
+# ***************************************************************************
+# Macros
+# ***************************************************************************
 
 
 def UnchangedBrick(brick, texture):
