@@ -70,26 +70,12 @@ W: 33, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-w
 ************* Module lgeo.include.brick.lg_2412b
 W:1150,-1: String statement has no effect (pointless-string-statement)
 ************* Module lgeo.include.brick.lg_3022
-C:  1, 0: Line too long (80/79) (line-too-long)
-C:  2, 0: Line too long (80/79) (line-too-long)
-C:  3, 0: Line too long (80/79) (line-too-long)
-C:  4, 0: Line too long (80/79) (line-too-long)
-C:  5, 0: Line too long (80/79) (line-too-long)
-C:  6, 0: Line too long (80/79) (line-too-long)
-C:  7, 0: Line too long (80/79) (line-too-long)
-C:  8, 0: Line too long (80/79) (line-too-long)
-C:  9, 0: Line too long (80/79) (line-too-long)
-C: 10, 0: Line too long (80/79) (line-too-long)
-C: 11, 0: Line too long (80/79) (line-too-long)
-C: 12, 0: Line too long (80/79) (line-too-long)
-C: 13, 0: Line too long (80/79) (line-too-long)
-C: 13, 0: Line too long (80/79) (line-too-long)
 W: 15, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
 W: 16, 0: Wildcard import lgeo.include.common.brick_subparts (wildcard-import)
 C: 30, 0: Invalid argument name "LENGTH" (invalid-name)
 C: 30, 0: Invalid argument name "WIDTH" (invalid-name)
 C: 30, 0: Missing function docstring (missing-docstring)
-W:470,-1: String statement has no effect (pointless-string-statement)
+W:473,-1: String statement has no effect (pointless-string-statement)
 W: 15, 0: Unused import Scale from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_CROSSAXLE_WIDTH from wildcard import (unused-wildcard-import)
@@ -147,12 +133,6 @@ W: 15, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-impo
 W: 15, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import get_brick_coloumn from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.brick.lg_3010
-C: 90, 0: Wrong hanging indentation.
-              ),
-            | ^ | (bad-continuation)
-C:171, 0: Wrong hanging indentation.
-              ),
-            | ^ | (bad-continuation)
 W: 16, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
 C: 33, 0: Invalid argument name "LENGTH" (invalid-name)
 C: 33, 0: Invalid argument name "WIDTH" (invalid-name)
@@ -222,10 +202,8 @@ C:272, 0: Line too long (80/79) (line-too-long)
 W: 15, 0: Wildcard import lgeo.include.common.brick_subparts (wildcard-import)
 W: 16, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
 W: 33,20: Unused argument 'width' (unused-argument)
-W: 33,10: Unused argument 'length' (unused-argument)
 W:451,-1: String statement has no effect (pointless-string-statement)
 W: 15, 0: Unused import get_knob_inner_space from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_CORNER_SPACE from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_WALL_WIDTH from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import Translate from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import get_brick_coloumn from wildcard import (unused-wildcard-import)
@@ -239,8 +217,6 @@ W: 15, 0: Unused import lg_brick_column from wildcard import (unused-wildcard-im
 W: 15, 0: Unused import lg_knob_inner_space from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import lg_knob from wildcard import (unused-wildcard-import)
 W: 15, 0: Unused import LG_PLATE_INNER_HEIGHT from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import Vector from wildcard import (unused-wildcard-import)
-W: 15, 0: Unused import LG_BRICK_WIDTH from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import Scale from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_plate_cylinder from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
@@ -254,7 +230,6 @@ W: 16, 0: Unused import y from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_E from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_GRID_WIDTH from wildcard import (unused-wildcard-import)
-W: 16, 0: Unused import Sphere from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_brick_column_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LG_KNOB_RADIUS from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import sqrt from wildcard import (unused-wildcard-import)
@@ -280,7 +255,6 @@ W: 16, 0: Unused import z from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import x from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import SdlSyntaxException from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_plate_column from wildcard import (unused-wildcard-import)
-W: 16, 0: Unused import Cylinder from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import Difference from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_stud_logo from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import LGPH from wildcard import (unused-wildcard-import)
@@ -882,6 +856,17 @@ R:  1, 0: Similar lines in 5 files
                     lg_knob_inner_space,
                     Translate(
                         Vector( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:36
+==lgeo.include.brick.lg_3022:30
+    return Union(
+        Sphere(
+            Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
+            Vector( (duplicate-code)
 R:  1, 0: Similar lines in 4 files
 ==lgeo.include.brick.lg_2412b:14
 ==lgeo.include.brick.lg_2441:16
@@ -1341,18 +1326,21 @@ R:  1, 0: Similar lines in 2 files
                     Vector(
                         LENGTH*LG_BRICK_WIDTH,
                         WIDTH*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
-R:  1, 0: Similar lines in 2 files
+R:  1, 0: Similar lines in 6 files
+==lgeo.include.brick.lg_3003:45
+==lgeo.include.brick.lg_3010:37
 ==lgeo.include.brick.lg_3010:50
+==lgeo.include.brick.lg_3010:58
+==lgeo.include.brick.lg_3022:39
 ==lgeo.include.brick.lg_3022:47
                 LG_CORNER_SPACE,
                 LG_CORNER_SPACE
             ),
             LG_CORNER_SPACE
         ), (duplicate-code)
-R:  1, 0: Similar lines in 3 files
-==lgeo.include.brick.lg_3010:37
-==lgeo.include.brick.lg_3010:58
-==lgeo.include.brick.lg_3022:39
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3010:50
+==lgeo.include.brick.lg_3022:47
                 LG_CORNER_SPACE,
                 LG_CORNER_SPACE
             ),
@@ -1667,11 +1655,11 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |6682   |76.57 |NC       |NC         |
+|code      |6697   |76.72 |NC       |NC         |
 +----------+-------+------+---------+-----------+
 |docstring |823    |9.43  |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|comment   |916    |10.50 |NC       |NC         |
+|comment   |903    |10.34 |NC       |NC         |
 +----------+-------+------+---------+-----------+
 |empty     |306    |3.51  |NC       |NC         |
 +----------+-------+------+---------+-----------+
@@ -1684,9 +1672,9 @@ Duplication
 +-------------------------+-------+---------+-----------+
 |                         |now    |previous |difference |
 +=========================+=======+=========+===========+
-|nb duplicated lines      |1925   |NC       |NC         |
+|nb duplicated lines      |1948   |NC       |NC         |
 +-------------------------+-------+---------+-----------+
-|percent duplicated lines |21.742 |NC       |NC         |
+|percent duplicated lines |21.999 |NC       |NC         |
 +-------------------------+-------+---------+-----------+
 
 
@@ -1697,11 +1685,11 @@ Messages by category
 +-----------+-------+---------+-----------+
 |type       |number |previous |difference |
 +===========+=======+=========+===========+
-|convention |196    |NC       |NC         |
+|convention |180    |NC       |NC         |
 +-----------+-------+---------+-----------+
-|refactor   |61     |NC       |NC         |
+|refactor   |62     |NC       |NC         |
 +-----------+-------+---------+-----------+
-|warning    |423    |NC       |NC         |
+|warning    |417    |NC       |NC         |
 +-----------+-------+---------+-----------+
 |error      |37     |NC       |NC         |
 +-----------+-------+---------+-----------+
@@ -1714,33 +1702,33 @@ Messages by category
 +----------------------------------+------+--------+---------+-----------+
 |module                            |error |warning |refactor |convention |
 +==================================+======+========+=========+===========+
-|lgeo.set.lg_10036_1_car           |45.95 |5.44    |0.00     |10.20      |
+|lgeo.set.lg_10036_1_car           |45.95 |5.52    |0.00     |11.11      |
 +----------------------------------+------+--------+---------+-----------+
 |lgeo.include.brick.lg_3788        |35.14 |0.00    |0.00     |0.00       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_defs       |8.11  |2.13    |0.00     |14.29      |
+|lgeo.include.common.lg_defs       |8.11  |2.16    |0.00     |15.56      |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3010        |5.41  |13.95   |0.00     |2.55       |
+|lgeo.include.brick.lg_3010        |5.41  |14.15   |0.00     |1.67       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_2441        |2.70  |11.35   |0.00     |1.02       |
+|lgeo.include.brick.lg_2441        |2.70  |11.51   |0.00     |1.11       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_house         |2.70  |0.47    |0.00     |2.55       |
+|lgeo.set.lg_10036_1_house         |2.70  |0.48    |0.00     |2.78       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_color      |0.00  |33.81   |0.00     |54.08      |
+|lgeo.include.common.lg_color      |0.00  |34.29   |0.00     |58.89      |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3003        |0.00  |17.73   |0.00     |0.51       |
+|lgeo.include.brick.lg_3003        |0.00  |16.55   |0.00     |0.56       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3022        |0.00  |13.95   |0.00     |8.67       |
+|lgeo.include.brick.lg_3022        |0.00  |14.15   |0.00     |1.67       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_main          |0.00  |0.47    |98.36    |0.00       |
+|lgeo.set.lg_10036_1_main          |0.00  |0.48    |98.39    |0.00       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.lgeo_city                    |0.00  |0.47    |0.00     |0.00       |
+|lgeo.lgeo_city                    |0.00  |0.48    |0.00     |0.00       |
 +----------------------------------+------+--------+---------+-----------+
 |lgeo.include.brick.lg_2412b       |0.00  |0.24    |0.00     |0.00       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.custom_macros |0.00  |0.00    |1.64     |4.08       |
+|lgeo.include.common.custom_macros |0.00  |0.00    |1.61     |4.44       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.config.lgeo_cfg              |0.00  |0.00    |0.00     |2.04       |
+|lgeo.config.lgeo_cfg              |0.00  |0.00    |0.00     |2.22       |
 +----------------------------------+------+--------+---------+-----------+
 
 
@@ -1751,19 +1739,19 @@ Messages
 +---------------------------+------------+
 |message id                 |occurrences |
 +===========================+============+
-|unused-wildcard-import     |375         |
+|unused-wildcard-import     |370         |
 +---------------------------+------------+
 |invalid-name               |119         |
 +---------------------------+------------+
-|duplicate-code             |60          |
+|duplicate-code             |61          |
 +---------------------------+------------+
 |undefined-variable         |33          |
 +---------------------------+------------+
 |pointless-string-statement |31          |
 +---------------------------+------------+
-|line-too-long              |29          |
-+---------------------------+------------+
 |bad-whitespace             |22          |
++---------------------------+------------+
+|line-too-long              |15          |
 +---------------------------+------------+
 |superfluous-parens         |11          |
 +---------------------------+------------+
@@ -1779,9 +1767,7 @@ Messages
 +---------------------------+------------+
 |unused-variable            |2           |
 +---------------------------+------------+
-|unused-argument            |2           |
-+---------------------------+------------+
-|bad-continuation           |2           |
+|unused-argument            |1           |
 +---------------------------+------------+
 |too-many-lines             |1           |
 +---------------------------+------------+
@@ -1794,5 +1780,5 @@ Messages
 
 Global evaluation
 -----------------
-Your code has been rated at -10.69/10
+Your code has been rated at -10.19/10
 
