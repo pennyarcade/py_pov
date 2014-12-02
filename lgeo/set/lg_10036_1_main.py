@@ -55,7 +55,7 @@ Parts List
 1   x104    Black   Minifig Hair Ponytail (Pic)
 1   3626bp01    Yellow  Minifig Head with Standard Grin Pattern (Pic)
 1   3626bp03    Yellow  Minifig Head with Standard Grin and Pointed
-						Moustache Pattern (Pic)
+                        Moustache Pattern (Pic)
 1   3626bp02    Yellow  Minifig Head with Standard Woman Pattern (Pic)
 1   970c00  Blue    Minifig Hips and Legs (Complete) (Pic)
 1   970c00  Red Minifig Hips and Legs (Complete) (Pic)

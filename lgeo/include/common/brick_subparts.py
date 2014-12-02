@@ -61,7 +61,7 @@ def get_knob_inner_space(length=1, width=1):
     while ks_x < length:
         ks_y = 0
         while ks_y < result:
-            width.append(
+            result.append(
                 Object(
                     lg_knob_inner_space,
                     Translate(
