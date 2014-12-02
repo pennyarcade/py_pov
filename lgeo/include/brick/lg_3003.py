@@ -77,40 +77,40 @@ def solid(length=2, width=2):
             ),
             LG_CORNER_SPACE
         ),
-        # Cylinder(
-        #     Vector(
-        #         length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
-        #         LG_CORNER_SPACE,
-        #         LG_BRICK_HEIGHT-LG_CORNER_SPACE
-        #     ),
-        #     Vector(
-        #         LG_CORNER_SPACE,
-        #         LG_CORNER_SPACE,
-        #         LG_BRICK_HEIGHT-LG_CORNER_SPACE
-        #     ),
-        #     LG_CORNER_SPACE
-        # ),
-        # Sphere(
-        #     Vector(
-        #         LG_CORNER_SPACE,
-        #         LG_CORNER_SPACE,
-        #         LG_BRICK_HEIGHT-LG_CORNER_SPACE
-        #     ),
-        #     LG_CORNER_SPACE
-        # ),
-        # Cylinder(
-        #     Vector(
-        #         LG_CORNER_SPACE,
-        #         LG_CORNER_SPACE,
-        #         LG_CORNER_SPACE
-        #     ),
-        #     Vector(
-        #         LG_CORNER_SPACE,
-        #         LG_CORNER_SPACE,
-        #         LG_BRICK_HEIGHT-LG_CORNER_SPACE
-        #     ),
-        #     LG_CORNER_SPACE
-        # ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
         # Cylinder(
         #     Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
         #     Vector(
@@ -268,9 +268,9 @@ def solid(length=2, width=2):
         #     lg_brick_cylinder,
         #     Translate(Vector(LG_BRICK_WIDTH, LG_BRICK_WIDTH, 0))
         # ),
-        # get_knob_objects(length, width),
-        # Translate(Vector(-LG_BRICK_WIDTH, -LG_BRICK_WIDTH, -LG_BRICK_HEIGHT)),
-        # Rotate(Vector(0, 0, 90))
+        get_knob_objects(length, width),
+        Translate(Vector(-LG_BRICK_WIDTH, -LG_BRICK_WIDTH, -LG_BRICK_HEIGHT)),
+        Rotate(Vector(0, 0, 90))
     )
 
 

@@ -145,9 +145,9 @@ def main():
     lg_quality = 4
 
     # L3P Settings
-    l3_version = 1.4
+    # l3_version = 1.4
     # Quality level, 0=BBox, 1=no refr, 2=normal, 3=studlogo, 4=stud2logo
-    l3_quality = lg_quality
+    # l3_quality = lg_quality
     # Width of seam between two bricks
     # L3SW = 0.5
     # L3Studs = 1  # 1=on 0=off

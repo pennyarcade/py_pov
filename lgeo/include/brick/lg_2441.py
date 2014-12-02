@@ -30,7 +30,10 @@ from pov.object_modifier.Translate import Translate
 
 from pov.other.Object import Object
 
-from lgeo.include.common.lg_defs import *
+from lgeo.include.common.lg_defs import LG_BRICK_WIDTH, LG_CORNER_SPACE
+from lgeo.include.common.lg_defs import LG_PLATE_HEIGHT, LG_E, LG_KNOB_RADIUS
+from lgeo.include.common.lg_defs import LG_TOP_HEIGHT, LG_WALL_WIDTH
+from lgeo.include.common.lg_defs import LG_KNOB_INNER_RADIUS
 
 
 lg_angle = 23.57817847
@@ -1703,7 +1706,7 @@ def solid():
                         Vector(
                             1.5*LG_BRICK_WIDTH,
                             -LG_BRICK_WIDTH/2,
-                            -LG_PLATE_HEIGHT-LG_TOP_HEIGH
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
                         )
                     )
                 ),

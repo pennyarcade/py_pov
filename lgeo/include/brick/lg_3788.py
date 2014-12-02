@@ -17,7 +17,8 @@ from math import atan2, pi, cos
 from lgeo.include.common.lg_defs import LG_BRICK_WIDTH, LG_CORNER_SPACE
 from lgeo.include.common.lg_defs import LG_PLATE_HEIGHT, lg_knob_inner_space
 from lgeo.include.common.lg_defs import LG_TOP_HEIGHT, LG_E, LG_WALL_WIDTH
-from lgeo.include.common.brick_subparts import lg_knob, lg_plate_cylinder
+from lgeo.include.common.lg_defs import lg_plate_cylinder
+from lgeo.include.common.brick_subparts import lg_knob
 
 from pov.basic.Vector import Vector
 
@@ -31,7 +32,7 @@ from pov.object_modifier.Rotate import Rotate
 from pov.other.Object import Object
 
 
-LG_ANGLE = atan2(0.44, 0.38)*180/pi
+lg_angle = atan2(0.44, 0.38)*180/pi
 
 
 def solid():
