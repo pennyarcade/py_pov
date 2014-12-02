@@ -16,11 +16,11 @@ E:578,34: Undefined variable 'lg_angle' (undefined-variable)
 E:589,33: Undefined variable 'lg_angle' (undefined-variable)
 E:590,33: Undefined variable 'lg_angle' (undefined-variable)
 ************* Module lgeo.include.brick.lg_2441
-C:  1, 0: Too many lines in module (2543/2000) (too-many-lines)
+C:  1, 0: Too many lines in module (2761/2000) (too-many-lines)
 W: 33, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
 C: 36, 0: Invalid constant name "lg_angle" (invalid-name)
 E:1706,45: Undefined variable 'LG_TOP_HEIGH' (undefined-variable)
-W:2543,-1: String statement has no effect (pointless-string-statement)
+W:2761,-1: String statement has no effect (pointless-string-statement)
 W: 33, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
 W: 33, 0: Unused import lg_brick_cylinder from wildcard import (unused-wildcard-import)
 W: 33, 0: Unused import lg_tech_knob_clear from wildcard import (unused-wildcard-import)
@@ -68,8 +68,6 @@ W: 33, 0: Unused import debug from wildcard import (unused-wildcard-import)
 W: 33, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
 W: 33, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.brick.lg_2412b
-C:236, 0: Trailing whitespace (trailing-whitespace)
-C:258, 0: Trailing whitespace (trailing-whitespace)
 W:1150,-1: String statement has no effect (pointless-string-statement)
 ************* Module lgeo.include.brick.lg_3022
 C:  1, 0: Line too long (80/79) (line-too-long)
@@ -182,7 +180,6 @@ W: 15, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-impo
 W: 15, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import get_brick_coloumn from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.brick.lg_3010
-C: 71, 0: Trailing whitespace (trailing-whitespace)
 C: 90, 0: Wrong hanging indentation.
               ),
             | ^ | (bad-continuation)
@@ -254,7 +251,7 @@ W: 16, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-im
 W: 16, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.brick.lg_3003
-E:451, 0: invalid syntax (syntax-error)
+E:274, 0: invalid syntax (syntax-error)
 ************* Module lgeo.include.common.brick_subparts
 E: 64,12: Instance of 'int' has no 'append' member (no-member)
 ************* Module lgeo.include.common.lg_defs
@@ -1196,13 +1193,13 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |6094   |77.29 |NC       |NC         |
+|code      |6312   |77.90 |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|docstring |813    |10.31 |NC       |NC         |
+|docstring |813    |10.03 |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|comment   |673    |8.54  |NC       |NC         |
+|comment   |673    |8.31  |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|empty     |305    |3.87  |NC       |NC         |
+|empty     |305    |3.76  |NC       |NC         |
 +----------+-------+------+---------+-----------+
 
 
@@ -1215,7 +1212,7 @@ Duplication
 +=========================+=======+=========+===========+
 |nb duplicated lines      |1055   |NC       |NC         |
 +-------------------------+-------+---------+-----------+
-|percent duplicated lines |13.178 |NC       |NC         |
+|percent duplicated lines |12.828 |NC       |NC         |
 +-------------------------+-------+---------+-----------+
 
 
@@ -1226,7 +1223,7 @@ Messages by category
 +-----------+-------+---------+-----------+
 |type       |number |previous |difference |
 +===========+=======+=========+===========+
-|convention |236    |NC       |NC         |
+|convention |233    |NC       |NC         |
 +-----------+-------+---------+-----------+
 |refactor   |29     |NC       |NC         |
 +-----------+-------+---------+-----------+
@@ -1243,35 +1240,35 @@ Messages by category
 +-----------------------------------+------+--------+---------+-----------+
 |module                             |error |warning |refactor |convention |
 +===================================+======+========+=========+===========+
-|lgeo.set.lg_10036_1_car            |43.59 |6.55    |0.00     |8.47       |
+|lgeo.set.lg_10036_1_car            |43.59 |6.55    |0.00     |8.58       |
 +-----------------------------------+------+--------+---------+-----------+
 |lgeo.include.brick.lg_3788         |33.33 |0.00    |0.00     |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_defs        |7.69  |2.56    |0.00     |11.86      |
+|lgeo.include.common.lg_defs        |7.69  |2.56    |0.00     |12.02      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3010         |5.13  |16.81   |0.00     |2.54       |
+|lgeo.include.brick.lg_3010         |5.13  |16.81   |0.00     |2.15       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_2441         |2.56  |13.68   |0.00     |0.85       |
+|lgeo.include.brick.lg_2441         |2.56  |13.68   |0.00     |0.86       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_house          |2.56  |0.57    |0.00     |2.12       |
+|lgeo.set.lg_10036_1_house          |2.56  |0.57    |0.00     |2.15       |
 +-----------------------------------+------+--------+---------+-----------+
 |lgeo.include.common.brick_subparts |2.56  |0.00    |0.00     |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
 |lgeo.include.brick.lg_3003         |2.56  |0.00    |0.00     |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_color       |0.00  |40.74   |0.00     |44.92      |
+|lgeo.include.common.lg_color       |0.00  |40.74   |0.00     |45.49      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3022         |0.00  |16.81   |0.00     |21.19      |
+|lgeo.include.brick.lg_3022         |0.00  |16.81   |0.00     |21.46      |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.custom_macros  |0.00  |0.85    |3.45     |5.51       |
+|lgeo.include.common.custom_macros  |0.00  |0.85    |3.45     |5.58       |
 +-----------------------------------+------+--------+---------+-----------+
 |lgeo.set.lg_10036_1_main           |0.00  |0.57    |96.55    |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
 |lgeo.lgeo_city                     |0.00  |0.57    |0.00     |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_2412b        |0.00  |0.28    |0.00     |0.85       |
+|lgeo.include.brick.lg_2412b        |0.00  |0.28    |0.00     |0.00       |
 +-----------------------------------+------+--------+---------+-----------+
-|lgeo.config.lgeo_cfg               |0.00  |0.00    |0.00     |1.69       |
+|lgeo.config.lgeo_cfg               |0.00  |0.00    |0.00     |1.72       |
 +-----------------------------------+------+--------+---------+-----------+
 
 
@@ -1296,9 +1293,9 @@ Messages
 +---------------------------+------------+
 |bad-whitespace             |22          |
 +---------------------------+------------+
-|trailing-whitespace        |12          |
-+---------------------------+------------+
 |superfluous-parens         |11          |
++---------------------------+------------+
+|trailing-whitespace        |9           |
 +---------------------------+------------+
 |wildcard-import            |8           |
 +---------------------------+------------+
@@ -1325,5 +1322,5 @@ Messages
 
 Global evaluation
 -----------------
-Your code has been rated at -9.93/10
+Your code has been rated at -9.85/10
 
