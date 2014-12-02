@@ -76,7 +76,7 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # ==== Standard POV-Ray Includes ====
 # include "colors.inc"      # Standard Color definitions
 # #include "textures.inc"   # Standard Texture definitions
-# #include "functions.inc"  
+# #include "functions.inc"
 #   internal functions usable in user defined functions
 
 # ==== Additional Includes ====
@@ -85,7 +85,7 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # --- general include files ---
 # #include "arrays.inc"     # macros for manipulating arrays
 # #include "chars.inc"      # A complete library of character objects,
-                            # by Ken Maeno
+#                           # by Ken Maeno
 # #include "consts.inc"     # Various constants and alias definitions
 # #include "debug.inc"      # contains various macros for debugging scene files
 # #include "logo.inc"       # The official POV-Ray Logo in various forms
@@ -96,10 +96,10 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # #include "shapes2.inc"    # some not built in basic shapes
 # #include "shapesq.inc"    # Pre-defined quartic shapes
 # #include "skies.inc"      # Ready defined sky spheres
-# #include "strings.inc"    # macros for generating and 
-                            # manipulating text strings
-# #include "sunpos.inc"     # macro for sun position on a given date, 
-                            # time, and location on earth
+# #include "strings.inc"    # macros for generating and
+#                           # manipulating text strings
+# #include "sunpos.inc"     # macro for sun position on a given date,
+#                           # time, and location on earth
 # #include "transforms.inc" # transformation macros
 
 # --- textures ---
@@ -111,8 +111,8 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # #include "stones1.inc"    # Great stone-textures created by Mike Miller
 # #include "stones2.inc"    # More, done by Dan Farmer and Paul Novak
 # #include "woodmaps.inc"   # Basic wooden colormaps
-# #include "woods.inc"      # Great wooden textures created 
-                            # by Dan Farmer and Paul Novak
+# #include "woods.inc"      # Great wooden textures created
+#                           # by Dan Farmer and Paul Novak
 
 # ==== LGEO Colors and Definitions ====
 # include "lg_color.inc"

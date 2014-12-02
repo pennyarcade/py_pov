@@ -42,9 +42,9 @@ from pov.object_modifier.Translate import Translate
 
 from pov.other.Object import Object
 
-#***********************************************************************
-#*  Dimensions
-#***********************************************************************/
+# **********************************************************************
+#  Dimensions
+# **********************************************************************
 
 LG_KNOB_RADIUS = 0.24
 LG_KNOB_HEIGHT = 0.16
@@ -182,7 +182,7 @@ def lego_logo_text_clear():
         )
 
     letter_g = Merge(
-        #Letter G
+        # Letter G
         Sphere(Vector(-35.95, 0, 57), 6),
         Torus(
             18.45, 6,

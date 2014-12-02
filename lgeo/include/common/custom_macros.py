@@ -32,7 +32,7 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # include "colors.inc"     # Standard Color definitions
 # #include "textures.inc"   # Standard Texture definitions
 # #include "functions.inc"  # internal functions usable in user defined
-                            # functions
+#                           # functions
 
 # ==== Additional Includes ====
 # Don't have all of the following included at once, it'll cost memory

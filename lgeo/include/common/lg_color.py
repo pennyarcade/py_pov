@@ -1,18 +1,18 @@
-'''****************************************************************************/
-*                                                                             */
-* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)      */
-*                                                                             */
-* 19970623 Lutz Uhlmann                                                       */
-* 20070929 Lutz Uhlmann changed to use predefined finishes                    */
-* 20070929 Lutz Uhlmann changed to use RGB values from ldconfig.ldr           */
-* 20071124 Lutz Uhlmann added lg_quality for L3P compatibility                */
-*                                                                             */
-* This file is in no way related to the LEGO(tm) Group.                       */
-* It is provided for private non-commercial use only.                         */
-*                                                                             */
-* lg_color: Color Definitions for LGEO POV-Ray Library                        */
-*                                                                             */
-****************************************************************************'''
+'''***************************************************************************
+*                                                                            *
+* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)     *
+*                                                                            *
+* 19970623 Lutz Uhlmann                                                      *
+* 20070929 Lutz Uhlmann changed to use predefined finishes                   *
+* 20070929 Lutz Uhlmann changed to use RGB values from ldconfig.ldr          *
+* 20071124 Lutz Uhlmann added lg_quality for L3P compatibility               *
+*                                                                            *
+* This file is in no way related to the LEGO(tm) Group.                      *
+* It is provided for private non-commercial use only.                        *
+*                                                                            *
+* lg_color: Color Definitions for LGEO POV-Ray Library                       *
+*                                                                            *
+***************************************************************************'''
 
 from lgeo.config.lgeo_cfg import *
 
@@ -291,7 +291,7 @@ lg_clear_blue = get_clear_color(
 )
 
 
-#34
+# 34
 lg_clear_blue = get_clear_color(
     Vector(6/255.0, 98/255.0, 50/255.0),
     lg_quality
@@ -559,7 +559,7 @@ lg_sand_blue = Texture(
 # 383
 lg_chrome = Texture(
     Pigment(Color(rgb=Vector(232/255.0, 232/255.0, 232/255.0))),
-    Finish( lg_chrome_finish ),
+    Finish(lg_chrome_finish),
 )
 
 

@@ -131,7 +131,7 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # include "colors.inc"     # Standard Color definitions
 # #include "textures.inc"   # Standard Texture definitions
 # #include "functions.inc"  # internal functions usable in user
-                            # defined functions
+#                           # defined functions
 
 # ==== Additional Includes ====
 # Don't have all of the following included at once, it'll cost memory and time
@@ -139,7 +139,7 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # --- general include files ---
 # #include "arrays.inc"     # macros for manipulating arrays
 # #include "chars.inc"      # A complete library of character objects,
-                            # by Ken Maeno
+#                           # by Ken Maeno
 # #include "consts.inc"     # Various constants and alias definitions
 # #include "debug.inc"      # contains various macros f. debugging scene files
 # #include "logo.inc"       # The official POV-Ray Logo in various forms
@@ -152,7 +152,7 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # #include "skies.inc"      # Ready defined sky spheres
 # #include "strings.inc"    # macros for generating and manipulating text
 # #include "sunpos.inc"     # macro for sun position on a given date,
-                            # time, and location on earth
+#                           # time, and location on earth
 # #include "transforms.inc" # transformation macros
 
 # --- textures ---
