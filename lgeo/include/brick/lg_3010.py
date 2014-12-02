@@ -68,7 +68,7 @@ def solid(LENGTH=4, WIDTH=1):
                 LG_CORNER_SPACE
             ),
             Vector(
-                ((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), 
+                ((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE),
                 LG_CORNER_SPACE,
                 (LG_BRICK_HEIGHT-LG_CORNER_SPACE)
             ),
