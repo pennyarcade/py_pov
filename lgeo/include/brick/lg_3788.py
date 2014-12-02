@@ -740,5 +740,3 @@ def solid():
     )
 
     return mainpart
-
-

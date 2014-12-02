@@ -87,7 +87,7 @@ def solid(LENGTH=4, WIDTH=1):
                 ((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE),
                 LG_CORNER_SPACE,
                 (LG_BRICK_HEIGHT-LG_CORNER_SPACE)
-              ),
+            ),
             Vector(
                 LG_CORNER_SPACE,
                 LG_CORNER_SPACE,
@@ -168,7 +168,7 @@ def solid(LENGTH=4, WIDTH=1):
                 LG_CORNER_SPACE,
                 ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE),
                 (LG_BRICK_HEIGHT-LG_CORNER_SPACE)
-              ),
+            ),
             LG_CORNER_SPACE
         ),
         Cylinder(

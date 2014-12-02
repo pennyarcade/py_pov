@@ -35,19 +35,19 @@ def solid(length=2, width=2):
       @Todo: DocString
     '''
     return Union(
-        # Sphere(
-        #     Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
-        #     LG_CORNER_SPACE
-        # ),
-        # Cylinder(
-        #     Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
-        #     Vector(
-        #         length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
-        #         LG_CORNER_SPACE,
-        #         LG_CORNER_SPACE
-        #     ),
-        #     LG_CORNER_SPACE
-        # ),
+        Sphere(
+            Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
         # Sphere(
         #     Vector(
         #         length*LG_BRICK_WIDTH-LG_CORNER_SPACE,

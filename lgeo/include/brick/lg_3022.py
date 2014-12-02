@@ -1,16 +1,16 @@
-'''****************************************************************************/
-*                                                                             */
-* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)      */
-*                                                                             */
-* 19970623 Lutz Uhlmann                                                       */
-* 20071226 Lutz Uhlmann fixed stud orientation                                */
-*                                                                             */
-* This file is in no way related to the LEGO(tm) Group.                       */
-* It is provided for private non-commercial use only.                         */
-*                                                                             */
-* lg_3022: Plate 2 x 2                                                        */
-*                                                                             */
-*****************************************************************************'''
+'''***************************************************************************
+*                                                                            *
+* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)     *
+*                                                                            *
+* 19970623 Lutz Uhlmann                                                      *
+* 20071226 Lutz Uhlmann fixed stud orientation                               *
+*                                                                            *
+* This file is in no way related to the LEGO(tm) Group.                      *
+* It is provided for private non-commercial use only.                        *
+*                                                                            *
+* lg_3022: Plate 2 x 2                                                       *
+*                                                                            *
+***************************************************************************'''
 
 from lgeo.include.common.lg_defs import *
 from lgeo.include.common.brick_subparts import *
@@ -276,7 +276,11 @@ def solid(LENGTH=2, WIDTH=2):
         ),
         get_knob_objects(LENGTH, WIDTH, LG_PLATE_HEIGHT),
         Translate(
-            Vector(-LENGTH/2*LG_BRICK_WIDTH, -LG_BRICK_WIDTH, -LG_PLATE_HEIGHT)
+            Vector(
+                -LENGTH/2*LG_BRICK_WIDTH,
+                -LG_BRICK_WIDTH,
+                -LG_PLATE_HEIGHT
+            )
         ),
         Rotate(Vector(0, 0, 90))
     )
@@ -466,5 +470,4 @@ LG_CORNER_SPACE
  Rotate(Vector(0, 0, 90)
 ),
 
-#end
 '''
