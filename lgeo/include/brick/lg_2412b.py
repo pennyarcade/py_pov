@@ -233,7 +233,7 @@ def solid(length=2, width=1):
                 (LG_PLATE_HEIGHT-LG_CORNER_SPACE)
             ),
             Vector(
-                LG_CORNER_SPACE, 
+                LG_CORNER_SPACE,
                 (2*LG_WALL_WIDTH+LG_CORNER_SPACE),
                 (LG_PLATE_HEIGHT-LG_CORNER_SPACE)
             ),
@@ -255,7 +255,7 @@ def solid(length=2, width=1):
         Cylinder(
             Vector(
                 ((length*LG_BRICK_WIDTH)-LG_CORNER_SPACE),
-                (4*LG_WALL_WIDTH+LG_CORNER_SPACE), 
+                (4*LG_WALL_WIDTH+LG_CORNER_SPACE),
                 (LG_PLATE_HEIGHT-LG_CORNER_SPACE)
             ),
             Vector(
@@ -741,7 +741,7 @@ def solid(length=2, width=1):
 #declare lg_2412b_clear =
 Merge(
  Sphere(
-  Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, 
+  Vector(LG_CORNER_SPACE, LG_CORNER_SPACE,
     LG_CORNER_SPACE+0.04), LG_CORNER_SPACE
  ),
  Cylinder(
@@ -866,7 +866,7 @@ LG_CORNER_SPACE
  ),
  Cylinder(
   Vector(((length*LG_BRICK_WIDTH)-LG_CORNER_SPACE),
-    (3*LG_WALL_WIDTH-LG_CORNER_SPACE), 
+    (3*LG_WALL_WIDTH-LG_CORNER_SPACE),
     LG_PLATE_HEIGHT-LG_CORNER_SPACE)),
   Vector(LG_CORNER_SPACE, (3*LG_WALL_WIDTH-LG_CORNER_SPACE),
     (LG_PLATE_HEIGHT-LG_CORNER_SPACE)),
