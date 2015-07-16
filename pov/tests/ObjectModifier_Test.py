@@ -59,6 +59,6 @@ class TranslateTestCase(unittest.TestCase):
         '''
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Vector TVector has more or less than 4 dimensions'
+            'Vector TVector has more or less than 3 dimensions'
         ):
             Translate(Vector(1, 2, 3, 4))

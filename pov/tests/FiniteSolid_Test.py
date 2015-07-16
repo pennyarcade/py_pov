@@ -636,7 +636,7 @@ class HeightFieldTestCase(unittest.TestCase):
         '''
             Set up fixture
         '''
-        self.sut = HeightField('pov/texts/fixture/test.gif')
+        self.sut = HeightField('pov/tests/fixture/test.gif')
 
     def test_creation(self):
         '''

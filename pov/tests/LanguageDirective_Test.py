@@ -84,7 +84,7 @@ class IncludeTestCase(unittest.TestCase):
                 os.getcwd(), os.sep, 'fixture/nonexistant.inc'
             )
         ):
-            self.sut = Include('fixture/nonexistant.inc')
+            self.sut = Include('pov/tests/fixture/nonexistant.inc')
 
 
 class VersionTestCase(unittest.TestCase):
