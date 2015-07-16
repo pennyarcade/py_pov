@@ -14,106 +14,320 @@ W: 67,-1: String statement has no effect (pointless-string-statement)
 C:169, 0: Invalid constant name "set_10036_1_house_nonmoving" (invalid-name)
 E:169,30: Undefined variable 'Union' (undefined-variable)
 ************* Module lgeo.set.lg_10036_1_car
-C:278, 0: Exactly one space required after comma
-StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
-                ^ (bad-whitespace)
-C:278, 0: Exactly one space required after comma
-StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
-                           ^ (bad-whitespace)
-C:278, 0: Exactly one space required after comma
-StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
-                                      ^ (bad-whitespace)
-C:278, 0: Exactly one space required after comma
-StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
-                                                ^ (bad-whitespace)
-C:278, 0: Exactly one space required after comma
-StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
-                                                           ^ (bad-whitespace)
-C:278, 0: Exactly one space required after comma
-StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
-                                                                 ^ (bad-whitespace)
-C:278, 0: Exactly one space required after comma
-StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
-                                                                      ^ (bad-whitespace)
-C:280, 0: Exactly one space required after comma
-StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
-                ^ (bad-whitespace)
-C:280, 0: Exactly one space required after comma
-StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
-                           ^ (bad-whitespace)
-C:280, 0: Exactly one space required after comma
-StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
-                                      ^ (bad-whitespace)
-C:280, 0: Exactly one space required after comma
-StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
-                                                           ^ (bad-whitespace)
-C:280, 0: Exactly one space required after comma
-StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
-                                                                 ^ (bad-whitespace)
-C:280, 0: Exactly one space required after comma
-StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
-                                                                      ^ (bad-whitespace)
-C:282, 0: Exactly one space required after comma
-StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
-                 ^ (bad-whitespace)
-C:282, 0: Exactly one space required after comma
-StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
-                            ^ (bad-whitespace)
-C:282, 0: Exactly one space required after comma
-StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
-                                       ^ (bad-whitespace)
-C:282, 0: Exactly one space required after comma
-StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
-                                                 ^ (bad-whitespace)
-C:282, 0: Exactly one space required after comma
-StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
-                                                            ^ (bad-whitespace)
-C:282, 0: Exactly one space required after comma
-StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
-                                                                  ^ (bad-whitespace)
-C:282, 0: Exactly one space required after comma
-StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
-                                                                       ^ (bad-whitespace)
 W: 43,-1: String statement has no effect (pointless-string-statement)
 W: 56,-1: String statement has no effect (pointless-string-statement)
 W: 64,-1: String statement has no effect (pointless-string-statement)
-W:275,-1: String statement has no effect (pointless-string-statement)
-E:278, 0: Undefined variable 'StdBrick' (undefined-variable)
-E:278, 9: Undefined variable 'lg_3021' (undefined-variable)
-E:278,21: Undefined variable 'lg_red' (undefined-variable)
-E:278,34: Undefined variable 'LGBW' (undefined-variable)
-E:278,44: Undefined variable 'LGPH' (undefined-variable)
-E:280, 0: Undefined variable 'StdBrick' (undefined-variable)
-E:280, 9: Undefined variable 'lg_3024' (undefined-variable)
-E:280,19: Undefined variable 'lg_white' (undefined-variable)
-E:280,34: Undefined variable 'LGBW' (undefined-variable)
-E:280,44: Undefined variable 'LGPH' (undefined-variable)
-E:280,55: Undefined variable 'LGBW' (undefined-variable)
-E:282, 0: Undefined variable 'StdBrick' (undefined-variable)
-E:282, 9: Undefined variable 'lg_4085c' (undefined-variable)
-E:282,20: Undefined variable 'lg_white' (undefined-variable)
-E:282,35: Undefined variable 'LGBW' (undefined-variable)
-E:282,45: Undefined variable 'LGPH' (undefined-variable)
-E:282,56: Undefined variable 'LGBW' (undefined-variable)
-W:286,-1: String statement has no effect (pointless-string-statement)
-W:292,-1: String statement has no effect (pointless-string-statement)
-W:296,-1: String statement has no effect (pointless-string-statement)
-W:307,-1: String statement has no effect (pointless-string-statement)
-W:311,-1: String statement has no effect (pointless-string-statement)
-W:316,-1: String statement has no effect (pointless-string-statement)
-W:320,-1: String statement has no effect (pointless-string-statement)
-W:327,-1: String statement has no effect (pointless-string-statement)
-W:331,-1: String statement has no effect (pointless-string-statement)
-W:339,-1: String statement has no effect (pointless-string-statement)
-W:343,-1: String statement has no effect (pointless-string-statement)
-W:352,-1: String statement has no effect (pointless-string-statement)
-W:356,-1: String statement has no effect (pointless-string-statement)
-W:360,-1: String statement has no effect (pointless-string-statement)
-W:364,-1: String statement has no effect (pointless-string-statement)
-W:371,-1: String statement has no effect (pointless-string-statement)
-W:467,-1: String statement has no effect (pointless-string-statement)
-W: 66, 0: Unused Union imported from pov.csg.Union (unused-import)
-W: 68, 0: Unused Comment imported from pov.other.Comment (unused-import)
+W:112, 0: Wildcard import lgeo.include.common.lg_defs (wildcard-import)
+W:146, 0: Wildcard import lgeo.include.common.lg_color (wildcard-import)
+C:150, 0: Invalid argument name "ox" (invalid-name)
+C:150, 0: Invalid argument name "oy" (invalid-name)
+C:150, 0: Invalid argument name "oz" (invalid-name)
+C:150, 0: Invalid argument name "rx" (invalid-name)
+C:150, 0: Invalid argument name "ry" (invalid-name)
+C:150, 0: Invalid argument name "rz" (invalid-name)
+R:150, 0: Too many arguments (6/5) (too-many-arguments)
+W:150,26: Unused argument 'oz' (unused-argument)
+W:150,20: Unused argument 'oy' (unused-argument)
+W:150,14: Unused argument 'ox' (unused-argument)
+W:150,32: Unused argument 'rx' (unused-argument)
+W:150,38: Unused argument 'ry' (unused-argument)
+W:150,44: Unused argument 'rz' (unused-argument)
+W:285,-1: String statement has no effect (pointless-string-statement)
+W:291,-1: String statement has no effect (pointless-string-statement)
+W:295,-1: String statement has no effect (pointless-string-statement)
+W:306,-1: String statement has no effect (pointless-string-statement)
+W:310,-1: String statement has no effect (pointless-string-statement)
+W:315,-1: String statement has no effect (pointless-string-statement)
+W:319,-1: String statement has no effect (pointless-string-statement)
+W:326,-1: String statement has no effect (pointless-string-statement)
+W:330,-1: String statement has no effect (pointless-string-statement)
+W:338,-1: String statement has no effect (pointless-string-statement)
+W:342,-1: String statement has no effect (pointless-string-statement)
+W:351,-1: String statement has no effect (pointless-string-statement)
+W:355,-1: String statement has no effect (pointless-string-statement)
+W:359,-1: String statement has no effect (pointless-string-statement)
+W:363,-1: String statement has no effect (pointless-string-statement)
+W:370,-1: String statement has no effect (pointless-string-statement)
+W:466,-1: String statement has no effect (pointless-string-statement)
+W:112, 0: Unused import lg_plate_cylinder from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_test from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_GRID_WIDTH from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_brick_column_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Object from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Torus from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_BRICK_HEIGHT from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_knob_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_KNOB_INNER_RADIUS from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import SdlSyntaxException from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_stud_logo from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_PLATE_INNER_HEIGHT from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_brick_column from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_BRICK_INNER_HEIGHT from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import x from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_BRICK_WIDTH from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Scale from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_CYLINDER_WALL_WIDTH from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Rotate from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_brick_cylinder_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Translate from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lego_logo_text from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LDU from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_knob_dot from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_plate_column_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Intersection from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import math from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_CYLINDER_RADIUS from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_KNOB_HEIGHT_LOGO from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LGBH from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import debug from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Vector from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_plate_column from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Cylinder from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_brick_cylinder from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_E from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_KNOB_HEIGHT from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_knob from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Box from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_support_wall_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_plate_cylinder_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_knob_inner_space from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Merge from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import z from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_PLATE_HEIGHT from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_tech_knob_logo_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_CORNER_SPACE from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_WALL_WIDTH from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_CROSSAXLE_WIDTH from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import ClippedBy from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_KNOB_RADIUS from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import sqrt from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_quality from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Plane from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Difference from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_KNOB_CORNER_SPACE from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_tech_knob_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Sphere from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import y from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import PALEGREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_solid_finish from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY05 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_dark_green from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_undefined from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import BLACK from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_pearl_finish from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_violet from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import Interior from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import SUMMERSKY from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MICA from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import SEMISWEETCHOC from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import Finish from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_gold_chrome from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import PLUM from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import LIGHT_PURPLE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import Pigment from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import SCARLET from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MEDIUMBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import THISTLE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_dark_blue from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY65 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import chsv2rgb from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import TAN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_violet from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MIDNIGHTBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY60 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import BLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DARKTURQUOISE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DARKSLATEGREY from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DARKGREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_very_light_bluish_grey from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import CORAL from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_clear_blue from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import BRIGHTGOLD from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import AQUAMARINE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_red from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_medium_blue from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MAROON from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GREENCOPPER from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import NAVY from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MED_PURPLE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import SILVER from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_dark_flesh from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import LIGHTSTEELBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MEDIUMSEAGREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_rose from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_very_light_grey from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import crgb2h from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY50 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import BAKERSCHOC from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY55 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import BROWN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import SKYBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MEDIUMWOOD from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import VERYDARKBROWN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DIMGRAY from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_flesh from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import SALMON from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_sand_purple from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import Version from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import SPRINGGREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import STEELBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY45 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_green from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import NEWTAN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import FLESH from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_blue from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import COOLCOPPER from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_bright_purple from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import SLATEBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import NAVYBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import NEWMIDNIGHTBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import BRONZE2 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import LIGHTGRAY from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import CADETBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY20 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_grey from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import LIMEGREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import SPICYPINK from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_lime from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_medium_violet from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import VLIGHTGRAY from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import OLDGOLD from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_orange from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import BRONZE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_transparent_finish from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DARKWOOD from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import WHEAT from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MEDIUMVIOLETRED from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY35 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import ch2rgb from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_pearl_gold from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_dark_orange from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DARKSLATEGRAY from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import FORESTGREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import NEONBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import HUNTERSGREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import BLUEVIOLET from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import BRASS from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import FIREBRICK from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MEDIUMFORESTGREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import VIOLETRED from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import YELLOW from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DARKORCHID from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_medium_orange from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import Texture from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GREY from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MEDIUMSLATEBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_teal from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_bright_green from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import CYAN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_salmon from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import LIGHTBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import RED from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import ORCHID from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY25 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import crgb2hsv from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MEDIUMGOLDENROD from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_yellow from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_black from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_dark_red from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_blue from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import YELLOWGREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MEDIUMAQUAMARINE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_ior from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import ORANGE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import get_clear_color from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import chsl2rgb from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_tan from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GOLDENROD from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_pearl_copper from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_purple from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY30 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_medium_green from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_bluish_grey from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import Irid from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_sand_blue from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY80 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_green from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_maersk_blue from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DUSTYROSE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_chrome_finish from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_dark_grey from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY15 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import LIGHTWOOD from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import INDIANRED from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY10 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_sand_green from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY95 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY90 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_pearl_blue from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_flesh from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import crgb2hsl from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_pearl_grey from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import RICHBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GOLD from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_chrome from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import TURQUOISE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import FELDSPAR from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_purple from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DARKSLATEBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DARKOLIVEGREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import QUARTZ from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_cyan from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import VERY_LIGHT_PURPLE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_dark_bluish_grey from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_clear_neon_orange from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import SEAGREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_blue_green from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MAGENTA from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_brown from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_earth_orange from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_pink from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY85 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_paradisa_pink from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_orange from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DIMGREY from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import CLEAR from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MANDARINORANGE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import COPPER from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import VLIGHTGREY from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MEDIUMTURQUOISE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_clear from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_dark_tan from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MEDIUMSPRINGGREEN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_sand_red from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import LIGHTGREY from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_turquoise from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DARKBROWN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_royal_blue from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import NEONPINK from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import WHITE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import ORANGERED from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import PINK from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import SIENNA from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DARKTAN from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import CORNFLOWERBLUE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GREENYELLOW from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import Color from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY40 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import MEDIUMORCHID from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DARKPURPLE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_reddish_brown from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import VIOLET from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_magenta from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import DKGREENCOPPER from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import KHAKI from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY75 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_violet_blue from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_dark_pink from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import GRAY70 from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.common.lg_defs
 C:100, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
 C:124, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
@@ -400,55 +614,16 @@ W: 22, 0: Unused import MAGENTA from wildcard import (unused-wildcard-import)
 W: 22, 0: Unused import GRAY75 from wildcard import (unused-wildcard-import)
 W: 22, 0: Unused import GRAY70 from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.brick.lg_3022
-E:215, 0: unexpected indent (syntax-error)
+C: 18, 0: Line too long (85/79) (line-too-long)
+W:482,-1: String statement has no effect (pointless-string-statement)
 ************* Module lgeo.include.brick.lg_3010
-E:229, 0: invalid syntax (syntax-error)
+C: 16, 0: Line too long (82/79) (line-too-long)
+W:485,-1: String statement has no effect (pointless-string-statement)
+W: 32, 0: Unused Object imported from pov.other.Object (unused-import)
 ************* Module lgeo.include.brick.lg_2441
-C:  1, 0: Too many lines in module (2764/2000) (too-many-lines)
-C: 39, 0: Invalid constant name "lg_angle" (invalid-name)
-E:1137,24: Undefined variable 'lg_knob' (undefined-variable)
-E:1139,24: Undefined variable 'Scale' (undefined-variable)
-E:1145,24: Undefined variable 'lg_knob' (undefined-variable)
-E:1147,24: Undefined variable 'Scale' (undefined-variable)
-E:1153,24: Undefined variable 'lg_knob' (undefined-variable)
-E:1155,24: Undefined variable 'Scale' (undefined-variable)
-E:1165,24: Undefined variable 'lg_knob' (undefined-variable)
-E:1167,24: Undefined variable 'Scale' (undefined-variable)
-E:1177,24: Undefined variable 'lg_knob' (undefined-variable)
-E:1179,24: Undefined variable 'Scale' (undefined-variable)
-E:1189,24: Undefined variable 'lg_knob' (undefined-variable)
-E:1191,24: Undefined variable 'Scale' (undefined-variable)
-E:1201,24: Undefined variable 'lg_knob' (undefined-variable)
-E:1203,24: Undefined variable 'Scale' (undefined-variable)
-E:1213,24: Undefined variable 'lg_knob' (undefined-variable)
-E:1215,24: Undefined variable 'Scale' (undefined-variable)
-E:1225,24: Undefined variable 'lg_knob' (undefined-variable)
-E:1227,24: Undefined variable 'Scale' (undefined-variable)
-E:1233,24: Undefined variable 'lg_knob' (undefined-variable)
-E:1235,24: Undefined variable 'Scale' (undefined-variable)
-E:1362,12: Undefined variable 'lg_plate_cylinder' (undefined-variable)
-E:1366,12: Undefined variable 'lg_plate_cylinder' (undefined-variable)
-E:1562,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1572,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1582,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1592,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1618,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1628,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1638,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1648,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1674,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1684,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1694,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1704,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1714,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1724,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1734,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1744,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1754,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1764,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1774,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-E:1784,20: Undefined variable 'lg_knob_inner_space' (undefined-variable)
-W:2764,-1: String statement has no effect (pointless-string-statement)
+C:  1, 0: Too many lines in module (2767/2000) (too-many-lines)
+C: 42, 0: Invalid constant name "lg_angle" (invalid-name)
+W:2767,-1: String statement has no effect (pointless-string-statement)
 ************* Module lgeo.include.brick.lg_2412b
 W:1150,-1: String statement has no effect (pointless-string-statement)
 ************* Module lgeo.include.brick.lg_3003
@@ -519,8 +694,252 @@ W: 16, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-w
 ************* Module lgeo.include.brick.lg_3788
 C: 35, 0: Invalid constant name "lg_angle" (invalid-name)
 R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:44
+==lgeo.include.brick.lg_3010:54
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ), (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3010:175
+==lgeo.include.brick.lg_3022:168
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:29
+==lgeo.include.brick.lg_3022:32
+from pov.other.Object import Object
+
+
+def solid(length=2, width=2):
+    '''
+      @Todo: DocString
+    '''
+    return Union(
+        Sphere(
+            Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3010:120
+==lgeo.include.brick.lg_3022:113
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3010:53
+==lgeo.include.brick.lg_3022:46
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:17
+==lgeo.include.brick.lg_3010:19
+from pov.basic.Vector import Vector
+
+from pov.csg.Union import Union
+from pov.csg.Difference import Difference
+
+from pov.finite_solid.Box import Box
+from pov.finite_solid.Cylinder import Cylinder
+from pov.finite_solid.Sphere import Sphere
+
+from pov.object_modifier.Rotate import Rotate
+from pov.object_modifier.Translate import Translate
+
+from pov.other.Object import Object
+
+ (duplicate-code)
+R:  1, 0: Similar lines in 3 files
 ==lgeo.include.brick.lg_2412b:14
 ==lgeo.include.brick.lg_3003:17
+==lgeo.include.brick.lg_3010:19
 from pov.basic.Vector import Vector
 
 from pov.csg.Union import Union
@@ -533,10 +952,139 @@ from pov.finite_solid.Sphere import Sphere
 from pov.object_modifier.Rotate import Rotate
 from pov.object_modifier.Translate import Translate
  (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_3003:97
+==lgeo.include.brick.lg_3010:107
+==lgeo.include.brick.lg_3022:100
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:75
+==lgeo.include.brick.lg_3010:242
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2412b:303
+==lgeo.include.brick.lg_3022:236
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_PLATE_HEIGHT-LG_CORNER_SPACE
+            ),
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2412b:264
+==lgeo.include.brick.lg_3022:155
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_PLATE_HEIGHT-LG_CORNER_SPACE
+            ),
+            Vector(
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_3003:55
+==lgeo.include.brick.lg_3010:65
+==lgeo.include.brick.lg_3022:168
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_3003:97
+==lgeo.include.brick.lg_3010:107
+==lgeo.include.brick.lg_3022:113
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3010:120
+==lgeo.include.brick.lg_3022:100
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3010:256
+==lgeo.include.brick.lg_3022:249
+            ),
+            LG_CORNER_SPACE
+        ),
+        Difference(
+            Union(
+                Box(
+                    Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, 0),
+                    Vector(
+                        length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                        width*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_3010:44
+==lgeo.include.brick.lg_3022:100
+==lgeo.include.brick.lg_3022:113
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector( (duplicate-code)
 R:  1, 0: Similar lines in 4 files
-==lgeo.include.brick.lg_2441:1707
-==lgeo.include.brick.lg_2441:1717
-==lgeo.include.brick.lg_2441:1727
+==lgeo.include.brick.lg_2441:1710
+==lgeo.include.brick.lg_2441:1720
+==lgeo.include.brick.lg_2441:1730
 ==lgeo.include.brick.lg_3788:719
                             -LG_BRICK_WIDTH/2,
                             -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
@@ -548,9 +1096,9 @@ R:  1, 0: Similar lines in 4 files
                     Translate(
                         Vector( (duplicate-code)
 R:  1, 0: Similar lines in 5 files
-==lgeo.include.brick.lg_2441:1677
-==lgeo.include.brick.lg_2441:1687
-==lgeo.include.brick.lg_2441:1697
+==lgeo.include.brick.lg_2441:1680
+==lgeo.include.brick.lg_2441:1690
+==lgeo.include.brick.lg_2441:1700
 ==lgeo.include.brick.lg_3788:699
 ==lgeo.include.brick.lg_3788:709
                             LG_BRICK_WIDTH/2,
@@ -562,12 +1110,36 @@ R:  1, 0: Similar lines in 5 files
                     lg_knob_inner_space,
                     Translate(
                         Vector( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:98
+==lgeo.include.brick.lg_3010:45
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2412b:304
+==lgeo.include.brick.lg_3022:80
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_PLATE_HEIGHT-LG_CORNER_SPACE
+            ),
+            Vector( (duplicate-code)
 R:  1, 0: Similar lines in 8 files
-==lgeo.include.brick.lg_2441:1738
-==lgeo.include.brick.lg_2441:1748
-==lgeo.include.brick.lg_2441:1758
-==lgeo.include.brick.lg_2441:1768
-==lgeo.include.brick.lg_2441:1778
+==lgeo.include.brick.lg_2441:1741
+==lgeo.include.brick.lg_2441:1751
+==lgeo.include.brick.lg_2441:1761
+==lgeo.include.brick.lg_2441:1771
+==lgeo.include.brick.lg_2441:1781
 ==lgeo.include.brick.lg_3788:700
 ==lgeo.include.brick.lg_3788:710
 ==lgeo.include.brick.lg_3788:720
@@ -580,7 +1152,7 @@ R:  1, 0: Similar lines in 8 files
                     Translate(
                         Vector( (duplicate-code)
 R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2441:1668
+==lgeo.include.brick.lg_2441:1671
 ==lgeo.include.brick.lg_3788:690
                     -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
                 )
@@ -591,12 +1163,12 @@ R:  1, 0: Similar lines in 2 files
                     Translate(
                         Vector( (duplicate-code)
 R:  1, 0: Similar lines in 7 files
-==lgeo.include.brick.lg_2441:1566
-==lgeo.include.brick.lg_2441:1576
-==lgeo.include.brick.lg_2441:1586
-==lgeo.include.brick.lg_2441:1622
-==lgeo.include.brick.lg_2441:1632
-==lgeo.include.brick.lg_2441:1642
+==lgeo.include.brick.lg_2441:1569
+==lgeo.include.brick.lg_2441:1579
+==lgeo.include.brick.lg_2441:1589
+==lgeo.include.brick.lg_2441:1625
+==lgeo.include.brick.lg_2441:1635
+==lgeo.include.brick.lg_2441:1645
 ==lgeo.include.brick.lg_3788:389
                             -LG_TOP_HEIGHT
                         )
@@ -606,22 +1178,10 @@ R:  1, 0: Similar lines in 7 files
                     lg_knob_inner_space,
                     Translate(
                         Vector( (duplicate-code)
-R:  1, 0: Similar lines in 3 files
-==lgeo.include.brick.lg_2412b:14
-==lgeo.include.brick.lg_2441:16
-==lgeo.include.brick.lg_3003:17
-from pov.basic.Vector import Vector
-
-from pov.csg.Union import Union
-from pov.csg.Difference import Difference
-
-from pov.finite_solid.Box import Box
-from pov.finite_solid.Cylinder import Cylinder
-from pov.finite_solid.Sphere import Sphere (duplicate-code)
-R:  1, 0: Similar lines in 3 files
-==lgeo.include.brick.lg_2412b:303
-==lgeo.include.brick.lg_3003:55
-==lgeo.include.brick.lg_3003:76
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:75
+==lgeo.include.brick.lg_3010:174
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
             ),
             LG_CORNER_SPACE
         ),
@@ -630,8 +1190,9 @@ R:  1, 0: Similar lines in 3 files
                 length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                 LG_CORNER_SPACE, (duplicate-code)
 R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2412b:264
-==lgeo.include.brick.lg_3003:97
+==lgeo.include.brick.lg_3003:96
+==lgeo.include.brick.lg_3010:161
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
             ),
             LG_CORNER_SPACE
         ),
@@ -640,19 +1201,33 @@ R:  1, 0: Similar lines in 2 files
                 LG_CORNER_SPACE,
                 LG_CORNER_SPACE, (duplicate-code)
 R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2412b:89
-==lgeo.include.brick.lg_3003:89
-            ),
-            LG_CORNER_SPACE
-        ),
-        Sphere(
+==lgeo.include.brick.lg_3003:100
+==lgeo.include.brick.lg_3010:123
+        Cylinder(
             Vector(
                 LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            Vector(
                 LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 4 files
+==lgeo.include.brick.lg_2412b:14
+==lgeo.include.brick.lg_2441:16
+==lgeo.include.brick.lg_3003:17
+==lgeo.include.brick.lg_3010:19
+from pov.basic.Vector import Vector
+
+from pov.csg.Union import Union
+from pov.csg.Difference import Difference
+
+from pov.finite_solid.Box import Box
+from pov.finite_solid.Cylinder import Cylinder
+from pov.finite_solid.Sphere import Sphere (duplicate-code)
 R:  1, 0: Similar lines in 5 files
-==lgeo.include.brick.lg_2441:1158
-==lgeo.include.brick.lg_2441:1170
-==lgeo.include.brick.lg_2441:1182
+==lgeo.include.brick.lg_2441:1161
+==lgeo.include.brick.lg_2441:1173
+==lgeo.include.brick.lg_2441:1185
 ==lgeo.include.brick.lg_3788:641
 ==lgeo.include.brick.lg_3788:652
                         LG_BRICK_WIDTH/2,
@@ -662,13 +1237,438 @@ R:  1, 0: Similar lines in 5 files
             ),
             Object(
                 lg_knob(), (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:75
+==lgeo.include.brick.lg_3010:229
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:67
+==lgeo.include.brick.lg_3010:221
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:88
+==lgeo.include.brick.lg_3010:153
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 5 files
+==lgeo.include.brick.lg_3003:54
+==lgeo.include.brick.lg_3010:195
+==lgeo.include.brick.lg_3010:208
+==lgeo.include.brick.lg_3022:188
+==lgeo.include.brick.lg_3022:201
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_3003:46
+==lgeo.include.brick.lg_3010:187
+==lgeo.include.brick.lg_3022:180
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2412b:577
+==lgeo.include.brick.lg_3022:264
+                    Vector(
+                        length*LG_BRICK_WIDTH,
+                        width*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                        LG_PLATE_HEIGHT-LG_CORNER_SPACE
+                    )
+                ),
+                Box( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2412b:569
+==lgeo.include.brick.lg_3022:256
+                    Vector(
+                        length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                        width*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                        LG_PLATE_HEIGHT
+                    )
+                ),
+                Box( (duplicate-code)
+R:  1, 0: Similar lines in 5 files
+==lgeo.include.brick.lg_2412b:453
+==lgeo.include.brick.lg_2412b:469
+==lgeo.include.brick.lg_2412b:485
+==lgeo.include.brick.lg_2412b:501
+==lgeo.include.brick.lg_3022:214
+                LG_PLATE_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 7 files
+==lgeo.include.brick.lg_2412b:276
+==lgeo.include.brick.lg_2412b:289
+==lgeo.include.brick.lg_2412b:341
+==lgeo.include.brick.lg_2412b:367
+==lgeo.include.brick.lg_2412b:393
+==lgeo.include.brick.lg_2412b:419
+==lgeo.include.brick.lg_3022:99
+                LG_PLATE_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 4 files
+==lgeo.include.brick.lg_3010:196
+==lgeo.include.brick.lg_3010:209
+==lgeo.include.brick.lg_3010:230
+==lgeo.include.brick.lg_3022:223
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_3010:188
+==lgeo.include.brick.lg_3010:222
+==lgeo.include.brick.lg_3022:215
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 5 files
+==lgeo.include.brick.lg_2412b:264
+==lgeo.include.brick.lg_3010:107
+==lgeo.include.brick.lg_3010:120
+==lgeo.include.brick.lg_3010:44
+==lgeo.include.brick.lg_3022:155
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_3010:133
+==lgeo.include.brick.lg_3010:154
+==lgeo.include.brick.lg_3022:147
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
 R:  1, 0: Similar lines in 6 files
+==lgeo.include.brick.lg_2412b:264
+==lgeo.include.brick.lg_3003:97
+==lgeo.include.brick.lg_3010:162
+==lgeo.include.brick.lg_3022:100
+==lgeo.include.brick.lg_3022:113
+==lgeo.include.brick.lg_3022:155
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 4 files
+==lgeo.include.brick.lg_2412b:89
+==lgeo.include.brick.lg_3003:89
+==lgeo.include.brick.lg_3010:99
+==lgeo.include.brick.lg_3022:92
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 10 files
+==lgeo.include.brick.lg_2412b:303
+==lgeo.include.brick.lg_3003:55
+==lgeo.include.brick.lg_3003:76
+==lgeo.include.brick.lg_3010:175
+==lgeo.include.brick.lg_3010:243
+==lgeo.include.brick.lg_3010:65
+==lgeo.include.brick.lg_3010:86
+==lgeo.include.brick.lg_3022:168
+==lgeo.include.brick.lg_3022:236
+==lgeo.include.brick.lg_3022:79
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 5 files
+==lgeo.include.brick.lg_3003:47
+==lgeo.include.brick.lg_3003:68
+==lgeo.include.brick.lg_3010:57
+==lgeo.include.brick.lg_3010:78
+==lgeo.include.brick.lg_3022:71
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3010:61
+==lgeo.include.brick.lg_3022:46
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ), (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2441:1791
+==lgeo.include.brick.lg_3788:730
+                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
+                        )
+                    )
+                )
+            )
+        ), (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2441:1658
+==lgeo.include.brick.lg_3788:470
+                )
+            )
+        ),
+        Difference(
+            Box(
+                Vector( (duplicate-code)
+R:  1, 0: Similar lines in 4 files
+==lgeo.include.brick.lg_2441:1561
+==lgeo.include.brick.lg_2441:1617
+==lgeo.include.brick.lg_3788:381
+==lgeo.include.brick.lg_3788:692
+            ),
+            Union(
+                Object(
+                    lg_knob_inner_space,
+                    Translate(
+                        Vector( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2441:1509
+==lgeo.include.brick.lg_3788:535
+                    -LG_BRICK_WIDTH+LG_CORNER_SPACE,
+                    -2*LG_PLATE_HEIGHT
+                )
+            ),
+            Box(
+                Vector( (duplicate-code)
+R:  1, 0: Similar lines in 5 files
+==lgeo.include.brick.lg_2441:1198
+==lgeo.include.brick.lg_2441:1210
+==lgeo.include.brick.lg_2441:1222
+==lgeo.include.brick.lg_3788:642
+==lgeo.include.brick.lg_3788:653
+                                -LG_PLATE_HEIGHT
+                            )
+                        )
+                    ),
+                    Object(
+                        lg_knob(), (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:88
+==lgeo.include.brick.lg_3010:221
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 4 files
+==lgeo.include.brick.lg_3003:96
+==lgeo.include.brick.lg_3010:174
+==lgeo.include.brick.lg_3010:229
+==lgeo.include.brick.lg_3010:242
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:75
+==lgeo.include.brick.lg_3010:161
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:67
+==lgeo.include.brick.lg_3010:153
+                LG_BRICK_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:52
+==lgeo.include.brick.lg_3010:54
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ), (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_3003:54
+==lgeo.include.brick.lg_3010:140
+==lgeo.include.brick.lg_3022:133
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_3003:46
+==lgeo.include.brick.lg_3010:132
+==lgeo.include.brick.lg_3022:125
+                LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2412b:585
+==lgeo.include.brick.lg_3022:272
+                    Vector(
+                        length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                        width*LG_BRICK_WIDTH,
+                        LG_PLATE_HEIGHT-LG_CORNER_SPACE
+                    )
+                ), (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_2412b:562
+==lgeo.include.brick.lg_3010:256
+==lgeo.include.brick.lg_3022:249
+            ),
+            LG_CORNER_SPACE
+        ),
+        Difference(
+            Union(
+                Box( (duplicate-code)
+R:  1, 0: Similar lines in 5 files
+==lgeo.include.brick.lg_2412b:445
+==lgeo.include.brick.lg_2412b:461
+==lgeo.include.brick.lg_2412b:477
+==lgeo.include.brick.lg_2412b:493
+==lgeo.include.brick.lg_3022:214
+                LG_PLATE_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_2412b:265
+==lgeo.include.brick.lg_3010:45
+==lgeo.include.brick.lg_3022:114
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 9 files
+==lgeo.include.brick.lg_2412b:302
+==lgeo.include.brick.lg_2412b:315
+==lgeo.include.brick.lg_2412b:328
+==lgeo.include.brick.lg_2412b:354
+==lgeo.include.brick.lg_2412b:380
+==lgeo.include.brick.lg_2412b:406
+==lgeo.include.brick.lg_2412b:432
+==lgeo.include.brick.lg_2412b:509
+==lgeo.include.brick.lg_3022:99
+                LG_PLATE_HEIGHT-LG_CORNER_SPACE
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2412b:90
+==lgeo.include.brick.lg_3022:93
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_2412b:304
+==lgeo.include.brick.lg_3010:66
+==lgeo.include.brick.lg_3022:59
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 6 files
+==lgeo.include.brick.lg_2412b:303
+==lgeo.include.brick.lg_3010:175
+==lgeo.include.brick.lg_3010:243
+==lgeo.include.brick.lg_3010:65
+==lgeo.include.brick.lg_3010:86
+==lgeo.include.brick.lg_3022:223
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 9 files
 ==lgeo.include.brick.lg_2412b:454
 ==lgeo.include.brick.lg_2412b:470
 ==lgeo.include.brick.lg_2412b:486
 ==lgeo.include.brick.lg_2412b:502
 ==lgeo.include.brick.lg_3003:47
 ==lgeo.include.brick.lg_3003:68
+==lgeo.include.brick.lg_3010:57
+==lgeo.include.brick.lg_3010:78
+==lgeo.include.brick.lg_3022:215
             ),
             LG_CORNER_SPACE
         ),
@@ -676,23 +1676,23 @@ R:  1, 0: Similar lines in 6 files
             Vector(
                 length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
 R:  1, 0: Similar lines in 10 files
-==lgeo.include.brick.lg_2412b:316
-==lgeo.include.brick.lg_2412b:329
-==lgeo.include.brick.lg_2412b:355
-==lgeo.include.brick.lg_2412b:381
-==lgeo.include.brick.lg_2412b:407
-==lgeo.include.brick.lg_2412b:433
-==lgeo.include.brick.lg_2412b:510
-==lgeo.include.brick.lg_2412b:536
-==lgeo.include.brick.lg_3003:55
-==lgeo.include.brick.lg_3003:76
+==lgeo.include.brick.lg_2412b:115
+==lgeo.include.brick.lg_2412b:136
+==lgeo.include.brick.lg_2412b:446
+==lgeo.include.brick.lg_2412b:462
+==lgeo.include.brick.lg_2412b:478
+==lgeo.include.brick.lg_2412b:494
+==lgeo.include.brick.lg_2412b:89
+==lgeo.include.brick.lg_3003:89
+==lgeo.include.brick.lg_3010:99
+==lgeo.include.brick.lg_3022:147
             ),
             LG_CORNER_SPACE
         ),
-        Cylinder(
+        Sphere(
             Vector(
-                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
-R:  1, 0: Similar lines in 10 files
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 17 files
 ==lgeo.include.brick.lg_2412b:123
 ==lgeo.include.brick.lg_2412b:277
 ==lgeo.include.brick.lg_2412b:290
@@ -703,76 +1703,81 @@ R:  1, 0: Similar lines in 10 files
 ==lgeo.include.brick.lg_2412b:523
 ==lgeo.include.brick.lg_2412b:549
 ==lgeo.include.brick.lg_3003:97
+==lgeo.include.brick.lg_3010:107
+==lgeo.include.brick.lg_3010:120
+==lgeo.include.brick.lg_3010:141
+==lgeo.include.brick.lg_3010:162
+==lgeo.include.brick.lg_3022:100
+==lgeo.include.brick.lg_3022:113
+==lgeo.include.brick.lg_3022:155
             ),
             LG_CORNER_SPACE
         ),
         Cylinder(
             Vector(
                 LG_CORNER_SPACE, (duplicate-code)
-R:  1, 0: Similar lines in 7 files
+R:  1, 0: Similar lines in 11 files
 ==lgeo.include.brick.lg_2412b:115
 ==lgeo.include.brick.lg_2412b:136
 ==lgeo.include.brick.lg_2412b:446
 ==lgeo.include.brick.lg_2412b:462
 ==lgeo.include.brick.lg_2412b:478
 ==lgeo.include.brick.lg_2412b:494
+==lgeo.include.brick.lg_2412b:89
 ==lgeo.include.brick.lg_3003:89
+==lgeo.include.brick.lg_3010:133
+==lgeo.include.brick.lg_3010:154
+==lgeo.include.brick.lg_3022:92
             ),
             LG_CORNER_SPACE
         ),
         Sphere(
             Vector(
                 LG_CORNER_SPACE, (duplicate-code)
-R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2441:1788
-==lgeo.include.brick.lg_3788:730
-                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
-                        )
-                    )
-                )
-            )
-        ), (duplicate-code)
-R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2441:1655
-==lgeo.include.brick.lg_3788:470
-                )
-            )
+R:  1, 0: Similar lines in 21 files
+==lgeo.include.brick.lg_2412b:303
+==lgeo.include.brick.lg_2412b:316
+==lgeo.include.brick.lg_2412b:329
+==lgeo.include.brick.lg_2412b:355
+==lgeo.include.brick.lg_2412b:381
+==lgeo.include.brick.lg_2412b:407
+==lgeo.include.brick.lg_2412b:433
+==lgeo.include.brick.lg_2412b:510
+==lgeo.include.brick.lg_2412b:536
+==lgeo.include.brick.lg_3003:55
+==lgeo.include.brick.lg_3003:76
+==lgeo.include.brick.lg_3010:175
+==lgeo.include.brick.lg_3010:196
+==lgeo.include.brick.lg_3010:209
+==lgeo.include.brick.lg_3010:230
+==lgeo.include.brick.lg_3010:243
+==lgeo.include.brick.lg_3010:86
+==lgeo.include.brick.lg_3022:168
+==lgeo.include.brick.lg_3022:223
+==lgeo.include.brick.lg_3022:236
+==lgeo.include.brick.lg_3022:79
+            ),
+            LG_CORNER_SPACE
         ),
-        Difference(
-            Box(
-                Vector( (duplicate-code)
-R:  1, 0: Similar lines in 4 files
-==lgeo.include.brick.lg_2441:1558
-==lgeo.include.brick.lg_2441:1614
-==lgeo.include.brick.lg_3788:381
-==lgeo.include.brick.lg_3788:692
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 9 files
+==lgeo.include.brick.lg_2412b:454
+==lgeo.include.brick.lg_2412b:470
+==lgeo.include.brick.lg_2412b:486
+==lgeo.include.brick.lg_2412b:502
+==lgeo.include.brick.lg_3003:47
+==lgeo.include.brick.lg_3003:68
+==lgeo.include.brick.lg_3010:188
+==lgeo.include.brick.lg_3010:222
+==lgeo.include.brick.lg_3022:71
             ),
-            Union(
-                Object(
-                    lg_knob_inner_space,
-                    Translate(
-                        Vector( (duplicate-code)
-R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2441:1506
-==lgeo.include.brick.lg_3788:535
-                    -LG_BRICK_WIDTH+LG_CORNER_SPACE,
-                    -2*LG_PLATE_HEIGHT
-                )
-            ),
-            Box(
-                Vector( (duplicate-code)
-R:  1, 0: Similar lines in 5 files
-==lgeo.include.brick.lg_2441:1195
-==lgeo.include.brick.lg_2441:1207
-==lgeo.include.brick.lg_2441:1219
-==lgeo.include.brick.lg_3788:642
-==lgeo.include.brick.lg_3788:653
-                                -LG_PLATE_HEIGHT
-                            )
-                        )
-                    ),
-                    Object(
-                        lg_knob(), (duplicate-code)
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
 R:  1, 0: Similar lines in 2 files
 ==lgeo.include.brick.lg_2412b:699
 ==lgeo.include.brick.lg_3788:469
@@ -782,7 +1787,7 @@ R:  1, 0: Similar lines in 2 files
             ),
             Difference( (duplicate-code)
 R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2441:1600
+==lgeo.include.brick.lg_2441:1603
 ==lgeo.include.brick.lg_3788:471
                 )
             ),
@@ -790,8 +1795,8 @@ R:  1, 0: Similar lines in 2 files
                 Box(
                     Vector( (duplicate-code)
 R:  1, 0: Similar lines in 3 files
-==lgeo.include.brick.lg_2441:1423
-==lgeo.include.brick.lg_2441:1435
+==lgeo.include.brick.lg_2441:1426
+==lgeo.include.brick.lg_2441:1438
 ==lgeo.include.brick.lg_3788:548
                     -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE+LG_E
                 )
@@ -799,9 +1804,9 @@ R:  1, 0: Similar lines in 3 files
             Box(
                 Vector( (duplicate-code)
 R:  1, 0: Similar lines in 4 files
-==lgeo.include.brick.lg_2441:1010
-==lgeo.include.brick.lg_2441:1022
-==lgeo.include.brick.lg_2441:998
+==lgeo.include.brick.lg_2441:1001
+==lgeo.include.brick.lg_2441:1013
+==lgeo.include.brick.lg_2441:1025
 ==lgeo.include.brick.lg_3788:560
                             -LG_PLATE_HEIGHT-LG_CORNER_SPACE
                         )
@@ -809,9 +1814,9 @@ R:  1, 0: Similar lines in 4 files
                     Box(
                         Vector( (duplicate-code)
 R:  1, 0: Similar lines in 6 files
-==lgeo.include.brick.lg_2441:962
-==lgeo.include.brick.lg_2441:974
-==lgeo.include.brick.lg_2441:986
+==lgeo.include.brick.lg_2441:965
+==lgeo.include.brick.lg_2441:977
+==lgeo.include.brick.lg_2441:989
 ==lgeo.include.brick.lg_3788:354
 ==lgeo.include.brick.lg_3788:524
 ==lgeo.include.brick.lg_3788:536
@@ -821,7 +1826,7 @@ R:  1, 0: Similar lines in 6 files
             Box(
                 Vector( (duplicate-code)
 R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2441:951
+==lgeo.include.brick.lg_2441:954
 ==lgeo.include.brick.lg_3788:561
                         )
                     ),
@@ -829,7 +1834,7 @@ R:  1, 0: Similar lines in 2 files
                         Vector(
                             -LG_BRICK_WIDTH+LG_WALL_WIDTH, (duplicate-code)
 R:  1, 0: Similar lines in 4 files
-==lgeo.include.brick.lg_2441:320
+==lgeo.include.brick.lg_2441:323
 ==lgeo.include.brick.lg_3788:400
 ==lgeo.include.brick.lg_3788:456
 ==lgeo.include.brick.lg_3788:596
@@ -839,15 +1844,174 @@ R:  1, 0: Similar lines in 4 files
                     Box(
                         Vector( (duplicate-code)
 R:  1, 0: Similar lines in 3 files
-==lgeo.include.brick.lg_2441:126
-==lgeo.include.brick.lg_2441:189
+==lgeo.include.brick.lg_2441:129
+==lgeo.include.brick.lg_2441:192
 ==lgeo.include.brick.lg_3788:327
                     )
                 )
             ),
             Cylinder(
                 Vector(0, 0, 0), (duplicate-code)
-R:  1, 0: Similar lines in 64 files
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3003:101
+==lgeo.include.brick.lg_3010:40
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ), (duplicate-code)
+R:  1, 0: Similar lines in 5 files
+==lgeo.include.brick.lg_2412b:304
+==lgeo.include.brick.lg_3010:197
+==lgeo.include.brick.lg_3010:210
+==lgeo.include.brick.lg_3022:190
+==lgeo.include.brick.lg_3022:203
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_2412b:90
+==lgeo.include.brick.lg_3010:134
+==lgeo.include.brick.lg_3022:127
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 14 files
+==lgeo.include.brick.lg_2412b:124
+==lgeo.include.brick.lg_2412b:265
+==lgeo.include.brick.lg_2412b:278
+==lgeo.include.brick.lg_2412b:291
+==lgeo.include.brick.lg_2412b:343
+==lgeo.include.brick.lg_2412b:369
+==lgeo.include.brick.lg_2412b:395
+==lgeo.include.brick.lg_2412b:421
+==lgeo.include.brick.lg_2412b:524
+==lgeo.include.brick.lg_2412b:550
+==lgeo.include.brick.lg_3010:142
+==lgeo.include.brick.lg_3010:45
+==lgeo.include.brick.lg_3022:114
+==lgeo.include.brick.lg_3022:135
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2412b:268
+==lgeo.include.brick.lg_3022:109
+            Vector(
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_PLATE_HEIGHT-LG_CORNER_SPACE
+            ), (duplicate-code)
+R:  1, 0: Similar lines in 9 files
+==lgeo.include.brick.lg_2412b:116
+==lgeo.include.brick.lg_2412b:137
+==lgeo.include.brick.lg_2412b:447
+==lgeo.include.brick.lg_2412b:463
+==lgeo.include.brick.lg_2412b:479
+==lgeo.include.brick.lg_2412b:495
+==lgeo.include.brick.lg_3010:134
+==lgeo.include.brick.lg_3022:127
+==lgeo.include.brick.lg_3022:93
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2412b:307
+==lgeo.include.brick.lg_3022:67
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_PLATE_HEIGHT-LG_CORNER_SPACE
+            ), (duplicate-code)
+R:  1, 0: Similar lines in 15 files
+==lgeo.include.brick.lg_2412b:317
+==lgeo.include.brick.lg_2412b:330
+==lgeo.include.brick.lg_2412b:356
+==lgeo.include.brick.lg_2412b:382
+==lgeo.include.brick.lg_2412b:408
+==lgeo.include.brick.lg_2412b:434
+==lgeo.include.brick.lg_2412b:511
+==lgeo.include.brick.lg_2412b:537
+==lgeo.include.brick.lg_3010:197
+==lgeo.include.brick.lg_3010:210
+==lgeo.include.brick.lg_3010:66
+==lgeo.include.brick.lg_3022:190
+==lgeo.include.brick.lg_3022:203
+==lgeo.include.brick.lg_3022:59
+==lgeo.include.brick.lg_3022:80
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 9 files
+==lgeo.include.brick.lg_2412b:455
+==lgeo.include.brick.lg_2412b:471
+==lgeo.include.brick.lg_2412b:487
+==lgeo.include.brick.lg_2412b:503
+==lgeo.include.brick.lg_3010:189
+==lgeo.include.brick.lg_3010:58
+==lgeo.include.brick.lg_3022:182
+==lgeo.include.brick.lg_3022:51
+==lgeo.include.brick.lg_3022:72
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3010:277
+==lgeo.include.brick.lg_3022:270
+                Box(
+                    Vector(LG_CORNER_SPACE, 0, LG_CORNER_SPACE),
+                    Vector(
+                        length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                        width*LG_BRICK_WIDTH, (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_3010:269
+==lgeo.include.brick.lg_3022:262
+                Box(
+                    Vector(0, LG_CORNER_SPACE, LG_CORNER_SPACE),
+                    Vector(
+                        length*LG_BRICK_WIDTH,
+                        width*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 10 files
+==lgeo.include.brick.lg_3010:175
+==lgeo.include.brick.lg_3010:196
+==lgeo.include.brick.lg_3010:209
+==lgeo.include.brick.lg_3010:230
+==lgeo.include.brick.lg_3010:243
+==lgeo.include.brick.lg_3010:65
+==lgeo.include.brick.lg_3010:86
+==lgeo.include.brick.lg_3022:100
+==lgeo.include.brick.lg_3022:113
+==lgeo.include.brick.lg_3022:155
+            ),
+            LG_CORNER_SPACE
+        ),
+        Cylinder(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 6 files
+==lgeo.include.brick.lg_3010:188
+==lgeo.include.brick.lg_3010:222
+==lgeo.include.brick.lg_3010:57
+==lgeo.include.brick.lg_3010:78
+==lgeo.include.brick.lg_3022:147
+==lgeo.include.brick.lg_3022:92
+            ),
+            LG_CORNER_SPACE
+        ),
+        Sphere(
+            Vector( (duplicate-code)
+R:  1, 0: Similar lines in 80 files
 ==lgeo.include.brick.lg_2412b:123
 ==lgeo.include.brick.lg_2412b:144
 ==lgeo.include.brick.lg_2412b:165
@@ -877,47 +2041,63 @@ R:  1, 0: Similar lines in 64 files
 ==lgeo.include.brick.lg_2412b:549
 ==lgeo.include.brick.lg_2412b:55
 ==lgeo.include.brick.lg_2412b:76
-==lgeo.include.brick.lg_2441:1256
-==lgeo.include.brick.lg_2441:1269
-==lgeo.include.brick.lg_2441:1282
-==lgeo.include.brick.lg_2441:1295
-==lgeo.include.brick.lg_2441:1308
-==lgeo.include.brick.lg_2441:1321
-==lgeo.include.brick.lg_2441:1334
-==lgeo.include.brick.lg_2441:159
-==lgeo.include.brick.lg_2441:219
-==lgeo.include.brick.lg_2441:504
-==lgeo.include.brick.lg_2441:517
-==lgeo.include.brick.lg_2441:530
-==lgeo.include.brick.lg_2441:543
-==lgeo.include.brick.lg_2441:556
-==lgeo.include.brick.lg_2441:569
-==lgeo.include.brick.lg_2441:582
-==lgeo.include.brick.lg_2441:595
-==lgeo.include.brick.lg_2441:608
-==lgeo.include.brick.lg_2441:621
-==lgeo.include.brick.lg_2441:634
-==lgeo.include.brick.lg_2441:663
-==lgeo.include.brick.lg_2441:692
-==lgeo.include.brick.lg_2441:705
-==lgeo.include.brick.lg_2441:718
-==lgeo.include.brick.lg_2441:731
-==lgeo.include.brick.lg_2441:744
-==lgeo.include.brick.lg_2441:757
-==lgeo.include.brick.lg_2441:770
-==lgeo.include.brick.lg_2441:783
-==lgeo.include.brick.lg_2441:796
-==lgeo.include.brick.lg_2441:809
-==lgeo.include.brick.lg_2441:96
+==lgeo.include.brick.lg_2441:1259
+==lgeo.include.brick.lg_2441:1272
+==lgeo.include.brick.lg_2441:1285
+==lgeo.include.brick.lg_2441:1298
+==lgeo.include.brick.lg_2441:1311
+==lgeo.include.brick.lg_2441:1324
+==lgeo.include.brick.lg_2441:1337
+==lgeo.include.brick.lg_2441:162
+==lgeo.include.brick.lg_2441:222
+==lgeo.include.brick.lg_2441:507
+==lgeo.include.brick.lg_2441:520
+==lgeo.include.brick.lg_2441:533
+==lgeo.include.brick.lg_2441:546
+==lgeo.include.brick.lg_2441:559
+==lgeo.include.brick.lg_2441:572
+==lgeo.include.brick.lg_2441:585
+==lgeo.include.brick.lg_2441:598
+==lgeo.include.brick.lg_2441:611
+==lgeo.include.brick.lg_2441:624
+==lgeo.include.brick.lg_2441:637
+==lgeo.include.brick.lg_2441:666
+==lgeo.include.brick.lg_2441:695
+==lgeo.include.brick.lg_2441:708
+==lgeo.include.brick.lg_2441:721
+==lgeo.include.brick.lg_2441:734
+==lgeo.include.brick.lg_2441:747
+==lgeo.include.brick.lg_2441:760
+==lgeo.include.brick.lg_2441:773
+==lgeo.include.brick.lg_2441:786
+==lgeo.include.brick.lg_2441:799
+==lgeo.include.brick.lg_2441:812
+==lgeo.include.brick.lg_2441:99
 ==lgeo.include.brick.lg_3003:55
 ==lgeo.include.brick.lg_3003:76
 ==lgeo.include.brick.lg_3003:97
+==lgeo.include.brick.lg_3010:107
+==lgeo.include.brick.lg_3010:120
+==lgeo.include.brick.lg_3010:141
+==lgeo.include.brick.lg_3010:162
+==lgeo.include.brick.lg_3010:175
+==lgeo.include.brick.lg_3010:230
+==lgeo.include.brick.lg_3010:243
+==lgeo.include.brick.lg_3010:44
+==lgeo.include.brick.lg_3010:86
+==lgeo.include.brick.lg_3022:100
+==lgeo.include.brick.lg_3022:113
+==lgeo.include.brick.lg_3022:155
+==lgeo.include.brick.lg_3022:168
+==lgeo.include.brick.lg_3022:223
+==lgeo.include.brick.lg_3022:236
+==lgeo.include.brick.lg_3022:79
                         ),
                         LG_CORNER_SPACE
                     ),
                     Cylinder(
                         Vector( (duplicate-code)
-R:  1, 0: Similar lines in 31 files
+R:  1, 0: Similar lines in 40 files
 ==lgeo.include.brick.lg_2412b:115
 ==lgeo.include.brick.lg_2412b:136
 ==lgeo.include.brick.lg_2412b:157
@@ -933,27 +2113,45 @@ R:  1, 0: Similar lines in 31 files
 ==lgeo.include.brick.lg_2412b:502
 ==lgeo.include.brick.lg_2412b:68
 ==lgeo.include.brick.lg_2412b:89
-==lgeo.include.brick.lg_2441:151
-==lgeo.include.brick.lg_2441:448
-==lgeo.include.brick.lg_2441:456
-==lgeo.include.brick.lg_2441:464
-==lgeo.include.brick.lg_2441:472
-==lgeo.include.brick.lg_2441:480
-==lgeo.include.brick.lg_2441:488
-==lgeo.include.brick.lg_2441:496
-==lgeo.include.brick.lg_2441:647
-==lgeo.include.brick.lg_2441:655
-==lgeo.include.brick.lg_2441:676
-==lgeo.include.brick.lg_2441:684
-==lgeo.include.brick.lg_2441:88
+==lgeo.include.brick.lg_2441:154
+==lgeo.include.brick.lg_2441:451
+==lgeo.include.brick.lg_2441:459
+==lgeo.include.brick.lg_2441:467
+==lgeo.include.brick.lg_2441:475
+==lgeo.include.brick.lg_2441:483
+==lgeo.include.brick.lg_2441:491
+==lgeo.include.brick.lg_2441:499
+==lgeo.include.brick.lg_2441:650
+==lgeo.include.brick.lg_2441:658
+==lgeo.include.brick.lg_2441:679
+==lgeo.include.brick.lg_2441:687
+==lgeo.include.brick.lg_2441:91
 ==lgeo.include.brick.lg_3003:47
 ==lgeo.include.brick.lg_3003:68
 ==lgeo.include.brick.lg_3003:89
+==lgeo.include.brick.lg_3010:133
+==lgeo.include.brick.lg_3010:154
+==lgeo.include.brick.lg_3010:222
+==lgeo.include.brick.lg_3010:78
+==lgeo.include.brick.lg_3010:99
+==lgeo.include.brick.lg_3022:147
+==lgeo.include.brick.lg_3022:215
+==lgeo.include.brick.lg_3022:71
+==lgeo.include.brick.lg_3022:92
                         ),
                         LG_CORNER_SPACE
                     ),
                     Sphere(
                         Vector( (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_3010:179
+==lgeo.include.brick.lg_3010:69
+==lgeo.include.brick.lg_3022:46
+            Vector(
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+                LG_CORNER_SPACE,
+                LG_CORNER_SPACE
+            ), (duplicate-code)
 R:  1, 0: Similar lines in 2 files
 ==lgeo.include.brick.lg_2412b:601
 ==lgeo.include.common.brick_subparts:49
@@ -966,7 +2164,7 @@ R:  1, 0: Similar lines in 2 files
 
 Report
 ======
-395 statements analysed.
+437 statements analysed.
 
 Statistics by type
 ------------------
@@ -974,13 +2172,13 @@ Statistics by type
 +---------+-------+-----------+-----------+------------+---------+
 |type     |number |old number |difference |%documented |%badname |
 +=========+=======+===========+===========+============+=========+
-|module   |19     |NC         |NC         |100.00      |0.00     |
+|module   |21     |NC         |NC         |100.00      |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
 |class    |0      |NC         |NC         |0           |0        |
 +---------+-------+-----------+-----------+------------+---------+
 |method   |0      |NC         |NC         |0           |0        |
 +---------+-------+-----------+-----------+------------+---------+
-|function |16     |NC         |NC         |62.50       |12.50    |
+|function |19     |NC         |NC         |68.42       |10.53    |
 +---------+-------+-----------+-----------+------------+---------+
 
 
@@ -991,25 +2189,34 @@ External dependencies
 
     lgeo 
       \-include 
-        \-common 
-          \-brick_subparts (lgeo.include.brick.lg_3788)
-          \-lg_defs (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_2441,lgeo.include.common.brick_subparts,lgeo.include.brick.lg_3788)
+      | \-brick 
+      | | \-lg_2412b (lgeo.set.lg_10036_1_car)
+      | | \-lg_2441 (lgeo.set.lg_10036_1_car)
+      | | \-lg_3003 (lgeo.set.lg_10036_1_car)
+      | | \-lg_3010 (lgeo.set.lg_10036_1_car)
+      | | \-lg_3022 (lgeo.set.lg_10036_1_car)
+      | \-common 
+      |   \-brick_subparts (lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_3022)
+      |   \-custom_macros (lgeo.set.lg_10036_1_car)
+      |   \-lg_defs (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.common.brick_subparts,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
+      \-set 
+        \-lg_10036_1_car (lgeo.lgeo_city)
     pov 
       \-atmeff 
       | \-SkySphere (lgeo.lgeo_city)
       \-basic 
       | \-Color (lgeo.lgeo_city,lgeo.include.common.lg_color)
       | \-SceneFile (lgeo.lgeo_city)
-      | \-Vector (lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.common.brick_subparts,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3003,lgeo.include.common.lg_color)
+      | \-Vector (lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3010,lgeo.include.common.brick_subparts,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.common.lg_color,lgeo.include.brick.lg_3022)
       \-csg 
-      | \-Difference (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788)
+      | \-Difference (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
       | \-Intersection (lgeo.include.common.lg_defs)
       | \-Merge (lgeo.include.common.lg_defs)
-      | \-Union (lgeo.set.lg_10036_1_car,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3788,lgeo.include.common.brick_subparts)
+      | \-Union (lgeo.set.lg_10036_1_car,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.common.brick_subparts,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3022)
       \-finite_solid 
-      | \-Box (lgeo.include.common.brick_subparts,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441)
-      | \-Cylinder (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788)
-      | \-Sphere (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788)
+      | \-Box (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.common.brick_subparts,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3022)
+      | \-Cylinder (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
+      | \-Sphere (lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3022)
       | \-Torus (lgeo.include.brick.lg_2441,lgeo.include.common.lg_defs)
       \-global_settings 
       | \-GlobalSettings (lgeo.lgeo_city)
@@ -1021,14 +2228,14 @@ External dependencies
       | \-ClippedBy (lgeo.include.common.lg_defs)
       | \-Interior (lgeo.include.common.lg_color)
       | \-Matrix (lgeo.include.brick.lg_2441)
-      | \-Rotate (lgeo.include.common.brick_subparts,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3003,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441)
-      | \-Scale (lgeo.include.common.lg_defs)
-      | \-Translate (lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.common.brick_subparts,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3003)
+      | \-Rotate (lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.common.brick_subparts,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3022)
+      | \-Scale (lgeo.include.brick.lg_2441,lgeo.include.common.lg_defs)
+      | \-Translate (lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_2412b,lgeo.include.brick.lg_3010,lgeo.include.common.brick_subparts,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3022)
       \-other 
       | \-Camera (lgeo.lgeo_city)
       | \-Comment (lgeo.set.lg_10036_1_car)
       | \-LightSource (lgeo.lgeo_city)
-      | \-Object (lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.common.brick_subparts,lgeo.include.common.lg_defs,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_3003)
+      | \-Object (lgeo.lgeo_city,lgeo.include.common.custom_macros,lgeo.include.brick.lg_3010,lgeo.include.common.brick_subparts,lgeo.include.common.lg_defs,lgeo.include.brick.lg_3788,lgeo.include.brick.lg_2441,lgeo.include.brick.lg_3003,lgeo.include.brick.lg_3022)
       \-texture 
         \-ColorMap (lgeo.lgeo_city)
         \-Finish (lgeo.include.common.lg_color)
@@ -1046,13 +2253,13 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |5860   |75.24 |NC       |NC         |
+|code      |6889   |78.71 |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|docstring |797    |10.23 |NC       |NC         |
+|docstring |674    |7.70  |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|comment   |839    |10.77 |NC       |NC         |
+|comment   |869    |9.93  |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|empty     |292    |3.75  |NC       |NC         |
+|empty     |320    |3.66  |NC       |NC         |
 +----------+-------+------+---------+-----------+
 
 
@@ -1063,9 +2270,9 @@ Duplication
 +-------------------------+-------+---------+-----------+
 |                         |now    |previous |difference |
 +=========================+=======+=========+===========+
-|nb duplicated lines      |1053   |NC       |NC         |
+|nb duplicated lines      |2775   |NC       |NC         |
 +-------------------------+-------+---------+-----------+
-|percent duplicated lines |13.319 |NC       |NC         |
+|percent duplicated lines |31.268 |NC       |NC         |
 +-------------------------+-------+---------+-----------+
 
 
@@ -1076,13 +2283,13 @@ Messages by category
 +-----------+-------+---------+-----------+
 |type       |number |previous |difference |
 +===========+=======+=========+===========+
-|convention |154    |NC       |NC         |
+|convention |142    |NC       |NC         |
 +-----------+-------+---------+-----------+
-|refactor   |32     |NC       |NC         |
+|refactor   |99     |NC       |NC         |
 +-----------+-------+---------+-----------+
-|warning    |246    |NC       |NC         |
+|warning    |533    |NC       |NC         |
 +-----------+-------+---------+-----------+
-|error      |65     |NC       |NC         |
+|error      |4      |NC       |NC         |
 +-----------+-------+---------+-----------+
 
 
@@ -1093,33 +2300,33 @@ Messages by category
 +----------------------------------+------+--------+---------+-----------+
 |module                            |error |warning |refactor |convention |
 +==================================+======+========+=========+===========+
-|lgeo.include.brick.lg_2441        |64.62 |0.41    |0.00     |1.30       |
+|lgeo.include.common.lg_defs       |75.00 |1.69    |0.00     |19.72      |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_car           |26.15 |9.35    |0.00     |12.99      |
+|lgeo.set.lg_10036_1_house         |25.00 |0.38    |0.00     |0.70       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_defs       |4.62  |3.66    |0.00     |18.18      |
+|lgeo.set.lg_10036_1_car           |0.00  |57.60   |1.01     |4.23       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_house         |1.54  |0.81    |0.00     |0.65       |
+|lgeo.include.common.lg_color      |0.00  |26.83   |0.00     |63.38      |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3022        |1.54  |0.00    |0.00     |0.00       |
+|lgeo.include.brick.lg_3003        |0.00  |12.01   |0.00     |0.00       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3010        |1.54  |0.00    |0.00     |0.00       |
+|lgeo.include.brick.lg_3010        |0.00  |0.38    |0.00     |0.70       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_color      |0.00  |58.13   |0.00     |58.44      |
+|lgeo.set.lg_10036_1_main          |0.00  |0.38    |0.00     |0.00       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3003        |0.00  |26.02   |0.00     |0.00       |
+|lgeo.include.brick.lg_2441        |0.00  |0.19    |0.00     |1.41       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_main          |0.00  |0.81    |0.00     |0.00       |
+|lgeo.include.brick.lg_3022        |0.00  |0.19    |0.00     |0.70       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.lgeo_city                    |0.00  |0.41    |0.00     |0.00       |
+|lgeo.lgeo_city                    |0.00  |0.19    |0.00     |0.00       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_2412b       |0.00  |0.41    |0.00     |0.00       |
+|lgeo.include.brick.lg_2412b       |0.00  |0.19    |0.00     |0.00       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3788        |0.00  |0.00    |96.88    |0.65       |
+|lgeo.include.brick.lg_3788        |0.00  |0.00    |97.98    |0.70       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.custom_macros |0.00  |0.00    |3.12     |5.19       |
+|lgeo.include.common.custom_macros |0.00  |0.00    |1.01     |5.63       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.config.lgeo_cfg              |0.00  |0.00    |0.00     |2.60       |
+|lgeo.config.lgeo_cfg              |0.00  |0.00    |0.00     |2.82       |
 +----------------------------------+------+--------+---------+-----------+
 
 
@@ -1130,40 +2337,40 @@ Messages
 +---------------------------+------------+
 |message id                 |occurrences |
 +===========================+============+
-|unused-wildcard-import     |207         |
+|unused-wildcard-import     |486         |
 +---------------------------+------------+
-|invalid-name               |116         |
+|invalid-name               |122         |
 +---------------------------+------------+
-|undefined-variable         |60          |
+|duplicate-code             |97          |
 +---------------------------+------------+
-|duplicate-code             |31          |
-+---------------------------+------------+
-|pointless-string-statement |29          |
-+---------------------------+------------+
-|bad-whitespace             |20          |
+|pointless-string-statement |30          |
 +---------------------------+------------+
 |superfluous-parens         |11          |
 +---------------------------+------------+
-|wildcard-import            |6           |
+|wildcard-import            |8           |
++---------------------------+------------+
+|unused-argument            |6           |
 +---------------------------+------------+
 |missing-docstring          |6           |
 +---------------------------+------------+
-|unused-import              |3           |
-+---------------------------+------------+
 |no-member                  |3           |
 +---------------------------+------------+
-|syntax-error               |2           |
+|unused-import              |2           |
++---------------------------+------------+
+|too-many-arguments         |2           |
++---------------------------+------------+
+|line-too-long              |2           |
 +---------------------------+------------+
 |unused-variable            |1           |
 +---------------------------+------------+
-|too-many-lines             |1           |
+|undefined-variable         |1           |
 +---------------------------+------------+
-|too-many-arguments         |1           |
+|too-many-lines             |1           |
 +---------------------------+------------+
 
 
 
 Global evaluation
 -----------------
-Your code has been rated at -9.16/10
+Your code has been rated at -8.17/10
 

@@ -207,9 +207,10 @@ R:  1, 0: Similar lines in 2 files
         }
 
         self._validate_kwargs(valid_kw) (duplicate-code)
-R:  1, 0: Similar lines in 2 files
+R:  1, 0: Similar lines in 3 files
 ==pov.object_modifier.Rotate:29
 ==pov.object_modifier.Scale:29
+==pov.object_modifier.Translate:29
     def _check_arguments(self):
         '''
             Argument Syntax checks
@@ -219,7 +220,7 @@ R:  1, 0: Similar lines in 2 files
         self._validate_args(valid_args)
 
         # param syntax checks
-        if not len(self.args[0].v) == 3:
+        if not len(self.args[0]) == 3:
             raise SdlSyntaxException( (duplicate-code)
 R:  1, 0: Similar lines in 3 files
 ==pov.finite_solid.HeightField:94
@@ -248,18 +249,6 @@ R:  1, 0: Similar lines in 3 files
                     'Only ObjectModifier objects may be passed as options'
                 )
  (duplicate-code)
-R:  1, 0: Similar lines in 2 files
-==pov.finite_solid.Cone:57
-==pov.finite_solid.Cylinder:49
-            )
-        if not isinstance(cappoint, Vector):
-            raise SdlSyntaxException(
-                'Parameter cappoint is not of type Vector'
-            )
-        if not len(cappoint.v) == 3:
-            raise SdlSyntaxException(
-                'Cap point Vector has more or less than 3 dimensions'
-            ) (duplicate-code)
 R:  1, 0: Similar lines in 6 files
 ==pov.finite_solid.Blob:69
 ==pov.finite_solid.HeightField:94
@@ -291,17 +280,6 @@ R:  1, 0: Similar lines in 4 files
 
         return code (duplicate-code)
 R:  1, 0: Similar lines in 2 files
-==pov.finite_solid.Cone:46
-==pov.finite_solid.Cylinder:42
-        if not isinstance(basepoint, Vector):
-            raise SdlSyntaxException(
-                'Parameter basepoint is not of type Vector'
-            )
-        if not len(basepoint.v) == 3:
-            raise SdlSyntaxException(
-                'Base point Vector has more or less than 3 dimensions'
-            ) (duplicate-code)
-R:  1, 0: Similar lines in 2 files
 ==pov.finite_solid.Sphere:66
 ==pov.infinite_solid.Plane:66
         valid_kw = {
@@ -311,6 +289,14 @@ R:  1, 0: Similar lines in 2 files
             'no_reflection': 'bool',
             'inverse': 'bool',
             'double_illuminate': 'bool', (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Cone:57
+==pov.finite_solid.Cylinder:49
+            )
+        if not isinstance(cappoint, Vector):
+            raise SdlSyntaxException(
+                'Parameter cappoint is not of type Vector'
+            ) (duplicate-code)
 R:  1, 0: Similar lines in 6 files
 ==pov.finite_solid.Blob:69
 ==pov.finite_solid.HeightField:94
@@ -438,9 +424,9 @@ Duplication
 +-------------------------+------+---------+-----------+
 |                         |now   |previous |difference |
 +=========================+======+=========+===========+
-|nb duplicated lines      |264   |NC       |NC         |
+|nb duplicated lines      |263   |NC       |NC         |
 +-------------------------+------+---------+-----------+
-|percent duplicated lines |3.240 |NC       |NC         |
+|percent duplicated lines |3.228 |NC       |NC         |
 +-------------------------+------+---------+-----------+
 
 
@@ -453,7 +439,7 @@ Messages by category
 +===========+=======+=========+===========+
 |convention |31     |NC       |NC         |
 +-----------+-------+---------+-----------+
-|refactor   |22     |NC       |NC         |
+|refactor   |21     |NC       |NC         |
 +-----------+-------+---------+-----------+
 |warning    |39     |NC       |NC         |
 +-----------+-------+---------+-----------+
@@ -468,13 +454,13 @@ Messages by category
 +---------------------------------+------+--------+---------+-----------+
 |module                           |error |warning |refactor |convention |
 +=================================+======+========+=========+===========+
-|pov.tests.EndToEnd_Test          |50.00 |2.56    |13.64    |3.23       |
+|pov.tests.EndToEnd_Test          |50.00 |2.56    |14.29    |3.23       |
 +---------------------------------+------+--------+---------+-----------+
 |pov.tests.Texture_Test           |50.00 |2.56    |0.00     |9.68       |
 +---------------------------------+------+--------+---------+-----------+
-|pov.tests.Basic_Test             |0.00  |41.03   |4.55     |9.68       |
+|pov.tests.Basic_Test             |0.00  |41.03   |4.76     |9.68       |
 +---------------------------------+------+--------+---------+-----------+
-|pov.basic.SceneItem              |0.00  |30.77   |22.73    |22.58      |
+|pov.basic.SceneItem              |0.00  |30.77   |23.81    |22.58      |
 +---------------------------------+------+--------+---------+-----------+
 |pov.basic.Vector                 |0.00  |7.69    |0.00     |16.13      |
 +---------------------------------+------+--------+---------+-----------+
@@ -484,7 +470,7 @@ Messages by category
 +---------------------------------+------+--------+---------+-----------+
 |pov.basic.SceneFile              |0.00  |2.56    |0.00     |0.00       |
 +---------------------------------+------+--------+---------+-----------+
-|pov.csg.Merge                    |0.00  |0.00    |59.09    |0.00       |
+|pov.csg.Merge                    |0.00  |0.00    |57.14    |0.00       |
 +---------------------------------+------+--------+---------+-----------+
 |pov.tests.GlobalSettings_Test    |0.00  |0.00    |0.00     |6.45       |
 +---------------------------------+------+--------+---------+-----------+
@@ -521,7 +507,7 @@ Messages
 +-----------------------------+------------+
 |unidiomatic-typecheck        |13          |
 +-----------------------------+------------+
-|duplicate-code               |13          |
+|duplicate-code               |12          |
 +-----------------------------+------------+
 |protected-access             |9           |
 +-----------------------------+------------+

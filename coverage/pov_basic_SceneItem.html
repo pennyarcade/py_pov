@@ -5,7 +5,7 @@
     
     
     <meta http-equiv='X-UA-Compatible' content='IE=emulateIE7' />
-    <title>Coverage for pov.basic.SceneItem: 93%</title>
+    <title>Coverage for pov.basic.SceneItem: 96%</title>
     <link rel='stylesheet' href='style.css' type='text/css'>
     
     <script type='text/javascript' src='jquery.min.js'></script>
@@ -21,13 +21,13 @@
 <div id='header'>
     <div class='content'>
         <h1>Coverage for <b>pov.basic.SceneItem</b> :
-            <span class='pc_cov'>93%</span>
+            <span class='pc_cov'>96%</span>
         </h1>
         <img id='keyboard_icon' src='keybd_closed.png'>
         <h2 class='stats'>
             182 statements &nbsp;
-            <span class='run hide_run shortkey_r button_toggle_run'>170 run</span>
-            <span class='mis shortkey_m button_toggle_mis'>12 missing</span>
+            <span class='run hide_run shortkey_r button_toggle_run'>175 run</span>
+            <span class='mis shortkey_m button_toggle_mis'>7 missing</span>
             <span class='exc shortkey_x button_toggle_exc'>0 excluded</span>
             
         </h2>
@@ -352,9 +352,9 @@
 <p id='n289' class='stm run hide_run'><a href='#n289'>289</a></p>
 <p id='n290' class='stm run hide_run'><a href='#n290'>290</a></p>
 <p id='n291' class='stm run hide_run'><a href='#n291'>291</a></p>
-<p id='n292' class='stm mis'><a href='#n292'>292</a></p>
-<p id='n293' class='stm mis'><a href='#n293'>293</a></p>
-<p id='n294' class='stm mis'><a href='#n294'>294</a></p>
+<p id='n292' class='stm run hide_run'><a href='#n292'>292</a></p>
+<p id='n293' class='stm run hide_run'><a href='#n293'>293</a></p>
+<p id='n294' class='stm run hide_run'><a href='#n294'>294</a></p>
 <p id='n295' class='pln'><a href='#n295'>295</a></p>
 <p id='n296' class='pln'><a href='#n296'>296</a></p>
 <p id='n297' class='pln'><a href='#n297'>297</a></p>
@@ -387,7 +387,7 @@
 <p id='n324' class='stm run hide_run'><a href='#n324'>324</a></p>
 <p id='n325' class='pln'><a href='#n325'>325</a></p>
 <p id='n326' class='stm run hide_run'><a href='#n326'>326</a></p>
-<p id='n327' class='stm mis'><a href='#n327'>327</a></p>
+<p id='n327' class='stm run hide_run'><a href='#n327'>327</a></p>
 <p id='n328' class='pln'><a href='#n328'>328</a></p>
 <p id='n329' class='pln'><a href='#n329'>329</a></p>
 <p id='n330' class='stm run hide_run'><a href='#n330'>330</a></p>
@@ -453,7 +453,7 @@
 <p id='n390' class='pln'><a href='#n390'>390</a></p>
 <p id='n391' class='stm run hide_run'><a href='#n391'>391</a></p>
 <p id='n392' class='stm run hide_run'><a href='#n392'>392</a></p>
-<p id='n393' class='stm mis'><a href='#n393'>393</a></p>
+<p id='n393' class='stm run hide_run'><a href='#n393'>393</a></p>
 <p id='n394' class='pln'><a href='#n394'>394</a></p>
 <p id='n395' class='stm run hide_run'><a href='#n395'>395</a></p>
 <p id='n396' class='pln'><a href='#n396'>396</a></p>
@@ -883,9 +883,9 @@
 <p id='t289' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>i</span> <span class='op'>&lt;</span> <span class='nam'>len</span><span class='op'>(</span><span class='nam'>valid_args</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t290' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>isinstance</span><span class='op'>(</span><span class='nam'>valid_args</span><span class='op'>[</span><span class='nam'>i</span><span class='op'>]</span><span class='op'>,</span> <span class='op'>(</span><span class='nam'>list</span><span class='op'>,</span> <span class='nam'>tuple</span><span class='op'>)</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t291' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='key'>not</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>args</span><span class='op'>[</span><span class='nam'>i</span><span class='op'>]</span><span class='op'>.</span><span class='nam'>__class__</span><span class='op'>.</span><span class='nam'>__name__</span> <span class='key'>in</span> <span class='nam'>valid_args</span><span class='op'>[</span><span class='nam'>i</span><span class='op'>]</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
-<p id='t292' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>msg</span> <span class='op'>=</span> <span class='str'>&#39;Value of Argument %s is expectet to be type %s&#39;</span><span class='strut'>&nbsp;</span></p>
-<p id='t293' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>msg</span> <span class='op'>+=</span> <span class='str'>&#39; but got %s&#39;</span><span class='strut'>&nbsp;</span></p>
-<p id='t294' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>raise</span> <span class='nam'>SdlSyntaxException</span><span class='op'>(</span><span class='strut'>&nbsp;</span></p>
+<p id='t292' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>msg</span> <span class='op'>=</span> <span class='str'>&#39;Value of Argument %s is expectet to be type %s&#39;</span><span class='strut'>&nbsp;</span></p>
+<p id='t293' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>msg</span> <span class='op'>+=</span> <span class='str'>&#39; but got %s&#39;</span><span class='strut'>&nbsp;</span></p>
+<p id='t294' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>raise</span> <span class='nam'>SdlSyntaxException</span><span class='op'>(</span><span class='strut'>&nbsp;</span></p>
 <p id='t295' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>msg</span> <span class='op'>%</span><span class='strut'>&nbsp;</span></p>
 <p id='t296' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>(</span><span class='nam'>i</span><span class='op'>,</span> <span class='nam'>valid_args</span><span class='op'>[</span><span class='nam'>i</span><span class='op'>]</span><span class='op'>,</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>args</span><span class='op'>[</span><span class='nam'>i</span><span class='op'>]</span><span class='op'>.</span><span class='nam'>__class__</span><span class='op'>.</span><span class='nam'>__name__</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
 <p id='t297' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='op'>)</span><span class='strut'>&nbsp;</span></p>
@@ -918,7 +918,7 @@
 <p id='t324' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>for</span> <span class='nam'>key</span><span class='op'>,</span> <span class='nam'>val</span> <span class='key'>in</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>kwargs</span><span class='op'>.</span><span class='nam'>items</span><span class='op'>(</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t325' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># kwargs validation against global list</span><span class='strut'>&nbsp;</span></p>
 <p id='t326' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='key'>not</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>_is_valid_keyword</span><span class='op'>(</span><span class='nam'>key</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
-<p id='t327' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>raise</span> <span class='nam'>SdlSyntaxException</span><span class='op'>(</span><span class='str'>&#39;No such Keyword: &#39;</span> <span class='op'>+</span> <span class='nam'>str</span><span class='op'>(</span><span class='nam'>key</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
+<p id='t327' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>raise</span> <span class='nam'>SdlSyntaxException</span><span class='op'>(</span><span class='str'>&#39;No such Keyword: &#39;</span> <span class='op'>+</span> <span class='nam'>str</span><span class='op'>(</span><span class='nam'>key</span><span class='op'>)</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
 <p id='t328' class='pln'><span class='strut'>&nbsp;</span></p>
 <p id='t329' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='com'># allowed keywords</span><span class='strut'>&nbsp;</span></p>
 <p id='t330' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>key</span> <span class='key'>not</span> <span class='key'>in</span> <span class='nam'>valid_kw</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
@@ -984,7 +984,7 @@
 <p id='t390' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
 <p id='t391' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='nam'>name</span> <span class='key'>in</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>__reserved_keywords</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t392' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>True</span><span class='strut'>&nbsp;</span></p>
-<p id='t393' class='stm mis'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>False</span><span class='strut'>&nbsp;</span></p>
+<p id='t393' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>return</span> <span class='nam'>False</span><span class='strut'>&nbsp;</span></p>
 <p id='t394' class='pln'><span class='strut'>&nbsp;</span></p>
 <p id='t395' class='stm run hide_run'>&nbsp; &nbsp; <span class='key'>def</span> <span class='nam'>_is_valid_identifier</span><span class='op'>(</span><span class='nam'>self</span><span class='op'>,</span> <span class='nam'>name</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
 <p id='t396' class='pln'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
