@@ -20,6 +20,7 @@ from pov.texture.ColorMap import ColourMap
 from pov.texture.Normal import Normal
 from pov.texture.Pigment import Pigment
 from pov.texture.Texture import Texture
+from pov.texture.Finish import Finish
 from pov.basic.BlockObject import BlockObject
 from pov.basic.SceneItem import SceneItem
 from pov.basic.Color import Color

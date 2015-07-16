@@ -57,7 +57,7 @@ class JuliaFractal(BlockObject):
         self._validate_args(valid_args)
 
         # param syntax checks
-        if not len(self.args[0].v) == 4:
+        if not len(self.args[0]) == 4:
             raise SdlSyntaxException(
                 'Vector param4d has more or less than 4 dimensions'
             )

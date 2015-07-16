@@ -48,7 +48,7 @@ class Cone(BlockObject):
             raise SdlSyntaxException(
                 'Parameter basepoint is not of type Vector'
             )
-        if not len(basepoint.v) == 3:
+        if not len(basepoint) == 3:
             raise SdlSyntaxException(
                 'Base point Vector has more or less than 3 dimensions'
             )
@@ -60,7 +60,7 @@ class Cone(BlockObject):
             raise SdlSyntaxException(
                 'Parameter cappoint is not of type Vector'
             )
-        if not len(cappoint.v) == 3:
+        if not len(cappoint) == 3:
             raise SdlSyntaxException(
                 'Cap point Vector has more or less than 3 dimensions'
             )
