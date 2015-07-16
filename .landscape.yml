@@ -1,0 +1,10 @@
+doc-warnings: yes
+test-warnings: no
+strictness: veryhigh
+max-line-length: 79
+autodetect: yes
+ignore-paths:
+    - coverage
+    - docs
+    - metrics
+    - old
