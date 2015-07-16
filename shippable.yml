@@ -10,6 +10,7 @@ install:
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
+  - rm coverage/*
 
 script:
   - git config --global push.default simple
@@ -18,8 +19,8 @@ script:
   - pep8 --verbose --show-pep8 --statistics --count pov > metrics/pep8.txt || true
   - pep8 --verbose --show-pep8 --statistics --count lgeo > metrics/pep8_lgeo.txt || true
   - cat metrics/pylint.txt | python metrics/extract.py >> metrics/stats.csv
-  - nosetests -d --no-byte-compile --with-xunit --xunit-file=shippable/testresults/nosetests.xml --with-coverage --cover-html --cover-html-dir=coverage --cover-erase --cover-xml --cover-xml-file=shippable/codecoverage/coverage.xml pov || true
-  - ls shippable/testresults
+  - nosetests -d --no-byte-compile --with-xunit --xunit-file=shippable/testresults/nosetests.xml --cover-erase --with-coverage --cover-html --cover-html-dir=coverage --cover-xml --cover-xml-file=shippable/codecoverage/coverage.xml pov || true
+  - nosetests -q --no-byte-compile --cover-erase --with-coverage --cover-xml --cover-xml-file=shippable/codecoverage/coverage.xml pov || true
   - ls shippable/codecoverage
   - git add metrics
   - git add coverage
