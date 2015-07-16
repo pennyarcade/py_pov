@@ -949,11 +949,11 @@ R:  1, 0: Similar lines in 31 files
 ==lgeo.include.brick.lg_3003:47
 ==lgeo.include.brick.lg_3003:68
 ==lgeo.include.brick.lg_3003:89
-            ),
-            LG_CORNER_SPACE
-        ),
-        Sphere(
-            Vector( (duplicate-code)
+                        ),
+                        LG_CORNER_SPACE
+                    ),
+                    Sphere(
+                        Vector( (duplicate-code)
 R:  1, 0: Similar lines in 2 files
 ==lgeo.include.brick.lg_2412b:601
 ==lgeo.include.common.brick_subparts:49
