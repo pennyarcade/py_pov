@@ -1,31 +1,8 @@
 directory pov
 checking pov/__init__.py
-directory pov/finite_solid
-checking pov/finite_solid/Blob.py
-checking pov/finite_solid/Box.py
-checking pov/finite_solid/Cone.py
-checking pov/finite_solid/Cylinder.py
-checking pov/finite_solid/HeightField.py
-checking pov/finite_solid/JuliaFractal.py
-checking pov/finite_solid/Lathe.py
-checking pov/finite_solid/Prism.py
-checking pov/finite_solid/Sor.py
-checking pov/finite_solid/Sphere.py
-checking pov/finite_solid/SphereSweep.py
-checking pov/finite_solid/SuperEllipsoid.py
-checking pov/finite_solid/Text.py
-checking pov/finite_solid/Torus.py
-checking pov/finite_solid/__init__.py
-directory pov/object_modifier
-checking pov/object_modifier/ClippedBy.py
-checking pov/object_modifier/Interior.py
-checking pov/object_modifier/Matrix.py
-checking pov/object_modifier/ObjectModifier.py
-checking pov/object_modifier/Rotate.py
-checking pov/object_modifier/Scale.py
-checking pov/object_modifier/Transformation.py
-checking pov/object_modifier/Translate.py
-checking pov/object_modifier/__init__.py
+directory pov/finite_patch
+checking pov/finite_patch/FinitePatch.py
+checking pov/finite_patch/__init__.py
 directory pov/basic
 checking pov/basic/BlockObject.py
 checking pov/basic/Color.py
@@ -33,23 +10,25 @@ checking pov/basic/PoVObject.py
 checking pov/basic/SceneFile.py
 checking pov/basic/SceneItem.py
 checking pov/basic/Vector.py
+pov/basic/Vector.py:106:1: W293 blank line contains whitespace
+    Trailing whitespace is superfluous.
+
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
+
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+pov/basic/Vector.py:107:1: W293 blank line contains whitespace
+    Trailing whitespace is superfluous.
+
+    The warning returned varies on whether the line itself is blank, for easier
+    filtering for those who want to indent their blank lines.
+
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
 checking pov/basic/__init__.py
-directory pov/test
-checking pov/test/AthEffTest.py
-checking pov/test/BasicTest.py
-checking pov/test/CsgTest.py
-checking pov/test/EndToEndTest.py
-checking pov/test/FinitePatchTest.py
-checking pov/test/FiniteSolidTest.py
-checking pov/test/GlobalSettingsTest.py
-checking pov/test/IncludeTest.py
-checking pov/test/InfiniteSolidTest.py
-checking pov/test/LanguageDirectiveTest.py
-checking pov/test/ObjectModifierTest.py
-checking pov/test/OtherTest.py
-checking pov/test/TextureTest.py
-checking pov/test/__init__.py
-directory pov/test/fixture
 directory pov/texture
 checking pov/texture/ColorMap.py
 checking pov/texture/Finish.py
@@ -63,99 +42,355 @@ checking pov/texture/__init__.py
 directory pov/texture/pattern
 checking pov/texture/pattern/Gradient.py
 checking pov/texture/pattern/__init__.py
+directory pov/atmeff
+checking pov/atmeff/Fog.py
+checking pov/atmeff/SkySphere.py
+checking pov/atmeff/__init__.py
+directory pov/infinite_solid
+checking pov/infinite_solid/Plane.py
+checking pov/infinite_solid/__init__.py
 directory pov/examples
 checking pov/examples/basic_scene.py
 checking pov/examples/basic_sphere.py
+pov/examples/basic_sphere.py:17:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:18:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:19:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:20:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:21:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:22:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:23:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:24:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:25:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:26:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:27:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:28:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:29:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:30:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:31:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:32:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+pov/examples/basic_sphere.py:33:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
 checking pov/examples/checkered_floor.py
 checking pov/examples/image_map.py
 checking pov/examples/orthographic_scene.py
 checking pov/examples/photons_scene.py
 checking pov/examples/radiocity_scene.py
 checking pov/examples/text_fonts.py
-directory pov/examples/incdemo
-directory pov/examples/incdemo/woods
-directory pov/examples/incdemo/metals
-directory pov/examples/incdemo/glasses
-directory pov/examples/incdemo/stones
-directory pov/examples/portfolio
-directory pov/examples/interior
-directory pov/examples/interior/media
-directory pov/examples/qtvr
-directory pov/examples/radiosity
-directory pov/examples/lights
-directory pov/examples/camera
-directory pov/examples/advanced
-directory pov/examples/advanced/ionic5
-directory pov/examples/advanced/newltpot
-directory pov/examples/advanced/teapot
-directory pov/examples/advanced/piece2
-directory pov/examples/advanced/glasschess
-directory pov/examples/advanced/balcony
-directory pov/examples/advanced/drums2
-directory pov/examples/advanced/cliche
-directory pov/examples/advanced/piece3
-directory pov/examples/advanced/blocks
-directory pov/examples/advanced/cats
-directory pov/examples/advanced/ntreal
-directory pov/examples/advanced/fish13
 directory pov/examples/objectmods
 directory pov/examples/objects
 directory pov/examples/objects/quartic
 directory pov/examples/objects/csg
-directory pov/examples/animations
-directory pov/examples/animations/float4
-directory pov/examples/animations/camera2
-directory pov/examples/animations/quilted
-directory pov/examples/animations/float1
-directory pov/examples/animations/ambient
-directory pov/examples/animations/fractalzoom
-directory pov/examples/animations/float3
-directory pov/examples/animations/pentmap
-directory pov/examples/animations/float2
-directory pov/examples/animations/splinefollow
-directory pov/examples/animations/l_o
-directory pov/examples/animations/reflect
-directory pov/examples/animations/clockd
-directory pov/examples/animations/life
-directory pov/examples/animations/vect2
-directory pov/examples/animations/boing
-directory pov/examples/animations/diffuse
-directory pov/examples/animations/speclr
-directory pov/examples/animations/vect1
-directory pov/examples/animations/slinky
-directory pov/examples/animations/raddem
-directory pov/examples/language
-directory pov/examples/language/fileio
-directory pov/examples/language/macros
-directory pov/examples/language/arrays
+directory pov/examples/qtvr
+directory pov/examples/camera
+directory pov/examples/radiosity
 directory pov/examples/textures
-directory pov/examples/textures/normals
-directory pov/examples/textures/patterns
+directory pov/examples/textures/finishes
 directory pov/examples/textures/pigments
 directory pov/examples/textures/pigments/skies
-directory pov/examples/textures/finishes
-directory pov/csg
-checking pov/csg/Csg.py
-checking pov/csg/Difference.py
-checking pov/csg/Intersection.py
-checking pov/csg/Merge.py
-checking pov/csg/Union.py
-checking pov/csg/__init__.py
-directory pov/global_settings
-checking pov/global_settings/GlobalSettings.py
-checking pov/global_settings/Photons.py
-checking pov/global_settings/Radiosity.py
-checking pov/global_settings/__init__.py
-directory pov/include
-checking pov/include/__init__.py
-checking pov/include/chars_inc.py
-checking pov/include/colors_inc.py
-directory pov/finite_patch
-checking pov/finite_patch/FinitePatch.py
-checking pov/finite_patch/__init__.py
-directory pov/infinite_solid
-checking pov/infinite_solid/Plane.py
-checking pov/infinite_solid/__init__.py
+directory pov/examples/textures/normals
+directory pov/examples/textures/patterns
+directory pov/examples/portfolio
+directory pov/examples/language
+directory pov/examples/language/macros
+directory pov/examples/language/arrays
+directory pov/examples/language/fileio
+directory pov/examples/incdemo
+directory pov/examples/incdemo/glasses
+directory pov/examples/incdemo/woods
+directory pov/examples/incdemo/stones
+directory pov/examples/incdemo/metals
+directory pov/examples/animations
+directory pov/examples/animations/boing
+directory pov/examples/animations/l_o
+directory pov/examples/animations/float2
+directory pov/examples/animations/float1
+directory pov/examples/animations/float4
+directory pov/examples/animations/diffuse
+directory pov/examples/animations/quilted
+directory pov/examples/animations/slinky
+directory pov/examples/animations/camera2
+directory pov/examples/animations/fractalzoom
+directory pov/examples/animations/float3
+directory pov/examples/animations/ambient
+directory pov/examples/animations/reflect
+directory pov/examples/animations/raddem
+directory pov/examples/animations/vect2
+directory pov/examples/animations/speclr
+directory pov/examples/animations/pentmap
+directory pov/examples/animations/vect1
+directory pov/examples/animations/clockd
+directory pov/examples/animations/life
+directory pov/examples/animations/splinefollow
+directory pov/examples/interior
+directory pov/examples/interior/media
+directory pov/examples/lights
+directory pov/examples/advanced
+directory pov/examples/advanced/glasschess
+directory pov/examples/advanced/ionic5
+directory pov/examples/advanced/cats
+directory pov/examples/advanced/drums2
+directory pov/examples/advanced/blocks
+directory pov/examples/advanced/ntreal
+directory pov/examples/advanced/piece2
+directory pov/examples/advanced/teapot
+directory pov/examples/advanced/newltpot
+directory pov/examples/advanced/fish13
+directory pov/examples/advanced/piece3
+directory pov/examples/advanced/balcony
+directory pov/examples/advanced/cliche
+directory pov/language_directive
+checking pov/language_directive/Default.py
+checking pov/language_directive/Include.py
+checking pov/language_directive/LanguageDirective.py
+checking pov/language_directive/Version.py
+checking pov/language_directive/__init__.py
+directory pov/object_modifier
+checking pov/object_modifier/ClippedBy.py
+checking pov/object_modifier/Interior.py
+checking pov/object_modifier/Matrix.py
+checking pov/object_modifier/ObjectModifier.py
+checking pov/object_modifier/Rotate.py
+checking pov/object_modifier/Scale.py
+checking pov/object_modifier/Transformation.py
+checking pov/object_modifier/Translate.py
+checking pov/object_modifier/__init__.py
 directory pov/other
 checking pov/other/Camera.py
 checking pov/other/Comment.py
@@ -166,13 +401,84 @@ checking pov/other/Object.py
 checking pov/other/ParametricObj.py
 checking pov/other/SdlSyntaxException.py
 checking pov/other/__init__.py
-directory pov/atmeff
-checking pov/atmeff/Fog.py
-checking pov/atmeff/SkySphere.py
-checking pov/atmeff/__init__.py
-directory pov/language_directive
-checking pov/language_directive/Default.py
-checking pov/language_directive/Include.py
-checking pov/language_directive/LanguageDirective.py
-checking pov/language_directive/Version.py
-checking pov/language_directive/__init__.py
+directory pov/global_settings
+checking pov/global_settings/GlobalSettings.py
+checking pov/global_settings/Photons.py
+checking pov/global_settings/Radiosity.py
+checking pov/global_settings/__init__.py
+directory pov/test
+checking pov/test/AthEffTest.py
+checking pov/test/BasicTest.py
+checking pov/test/CsgTest.py
+checking pov/test/EndToEndTest.py
+checking pov/test/FinitePatchTest.py
+checking pov/test/FiniteSolidTest.py
+checking pov/test/GlobalSettingsTest.py
+checking pov/test/IncludeTest.py
+pov/test/IncludeTest.py:21:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+checking pov/test/InfiniteSolidTest.py
+checking pov/test/LanguageDirectiveTest.py
+checking pov/test/ObjectModifierTest.py
+checking pov/test/OtherTest.py
+checking pov/test/TextureTest.py
+checking pov/test/__init__.py
+directory pov/test/fixture
+directory pov/include
+checking pov/include/__init__.py
+checking pov/include/chars_inc.py
+checking pov/include/colors_inc.py
+directory pov/finite_solid
+checking pov/finite_solid/Blob.py
+checking pov/finite_solid/Box.py
+checking pov/finite_solid/Cone.py
+checking pov/finite_solid/Cylinder.py
+checking pov/finite_solid/HeightField.py
+checking pov/finite_solid/JuliaFractal.py
+checking pov/finite_solid/Lathe.py
+pov/finite_solid/Lathe.py:83:21: W503 line break before binary operator
+    Avoid breaks before binary operators.
+
+    The preferred place to break around a binary operator is after the
+    operator, not before it.
+
+    W503: (width == 0\n + height == 0)
+    W503: (width == 0\n and height == 0)
+
+    Okay: (width == 0 +\n height == 0)
+    Okay: foo(\n    -x)
+    Okay: foo(x\n    [])
+    Okay: x = '''\n''' + ''
+    Okay: foo(x,\n    -y)
+    Okay: foo(x,  # comment\n    -y)
+checking pov/finite_solid/Prism.py
+checking pov/finite_solid/Sor.py
+checking pov/finite_solid/Sphere.py
+checking pov/finite_solid/SphereSweep.py
+checking pov/finite_solid/SuperEllipsoid.py
+checking pov/finite_solid/Text.py
+checking pov/finite_solid/Torus.py
+checking pov/finite_solid/__init__.py
+directory pov/csg
+checking pov/csg/Csg.py
+checking pov/csg/Difference.py
+checking pov/csg/Intersection.py
+checking pov/csg/Merge.py
+checking pov/csg/Union.py
+checking pov/csg/__init__.py
+18      E402 module level import not at top of file
+2       W293 blank line contains whitespace
+1       W503 line break before binary operator

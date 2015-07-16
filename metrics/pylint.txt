@@ -1,57 +1,14 @@
-************* Module pov.finite_solid.Sphere
-R: 17, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.Sor
-R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.Blob
-R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.Torus
-R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.HeightField
-R: 17, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.Box
-R: 19, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.Lathe
-R: 18, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.JuliaFractal
-R: 17, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.Cylinder
-R: 19, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.SphereSweep
-R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.Prism
-R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.SuperEllipsoid
-R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.Cone
-R: 19, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.finite_solid.Text
-R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.object_modifier.Transformation
-R: 19, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.object_modifier.Scale
-R: 18, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.object_modifier.Matrix
-R: 18, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.object_modifier.Rotate
-R: 18, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.object_modifier.Interior
-R: 19, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.object_modifier.Translate
-R: 18, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.object_modifier.ClippedBy
-R: 17, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.object_modifier.ObjectModifier
-R: 18, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.basic.PoVObject
-R: 16, 0: Too few public methods (0/2) (too-few-public-methods)
 ************* Module pov.basic.Vector
-C:105, 0: Invalid constant name "x" (invalid-name)
-C:106, 0: Invalid constant name "y" (invalid-name)
-C:107, 0: Invalid constant name "z" (invalid-name)
-************* Module pov.basic.BlockObject
-R: 17, 0: Too few public methods (0/2) (too-few-public-methods)
-************* Module pov.basic.Color
-R: 18, 0: Too few public methods (0/2) (too-few-public-methods)
+C:106, 0: Trailing whitespace (trailing-whitespace)
+C:107, 0: Trailing whitespace (trailing-whitespace)
+W: 47,15: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+W: 53,15: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+W: 58,15: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+C:109, 0: Invalid constant name "x" (invalid-name)
+C:110, 0: Invalid constant name "y" (invalid-name)
+C:111, 0: Invalid constant name "z" (invalid-name)
+************* Module pov.basic.SceneFile
+W: 44,15: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
 ************* Module pov.basic.SceneItem
 W: 19, 0: Using the global statement at the module level (global-at-module-level)
 C: 19, 0: Invalid constant name "indentation" (invalid-name)
@@ -67,4 +24,495 @@ W:215, 8: Using global for 'indentation' but no assignment is done (global-varia
 W:215, 8: Global variable 'indentation' undefined at the module level (global-variable-undefined)
 C:215, 8: Invalid constant name "indentation" (invalid-name)
 R:211, 4: Method could be a function (no-self-use)
-W:237, 8: Using global for 'indentation' but no assignment is don
+W:237, 8: Using global for 'indentation' but no assignment is done (global-variable-not-assigned)
+W:237, 8: Global variable 'indentation' undefined at the module level (global-variable-undefined)
+C:237, 8: Invalid constant name "indentation" (invalid-name)
+C:341, 4: Invalid method name "_checkKwargValue" (invalid-name)
+W:384,15: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+W:384,37: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+W:507,11: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+R:503, 4: Method could be a function (no-self-use)
+W:521,15: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+R:514, 4: Method could be a function (no-self-use)
+************* Module pov.test.EndToEndTest
+R: 49, 4: Too many statements (96/50) (too-many-statements)
+R:254, 4: Too many statements (61/50) (too-many-statements)
+R:383, 4: Too many statements (71/50) (too-many-statements)
+E:648,28: Undefined variable 'Filter' (undefined-variable)
+E:649,28: Undefined variable 'Filter' (undefined-variable)
+W: 18, 0: Unused debug imported from logging (unused-import)
+************* Module pov.test.TextureTest
+E: 38,19: Undefined variable 'Finish' (undefined-variable)
+E: 44,40: Undefined variable 'Finish' (undefined-variable)
+C: 48, 4: Invalid method name "test_toString" (invalid-name)
+C: 90, 4: Invalid method name "test_toString" (invalid-name)
+W: 27, 0: Unused SdlSyntaxException imported from pov.other.SdlSyntaxException (unused-import)
+************* Module pov.test.GlobalSettingsTest
+C: 38, 4: Invalid method name "test_create_Option_wrong_type" (invalid-name)
+************* Module pov.test.BasicTest
+W:172,25: Access to a protected member _block_end of a client class (protected-access)
+W:215,12: Access to a protected member _dedent of a client class (protected-access)
+W:229,12: Access to a protected member _validate_kwargs of a client class (protected-access)
+W:243,12: Access to a protected member _validate_kwargs of a client class (protected-access)
+W:250,12: Access to a protected member _is_valid_identifier of a client class (protected-access)
+W:253,12: Access to a protected member _is_valid_identifier of a client class (protected-access)
+W:277,12: Access to a protected member _checkKwargValue of a client class (protected-access)
+C:374, 8: Invalid variable name "SUT" (invalid-name)
+C:381, 8: Invalid variable name "SUT" (invalid-name)
+W:398,12: Statement seems to have no effect (pointless-statement)
+W:407,12: Statement seems to have no effect (pointless-statement)
+W:416,12: Statement seems to have no effect (pointless-statement)
+W:425,12: Statement seems to have no effect (pointless-statement)
+W:435,12: Statement seems to have no effect (pointless-statement)
+R:280, 0: Too many public methods (23/20) (too-many-public-methods)
+W:504, 8: Unused variable 'second' (unused-variable)
+W:502, 8: Unused variable 'first' (unused-variable)
+W:559, 8: Access to a protected member _indent of a client class (protected-access)
+W:561, 8: Access to a protected member _dedent of a client class (protected-access)
+************* Module pov.include.colors_inc
+C:309, 0: Unnecessary parens after u'if' keyword (superfluous-parens)
+************* Module pov.finite_solid.Cone
+W: 55,15: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+W: 67,15: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+W: 82,19: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+************* Module pov.finite_solid.Cylinder
+W: 59,15: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+W: 74,19: Using type() instead of isinstance() for a typecheck. (unidiomatic-typecheck)
+************* Module pov.csg.Merge
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.HeightField:58
+==pov.global_settings.Radiosity:42
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+        '''
+        valid_args = ['str']
+
+        self._validate_args(valid_args)
+
+        # param syntax checks
+        if not os.path.isfile(self.args[0]):
+            raise IOError(
+                'No such file: %s%s%s' % (os.getcwd(), os.sep, self.args[0])
+            )
+        # @TODO: check file type
+
+    def _check_opts(self):
+        '''
+            Option Syntax checks
+
+            @Todo: get rid of Object Modifier superclass?
+        '''
+        valid_opts = ['ObjectModifier']
+
+        self._validate_opts(valid_opts)
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+        '''
+
+        valid_kw = {
+            'hf_type': 'str',
+            'hierarchy': 'bool',
+            'smooth': 'bool',
+            'water_level': 'float',
+            # Object modifier kw
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool',
+            'hollow': 'bool'
+        }
+
+        self._validate_kwargs(valid_kw)
+ (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.JuliaFractal:62
+==pov.finite_solid.Lathe:84
+                )
+
+    def _check_opts(self):
+        '''
+            Option Syntax checks
+
+            @Todo: get rid of Object Modifier superclass?
+        '''
+        valid_opts = ['ObjectModifier']
+
+        self._validate_opts(valid_opts)
+
+    def _check_kwargs(self):
+        '''
+            Keyword Argument Syntax checks
+
+            @Todo: Finish syntax checks
+        '''
+
+        valid_kw = { (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Cone:69
+==pov.finite_solid.Cylinder:61
+            )
+
+        # Make sure only valid Object Modifiers are passed
+        for i in range(len(opts)):
+            if not isinstance(opts[i], ObjectModifier):
+                raise SdlSyntaxException(
+                    'Only ObjectModifier objects may be passed as options'
+                )
+
+        for key, val in kwargs.items():
+            if key not in ['open']:
+                raise SdlSyntaxException('Invalid keyword: ' + str(key))
+            if not type(val) == bool:
+                raise SdlSyntaxException(
+                    'Value of keyword %s is not boolean' % key
+                )
+ (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Blob:67
+==pov.finite_solid.Lathe:105
+            'sturm': 'bool',
+            # Object modifier kw
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool',
+            'hollow': 'bool'
+        }
+
+        self._validate_kwargs(valid_kw) (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.object_modifier.Rotate:29
+==pov.object_modifier.Scale:29
+    def _check_arguments(self):
+        '''
+            Argument Syntax checks
+        '''
+        valid_args = ['Vector']
+
+        self._validate_args(valid_args)
+
+        # param syntax checks
+        if not len(self.args[0].v) == 3:
+            raise SdlSyntaxException( (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==pov.finite_solid.HeightField:94
+==pov.finite_solid.JuliaFractal:88
+==pov.global_settings.Radiosity:78
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool',
+            'hollow': 'bool'
+        }
+
+        self._validate_kwargs(valid_kw)
+ (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==pov.finite_solid.Box:74
+==pov.finite_solid.Cone:69
+==pov.finite_solid.Cylinder:61
+            )
+
+        # make sure only valid object modifiers are passed
+        for i in range(len(opts)):
+            if not isinstance(opts[i], ObjectModifier):
+                raise SdlSyntaxException(
+                    'Only ObjectModifier objects may be passed as options'
+                )
+ (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Cone:57
+==pov.finite_solid.Cylinder:49
+            )
+        if not isinstance(cappoint, Vector):
+            raise SdlSyntaxException(
+                'Parameter cappoint is not of type Vector'
+            )
+        if not len(cappoint.v) == 3:
+            raise SdlSyntaxException(
+                'Cap point Vector has more or less than 3 dimensions'
+            ) (duplicate-code)
+R:  1, 0: Similar lines in 6 files
+==pov.finite_solid.Blob:69
+==pov.finite_solid.HeightField:94
+==pov.finite_solid.JuliaFractal:88
+==pov.finite_solid.Lathe:107
+==pov.finite_solid.Sphere:68
+==pov.global_settings.Radiosity:78
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool',
+            'hollow': 'bool'
+        }
+
+        self._validate_kwargs(valid_kw) (duplicate-code)
+R:  1, 0: Similar lines in 4 files
+==pov.object_modifier.Matrix:43
+==pov.object_modifier.Rotate:41
+==pov.object_modifier.Scale:41
+==pov.object_modifier.Translate:41
+            )
+
+    def __str__(self):
+        code = ''
+
+        code += "  " * self._get_indent() + self.name + ' '
+        code += str(self.args[0]) + os.linesep
+
+        return code (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Cone:46
+==pov.finite_solid.Cylinder:42
+        if not isinstance(basepoint, Vector):
+            raise SdlSyntaxException(
+                'Parameter basepoint is not of type Vector'
+            )
+        if not len(basepoint.v) == 3:
+            raise SdlSyntaxException(
+                'Base point Vector has more or less than 3 dimensions'
+            ) (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Sphere:66
+==pov.infinite_solid.Plane:66
+        valid_kw = {
+            # Object modifier kw
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool', (duplicate-code)
+R:  1, 0: Similar lines in 6 files
+==pov.finite_solid.Blob:69
+==pov.finite_solid.HeightField:94
+==pov.finite_solid.JuliaFractal:88
+==pov.finite_solid.Lathe:107
+==pov.global_settings.Radiosity:78
+==pov.infinite_solid.Plane:68
+            'no_shadow': 'bool',
+            'no_image': 'bool',
+            'no_reflection': 'bool',
+            'inverse': 'bool',
+            'double_illuminate': 'bool', (duplicate-code)
+
+
+Report
+======
+2061 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |91     |NC         |NC         |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |93     |NC         |NC         |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |329    |NC         |NC         |100.00      |1.22     |
++---------+-------+-----------+-----------+------------+---------+
+|function |6      |NC         |NC         |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    pov 
+      \-atmeff 
+      | \-Fog (pov.test.EndToEndTest,pov.test.AthEffTest)
+      | \-SkySphere (pov.test.EndToEndTest,pov.test.AthEffTest)
+      \-basic 
+      | \-BlockObject (pov.finite_solid.SuperEllipsoid,pov.finite_solid.Prism,pov.other.Object,pov.texture.Reflection,pov.global_settings.GlobalSettings,pov.infinite_solid.Plane,pov.texture.Texture,pov.texture.Pigment,pov.other.LightSource,pov.finite_solid.Blob,pov.finite_solid.Torus,pov.other.IsoSurface,pov.csg.Csg,pov.global_settings.Radiosity,pov.basic.PoVObject,pov.object_modifier.ClippedBy,pov.finite_solid.SphereSweep,pov.finite_solid.Cylinder,pov.other.ParametricObj,pov.finite_patch.FinitePatch,pov.finite_solid.HeightField,pov.test.TextureTest,pov.texture.Irid,pov.texture.Finish,pov.texture.ImageMap,pov.global_settings.Photons,pov.finite_solid.Lathe,pov.finite_solid.Box,pov.finite_solid.Sor,pov.finite_solid.Sphere,pov.object_modifier.Transformation,pov.finite_solid.Cone,pov.test.BasicTest,pov.texture.ColorMap,pov.other.Camera,pov.finite_solid.Text,pov.finite_solid.JuliaFractal,pov.language_directive.Default,pov.texture.Normal)
+      | \-Color (pov.test.TextureTest,pov.test.EndToEndTest,pov.include.colors_inc,pov.test.AthEffTest,pov.test.BasicTest)
+      | \-PoVObject (pov.atmeff.SkySphere,pov.atmeff.Fog)
+      | \-SceneFile (pov.test.EndToEndTest,pov.test.BasicTest)
+      | \-SceneItem (pov.basic.BlockObject,pov.test.LanguageDirectiveTest,pov.test.FiniteSolidTest,pov.basic.SceneFile,pov.test.BasicTest,pov.test.GlobalSettingsTest,pov.test.InfiniteSolidTest,pov.other.Comment,pov.test.TextureTest,pov.object_modifier.ObjectModifier,pov.texture.pattern.Gradient,pov.basic.Color,pov.test.OtherTest,pov.language_directive.LanguageDirective)
+      | \-Vector (pov.finite_solid.Cylinder,pov.finite_solid.Cone,pov.test.FiniteSolidTest,pov.test.EndToEndTest,pov.basic.SceneItem,pov.test.ObjectModifierTest,pov.test.TextureTest,pov.basic.Color,pov.test.AthEffTest,pov.test.BasicTest,pov.finite_solid.Box,pov.include.colors_inc)
+      \-csg 
+      | \-Csg (pov.csg.Union,pov.csg.Merge,pov.csg.Difference,pov.csg.Intersection)
+      \-finite_solid 
+      | \-Blob (pov.test.FiniteSolidTest)
+      | \-Box (pov.test.FiniteSolidTest)
+      | \-Cone (pov.test.FiniteSolidTest)
+      | \-Cylinder (pov.test.FiniteSolidTest)
+      | \-HeightField (pov.test.FiniteSolidTest)
+      | \-JuliaFractal (pov.test.FiniteSolidTest)
+      | \-Lathe (pov.test.FiniteSolidTest)
+      | \-Sphere (pov.test.EndToEndTest,pov.test.FiniteSolidTest)
+      \-global_settings 
+      | \-GlobalSettings (pov.test.EndToEndTest,pov.test.GlobalSettingsTest)
+      \-include 
+      | \-colors_inc (pov.test.IncludeTest)
+      \-infinite_solid 
+      | \-Plane (pov.test.EndToEndTest,pov.test.InfiniteSolidTest)
+      \-language_directive 
+      | \-Default (pov.test.EndToEndTest,pov.test.LanguageDirectiveTest)
+      | \-Include (pov.test.EndToEndTest,pov.test.LanguageDirectiveTest)
+      | \-LanguageDirective (pov.language_directive.Include,pov.language_directive.Version,pov.language_directive.Default,pov.test.LanguageDirectiveTest)
+      | \-Version (pov.test.EndToEndTest,pov.include.colors_inc,pov.test.LanguageDirectiveTest)
+      \-object_modifier 
+      | \-ObjectModifier (pov.finite_solid.Cone,pov.object_modifier.ClippedBy,pov.object_modifier.Matrix,pov.test.FiniteSolidTest,pov.test.ObjectModifierTest,pov.object_modifier.Scale,pov.finite_solid.Cylinder,pov.finite_solid.Box,pov.object_modifier.Rotate,pov.object_modifier.Interior,pov.object_modifier.Translate)
+      | \-Translate (pov.test.EndToEndTest,pov.test.ObjectModifierTest)
+      \-other 
+      | \-Camera (pov.test.EndToEndTest,pov.test.OtherTest)
+      | \-IllegalStateException (pov.test.BasicTest,pov.basic.SceneItem)
+      | \-LightSource (pov.test.EndToEndTest,pov.test.OtherTest)
+      | \-SdlSyntaxException (pov.finite_solid.Sphere,pov.finite_solid.JuliaFractal,pov.finite_solid.Cone,pov.test.LanguageDirectiveTest,pov.test.FiniteSolidTest,pov.basic.SceneFile,pov.object_modifier.Matrix,pov.test.GlobalSettingsTest,pov.basic.SceneItem,pov.test.InfiniteSolidTest,pov.object_modifier.Scale,pov.test.TextureTest,pov.finite_solid.Lathe,pov.finite_solid.Cylinder,pov.test.ObjectModifierTest,pov.infinite_solid.Plane,pov.finite_solid.Box,pov.basic.Vector,pov.object_modifier.Rotate,pov.test.BasicTest,pov.object_modifier.Translate)
+      \-test (pov)
+      | \-AthEffTest (pov.test)
+      | \-BasicTest (pov.test)
+      | \-CsgTest (pov.test)
+      | \-EndToEndTest (pov.test)
+      | \-FinitePatchTest (pov.test)
+      | \-FiniteSolidTest (pov.test)
+      | \-GlobalSettingsTest (pov.test)
+      | \-InfiniteSolidTest (pov.test)
+      | \-LanguageDirectiveTest (pov.test)
+      | \-ObjectModifierTest (pov.test)
+      | \-OtherTest (pov.test)
+      | \-TextureTest (pov.test)
+      \-texture 
+        \-ColorMap (pov.test.TextureTest,pov.test.EndToEndTest)
+        \-Finish (pov.test.EndToEndTest,pov.test.LanguageDirectiveTest)
+        \-ImageMap (pov.test.EndToEndTest)
+        \-Normal (pov.test.TextureTest,pov.test.EndToEndTest)
+        \-Pigment (pov.test.TextureTest,pov.test.EndToEndTest,pov.test.AthEffTest)
+        \-Reflection (pov.test.EndToEndTest)
+        \-Texture (pov.test.TextureTest,pov.test.EndToEndTest)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |2887   |35.45 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |4162   |51.11 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |249    |3.06  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |846    |10.39 |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |264   |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |3.240 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |18     |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |22     |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |39     |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |4      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++----------------------------+------+--------+---------+-----------+
+|module                      |error |warning |refactor |convention |
++============================+======+========+=========+===========+
+|pov.test.EndToEndTest       |50.00 |2.56    |13.64    |0.00       |
++----------------------------+------+--------+---------+-----------+
+|pov.test.TextureTest        |50.00 |2.56    |0.00     |11.11      |
++----------------------------+------+--------+---------+-----------+
+|pov.test.BasicTest          |0.00  |41.03   |4.55     |11.11      |
++----------------------------+------+--------+---------+-----------+
+|pov.basic.SceneItem         |0.00  |30.77   |22.73    |38.89      |
++----------------------------+------+--------+---------+-----------+
+|pov.basic.Vector            |0.00  |7.69    |0.00     |27.78      |
++----------------------------+------+--------+---------+-----------+
+|pov.finite_solid.Cone       |0.00  |7.69    |0.00     |0.00       |
++----------------------------+------+--------+---------+-----------+
+|pov.finite_solid.Cylinder   |0.00  |5.13    |0.00     |0.00       |
++----------------------------+------+--------+---------+-----------+
+|pov.basic.SceneFile         |0.00  |2.56    |0.00     |0.00       |
++----------------------------+------+--------+---------+-----------+
+|pov.csg.Merge               |0.00  |0.00    |59.09    |0.00       |
++----------------------------+------+--------+---------+-----------+
+|pov.test.GlobalSettingsTest |0.00  |0.00    |0.00     |5.56       |
++----------------------------+------+--------+---------+-----------+
+|pov.include.colors_inc      |0.00  |0.00    |0.00     |5.56       |
++----------------------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++-----------------------------+------------+
+|message id                   |occurrences |
++=============================+============+
+|invalid-name                 |15          |
++-----------------------------+------------+
+|unidiomatic-typecheck        |13          |
++-----------------------------+------------+
+|duplicate-code               |13          |
++-----------------------------+------------+
+|protected-access             |9           |
++-----------------------------+------------+
+|pointless-statement          |5           |
++-----------------------------+------------+
+|no-self-use                  |5           |
++-----------------------------+------------+
+|global-variable-undefined    |5           |
++-----------------------------+------------+
+|undefined-variable           |4           |
++-----------------------------+------------+
+|too-many-statements          |3           |
++-----------------------------+------------+
+|unused-variable              |2           |
++-----------------------------+------------+
+|unused-import                |2           |
++-----------------------------+------------+
+|trailing-whitespace          |2           |
++-----------------------------+------------+
+|global-variable-not-assigned |2           |
++-----------------------------+------------+
+|too-many-public-methods      |1           |
++-----------------------------+------------+
+|superfluous-parens           |1           |
++-----------------------------+------------+
+|global-at-module-level       |1           |
++-----------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 9.52/10
+

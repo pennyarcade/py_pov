@@ -1,8 +1,52 @@
 directory lgeo
 checking lgeo/__init__.py
 checking lgeo/lgeo_city.py
+directory lgeo/config
+checking lgeo/config/__init__.py
+checking lgeo/config/lgeo_cfg.py
+directory lgeo/set
+checking lgeo/set/__init__.py
+checking lgeo/set/lg_10036_1_car.py
+lgeo/set/lg_10036_1_car.py:66:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+lgeo/set/lg_10036_1_car.py:68:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+checking lgeo/set/lg_10036_1_house.py
+checking lgeo/set/lg_10036_1_main.py
 directory lgeo/include
 checking lgeo/include/__init__.py
+directory lgeo/include/common
+checking lgeo/include/common/__init__.py
+checking lgeo/include/common/brick_subparts.py
+checking lgeo/include/common/custom_macros.py
+checking lgeo/include/common/lg_color.py
+checking lgeo/include/common/lg_defs.py
 directory lgeo/include/brick
 checking lgeo/include/brick/__init__.py
 checking lgeo/include/brick/lg_2412b.py
@@ -82,30 +126,20 @@ lgeo/include/brick/lg_3022.py:215:9: E113 unexpected indentation
     Okay: a = 1
     Okay: if a == 0:\n    a = 1
     E111:   a = 1
+    E114:   # a = 1
 
     Okay: for item in items:\n    pass
     E112: for item in items:\npass
+    E115: for item in items:\n# Hi\n    pass
 
     Okay: a = 1\nb = 2
     E113: a = 1\n    b = 2
+    E116: a = 1\n    # b = 2
 lgeo/include/brick/lg_3022.py:479:1: E901 TokenError: EOF in multi-line statement
     Check if the syntax is valid.
 checking lgeo/include/brick/lg_3788.py
-directory lgeo/include/common
-checking lgeo/include/common/__init__.py
-checking lgeo/include/common/brick_subparts.py
-checking lgeo/include/common/custom_macros.py
-checking lgeo/include/common/lg_color.py
-checking lgeo/include/common/lg_defs.py
-directory lgeo/config
-checking lgeo/config/__init__.py
-checking lgeo/config/lgeo_cfg.py
-directory lgeo/set
-checking lgeo/set/__init__.py
-checking lgeo/set/lg_10036_1_car.py
-checking lgeo/set/lg_10036_1_house.py
-checking lgeo/set/lg_10036_1_main.py
 1       E113 unexpected indentation
 2       E131 continuation line unaligned for hanging indent
+2       E402 module level import not at top of file
 1       E501 line too long (82 > 79 characters)
 1       E901 TokenError: EOF in multi-line statement
