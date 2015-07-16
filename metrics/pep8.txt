@@ -413,6 +413,39 @@ checking pov/tests/Csg_Test.py
 checking pov/tests/EndToEnd_Test.py
 checking pov/tests/FinitePatch_Test.py
 checking pov/tests/FiniteSolid_Test.py
+pov/tests/FiniteSolid_Test.py:669:80: E501 line too long (84 > 79 characters)
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to have
+    several windows side-by-side.  The default wrapping on such devices looks
+    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
+    For flowing long blocks of text (docstrings or comments), limiting the
+    length to 72 characters is recommended.
+
+    Reports error E501.
+pov/tests/FiniteSolid_Test.py:705:80: E501 line too long (81 > 79 characters)
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to have
+    several windows side-by-side.  The default wrapping on such devices looks
+    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
+    For flowing long blocks of text (docstrings or comments), limiting the
+    length to 72 characters is recommended.
+
+    Reports error E501.
+pov/tests/FiniteSolid_Test.py:757:80: E501 line too long (83 > 79 characters)
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to have
+    several windows side-by-side.  The default wrapping on such devices looks
+    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
+    For flowing long blocks of text (docstrings or comments), limiting the
+    length to 72 characters is recommended.
+
+    Reports error E501.
 checking pov/tests/GlobalSettings_Test.py
 checking pov/tests/Include_Test.py
 pov/tests/Include_Test.py:21:1: E402 module level import not at top of file
@@ -480,5 +513,6 @@ checking pov/csg/Merge.py
 checking pov/csg/Union.py
 checking pov/csg/__init__.py
 18      E402 module level import not at top of file
+3       E501 line too long (84 > 79 characters)
 2       W293 blank line contains whitespace
 1       W503 line break before binary operator
