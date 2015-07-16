@@ -7,10 +7,13 @@
     <meta http-equiv='X-UA-Compatible' content='IE=emulateIE7' />
     <title>Coverage for pov.texture.Pigment: 100%</title>
     <link rel='stylesheet' href='style.css' type='text/css'>
+    
     <script type='text/javascript' src='jquery.min.js'></script>
+    <script type='text/javascript' src='jquery.hotkeys.js'></script>
+    <script type='text/javascript' src='jquery.isonscreen.js'></script>
     <script type='text/javascript' src='coverage_html.js'></script>
     <script type='text/javascript' charset='utf-8'>
-        jQuery(document).ready(pyfile_ready);
+        jQuery(document).ready(coverage.pyfile_ready);
     </script>
 </head>
 <body id='pyfile'>
@@ -20,13 +23,37 @@
         <h1>Coverage for <b>pov.texture.Pigment</b> :
             <span class='pc_cov'>100%</span>
         </h1>
+        <img id='keyboard_icon' src='keybd_closed.png'>
         <h2 class='stats'>
-            9 statements
-            <span class='run hide_run' onclick='toggle_lines(this, "run")'>9 run</span>
-            <span class='mis' onclick='toggle_lines(this, "mis")'>0 missing</span>
-            <span class='exc' onclick='toggle_lines(this, "exc")'>0 excluded</span>
+            11 statements &nbsp;
+            <span class='run hide_run shortkey_r button_toggle_run'>11 run</span>
+            <span class='mis shortkey_m button_toggle_mis'>0 missing</span>
+            <span class='exc shortkey_x button_toggle_exc'>0 excluded</span>
             
         </h2>
+    </div>
+</div>
+
+<div class='help_panel'>
+    <img id='panel_icon' src='keybd_open.png'>
+<p class='legend'>Hot-keys on this page</p>
+    <div>
+<p class='keyhelp'>
+        <span class='key'>r</span>
+        <span class='key'>m</span>
+        <span class='key'>x</span>
+        <span class='key'>p</span> &nbsp; toggle line displays
+    </p>
+<p class='keyhelp'>
+        <span class='key'>j</span>
+        <span class='key'>k</span> &nbsp; next/prev highlighted chunk
+    </p>
+<p class='keyhelp'>
+        <span class='key'>0</span> &nbsp; (zero) top of page
+    </p>
+<p class='keyhelp'>
+        <span class='key'>1</span> &nbsp; (one) first highlighted chunk
+    </p>
     </div>
 </div>
 
@@ -48,10 +75,10 @@
 <p id='n12' class='pln'><a href='#n12'>12</a></p>
 <p id='n13' class='pln'><a href='#n13'>13</a></p>
 <p id='n14' class='stm run hide_run'><a href='#n14'>14</a></p>
-<p id='n15' class='stm run hide_run'><a href='#n15'>15</a></p>
+<p id='n15' class='pln'><a href='#n15'>15</a></p>
 <p id='n16' class='pln'><a href='#n16'>16</a></p>
-<p id='n17' class='pln'><a href='#n17'>17</a></p>
-<p id='n18' class='stm run hide_run'><a href='#n18'>18</a></p>
+<p id='n17' class='stm run hide_run'><a href='#n17'>17</a></p>
+<p id='n18' class='pln'><a href='#n18'>18</a></p>
 <p id='n19' class='pln'><a href='#n19'>19</a></p>
 <p id='n20' class='pln'><a href='#n20'>20</a></p>
 <p id='n21' class='pln'><a href='#n21'>21</a></p>
@@ -124,12 +151,15 @@
 <p id='n88' class='stm run hide_run'><a href='#n88'>88</a></p>
 <p id='n89' class='stm run hide_run'><a href='#n89'>89</a></p>
 <p id='n90' class='pln'><a href='#n90'>90</a></p>
+<p id='n91' class='stm run hide_run'><a href='#n91'>91</a></p>
+<p id='n92' class='stm run hide_run'><a href='#n92'>92</a></p>
+<p id='n93' class='stm run hide_run'><a href='#n93'>93</a></p>
                 
             </td>
             <td class='text' valign='top'>
 <p id='t1' class='pln'><span class='com'># coding=UTF-8</span><span class='strut'>&nbsp;</span></p>
 <p id='t2' class='stm run hide_run'><span class='str'>&quot;&quot;&quot;</span><span class='strut'>&nbsp;</span></p>
-<p id='t3' class='pln'><span class='str'>Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013</span><span class='strut'>&nbsp;</span></p>
+<p id='t3' class='pln'><span class='str'>Py_Pov 0.0.1 Copyright (c) Martin T&#246;nnishoff, 2013</span><span class='strut'>&nbsp;</span></p>
 <p id='t4' class='pln'><span class='strut'>&nbsp;</span></p>
 <p id='t5' class='pln'><span class='str'>based on:</span><span class='strut'>&nbsp;</span></p>
 <p id='t6' class='pln'><span class='str'>PyPov-0.0.X Copyright (c) Simon Burton, 2003</span><span class='strut'>&nbsp;</span></p>
@@ -141,35 +171,35 @@
 <p id='t12' class='pln'><span class='strut'>&nbsp;</span></p>
 <p id='t13' class='pln'><span class='strut'>&nbsp;</span></p>
 <p id='t14' class='stm run hide_run'><span class='key'>from</span> <span class='nam'>pov</span><span class='op'>.</span><span class='nam'>basic</span><span class='op'>.</span><span class='nam'>BlockObject</span> <span class='key'>import</span> <span class='nam'>BlockObject</span><span class='strut'>&nbsp;</span></p>
-<p id='t15' class='stm run hide_run'><span class='key'>from</span> <span class='nam'>pov</span><span class='op'>.</span><span class='nam'>other</span><span class='op'>.</span><span class='nam'>SdlSyntaxException</span> <span class='key'>import</span> <span class='nam'>SdlSyntaxException</span><span class='strut'>&nbsp;</span></p>
+<p id='t15' class='pln'><span class='strut'>&nbsp;</span></p>
 <p id='t16' class='pln'><span class='strut'>&nbsp;</span></p>
-<p id='t17' class='pln'><span class='strut'>&nbsp;</span></p>
-<p id='t18' class='stm run hide_run'><span class='key'>class</span> <span class='nam'>Pigment</span><span class='op'>(</span><span class='nam'>BlockObject</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
-<p id='t19' class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
-<p id='t20' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; PIGMENT:</span><span class='strut'>&nbsp;</span></p>
-<p id='t21' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pigment { PIGMENT_BODY }</span><span class='strut'>&nbsp;</span></p>
-<p id='t22' class='pln'><span class='strut'>&nbsp;</span></p>
-<p id='t23' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_BODY:</span><span class='strut'>&nbsp;</span></p>
-<p id='t24' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PIGMENT_IDENTIFIER] [PIGMENT_TYPE] [PIGMENT_MODIFIERS]</span><span class='strut'>&nbsp;</span></p>
-<p id='t25' class='pln'><span class='strut'>&nbsp;</span></p>
-<p id='t26' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_TYPE:</span><span class='strut'>&nbsp;</span></p>
-<p id='t27' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; COLOR | COLOR_LIST_PATTERN | PIGMENT_LIST_PATTERN |</span><span class='strut'>&nbsp;</span></p>
-<p id='t28' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IMAGE_MAP | MAP_PATTERN [COLOR_MAP] | MAP_PATTERN PIGMENT_MAP</span><span class='strut'>&nbsp;</span></p>
-<p id='t29' class='pln'><span class='strut'>&nbsp;</span></p>
-<p id='t30' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; COLOR_LIST_PATTERN:</span><span class='strut'>&nbsp;</span></p>
-<p id='t31' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; brick [COLOR [, COLOR]] [BRICK_ITEMS] |</span><span class='strut'>&nbsp;</span></p>
-<p id='t32' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; checker [COLOR [, COLOR]] |</span><span class='strut'>&nbsp;</span></p>
-<p id='t33' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hexagon [COLOR [, COLOR [, COLOR]]] |</span><span class='strut'>&nbsp;</span></p>
-<p id='t34' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object { LIST_OBJECT [COLOR [, COLOR]] }</span><span class='strut'>&nbsp;</span></p>
-<p id='t35' class='pln'><span class='strut'>&nbsp;</span></p>
-<p id='t36' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_LIST_PATTERN:</span><span class='strut'>&nbsp;</span></p>
-<p id='t37' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; brick PIGMENT, PIGMENT [BRICK_ITEMS] |</span><span class='strut'>&nbsp;</span></p>
-<p id='t38' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; checker PIGMENT, PIGMENT |</span><span class='strut'>&nbsp;</span></p>
-<p id='t39' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hexagon PIGMENT, PIGMENT, PIGMENT |</span><span class='strut'>&nbsp;</span></p>
-<p id='t40' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object { LIST_OBJECT PIGMENT, PIGMENT }</span><span class='strut'>&nbsp;</span></p>
-<p id='t41' class='pln'><span class='strut'>&nbsp;</span></p>
-<p id='t42' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IMAGE_MAP:</span><span class='strut'>&nbsp;</span></p>
-<p id='t43' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; image_map {BITMAP_IMAGE [IMAGE_MAP_MODIFIER...] [BITMAP_MODIFIERS] }</span><span class='strut'>&nbsp;</span></p>
+<p id='t17' class='stm run hide_run'><span class='key'>class</span> <span class='nam'>Pigment</span><span class='op'>(</span><span class='nam'>BlockObject</span><span class='op'>)</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t18' class='pln'>&nbsp; &nbsp; <span class='str'>&#39;&#39;&#39;</span><span class='strut'>&nbsp;</span></p>
+<p id='t19' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; PIGMENT:</span><span class='strut'>&nbsp;</span></p>
+<p id='t20' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pigment { PIGMENT_BODY }</span><span class='strut'>&nbsp;</span></p>
+<p id='t21' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t22' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_BODY:</span><span class='strut'>&nbsp;</span></p>
+<p id='t23' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PIGMENT_IDENTIFIER] [PIGMENT_TYPE] [PIGMENT_MODIFIERS]</span><span class='strut'>&nbsp;</span></p>
+<p id='t24' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t25' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_TYPE:</span><span class='strut'>&nbsp;</span></p>
+<p id='t26' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; COLOR | COLOR_LIST_PATTERN | PIGMENT_LIST_PATTERN |</span><span class='strut'>&nbsp;</span></p>
+<p id='t27' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IMAGE_MAP | MAP_PATTERN [COLOR_MAP] | MAP_PATTERN PIGMENT_MAP</span><span class='strut'>&nbsp;</span></p>
+<p id='t28' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t29' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; COLOR_LIST_PATTERN:</span><span class='strut'>&nbsp;</span></p>
+<p id='t30' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; brick [COLOR [, COLOR]] [BRICK_ITEMS] |</span><span class='strut'>&nbsp;</span></p>
+<p id='t31' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; checker [COLOR [, COLOR]] |</span><span class='strut'>&nbsp;</span></p>
+<p id='t32' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hexagon [COLOR [, COLOR [, COLOR]]] |</span><span class='strut'>&nbsp;</span></p>
+<p id='t33' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object { LIST_OBJECT [COLOR [, COLOR]] }</span><span class='strut'>&nbsp;</span></p>
+<p id='t34' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t35' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_LIST_PATTERN:</span><span class='strut'>&nbsp;</span></p>
+<p id='t36' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; brick PIGMENT, PIGMENT [BRICK_ITEMS] |</span><span class='strut'>&nbsp;</span></p>
+<p id='t37' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; checker PIGMENT, PIGMENT |</span><span class='strut'>&nbsp;</span></p>
+<p id='t38' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hexagon PIGMENT, PIGMENT, PIGMENT |</span><span class='strut'>&nbsp;</span></p>
+<p id='t39' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object { LIST_OBJECT PIGMENT, PIGMENT }</span><span class='strut'>&nbsp;</span></p>
+<p id='t40' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t41' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IMAGE_MAP:</span><span class='strut'>&nbsp;</span></p>
+<p id='t42' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; image_map {BITMAP_IMAGE [IMAGE_MAP_MODIFIER...]</span><span class='strut'>&nbsp;</span></p>
+<p id='t43' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [BITMAP_MODIFIERS] }</span><span class='strut'>&nbsp;</span></p>
 <p id='t44' class='pln'><span class='strut'>&nbsp;</span></p>
 <p id='t45' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IMAGE_MAP_MODIFIER:</span><span class='strut'>&nbsp;</span></p>
 <p id='t46' class='pln'><span class='str'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; filter I_PALETTE, F_AMOUNT | filter all F_AMOUNT |</span><span class='strut'>&nbsp;</span></p>
@@ -217,6 +247,9 @@
 <p id='t88' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>del</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>kwargs</span><span class='op'>[</span><span class='str'>&#39;bozo&#39;</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
 <p id='t89' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>args</span><span class='op'>.</span><span class='nam'>append</span><span class='op'>(</span><span class='str'>&#39;bozo&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
 <p id='t90' class='pln'><span class='strut'>&nbsp;</span></p>
+<p id='t91' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>if</span> <span class='str'>&#39;checker&#39;</span> <span class='key'>in</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>kwargs</span> <span class='key'>and</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>kwargs</span><span class='op'>[</span><span class='str'>&#39;checker&#39;</span><span class='op'>]</span> <span class='key'>is</span> <span class='nam'>True</span><span class='op'>:</span><span class='strut'>&nbsp;</span></p>
+<p id='t92' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='key'>del</span> <span class='nam'>self</span><span class='op'>.</span><span class='nam'>kwargs</span><span class='op'>[</span><span class='str'>&#39;checker&#39;</span><span class='op'>]</span><span class='strut'>&nbsp;</span></p>
+<p id='t93' class='stm run hide_run'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class='nam'>self</span><span class='op'>.</span><span class='nam'>args</span><span class='op'>.</span><span class='nam'>append</span><span class='op'>(</span><span class='str'>&#39;checker&#39;</span><span class='op'>)</span><span class='strut'>&nbsp;</span></p>
                 
             </td>
         </tr>
@@ -226,7 +259,7 @@
 <div id='footer'>
     <div class='content'>
         <p>
-            <a class='nav' href='index.html'>&#xab; index</a> &nbsp; &nbsp; <a class='nav' href='http://nedbatchelder.com/code/coverage'>coverage.py v3.4</a>
+            <a class='nav' href='index.html'>&#xab; index</a> &nbsp; &nbsp; <a class='nav' href='http://nedbatchelder.com/code/coverage'>coverage.py v3.7.1</a>
         </p>
     </div>
 </div>
