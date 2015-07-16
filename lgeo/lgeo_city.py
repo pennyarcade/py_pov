@@ -111,7 +111,7 @@ from pov.texture.pattern.Gradient import Gradient
 # ==== LGEO parts ====
 
 # ==== Object includes ====
-# from lgeo.set import lg_10036_1_car
+from lgeo.set import lg_10036_1_car
 # include "10036-1_house.pov"
 # include "10036-1_main.pov"
 
@@ -239,7 +239,7 @@ def main():
     fix.append(
         Object(
             # @Todo: fix file below
-            # lg_10036_1_car.nonmoving()
+            lg_10036_1_car.nonmoving()
         )
 
         # object {set_10036_1_car_steering_wheel}

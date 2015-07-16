@@ -60,7 +60,7 @@ def get_knob_inner_space(length=1, width=1):
     ks_x = 0
     while ks_x < length:
         ks_y = 0
-        while ks_y < result:
+        while ks_y < width:
             result.append(
                 Object(
                     lg_knob_inner_space,

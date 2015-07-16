@@ -43,7 +43,7 @@ class Sphere(BlockObject):
         self._validate_args(valid_args)
 
         # param syntax checks
-        if not len(self.args[0].v) == 3:
+        if not len(self.args[0]) == 3:
             raise SdlSyntaxException(
                 'Center point Vector has more or less than 3 dimensions'
             )

@@ -13,18 +13,22 @@
 ***************************************************************************'''
 
 from lgeo.include.common.lg_defs import LG_CORNER_SPACE, LG_BRICK_WIDTH
-from lgeo.include.common.lg_defs import LG_PLATE_HEIGHT,
+from lgeo.include.common.lg_defs import LG_PLATE_HEIGHT, lg_plate_cylinder
 
-# from lgeo.include.common.brick_subparts import *
+from lgeo.include.common.brick_subparts import get_knob_inner_space, get_knob_objects
+
 
 from pov.basic.Vector import Vector
 
 from pov.csg.Union import Union
 
 from pov.finite_solid.Box import Box
+from pov.finite_solid.Sphere import Sphere
+from pov.finite_solid.Cylinder import Cylinder
 
 from pov.object_modifier.Translate import Translate
 from pov.object_modifier.Rotate import Rotate
+from pov.csg.Difference import Difference
 
 from pov.other.Object import Object
 
@@ -207,7 +211,7 @@ def solid(length=2, width=2):
             ),
             Vector(
                 length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
-                width*LG_BRICK_WIDTH)-LG_CORNER_SPACE,
+                width*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                 LG_PLATE_HEIGHT-LG_CORNER_SPACE
             ),
             LG_CORNER_SPACE

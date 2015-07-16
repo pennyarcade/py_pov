@@ -106,7 +106,7 @@ from pov.other.Comment import Comment
 # #include "woods.inc"      # Great wooden textures created by
 # Dan Farmer and Paul Novak
 
-'''
+
 # ==== LGEO Colors and Definitions ====
 #include "lg_color.inc"
 from  lgeo.include.common.lg_defs import *
@@ -165,11 +165,11 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
     """
 
     part = Union(
-        Comment(
+        Comment('''
         # *******************************************************************
         # Objects (Step 1)
         # *******************************************************************
-        ),
+        '''),
         Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
         custom_macros.StdBrick(
             lg_2441.solid(),
@@ -178,11 +178,11 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             -90, 0, 0),
 
         Comment('**** End 2441 Red Car Base 7 x 4 x 2/3 ****'),
-        Comment(
+        Comment('''
         # *******************************************************************
         # Objects (Step 2)
         # *******************************************************************
-        ),
+        '''),
         Comment('**** Start 3022 White Plate 2 x 2 ****'),
         custom_macros.StdBrick(
             lg_3022.solid(),
@@ -207,11 +207,11 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             -90, 90, 0
         ),
         Comment('**** End 2412b White Tile 1 x 2 Grille with Groove ****'),
-        Comment(
+        Comment('''
         ********************************************************************
         * Objects (Step 3)
         ********************************************************************
-        ),
+        '''),
         Comment('**** Start 3022 White Plate 2 x 2 ****'),
         custom_macros.StdBrick(
             lg_3022.solid(),
@@ -228,11 +228,11 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             -90, 0, 0
         ),
         Comment('**** End 3010 White Brick 1 x 4 ****'),
-        Comment(
+        Comment('''
         ********************************************************************
         * Objects (Step 4)
         ********************************************************************
-        ),
+        '''),
         Comment('**** Start 3003 Yellow Brick 2 x 2 ****'),
         custom_macros.StdBrick(
             lg_3003.solid(),
@@ -249,11 +249,11 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             -90, 180, 0
         ),
         Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
-        Comment(
+        Comment('''
         ********************************************************************
         * Objects (Step 5)
         ********************************************************************
-        ),
+        '''),
         Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
         custom_macros.StdBrick(
             lg_3788.solid(),
@@ -267,19 +267,18 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
     return part
 
 
-        Comment('****  ****'),
-        custom_macros.StdBrick(
-
-        ),
-        Comment('****  ****'),
-'''
+#        Comment('****  ****'),
+#        custom_macros.StdBrick(
+#
+#        ),
+#        Comment('****  ****'),
 
 # 3021    Red     Plate 2 x 3
-StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
+# StdBrick(lg_3021,    lg_red,   -2*LGBW,   6*LGPH,         0,  -90,  90,   0)
 # 3024    White   Plate 1 x 1
-StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
+#StdBrick(lg_3024,  lg_white,   -1*LGBW,   6*LGPH, -1.5*LGBW,  -90,   0,   0)
 # 4085c   White   Plate 1 x 1 with Clip Vertical - Type 3
-StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
+#StdBrick(lg_4085c,  lg_white,   -1*LGBW,   6*LGPH,  1.5*LGBW,  -90,   0,   0)
 
 '''*************************************************************************
 Objects (Step 6)

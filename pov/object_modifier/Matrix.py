@@ -38,7 +38,7 @@ class Matrix(ObjectModifier):
         self._validate_args(valid_args)
 
         # param syntax checks
-        if not len(self.args[0].v) == 12:
+        if not len(self.args[0]) == 12:
             raise SdlSyntaxException(
                 'Vector RVector has more or less than 12 dimensions'
             )

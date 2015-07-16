@@ -63,13 +63,13 @@ class Box(BlockObject):
         # Syntax checking
         if not isinstance(vector1, Vector):
             raise SdlSyntaxException('Parameter v1 not of type Vector')
-        if not len(vector1.v) == 3:
+        if not len(vector1) == 3:
             raise SdlSyntaxException(
                 'Vector v1 has more or less than 3 dimensions'
             )
         if not isinstance(vector2, Vector):
             raise SdlSyntaxException('Parameter v2 not of type Vector')
-        if not len(vector2.v) == 3:
+        if not len(vector2) == 3:
             raise SdlSyntaxException(
                 'Vector v2 has more or less than 3 dimensions'
             )

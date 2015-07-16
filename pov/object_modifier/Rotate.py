@@ -36,7 +36,7 @@ class Rotate(ObjectModifier):
         self._validate_args(valid_args)
 
         # param syntax checks
-        if not len(self.args[0].v) == 3:
+        if not len(self.args[0]) == 3:
             raise SdlSyntaxException(
                 'Vector RVector has more or less than 4 dimensions'
             )

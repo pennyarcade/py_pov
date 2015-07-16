@@ -27,13 +27,16 @@ from pov.finite_solid.Torus import Torus
 from pov.object_modifier.Matrix import Matrix
 from pov.object_modifier.Rotate import Rotate
 from pov.object_modifier.Translate import Translate
+from pov.object_modifier.Scale import Scale
 
 from pov.other.Object import Object
 
 from lgeo.include.common.lg_defs import LG_BRICK_WIDTH, LG_CORNER_SPACE
 from lgeo.include.common.lg_defs import LG_PLATE_HEIGHT, LG_E, LG_KNOB_RADIUS
 from lgeo.include.common.lg_defs import LG_TOP_HEIGHT, LG_WALL_WIDTH
-from lgeo.include.common.lg_defs import LG_KNOB_INNER_RADIUS
+from lgeo.include.common.lg_defs import LG_KNOB_INNER_RADIUS, lg_knob
+from lgeo.include.common.lg_defs import lg_plate_cylinder, lg_knob_inner_space
+
 
 
 lg_angle = 23.57817847

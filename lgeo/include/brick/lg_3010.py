@@ -225,7 +225,7 @@ def solid(length=4, width=1):
         ),
         Sphere(
             Vector(
-                length*LG_BRICK_WIDTH-LG_CORNER_SPACE
+                length*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                 width*LG_BRICK_WIDTH-LG_CORNER_SPACE,
                 LG_BRICK_HEIGHT-LG_CORNER_SPACE
             ),
