@@ -101,6 +101,10 @@ class Vector(object):
             result += self.values[i]*other.values[i]
         return result
 
+    def __len__(self):
+        return len(self.values)
+    
+    
 # Predefine basic vectors
 x = Vector(1.0, 0.0, 0.0)
 y = Vector(0.0, 1.0, 0.0)
