@@ -72,11 +72,9 @@ C: 38, 4: Invalid method name "test_create_Option_wrong_type" (invalid-name)
 C:  1, 0: Invalid module name "AthEff_Test" (invalid-name)
 ************* Module pov.tests.Texture_Test
 C:  1, 0: Invalid module name "Texture_Test" (invalid-name)
-E: 38,19: Undefined variable 'Finish' (undefined-variable)
-E: 44,40: Undefined variable 'Finish' (undefined-variable)
-C: 48, 4: Invalid method name "test_toString" (invalid-name)
-C: 90, 4: Invalid method name "test_toString" (invalid-name)
-W: 27, 0: Unused SdlSyntaxException imported from pov.other.SdlSyntaxException (unused-import)
+C: 49, 4: Invalid method name "test_toString" (invalid-name)
+C: 91, 4: Invalid method name "test_toString" (invalid-name)
+W: 28, 0: Unused SdlSyntaxException imported from pov.other.SdlSyntaxException (unused-import)
 ************* Module pov.tests.EndToEnd_Test
 C:  1, 0: Invalid module name "EndToEnd_Test" (invalid-name)
 R: 49, 4: Too many statements (96/50) (too-many-statements)
@@ -249,6 +247,18 @@ R:  1, 0: Similar lines in 3 files
                     'Only ObjectModifier objects may be passed as options'
                 )
  (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Cone:57
+==pov.finite_solid.Cylinder:49
+            )
+        if not isinstance(cappoint, Vector):
+            raise SdlSyntaxException(
+                'Parameter cappoint is not of type Vector'
+            )
+        if not len(cappoint) == 3:
+            raise SdlSyntaxException(
+                'Cap point Vector has more or less than 3 dimensions'
+            ) (duplicate-code)
 R:  1, 0: Similar lines in 6 files
 ==pov.finite_solid.Blob:69
 ==pov.finite_solid.HeightField:94
@@ -280,6 +290,17 @@ R:  1, 0: Similar lines in 4 files
 
         return code (duplicate-code)
 R:  1, 0: Similar lines in 2 files
+==pov.finite_solid.Cone:46
+==pov.finite_solid.Cylinder:42
+        if not isinstance(basepoint, Vector):
+            raise SdlSyntaxException(
+                'Parameter basepoint is not of type Vector'
+            )
+        if not len(basepoint) == 3:
+            raise SdlSyntaxException(
+                'Base point Vector has more or less than 3 dimensions'
+            ) (duplicate-code)
+R:  1, 0: Similar lines in 2 files
 ==pov.finite_solid.Sphere:66
 ==pov.infinite_solid.Plane:66
         valid_kw = {
@@ -289,14 +310,6 @@ R:  1, 0: Similar lines in 2 files
             'no_reflection': 'bool',
             'inverse': 'bool',
             'double_illuminate': 'bool', (duplicate-code)
-R:  1, 0: Similar lines in 2 files
-==pov.finite_solid.Cone:57
-==pov.finite_solid.Cylinder:49
-            )
-        if not isinstance(cappoint, Vector):
-            raise SdlSyntaxException(
-                'Parameter cappoint is not of type Vector'
-            ) (duplicate-code)
 R:  1, 0: Similar lines in 6 files
 ==pov.finite_solid.Blob:69
 ==pov.finite_solid.HeightField:94
@@ -313,7 +326,7 @@ R:  1, 0: Similar lines in 6 files
 
 Report
 ======
-2061 statements analysed.
+2062 statements analysed.
 
 Statistics by type
 ------------------
@@ -392,7 +405,7 @@ External dependencies
       | \-Texture_Test (pov.tests)
       \-texture 
         \-ColorMap (pov.tests.Texture_Test,pov.tests.EndToEnd_Test)
-        \-Finish (pov.tests.LanguageDirective_Test,pov.tests.EndToEnd_Test)
+        \-Finish (pov.tests.LanguageDirective_Test,pov.tests.Texture_Test,pov.tests.EndToEnd_Test)
         \-ImageMap (pov.tests.EndToEnd_Test)
         \-Normal (pov.tests.Texture_Test,pov.tests.EndToEnd_Test)
         \-Pigment (pov.tests.AthEff_Test,pov.tests.Texture_Test,pov.tests.EndToEnd_Test)
@@ -407,9 +420,9 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |2887   |35.45 |NC       |NC         |
+|code      |2888   |35.46 |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|docstring |4162   |51.11 |NC       |NC         |
+|docstring |4162   |51.10 |NC       |NC         |
 +----------+-------+------+---------+-----------+
 |comment   |249    |3.06  |NC       |NC         |
 +----------+-------+------+---------+-----------+
@@ -424,9 +437,9 @@ Duplication
 +-------------------------+------+---------+-----------+
 |                         |now   |previous |difference |
 +=========================+======+=========+===========+
-|nb duplicated lines      |263   |NC       |NC         |
+|nb duplicated lines      |275   |NC       |NC         |
 +-------------------------+------+---------+-----------+
-|percent duplicated lines |3.228 |NC       |NC         |
+|percent duplicated lines |3.375 |NC       |NC         |
 +-------------------------+------+---------+-----------+
 
 
@@ -439,11 +452,11 @@ Messages by category
 +===========+=======+=========+===========+
 |convention |31     |NC       |NC         |
 +-----------+-------+---------+-----------+
-|refactor   |21     |NC       |NC         |
+|refactor   |22     |NC       |NC         |
 +-----------+-------+---------+-----------+
 |warning    |39     |NC       |NC         |
 +-----------+-------+---------+-----------+
-|error      |4      |NC       |NC         |
+|error      |2      |NC       |NC         |
 +-----------+-------+---------+-----------+
 
 
@@ -451,49 +464,49 @@ Messages by category
 % errors / warnings by module
 -----------------------------
 
-+---------------------------------+------+--------+---------+-----------+
-|module                           |error |warning |refactor |convention |
-+=================================+======+========+=========+===========+
-|pov.tests.EndToEnd_Test          |50.00 |2.56    |14.29    |3.23       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.tests.Texture_Test           |50.00 |2.56    |0.00     |9.68       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.tests.Basic_Test             |0.00  |41.03   |4.76     |9.68       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.basic.SceneItem              |0.00  |30.77   |23.81    |22.58      |
-+---------------------------------+------+--------+---------+-----------+
-|pov.basic.Vector                 |0.00  |7.69    |0.00     |16.13      |
-+---------------------------------+------+--------+---------+-----------+
-|pov.finite_solid.Cone            |0.00  |7.69    |0.00     |0.00       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.finite_solid.Cylinder        |0.00  |5.13    |0.00     |0.00       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.basic.SceneFile              |0.00  |2.56    |0.00     |0.00       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.csg.Merge                    |0.00  |0.00    |57.14    |0.00       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.tests.GlobalSettings_Test    |0.00  |0.00    |0.00     |6.45       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.tests.Other_Test             |0.00  |0.00    |0.00     |3.23       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.tests.ObjectModifier_Test    |0.00  |0.00    |0.00     |3.23       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.tests.LanguageDirective_Test |0.00  |0.00    |0.00     |3.23       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.tests.InfiniteSolid_Test     |0.00  |0.00    |0.00     |3.23       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.tests.Include_Test           |0.00  |0.00    |0.00     |3.23       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.tests.FiniteSolid_Test       |0.00  |0.00    |0.00     |3.23       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.tests.FinitePatch_Test       |0.00  |0.00    |0.00     |3.23       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.tests.Csg_Test               |0.00  |0.00    |0.00     |3.23       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.tests.AthEff_Test            |0.00  |0.00    |0.00     |3.23       |
-+---------------------------------+------+--------+---------+-----------+
-|pov.include.colors_inc           |0.00  |0.00    |0.00     |3.23       |
-+---------------------------------+------+--------+---------+-----------+
++---------------------------------+-------+--------+---------+-----------+
+|module                           |error  |warning |refactor |convention |
++=================================+=======+========+=========+===========+
+|pov.tests.EndToEnd_Test          |100.00 |2.56    |13.64    |3.23       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.tests.Basic_Test             |0.00   |41.03   |4.55     |9.68       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.basic.SceneItem              |0.00   |30.77   |22.73    |22.58      |
++---------------------------------+-------+--------+---------+-----------+
+|pov.basic.Vector                 |0.00   |7.69    |0.00     |16.13      |
++---------------------------------+-------+--------+---------+-----------+
+|pov.finite_solid.Cone            |0.00   |7.69    |0.00     |0.00       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.finite_solid.Cylinder        |0.00   |5.13    |0.00     |0.00       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.tests.Texture_Test           |0.00   |2.56    |0.00     |9.68       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.basic.SceneFile              |0.00   |2.56    |0.00     |0.00       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.csg.Merge                    |0.00   |0.00    |59.09    |0.00       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.tests.GlobalSettings_Test    |0.00   |0.00    |0.00     |6.45       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.tests.Other_Test             |0.00   |0.00    |0.00     |3.23       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.tests.ObjectModifier_Test    |0.00   |0.00    |0.00     |3.23       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.tests.LanguageDirective_Test |0.00   |0.00    |0.00     |3.23       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.tests.InfiniteSolid_Test     |0.00   |0.00    |0.00     |3.23       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.tests.Include_Test           |0.00   |0.00    |0.00     |3.23       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.tests.FiniteSolid_Test       |0.00   |0.00    |0.00     |3.23       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.tests.FinitePatch_Test       |0.00   |0.00    |0.00     |3.23       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.tests.Csg_Test               |0.00   |0.00    |0.00     |3.23       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.tests.AthEff_Test            |0.00   |0.00    |0.00     |3.23       |
++---------------------------------+-------+--------+---------+-----------+
+|pov.include.colors_inc           |0.00   |0.00    |0.00     |3.23       |
++---------------------------------+-------+--------+---------+-----------+
 
 
 
@@ -507,7 +520,7 @@ Messages
 +-----------------------------+------------+
 |unidiomatic-typecheck        |13          |
 +-----------------------------+------------+
-|duplicate-code               |12          |
+|duplicate-code               |13          |
 +-----------------------------+------------+
 |protected-access             |9           |
 +-----------------------------+------------+
@@ -517,13 +530,13 @@ Messages
 +-----------------------------+------------+
 |global-variable-undefined    |5           |
 +-----------------------------+------------+
-|undefined-variable           |4           |
-+-----------------------------+------------+
 |too-many-statements          |3           |
 +-----------------------------+------------+
 |unused-variable              |2           |
 +-----------------------------+------------+
 |unused-import                |2           |
++-----------------------------+------------+
+|undefined-variable           |2           |
 +-----------------------------+------------+
 |trailing-whitespace          |2           |
 +-----------------------------+------------+
@@ -540,5 +553,5 @@ Messages
 
 Global evaluation
 -----------------
-Your code has been rated at 9.46/10
+Your code has been rated at 9.51/10
 
