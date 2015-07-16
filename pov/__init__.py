@@ -10,4 +10,4 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-import pov.test
+import pov.tests
