@@ -666,7 +666,7 @@ class HeightFieldTestCase(unittest.TestCase):
                 '\n\\[\'ObjectModifier\']'
             ))
         ):
-            self.sut = HeightField('fixture/test.gif', Vector(1, 2, 3, 4))
+            self.sut = HeightField('pov/tests/fixture/test.gif', Vector(1, 2, 3, 4))
 
     def test_create_non_existant_kw(self):
         '''
@@ -676,7 +676,7 @@ class HeightFieldTestCase(unittest.TestCase):
             SdlSyntaxException,
             'No such Keyword: foo'
         ):
-            self.sut = HeightField('fixture/test.gif', foo='bar')
+            self.sut = HeightField('pov/tests/fixture/test.gif', foo='bar')
 
     def test_create_smooth_wrong_type(self):
         '''
@@ -689,7 +689,7 @@ class HeightFieldTestCase(unittest.TestCase):
                 'expectet to be type bool but got str'
             ))
         ):
-            self.sut = HeightField('fixture/test.gif', smooth='bar')
+            self.sut = HeightField('pov/tests/fixture/test.gif', smooth='bar')
 
     def test_create_hierarchy_wrong_type(self):
         '''
@@ -702,7 +702,7 @@ class HeightFieldTestCase(unittest.TestCase):
                 'to be type bool but got str'
             ))
         ):
-            self.sut = HeightField('fixture/test.gif', hierarchy='bar')
+            self.sut = HeightField('pov/tests/fixture/test.gif', hierarchy='bar')
 
     def test_create_hf_type_wrong_type(self):
         '''
@@ -715,7 +715,7 @@ class HeightFieldTestCase(unittest.TestCase):
                 'to be type str but got float'
             ))
         ):
-            self.sut = HeightField('fixture/test.gif', hf_type=0.2)
+            self.sut = HeightField('pov/tests/fixture/test.gif', hf_type=0.2)
 
     def test_create_hf_type_non_existant_value(self):
         '''
@@ -729,7 +729,7 @@ class HeightFieldTestCase(unittest.TestCase):
                 '\'jpeg\', \'tiff\', \'sys\', \'function\'] but got bar'
             ))
         ):
-            self.sut = HeightField('fixture/test.gif', hf_type='bar')
+            self.sut = HeightField('pov/tests/fixture/test.gif', hf_type='bar')
 
     def test_create_hf_non_existant_file(self):
         '''
@@ -754,7 +754,7 @@ class HeightFieldTestCase(unittest.TestCase):
                 'expectet to be type float but got str'
             ))
         ):
-            self.sut = HeightField('fixture/test.gif', water_level='bar')
+            self.sut = HeightField('pov/tests/fixture/test.gif', water_level='bar')
 
     def test_to_string(self):
         '''
