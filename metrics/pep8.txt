@@ -406,16 +406,16 @@ checking pov/global_settings/GlobalSettings.py
 checking pov/global_settings/Photons.py
 checking pov/global_settings/Radiosity.py
 checking pov/global_settings/__init__.py
-directory pov/test
-checking pov/test/AthEffTest.py
-checking pov/test/BasicTest.py
-checking pov/test/CsgTest.py
-checking pov/test/EndToEndTest.py
-checking pov/test/FinitePatchTest.py
-checking pov/test/FiniteSolidTest.py
-checking pov/test/GlobalSettingsTest.py
-checking pov/test/IncludeTest.py
-pov/test/IncludeTest.py:21:1: E402 module level import not at top of file
+directory pov/tests
+checking pov/tests/AthEff_Test.py
+checking pov/tests/Basic_Test.py
+checking pov/tests/Csg_Test.py
+checking pov/tests/EndToEnd_Test.py
+checking pov/tests/FinitePatch_Test.py
+checking pov/tests/FiniteSolid_Test.py
+checking pov/tests/GlobalSettings_Test.py
+checking pov/tests/Include_Test.py
+pov/tests/Include_Test.py:21:1: E402 module level import not at top of file
     Imports are always put at the top of the file, just after any module
     comments and docstrings, and before module globals and constants.
 
@@ -430,13 +430,13 @@ pov/test/IncludeTest.py:21:1: E402 module level import not at top of file
     E402: a=1\nfrom sys import x
 
     Okay: if x:\n    import os
-checking pov/test/InfiniteSolidTest.py
-checking pov/test/LanguageDirectiveTest.py
-checking pov/test/ObjectModifierTest.py
-checking pov/test/OtherTest.py
-checking pov/test/TextureTest.py
-checking pov/test/__init__.py
-directory pov/test/fixture
+checking pov/tests/InfiniteSolid_Test.py
+checking pov/tests/LanguageDirective_Test.py
+checking pov/tests/ObjectModifier_Test.py
+checking pov/tests/Other_Test.py
+checking pov/tests/Texture_Test.py
+checking pov/tests/__init__.py
+directory pov/tests/fixture
 directory pov/include
 checking pov/include/__init__.py
 checking pov/include/chars_inc.py
