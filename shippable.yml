@@ -18,7 +18,9 @@ script:
   - pep8 --verbose --show-pep8 --statistics --count pov > metrics/pep8.txt || true
   - pep8 --verbose --show-pep8 --statistics --count lgeo > metrics/pep8_lgeo.txt || true
   - cat metrics/pylint.txt | python metrics/extract.py >> metrics/stats.csv
-  - nosetests -vvv -d --no-byte-compile --with-xunit --xunit-file=shippable/testresults/nosetests.xml --with-coverage --cover-html --cover-html-dir=./coverage --cover-erase --cover-xml --cover-xml-file./shippable/codecoverage/coverage.xml pov || true
+  - nosetests -vvv -d --no-byte-compile --with-xunit --xunit-file=shippable/testresults/nosetests.xml --with-coverage --cover-html --cover-html-dir=./coverage --cover-erase --cover-xml --cover-xml-file=./shippable/codecoverage/coverage.xml pov || true
+  - ls shippable/testresults
+  - ls shippable/codecoverage
   - git add metrics
   - git add coverage
   - git commit -m "[skip ci] shippable build $BUILD_NUMBER"

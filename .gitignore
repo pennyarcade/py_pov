@@ -1,3 +1,5 @@
 *.pyc
 .coverage
 *.sublime-*
+shippable
+main.pov
