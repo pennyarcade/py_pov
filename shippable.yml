@@ -23,6 +23,7 @@ script:
   - git push -f git@bitbucket.org:chocokiko/py_pov.git
   - git push -f git@github.com:pennyarcade/py_pov.git
   - nosetests --with-xunit --xunit-file=shippable/testresults/nosetests.xml pov
+  - ls
   - which python && coverage run --branch pov
   - which python && coverage xml -o shippable/codecoverage/coverage.xml pov
 
