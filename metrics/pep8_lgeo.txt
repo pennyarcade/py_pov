@@ -621,6 +621,986 @@ checking lgeo/include/common/__init__.py
 checking lgeo/include/common/brick_subparts.py
 checking lgeo/include/common/custom_macros.py
 checking lgeo/include/common/lg_color.py
+lgeo/include/common/lg_color.py:18:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/include/common/lg_color.py:23:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/include/common/lg_color.py:35:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:35:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:39:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:39:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:40:14: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:40:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:41:19: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:41:21: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:47:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:47:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:51:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:51:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:52:19: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:52:21: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:53:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:53:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:54:17: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:54:19: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:55:17: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:55:19: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:56:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:56:20: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:56:22: E221 multiple spaces before operator
+    Avoid extraneous whitespace around an operator.
+
+    Okay: a = 12 + 3
+    E221: a = 4  + 5
+    E222: a = 4 +  5
+    E223: a = 4\t+ 5
+    E224: a = 4 +\t5
+lgeo/include/common/lg_color.py:56:25: E222 multiple spaces after operator
+    Avoid extraneous whitespace around an operator.
+
+    Okay: a = 12 + 3
+    E221: a = 4  + 5
+    E222: a = 4 +  5
+    E223: a = 4\t+ 5
+    E224: a = 4 +\t5
+lgeo/include/common/lg_color.py:57:19: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:57:21: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:63:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:63:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:69:22: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:69:24: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:70:23: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:70:25: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:72:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:72:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:73:19: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:73:21: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:74:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:74:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:75:17: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:75:19: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:76:17: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:76:19: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:77:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:77:20: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:78:19: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:78:21: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:84:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:84:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:88:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:88:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:89:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:89:18: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:90:19: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:90:21: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:91:14: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:91:16: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:92:19: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:92:21: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:97:8: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
+lgeo/include/common/lg_color.py:97:10: E251 unexpected spaces around keyword / parameter equals
+    Don't use spaces around the '=' sign in function arguments.
+
+    Don't use spaces around the '=' sign when used to indicate a
+    keyword argument or a default parameter value.
+
+    Okay: def complex(real, imag=0.0):
+    Okay: return magic(r=real, i=imag)
+    Okay: boolean(a == b)
+    Okay: boolean(a != b)
+    Okay: boolean(a <= b)
+    Okay: boolean(a >= b)
+    Okay: def foo(arg: int = 42):
+
+    E251: def complex(real, imag = 0.0):
+    E251: return magic(r = real, i = imag)
 checking lgeo/include/common/lg_defs.py
 directory lgeo/include/brick
 checking lgeo/include/brick/__init__.py
@@ -671,7 +1651,370 @@ lgeo/include/brick/lg_3022.py:18:80: E501 line too long (85 > 79 characters)
 
     Reports error E501.
 checking lgeo/include/brick/lg_3788.py
-23      E265 block comment should start with '# '
+lgeo/include/brick/lg_3788.py:153:36: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:153:44: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:302:36: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:302:44: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:326:40: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:326:48: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:424:44: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:424:52: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:439:48: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:439:56: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:583:40: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:583:48: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:643:39: E221 multiple spaces before operator
+    Avoid extraneous whitespace around an operator.
+
+    Okay: a = 12 + 3
+    E221: a = 4  + 5
+    E222: a = 4 +  5
+    E223: a = 4\t+ 5
+    E224: a = 4 +\t5
+lgeo/include/brick/lg_3788.py:643:42: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+2       E221 multiple spaces before operator
+1       E222 multiple spaces after operator
+13      E225 missing whitespace around operator
+58      E251 unexpected spaces around keyword / parameter equals
+25      E265 block comment should start with '# '
 1       E266 too many leading '#' for block comment
 1       E271 multiple spaces after keyword
 1       E303 too many blank lines (3)

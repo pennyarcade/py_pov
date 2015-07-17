@@ -50,54 +50,52 @@ W:363,-1: String statement has no effect (pointless-string-statement)
 W:370,-1: String statement has no effect (pointless-string-statement)
 W:466,-1: String statement has no effect (pointless-string-statement)
 W:112, 0: Unused import lg_plate_cylinder from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Translate from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_test from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_GRID_WIDTH from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_brick_column_clear from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import Object from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import Torus from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_BRICK_HEIGHT from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import lg_knob_clear from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_KNOB_INNER_RADIUS from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_KNOB_HEIGHT from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import SdlSyntaxException from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_stud_logo from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_PLATE_INNER_HEIGHT from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import lg_brick_column from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import LG_BRICK_INNER_HEIGHT from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_knob_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import debug from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import x from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_BRICK_WIDTH from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import Scale from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_tech_knob from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_CYLINDER_WALL_WIDTH from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import Rotate from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import lg_brick_cylinder_clear from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import Translate from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_PLATE_HEIGHT from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lego_logo_text from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LDU from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import lg_knob_dot from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_plate_column_clear from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import Intersection from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_brick_column from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import math from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_CYLINDER_RADIUS from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Box from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_KNOB_HEIGHT_LOGO from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_knob_dot from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import LG_BRICK_INNER_HEIGHT from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LGBH from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import debug from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import Vector from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import lg_plate_column from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import Cylinder from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_brick_cylinder from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_E from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import LG_KNOB_HEIGHT from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import lg_knob from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import Box from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_support_wall_clear from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_plate_cylinder_clear from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_knob_inner_space from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import Merge from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import z from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import LG_PLATE_HEIGHT from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_plate_column from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_brick_cylinder_clear from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_tech_knob_logo_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import z from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_CORNER_SPACE from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_WALL_WIDTH from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_CROSSAXLE_WIDTH from wildcard import (unused-wildcard-import)
@@ -108,226 +106,91 @@ W:112, 0: Unused import lg_quality from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import Plane from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import Difference from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Rotate from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import Torus from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_KNOB_CORNER_SPACE from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import lg_tech_knob_clear from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import Sphere from wildcard import (unused-wildcard-import)
-W:112, 0: Unused import lego_logo_text_clear from wildcard import (unused-wildcard-import)
+W:112, 0: Unused import lg_knob from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import y from wildcard import (unused-wildcard-import)
 W:112, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import PALEGREEN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_solid_finish from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY05 from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_dark_green from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_undefined from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import BLACK from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_pearl_finish from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_violet from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import Interior from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import SUMMERSKY from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MICA from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import SEMISWEETCHOC from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_dark_blue from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import Finish from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_gold_chrome from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import PLUM from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import LIGHT_PURPLE from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import Pigment from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import SCARLET from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MEDIUMBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import THISTLE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_dark_blue from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY65 from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import chsv2rgb from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import TAN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_light_violet from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MIDNIGHTBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY60 from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import BLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DARKTURQUOISE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DARKSLATEGREY from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DARKGREEN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_very_light_bluish_grey from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import CORAL from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_green from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_cyan from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_clear_blue from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import BRIGHTGOLD from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import AQUAMARINE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_light_red from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_medium_blue from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MAROON from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GREENCOPPER from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import NAVY from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MED_PURPLE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import SILVER from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_dark_flesh from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import LIGHTSTEELBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MEDIUMSEAGREEN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_rose from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_very_light_grey from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import crgb2h from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY50 from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import BAKERSCHOC from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY55 from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import BROWN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import SKYBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MEDIUMWOOD from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import VERYDARKBROWN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DIMGRAY from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_light_flesh from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import SALMON from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_sand_purple from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import Version from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import SPRINGGREEN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import STEELBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY45 from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_light_green from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import NEWTAN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import FLESH from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_light_blue from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import COOLCOPPER from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_bright_purple from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import SLATEBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import NAVYBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import NEWMIDNIGHTBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import BRONZE2 from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import LIGHTGRAY from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import CADETBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY20 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_dark_orange from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_flesh from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_sand_purple from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_royal_blue from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_very_light_grey from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_grey from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import LIMEGREEN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import SPICYPINK from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_lime from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_medium_violet from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import VLIGHTGRAY from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import OLDGOLD from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_orange from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import BRONZE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_ior from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_transparent_finish from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DARKWOOD from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import WHEAT from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MEDIUMVIOLETRED from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY35 from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import ch2rgb from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_medium_blue from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_pearl_gold from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_dark_orange from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DARKSLATEGRAY from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import FORESTGREEN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import NEONBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import HUNTERSGREEN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import BLUEVIOLET from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import BRASS from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import FIREBRICK from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MEDIUMFORESTGREEN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import VIOLETRED from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import YELLOW from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DARKORCHID from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_orange from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_medium_orange from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import Texture from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GREY from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MEDIUMSLATEBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_teal from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_bright_green from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import CYAN from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_salmon from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import LIGHTBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import RED from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import ORCHID from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY25 from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import crgb2hsv from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MEDIUMGOLDENROD from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_pearl_grey from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_red from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_light_yellow from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_black from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_dark_red from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_blue from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import YELLOWGREEN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MEDIUMAQUAMARINE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_ior from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import ORANGE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import get_clear_color from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import chsl2rgb from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_tan from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GOLDENROD from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_blue from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_bright_purple from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_chrome from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_pearl_copper from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_purple from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY30 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_blue_green from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_turquoise from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_medium_green from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_bluish_grey from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import Irid from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_sand_blue from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY80 from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_green from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_violet from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_maersk_blue from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DUSTYROSE from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_chrome_finish from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_dark_grey from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY15 from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import LIGHTWOOD from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import INDIANRED from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY10 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_solid_finish from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_sand_green from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY95 from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY90 from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_pearl_blue from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_flesh from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import crgb2hsl from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_pearl_grey from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import RICHBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GOLD from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_chrome from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import TURQUOISE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import FELDSPAR from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_black from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_teal from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_light_purple from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DARKSLATEBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DARKOLIVEGREEN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import QUARTZ from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GREEN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_cyan from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import VERY_LIGHT_PURPLE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_dark_bluish_grey from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_flesh from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_clear_neon_orange from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import SEAGREEN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_blue_green from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MAGENTA from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_magenta from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_brown from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_earth_orange from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_pink from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY85 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_very_light_bluish_grey from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_paradisa_pink from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_light_orange from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DIMGREY from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import CLEAR from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MANDARINORANGE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import COPPER from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import VLIGHTGREY from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MEDIUMTURQUOISE from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import get_clear_color from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_light_green from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_dark_bluish_grey from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_clear from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_dark_tan from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MEDIUMSPRINGGREEN from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_sand_red from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import LIGHTGREY from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_turquoise from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DARKBROWN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_royal_blue from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import NEONPINK from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import WHITE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import ORANGERED from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import PINK from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import SIENNA from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DARKTAN from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import CORNFLOWERBLUE from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GREENYELLOW from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_purple from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import Color from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY40 from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import MEDIUMORCHID from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DARKPURPLE from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_reddish_brown from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import VIOLET from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import lg_magenta from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import DKGREENCOPPER from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import KHAKI from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY75 from wildcard import (unused-wildcard-import)
+W:146, 0: Unused import lg_rose from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_violet_blue from wildcard import (unused-wildcard-import)
 W:146, 0: Unused import lg_dark_pink from wildcard import (unused-wildcard-import)
-W:146, 0: Unused import GRAY70 from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.common.lg_defs
 C:100, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
 C:124, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
@@ -380,239 +243,197 @@ C:106, 0: Invalid argument name "ry" (invalid-name)
 C:106, 0: Invalid argument name "rz" (invalid-name)
 R:106, 0: Too many arguments (8/5) (too-many-arguments)
 ************* Module lgeo.include.common.lg_color
-C: 60, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
-C: 81, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
-C:270, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
-W: 17, 0: Wildcard import lgeo.config.lgeo_cfg (wildcard-import)
-W: 22, 0: Wildcard import pov.include.colors_inc (wildcard-import)
-C: 33, 4: Invalid constant name "lg_solid_finish" (invalid-name)
-C: 37, 4: Invalid constant name "lg_solid_finish" (invalid-name)
-C: 45, 4: Invalid constant name "lg_chrome_finish" (invalid-name)
-C: 49, 4: Invalid constant name "lg_chrome_finish" (invalid-name)
-C: 61, 4: Invalid constant name "lg_pearl_finish" (invalid-name)
-C: 65, 4: Invalid constant name "lg_pearl_finish" (invalid-name)
-C: 82, 4: Invalid constant name "lg_transparent_finish" (invalid-name)
-C: 86, 4: Invalid constant name "lg_transparent_finish" (invalid-name)
-C: 95, 0: Invalid constant name "lg_ior" (invalid-name)
-C:101, 0: Invalid constant name "lg_black" (invalid-name)
-C:107, 0: Invalid constant name "lg_blue" (invalid-name)
-C:113, 0: Invalid constant name "lg_green" (invalid-name)
-C:119, 0: Invalid constant name "lg_teal" (invalid-name)
-C:123, 0: Invalid constant name "lg_cyan" (invalid-name)
-C:126, 0: Invalid constant name "lg_red" (invalid-name)
-C:132, 0: Invalid constant name "lg_dark_pink" (invalid-name)
-C:138, 0: Invalid constant name "lg_brown" (invalid-name)
-C:144, 0: Invalid constant name "lg_grey" (invalid-name)
-C:150, 0: Invalid constant name "lg_dark_grey" (invalid-name)
-C:156, 0: Invalid constant name "lg_light_blue" (invalid-name)
-C:162, 0: Invalid constant name "lg_bright_green" (invalid-name)
-C:168, 0: Invalid constant name "lg_turquoise" (invalid-name)
-C:172, 0: Invalid constant name "lg_blue_green" (invalid-name)
-C:175, 0: Invalid constant name "lg_salmon" (invalid-name)
-C:179, 0: Invalid constant name "lg_light_red" (invalid-name)
-C:182, 0: Invalid constant name "lg_pink" (invalid-name)
-C:186, 0: Invalid constant name "lg_rose" (invalid-name)
-C:189, 0: Invalid constant name "lg_yellow" (invalid-name)
-C:195, 0: Invalid constant name "lg_white" (invalid-name)
-C:201, 0: Invalid constant name "lg_light_green" (invalid-name)
-C:207, 0: Invalid constant name "lg_light_yellow" (invalid-name)
-C:213, 0: Invalid constant name "lg_tan" (invalid-name)
-C:219, 0: Invalid constant name "lg_light_violet" (invalid-name)
-C:225, 0: Invalid constant name "lg_purple" (invalid-name)
-C:229, 0: Invalid constant name "lg_violet" (invalid-name)
-C:232, 0: Invalid constant name "lg_violet_blue" (invalid-name)
-C:238, 0: Invalid constant name "lg_orange" (invalid-name)
-C:244, 0: Invalid constant name "lg_magenta" (invalid-name)
-C:250, 0: Invalid constant name "lg_lime" (invalid-name)
-C:256, 0: Invalid constant name "lg_dark_tan" (invalid-name)
-C:262, 0: Invalid constant name "lg_light_purple" (invalid-name)
-C:269, 0: Missing function docstring (missing-docstring)
-C:288, 0: Invalid constant name "lg_clear_blue" (invalid-name)
-C:295, 0: Invalid constant name "lg_clear_blue" (invalid-name)
-C:302, 0: Invalid constant name "lg_clear_blue" (invalid-name)
-C:309, 0: Invalid constant name "lg_clear_blue" (invalid-name)
-C:316, 0: Invalid constant name "lg_clear_blue" (invalid-name)
-C:323, 0: Invalid constant name "lg_clear_blue" (invalid-name)
-C:330, 0: Invalid constant name "lg_clear_blue" (invalid-name)
-C:337, 0: Invalid constant name "lg_clear_blue" (invalid-name)
-C:344, 0: Invalid constant name "lg_clear_blue" (invalid-name)
-C:351, 0: Invalid constant name "lg_clear" (invalid-name)
-C:358, 0: Invalid constant name "lg_clear_neon_orange" (invalid-name)
-C:365, 0: Invalid constant name "lg_bright_purple" (invalid-name)
-C:372, 0: Invalid constant name "lg_reddish_brown" (invalid-name)
-C:379, 0: Invalid constant name "lg_bluish_grey" (invalid-name)
-C:386, 0: Invalid constant name "lg_dark_bluish_grey" (invalid-name)
-C:393, 0: Invalid constant name "lg_medium_blue" (invalid-name)
-C:400, 0: Invalid constant name "lg_medium_green" (invalid-name)
-C:407, 0: Invalid constant name "lg_paradisa_pink" (invalid-name)
-C:414, 0: Invalid constant name "lg_light_flesh" (invalid-name)
-C:421, 0: Invalid constant name "lg_medium_violet" (invalid-name)
-C:428, 0: Invalid constant name "lg_dark_flesh" (invalid-name)
-C:435, 0: Invalid constant name "lg_royal_blue" (invalid-name)
-C:442, 0: Invalid constant name "lg_flesh" (invalid-name)
-C:449, 0: Invalid constant name "lg_pearl_copper" (invalid-name)
-C:456, 0: Invalid constant name "lg_pearl_grey" (invalid-name)
-C:463, 0: Invalid constant name "lg_pearl_blue" (invalid-name)
-C:470, 0: Invalid constant name "lg_pearl_gold" (invalid-name)
-C:477, 0: Invalid constant name "lg_very_light_bluish_grey" (invalid-name)
-C:484, 0: Invalid constant name "lg_dark_blue" (invalid-name)
-C:491, 0: Invalid constant name "lg_dark_green" (invalid-name)
-C:498, 0: Invalid constant name "lg_dark_red" (invalid-name)
-C:505, 0: Invalid constant name "lg_maersk_blue" (invalid-name)
-C:512, 0: Invalid constant name "lg_gold_chrome" (invalid-name)
-C:519, 0: Invalid constant name "lg_sand_purple" (invalid-name)
-C:526, 0: Invalid constant name "lg_sand_red" (invalid-name)
-C:533, 0: Invalid constant name "lg_earth_orange" (invalid-name)
-C:540, 0: Invalid constant name "lg_sand_purple" (invalid-name)
-C:547, 0: Invalid constant name "lg_sand_green" (invalid-name)
-C:554, 0: Invalid constant name "lg_sand_blue" (invalid-name)
-C:560, 0: Invalid constant name "lg_chrome" (invalid-name)
-C:567, 0: Invalid constant name "lg_light_orange" (invalid-name)
-C:574, 0: Invalid constant name "lg_dark_orange" (invalid-name)
-C:581, 0: Invalid constant name "lg_very_light_grey" (invalid-name)
-C:588, 0: Invalid constant name "lg_undefined" (invalid-name)
-C:594, 0: Invalid constant name "lg_medium_orange" (invalid-name)
-W: 17, 0: Unused import lg_test from wildcard import (unused-wildcard-import)
-W: 17, 0: Unused import lg_stud_logo from wildcard import (unused-wildcard-import)
-W: 17, 0: Unused import lg_studs from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import PALEGREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import SUMMERSKY from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MICA from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import SEMISWEETCHOC from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import PLUM from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import LIGHT_PURPLE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import SCARLET from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MEDIUMAQUAMARINE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import THISTLE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY65 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import chsv2rgb from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import TAN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MIDNIGHTBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY60 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DARKTURQUOISE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DARKSLATEGREY from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DARKGREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import CLEAR from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import SIENNA from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GREENCOPPER from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import NAVY from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MED_PURPLE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import SILVER from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MEDIUMSEAGREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import debug from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import BAKERSCHOC from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY55 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import SKYBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MEDIUMWOOD from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import VLIGHTGREY from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DIMGRAY from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import SALMON from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import Version from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import SPRINGGREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY45 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import NEWTAN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY40 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import COOLCOPPER from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import SLATEBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import NAVYBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import AQUAMARINE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import NEWMIDNIGHTBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import LIGHTSTEELBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import BRONZE2 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import LIGHTGRAY from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import VERYDARKBROWN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import CADETBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import LIMEGREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import SPICYPINK from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY50 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import VLIGHTGRAY from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import OLDGOLD from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import BRONZE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY30 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DARKWOOD from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import WHEAT from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MEDIUMVIOLETRED from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY35 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import ch2rgb from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import FORESTGREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import NEONBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import HUNTERSGREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import BLUEVIOLET from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import BRASS from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MEDIUMFORESTGREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import VIOLETRED from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DARKORCHID from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MAROON from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GREY from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MEDIUMSLATEBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import CYAN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import RED from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import ORCHID from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import BROWN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import KHAKI from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY25 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import crgb2hsv from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MEDIUMGOLDENROD from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import FIREBRICK from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import YELLOWGREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MEDIUMBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import ORANGE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import chsl2rgb from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GOLDENROD from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import TURQUOISE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import YELLOW from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DARKSLATEGRAY from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import BLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DUSTYROSE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY15 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import LIGHTWOOD from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import INDIANRED from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY10 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import STEELBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY95 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY90 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import BLACK from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import crgb2hsl from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY20 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import LIGHTBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import RICHBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GOLD from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MEDIUMORCHID from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import VIOLET from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DARKSLATEBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DARKOLIVEGREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import QUARTZ from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import FELDSPAR from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import VERY_LIGHT_PURPLE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import SEAGREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY05 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY80 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY85 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import NEONPINK from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DIMGREY from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import CORAL from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MANDARINORANGE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import COPPER from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MEDIUMTURQUOISE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MEDIUMSPRINGGREEN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import LIGHTGREY from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DARKBROWN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import WHITE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import ORANGERED from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import PINK from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DARKTAN from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import CORNFLOWERBLUE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GREENYELLOW from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import FLESH from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import BRIGHTGOLD from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DARKPURPLE from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import DKGREENCOPPER from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import crgb2h from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import MAGENTA from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY75 from wildcard import (unused-wildcard-import)
-W: 22, 0: Unused import GRAY70 from wildcard import (unused-wildcard-import)
+C: 35, 0: No space allowed around keyword argument assignment
+        ambient = 0.1
+                ^ (bad-whitespace)
+C: 39, 0: No space allowed around keyword argument assignment
+        ambient = 0.1,
+                ^ (bad-whitespace)
+C: 40, 0: No space allowed around keyword argument assignment
+        phong = 0.2,
+              ^ (bad-whitespace)
+C: 41, 0: No space allowed around keyword argument assignment
+        phong_size = 20
+                   ^ (bad-whitespace)
+C: 47, 0: No space allowed around keyword argument assignment
+        ambient = 0.25
+                ^ (bad-whitespace)
+C: 51, 0: No space allowed around keyword argument assignment
+        ambient = 0.25,
+                ^ (bad-whitespace)
+C: 52, 0: No space allowed around keyword argument assignment
+        brilliance = 5,
+                   ^ (bad-whitespace)
+C: 53, 0: No space allowed around keyword argument assignment
+        diffuse = 0.6,
+                ^ (bad-whitespace)
+C: 54, 0: No space allowed around keyword argument assignment
+        metallic = True,
+                 ^ (bad-whitespace)
+C: 55, 0: No space allowed around keyword argument assignment
+        specular = 0.70,
+                 ^ (bad-whitespace)
+C: 56, 0: No space allowed around keyword argument assignment
+        roughness = 1  /  100,
+                  ^ (bad-whitespace)
+C: 57, 0: No space allowed around keyword argument assignment
+        reflection = 0.6,
+                   ^ (bad-whitespace)
+C: 63, 0: No space allowed around keyword argument assignment
+        ambient = 0.22
+                ^ (bad-whitespace)
+C: 69, 0: No space allowed around keyword argument assignment
+            thickness = 0.5,
+                      ^ (bad-whitespace)
+C: 70, 0: No space allowed around keyword argument assignment
+            turbulence = 2.5
+                       ^ (bad-whitespace)
+C: 72, 0: No space allowed around keyword argument assignment
+        ambient = 0.22,
+                ^ (bad-whitespace)
+C: 73, 0: No space allowed around keyword argument assignment
+        brilliance = 2,
+                   ^ (bad-whitespace)
+C: 74, 0: No space allowed around keyword argument assignment
+        diffuse = 0.6,
+                ^ (bad-whitespace)
+C: 75, 0: No space allowed around keyword argument assignment
+        metallic = True,
+                 ^ (bad-whitespace)
+C: 76, 0: No space allowed around keyword argument assignment
+        specular = 0.1,
+                 ^ (bad-whitespace)
+C: 77, 0: No space allowed around keyword argument assignment
+        roughness = 32 / 100,
+                  ^ (bad-whitespace)
+C: 78, 0: No space allowed around keyword argument assignment
+        reflection = 0.07
+                   ^ (bad-whitespace)
+C: 82, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
+C: 84, 0: No space allowed around keyword argument assignment
+        ambient = 0.3
+                ^ (bad-whitespace)
+C: 88, 0: No space allowed around keyword argument assignment
+        ambient = 0.3,
+                ^ (bad-whitespace)
+C: 89, 0: No space allowed around keyword argument assignment
+        diffuse = 0.2,
+                ^ (bad-whitespace)
+C: 90, 0: No space allowed around keyword argument assignment
+        reflection = 0.25,
+                   ^ (bad-whitespace)
+C: 91, 0: No space allowed around keyword argument assignment
+        phong = 0.3,
+              ^ (bad-whitespace)
+C: 92, 0: No space allowed around keyword argument assignment
+        phong_size = 60
+                   ^ (bad-whitespace)
+C: 97, 0: No space allowed around keyword argument assignment
+    ior = 1.4
+        ^ (bad-whitespace)
+C:271, 0: Unnecessary parens after 'if' keyword (superfluous-parens)
+E: 33, 3: Undefined variable 'lg_quality' (undefined-variable)
+C: 34, 4: Invalid constant name "lg_solid_finish" (invalid-name)
+C: 38, 4: Invalid constant name "lg_solid_finish" (invalid-name)
+E: 45, 3: Undefined variable 'lg_quality' (undefined-variable)
+C: 46, 4: Invalid constant name "lg_chrome_finish" (invalid-name)
+C: 50, 4: Invalid constant name "lg_chrome_finish" (invalid-name)
+E: 61, 3: Undefined variable 'lg_quality' (undefined-variable)
+C: 62, 4: Invalid constant name "lg_pearl_finish" (invalid-name)
+C: 66, 4: Invalid constant name "lg_pearl_finish" (invalid-name)
+E: 82, 4: Undefined variable 'lg_quality' (undefined-variable)
+C: 83, 4: Invalid constant name "lg_transparent_finish" (invalid-name)
+C: 87, 4: Invalid constant name "lg_transparent_finish" (invalid-name)
+C: 96, 0: Invalid constant name "lg_ior" (invalid-name)
+C:102, 0: Invalid constant name "lg_black" (invalid-name)
+C:108, 0: Invalid constant name "lg_blue" (invalid-name)
+C:114, 0: Invalid constant name "lg_green" (invalid-name)
+C:120, 0: Invalid constant name "lg_teal" (invalid-name)
+C:124, 0: Invalid constant name "lg_cyan" (invalid-name)
+C:127, 0: Invalid constant name "lg_red" (invalid-name)
+C:133, 0: Invalid constant name "lg_dark_pink" (invalid-name)
+C:139, 0: Invalid constant name "lg_brown" (invalid-name)
+C:145, 0: Invalid constant name "lg_grey" (invalid-name)
+C:151, 0: Invalid constant name "lg_dark_grey" (invalid-name)
+C:157, 0: Invalid constant name "lg_light_blue" (invalid-name)
+C:163, 0: Invalid constant name "lg_bright_green" (invalid-name)
+C:169, 0: Invalid constant name "lg_turquoise" (invalid-name)
+C:173, 0: Invalid constant name "lg_blue_green" (invalid-name)
+C:176, 0: Invalid constant name "lg_salmon" (invalid-name)
+C:180, 0: Invalid constant name "lg_light_red" (invalid-name)
+C:183, 0: Invalid constant name "lg_pink" (invalid-name)
+C:187, 0: Invalid constant name "lg_rose" (invalid-name)
+C:190, 0: Invalid constant name "lg_yellow" (invalid-name)
+C:196, 0: Invalid constant name "lg_white" (invalid-name)
+C:202, 0: Invalid constant name "lg_light_green" (invalid-name)
+C:208, 0: Invalid constant name "lg_light_yellow" (invalid-name)
+C:214, 0: Invalid constant name "lg_tan" (invalid-name)
+C:220, 0: Invalid constant name "lg_light_violet" (invalid-name)
+C:226, 0: Invalid constant name "lg_purple" (invalid-name)
+C:230, 0: Invalid constant name "lg_violet" (invalid-name)
+C:233, 0: Invalid constant name "lg_violet_blue" (invalid-name)
+C:239, 0: Invalid constant name "lg_orange" (invalid-name)
+C:245, 0: Invalid constant name "lg_magenta" (invalid-name)
+C:251, 0: Invalid constant name "lg_lime" (invalid-name)
+C:257, 0: Invalid constant name "lg_dark_tan" (invalid-name)
+C:263, 0: Invalid constant name "lg_light_purple" (invalid-name)
+C:270, 0: Missing function docstring (missing-docstring)
+C:289, 0: Invalid constant name "lg_clear_blue" (invalid-name)
+E:291, 4: Undefined variable 'lg_quality' (undefined-variable)
+C:296, 0: Invalid constant name "lg_clear_blue" (invalid-name)
+E:298, 4: Undefined variable 'lg_quality' (undefined-variable)
+C:303, 0: Invalid constant name "lg_clear_blue" (invalid-name)
+E:305, 4: Undefined variable 'lg_quality' (undefined-variable)
+C:310, 0: Invalid constant name "lg_clear_blue" (invalid-name)
+E:312, 4: Undefined variable 'lg_quality' (undefined-variable)
+C:317, 0: Invalid constant name "lg_clear_blue" (invalid-name)
+E:319, 4: Undefined variable 'lg_quality' (undefined-variable)
+C:324, 0: Invalid constant name "lg_clear_blue" (invalid-name)
+E:326, 4: Undefined variable 'lg_quality' (undefined-variable)
+C:331, 0: Invalid constant name "lg_clear_blue" (invalid-name)
+E:333, 4: Undefined variable 'lg_quality' (undefined-variable)
+C:338, 0: Invalid constant name "lg_clear_blue" (invalid-name)
+E:340, 4: Undefined variable 'lg_quality' (undefined-variable)
+C:345, 0: Invalid constant name "lg_clear_blue" (invalid-name)
+E:347, 4: Undefined variable 'lg_quality' (undefined-variable)
+C:352, 0: Invalid constant name "lg_clear" (invalid-name)
+E:354, 4: Undefined variable 'lg_quality' (undefined-variable)
+C:359, 0: Invalid constant name "lg_clear_neon_orange" (invalid-name)
+E:361, 4: Undefined variable 'lg_quality' (undefined-variable)
+C:366, 0: Invalid constant name "lg_bright_purple" (invalid-name)
+C:373, 0: Invalid constant name "lg_reddish_brown" (invalid-name)
+C:380, 0: Invalid constant name "lg_bluish_grey" (invalid-name)
+C:387, 0: Invalid constant name "lg_dark_bluish_grey" (invalid-name)
+C:394, 0: Invalid constant name "lg_medium_blue" (invalid-name)
+C:401, 0: Invalid constant name "lg_medium_green" (invalid-name)
+C:408, 0: Invalid constant name "lg_paradisa_pink" (invalid-name)
+C:415, 0: Invalid constant name "lg_light_flesh" (invalid-name)
+C:422, 0: Invalid constant name "lg_medium_violet" (invalid-name)
+C:429, 0: Invalid constant name "lg_dark_flesh" (invalid-name)
+C:436, 0: Invalid constant name "lg_royal_blue" (invalid-name)
+C:443, 0: Invalid constant name "lg_flesh" (invalid-name)
+C:450, 0: Invalid constant name "lg_pearl_copper" (invalid-name)
+C:457, 0: Invalid constant name "lg_pearl_grey" (invalid-name)
+C:464, 0: Invalid constant name "lg_pearl_blue" (invalid-name)
+C:471, 0: Invalid constant name "lg_pearl_gold" (invalid-name)
+C:478, 0: Invalid constant name "lg_very_light_bluish_grey" (invalid-name)
+C:485, 0: Invalid constant name "lg_dark_blue" (invalid-name)
+C:492, 0: Invalid constant name "lg_dark_green" (invalid-name)
+C:499, 0: Invalid constant name "lg_dark_red" (invalid-name)
+C:506, 0: Invalid constant name "lg_maersk_blue" (invalid-name)
+C:513, 0: Invalid constant name "lg_gold_chrome" (invalid-name)
+C:520, 0: Invalid constant name "lg_sand_purple" (invalid-name)
+C:527, 0: Invalid constant name "lg_sand_red" (invalid-name)
+C:534, 0: Invalid constant name "lg_earth_orange" (invalid-name)
+C:541, 0: Invalid constant name "lg_sand_purple" (invalid-name)
+C:548, 0: Invalid constant name "lg_sand_green" (invalid-name)
+C:555, 0: Invalid constant name "lg_sand_blue" (invalid-name)
+C:561, 0: Invalid constant name "lg_chrome" (invalid-name)
+C:568, 0: Invalid constant name "lg_light_orange" (invalid-name)
+C:575, 0: Invalid constant name "lg_dark_orange" (invalid-name)
+C:582, 0: Invalid constant name "lg_very_light_grey" (invalid-name)
+C:589, 0: Invalid constant name "lg_undefined" (invalid-name)
+C:595, 0: Invalid constant name "lg_medium_orange" (invalid-name)
 ************* Module lgeo.include.brick.lg_3022
 C: 18, 0: Line too long (85/79) (line-too-long)
 W:482,-1: String statement has no effect (pointless-string-statement)
@@ -692,7 +513,13 @@ W: 16, 0: Unused import lg_support_wall from wildcard import (unused-wildcard-im
 W: 16, 0: Unused import LG_TOP_HEIGHT from wildcard import (unused-wildcard-import)
 W: 16, 0: Unused import lg_knob_inner_space_clear from wildcard import (unused-wildcard-import)
 ************* Module lgeo.include.brick.lg_3788
-C: 35, 0: Invalid constant name "lg_angle" (invalid-name)
+C:578, 0: Exactly one space required after comma
+                Vector(0,  - 0.12 + LG_CORNER_SPACE, -LG_CORNER_SPACE),
+                        ^ (bad-whitespace)
+C:590, 0: Exactly one space required after comma
+                Vector(0,  - 0.12 + LG_CORNER_SPACE, -LG_CORNER_SPACE),
+                        ^ (bad-whitespace)
+C: 36, 0: Invalid constant name "lg_angle" (invalid-name)
 R:  1, 0: Similar lines in 2 files
 ==lgeo.include.brick.lg_3003:44
 ==lgeo.include.brick.lg_3010:54
@@ -1081,35 +908,6 @@ R:  1, 0: Similar lines in 3 files
                 LG_CORNER_SPACE
             ),
             Vector( (duplicate-code)
-R:  1, 0: Similar lines in 4 files
-==lgeo.include.brick.lg_2441:1710
-==lgeo.include.brick.lg_2441:1720
-==lgeo.include.brick.lg_2441:1730
-==lgeo.include.brick.lg_3788:719
-                            -LG_BRICK_WIDTH/2,
-                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
-                        )
-                    )
-                ),
-                Object(
-                    lg_knob_inner_space,
-                    Translate(
-                        Vector( (duplicate-code)
-R:  1, 0: Similar lines in 5 files
-==lgeo.include.brick.lg_2441:1680
-==lgeo.include.brick.lg_2441:1690
-==lgeo.include.brick.lg_2441:1700
-==lgeo.include.brick.lg_3788:699
-==lgeo.include.brick.lg_3788:709
-                            LG_BRICK_WIDTH/2,
-                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
-                        )
-                    )
-                ),
-                Object(
-                    lg_knob_inner_space,
-                    Translate(
-                        Vector( (duplicate-code)
 R:  1, 0: Similar lines in 2 files
 ==lgeo.include.brick.lg_3003:98
 ==lgeo.include.brick.lg_3010:45
@@ -1134,34 +932,6 @@ R:  1, 0: Similar lines in 2 files
                 LG_PLATE_HEIGHT-LG_CORNER_SPACE
             ),
             Vector( (duplicate-code)
-R:  1, 0: Similar lines in 8 files
-==lgeo.include.brick.lg_2441:1741
-==lgeo.include.brick.lg_2441:1751
-==lgeo.include.brick.lg_2441:1761
-==lgeo.include.brick.lg_2441:1771
-==lgeo.include.brick.lg_2441:1781
-==lgeo.include.brick.lg_3788:700
-==lgeo.include.brick.lg_3788:710
-==lgeo.include.brick.lg_3788:720
-                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
-                        )
-                    )
-                ),
-                Object(
-                    lg_knob_inner_space,
-                    Translate(
-                        Vector( (duplicate-code)
-R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2441:1671
-==lgeo.include.brick.lg_3788:690
-                    -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
-                )
-            ),
-            Union(
-                Object(
-                    lg_knob_inner_space,
-                    Translate(
-                        Vector( (duplicate-code)
 R:  1, 0: Similar lines in 7 files
 ==lgeo.include.brick.lg_2441:1569
 ==lgeo.include.brick.lg_2441:1579
@@ -1169,7 +939,7 @@ R:  1, 0: Similar lines in 7 files
 ==lgeo.include.brick.lg_2441:1625
 ==lgeo.include.brick.lg_2441:1635
 ==lgeo.include.brick.lg_2441:1645
-==lgeo.include.brick.lg_3788:389
+==lgeo.include.brick.lg_3788:390
                             -LG_TOP_HEIGHT
                         )
                     )
@@ -1224,19 +994,40 @@ from pov.csg.Difference import Difference
 from pov.finite_solid.Box import Box
 from pov.finite_solid.Cylinder import Cylinder
 from pov.finite_solid.Sphere import Sphere (duplicate-code)
-R:  1, 0: Similar lines in 5 files
-==lgeo.include.brick.lg_2441:1161
-==lgeo.include.brick.lg_2441:1173
-==lgeo.include.brick.lg_2441:1185
-==lgeo.include.brick.lg_3788:641
-==lgeo.include.brick.lg_3788:652
-                        LG_BRICK_WIDTH/2,
-                        -LG_PLATE_HEIGHT
+R:  1, 0: Similar lines in 15 files
+==lgeo.include.brick.lg_2441:1682
+==lgeo.include.brick.lg_2441:1692
+==lgeo.include.brick.lg_2441:1702
+==lgeo.include.brick.lg_2441:1712
+==lgeo.include.brick.lg_2441:1722
+==lgeo.include.brick.lg_2441:1732
+==lgeo.include.brick.lg_2441:1742
+==lgeo.include.brick.lg_2441:1752
+==lgeo.include.brick.lg_2441:1762
+==lgeo.include.brick.lg_2441:1772
+==lgeo.include.brick.lg_2441:1782
+==lgeo.include.brick.lg_3788:391
+==lgeo.include.brick.lg_3788:702
+==lgeo.include.brick.lg_3788:712
+==lgeo.include.brick.lg_3788:722
+                        )
                     )
+                ),
+                Object(
+                    lg_knob_inner_space,
+                    Translate(
+                        Vector( (duplicate-code)
+R:  1, 0: Similar lines in 3 files
+==lgeo.include.brick.lg_2441:1672
+==lgeo.include.brick.lg_3788:381
+==lgeo.include.brick.lg_3788:692
                 )
             ),
-            Object(
-                lg_knob(), (duplicate-code)
+            Union(
+                Object(
+                    lg_knob_inner_space,
+                    Translate(
+                        Vector( (duplicate-code)
 R:  1, 0: Similar lines in 2 files
 ==lgeo.include.brick.lg_3003:75
 ==lgeo.include.brick.lg_3010:229
@@ -1454,55 +1245,49 @@ R:  1, 0: Similar lines in 2 files
             LG_CORNER_SPACE
         ), (duplicate-code)
 R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2441:1791
-==lgeo.include.brick.lg_3788:730
-                            -LG_PLATE_HEIGHT-LG_TOP_HEIGHT
-                        )
+==lgeo.include.brick.lg_2441:1658
+==lgeo.include.brick.lg_3788:471
                     )
                 )
-            )
-        ), (duplicate-code)
-R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2441:1658
-==lgeo.include.brick.lg_3788:470
-                )
-            )
-        ),
-        Difference(
-            Box(
-                Vector( (duplicate-code)
+            ),
+            Difference(
+                Box(
+                    Vector( (duplicate-code)
 R:  1, 0: Similar lines in 4 files
 ==lgeo.include.brick.lg_2441:1561
 ==lgeo.include.brick.lg_2441:1617
-==lgeo.include.brick.lg_3788:381
-==lgeo.include.brick.lg_3788:692
+==lgeo.include.brick.lg_3788:382
+==lgeo.include.brick.lg_3788:693
             ),
             Union(
                 Object(
                     lg_knob_inner_space,
                     Translate(
                         Vector( (duplicate-code)
-R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2441:1509
-==lgeo.include.brick.lg_3788:535
-                    -LG_BRICK_WIDTH+LG_CORNER_SPACE,
-                    -2*LG_PLATE_HEIGHT
-                )
-            ),
-            Box(
-                Vector( (duplicate-code)
-R:  1, 0: Similar lines in 5 files
+R:  1, 0: Similar lines in 8 files
+==lgeo.include.brick.lg_2441:1162
+==lgeo.include.brick.lg_2441:1174
+==lgeo.include.brick.lg_2441:1186
 ==lgeo.include.brick.lg_2441:1198
 ==lgeo.include.brick.lg_2441:1210
 ==lgeo.include.brick.lg_2441:1222
-==lgeo.include.brick.lg_3788:642
-==lgeo.include.brick.lg_3788:653
+==lgeo.include.brick.lg_3788:643
+==lgeo.include.brick.lg_3788:654
                                 -LG_PLATE_HEIGHT
                             )
                         )
                     ),
                     Object(
                         lg_knob(), (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2441:652
+==lgeo.include.brick.lg_3788:66
+                    ),
+                    Sphere(
+                        Vector(
+                            -LG_BRICK_WIDTH + LG_CORNER_SPACE,
+                            2 * LG_BRICK_WIDTH - LG_CORNER_SPACE,
+                            -2 * LG_PLATE_HEIGHT + LG_CORNER_SPACE (duplicate-code)
 R:  1, 0: Similar lines in 2 files
 ==lgeo.include.brick.lg_3003:88
 ==lgeo.include.brick.lg_3010:221
@@ -1780,78 +1565,88 @@ R:  1, 0: Similar lines in 9 files
                 length*LG_BRICK_WIDTH-LG_CORNER_SPACE, (duplicate-code)
 R:  1, 0: Similar lines in 2 files
 ==lgeo.include.brick.lg_2412b:699
-==lgeo.include.brick.lg_3788:469
+==lgeo.include.brick.lg_3788:470
+                    )
+                )
+            )
+        ),
+        Difference( (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2441:1792
+==lgeo.include.brick.lg_3788:732
                         )
                     )
                 )
-            ),
-            Difference( (duplicate-code)
-R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2441:1603
-==lgeo.include.brick.lg_3788:471
-                )
-            ),
-            Difference(
-                Box(
-                    Vector( (duplicate-code)
+            )
+        ), (duplicate-code)
 R:  1, 0: Similar lines in 3 files
-==lgeo.include.brick.lg_2441:1426
-==lgeo.include.brick.lg_2441:1438
-==lgeo.include.brick.lg_3788:548
-                    -2*LG_PLATE_HEIGHT+LG_CORNER_SPACE+LG_E
-                )
-            ),
+==lgeo.include.brick.lg_2441:1547
+==lgeo.include.brick.lg_2441:1603
+==lgeo.include.brick.lg_3788:472
+            )
+        ),
+        Difference(
             Box(
                 Vector( (duplicate-code)
-R:  1, 0: Similar lines in 4 files
-==lgeo.include.brick.lg_2441:1001
-==lgeo.include.brick.lg_2441:1013
-==lgeo.include.brick.lg_2441:1025
-==lgeo.include.brick.lg_3788:560
-                            -LG_PLATE_HEIGHT-LG_CORNER_SPACE
+R:  1, 0: Similar lines in 2 files
+==lgeo.include.brick.lg_2441:885
+==lgeo.include.brick.lg_3788:561
+                            -LG_PLATE_HEIGHT - LG_CORNER_SPACE
                         )
                     ),
                     Box(
                         Vector( (duplicate-code)
-R:  1, 0: Similar lines in 6 files
-==lgeo.include.brick.lg_2441:965
-==lgeo.include.brick.lg_2441:977
-==lgeo.include.brick.lg_2441:989
-==lgeo.include.brick.lg_3788:354
-==lgeo.include.brick.lg_3788:524
-==lgeo.include.brick.lg_3788:536
-                    -2*LG_PLATE_HEIGHT
-                )
-            ),
-            Box(
-                Vector( (duplicate-code)
 R:  1, 0: Similar lines in 2 files
-==lgeo.include.brick.lg_2441:954
-==lgeo.include.brick.lg_3788:561
-                        )
+==lgeo.include.brick.lg_2441:880
+==lgeo.include.brick.lg_3788:544
+                    -2 * LG_PLATE_HEIGHT
+                ),
+                Vector(
+                    -LG_BRICK_WIDTH + LG_CORNER_SPACE,
+                    LG_BRICK_WIDTH - LG_WALL_WIDTH, (duplicate-code)
+R:  1, 0: Similar lines in 4 files
+==lgeo.include.brick.lg_2441:652
+==lgeo.include.brick.lg_2441:681
+==lgeo.include.brick.lg_3788:59
+==lgeo.include.brick.lg_3788:66
                     ),
-                    Box(
+                    Sphere(
                         Vector(
-                            -LG_BRICK_WIDTH+LG_WALL_WIDTH, (duplicate-code)
+                            -LG_BRICK_WIDTH + LG_CORNER_SPACE,
+                            2 * LG_BRICK_WIDTH - LG_CORNER_SPACE, (duplicate-code)
+R:  1, 0: Similar lines in 8 files
+==lgeo.include.brick.lg_2441:639
+==lgeo.include.brick.lg_2441:668
+==lgeo.include.brick.lg_2441:736
+==lgeo.include.brick.lg_2441:749
+==lgeo.include.brick.lg_2441:762
+==lgeo.include.brick.lg_3788:113
+==lgeo.include.brick.lg_3788:137
+==lgeo.include.brick.lg_3788:173
+            ),
+            Cylinder(
+                Vector(
+                    -LG_BRICK_WIDTH + LG_CORNER_SPACE,
+                    2 * LG_BRICK_WIDTH - LG_CORNER_SPACE, (duplicate-code)
 R:  1, 0: Similar lines in 4 files
 ==lgeo.include.brick.lg_2441:323
-==lgeo.include.brick.lg_3788:400
-==lgeo.include.brick.lg_3788:456
-==lgeo.include.brick.lg_3788:596
-                            )
-                        )
-                    ),
-                    Box(
-                        Vector( (duplicate-code)
+==lgeo.include.brick.lg_3788:401
+==lgeo.include.brick.lg_3788:457
+==lgeo.include.brick.lg_3788:597
+                    )
+                )
+            ),
+            Box(
+                Vector( (duplicate-code)
 R:  1, 0: Similar lines in 3 files
 ==lgeo.include.brick.lg_2441:129
 ==lgeo.include.brick.lg_2441:192
-==lgeo.include.brick.lg_3788:327
-                    )
-                )
-            ),
-            Cylinder(
-                Vector(0, 0, 0), (duplicate-code)
+==lgeo.include.brick.lg_3788:328
+                            )
+                        )
+                    ),
+                    Cylinder(
+                        Vector(0, 0, 0), (duplicate-code)
 R:  1, 0: Similar lines in 2 files
 ==lgeo.include.brick.lg_3003:101
 ==lgeo.include.brick.lg_3010:40
@@ -2164,7 +1959,7 @@ R:  1, 0: Similar lines in 2 files
 
 Report
 ======
-437 statements analysed.
+435 statements analysed.
 
 Statistics by type
 ------------------
@@ -2253,13 +2048,13 @@ Raw metrics
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |6889   |78.71 |NC       |NC         |
+|code      |6887   |78.65 |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|docstring |674    |7.70  |NC       |NC         |
+|docstring |676    |7.72  |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|comment   |869    |9.93  |NC       |NC         |
+|comment   |871    |9.95  |NC       |NC         |
 +----------+-------+------+---------+-----------+
-|empty     |320    |3.66  |NC       |NC         |
+|empty     |322    |3.68  |NC       |NC         |
 +----------+-------+------+---------+-----------+
 
 
@@ -2270,9 +2065,9 @@ Duplication
 +-------------------------+-------+---------+-----------+
 |                         |now    |previous |difference |
 +=========================+=======+=========+===========+
-|nb duplicated lines      |2775   |NC       |NC         |
+|nb duplicated lines      |2759   |NC       |NC         |
 +-------------------------+-------+---------+-----------+
-|percent duplicated lines |31.268 |NC       |NC         |
+|percent duplicated lines |31.080 |NC       |NC         |
 +-------------------------+-------+---------+-----------+
 
 
@@ -2283,13 +2078,13 @@ Messages by category
 +-----------+-------+---------+-----------+
 |type       |number |previous |difference |
 +===========+=======+=========+===========+
-|convention |142    |NC       |NC         |
+|convention |172    |NC       |NC         |
 +-----------+-------+---------+-----------+
-|refactor   |99     |NC       |NC         |
+|refactor   |96     |NC       |NC         |
 +-----------+-------+---------+-----------+
-|warning    |533    |NC       |NC         |
+|warning    |253    |NC       |NC         |
 +-----------+-------+---------+-----------+
-|error      |4      |NC       |NC         |
+|error      |19     |NC       |NC         |
 +-----------+-------+---------+-----------+
 
 
@@ -2300,33 +2095,33 @@ Messages by category
 +----------------------------------+------+--------+---------+-----------+
 |module                            |error |warning |refactor |convention |
 +==================================+======+========+=========+===========+
-|lgeo.include.common.lg_defs       |75.00 |1.69    |0.00     |19.72      |
+|lgeo.include.common.lg_color      |78.95 |0.00    |0.00     |68.60      |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_house         |25.00 |0.38    |0.00     |0.70       |
+|lgeo.include.common.lg_defs       |15.79 |3.56    |0.00     |16.28      |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_car           |0.00  |57.60   |1.01     |4.23       |
+|lgeo.set.lg_10036_1_house         |5.26  |0.79    |0.00     |0.58       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.lg_color      |0.00  |26.83   |0.00     |63.38      |
+|lgeo.set.lg_10036_1_car           |0.00  |67.19   |1.04     |3.49       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3003        |0.00  |12.01   |0.00     |0.00       |
+|lgeo.include.brick.lg_3003        |0.00  |25.30   |0.00     |0.00       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3010        |0.00  |0.38    |0.00     |0.70       |
+|lgeo.include.brick.lg_3010        |0.00  |0.79    |0.00     |0.58       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.set.lg_10036_1_main          |0.00  |0.38    |0.00     |0.00       |
+|lgeo.set.lg_10036_1_main          |0.00  |0.79    |0.00     |0.00       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_2441        |0.00  |0.19    |0.00     |1.41       |
+|lgeo.include.brick.lg_2441        |0.00  |0.40    |0.00     |1.16       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3022        |0.00  |0.19    |0.00     |0.70       |
+|lgeo.include.brick.lg_3022        |0.00  |0.40    |0.00     |0.58       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.lgeo_city                    |0.00  |0.19    |0.00     |0.00       |
+|lgeo.lgeo_city                    |0.00  |0.40    |0.00     |0.00       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_2412b       |0.00  |0.19    |0.00     |0.00       |
+|lgeo.include.brick.lg_2412b       |0.00  |0.40    |0.00     |0.00       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.brick.lg_3788        |0.00  |0.00    |97.98    |0.70       |
+|lgeo.include.brick.lg_3788        |0.00  |0.00    |97.92    |1.74       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.include.common.custom_macros |0.00  |0.00    |1.01     |5.63       |
+|lgeo.include.common.custom_macros |0.00  |0.00    |1.04     |4.65       |
 +----------------------------------+------+--------+---------+-----------+
-|lgeo.config.lgeo_cfg              |0.00  |0.00    |0.00     |2.82       |
+|lgeo.config.lgeo_cfg              |0.00  |0.00    |0.00     |2.33       |
 +----------------------------------+------+--------+---------+-----------+
 
 
@@ -2337,17 +2132,21 @@ Messages
 +---------------------------+------------+
 |message id                 |occurrences |
 +===========================+============+
-|unused-wildcard-import     |486         |
+|unused-wildcard-import     |208         |
 +---------------------------+------------+
 |invalid-name               |122         |
 +---------------------------+------------+
-|duplicate-code             |97          |
+|duplicate-code             |94          |
++---------------------------+------------+
+|bad-whitespace             |31          |
 +---------------------------+------------+
 |pointless-string-statement |30          |
 +---------------------------+------------+
-|superfluous-parens         |11          |
+|undefined-variable         |16          |
 +---------------------------+------------+
-|wildcard-import            |8           |
+|superfluous-parens         |10          |
++---------------------------+------------+
+|wildcard-import            |6           |
 +---------------------------+------------+
 |unused-argument            |6           |
 +---------------------------+------------+
@@ -2363,8 +2162,6 @@ Messages
 +---------------------------+------------+
 |unused-variable            |1           |
 +---------------------------+------------+
-|undefined-variable         |1           |
-+---------------------------+------------+
 |too-many-lines             |1           |
 +---------------------------+------------+
 
@@ -2372,5 +2169,5 @@ Messages
 
 Global evaluation
 -----------------
-Your code has been rated at -8.17/10
+Your code has been rated at -4.16/10
 
