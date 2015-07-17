@@ -13,15 +13,13 @@ Unittests File
 """
 
 import unittest
-from pov.test import BasicTest
-from pov.test import FiniteSolidTest
-from pov.test import LanguageDirectiveTest
+from pov.tests import BasicTest
+from pov.tests import FiniteSolidTest
+from pov.tests import LanguageDirectiveTest
 
 
 def suite():
-    '''
-        Test Suite
-    '''
+    """ Test Suite """
     tsuite = unittest.TestSuite()
 
     tsuite.addTests(unittest.TestLoader.loadTestsFromModule(BasicTest))
