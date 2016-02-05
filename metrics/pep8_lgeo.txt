@@ -1,621 +1,416 @@
 directory lgeo
 checking lgeo/__init__.py
 checking lgeo/lgeo_city.py
-directory lgeo/config
-checking lgeo/config/__init__.py
-checking lgeo/config/lgeo_cfg.py
-directory lgeo/set
-checking lgeo/set/__init__.py
-checking lgeo/set/lg_10036_1_car.py
-lgeo/set/lg_10036_1_car.py:66:1: E402 module level import not at top of file
-    Imports are always put at the top of the file, just after any module
-    comments and docstrings, and before module globals and constants.
-
-    Okay: import os
-    Okay: # this is a comment\nimport os
-    Okay: '''this is a module docstring'''\nimport os
-    Okay: r'''this is a module docstring'''\nimport os
-    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
-    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
-    E402: a=1\nimport os
-    E402: 'One string'\n"Two string"\nimport os
-    E402: a=1\nfrom sys import x
-
-    Okay: if x:\n    import os
-lgeo/set/lg_10036_1_car.py:68:1: E402 module level import not at top of file
-    Imports are always put at the top of the file, just after any module
-    comments and docstrings, and before module globals and constants.
-
-    Okay: import os
-    Okay: # this is a comment\nimport os
-    Okay: '''this is a module docstring'''\nimport os
-    Okay: r'''this is a module docstring'''\nimport os
-    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
-    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
-    E402: a=1\nimport os
-    E402: 'One string'\n"Two string"\nimport os
-    E402: a=1\nfrom sys import x
-
-    Okay: if x:\n    import os
-lgeo/set/lg_10036_1_car.py:111:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:112:1: E402 module level import not at top of file
-    Imports are always put at the top of the file, just after any module
-    comments and docstrings, and before module globals and constants.
-
-    Okay: import os
-    Okay: # this is a comment\nimport os
-    Okay: '''this is a module docstring'''\nimport os
-    Okay: r'''this is a module docstring'''\nimport os
-    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
-    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
-    E402: a=1\nimport os
-    E402: 'One string'\n"Two string"\nimport os
-    E402: a=1\nfrom sys import x
-
-    Okay: if x:\n    import os
-lgeo/set/lg_10036_1_car.py:112:5: E271 multiple spaces after keyword
-    Avoid extraneous whitespace around keywords.
-
-    Okay: True and False
-    E271: True and  False
-    E272: True  and False
-    E273: True and\tFalse
-    E274: True\tand False
-lgeo/set/lg_10036_1_car.py:117:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:118:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:119:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:120:1: E402 module level import not at top of file
-    Imports are always put at the top of the file, just after any module
-    comments and docstrings, and before module globals and constants.
-
-    Okay: import os
-    Okay: # this is a comment\nimport os
-    Okay: '''this is a module docstring'''\nimport os
-    Okay: r'''this is a module docstring'''\nimport os
-    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
-    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
-    E402: a=1\nimport os
-    E402: 'One string'\n"Two string"\nimport os
-    E402: a=1\nfrom sys import x
-
-    Okay: if x:\n    import os
-lgeo/set/lg_10036_1_car.py:121:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:122:1: E402 module level import not at top of file
-    Imports are always put at the top of the file, just after any module
-    comments and docstrings, and before module globals and constants.
-
-    Okay: import os
-    Okay: # this is a comment\nimport os
-    Okay: '''this is a module docstring'''\nimport os
-    Okay: r'''this is a module docstring'''\nimport os
-    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
-    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
-    E402: a=1\nimport os
-    E402: 'One string'\n"Two string"\nimport os
-    E402: a=1\nfrom sys import x
-
-    Okay: if x:\n    import os
-lgeo/set/lg_10036_1_car.py:123:1: E402 module level import not at top of file
-    Imports are always put at the top of the file, just after any module
-    comments and docstrings, and before module globals and constants.
-
-    Okay: import os
-    Okay: # this is a comment\nimport os
-    Okay: '''this is a module docstring'''\nimport os
-    Okay: r'''this is a module docstring'''\nimport os
-    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
-    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
-    E402: a=1\nimport os
-    E402: 'One string'\n"Two string"\nimport os
-    E402: a=1\nfrom sys import x
-
-    Okay: if x:\n    import os
-lgeo/set/lg_10036_1_car.py:124:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:125:1: E402 module level import not at top of file
-    Imports are always put at the top of the file, just after any module
-    comments and docstrings, and before module globals and constants.
-
-    Okay: import os
-    Okay: # this is a comment\nimport os
-    Okay: '''this is a module docstring'''\nimport os
-    Okay: r'''this is a module docstring'''\nimport os
-    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
-    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
-    E402: a=1\nimport os
-    E402: 'One string'\n"Two string"\nimport os
-    E402: a=1\nfrom sys import x
-
-    Okay: if x:\n    import os
-lgeo/set/lg_10036_1_car.py:126:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:127:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:128:1: E402 module level import not at top of file
-    Imports are always put at the top of the file, just after any module
-    comments and docstrings, and before module globals and constants.
-
-    Okay: import os
-    Okay: # this is a comment\nimport os
-    Okay: '''this is a module docstring'''\nimport os
-    Okay: r'''this is a module docstring'''\nimport os
-    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
-    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
-    E402: a=1\nimport os
-    E402: 'One string'\n"Two string"\nimport os
-    E402: a=1\nfrom sys import x
-
-    Okay: if x:\n    import os
-lgeo/set/lg_10036_1_car.py:129:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:130:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:131:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:132:1: E402 module level import not at top of file
-    Imports are always put at the top of the file, just after any module
-    comments and docstrings, and before module globals and constants.
-
-    Okay: import os
-    Okay: # this is a comment\nimport os
-    Okay: '''this is a module docstring'''\nimport os
-    Okay: r'''this is a module docstring'''\nimport os
-    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
-    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
-    E402: a=1\nimport os
-    E402: 'One string'\n"Two string"\nimport os
-    E402: a=1\nfrom sys import x
-
-    Okay: if x:\n    import os
-lgeo/set/lg_10036_1_car.py:133:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:134:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:135:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:136:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:137:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:138:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:139:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:140:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:141:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:142:1: E266 too many leading '#' for block comment
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:145:1: E402 module level import not at top of file
-    Imports are always put at the top of the file, just after any module
-    comments and docstrings, and before module globals and constants.
-
-    Okay: import os
-    Okay: # this is a comment\nimport os
-    Okay: '''this is a module docstring'''\nimport os
-    Okay: r'''this is a module docstring'''\nimport os
-    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
-    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
-    E402: a=1\nimport os
-    E402: 'One string'\n"Two string"\nimport os
-    E402: a=1\nfrom sys import x
-
-    Okay: if x:\n    import os
-lgeo/set/lg_10036_1_car.py:146:1: E402 module level import not at top of file
-    Imports are always put at the top of the file, just after any module
-    comments and docstrings, and before module globals and constants.
-
-    Okay: import os
-    Okay: # this is a comment\nimport os
-    Okay: '''this is a module docstring'''\nimport os
-    Okay: r'''this is a module docstring'''\nimport os
-    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
-    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
-    E402: a=1\nimport os
-    E402: 'One string'\n"Two string"\nimport os
-    E402: a=1\nfrom sys import x
-
-    Okay: if x:\n    import os
-lgeo/set/lg_10036_1_car.py:149:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:279:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-lgeo/set/lg_10036_1_car.py:281:1: E265 block comment should start with '# '
-    Separate inline comments by at least two spaces.
-
-    An inline comment is a comment on the same line as a statement.  Inline
-    comments should be separated by at least two spaces from the statement.
-    They should start with a # and a single space.
-
-    Each line of a block comment starts with a # and a single space
-    (unless it is indented text inside the comment).
-
-    Okay: x = x + 1  # Increment x
-    Okay: x = x + 1    # Increment x
-    Okay: # Block comment
-    E261: x = x + 1 # Increment x
-    E262: x = x + 1  #Increment x
-    E262: x = x + 1  #  Increment x
-    E265: #Block comment
-    E266: ### Block comment
-checking lgeo/set/lg_10036_1_house.py
-checking lgeo/set/lg_10036_1_main.py
 directory lgeo/include
 checking lgeo/include/__init__.py
+directory lgeo/include/brick
+checking lgeo/include/brick/__init__.py
+checking lgeo/include/brick/lg_2412b.py
+checking lgeo/include/brick/lg_2441.py
+lgeo/include/brick/lg_2441.py:42:1: E303 too many blank lines (3)
+    Separate top-level function and class definitions with two blank lines.
+
+    Method definitions inside a class are separated by a single blank line.
+
+    Extra blank lines may be used (sparingly) to separate groups of related
+    functions.  Blank lines may be omitted between a bunch of related
+    one-liners (e.g. a set of dummy implementations).
+
+    Use blank lines in functions, sparingly, to indicate logical sections.
+
+    Okay: def a():\n    pass\n\n\ndef b():\n    pass
+    Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
+
+    E301: class Foo:\n    b = 0\n    def bar():\n        pass
+    E302: def a():\n    pass\n\ndef b(n):\n    pass
+    E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
+    E303: def a():\n\n\n\n    pass
+    E304: @decorator\n\ndef a():\n    pass
+checking lgeo/include/brick/lg_3003.py
+checking lgeo/include/brick/lg_3010.py
+lgeo/include/brick/lg_3010.py:16:80: E501 line too long (82 > 79 characters)
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to have
+    several windows side-by-side.  The default wrapping on such devices looks
+    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
+    For flowing long blocks of text (docstrings or comments), limiting the
+    length to 72 characters is recommended.
+
+    Reports error E501.
+checking lgeo/include/brick/lg_3022.py
+lgeo/include/brick/lg_3022.py:18:80: E501 line too long (85 > 79 characters)
+    Limit all lines to a maximum of 79 characters.
+
+    There are still many devices around that are limited to 80 character
+    lines; plus, limiting windows to 80 characters makes it possible to have
+    several windows side-by-side.  The default wrapping on such devices looks
+    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
+    For flowing long blocks of text (docstrings or comments), limiting the
+    length to 72 characters is recommended.
+
+    Reports error E501.
+checking lgeo/include/brick/lg_3788.py
+lgeo/include/brick/lg_3788.py:153:36: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:153:44: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:302:36: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:302:44: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:326:40: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:326:48: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:424:44: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:424:52: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:439:48: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:439:56: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:583:40: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:583:48: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
+lgeo/include/brick/lg_3788.py:643:39: E221 multiple spaces before operator
+    Avoid extraneous whitespace around an operator.
+
+    Okay: a = 12 + 3
+    E221: a = 4  + 5
+    E222: a = 4 +  5
+    E223: a = 4\t+ 5
+    E224: a = 4 +\t5
+lgeo/include/brick/lg_3788.py:643:42: E225 missing whitespace around operator
+    Surround operators with a single space on either side.
+
+    - Always surround these binary operators with a single space on
+      either side: assignment (=), augmented assignment (+=, -= etc.),
+      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
+      Booleans (and, or, not).
+
+    - If operators with different priorities are used, consider adding
+      whitespace around the operators with the lowest priorities.
+
+    Okay: i = i + 1
+    Okay: submitted += 1
+    Okay: x = x * 2 - 1
+    Okay: hypot2 = x * x + y * y
+    Okay: c = (a + b) * (a - b)
+    Okay: foo(bar, key='word', *args, **kwargs)
+    Okay: alpha[:-i]
+
+    E225: i=i+1
+    E225: submitted +=1
+    E225: x = x /2 - 1
+    E225: z = x **y
+    E226: c = (a+b) * (a-b)
+    E226: hypot2 = x*x + y*y
+    E227: c = a|b
+    E228: msg = fmt%(errno, errmsg)
 directory lgeo/include/common
 checking lgeo/include/common/__init__.py
 checking lgeo/include/common/brick_subparts.py
@@ -1602,414 +1397,619 @@ lgeo/include/common/lg_color.py:97:10: E251 unexpected spaces around keyword / p
     E251: def complex(real, imag = 0.0):
     E251: return magic(r = real, i = imag)
 checking lgeo/include/common/lg_defs.py
-directory lgeo/include/brick
-checking lgeo/include/brick/__init__.py
-checking lgeo/include/brick/lg_2412b.py
-checking lgeo/include/brick/lg_2441.py
-lgeo/include/brick/lg_2441.py:42:1: E303 too many blank lines (3)
-    Separate top-level function and class definitions with two blank lines.
+directory lgeo/config
+checking lgeo/config/__init__.py
+checking lgeo/config/lgeo_cfg.py
+directory lgeo/set
+checking lgeo/set/__init__.py
+checking lgeo/set/lg_10036_1_car.py
+lgeo/set/lg_10036_1_car.py:66:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
 
-    Method definitions inside a class are separated by a single blank line.
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
 
-    Extra blank lines may be used (sparingly) to separate groups of related
-    functions.  Blank lines may be omitted between a bunch of related
-    one-liners (e.g. a set of dummy implementations).
+    Okay: if x:\n    import os
+lgeo/set/lg_10036_1_car.py:68:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
 
-    Use blank lines in functions, sparingly, to indicate logical sections.
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
 
-    Okay: def a():\n    pass\n\n\ndef b():\n    pass
-    Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
+    Okay: if x:\n    import os
+lgeo/set/lg_10036_1_car.py:111:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    E301: class Foo:\n    b = 0\n    def bar():\n        pass
-    E302: def a():\n    pass\n\ndef b(n):\n    pass
-    E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
-    E303: def a():\n\n\n\n    pass
-    E304: @decorator\n\ndef a():\n    pass
-checking lgeo/include/brick/lg_3003.py
-checking lgeo/include/brick/lg_3010.py
-lgeo/include/brick/lg_3010.py:16:80: E501 line too long (82 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    Reports error E501.
-checking lgeo/include/brick/lg_3022.py
-lgeo/include/brick/lg_3022.py:18:80: E501 line too long (85 > 79 characters)
-    Limit all lines to a maximum of 79 characters.
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:112:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
 
-    There are still many devices around that are limited to 80 character
-    lines; plus, limiting windows to 80 characters makes it possible to have
-    several windows side-by-side.  The default wrapping on such devices looks
-    ugly.  Therefore, please limit all lines to a maximum of 79 characters.
-    For flowing long blocks of text (docstrings or comments), limiting the
-    length to 72 characters is recommended.
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
 
-    Reports error E501.
-checking lgeo/include/brick/lg_3788.py
-lgeo/include/brick/lg_3788.py:153:36: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    Okay: if x:\n    import os
+lgeo/set/lg_10036_1_car.py:112:5: E271 multiple spaces after keyword
+    Avoid extraneous whitespace around keywords.
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    Okay: True and False
+    E271: True and  False
+    E272: True  and False
+    E273: True and\tFalse
+    E274: True\tand False
+lgeo/set/lg_10036_1_car.py:117:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-lgeo/include/brick/lg_3788.py:153:44: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:118:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:119:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-lgeo/include/brick/lg_3788.py:302:36: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:120:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-lgeo/include/brick/lg_3788.py:302:44: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    Okay: if x:\n    import os
+lgeo/set/lg_10036_1_car.py:121:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:122:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-lgeo/include/brick/lg_3788.py:326:40: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    Okay: if x:\n    import os
+lgeo/set/lg_10036_1_car.py:123:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    Okay: if x:\n    import os
+lgeo/set/lg_10036_1_car.py:124:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-lgeo/include/brick/lg_3788.py:326:48: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:125:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-lgeo/include/brick/lg_3788.py:424:44: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    Okay: if x:\n    import os
+lgeo/set/lg_10036_1_car.py:126:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:127:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-lgeo/include/brick/lg_3788.py:424:52: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:128:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-lgeo/include/brick/lg_3788.py:439:48: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    Okay: if x:\n    import os
+lgeo/set/lg_10036_1_car.py:129:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:130:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-lgeo/include/brick/lg_3788.py:439:56: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:131:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-lgeo/include/brick/lg_3788.py:583:40: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:132:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    Okay: if x:\n    import os
+lgeo/set/lg_10036_1_car.py:133:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-lgeo/include/brick/lg_3788.py:583:48: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:134:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
-lgeo/include/brick/lg_3788.py:643:39: E221 multiple spaces before operator
-    Avoid extraneous whitespace around an operator.
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    Okay: a = 12 + 3
-    E221: a = 4  + 5
-    E222: a = 4 +  5
-    E223: a = 4\t+ 5
-    E224: a = 4 +\t5
-lgeo/include/brick/lg_3788.py:643:42: E225 missing whitespace around operator
-    Surround operators with a single space on either side.
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:135:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    - Always surround these binary operators with a single space on
-      either side: assignment (=), augmented assignment (+=, -= etc.),
-      comparisons (==, <, >, !=, <=, >=, in, not in, is, is not),
-      Booleans (and, or, not).
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
 
-    - If operators with different priorities are used, consider adding
-      whitespace around the operators with the lowest priorities.
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
 
-    Okay: i = i + 1
-    Okay: submitted += 1
-    Okay: x = x * 2 - 1
-    Okay: hypot2 = x * x + y * y
-    Okay: c = (a + b) * (a - b)
-    Okay: foo(bar, key='word', *args, **kwargs)
-    Okay: alpha[:-i]
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:136:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
 
-    E225: i=i+1
-    E225: submitted +=1
-    E225: x = x /2 - 1
-    E225: z = x **y
-    E226: c = (a+b) * (a-b)
-    E226: hypot2 = x*x + y*y
-    E227: c = a|b
-    E228: msg = fmt%(errno, errmsg)
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:137:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:138:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:139:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:140:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:141:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:142:1: E266 too many leading '#' for block comment
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:145:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+lgeo/set/lg_10036_1_car.py:146:1: E402 module level import not at top of file
+    Imports are always put at the top of the file, just after any module
+    comments and docstrings, and before module globals and constants.
+
+    Okay: import os
+    Okay: # this is a comment\nimport os
+    Okay: '''this is a module docstring'''\nimport os
+    Okay: r'''this is a module docstring'''\nimport os
+    Okay: try:\n    import x\nexcept:\n    pass\nelse:\n    pass\nimport y
+    Okay: try:\n    import x\nexcept:\n    pass\nfinally:\n    pass\nimport y
+    E402: a=1\nimport os
+    E402: 'One string'\n"Two string"\nimport os
+    E402: a=1\nfrom sys import x
+
+    Okay: if x:\n    import os
+lgeo/set/lg_10036_1_car.py:149:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:279:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+lgeo/set/lg_10036_1_car.py:281:1: E265 block comment should start with '# '
+    Separate inline comments by at least two spaces.
+
+    An inline comment is a comment on the same line as a statement.  Inline
+    comments should be separated by at least two spaces from the statement.
+    They should start with a # and a single space.
+
+    Each line of a block comment starts with a # and a single space
+    (unless it is indented text inside the comment).
+
+    Okay: x = x + 1  # Increment x
+    Okay: x = x + 1    # Increment x
+    Okay: # Block comment
+    E261: x = x + 1 # Increment x
+    E262: x = x + 1  #Increment x
+    E262: x = x + 1  #  Increment x
+    E265: #Block comment
+    E266: ### Block comment
+checking lgeo/set/lg_10036_1_house.py
+checking lgeo/set/lg_10036_1_main.py
 2       E221 multiple spaces before operator
 1       E222 multiple spaces after operator
 13      E225 missing whitespace around operator
