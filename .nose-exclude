@@ -1,0 +1,5 @@
+# nose exclude config
+coverage
+docs
+metrics
+old

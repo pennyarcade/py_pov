@@ -14,17 +14,7 @@ before_script:
 
 script:
   - git config --global push.default simple
-  - pylint --rcfile=.pylintrc pov > metrics/pylint.txt || true
-  - pylint --rcfile=.pylintrc lgeo > metrics/pylint_lgeo.txt || true
-  - pep8 --verbose --show-pep8 --statistics --count pov > metrics/pep8.txt || true
-  - pep8 --verbose --show-pep8 --statistics --count lgeo > metrics/pep8_lgeo.txt || true
-  - cat metrics/pylint.txt | python metrics/extract.py >> metrics/stats.csv
   - nosetests -d --no-byte-compile --with-xunit --xunit-file=shippable/testresults/nosetests.xml --cover-erase --with-coverage --cover-html --cover-html-dir=coverage pov || true
   - nosetests -q --no-byte-compile --cover-erase --with-coverage --cover-xml --cover-xml-file=shippable/codecoverage/coverage.xml pov || true
-  - git add metrics
-  - git add coverage
-  - git commit -m "[skip ci] shippable build $BUILD_NUMBER"
-  - git push -f git@bitbucket.org:chocokiko/py_pov.git
-  - git push -f git@github.com:pennyarcade/py_pov.git
-  
+
 
