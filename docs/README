@@ -15,3 +15,8 @@ The following scripts use pygame to display animations.
 display1.py : load one frame at a time
 display.py : keep all frames in memory
 
+
+
+--------------------------------------
+commands
+clonedigger -l python -o clone_pov.html pov

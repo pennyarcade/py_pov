@@ -15,295 +15,63 @@ Messages
   ☐ Line: 25
     ☐ pylint: invalid-name / Invalid constant name "lg_stud_logo"
 
-✔ lgeo/include/brick/__init__.py @done (16-02-06 14:52)
-  ✔ Line: 7 @done (16-02-06 14:52)
-    ✔ pep8: W292 / no newline at end of file (col 4) @done (16-02-06 14:52)
-
 ☐ lgeo/include/brick/lg_2412b.py
-  ✔ Line: 231 @done (16-02-06 14:53)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 19) @done (16-02-06 14:53)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 33) @done (16-02-06 14:53)
-  ✔ Line: 236 @done (16-02-06 14:53)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 19) @done (16-02-06 14:53)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 33) @done (16-02-06 14:53)
-  ✔ Line: 244 @done (16-02-06 14:53)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 19) @done (16-02-06 14:53)
-  ✔ Line: 249 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 19) @done (16-02-06 14:54)
-  ✔ Line: 257 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 19) @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 33) @done (16-02-06 14:54)
-  ✔ Line: 262 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 19) @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 33) @done (16-02-06 14:54)
-  ✔ Line: 283 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:54)
-  ✔ Line: 288 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-  ✔ Line: 296 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:54)
-  ✔ Line: 301 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-  ✔ Line: 322 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:54)
-  ✔ Line: 327 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-  ✔ Line: 335 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:54)
-  ✔ Line: 340 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-  ✔ Line: 374 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:54)
-  ✔ Line: 379 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:54)
-  ✔ Line: 387 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:54)
-  ✔ Line: 392 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:54)
-  ✔ Line: 400 @done (16-02-06 14:54)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:54)
-  ✔ Line: 405 @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:55)
-  ✔ Line: 413 @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:55)
-  ✔ Line: 418 @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:55)
-  ✔ Line: 426 @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:55)
-  ✔ Line: 431 @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:55)
-  ✔ Line: 439 @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:55)
-  ✔ Line: 444 @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:55)
-  ✔ Line: 468 @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:55)
-  ✔ Line: 476 @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:55)
-  ✔ Line: 484 @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:55)
-  ✔ Line: 492 @done (16-02-06 14:55)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:55)
-  ✔ Line: 500 @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:56)
-  ✔ Line: 508 @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:56)
-  ✔ Line: 521 @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:56)
-  ✔ Line: 534 @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:56)
-  ✔ Line: 542 @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:56)
-  ✔ Line: 547 @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:56)
-  ✔ Line: 555 @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:56)
-  ✔ Line: 560 @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 18) @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-06 14:56)
-  ✔ Line: 594 @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 49) @done (16-02-06 14:56)
-  ✔ Line: 595 @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 48) @done (16-02-06 14:56)
-  ✔ Line: 596 @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 29) @done (16-02-06 14:56)
-  ✔ Line: 606 @done (16-02-06 14:56)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 46) @done (16-02-06 14:56)
-  ✔ Line: 613 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 40) @done (16-02-06 14:57)
-  ✔ Line: 617 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 40) @done (16-02-06 14:57)
-  ✔ Line: 623 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 48) @done (16-02-06 14:57)
-  ✔ Line: 625 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 40) @done (16-02-06 14:57)
-  ✔ Line: 629 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 40) @done (16-02-06 14:57)
-  ✔ Line: 637 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 40) @done (16-02-06 14:57)
-  ✔ Line: 641 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 40) @done (16-02-06 14:57)
-  ✔ Line: 649 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-  ✔ Line: 656 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-  ✔ Line: 657 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 40) @done (16-02-06 14:57)
-  ✔ Line: 661 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 40) @done (16-02-06 14:57)
-  ✔ Line: 667 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 48) @done (16-02-06 14:57)
-  ✔ Line: 668 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-  ✔ Line: 669 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 40) @done (16-02-06 14:57)
-  ✔ Line: 673 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 40) @done (16-02-06 14:57)
-  ✔ Line: 680 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-  ✔ Line: 681 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 40) @done (16-02-06 14:57)
-  ✔ Line: 685 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 40) @done (16-02-06 14:57)
-  ✔ Line: 692 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-  ✔ Line: 697 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-  ✔ Line: 707 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 35) @done (16-02-06 14:57)
-  ✔ Line: 708 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 42) @done (16-02-06 14:57)
-  ✔ Line: 710 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 54) @done (16-02-06 14:57)
-  ✔ Line: 718 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-  ✔ Line: 723 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 44) @done (16-02-06 14:57)
-  ✔ Line: 726 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-06 14:57)
-  ✔ Line: 733 @done (16-02-06 14:57)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 41) @done (16-02-06 14:57)
-  ✔ Line: 961 @done (16-02-06 14:57)
-    ✔ pep8: E501 / line too long (80 > 79 characters) (col 80) @done (16-02-06 14:57)
+  ☐ Line: 594
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 49)
+  ☐ Line: 595
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 48)
+  ☐ Line: 947
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 961
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 975
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
   ☐ Line: 1149
     ☐ pylint: pointless-string-statement / String statement has no effect
 
 ☐ lgeo/include/brick/lg_2441.py
-  ✔ Line: 1 @done (16-02-06 15:09)
-    ✔ pylint: too-many-lines / Too many lines in module (2763/2000) @done (16-02-06 15:09)
-  ✔ Line: 59 @done (16-02-06 15:09)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 57) @done (16-02-06 15:09)
-  ✔ Line: 72 @done (16-02-06 15:09)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 57) @done (16-02-06 15:09)
-  ✔ Line: 86 @done (16-02-06 15:09)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 50) @done (16-02-06 15:09)
-  ✔ Line: 94 @done (16-02-06 15:09)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 50) @done (16-02-06 15:09)
-  ✔ Line: 102 @done (16-02-06 15:09)
-    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 50) @done (16-02-06 15:09)
-  ☐ Line: 107
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 50)
+  ☐ Line: 1
+    ☐ pylint: too-many-lines / Too many lines in module (2763/2000)
   ☐ Line: 115
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 67)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 70)
-  ☐ Line: 124
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
   ☐ Line: 132
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 55)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 68)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 71)
-  ☐ Line: 141
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
-  ☐ Line: 149
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 50)
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
   ☐ Line: 150
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 33)
-  ☐ Line: 157
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 50)
   ☐ Line: 158
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 33)
-  ☐ Line: 165
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 50)
   ☐ Line: 166
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 33)
-  ☐ Line: 170
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 50)
   ☐ Line: 171
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 33)
   ☐ Line: 178
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 67)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 70)
-  ☐ Line: 187
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
   ☐ Line: 188
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 37)
   ☐ Line: 195
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 55)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 68)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 71)
-  ☐ Line: 204
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
   ☐ Line: 205
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 37)
-  ☐ Line: 212
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 50)
   ☐ Line: 213
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 33)
-  ☐ Line: 217
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 50)
-  ☐ Line: 225
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 50)
   ☐ Line: 226
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 33)
-  ☐ Line: 230
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 50)
   ☐ Line: 239
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 33)
-  ☐ Line: 250
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 50)
   ☐ Line: 260
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 56)
   ☐ Line: 262
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 55)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 68)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 71)
-  ☐ Line: 270
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
   ☐ Line: 278
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 55)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 68)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 71)
-  ☐ Line: 286
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
   ☐ Line: 292
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 56)
   ☐ Line: 294
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 67)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 70)
-  ☐ Line: 302
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
   ☐ Line: 310
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 67)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 70)
-  ☐ Line: 318
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
   ☐ Line: 326
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 43)
-  ☐ Line: 349
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
-  ☐ Line: 369
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 54)
-  ☐ Line: 377
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 64)
   ☐ Line: 387
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 62)
   ☐ Line: 398
@@ -366,8 +134,6 @@ Messages
   ☐ Line: 957
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 31)
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 65)
-  ☐ Line: 961
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 61)
   ☐ Line: 962
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 31)
   ☐ Line: 967
@@ -379,8 +145,6 @@ Messages
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 65)
   ☐ Line: 972
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 30)
-  ☐ Line: 973
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 61)
   ☐ Line: 974
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 31)
   ☐ Line: 979
@@ -398,8 +162,6 @@ Messages
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 30)
   ☐ Line: 993
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 31)
-  ☐ Line: 997
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 61)
   ☐ Line: 998
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 45)
   ☐ Line: 1003
@@ -410,8 +172,6 @@ Messages
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 31)
   ☐ Line: 1008
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 30)
-  ☐ Line: 1009
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 61)
   ☐ Line: 1010
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 45)
   ☐ Line: 1015
@@ -694,7 +454,6 @@ Messages
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 19)
   ☐ Line: 1512
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 18)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 51)
   ☐ Line: 1517
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 18)
     ☐ pep8: E226 / missing whitespace around arithmetic operator (col 49)
@@ -3801,15 +3560,15 @@ Messages
 
 Check Information
 =================
-         Started: 2016-02-06 13:31:56.261513
-        Finished: 2016-02-06 13:32:10.210714
-      Time Taken: 13.95 seconds
+         Started: 2016-02-06 15:10:30.487272
+        Finished: 2016-02-06 15:10:44.583349
+      Time Taken: 14.10 seconds
        Formatter: grouped
         Profiles: .landscape.yml, doc_warnings, no_test_warnings, strictness_veryhigh, no_member_warnings
       Strictness: from profile
-  Libraries Used:
+  Libraries Used: 
        Tools Run: dodgy, mccabe, pep257, pep8, profile-validator, pyflakes, pylint
-  Messages Found: 2297
+  Messages Found: 2154
  External Config: pylint: /home/chocokiko/devel/py_pov/.pylintrc
 
 
