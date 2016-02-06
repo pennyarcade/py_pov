@@ -4641,9 +4641,9 @@ Messages
 ☐ runprospector.py
   ☐ Line: 1
     ☐ pep257: D400 / First line should end with a period (not 'y')
-  ☐ Line: 16
+  ☐ Line: 17
     ☐ pep257: D400 / First line should end with a period (not 'n')
-  ☐ Line: 51
+  ☐ Line: 52
     ☐ pylint: missing-final-newline / Final newline missing
 
 ☐ runtest.py
@@ -4670,9 +4670,9 @@ Messages
 
 Check Information
 =================
-         Started: 2016-02-05 19:50:37.547099
-        Finished: 2016-02-05 19:50:51.608761
-      Time Taken: 14.06 seconds
+         Started: 2016-02-06 12:25:07.304152
+        Finished: 2016-02-06 12:25:21.667942
+      Time Taken: 14.36 seconds
        Formatter: grouped
         Profiles: .landscape.yml, doc_warnings, no_test_warnings, strictness_veryhigh, no_member_warnings
       Strictness: from profile
