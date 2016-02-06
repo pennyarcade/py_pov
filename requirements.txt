@@ -1,9 +1,8 @@
 # Requirements needed for development and testing
 nose
-pylint
 httmock
-pep8
 coverage
+epydoc
 
 # Program requirements
 
