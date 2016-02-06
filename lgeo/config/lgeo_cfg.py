@@ -1,6 +1,8 @@
-'''
-    Configuration for Lgeo Library parts
-'''
+"""
+Configuration for Lgeo Library parts.
+
+@Todo: Put some information here that makes sense
+"""
 
 lg_quality = 4
 # compatible to L3Ps L3Quality for these values supported
