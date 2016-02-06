@@ -1,0 +1,1674 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pov.include.colors_inc</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="pov-module.html">Package&nbsp;pov</a> ::
+        <a href="pov.include-module.html">Package&nbsp;include</a> ::
+        Module&nbsp;colors_inc
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="pov.include.colors_inc-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module colors_inc</h1><p class="nomargin-top"><span class="codelink"><a href="pov.include.colors_inc-pysrc.html">source&nbsp;code</a></span></p>
+<pre class="literalblock">
+
+Py_Pov 0.0.1 Copyright (c) Martin T&#246;nnishoff, 2013
+
+based on:
+PyPov-0.0.X Copyright (c) Simon Burton, 2003
+See LICENSE file.
+
+Some modifications by W.T. Bridgman, 2006-2007.
+
+Original Source:
+    Persistence of Vision Ray Tracer version 3.5 Include File
+    File: colors.inc
+    Last updated: 2001.7.21
+    Description: This file contains pre-defined
+                 colors and color-manipulation macros.
+
+</pre>
+
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pov.include.colors_inc-module.html#ch2rgb" class="summary-sig-name">ch2rgb</a>(<span class="summary-sig-arg">hue</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pov.include.colors_inc-pysrc.html#ch2rgb">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pov.include.colors_inc-module.html#crgb2h" class="summary-sig-name">crgb2h</a>(<span class="summary-sig-arg">rgb</span>,
+        <span class="summary-sig-arg">maximum</span>,
+        <span class="summary-sig-arg">span</span>)</span><br />
+      Takes rgb vector, maximum component, and span as input, returns Hue 
+      value.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pov.include.colors_inc-pysrc.html#crgb2h">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pov.include.colors_inc-module.html#chsl2rgb" class="summary-sig-name">chsl2rgb</a>(<span class="summary-sig-arg">vector</span>)</span><br />
+      Converts a color in HSL color space to a color in RGB color space.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pov.include.colors_inc-pysrc.html#chsl2rgb">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pov.include.colors_inc-module.html#crgb2hsl" class="summary-sig-name">crgb2hsl</a>(<span class="summary-sig-arg">incolor</span>)</span><br />
+      Converts a color in RGB color space to a color in HSL color space.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pov.include.colors_inc-pysrc.html#crgb2hsl">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pov.include.colors_inc-module.html#chsv2rgb" class="summary-sig-name">chsv2rgb</a>(<span class="summary-sig-arg">vector</span>)</span><br />
+      Converts a color in HSV color space to a color in RGB color space.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pov.include.colors_inc-pysrc.html#chsv2rgb">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="pov.include.colors_inc-module.html#crgb2hsv" class="summary-sig-name">crgb2hsv</a>(<span class="summary-sig-arg">vector</span>)</span><br />
+      Converts a color in RGB color space to a color in HSV color space.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="pov.include.colors_inc-pysrc.html#crgb2hsv">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Variables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="RED"></a><span class="summary-name">RED</span> = <code title="Color(rgb= Vector(1, 0, 0))">Color(rgb= Vector(1, 0, 0))</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GREEN"></a><span class="summary-name">GREEN</span> = <code title="Color(rgb= Vector(0, 1, 0))">Color(rgb= Vector(0, 1, 0))</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BLUE"></a><span class="summary-name">BLUE</span> = <code title="Color(rgb= Vector(0, 0, 1))">Color(rgb= Vector(0, 0, 1))</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="YELLOW"></a><span class="summary-name">YELLOW</span> = <code title="Color(rgb= Vector(1, 1, 0))">Color(rgb= Vector(1, 1, 0))</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CYAN"></a><span class="summary-name">CYAN</span> = <code title="Color(rgb= Vector(0, 1, 1))">Color(rgb= Vector(0, 1, 1))</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MAGENTA"></a><span class="summary-name">MAGENTA</span> = <code title="Color(rgb= Vector(1, 0, 1))">Color(rgb= Vector(1, 0, 1))</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CLEAR"></a><span class="summary-name">CLEAR</span> = <code title="Color(rgbf= Vector(1, 1, 1, 1))">Color(rgbf= Vector(1, 1, 1, 1))</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="WHITE"></a><span class="summary-name">WHITE</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BLACK"></a><span class="summary-name">BLACK</span> = <code title="Color(rgb= Vector(0, 0, 0))">Color(rgb= Vector(0, 0, 0))</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY05"></a><span class="summary-name">GRAY05</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY10"></a><span class="summary-name">GRAY10</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY15"></a><span class="summary-name">GRAY15</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY20"></a><span class="summary-name">GRAY20</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY25"></a><span class="summary-name">GRAY25</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY30"></a><span class="summary-name">GRAY30</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY35"></a><span class="summary-name">GRAY35</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY40"></a><span class="summary-name">GRAY40</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY45"></a><span class="summary-name">GRAY45</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY50"></a><span class="summary-name">GRAY50</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY55"></a><span class="summary-name">GRAY55</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY60"></a><span class="summary-name">GRAY60</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY65"></a><span class="summary-name">GRAY65</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY70"></a><span class="summary-name">GRAY70</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY75"></a><span class="summary-name">GRAY75</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY80"></a><span class="summary-name">GRAY80</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY85"></a><span class="summary-name">GRAY85</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY90"></a><span class="summary-name">GRAY90</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY95"></a><span class="summary-name">GRAY95</span> = <code title="WHITE* 0.70">WHITE* 0.70</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DIMGREY"></a><span class="summary-name">DIMGREY</span> = <code title="Color(red= 0.329412, green= 0.329412, blue= 0.329412)">Color(red= 0.329412, green= 0.329412, blue= 0.329412)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DIMGRAY"></a><span class="summary-name">DIMGRAY</span> = <code title="Color(red= 0.329412, green= 0.329412, blue= 0.329412)">Color(red= 0.329412, green= 0.329412, blue= 0.329412)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GRAY"></a><span class="summary-name">GRAY</span> = <code title="Color(red= 0.752941, green= 0.752941, blue= 0.752941)">Color(red= 0.752941, green= 0.752941, blue= 0.752941)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GREY"></a><span class="summary-name">GREY</span> = <code title="Color(red= 0.752941, green= 0.752941, blue= 0.752941)">Color(red= 0.752941, green= 0.752941, blue= 0.752941)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="LIGHTGRAY"></a><span class="summary-name">LIGHTGRAY</span> = <code title="Color(red= 0.658824, green= 0.658824, blue= 0.658824)">Color(red= 0.658824, green= 0.658824, blue= 0.658824)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="LIGHTGREY"></a><span class="summary-name">LIGHTGREY</span> = <code title="Color(red= 0.658824, green= 0.658824, blue= 0.658824)">Color(red= 0.658824, green= 0.658824, blue= 0.658824)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="VLIGHTGRAY"></a><span class="summary-name">VLIGHTGRAY</span> = <code title="Color(red= 0.80, green= 0.80, blue= 0.80)">Color(red= 0.80, green= 0.80, blue= 0.80)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="VLIGHTGREY"></a><span class="summary-name">VLIGHTGREY</span> = <code title="Color(red= 0.80, green= 0.80, blue= 0.80)">Color(red= 0.80, green= 0.80, blue= 0.80)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#AQUAMARINE" class="summary-name">AQUAMARINE</a> = <code title="Color(red= 0.439216, green= 0.858824, blue= 0.576471)">Color(red= 0.439216, green= 0.858824, blue= 0.576<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BLUEVIOLET"></a><span class="summary-name">BLUEVIOLET</span> = <code title="Color(red= 0.62352, green= 0.372549, blue= 0.623529)">Color(red= 0.62352, green= 0.372549, blue= 0.623529)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BROWN"></a><span class="summary-name">BROWN</span> = <code title="Color(red= 0.647059, green= 0.164706, blue= 0.164706)">Color(red= 0.647059, green= 0.164706, blue= 0.164706)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CADETBLUE"></a><span class="summary-name">CADETBLUE</span> = <code title="Color(red= 0.372549, green= 0.623529, blue= 0.623529)">Color(red= 0.372549, green= 0.623529, blue= 0.623529)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="CORAL"></a><span class="summary-name">CORAL</span> = <code title="Color(red= 1.0, green= 0.498039, blue= 0.0)">Color(red= 1.0, green= 0.498039, blue= 0.0)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#CORNFLOWERBLUE" class="summary-name">CORNFLOWERBLUE</a> = <code title="Color(red= 0.258824, green= 0.258824, blue= 0.435294)">Color(red= 0.258824, green= 0.258824, blue= 0<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DARKGREEN"></a><span class="summary-name">DARKGREEN</span> = <code title="Color(red= 0.184314, green= 0.309804, blue= 0.184314)">Color(red= 0.184314, green= 0.309804, blue= 0.184314)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#DARKOLIVEGREEN" class="summary-name">DARKOLIVEGREEN</a> = <code title="Color(red= 0.309804, green= 0.309804, blue= 0.184314)">Color(red= 0.309804, green= 0.309804, blue= 0<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DARKORCHID"></a><span class="summary-name">DARKORCHID</span> = <code title="Color(red= 0.6, green= 0.196078, blue= 0.8)">Color(red= 0.6, green= 0.196078, blue= 0.8)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#DARKSLATEBLUE" class="summary-name">DARKSLATEBLUE</a> = <code title="Color(red= 0.119608, green= 0.137255, blue= 0.556863)">Color(red= 0.119608, green= 0.137255, blue= 0.<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#DARKSLATEGRAY" class="summary-name">DARKSLATEGRAY</a> = <code title="Color(red= 0.184314, green= 0.309804, blue= 0.309804)">Color(red= 0.184314, green= 0.309804, blue= 0.<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#DARKSLATEGREY" class="summary-name">DARKSLATEGREY</a> = <code title="Color(red= 0.184314, green= 0.309804, blue= 0.309804)">Color(red= 0.184314, green= 0.309804, blue= 0.<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#DARKTURQUOISE" class="summary-name">DARKTURQUOISE</a> = <code title="Color(red= 0.439216, green= 0.576471, blue= 0.858824)">Color(red= 0.439216, green= 0.576471, blue= 0.<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="FIREBRICK"></a><span class="summary-name">FIREBRICK</span> = <code title="Color(red= 0.556863, green= 0.137255, blue= 0.137255)">Color(red= 0.556863, green= 0.137255, blue= 0.137255)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#FORESTGREEN" class="summary-name">FORESTGREEN</a> = <code title="Color(red= 0.137255, green= 0.556863, blue= 0.137255)">Color(red= 0.137255, green= 0.556863, blue= 0.13<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GOLD"></a><span class="summary-name">GOLD</span> = <code title="Color(red= 0.8, green= 0.498039, blue= 0.196078)">Color(red= 0.8, green= 0.498039, blue= 0.196078)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GOLDENROD"></a><span class="summary-name">GOLDENROD</span> = <code title="Color(red= 0.858824, green= 0.858824, blue= 0.439216)">Color(red= 0.858824, green= 0.858824, blue= 0.439216)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#GREENYELLOW" class="summary-name">GREENYELLOW</a> = <code title="Color(red= 0.576471, green= 0.858824, blue= 0.439216)">Color(red= 0.576471, green= 0.858824, blue= 0.43<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="INDIANRED"></a><span class="summary-name">INDIANRED</span> = <code title="Color(red= 0.309804, green= 0.184314, blue= 0.184314)">Color(red= 0.309804, green= 0.184314, blue= 0.184314)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="KHAKI"></a><span class="summary-name">KHAKI</span> = <code title="Color(red= 0.623529, green= 0.623529, blue= 0.372549)">Color(red= 0.623529, green= 0.623529, blue= 0.372549)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="LIGHTBLUE"></a><span class="summary-name">LIGHTBLUE</span> = <code title="Color(red= 0.74902, green= 0.847059, blue= 0.847059)">Color(red= 0.74902, green= 0.847059, blue= 0.847059)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#LIGHTSTEELBLUE" class="summary-name">LIGHTSTEELBLUE</a> = <code title="Color(red= 0.560784, green= 0.560784, blue= 0.737255)">Color(red= 0.560784, green= 0.560784, blue= 0<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="LIMEGREEN"></a><span class="summary-name">LIMEGREEN</span> = <code title="Color(red= 0.196078, green= 0.8, blue= 0.196078)">Color(red= 0.196078, green= 0.8, blue= 0.196078)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MAROON"></a><span class="summary-name">MAROON</span> = <code title="Color(red= 0.556863, green= 0.137255, blue= 0.419608)">Color(red= 0.556863, green= 0.137255, blue= 0.419608)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MEDIUMAQUAMARINE"></a><span class="summary-name">MEDIUMAQUAMARINE</span> = <code title="Color(red= 0.196078, green= 0.8, blue= 0.6)">Color(red= 0.196078, green= 0.8, blue= 0.6)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MEDIUMBLUE"></a><span class="summary-name">MEDIUMBLUE</span> = <code title="Color(red= 0.196078, green= 0.196078, blue= 0.8)">Color(red= 0.196078, green= 0.196078, blue= 0.8)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#MEDIUMFORESTGREEN" class="summary-name">MEDIUMFORESTGREEN</a> = <code title="Color(red= 0.419608, green= 0.556863, blue= 0.137255)">Color(red= 0.419608, green= 0.556863, blue<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#MEDIUMGOLDENROD" class="summary-name">MEDIUMGOLDENROD</a> = <code title="Color(red= 0.917647, green= 0.917647, blue= 0.678431)">Color(red= 0.917647, green= 0.917647, blue= <code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#MEDIUMORCHID" class="summary-name">MEDIUMORCHID</a> = <code title="Color(red= 0.576471, green= 0.439216, blue= 0.858824)">Color(red= 0.576471, green= 0.439216, blue= 0.8<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#MEDIUMSEAGREEN" class="summary-name">MEDIUMSEAGREEN</a> = <code title="Color(red= 0.258824, green= 0.435294, blue= 0.258824)">Color(red= 0.258824, green= 0.435294, blue= 0<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MEDIUMSLATEBLUE"></a><span class="summary-name">MEDIUMSLATEBLUE</span> = <code title="Color(red= 0.498039, blue= 1.0)">Color(red= 0.498039, blue= 1.0)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MEDIUMSPRINGGREEN"></a><span class="summary-name">MEDIUMSPRINGGREEN</span> = <code title="Color(red= 0.498039, green= 1.0)">Color(red= 0.498039, green= 1.0)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#MEDIUMTURQUOISE" class="summary-name">MEDIUMTURQUOISE</a> = <code title="Color(red= 0.439216, green= 0.858824, blue= 0.858824)">Color(red= 0.439216, green= 0.858824, blue= <code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#MEDIUMVIOLETRED" class="summary-name">MEDIUMVIOLETRED</a> = <code title="Color(red= 0.858824, green= 0.439216, blue= 0.576471)">Color(red= 0.858824, green= 0.439216, blue= <code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="pov.include.colors_inc-module.html#MIDNIGHTBLUE" class="summary-name">MIDNIGHTBLUE</a> = <code title="Color(red= 0.184314, green= 0.184314, blue= 0.309804)">Color(red= 0.184314, green= 0.184314, blue= 0.3<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="NAVY"></a><span class="summary-name">NAVY</span> = <code title="Color(red= 0.137255, green= 0.137255, blue= 0.556863)">Color(red= 0.137255, green= 0.137255, blue= 0.556863)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="NAVYBLUE"></a><span class="summary-name">NAVYBLUE</span> = <code title="Color(red= 0.137255, green= 0.137255, blue= 0.556863)">Color(red= 0.137255, green= 0.137255, blue= 0.556863)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="ORANGE"></a><span class="summary-name">ORANGE</span> = <code title="Color(red= 1, green= 0.5, blue= 0.0)">Color(red= 1, green= 0.5, blue= 0.0)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="ORANGERED"></a><span class="summary-name">ORANGERED</span> = <code title="Color(red= 1.0, green= 0.25)">Color(red= 1.0, green= 0.25)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="ORCHID"></a><span class="summary-name">ORCHID</span> = <code title="Color(red= 0.858824, green= 0.439216, blue= 0.858824)">Color(red= 0.858824, green= 0.439216, blue= 0.858824)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="PALEGREEN"></a><span class="summary-name">PALEGREEN</span> = <code title="Color(red= 0.560784, green= 0.737255, blue= 0.560784)">Color(red= 0.560784, green= 0.737255, blue= 0.560784)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="PINK"></a><span class="summary-name">PINK</span> = <code title="Color(red= 0.737255, green= 0.560784, blue= 0.560784)">Color(red= 0.737255, green= 0.560784, blue= 0.560784)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="PLUM"></a><span class="summary-name">PLUM</span> = <code title="Color(red= 0.917647, green= 0.678431, blue= 0.917647)">Color(red= 0.917647, green= 0.678431, blue= 0.917647)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SALMON"></a><span class="summary-name">SALMON</span> = <code title="Color(red= 0.435294, green= 0.258824, blue= 0.258824)">Color(red= 0.435294, green= 0.258824, blue= 0.258824)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SEAGREEN"></a><span class="summary-name">SEAGREEN</span> = <code title="Color(red= 0.137255, green= 0.556863, blue= 0.419608)">Color(red= 0.137255, green= 0.556863, blue= 0.419608)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SIENNA"></a><span class="summary-name">SIENNA</span> = <code title="Color(red= 0.556863, green= 0.419608, blue= 0.137255)">Color(red= 0.556863, green= 0.419608, blue= 0.137255)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SKYBLUE"></a><span class="summary-name">SKYBLUE</span> = <code title="Color(red= 0.196078, green= 0.6, blue= 0.8)">Color(red= 0.196078, green= 0.6, blue= 0.8)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SLATEBLUE"></a><span class="summary-name">SLATEBLUE</span> = <code title="Color(green= 0.498039, blue= 1.0)">Color(green= 0.498039, blue= 1.0)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SPRINGGREEN"></a><span class="summary-name">SPRINGGREEN</span> = <code title="Color(green= 1.0, blue= 0.498039)">Color(green= 1.0, blue= 0.498039)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="STEELBLUE"></a><span class="summary-name">STEELBLUE</span> = <code title="Color(red= 0.137255, green= 0.419608, blue= 0.556863)">Color(red= 0.137255, green= 0.419608, blue= 0.556863)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TAN"></a><span class="summary-name">TAN</span> = <code title="Color(red= 0.858824, green= 0.576471, blue= 0.439216)">Color(red= 0.858824, green= 0.576471, blue= 0.439216)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="THISTLE"></a><span class="summary-name">THISTLE</span> = <code title="Color(red= 0.847059, green= 0.74902, blue= 0.847059)">Color(red= 0.847059, green= 0.74902, blue= 0.847059)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TURQUOISE"></a><span class="summary-name">TURQUOISE</span> = <code title="Color(red= 0.678431, green= 0.917647, blue= 0.917647)">Color(red= 0.678431, green= 0.917647, blue= 0.917647)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="VIOLET"></a><span class="summary-name">VIOLET</span> = <code title="Color(red= 0.309804, green= 0.184314, blue= 0.309804)">Color(red= 0.309804, green= 0.184314, blue= 0.309804)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="VIOLETRED"></a><span class="summary-name">VIOLETRED</span> = <code title="Color(red= 0.8, green= 0.196078, blue= 0.6)">Color(red= 0.8, green= 0.196078, blue= 0.6)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="WHEAT"></a><span class="summary-name">WHEAT</span> = <code title="Color(red= 0.847059, green= 0.847059, blue= 0.74902)">Color(red= 0.847059, green= 0.847059, blue= 0.74902)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="YELLOWGREEN"></a><span class="summary-name">YELLOWGREEN</span> = <code title="Color(red= 0.6, green= 0.8, blue= 0.196078)">Color(red= 0.6, green= 0.8, blue= 0.196078)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SUMMERSKY"></a><span class="summary-name">SUMMERSKY</span> = <code title="Color(red= 0.22, green= 0.69, blue= 0.87)">Color(red= 0.22, green= 0.69, blue= 0.87)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="RICHBLUE"></a><span class="summary-name">RICHBLUE</span> = <code title="Color(red= 0.35, green= 0.35, blue= 0.67)">Color(red= 0.35, green= 0.35, blue= 0.67)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BRASS"></a><span class="summary-name">BRASS</span> = <code title="Color(red= 0.71, green= 0.65, blue= 0.26)">Color(red= 0.71, green= 0.65, blue= 0.26)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="COPPER"></a><span class="summary-name">COPPER</span> = <code title="Color(red= 0.72, green= 0.45, blue= 0.20)">Color(red= 0.72, green= 0.45, blue= 0.20)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BRONZE"></a><span class="summary-name">BRONZE</span> = <code title="Color(red= 0.55, green= 0.47, blue= 0.14)">Color(red= 0.55, green= 0.47, blue= 0.14)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BRONZE2"></a><span class="summary-name">BRONZE2</span> = <code title="Color(red= 0.65, green= 0.49, blue= 0.24)">Color(red= 0.65, green= 0.49, blue= 0.24)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SILVER"></a><span class="summary-name">SILVER</span> = <code title="Color(red= 0.90, green= 0.91, blue= 0.98)">Color(red= 0.90, green= 0.91, blue= 0.98)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BRIGHTGOLD"></a><span class="summary-name">BRIGHTGOLD</span> = <code title="Color(red= 0.85, green= 0.85, blue= 0.10)">Color(red= 0.85, green= 0.85, blue= 0.10)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="OLDGOLD"></a><span class="summary-name">OLDGOLD</span> = <code title="Color(red= 0.81, green= 0.71, blue= 0.23)">Color(red= 0.81, green= 0.71, blue= 0.23)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="FELDSPAR"></a><span class="summary-name">FELDSPAR</span> = <code title="Color(red= 0.82, green= 0.57, blue= 0.46)">Color(red= 0.82, green= 0.57, blue= 0.46)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="QUARTZ"></a><span class="summary-name">QUARTZ</span> = <code title="Color(red= 0.85, green= 0.85, blue= 0.95)">Color(red= 0.85, green= 0.85, blue= 0.95)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MICA"></a><span class="summary-name">MICA</span> = <code title="Color(BLACK)">Color(BLACK)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="NEONPINK"></a><span class="summary-name">NEONPINK</span> = <code title="Color(red= 1.00, green= 0.43, blue= 0.78)">Color(red= 1.00, green= 0.43, blue= 0.78)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DARKPURPLE"></a><span class="summary-name">DARKPURPLE</span> = <code title="Color(red= 0.53, green= 0.12, blue= 0.47)">Color(red= 0.53, green= 0.12, blue= 0.47)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="NEONBLUE"></a><span class="summary-name">NEONBLUE</span> = <code title="Color(red= 0.30, green= 0.30, blue= 1.00)">Color(red= 0.30, green= 0.30, blue= 1.00)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="COOLCOPPER"></a><span class="summary-name">COOLCOPPER</span> = <code title="Color(red= 0.85, green= 0.53, blue= 0.10)">Color(red= 0.85, green= 0.53, blue= 0.10)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MANDARINORANGE"></a><span class="summary-name">MANDARINORANGE</span> = <code title="Color(red= 0.89, green= 0.47, blue= 0.20)">Color(red= 0.89, green= 0.47, blue= 0.20)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="LIGHTWOOD"></a><span class="summary-name">LIGHTWOOD</span> = <code title="Color(red= 0.91, green= 0.76, blue= 0.65)">Color(red= 0.91, green= 0.76, blue= 0.65)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MEDIUMWOOD"></a><span class="summary-name">MEDIUMWOOD</span> = <code title="Color(red= 0.65, green= 0.50, blue= 0.39)">Color(red= 0.65, green= 0.50, blue= 0.39)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DARKWOOD"></a><span class="summary-name">DARKWOOD</span> = <code title="Color(red= 0.52, green= 0.37, blue= 0.26)">Color(red= 0.52, green= 0.37, blue= 0.26)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SPICYPINK"></a><span class="summary-name">SPICYPINK</span> = <code title="Color(red= 1.00, green= 0.11, blue= 0.68)">Color(red= 1.00, green= 0.11, blue= 0.68)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SEMISWEETCHOC"></a><span class="summary-name">SEMISWEETCHOC</span> = <code title="Color(red= 0.42, green= 0.26, blue= 0.15)">Color(red= 0.42, green= 0.26, blue= 0.15)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="BAKERSCHOC"></a><span class="summary-name">BAKERSCHOC</span> = <code title="Color(red= 0.36, green= 0.20, blue= 0.09)">Color(red= 0.36, green= 0.20, blue= 0.09)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="FLESH"></a><span class="summary-name">FLESH</span> = <code title="Color(red= 0.96, green= 0.80, blue= 0.69)">Color(red= 0.96, green= 0.80, blue= 0.69)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="NEWTAN"></a><span class="summary-name">NEWTAN</span> = <code title="Color(red= 0.92, green= 0.78, blue= 0.62)">Color(red= 0.92, green= 0.78, blue= 0.62)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="NEWMIDNIGHTBLUE"></a><span class="summary-name">NEWMIDNIGHTBLUE</span> = <code title="Color(red= 0.00, green= 0.00, blue= 0.61)">Color(red= 0.00, green= 0.00, blue= 0.61)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="VERYDARKBROWN"></a><span class="summary-name">VERYDARKBROWN</span> = <code title="Color(red= 0.35, green= 0.16, blue= 0.14)">Color(red= 0.35, green= 0.16, blue= 0.14)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DARKBROWN"></a><span class="summary-name">DARKBROWN</span> = <code title="Color(red= 0.36, green= 0.25, blue= 0.20)">Color(red= 0.36, green= 0.25, blue= 0.20)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DARKTAN"></a><span class="summary-name">DARKTAN</span> = <code title="Color(red= 0.59, green= 0.41, blue= 0.31)">Color(red= 0.59, green= 0.41, blue= 0.31)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="GREENCOPPER"></a><span class="summary-name">GREENCOPPER</span> = <code title="Color(red= 0.32, green= 0.49, blue= 0.46)">Color(red= 0.32, green= 0.49, blue= 0.46)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DKGREENCOPPER"></a><span class="summary-name">DKGREENCOPPER</span> = <code title="Color(red= 0.29, green= 0.46, blue= 0.43)">Color(red= 0.29, green= 0.46, blue= 0.43)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="DUSTYROSE"></a><span class="summary-name">DUSTYROSE</span> = <code title="Color(red= 0.52, green= 0.39, blue= 0.39)">Color(red= 0.52, green= 0.39, blue= 0.39)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="HUNTERSGREEN"></a><span class="summary-name">HUNTERSGREEN</span> = <code title="Color(red= 0.13, green= 0.37, blue= 0.31)">Color(red= 0.13, green= 0.37, blue= 0.31)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SCARLET"></a><span class="summary-name">SCARLET</span> = <code title="Color(red= 0.55, green= 0.09, blue= 0.09)">Color(red= 0.55, green= 0.09, blue= 0.09)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="MED_PURPLE"></a><span class="summary-name">MED_PURPLE</span> = <code title="Color(red= 0.73, green= 0.16, blue= 0.96)">Color(red= 0.73, green= 0.16, blue= 0.96)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="LIGHT_PURPLE"></a><span class="summary-name">LIGHT_PURPLE</span> = <code title="Color(red= 0.87, green= 0.58, blue= 0.98)">Color(red= 0.87, green= 0.58, blue= 0.98)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="VERY_LIGHT_PURPLE"></a><span class="summary-name">VERY_LIGHT_PURPLE</span> = <code title="Color(red= 0.94, green= 0.81, blue= 0.99)">Color(red= 0.94, green= 0.81, blue= 0.99)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'pov.include'"><code class="variable-quote">'</code><code class="variable-string">pov.include</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Function Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-FunctionDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="ch2rgb"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ch2rgb</span>(<span class="sig-arg">hue</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pov.include.colors_inc-pysrc.html#ch2rgb">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+  </dl>
+<div class="fields">      <strong>To Do:</strong>
+      <ul class="nomargin-top">
+        <li>
+        Apidoc
+        </li>
+        <li>
+        Param Syntax checks
+        </li>
+      </ul>
+</div></td></tr></table>
+</div>
+<a name="crgb2h"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">crgb2h</span>(<span class="sig-arg">rgb</span>,
+        <span class="sig-arg">maximum</span>,
+        <span class="sig-arg">span</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pov.include.colors_inc-pysrc.html#crgb2h">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Takes rgb vector, maximum component, and span as input, returns Hue 
+  value.</p>
+  <dl class="fields">
+  </dl>
+<div class="fields">      <p><strong>To Do:</strong>
+        Param Syntax checks
+      </p>
+</div></td></tr></table>
+</div>
+<a name="chsl2rgb"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">chsl2rgb</span>(<span class="sig-arg">vector</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pov.include.colors_inc-pysrc.html#chsl2rgb">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Converts a color in HSL color space to a color in RGB color space. 
+  Input:  &lt; Hue, Saturation, Lightness, Filter, Transmit &gt; Output: 
+  &lt; Red, Green, Blue, Filter, Transmit &gt;</p>
+  <dl class="fields">
+  </dl>
+<div class="fields">      <strong>To Do:</strong>
+      <ul class="nomargin-top">
+        <li>
+        Param Syntax checks
+        </li>
+        <li>
+        support this?
+        </li>
+      </ul>
+</div></td></tr></table>
+</div>
+<a name="crgb2hsl"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">crgb2hsl</span>(<span class="sig-arg">incolor</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pov.include.colors_inc-pysrc.html#crgb2hsl">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Converts a color in RGB color space to a color in HSL color space. 
+  Input:  &lt; Red, Green, Blue, Filter, Transmit &gt; Output: &lt; Hue, 
+  Saturation, Lightness, Filter, Transmit &gt;</p>
+  <dl class="fields">
+  </dl>
+<div class="fields">      <strong>To Do:</strong>
+      <ul class="nomargin-top">
+        <li>
+        Param Syntax checks
+        </li>
+        <li>
+        support this?
+        </li>
+      </ul>
+</div></td></tr></table>
+</div>
+<a name="chsv2rgb"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">chsv2rgb</span>(<span class="sig-arg">vector</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pov.include.colors_inc-pysrc.html#chsv2rgb">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Converts a color in HSV color space to a color in RGB color space. 
+  Input:  &lt; Hue, Saturation, Value, Filter, Transmit &gt; Output: &lt; 
+  Red, Green, Blue, Filter, Transmit &gt;</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="crgb2hsv"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">crgb2hsv</span>(<span class="sig-arg">vector</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="pov.include.colors_inc-pysrc.html#crgb2hsv">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Converts a color in RGB color space to a color in HSV color space. 
+  Input:  &lt; Red, Green, Blue, Filter, Transmit &gt; Output: &lt; Hue, 
+  Saturation, Value, Filter, Transmit &gt;</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== VARIABLES DETAILS ==================== -->
+<a name="section-VariablesDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-VariablesDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="AQUAMARINE"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">AQUAMARINE</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.439216, green= 0.858824, blue= 0.576471)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="CORNFLOWERBLUE"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">CORNFLOWERBLUE</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.258824, green= 0.258824, blue= 0.435294)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="DARKOLIVEGREEN"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">DARKOLIVEGREEN</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.309804, green= 0.309804, blue= 0.184314)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="DARKSLATEBLUE"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">DARKSLATEBLUE</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.119608, green= 0.137255, blue= 0.556863)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="DARKSLATEGRAY"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">DARKSLATEGRAY</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.184314, green= 0.309804, blue= 0.309804)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="DARKSLATEGREY"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">DARKSLATEGREY</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.184314, green= 0.309804, blue= 0.309804)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="DARKTURQUOISE"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">DARKTURQUOISE</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.439216, green= 0.576471, blue= 0.858824)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="FORESTGREEN"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">FORESTGREEN</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.137255, green= 0.556863, blue= 0.137255)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GREENYELLOW"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">GREENYELLOW</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.576471, green= 0.858824, blue= 0.439216)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="LIGHTSTEELBLUE"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">LIGHTSTEELBLUE</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.560784, green= 0.560784, blue= 0.737255)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="MEDIUMFORESTGREEN"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">MEDIUMFORESTGREEN</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.419608, green= 0.556863, blue= 0.137255)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="MEDIUMGOLDENROD"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">MEDIUMGOLDENROD</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.917647, green= 0.917647, blue= 0.678431)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="MEDIUMORCHID"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">MEDIUMORCHID</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.576471, green= 0.439216, blue= 0.858824)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="MEDIUMSEAGREEN"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">MEDIUMSEAGREEN</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.258824, green= 0.435294, blue= 0.258824)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="MEDIUMTURQUOISE"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">MEDIUMTURQUOISE</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.439216, green= 0.858824, blue= 0.858824)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="MEDIUMVIOLETRED"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">MEDIUMVIOLETRED</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.858824, green= 0.439216, blue= 0.576471)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="MIDNIGHTBLUE"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">MIDNIGHTBLUE</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+Color(red= 0.184314, green= 0.184314, blue= 0.309804)
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sat Feb  6 12:15:27 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

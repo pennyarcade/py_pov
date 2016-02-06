@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pov.object_modifier.ObjectModifier.ObjectModifier</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="pov-module.html">Package&nbsp;pov</a> ::
+        <a href="pov.object_modifier-module.html">Package&nbsp;object_modifier</a> ::
+        <a href="pov.object_modifier.ObjectModifier-module.html">Module&nbsp;ObjectModifier</a> ::
+        Class&nbsp;ObjectModifier
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="pov.object_modifier.ObjectModifier.ObjectModifier-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class ObjectModifier</h1><p class="nomargin-top"><span class="codelink"><a href="pov.object_modifier.ObjectModifier-pysrc.html#ObjectModifier">source&nbsp;code</a></span></p>
+<pre class="base-tree">
+               object --+    
+                        |    
+<a href="pov.basic.SceneItem.SceneItem-class.html">basic.SceneItem.SceneItem</a> --+
+                            |
+                           <strong class="uidshort">ObjectModifier</strong>
+</pre>
+
+<dl><dt>Known Subclasses:</dt>
+<dd>
+      <ul class="subclass-list">
+<li><a href="pov.object_modifier.ClippedBy.ClippedBy-class.html">ClippedBy.ClippedBy</a></li><li>, <a href="pov.object_modifier.Rotate.Rotate-class.html">Rotate.Rotate</a></li><li>, <a href="pov.object_modifier.Translate.Translate-class.html">Translate.Translate</a></li><li>, <a href="pov.object_modifier.Matrix.Matrix-class.html">Matrix.Matrix</a></li><li>, <a href="pov.object_modifier.Scale.Scale-class.html">Scale.Scale</a></li><li>, <a href="pov.object_modifier.Interior.Interior-class.html">Interior.Interior</a></li>  </ul>
+</dd></dl>
+
+<hr />
+<pre class="literalblock">
+
+OBJECT_MODIFIERS:
+    [OBJECT_PHOTONS] |
+    [CLIPPED_BY] |
+    [BOUNDED_BY] |
+    [MATERIAL] |
+    [INTERIOR] |
+    [INTERIOR_TEXTURE] |
+    [TEXTURE] |
+    [PIGMENT] |
+    [NORMAL] |
+    [FINISH] |
+    [TRANSFORMATION...] |
+    [no_shadow] |
+    [no_image[BOOL]] |
+    [no_reflection{BOOL]] |
+    [inverse] |
+    [double_illuminate[BOOL]] |
+    [hollow [BOOL]]
+
+OBJECT_PHOTONS:
+    photons { OBJECT_PHOTON_ITEMS }
+
+@Todo: Implement subclasses
+
+</pre>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="pov.basic.SceneItem.SceneItem-class.html">basic.SceneItem.SceneItem</a></code></b>:
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#__delitem__">__delitem__</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#__eq__">__eq__</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#__getitem__">__getitem__</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#__init__">__init__</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#__len__">__len__</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#__setitem__">__setitem__</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#__str__">__str__</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#append">append</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#flatten">flatten</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#map_arg">map_arg</a></code>
+      </p>
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="pov.basic.SceneItem.SceneItem-class.html">basic.SceneItem.SceneItem</a></code></b> (private):
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_block_begin" onclick="show_private();">_block_begin</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_block_end" onclick="show_private();">_block_end</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_checkKwargValue" onclick="show_private();">_checkKwargValue</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_check_arguments" onclick="show_private();">_check_arguments</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_check_kwargs" onclick="show_private();">_check_kwargs</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_check_opts" onclick="show_private();">_check_opts</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_dedent" onclick="show_private();">_dedent</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_format_args" onclick="show_private();">_format_args</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_format_kwargs" onclick="show_private();">_format_kwargs</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_format_opts" onclick="show_private();">_format_opts</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_get_indent" onclick="show_private();">_get_indent</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_get_line" onclick="show_private();">_get_line</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_indent" onclick="show_private();">_indent</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_is_valid_identifier" onclick="show_private();">_is_valid_identifier</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_is_valid_keyword" onclick="show_private();">_is_valid_keyword</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_validate_args" onclick="show_private();">_validate_args</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_validate_kwargs" onclick="show_private();">_validate_kwargs</a></code>,
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_validate_opts" onclick="show_private();">_validate_opts</a></code>
+      </p></div>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <div class="private">    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="pov.basic.SceneItem.SceneItem-class.html">basic.SceneItem.SceneItem</a></code></b> (private):
+      <code><a href="pov.basic.SceneItem.SceneItem-class.html#_object_modifiers" onclick="show_private();">_object_modifiers</a></code>
+      </p></div>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Properties</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Properties"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sat Feb  6 12:15:27 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pov.tests.AthEff_Test</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="pov-module.html">Package&nbsp;pov</a> ::
+        <a href="pov.tests-module.html">Package&nbsp;tests</a> ::
+        Module&nbsp;AthEff_Test
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="pov.tests.AthEff_Test-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="pov.tests.AthEff_Test-module.html">Module pov.tests.AthEff_Test</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment"># coding=UTF-8</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring">Py_Pov 0.0.1 Copyright (c) Martin T&#246;nnishoff, 2013</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring">based on:</tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring">PyPov-0.0.X Copyright (c) Simon Burton, 2003</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-docstring">See LICENSE file.</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-docstring">Some modifications by W.T. Bridgman, 2006-2007.</tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"><tt class="py-comment"># import os</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">unittest</tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"><tt class="py-comment"># import difflib</tt> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line"><tt class="py-comment"># import copy</tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"><tt class="py-comment"># from logging import *</tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"> </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Package pov=pov-module.html"><a title="pov" class="py-name" href="#" onclick="return doclink('link-0', 'pov', 'link-0');">pov</a></tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Package pov.atmeff=pov.atmeff-module.html"><a title="pov.atmeff" class="py-name" href="#" onclick="return doclink('link-1', 'atmeff', 'link-1');">atmeff</a></tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Module pov.atmeff.Fog=pov.atmeff.Fog-module.html,Class pov.atmeff.Fog.Fog=pov.atmeff.Fog.Fog-class.html"><a title="pov.atmeff.Fog
+pov.atmeff.Fog.Fog" class="py-name" href="#" onclick="return doclink('link-2', 'Fog', 'link-2');">Fog</a></tt> <tt class="py-keyword">import</tt> <tt id="link-3" class="py-name"><a title="pov.atmeff.Fog
+pov.atmeff.Fog.Fog" class="py-name" href="#" onclick="return doclink('link-3', 'Fog', 'link-2');">Fog</a></tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-4" class="py-name"><a title="pov" class="py-name" href="#" onclick="return doclink('link-4', 'pov', 'link-0');">pov</a></tt><tt class="py-op">.</tt><tt id="link-5" class="py-name"><a title="pov.atmeff" class="py-name" href="#" onclick="return doclink('link-5', 'atmeff', 'link-1');">atmeff</a></tt><tt class="py-op">.</tt><tt id="link-6" class="py-name" targets="Module pov.atmeff.SkySphere=pov.atmeff.SkySphere-module.html,Class pov.atmeff.SkySphere.SkySphere=pov.atmeff.SkySphere.SkySphere-class.html"><a title="pov.atmeff.SkySphere
+pov.atmeff.SkySphere.SkySphere" class="py-name" href="#" onclick="return doclink('link-6', 'SkySphere', 'link-6');">SkySphere</a></tt> <tt class="py-keyword">import</tt> <tt id="link-7" class="py-name"><a title="pov.atmeff.SkySphere
+pov.atmeff.SkySphere.SkySphere" class="py-name" href="#" onclick="return doclink('link-7', 'SkySphere', 'link-6');">SkySphere</a></tt> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-8" class="py-name"><a title="pov" class="py-name" href="#" onclick="return doclink('link-8', 'pov', 'link-0');">pov</a></tt><tt class="py-op">.</tt><tt id="link-9" class="py-name" targets="Package pov.texture=pov.texture-module.html"><a title="pov.texture" class="py-name" href="#" onclick="return doclink('link-9', 'texture', 'link-9');">texture</a></tt><tt class="py-op">.</tt><tt id="link-10" class="py-name" targets="Module pov.texture.Pigment=pov.texture.Pigment-module.html,Class pov.texture.Pigment.Pigment=pov.texture.Pigment.Pigment-class.html"><a title="pov.texture.Pigment
+pov.texture.Pigment.Pigment" class="py-name" href="#" onclick="return doclink('link-10', 'Pigment', 'link-10');">Pigment</a></tt> <tt class="py-keyword">import</tt> <tt id="link-11" class="py-name"><a title="pov.texture.Pigment
+pov.texture.Pigment.Pigment" class="py-name" href="#" onclick="return doclink('link-11', 'Pigment', 'link-10');">Pigment</a></tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-12" class="py-name"><a title="pov" class="py-name" href="#" onclick="return doclink('link-12', 'pov', 'link-0');">pov</a></tt><tt class="py-op">.</tt><tt id="link-13" class="py-name" targets="Package pov.basic=pov.basic-module.html"><a title="pov.basic" class="py-name" href="#" onclick="return doclink('link-13', 'basic', 'link-13');">basic</a></tt><tt class="py-op">.</tt><tt id="link-14" class="py-name" targets="Module pov.basic.Color=pov.basic.Color-module.html,Class pov.basic.Color.Color=pov.basic.Color.Color-class.html"><a title="pov.basic.Color
+pov.basic.Color.Color" class="py-name" href="#" onclick="return doclink('link-14', 'Color', 'link-14');">Color</a></tt> <tt class="py-keyword">import</tt> <tt id="link-15" class="py-name"><a title="pov.basic.Color
+pov.basic.Color.Color" class="py-name" href="#" onclick="return doclink('link-15', 'Color', 'link-14');">Color</a></tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-16" class="py-name"><a title="pov" class="py-name" href="#" onclick="return doclink('link-16', 'pov', 'link-0');">pov</a></tt><tt class="py-op">.</tt><tt id="link-17" class="py-name"><a title="pov.basic" class="py-name" href="#" onclick="return doclink('link-17', 'basic', 'link-13');">basic</a></tt><tt class="py-op">.</tt><tt id="link-18" class="py-name" targets="Module pov.basic.Vector=pov.basic.Vector-module.html,Class pov.basic.Vector.Vector=pov.basic.Vector.Vector-class.html"><a title="pov.basic.Vector
+pov.basic.Vector.Vector" class="py-name" href="#" onclick="return doclink('link-18', 'Vector', 'link-18');">Vector</a></tt> <tt class="py-keyword">import</tt> <tt id="link-19" class="py-name"><a title="pov.basic.Vector
+pov.basic.Vector.Vector" class="py-name" href="#" onclick="return doclink('link-19', 'Vector', 'link-18');">Vector</a></tt> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line"> </tt>
+<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line"> </tt>
+<a name="FogTestCase"></a><div id="FogTestCase-def"><a name="L26"></a><tt class="py-lineno">26</tt> <a class="py-toggle" href="#" id="FogTestCase-toggle" onclick="return toggle('FogTestCase');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="pov.tests.AthEff_Test.FogTestCase-class.html">FogTestCase</a><tt class="py-op">(</tt><tt class="py-base-class">unittest</tt><tt class="py-op">.</tt><tt class="py-base-class">TestCase</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="FogTestCase-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="FogTestCase-expanded"><a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line">    <tt class="py-docstring">'''</tt> </tt>
+<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line"><tt class="py-docstring">        @Todo: DocString</tt> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line"><tt class="py-docstring">    '''</tt> </tt>
+<a name="FogTestCase.setUp"></a><div id="FogTestCase.setUp-def"><a name="L30"></a><tt class="py-lineno">30</tt> <a class="py-toggle" href="#" id="FogTestCase.setUp-toggle" onclick="return toggle('FogTestCase.setUp');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pov.tests.AthEff_Test.FogTestCase-class.html#setUp">setUp</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="FogTestCase.setUp-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="FogTestCase.setUp-expanded"><a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">        <tt class="py-docstring">'''</tt> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line"><tt class="py-docstring">            @Todo: DocString</tt> </tt>
+<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line"><tt class="py-docstring">        '''</tt> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">sut</tt> <tt class="py-op">=</tt> <tt id="link-20" class="py-name"><a title="pov.atmeff.Fog
+pov.atmeff.Fog.Fog" class="py-name" href="#" onclick="return doclink('link-20', 'Fog', 'link-2');">Fog</a></tt><tt class="py-op">(</tt><tt id="link-21" class="py-name"><a title="pov.basic.Color
+pov.basic.Color.Color" class="py-name" href="#" onclick="return doclink('link-21', 'Color', 'link-14');">Color</a></tt><tt class="py-op">(</tt><tt class="py-name">rgb</tt><tt class="py-op">=</tt><tt id="link-22" class="py-name"><a title="pov.basic.Vector
+pov.basic.Vector.Vector" class="py-name" href="#" onclick="return doclink('link-22', 'Vector', 'link-18');">Vector</a></tt><tt class="py-op">(</tt><tt class="py-number">100</tt><tt class="py-op">,</tt> <tt class="py-number">100</tt><tt class="py-op">,</tt> <tt class="py-number">100</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line"> </tt>
+<a name="FogTestCase.test_creation"></a><div id="FogTestCase.test_creation-def"><a name="L36"></a><tt class="py-lineno">36</tt> <a class="py-toggle" href="#" id="FogTestCase.test_creation-toggle" onclick="return toggle('FogTestCase.test_creation');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pov.tests.AthEff_Test.FogTestCase-class.html#test_creation">test_creation</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="FogTestCase.test_creation-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="FogTestCase.test_creation-expanded"><a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line">        <tt class="py-docstring">'''</tt> </tt>
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line"><tt class="py-docstring">            @Todo: DocString</tt> </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line"><tt class="py-docstring">        '''</tt> </tt>
+<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">assertIsInstance</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">sut</tt><tt class="py-op">,</tt> <tt id="link-23" class="py-name"><a title="pov.atmeff.Fog
+pov.atmeff.Fog.Fog" class="py-name" href="#" onclick="return doclink('link-23', 'Fog', 'link-2');">Fog</a></tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line"> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"> </tt>
+<a name="SkySphereTestCase"></a><div id="SkySphereTestCase-def"><a name="L43"></a><tt class="py-lineno">43</tt> <a class="py-toggle" href="#" id="SkySphereTestCase-toggle" onclick="return toggle('SkySphereTestCase');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="pov.tests.AthEff_Test.SkySphereTestCase-class.html">SkySphereTestCase</a><tt class="py-op">(</tt><tt class="py-base-class">unittest</tt><tt class="py-op">.</tt><tt class="py-base-class">TestCase</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="SkySphereTestCase-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="SkySphereTestCase-expanded"><a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line">    <tt class="py-docstring">'''</tt> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line"><tt class="py-docstring">        @Todo: DocString</tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line"><tt class="py-docstring">    '''</tt> </tt>
+<a name="SkySphereTestCase.setUp"></a><div id="SkySphereTestCase.setUp-def"><a name="L47"></a><tt class="py-lineno">47</tt> <a class="py-toggle" href="#" id="SkySphereTestCase.setUp-toggle" onclick="return toggle('SkySphereTestCase.setUp');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pov.tests.AthEff_Test.SkySphereTestCase-class.html#setUp">setUp</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="SkySphereTestCase.setUp-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="SkySphereTestCase.setUp-expanded"><a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line">        <tt class="py-docstring">'''</tt> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line"><tt class="py-docstring">            @Todo: DocString</tt> </tt>
+<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line"><tt class="py-docstring">        '''</tt> </tt>
+<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">sut</tt> <tt class="py-op">=</tt> <tt id="link-24" class="py-name"><a title="pov.atmeff.SkySphere
+pov.atmeff.SkySphere.SkySphere" class="py-name" href="#" onclick="return doclink('link-24', 'SkySphere', 'link-6');">SkySphere</a></tt><tt class="py-op">(</tt><tt id="link-25" class="py-name"><a title="pov.texture.Pigment
+pov.texture.Pigment.Pigment" class="py-name" href="#" onclick="return doclink('link-25', 'Pigment', 'link-10');">Pigment</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line"> </tt>
+<a name="SkySphereTestCase.test_creation"></a><div id="SkySphereTestCase.test_creation-def"><a name="L53"></a><tt class="py-lineno">53</tt> <a class="py-toggle" href="#" id="SkySphereTestCase.test_creation-toggle" onclick="return toggle('SkySphereTestCase.test_creation');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pov.tests.AthEff_Test.SkySphereTestCase-class.html#test_creation">test_creation</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="SkySphereTestCase.test_creation-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="SkySphereTestCase.test_creation-expanded"><a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line">        <tt class="py-docstring">'''</tt> </tt>
+<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line"><tt class="py-docstring">            @Todo: DocString</tt> </tt>
+<a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line"><tt class="py-docstring">        '''</tt> </tt>
+<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">assertIsInstance</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">sut</tt><tt class="py-op">,</tt> <tt id="link-26" class="py-name"><a title="pov.atmeff.SkySphere
+pov.atmeff.SkySphere.SkySphere" class="py-name" href="#" onclick="return doclink('link-26', 'SkySphere', 'link-6');">SkySphere</a></tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sat Feb  6 12:15:28 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

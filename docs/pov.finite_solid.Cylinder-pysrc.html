@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pov.finite_solid.Cylinder</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="pov-module.html">Package&nbsp;pov</a> ::
+        <a href="pov.finite_solid-module.html">Package&nbsp;finite_solid</a> ::
+        Module&nbsp;Cylinder
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="pov.finite_solid.Cylinder-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="pov.finite_solid.Cylinder-module.html">Module pov.finite_solid.Cylinder</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-comment"># coding=UTF-8</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring">Py_Pov 0.0.1 Copyright (c) Martin T&#246;nnishoff, 2013</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring">based on:</tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring">PyPov-0.0.X Copyright (c) Simon Burton, 2003</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-docstring">See LICENSE file.</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-docstring">Some modifications by W.T. Bridgman, 2006-2007.</tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Package pov=pov-module.html"><a title="pov" class="py-name" href="#" onclick="return doclink('link-0', 'pov', 'link-0');">pov</a></tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Package pov.basic=pov.basic-module.html"><a title="pov.basic" class="py-name" href="#" onclick="return doclink('link-1', 'basic', 'link-1');">basic</a></tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Module pov.basic.BlockObject=pov.basic.BlockObject-module.html,Class pov.basic.BlockObject.BlockObject=pov.basic.BlockObject.BlockObject-class.html"><a title="pov.basic.BlockObject
+pov.basic.BlockObject.BlockObject" class="py-name" href="#" onclick="return doclink('link-2', 'BlockObject', 'link-2');">BlockObject</a></tt> <tt class="py-keyword">import</tt> <tt id="link-3" class="py-name"><a title="pov.basic.BlockObject
+pov.basic.BlockObject.BlockObject" class="py-name" href="#" onclick="return doclink('link-3', 'BlockObject', 'link-2');">BlockObject</a></tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-4" class="py-name"><a title="pov" class="py-name" href="#" onclick="return doclink('link-4', 'pov', 'link-0');">pov</a></tt><tt class="py-op">.</tt><tt id="link-5" class="py-name"><a title="pov.basic" class="py-name" href="#" onclick="return doclink('link-5', 'basic', 'link-1');">basic</a></tt><tt class="py-op">.</tt><tt id="link-6" class="py-name" targets="Module pov.basic.Vector=pov.basic.Vector-module.html,Class pov.basic.Vector.Vector=pov.basic.Vector.Vector-class.html"><a title="pov.basic.Vector
+pov.basic.Vector.Vector" class="py-name" href="#" onclick="return doclink('link-6', 'Vector', 'link-6');">Vector</a></tt> <tt class="py-keyword">import</tt> <tt id="link-7" class="py-name"><a title="pov.basic.Vector
+pov.basic.Vector.Vector" class="py-name" href="#" onclick="return doclink('link-7', 'Vector', 'link-6');">Vector</a></tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-8" class="py-name"><a title="pov" class="py-name" href="#" onclick="return doclink('link-8', 'pov', 'link-0');">pov</a></tt><tt class="py-op">.</tt><tt id="link-9" class="py-name" targets="Package pov.object_modifier=pov.object_modifier-module.html"><a title="pov.object_modifier" class="py-name" href="#" onclick="return doclink('link-9', 'object_modifier', 'link-9');">object_modifier</a></tt><tt class="py-op">.</tt><tt id="link-10" class="py-name" targets="Module pov.object_modifier.ObjectModifier=pov.object_modifier.ObjectModifier-module.html,Class pov.object_modifier.ObjectModifier.ObjectModifier=pov.object_modifier.ObjectModifier.ObjectModifier-class.html"><a title="pov.object_modifier.ObjectModifier
+pov.object_modifier.ObjectModifier.ObjectModifier" class="py-name" href="#" onclick="return doclink('link-10', 'ObjectModifier', 'link-10');">ObjectModifier</a></tt> <tt class="py-keyword">import</tt> <tt id="link-11" class="py-name"><a title="pov.object_modifier.ObjectModifier
+pov.object_modifier.ObjectModifier.ObjectModifier" class="py-name" href="#" onclick="return doclink('link-11', 'ObjectModifier', 'link-10');">ObjectModifier</a></tt> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-12" class="py-name"><a title="pov" class="py-name" href="#" onclick="return doclink('link-12', 'pov', 'link-0');">pov</a></tt><tt class="py-op">.</tt><tt id="link-13" class="py-name" targets="Package pov.other=pov.other-module.html"><a title="pov.other" class="py-name" href="#" onclick="return doclink('link-13', 'other', 'link-13');">other</a></tt><tt class="py-op">.</tt><tt id="link-14" class="py-name" targets="Module pov.other.SdlSyntaxException=pov.other.SdlSyntaxException-module.html,Class pov.other.SdlSyntaxException.SdlSyntaxException=pov.other.SdlSyntaxException.SdlSyntaxException-class.html"><a title="pov.other.SdlSyntaxException
+pov.other.SdlSyntaxException.SdlSyntaxException" class="py-name" href="#" onclick="return doclink('link-14', 'SdlSyntaxException', 'link-14');">SdlSyntaxException</a></tt> <tt class="py-keyword">import</tt> <tt id="link-15" class="py-name"><a title="pov.other.SdlSyntaxException
+pov.other.SdlSyntaxException.SdlSyntaxException" class="py-name" href="#" onclick="return doclink('link-15', 'SdlSyntaxException', 'link-14');">SdlSyntaxException</a></tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"> </tt>
+<a name="Cylinder"></a><div id="Cylinder-def"><a name="L19"></a><tt class="py-lineno">19</tt> <a class="py-toggle" href="#" id="Cylinder-toggle" onclick="return toggle('Cylinder');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="pov.finite_solid.Cylinder.Cylinder-class.html">Cylinder</a><tt class="py-op">(</tt><tt class="py-base-class">BlockObject</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Cylinder-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Cylinder-expanded"><a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line"><tt class="py-docstring">       CYLINDER:</tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line"><tt class="py-docstring">            cylinder</tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line"><tt class="py-docstring">            {</tt> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line"><tt class="py-docstring">                &lt;Base_Point&gt;, &lt;Cap_Point&gt;, Radius</tt> </tt>
+<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line"><tt class="py-docstring">                [ open ][OBJECT_MODIFIERS...]</tt> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line"><tt class="py-docstring">            }</tt> </tt>
+<a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="Cylinder.__init__"></a><div id="Cylinder.__init__-def"><a name="L28"></a><tt class="py-lineno">28</tt> <a class="py-toggle" href="#" id="Cylinder.__init__-toggle" onclick="return toggle('Cylinder.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pov.finite_solid.Cylinder.Cylinder-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">basepoint</tt><tt class="py-op">,</tt> <tt class="py-param">cappoint</tt><tt class="py-op">,</tt> <tt class="py-param">radius</tt><tt class="py-op">,</tt> <tt class="py-op">*</tt><tt class="py-param">opts</tt><tt class="py-op">,</tt> <tt class="py-op">**</tt><tt class="py-param">kwargs</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Cylinder.__init__-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Cylinder.__init__-expanded"><a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line"><tt class="py-docstring">            Construct a cylinder Object</tt> </tt>
+<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line"><tt class="py-docstring">            @param basepoint: Base point of cylinder</tt> </tt>
+<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line"><tt class="py-docstring">            @type  basepoint: Vector</tt> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line"><tt class="py-docstring">            @param cappoint: Cap point of cylinder</tt> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line"><tt class="py-docstring">            @type  cappoint: Vector</tt> </tt>
+<a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line"><tt class="py-docstring">            @param radius: Radius of cylinder</tt> </tt>
+<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line"><tt class="py-docstring">            @type  radius: Float</tt> </tt>
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line"><tt class="py-docstring">            @Todo: Use Syntax checking Methods (See JuliaFractal)</tt> </tt>
+<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line"> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line">        <tt class="py-comment"># Syntax checking</tt> </tt>
+<a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">isinstance</tt><tt class="py-op">(</tt><tt class="py-name">basepoint</tt><tt class="py-op">,</tt> <tt id="link-16" class="py-name"><a title="pov.basic.Vector
+pov.basic.Vector.Vector" class="py-name" href="#" onclick="return doclink('link-16', 'Vector', 'link-6');">Vector</a></tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt id="link-17" class="py-name"><a title="pov.other.SdlSyntaxException
+pov.other.SdlSyntaxException.SdlSyntaxException" class="py-name" href="#" onclick="return doclink('link-17', 'SdlSyntaxException', 'link-14');">SdlSyntaxException</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line">                <tt class="py-string">'Parameter basepoint is not of type Vector'</tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line">            <tt class="py-op">)</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">basepoint</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-number">3</tt><tt class="py-op">:</tt> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt id="link-18" class="py-name"><a title="pov.other.SdlSyntaxException
+pov.other.SdlSyntaxException.SdlSyntaxException" class="py-name" href="#" onclick="return doclink('link-18', 'SdlSyntaxException', 'link-14');">SdlSyntaxException</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">                <tt class="py-string">'Base point Vector has more or less than 3 dimensions'</tt> </tt>
+<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line">            <tt class="py-op">)</tt> </tt>
+<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">isinstance</tt><tt class="py-op">(</tt><tt class="py-name">cappoint</tt><tt class="py-op">,</tt> <tt id="link-19" class="py-name"><a title="pov.basic.Vector
+pov.basic.Vector.Vector" class="py-name" href="#" onclick="return doclink('link-19', 'Vector', 'link-6');">Vector</a></tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt id="link-20" class="py-name"><a title="pov.other.SdlSyntaxException
+pov.other.SdlSyntaxException.SdlSyntaxException" class="py-name" href="#" onclick="return doclink('link-20', 'SdlSyntaxException', 'link-14');">SdlSyntaxException</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line">                <tt class="py-string">'Parameter cappoint is not of type Vector'</tt> </tt>
+<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line">            <tt class="py-op">)</tt> </tt>
+<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">cappoint</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-number">3</tt><tt class="py-op">:</tt> </tt>
+<a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt id="link-21" class="py-name"><a title="pov.other.SdlSyntaxException
+pov.other.SdlSyntaxException.SdlSyntaxException" class="py-name" href="#" onclick="return doclink('link-21', 'SdlSyntaxException', 'link-14');">SdlSyntaxException</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line">                <tt class="py-string">'Cap point Vector has more or less than 3 dimensions'</tt> </tt>
+<a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line">            <tt class="py-op">)</tt> </tt>
+<a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">type</tt><tt class="py-op">(</tt><tt class="py-name">radius</tt><tt class="py-op">)</tt> <tt class="py-keyword">in</tt> <tt class="py-op">(</tt><tt class="py-name">int</tt><tt class="py-op">,</tt> <tt class="py-name">float</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt id="link-22" class="py-name"><a title="pov.other.SdlSyntaxException
+pov.other.SdlSyntaxException.SdlSyntaxException" class="py-name" href="#" onclick="return doclink('link-22', 'SdlSyntaxException', 'link-14');">SdlSyntaxException</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line">                <tt class="py-string">'Param radius is not of type int or float'</tt> </tt>
+<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line">            <tt class="py-op">)</tt> </tt>
+<a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line"> </tt>
+<a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line">        <tt class="py-comment"># Make sure only valid Object Modifiers are passed</tt> </tt>
+<a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">opts</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">isinstance</tt><tt class="py-op">(</tt><tt class="py-name">opts</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt id="link-23" class="py-name"><a title="pov.object_modifier.ObjectModifier
+pov.object_modifier.ObjectModifier.ObjectModifier" class="py-name" href="#" onclick="return doclink('link-23', 'ObjectModifier', 'link-10');">ObjectModifier</a></tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line">                <tt class="py-keyword">raise</tt> <tt id="link-24" class="py-name"><a title="pov.other.SdlSyntaxException
+pov.other.SdlSyntaxException.SdlSyntaxException" class="py-name" href="#" onclick="return doclink('link-24', 'SdlSyntaxException', 'link-14');">SdlSyntaxException</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line">                    <tt class="py-string">'Only ObjectModifier objects may be passed as options'</tt> </tt>
+<a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line">                <tt class="py-op">)</tt> </tt>
+<a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line"> </tt>
+<a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">key</tt><tt class="py-op">,</tt> <tt class="py-name">val</tt> <tt class="py-keyword">in</tt> <tt class="py-name">kwargs</tt><tt class="py-op">.</tt><tt class="py-name">items</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">key</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-op">[</tt><tt class="py-string">'open'</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> </tt>
+<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line">                <tt class="py-keyword">raise</tt> <tt id="link-25" class="py-name"><a title="pov.other.SdlSyntaxException
+pov.other.SdlSyntaxException.SdlSyntaxException" class="py-name" href="#" onclick="return doclink('link-25', 'SdlSyntaxException', 'link-14');">SdlSyntaxException</a></tt><tt class="py-op">(</tt><tt class="py-string">'Invalid keyword: '</tt> <tt class="py-op">+</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">key</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-keyword">not</tt> <tt class="py-name">type</tt><tt class="py-op">(</tt><tt class="py-name">val</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-name">bool</tt><tt class="py-op">:</tt> </tt>
+<a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line">                <tt class="py-keyword">raise</tt> <tt id="link-26" class="py-name"><a title="pov.other.SdlSyntaxException
+pov.other.SdlSyntaxException.SdlSyntaxException" class="py-name" href="#" onclick="return doclink('link-26', 'SdlSyntaxException', 'link-14');">SdlSyntaxException</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line">                    <tt class="py-string">'Value of keyword %s is not boolean'</tt> <tt class="py-op">%</tt> <tt class="py-name">key</tt> </tt>
+<a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line">                <tt class="py-op">)</tt> </tt>
+<a name="L78"></a><tt class="py-lineno">78</tt>  <tt class="py-line"> </tt>
+<a name="L79"></a><tt class="py-lineno">79</tt>  <tt class="py-line">        <tt class="py-name">super</tt><tt class="py-op">(</tt><tt id="link-27" class="py-name" targets="Module pov.finite_solid.Cylinder=pov.finite_solid.Cylinder-module.html,Class pov.finite_solid.Cylinder.Cylinder=pov.finite_solid.Cylinder.Cylinder-class.html"><a title="pov.finite_solid.Cylinder
+pov.finite_solid.Cylinder.Cylinder" class="py-name" href="#" onclick="return doclink('link-27', 'Cylinder', 'link-27');">Cylinder</a></tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt id="link-28" class="py-name" targets="Method pov.atmeff.Fog.Fog.__init__()=pov.atmeff.Fog.Fog-class.html#__init__,Method pov.atmeff.SkySphere.SkySphere.__init__()=pov.atmeff.SkySphere.SkySphere-class.html#__init__,Method pov.basic.Color.Color.__init__()=pov.basic.Color.Color-class.html#__init__,Method pov.basic.SceneFile.SceneFile.__init__()=pov.basic.SceneFile.SceneFile-class.html#__init__,Method pov.basic.SceneItem.SceneItem.__init__()=pov.basic.SceneItem.SceneItem-class.html#__init__,Method pov.basic.Vector.Vector.__init__()=pov.basic.Vector.Vector-class.html#__init__,Method pov.csg.Difference.Difference.__init__()=pov.csg.Difference.Difference-class.html#__init__,Method pov.csg.Intersection.Intersection.__init__()=pov.csg.Intersection.Intersection-class.html#__init__,Method pov.csg.Merge.Merge.__init__()=pov.csg.Merge.Merge-class.html#__init__,Method pov.csg.Union.Union.__init__()=pov.csg.Union.Union-class.html#__init__,Method pov.finite_solid.Blob.Blob.__init__()=pov.finite_solid.Blob.Blob-class.html#__init__,Method pov.finite_solid.Box.Box.__init__()=pov.finite_solid.Box.Box-class.html#__init__,Method pov.finite_solid.Cone.Cone.__init__()=pov.finite_solid.Cone.Cone-class.html#__init__,Method pov.finite_solid.Cylinder.Cylinder.__init__()=pov.finite_solid.Cylinder.Cylinder-class.html#__init__,Method pov.finite_solid.HeightField.HeightField.__init__()=pov.finite_solid.HeightField.HeightField-class.html#__init__,Method pov.finite_solid.JuliaFractal.JuliaFractal.__init__()=pov.finite_solid.JuliaFractal.JuliaFractal-class.html#__init__,Method pov.finite_solid.Lathe.Lathe.__init__()=pov.finite_solid.Lathe.Lathe-class.html#__init__,Method pov.finite_solid.Sphere.Sphere.__init__()=pov.finite_solid.Sphere.Sphere-class.html#__init__,Method pov.finite_solid.Torus.Torus.__init__()=pov.finite_solid.Torus.Torus-class.html#__init__,Method pov.global_settings.GlobalSettings.GlobalSettings.__init__()=pov.global_settings.GlobalSettings.GlobalSettings-class.html#__init__,Method pov.infinite_solid.Plane.Plane.__init__()=pov.infinite_solid.Plane.Plane-class.html#__init__,Method pov.language_directive.Default.Default.__init__()=pov.language_directive.Default.Default-class.html#__init__,Method pov.language_directive.Include.Include.__init__()=pov.language_directive.Include.Include-class.html#__init__,Method pov.language_directive.LanguageDirective.LanguageDirective.__init__()=pov.language_directive.LanguageDirective.LanguageDirective-class.html#__init__,Method pov.language_directive.Version.Version.__init__()=pov.language_directive.Version.Version-class.html#__init__,Method pov.object_modifier.ClippedBy.ClippedBy.__init__()=pov.object_modifier.ClippedBy.ClippedBy-class.html#__init__,Method pov.object_modifier.Interior.Interior.__init__()=pov.object_modifier.Interior.Interior-class.html#__init__,Method pov.object_modifier.Matrix.Matrix.__init__()=pov.object_modifier.Matrix.Matrix-class.html#__init__,Method pov.object_modifier.Rotate.Rotate.__init__()=pov.object_modifier.Rotate.Rotate-class.html#__init__,Method pov.object_modifier.Scale.Scale.__init__()=pov.object_modifier.Scale.Scale-class.html#__init__,Method pov.object_modifier.Transformation.Transformation.__init__()=pov.object_modifier.Transformation.Transformation-class.html#__init__,Method pov.object_modifier.Translate.Translate.__init__()=pov.object_modifier.Translate.Translate-class.html#__init__,Method pov.other.Camera.Camera.__init__()=pov.other.Camera.Camera-class.html#__init__,Method pov.other.Comment.Comment.__init__()=pov.other.Comment.Comment-class.html#__init__,Method pov.other.LightSource.LightSource.__init__()=pov.other.LightSource.LightSource-class.html#__init__,Method pov.other.Object.Object.__init__()=pov.other.Object.Object-class.html#__init__,Method pov.texture.ColorMap.ColorMap.__init__()=pov.texture.ColorMap.ColorMap-class.html#__init__,Method pov.texture.ColorMap.ColourMap.__init__()=pov.texture.ColorMap.ColourMap-class.html#__init__,Method pov.texture.Finish.Finish.__init__()=pov.texture.Finish.Finish-class.html#__init__,Method pov.texture.ImageMap.ImageMap.__init__()=pov.texture.ImageMap.ImageMap-class.html#__init__,Method pov.texture.Irid.Irid.__init__()=pov.texture.Irid.Irid-class.html#__init__,Method pov.texture.Normal.Normal.__init__()=pov.texture.Normal.Normal-class.html#__init__,Method pov.texture.Pigment.Pigment.__init__()=pov.texture.Pigment.Pigment-class.html#__init__,Method pov.texture.Reflection.Reflection.__init__()=pov.texture.Reflection.Reflection-class.html#__init__,Method pov.texture.Texture.Texture.__init__()=pov.texture.Texture.Texture-class.html#__init__,Method pov.texture.pattern.Gradient.Gradient.__init__()=pov.texture.pattern.Gradient.Gradient-class.html#__init__"><a title="pov.atmeff.Fog.Fog.__init__
+pov.atmeff.SkySphere.SkySphere.__init__
+pov.basic.Color.Color.__init__
+pov.basic.SceneFile.SceneFile.__init__
+pov.basic.SceneItem.SceneItem.__init__
+pov.basic.Vector.Vector.__init__
+pov.csg.Difference.Difference.__init__
+pov.csg.Intersection.Intersection.__init__
+pov.csg.Merge.Merge.__init__
+pov.csg.Union.Union.__init__
+pov.finite_solid.Blob.Blob.__init__
+pov.finite_solid.Box.Box.__init__
+pov.finite_solid.Cone.Cone.__init__
+pov.finite_solid.Cylinder.Cylinder.__init__
+pov.finite_solid.HeightField.HeightField.__init__
+pov.finite_solid.JuliaFractal.JuliaFractal.__init__
+pov.finite_solid.Lathe.Lathe.__init__
+pov.finite_solid.Sphere.Sphere.__init__
+pov.finite_solid.Torus.Torus.__init__
+pov.global_settings.GlobalSettings.GlobalSettings.__init__
+pov.infinite_solid.Plane.Plane.__init__
+pov.language_directive.Default.Default.__init__
+pov.language_directive.Include.Include.__init__
+pov.language_directive.LanguageDirective.LanguageDirective.__init__
+pov.language_directive.Version.Version.__init__
+pov.object_modifier.ClippedBy.ClippedBy.__init__
+pov.object_modifier.Interior.Interior.__init__
+pov.object_modifier.Matrix.Matrix.__init__
+pov.object_modifier.Rotate.Rotate.__init__
+pov.object_modifier.Scale.Scale.__init__
+pov.object_modifier.Transformation.Transformation.__init__
+pov.object_modifier.Translate.Translate.__init__
+pov.other.Camera.Camera.__init__
+pov.other.Comment.Comment.__init__
+pov.other.LightSource.LightSource.__init__
+pov.other.Object.Object.__init__
+pov.texture.ColorMap.ColorMap.__init__
+pov.texture.ColorMap.ColourMap.__init__
+pov.texture.Finish.Finish.__init__
+pov.texture.ImageMap.ImageMap.__init__
+pov.texture.Irid.Irid.__init__
+pov.texture.Normal.Normal.__init__
+pov.texture.Pigment.Pigment.__init__
+pov.texture.Reflection.Reflection.__init__
+pov.texture.Texture.Texture.__init__
+pov.texture.pattern.Gradient.Gradient.__init__" class="py-name" href="#" onclick="return doclink('link-28', '__init__', 'link-28');">__init__</a></tt><tt class="py-op">(</tt> </tt>
+<a name="L80"></a><tt class="py-lineno">80</tt>  <tt class="py-line">            <tt class="py-string">"cylinder"</tt><tt class="py-op">,</tt> </tt>
+<a name="L81"></a><tt class="py-lineno">81</tt>  <tt class="py-line">            <tt class="py-op">(</tt><tt class="py-name">basepoint</tt><tt class="py-op">,</tt> <tt class="py-name">cappoint</tt><tt class="py-op">,</tt> <tt class="py-name">radius</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L82"></a><tt class="py-lineno">82</tt>  <tt class="py-line">            <tt class="py-name">opts</tt><tt class="py-op">,</tt> <tt class="py-name">kwargs</tt> </tt>
+<a name="L83"></a><tt class="py-lineno">83</tt>  <tt class="py-line">        <tt class="py-op">)</tt> </tt>
+</div></div><a name="L84"></a><tt class="py-lineno">84</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sat Feb  6 12:15:28 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

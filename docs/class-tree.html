@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class Hierarchy</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Trees&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">&nbsp;</td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="class-tree.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<center><b>
+ [ <a href="module-tree.html">Module Hierarchy</a>
+ | <a href="class-tree.html">Class Hierarchy</a> ]
+</b></center><br />
+<h1 class="epydoc">Class Hierarchy</h1>
+<ul class="nomargin-top">
+    <li> <strong class="uidlink">object</strong>:
+      <em class="summary">The most base type</em>
+    <ul>
+    <li> <strong class="uidlink">exceptions.BaseException</strong>:
+      <em class="summary">Common base class for all exceptions</em>
+    <ul>
+    <li> <strong class="uidlink">exceptions.Exception</strong>:
+      <em class="summary">Common base class for all non-exit exceptions.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="pov.other.IllegalStateException.IllegalStateException-class.html">pov.other.IllegalStateException.IllegalStateException</a></strong>:
+      <em class="summary">Custom Exception for Illegal states</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.other.SdlSyntaxException.SdlSyntaxException-class.html">pov.other.SdlSyntaxException.SdlSyntaxException</a></strong>:
+      <em class="summary">Custom Exception for SDL Syntax Errors</em>
+    </li>
+    <li> <strong class="uidlink">exceptions.StandardError</strong>:
+      <em class="summary">Base class for all standard Python exceptions that do not represent
+        interpreter exiting.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="exceptions.AssertionError-class.html">exceptions.AssertionError</a></strong>:
+      <em class="summary">Assertion failed.</em>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.basic.SceneFile.SceneFile-class.html">pov.basic.SceneFile.SceneFile</a></strong>:
+      <em class="summary">POV-Ray scene file object.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.basic.SceneItem.SceneItem-class.html">pov.basic.SceneItem.SceneItem</a></strong>:
+      <em class="summary">Base class for POV objects.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="pov.basic.BlockObject.BlockObject-class.html">pov.basic.BlockObject.BlockObject</a></strong>:
+      <em class="summary">provides methods to generate code blocks</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.Blob.Blob-class.html">pov.finite_solid.Blob.Blob</a></strong>:
+      <em class="summary">BLOB:
+    blob { BLOB_ITEM...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.Box.Box-class.html">pov.finite_solid.Box.Box</a></strong>:
+      <em class="summary">BOX:
+    box
+    {
+        &lt;Corner_1&gt;, &lt;Corner_2&gt;
+        [OBJECT_MODIFIERS...]
+    }</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.other.Camera.Camera-class.html">pov.other.Camera.Camera</a></strong>:
+      <em class="summary">CAMERA:
+    camera { [CAMERA_TYPE] [CAMERA_ITEMS] [CAMERA_MODIFIERS] } |
+    camera { CAMERA_IDENTIFIER [TANSFORMATIONS ...] }
+CAMERA_TYPE:
+    perspective |
+    orthographic |
+    fisheye |
+    ultra_wide_angle |
+    omnimax |
+    panoramic |
+    spherical |
+    cylinder CYLINDER_TYPE
+CYLINDER_TYPE:
+    1 | 2 | 3 | 4
+CAMERA_ITEMS:
+    [location VECTOR] &amp;
+    [right VECTOR] &amp;
+    [up VECTOR] &amp;
+    [direction VECTOR] &amp;
+    [sky VECTOR]
+CAMERA_MODIFIERS:
+    [angle [F_HORIZONTAL] [,F_VERTICAL]] &amp;
+    [look_at VECTOR] &amp;
+    [FOCAL_BLUR] &amp;
+    [NORMAL] &amp;
+    [TRANSFORMATION...]
+FOCAL_BLUR:
+    aperture FLOAT &amp;
+    blur_samples INT &amp;
+    [focal_point VECTOR] &amp;
+    [confidence FLOAT] &amp;
+    [variance FLOAT]</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.object_modifier.ClippedBy.ClippedBy-class.html">pov.object_modifier.ClippedBy.ClippedBy</a></strong>:
+      <em class="summary">CLIPPED_BY:
+    clipped_by { UNTEXTURED_SOLID_OBJECT...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.texture.ColorMap.ColorMap-class.html">pov.texture.ColorMap.ColorMap</a></strong>:
+      <em class="summary">COLOR_MAP:
+    color_map { COLOR_MAP_BODY } [BLEND_MAP_MODIFIERS] |
+    colour_map { COLOR_MAP_BODY } [BLEND_MAP_MODIFIERS]</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="pov.texture.ColorMap.ColourMap-class.html">pov.texture.ColorMap.ColourMap</a></strong>:
+      <em class="summary">COLOR_MAP:
+    color_map { COLOR_MAP_BODY } [BLEND_MAP_MODIFIERS] |
+    colour_map { COLOR_MAP_BODY } [BLEND_MAP_MODIFIERS]</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.Cone.Cone-class.html">pov.finite_solid.Cone.Cone</a></strong>:
+      <em class="summary">CONE:...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.csg.Csg.Csg-class.html">pov.csg.Csg.Csg</a></strong>:
+      <em class="summary">CSG_OBJECT:
+    UNION | INTERSECTION | DIFFERENCE | MERGE</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="pov.csg.Difference.Difference-class.html">pov.csg.Difference.Difference</a></strong>:
+      <em class="summary">DIFFERENCE:
+    difference { SOLID_OBJECT SOLID_OBJECT...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.csg.Intersection.Intersection-class.html">pov.csg.Intersection.Intersection</a></strong>:
+      <em class="summary">INTERSECTION:
+    intersection { SOLID_OBJECT SOLID_OBJECT...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.csg.Merge.Merge-class.html">pov.csg.Merge.Merge</a></strong>:
+      <em class="summary">merge { SOLID_OBJECT SOLID_OBJECT...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.csg.Union.Union-class.html">pov.csg.Union.Union</a></strong>:
+      <em class="summary">UNION:
+    union { UNION_OBJECT UNION_OBJECT...</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.Cylinder.Cylinder-class.html">pov.finite_solid.Cylinder.Cylinder</a></strong>:
+      <em class="summary">CYLINDER:...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.language_directive.Default.Default-class.html">pov.language_directive.Default.Default</a></strong>:
+      <em class="summary">Specify a default texture, pigment, normal or finish:</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.texture.Finish.Finish-class.html">pov.texture.Finish.Finish</a></strong>:
+      <em class="summary">FINISH:
+    finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }
+FINISH_ITEMS:
+    [ambient COLOR] &amp; [diffuse FLOAT] &amp; [brilliance FLOAT]
+        &amp; [PHONG] &amp; [SPECULAR] &amp; [REFLECTION] &amp; [IRID]
+        &amp; [crand FLOAT] &amp; [conserve_energy [BOOL]]
+PHONG:
+    phong FLOAT &amp; [phong_size FLOAT] &amp; [metallic [FLOAT]]
+SPECULAR:
+    specular FLOAT &amp; [roughness FLOAT] &amp; [metallic [FLOAT]]
+REFLECTION:
+    reflection COLOR [reflection_exponent FLOAT] |
+    reflection { [COLOR,] COLOR [REFLECTION_ITEMS] }
+REFLECTION_ITEMS:
+    [fresnel BOOL] &amp; [falloff FLOAT] &amp; [exponent FLOAT]
+        &amp; [metallic [FLOAT]]
+    Must also use interior {ior FLOAT} in the object
+    when fresnel is used.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_patch.FinitePatch.FinitePatch-class.html">pov.finite_patch.FinitePatch.FinitePatch</a></strong>:
+      <em class="summary">FINITE_PATCH_OBJECT:
+    BICUBIC_PATCH | DISC | MESH | MESH2 | POLYGON | TRIANGLE |
+    SMOOTH_TRIANGLE</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.global_settings.GlobalSettings.GlobalSettings-class.html">pov.global_settings.GlobalSettings.GlobalSettings</a></strong>:
+      <em class="summary">GLOBAL_SETTINGS:...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.HeightField.HeightField-class.html">pov.finite_solid.HeightField.HeightField</a></strong>:
+      <em class="summary">HEIGHT_FIELD:...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.texture.ImageMap.ImageMap-class.html">pov.texture.ImageMap.ImageMap</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.texture.Irid.Irid-class.html">pov.texture.Irid.Irid</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.other.IsoSurface.IsoSurface-class.html">pov.other.IsoSurface.IsoSurface</a></strong>:
+      <em class="summary">ISOSURFACE_OBJECT:
+    ISOSURFACE</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.JuliaFractal.JuliaFractal-class.html">pov.finite_solid.JuliaFractal.JuliaFractal</a></strong>:
+      <em class="summary">JULIA_FRACTAL:...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.Lathe.Lathe-class.html">pov.finite_solid.Lathe.Lathe</a></strong>:
+      <em class="summary">LATHE:
+    lathe
+    {
+        [SPLINE_TYPE] Number_Of_Points, &lt;Point_1&gt;
+        &lt;Point_2&gt;...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.other.LightSource.LightSource-class.html">pov.other.LightSource.LightSource</a></strong>:
+      <em class="summary">LIGHT:
+    LIGHT_SOURCE | LIGHT_GROUP
+    Describe the position, type and properties
+    of a light source for the scene:</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.texture.Normal.Normal-class.html">pov.texture.Normal.Normal</a></strong>:
+      <em class="summary">NORMAL:
+    normal { NORMAL_BODY }</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.other.Object.Object-class.html">pov.other.Object.Object</a></strong>:
+      <em class="summary">object {...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.other.ParametricObj.ParametricObj-class.html">pov.other.ParametricObj.ParametricObj</a></strong>:
+      <em class="summary">PARAMETRIC_OBJECT:
+    PARAMETRIC</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.global_settings.Photons.Photons-class.html">pov.global_settings.Photons.Photons</a></strong>:
+      <em class="summary">PHOTONS:...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.texture.Pigment.Pigment-class.html">pov.texture.Pigment.Pigment</a></strong>:
+      <em class="summary">PIGMENT:
+    pigment { PIGMENT_BODY }</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.infinite_solid.Plane.Plane-class.html">pov.infinite_solid.Plane.Plane</a></strong>:
+      <em class="summary">PLANE:
+    plane { V_NORMAL, F_DISTANCE [OBJECT_MODIFIERS] }</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.basic.PoVObject.PoVObject-class.html">pov.basic.PoVObject.PoVObject</a></strong>:
+      <em class="summary">OBJECT:...</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="pov.atmeff.Fog.Fog-class.html">pov.atmeff.Fog.Fog</a></strong>:
+      <em class="summary">FOG:
+    CONSTANT_FOG | GROUND_FOG</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.atmeff.SkySphere.SkySphere-class.html">pov.atmeff.SkySphere.SkySphere</a></strong>:
+      <em class="summary">SKY_SPHERE:
+    sky_sphere { [SKY_SPHERE_IDENTIFIER] [SKY_SPHERE_ITEM...] }
+SKY_SPHERE_ITEM:
+    PIGMENT | TRANSFORMATION</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.Prism.Prism-class.html">pov.finite_solid.Prism.Prism</a></strong>:
+      <em class="summary">PRISM:
+    prism
+    {
+        [PRISM_ITEMS...] Height_1, Height_2, Number_Of_Points,
+        &lt;Point_1&gt;, &lt;Point_2&gt;, ...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.global_settings.Radiosity.Radiosity-class.html">pov.global_settings.Radiosity.Radiosity</a></strong>:
+      <em class="summary">RADIOSITY:
+    radiosity { [RADIOSITY_ITEMS] }
+RADIOSITY_ITEMS:
+    [adc_bailout FLOAT] &amp;
+    [always_sample BOOL] &amp;
+    [brightness FLOAT] &amp;
+    [count INT] &amp;
+    [error_bound FLOAT] &amp;
+    [gray_threshold FLOAT] &amp;
+    [load_file FILE_NAME] &amp;
+    [low_error_factor FLOAT] &amp;
+    [max_sample FLOAT] &amp;
+    [media BOOL] &amp;
+    [minimum_reuse FLOAT] &amp;
+    [nearest_count INT] &amp;
+    [normal BOOL] &amp;
+    [pretrace_end FLOAT] &amp;
+    [pretrace_start FLOAT] &amp;
+    [recursion_limit INT] &amp;
+    [save_file FILE_NAME]</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.texture.Reflection.Reflection-class.html">pov.texture.Reflection.Reflection</a></strong>:
+      <em class="summary">FINISH:
+    Jump to SDL
+    finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }
+FINISH_ITEMS:
+    [ambient COLOR] &amp; [diffuse FLOAT] &amp; [brilliance FLOAT]
+        &amp; [PHONG] &amp; [SPECULAR] &amp; [REFLECTION] &amp; [IRID]
+        &amp; [crand FLOAT] &amp; [conserve_energy [BOOL]]
+PHONG:
+    phong FLOAT &amp; [phong_size FLOAT] &amp; [metallic [FLOAT]]
+SPECULAR:
+    specular FLOAT &amp; [roughness FLOAT] &amp; [metallic [FLOAT]]
+REFLECTION:
+    reflection COLOR [reflection_exponent FLOAT] |
+    reflection { [COLOR,] COLOR [REFLECTION_ITEMS] }
+REFLECTION_ITEMS:
+    [fresnel BOOL] &amp; [falloff FLOAT] &amp; [exponent FLOAT]
+        &amp; [metallic [FLOAT]]
+    Must also use interior {ior FLOAT} in the object
+        when fresnel is used.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.Sor.Sor-class.html">pov.finite_solid.Sor.Sor</a></strong>:
+      <em class="summary">SOR:
+    sor
+    {
+        Number_Of_Points, &lt;Point_1&gt;, &lt;Point_2&gt;, ...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.Sphere.Sphere-class.html">pov.finite_solid.Sphere.Sphere</a></strong>:
+      <em class="summary">SPHERE:...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.SphereSweep.SphereSweep-class.html">pov.finite_solid.SphereSweep.SphereSweep</a></strong>:
+      <em class="summary">SPHERE_SWEEP:
+    sphere_sweep {
+        linear_spline | b_spline | cubic_spline
+        NUM_OF_SPHERES,</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.SuperEllipsoid.SuperEllipsoid-class.html">pov.finite_solid.SuperEllipsoid.SuperEllipsoid</a></strong>:
+      <em class="summary">SUPERELLIPSOID:
+    superellipsoid
+    {
+        &lt;Value_E, Value_N&gt;
+        [OBJECT_MODIFIERS...]
+    }</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.Text.Text-class.html">pov.finite_solid.Text.Text</a></strong>:
+      <em class="summary">TEXT_OBECT:
+    text {
+        ttf &quot;fontname.ttf/ttc&quot; &quot;String_of_Text&quot;
+        Thickness, &lt;Offset&gt;
+        [OBJECT_MODIFIERS...]
+    }</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.texture.Texture.Texture-class.html">pov.texture.Texture.Texture</a></strong>:
+      <em class="summary">TEXTURE:
+    PLAIN_TEXTURE | LAYERED_TEXTURE | PATTERNED_TEXTURE</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.finite_solid.Torus.Torus-class.html">pov.finite_solid.Torus.Torus</a></strong>:
+      <em class="summary">TORUS:
+    torus
+    {
+        Major, Minor
+        [TORUS_MODIFIER...]
+    }
+TORUS_MODIFIER:
+    sturm | OBJECT_MODIFIER</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.object_modifier.Transformation.Transformation-class.html">pov.object_modifier.Transformation.Transformation</a></strong>:
+      <em class="summary">TRANSFORMATION:...</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.basic.Color.Color-class.html">pov.basic.Color.Color</a></strong>:
+      <em class="summary">Color Expressions</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.other.Comment.Comment-class.html">pov.other.Comment.Comment</a></strong>:
+      <em class="summary">/* Comment */</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.texture.pattern.Gradient.Gradient-class.html">pov.texture.pattern.Gradient.Gradient</a></strong>:
+      <em class="summary">pigment {...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.language_directive.LanguageDirective.LanguageDirective-class.html">pov.language_directive.LanguageDirective.LanguageDirective</a></strong>:
+      <em class="summary">LANGUAGE_DIRECTIVE:
+    INCLUDE_DIRECTIVE |
+    IDENTIFIER_DECLARATION |
+    UNDEF_DIRECTIVE |
+    FOPEN_DIRECTIVE |
+    FCLOSE_DIRECTIVE |
+    READ_DIRECTIVE |
+    WRITE_DIRECTIVE |
+    DEFAULT_DIRECTIVE |
+    VERSION_DIRECTIVE |
+    IF_DIRECTIVE |
+    IFDEF_DIRECTIVE |
+    IFNDEF_DIRECTIVE |
+    SWITCH_DIRECTIVE |
+    WHILE_DIRECTIVE |
+    TEXT_STREAM_DIRECTIVE |
+    MACRO_DEFINITION</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="pov.language_directive.Default.Default-class.html">pov.language_directive.Default.Default</a></strong>:
+      <em class="summary">Specify a default texture, pigment, normal or finish:</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.language_directive.Include.Include-class.html">pov.language_directive.Include.Include</a></strong>:
+      <em class="summary">INCLUDE_DIRECTIVE:
+    #include FILE_NAME
+File inclusion may be nested at most 10 levels deep.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.language_directive.Version.Version-class.html">pov.language_directive.Version.Version</a></strong>:
+      <em class="summary">VERSION_DIRECTIVE:...</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.object_modifier.ObjectModifier.ObjectModifier-class.html">pov.object_modifier.ObjectModifier.ObjectModifier</a></strong>:
+      <em class="summary">OBJECT_MODIFIERS:
+    [OBJECT_PHOTONS] |
+    [CLIPPED_BY] |
+    [BOUNDED_BY] |
+    [MATERIAL] |
+    [INTERIOR] |
+    [INTERIOR_TEXTURE] |
+    [TEXTURE] |
+    [PIGMENT] |
+    [NORMAL] |
+    [FINISH] |
+    [TRANSFORMATION...] |
+    [no_shadow] |
+    [no_image[BOOL]] |
+    [no_reflection{BOOL]] |
+    [inverse] |
+    [double_illuminate[BOOL]] |
+    [hollow [BOOL]]</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="pov.object_modifier.ClippedBy.ClippedBy-class.html">pov.object_modifier.ClippedBy.ClippedBy</a></strong>:
+      <em class="summary">CLIPPED_BY:
+    clipped_by { UNTEXTURED_SOLID_OBJECT...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.object_modifier.Interior.Interior-class.html">pov.object_modifier.Interior.Interior</a></strong>:
+      <em class="summary">interior VECTOR</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.object_modifier.Matrix.Matrix-class.html">pov.object_modifier.Matrix.Matrix</a></strong>:
+      <em class="summary">MATRIX:...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.object_modifier.Rotate.Rotate-class.html">pov.object_modifier.Rotate.Rotate</a></strong>:
+      <em class="summary">rotate VECTOR</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.object_modifier.Scale.Scale-class.html">pov.object_modifier.Scale.Scale</a></strong>:
+      <em class="summary">scale VECTOR</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.object_modifier.Translate.Translate-class.html">pov.object_modifier.Translate.Translate</a></strong>:
+      <em class="summary">translate VECTOR</em>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink">unittest.case.TestCase</strong>:
+      <em class="summary">A class whose instances are single test cases.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="pov.tests.FiniteSolid_Test.BlobTestCase-class.html">pov.tests.FiniteSolid_Test.BlobTestCase</a></strong>:
+      <em class="summary">BLOB:
+    blob { BLOB_ITEM...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Basic_Test.BlockObjectTestCase-class.html">pov.tests.Basic_Test.BlockObjectTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.FiniteSolid_Test.BoxTestCase-class.html">pov.tests.FiniteSolid_Test.BoxTestCase</a></strong>:
+      <em class="summary">BOX:
+    box
+    {
+        &lt;Corner_1&gt;, &lt;Corner_2&gt;
+        [OBJECT_MODIFIERS...]
+    }</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Other_Test.CameraTestCase-class.html">pov.tests.Other_Test.CameraTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Texture_Test.ColorMapTestCase-class.html">pov.tests.Texture_Test.ColorMapTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Basic_Test.ColorTestCase-class.html">pov.tests.Basic_Test.ColorTestCase</a></strong>:
+      <em class="summary">Color Expressions</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Include_Test.ColorsIncTestCase-class.html">pov.tests.Include_Test.ColorsIncTestCase</a></strong>:
+      <em class="summary">Test colors_inc.py</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.FiniteSolid_Test.ConeTestCase-class.html">pov.tests.FiniteSolid_Test.ConeTestCase</a></strong>:
+      <em class="summary">Test Cone class</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.FiniteSolid_Test.CylinderTestCase-class.html">pov.tests.FiniteSolid_Test.CylinderTestCase</a></strong>:
+      <em class="summary">Test Cylinder class</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.LanguageDirective_Test.DefaultTestCase-class.html">pov.tests.LanguageDirective_Test.DefaultTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.EndToEnd_Test.EndToEndTestCase-class.html">pov.tests.EndToEnd_Test.EndToEndTestCase</a></strong>:
+      <em class="summary">End To End Tests</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Texture_Test.FinishTestCase-class.html">pov.tests.Texture_Test.FinishTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.AthEff_Test.FogTestCase-class.html">pov.tests.AthEff_Test.FogTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.GlobalSettings_Test.GlobalSettingsTestCase-class.html">pov.tests.GlobalSettings_Test.GlobalSettingsTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.FiniteSolid_Test.HeightFieldTestCase-class.html">pov.tests.FiniteSolid_Test.HeightFieldTestCase</a></strong>:
+      <em class="summary">Test HeightField class</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.LanguageDirective_Test.IncludeTestCase-class.html">pov.tests.LanguageDirective_Test.IncludeTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.FiniteSolid_Test.JuliaFractalTestCase-class.html">pov.tests.FiniteSolid_Test.JuliaFractalTestCase</a></strong>:
+      <em class="summary">Test JuliaFractal class</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.LanguageDirective_Test.LanguageDirectiveTestCase-class.html">pov.tests.LanguageDirective_Test.LanguageDirectiveTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.FiniteSolid_Test.LatheTestCase-class.html">pov.tests.FiniteSolid_Test.LatheTestCase</a></strong>:
+      <em class="summary">LATHE:
+    lathe
+    {
+        [SPLINE_TYPE] Number_Of_Points, &lt;Point_1&gt;
+        &lt;Point_2&gt;...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Other_Test.LightSourceTestCase-class.html">pov.tests.Other_Test.LightSourceTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Texture_Test.NormalTestCase-class.html">pov.tests.Texture_Test.NormalTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Texture_Test.PigmentTestCase-class.html">pov.tests.Texture_Test.PigmentTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.InfiniteSolid_Test.PlaneTestCase-class.html">pov.tests.InfiniteSolid_Test.PlaneTestCase</a></strong>:
+      <em class="summary">Test Plane class</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Basic_Test.SceneFileTestCase-class.html">pov.tests.Basic_Test.SceneFileTestCase</a></strong>:
+      <em class="summary">Tests for SceneFile class</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Basic_Test.SceneItemTestCase-class.html">pov.tests.Basic_Test.SceneItemTestCase</a></strong>:
+      <em class="summary">Tests for SceneItem class</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.AthEff_Test.SkySphereTestCase-class.html">pov.tests.AthEff_Test.SkySphereTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.FiniteSolid_Test.SphereTestCase-class.html">pov.tests.FiniteSolid_Test.SphereTestCase</a></strong>:
+      <em class="summary">SPHERE:...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Texture_Test.TextureTestCase-class.html">pov.tests.Texture_Test.TextureTestCase</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.ObjectModifier_Test.TranslateTestCase-class.html">pov.tests.ObjectModifier_Test.TranslateTestCase</a></strong>:
+      <em class="summary">Test Translate class</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.Basic_Test.VectorTestCase-class.html">pov.tests.Basic_Test.VectorTestCase</a></strong>:
+      <em class="summary">Tests for Vector class</em>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.tests.LanguageDirective_Test.VersionTestCase-class.html">pov.tests.LanguageDirective_Test.VersionTestCase</a></strong>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="pov.basic.Vector.Vector-class.html">pov.basic.Vector.Vector</a></strong>:
+      <em class="summary">Generalized Vector class.</em>
+    </li>
+    </ul>
+    </li>
+</ul>
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Trees&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sat Feb  6 12:15:26 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
