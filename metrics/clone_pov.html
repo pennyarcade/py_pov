@@ -1,0 +1,2369 @@
+
+<HTML>
+    <HEAD>
+        <TITLE> CloneDigger Report </TITLE>
+        <script type="text/javascript">
+        function unhide(divID) {
+            var item = document.getElementById(divID);
+            if (item) {
+                item.className=(item.className=='hidden')?'unhidden':'hidden';
+            }
+        }
+</script>
+
+<style type="text/css">
+.hidden { display: none; }
+.unhidden { display: block; }
+.preformatted {
+        border: 1px dashed #3c78b5;
+    font-size: 11px;
+        font-family: Courier;
+    margin: 10px;
+        line-height: 13px;
+}
+.preformattedHeader {
+    background-color: #f0f0f0;
+        border-bottom: 1px dashed #3c78b5;
+    padding: 3px;
+        text-align: center;
+}
+.preformattedContent {
+    background-color: #f0f0f0;
+    padding: 3px;
+}
+<!--
+<div class="preformatted"><div class="preformattedContent">
+<pre>Clone Digger
+</pre>
+</div></div>
+-->
+
+</style>
+
+    </HEAD>
+    <BODY>
+    
+    
+    <P>Source files: 99</P>
+        <a href = "javascript:unhide('files');">Click here to show/hide file names</a><div id="files" class="hidden"><P><B>Source files:</B><BR>pov/__init__.py, <BR>pov/include/__init__.py, <BR>pov/include/colors_inc.py, <BR>pov/include/chars_inc.py, <BR>pov/finite_solid/HeightField.py, <BR>pov/finite_solid/Torus.py, <BR>pov/finite_solid/Prism.py, <BR>pov/finite_solid/Lathe.py, <BR>pov/finite_solid/Cone.py, <BR>pov/finite_solid/JuliaFractal.py, <BR>pov/finite_solid/Text.py, <BR>pov/finite_solid/Box.py, <BR>pov/finite_solid/__init__.py, <BR>pov/finite_solid/Blob.py, <BR>pov/finite_solid/SphereSweep.py, <BR>pov/finite_solid/SuperEllipsoid.py, <BR>pov/finite_solid/Sphere.py, <BR>pov/finite_solid/Sor.py, <BR>pov/finite_solid/Cylinder.py, <BR>pov/finite_patch/FinitePatch.py, <BR>pov/finite_patch/__init__.py, <BR>pov/global_settings/Radiosity.py, <BR>pov/global_settings/__init__.py, <BR>pov/global_settings/Photons.py, <BR>pov/global_settings/GlobalSettings.py, <BR>pov/infinite_solid/__init__.py, <BR>pov/infinite_solid/Plane.py, <BR>pov/basic/Vector.py, <BR>pov/basic/__init__.py, <BR>pov/basic/SceneItem.py, <BR>pov/basic/SceneFile.py, <BR>pov/basic/BlockObject.py, <BR>pov/basic/Color.py, <BR>pov/basic/PoVObject.py, <BR>pov/tests/FinitePatch_Test.py, <BR>pov/tests/Csg_Test.py, <BR>pov/tests/FiniteSolid_Test.py, <BR>pov/tests/InfiniteSolid_Test.py, <BR>pov/tests/ObjectModifier_Test.py, <BR>pov/tests/Include_Test.py, <BR>pov/tests/AthEff_Test.py, <BR>pov/tests/Texture_Test.py, <BR>pov/tests/EndToEnd_Test.py, <BR>pov/tests/__init__.py, <BR>pov/tests/Basic_Test.py, <BR>pov/tests/Other_Test.py, <BR>pov/tests/LanguageDirective_Test.py, <BR>pov/tests/GlobalSettings_Test.py, <BR>pov/atmeff/Fog.py, <BR>pov/atmeff/__init__.py, <BR>pov/atmeff/SkySphere.py, <BR>pov/object_modifier/Scale.py, <BR>pov/object_modifier/Translate.py, <BR>pov/object_modifier/ClippedBy.py, <BR>pov/object_modifier/ObjectModifier.py, <BR>pov/object_modifier/Transformation.py, <BR>pov/object_modifier/__init__.py, <BR>pov/object_modifier/Matrix.py, <BR>pov/object_modifier/Interior.py, <BR>pov/object_modifier/Rotate.py, <BR>pov/other/Comment.py, <BR>pov/other/IllegalStateException.py, <BR>pov/other/LightSource.py, <BR>pov/other/SdlSyntaxException.py, <BR>pov/other/IsoSurface.py, <BR>pov/other/__init__.py, <BR>pov/other/ParametricObj.py, <BR>pov/other/Object.py, <BR>pov/other/Camera.py, <BR>pov/examples/image_map.py, <BR>pov/examples/text_fonts.py, <BR>pov/examples/basic_scene.py, <BR>pov/examples/basic_sphere.py, <BR>pov/examples/checkered_floor.py, <BR>pov/examples/orthographic_scene.py, <BR>pov/examples/radiocity_scene.py, <BR>pov/examples/photons_scene.py, <BR>pov/csg/Difference.py, <BR>pov/csg/Csg.py, <BR>pov/csg/Merge.py, <BR>pov/csg/Intersection.py, <BR>pov/csg/__init__.py, <BR>pov/csg/Union.py, <BR>pov/texture/ImageMap.py, <BR>pov/texture/Normal.py, <BR>pov/texture/Reflection.py, <BR>pov/texture/ColorMap.py, <BR>pov/texture/Irid.py, <BR>pov/texture/__init__.py, <BR>pov/texture/Texture.py, <BR>pov/texture/Finish.py, <BR>pov/texture/Pigment.py, <BR>pov/texture/pattern/__init__.py, <BR>pov/texture/pattern/Gradient.py, <BR>pov/language_directive/Default.py, <BR>pov/language_directive/__init__.py, <BR>pov/language_directive/Version.py, <BR>pov/language_directive/Include.py, <BR>pov/language_directive/LanguageDirective.py</P></div>
+        <P>Clones detected: 102</P>
+        <P>799 of 2647 lines are duplicates (30.19%) </P>
+<P>
+<B>Parameters<BR> </B>
+clustering_threshold = 10<BR>
+distance_threshold = 5<BR>
+size_threshold = 5<BR>
+hashing_depth = 1<BR>
+clusterize_using_hash = False<BR>
+clusterize_using_dcup = False<BR>
+</P> 
+        
+    <B>Time elapsed</B><BR>Construction of AST : 1.07 seconds<BR>
+Building statement hash : 0.01 seconds<BR>
+Building patterns : 4.70 seconds<BR>
+Marking similar statements : 7.53 seconds<BR>
+Finding similar sequences of statements : 0.17 seconds<BR>
+Refining candidates : 2.50 seconds<BR>
+ Total time: 15.98<BR>
+ Started at: Sat Feb  6 15:04:22 2016<BR>
+ Finished at: Sat Feb  6 15:04:36 2016
+    <P><B>Clone # 1</B><BR>Distance between two fragments = 2 <BR>Clone size = 44<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/EndToEnd_Test.py"<BR>The first line is 138</TD><TD></TD><TD>Source file "pov/examples/basic_sphere.py"<BR>The first line is 36</TD></TR><TR>
+<TD>
+fix = SceneFile('test.pov')</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix = SceneFile('test.pov')</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Version(3.6))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(Version(3.6))</TD>
+</TR>
+<TR>
+<TD>
+fix.append(GlobalSettings(assumed_gamma=1.0))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(GlobalSettings(assumed_gamma=1.0))</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Default(Finish(ambient=0.1, diffuse=0.9)))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(Default(Finish(ambient=0.1, diffuse=0.9)))</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Include(<span style="color: rgb(255, 0, 0);">'fixture/colors.inc'</span>), Include(<span style="color: rgb(255, 0, 0);">'fixture/textures.inc'</span>))</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+fix.append(Include(<span style="color: rgb(255, 0, 0);">'colors.inc'</span>), Include(<span style="color: rgb(255, 0, 0);">'textures.inc'</span>))</TD>
+</TR>
+<TR>
+<TD>
+image_width = 800</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+image_width = 800</TD>
+</TR>
+<TR>
+<TD>
+image_height = 600</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+image_height = 600</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Camera(location=Vector(0.0, 1.0, -3.0), look_at=Vector(0.0, 1.0, 0.0), right=((x) * (image_width)) / (image_height), angle=75), LightSource(Vector(1500, 3000, -2500), color='White'))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(Camera(location=Vector(0.0, 1.0, -3.0), look_at=Vector(0.0, 1.0, 0.0), right=((x) * (image_width)) / (image_height), angle=75), LightSource(Vector(1500, 3000, -2500), color='White'))</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Plane(Vector(0.0, 1.0, 0.0), 1.0, Texture(Pigment(ColorMap({0.0: Color(rgb=Vector(0.05, 0.15, 0.45)), 0.5: Color(rgb=Vector(0.05, 0.15, 0.45)), 0.7: Color(rgb=Vector(1.0, 1.0, 1.0)), 0.85: Color(rgb=Vector(0.2, 0.2, 0.2)), 1.0: Color(rgb=Vector(0.5, 0.5, 0.5))}), bozo=True, turbulence=0.92, scale=(Vector(1.0, 1.0, 1.5)) * (2.5), translate=Vector(0.0, 0.0, 0.0)), Finish(ambient=1.0, diffuse=0.0)), hollow=True, scale=10000.0))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(Plane(Vector(0.0, 1.0, 0.0), 1.0, Texture(Pigment(ColorMap({0.0: Color(rgb=Vector(0.05, 0.15, 0.45)), 0.5: Color(rgb=Vector(0.05, 0.15, 0.45)), 0.7: Color(rgb=Vector(1.0, 1.0, 1.0)), 0.85: Color(rgb=Vector(0.2, 0.2, 0.2)), 1.0: Color(rgb=Vector(0.5, 0.5, 0.5))}), bozo=True, turbulence=0.92, scale=(Vector(1.0, 1.0, 1.5)) * (2.5), translate=Vector(0.0, 0.0, 0.0)), Finish(ambient=1.0, diffuse=0.0)), hollow=True, scale=10000.0))</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 2</B><BR>Distance between two fragments = 1 <BR>Clone size = 42<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/examples/basic_scene.py"<BR>The first line is 89</TD><TD></TD><TD>Source file "pov/tests/EndToEnd_Test.py"<BR>The first line is 309</TD></TR><TR>
+<TD>
+fix = SceneFile('test.pov')</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix = SceneFile('test.pov')</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Version(3.6))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(Version(3.6))</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Include(<span style="color: rgb(255, 0, 0);">'colors.inc'</span>))</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+fix.append(Include(<span style="color: rgb(255, 0, 0);">'fixture/colors.inc'</span>))</TD>
+</TR>
+<TR>
+<TD>
+fix.append(GlobalSettings(assumed_gamma=1.0))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(GlobalSettings(assumed_gamma=1.0))</TD>
+</TR>
+<TR>
+<TD>
+image_width = 800</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+image_width = 800</TD>
+</TR>
+<TR>
+<TD>
+image_height = 600</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+image_height = 600</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Camera(location=Vector(0.0, 0.5, -4.0), direction=(1.5) * (z), right=((x) * (image_width)) / (image_height), look_at=Vector(0.0, 0.0, 0.0)))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(Camera(location=Vector(0.0, 0.5, -4.0), direction=(1.5) * (z), right=((x) * (image_width)) / (image_height), look_at=Vector(0.0, 0.0, 0.0)))</TD>
+</TR>
+<TR>
+<TD>
+fix.append(SkySphere(Pigment(ColorMap({0.0: Color(rgb=Vector(0.6, 0.7, 1.0)), 0.7: Color(rgb=Vector(0.0, 0.1, 0.8))}), gradient=y)), LightSource((0.0, 0.0, 0.0), Color(rgb=Vector(1.0, 1.0, 1.0)), translate=Vector(-30.0, 30.0, -30.0)))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(SkySphere(Pigment(ColorMap({0.0: Color(rgb=Vector(0.6, 0.7, 1.0)), 0.7: Color(rgb=Vector(0.0, 0.1, 0.8))}), gradient=y)), LightSource((0.0, 0.0, 0.0), Color(rgb=Vector(1.0, 1.0, 1.0)), translate=Vector(-30.0, 30.0, -30.0)))</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Plane(y, -1, Pigment(Color(rgb=Vector(0.7, 0.5, 0.3)))), Sphere(Vector(0.0, 0.0, 0.0), 1.0, Texture(Pigment(radial=ColorMap({0.0: Color(rgb=Vector(1.0, 0.4, 0.2)), 0.33: Color(rgb=Vector(0.2, 0.4, 1.0)), 0.66: Color(rgb=Vector(0.4, 1.0, 0.2)), 1.0: Color(rgb=Vector(1.0, 0.4, 0.2))}), frequency=8), Finish(specular=0.6))))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(Plane(y, -1, Pigment(Color(rgb=Vector(0.7, 0.5, 0.3)))), Sphere(Vector(0.0, 0.0, 0.0), 1.0, Texture(Pigment(radial=ColorMap({0.0: Color(rgb=Vector(1.0, 0.4, 0.2)), 0.33: Color(rgb=Vector(0.2, 0.4, 1.0)), 0.66: Color(rgb=Vector(0.4, 1.0, 0.2)), 1.0: Color(rgb=Vector(1.0, 0.4, 0.2))}), frequency=8), Finish(specular=0.6))))</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 3</B><BR>Distance between two fragments = 2 <BR>Clone size = 19<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Cylinder.py"<BR>The first line is 51</TD><TD></TD><TD>Source file "pov/finite_solid/Cone.py"<BR>The first line is 59</TD></TR><TR>
+<TD>
+if not isinstance(cappoint, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException('Parameter cappoint is not of type Vector')</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+if not isinstance(cappoint, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException('Parameter cappoint is not of type Vector')</TD>
+</TR>
+<TR>
+<TD>
+if not len(cappoint) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException('Cap point Vector has more or less than 3 dimensions')</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+if not len(cappoint) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException('Cap point Vector has more or less than 3 dimensions')</TD>
+</TR>
+<TR>
+<TD>
+if not type(<span style="color: rgb(255, 0, 0);">radius</span>) in (int, float):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Param radius is not of type int or float'</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not type(<span style="color: rgb(255, 0, 0);">capradius</span>) in (int, float):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Param cap radius is not of type int or float'</span>)</TD>
+</TR>
+<TR>
+<TD>
+for i in range(len(opts)):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not isinstance(opts[i], ObjectModifier):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException('Only ObjectModifier objects may be passed as options')</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+for i in range(len(opts)):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not isinstance(opts[i], ObjectModifier):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException('Only ObjectModifier objects may be passed as options')</TD>
+</TR>
+<TR>
+<TD>
+for key, val in kwargs.items():<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if key not in ['open']:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(('Invalid keyword: ') + (str(key)))<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not type(val) == bool:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(('Value of keyword %s is not boolean') % (key))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+for key, val in kwargs.items():<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if key not in ['open']:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(('Invalid keyword: ') + (str(key)))<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not type(val) == bool:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(('Value of keyword %s is not boolean') % (key))</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 4</B><BR>Distance between two fragments = 2 <BR>Clone size = 18<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/EndToEnd_Test.py"<BR>The first line is 460</TD><TD></TD><TD>Source file "pov/tests/EndToEnd_Test.py"<BR>The first line is 598</TD></TR><TR>
+<TD>
+image_width = 800</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+image_width = 800</TD>
+</TR>
+<TR>
+<TD>
+image_height = 600</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+image_height = 600</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Camera(location=Vector(<span style="color: rgb(255, 0, 0);">0.0</span>, <span style="color: rgb(255, 0, 0);">0.5</span>, -4.0), direction=(<span style="color: rgb(255, 0, 0);">1.5</span>) * (z), right=((x) * (image_width)) / (image_height), look_at=Vector(<span style="color: rgb(255, 0, 0);">0.0</span>, <span style="color: rgb(255, 0, 0);">0.0</span>, <span style="color: rgb(255, 0, 0);">0.0</span>)), SkySphere(Pigment(ColorMap({<span style="color: rgb(255, 0, 0);">0.0</span>: Color(rgb=Vector(0.6, 0.7, 1.0)), 0.7: Color(rgb=Vector(<span style="color: rgb(255, 0, 0);">0.0</span>, 0.1, 0.8))}), gradient=y)), LightSource(Vector(0, 0, 0), Color(rgb=Vector(1, 1, 1)), Translate(Vector(-30, 30, -30))))</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+fix.append(Camera(location=Vector(<span style="color: rgb(255, 0, 0);">0.0</span>, <span style="color: rgb(255, 0, 0);">0.0</span>, -4.0), direction=(<span style="color: rgb(255, 0, 0);">2</span>) * (z), right=((x) * (image_width)) / (image_height), look_at=Vector(<span style="color: rgb(255, 0, 0);">0.0</span>, <span style="color: rgb(255, 0, 0);">0.0</span>, <span style="color: rgb(255, 0, 0);">0.0</span>)), SkySphere(Pigment(ColorMap({<span style="color: rgb(255, 0, 0);">0.0</span>: Color(rgb=Vector(0.6, 0.7, 1.0)), 0.7: Color(rgb=Vector(<span style="color: rgb(255, 0, 0);">0.0</span>, 0.1, 0.8))}), gradient=y)), LightSource(Vector(0, 0, 0), Color(rgb=Vector(1, 1, 1)), Translate(Vector(-30, 30, -30))))</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 5</B><BR>Distance between two fragments = 4 <BR>Clone size = 14<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/object_modifier/Rotate.py"<BR>The first line is 18</TD><TD></TD><TD>Source file "pov/object_modifier/Matrix.py"<BR>The first line is 18</TD></TR><TR>
+<TD>
+class <span style="color: rgb(255, 0, 0);">Rotate</span>(ObjectModifier):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, rvector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);">Rotate</span>, self).__init__(<span style="color: rgb(255, 0, 0);">'rotate'</span>, [rvector], [], [])<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">3</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Vector RVector has more or less than 4 dimensions'</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __str__(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code = ''<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += ((('  ') * (self._get_indent())) + (self.name)) + (' ')<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += (str(self.args[0])) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return code<BR>
+</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+class <span style="color: rgb(255, 0, 0);">Matrix</span>(ObjectModifier):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, rvector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);">Matrix</span>, self).__init__(<span style="color: rgb(255, 0, 0);">'matrix'</span>, [rvector], [], [])<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">12</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Vector RVector has more or less than 12 dimensions'</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __str__(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code = ''<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += ((('  ') * (self._get_indent())) + (self.name)) + (' ')<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += (str(self.args[0])) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return code<BR>
+</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 6</B><BR>Distance between two fragments = 4 <BR>Clone size = 14<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/object_modifier/Rotate.py"<BR>The first line is 18</TD><TD></TD><TD>Source file "pov/object_modifier/Translate.py"<BR>The first line is 18</TD></TR><TR>
+<TD>
+class <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Rotate</span></span>(ObjectModifier):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, <span style="color: rgb(255, 0, 0);">rvector</span>):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Rotate</span></span>, self).__init__(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'rotate'</span></span>, [<span style="color: rgb(255, 0, 0);">rvector</span>], [], [])<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">3</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector RVector has more or less than 4 dimensions'</span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __str__(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code = ''<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += ((('  ') * (self._get_indent())) + (self.name)) + (' ')<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += (str(self.args[0])) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return code<BR>
+</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+class <span style="color: rgb(255, 0, 0);">Translate</span>(ObjectModifier):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, <span style="color: rgb(255, 0, 0);">tvector</span>):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);">Translate</span>, self).__init__(<span style="color: rgb(255, 0, 0);">'translate'</span>, [<span style="color: rgb(255, 0, 0);">tvector</span>], [], [])<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Vector TVector has more or less than 3 dimensions'</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __str__(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code = ''<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += ((('  ') * (self._get_indent())) + (self.name)) + (' ')<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += (str(self.args[0])) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return code<BR>
+</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 7</B><BR>Distance between two fragments = 4 <BR>Clone size = 14<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/object_modifier/Rotate.py"<BR>The first line is 18</TD><TD></TD><TD>Source file "pov/object_modifier/Scale.py"<BR>The first line is 18</TD></TR><TR>
+<TD>
+class <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Rotate</span></span></span>(ObjectModifier):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">rvector</span></span>):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Rotate</span></span></span>, self).__init__(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'rotate'</span></span></span>, [<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">rvector</span></span>], [], [])<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">3</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector RVector has more or less than 4 dimensions'</span></span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __str__(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code = ''<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += ((('  ') * (self._get_indent())) + (self.name)) + (' ')<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += (str(self.args[0])) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return code<BR>
+</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+class <span style="color: rgb(255, 0, 0);">Scale</span>(ObjectModifier):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, <span style="color: rgb(255, 0, 0);">svector</span>):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);">Scale</span>, self).__init__(<span style="color: rgb(255, 0, 0);">'scale'</span>, [<span style="color: rgb(255, 0, 0);">svector</span>], [], [])<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Vector SVector has more or less than 3 dimensions'</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __str__(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code = ''<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += ((('  ') * (self._get_indent())) + (self.name)) + (' ')<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += (str(self.args[0])) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return code<BR>
+</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 8</B><BR>Distance between two fragments = 4 <BR>Clone size = 14<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/object_modifier/Translate.py"<BR>The first line is 18</TD><TD></TD><TD>Source file "pov/object_modifier/Scale.py"<BR>The first line is 18</TD></TR><TR>
+<TD>
+class <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Translate</span></span>(ObjectModifier):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">tvector</span></span>):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Translate</span></span>, self).__init__(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'translate'</span></span>, [<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">tvector</span></span>], [], [])<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector TVector has more or less than 3 dimensions'</span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __str__(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code = ''<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += ((('  ') * (self._get_indent())) + (self.name)) + (' ')<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += (str(self.args[0])) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return code<BR>
+</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+class <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Scale</span></span>(ObjectModifier):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">svector</span></span>):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Scale</span></span>, self).__init__(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'scale'</span></span>, [<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">svector</span></span>], [], [])<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector SVector has more or less than 3 dimensions'</span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __str__(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code = ''<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += ((('  ') * (self._get_indent())) + (self.name)) + (' ')<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code += (str(self.args[0])) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return code<BR>
+</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 9</B><BR>Distance between two fragments = 0 <BR>Clone size = 12<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/global_settings/Radiosity.py"<BR>The first line is 73</TD><TD></TD><TD>Source file "pov/finite_solid/HeightField.py"<BR>The first line is 89</TD></TR><TR>
+<TD>
+valid_kw = {'hf_type': 'str', 'hierarchy': 'bool', 'smooth': 'bool', 'water_level': 'float', 'no_shadow': 'bool', 'no_image': 'bool', 'no_reflection': 'bool', 'inverse': 'bool', 'double_illuminate': 'bool', 'hollow': 'bool'}</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+valid_kw = {'hf_type': 'str', 'hierarchy': 'bool', 'smooth': 'bool', 'water_level': 'float', 'no_shadow': 'bool', 'no_image': 'bool', 'no_reflection': 'bool', 'inverse': 'bool', 'double_illuminate': 'bool', 'hollow': 'bool'}</TD>
+</TR>
+<TR>
+<TD>
+self._validate_kwargs(valid_kw)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+self._validate_kwargs(valid_kw)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 10</B><BR>Distance between two fragments = 4 <BR>Clone size = 11<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 343</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 360</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">base</span>radius_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; 'Param&nbsp; <span style="color:rgb(255,0,0);">base</span>&nbsp; radius&nbsp; is&nbsp; not&nbsp; of&nbsp; type&nbsp; int&nbsp; or&nbsp; float'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; Cone(<BR>
+&nbsp; &nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">'foo'</span>,<BR>
+&nbsp; &nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">8</span>,<BR>
+&nbsp; &nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; &nbsp; open=0.3<span style="color:rgb(255,0,0);"></span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">cap</span>radius_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; 'Param&nbsp; <span style="color:rgb(255,0,0);">cap</span>&nbsp; radius&nbsp; is&nbsp; not&nbsp; of&nbsp; type&nbsp; int&nbsp; or&nbsp; float'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; Cone(<BR>
+&nbsp; &nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">4</span>,<BR>
+&nbsp; &nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">'foo'</span>,<BR>
+&nbsp; &nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; &nbsp; open=0.3<span style="color:rgb(255,0,0);"></span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 11</B><BR>Distance between two fragments = 2 <BR>Clone size = 11<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/object_modifier/Matrix.py"<BR>The first line is 32</TD><TD></TD><TD>Source file "pov/object_modifier/Translate.py"<BR>The first line is 30</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">12</span></span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector RVector has more or less than 12 dimensions'</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">3</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector TVector has more or less than 3 dimensions'</span></span></span>)</TD>
+</TR>
+<TR>
+<TD>
+def __str__(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;code = ''<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;code += ((('  ') * (self._get_indent())) + (self.name)) + (' ')<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;code += (str(self.args[0])) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;return code</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+def __str__(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;code = ''<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;code += ((('  ') * (self._get_indent())) + (self.name)) + (' ')<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;code += (str(self.args[0])) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;return code</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 12</B><BR>Distance between two fragments = 2 <BR>Clone size = 11<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/object_modifier/Matrix.py"<BR>The first line is 32</TD><TD></TD><TD>Source file "pov/object_modifier/Scale.py"<BR>The first line is 30</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">12</span></span></span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector RVector has more or less than 12 dimensions'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">3</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector SVector has more or less than 3 dimensions'</span></span></span>)</TD>
+</TR>
+<TR>
+<TD>
+def __str__(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;code = ''<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;code += ((('  ') * (self._get_indent())) + (self.name)) + (' ')<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;code += (str(self.args[0])) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;return code</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+def __str__(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;code = ''<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;code += ((('  ') * (self._get_indent())) + (self.name)) + (' ')<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;code += (str(self.args[0])) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;return code</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 13</B><BR>Distance between two fragments = 4 <BR>Clone size = 10<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 311</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 327</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">non_existant_</span>k<span style="color:rgb(255,0,0);"></span>w<span style="color:rgb(255,0,0);">(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,&nbsp; 'Invalid&nbsp; keyword:&nbsp; foo</span>'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; Cone(<BR>
+&nbsp; &nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; &nbsp; 4,<BR>
+&nbsp; &nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; &nbsp; 8,<BR>
+&nbsp; &nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">foo</span>=<span style="color:rgb(255,0,0);">True</span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">open_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,&nbsp; 'Value&nbsp; of&nbsp; </span>k<span style="color:rgb(255,0,0);">ey</span>w<span style="color:rgb(255,0,0);">ord&nbsp; open&nbsp; is&nbsp; not&nbsp; boolean</span>'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; Cone(<BR>
+&nbsp; &nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; &nbsp; 4,<BR>
+&nbsp; &nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; &nbsp; 8,<BR>
+&nbsp; &nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">open</span>=<span style="color:rgb(255,0,0);">0.3</span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 14</B><BR>Distance between two fragments = 3 <BR>Clone size = 11<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 327</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 343</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">open</span>_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<span style="color:rgb(255,0,0);">&nbsp; '</span>V<span style="color:rgb(255,0,0);">alue&nbsp; of&nbsp; keyword&nbsp; open&nbsp; is&nbsp; not&nbsp; boolean'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; Cone(<BR>
+&nbsp; &nbsp; &nbsp; V</span>ector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">4</span>,<BR>
+&nbsp; &nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; &nbsp; 8,<BR>
+&nbsp; &nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; &nbsp; open=0.3<span style="color:rgb(255,0,0);"></span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">baseradius</span>_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<span style="color:rgb(255,0,0);"><BR>
+&nbsp; &nbsp; 'Param&nbsp; base&nbsp; radius&nbsp; is&nbsp; not&nbsp; of&nbsp; type&nbsp; int&nbsp; or&nbsp; float'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; Cone(<BR>
+&nbsp; &nbsp; &nbsp; </span>V<span style="color:rgb(255,0,0);"></span>ector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">'foo'</span>,<BR>
+&nbsp; &nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; &nbsp; 8,<BR>
+&nbsp; &nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; &nbsp; open=0.3<span style="color:rgb(255,0,0);"></span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 15</B><BR>Distance between two fragments = 3 <BR>Clone size = 11<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 327</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 360</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">open</span>_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<span style="color:rgb(255,0,0);">&nbsp; '</span>V<span style="color:rgb(255,0,0);">alue&nbsp; of&nbsp; keyword&nbsp; open&nbsp; is&nbsp; not&nbsp; boolean'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; Cone(</span><BR>
+&nbsp; &nbsp; &nbsp; Vector(<span style="color:rgb(255,0,0);">1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; &nbsp; 4,<BR>
+&nbsp; &nbsp; &nbsp; Vector(</span>5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">8</span>,<BR>
+&nbsp; &nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; &nbsp; open=0.3<span style="color:rgb(255,0,0);"></span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">capradius</span>_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<span style="color:rgb(255,0,0);"><BR>
+&nbsp; &nbsp; 'Param&nbsp; cap&nbsp; radius&nbsp; is&nbsp; not&nbsp; of&nbsp; type&nbsp; int&nbsp; or&nbsp; float'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; Cone(<BR>
+&nbsp; &nbsp; &nbsp; </span>V<span style="color:rgb(255,0,0);">ector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; &nbsp; 4,</span><BR>
+&nbsp; &nbsp; &nbsp; Vector(<span style="color:rgb(255,0,0);"></span>5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">'foo'</span>,<BR>
+&nbsp; &nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; &nbsp; open=0.3<span style="color:rgb(255,0,0);"></span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 16</B><BR>Distance between two fragments = 3 <BR>Clone size = 10<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 859</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 278</TD></TR><TR>
+<TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">Sphere</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;lsp = os.linesep<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second = (<span style="color: rgb(255, 0, 0);">'sphere {'</span>) + (lsp)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += (<span style="color: rgb(255, 0, 0);">'  <1, 2, 3>, 8'</span>) + (lsp)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += ('}') + (lsp)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(str(self.sut), second)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">Cone</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;lsp = os.linesep<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second = (<span style="color: rgb(255, 0, 0);">'cone {'</span>) + (lsp)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += (<span style="color: rgb(255, 0, 0);">'  <1, 2, 3>, 4, <5, 6, 7>, 8'</span>) + (lsp)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += ('}') + (lsp)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(str(self.sut), second)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 17</B><BR>Distance between two fragments = 0 <BR>Clone size = 9<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/global_settings/Radiosity.py"<BR>The first line is 43</TD><TD></TD><TD>Source file "pov/finite_solid/HeightField.py"<BR>The first line is 59</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['str']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not os.path.isfile(self.args[0]):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise IOError(('No such file: %s%s%s') % ((os.getcwd(), os.sep, self.args[0])))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['str']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not os.path.isfile(self.args[0]):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise IOError(('No such file: %s%s%s') % ((os.getcwd(), os.sep, self.args[0])))</TD>
+</TR>
+<TR>
+<TD>
+def _check_opts(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_opts = ['ObjectModifier']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_opts(valid_opts)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+def _check_opts(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_opts = ['ObjectModifier']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_opts(valid_opts)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 18</B><BR>Distance between two fragments = 4 <BR>Clone size = 10<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 598</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 521</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">radi</span>u<span style="color:rgb(255,0,0);">s_</span>w<span style="color:rgb(255,0,0);">rong_type(self</span>):<BR>
+&nbsp; <span style="color:rgb(255,0,0);">'''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with</span>&nbsp; self.<span style="color:rgb(255,0,0);">assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; 'Param&nbsp; radi</span>u<span style="color:rgb(255,0,0);">s&nbsp; is&nbsp; not&nbsp; of&nbsp; type&nbsp; int&nbsp; or&nbsp; float'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.su</span>t&nbsp; =&nbsp; Cylinder(<BR>
+&nbsp; &nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">'foo'</span>,<BR>
+&nbsp; &nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; &nbsp; open=<span style="color:rgb(255,0,0);">0.3</span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">open_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,&nbsp; 'Val</span>u<span style="color:rgb(255,0,0);">e&nbsp; of&nbsp; key</span>w<span style="color:rgb(255,0,0);">ord&nbsp; open&nbsp; is&nbsp; not&nbsp; boolean'<BR>
+&nbsp; </span>):<BR>
+&nbsp; <span style="color:rgb(255,0,0);"></span>&nbsp; self.<span style="color:rgb(255,0,0);">s</span>u<span style="color:rgb(255,0,0);"></span>t&nbsp; =&nbsp; Cylinder(<BR>
+&nbsp; &nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">8</span>,<BR>
+&nbsp; &nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; &nbsp; open=<span style="color:rgb(255,0,0);">'foo'</span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 19</B><BR>Distance between two fragments = 4 <BR>Clone size = 9<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 506</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 521</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">non_existant_</span>k<span style="color:rgb(255,0,0);"></span>w<span style="color:rgb(255,0,0);">(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,&nbsp; 'Invalid&nbsp; keyword:</span>&nbsp; b<span style="color:rgb(255,0,0);">ar</span>'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; Cylinder(<BR>
+&nbsp; &nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; &nbsp; 8,<BR>
+&nbsp; &nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">bar</span>=<span style="color:rgb(255,0,0);">True</span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">open_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,&nbsp; 'Value&nbsp; of&nbsp; </span>k<span style="color:rgb(255,0,0);">ey</span>w<span style="color:rgb(255,0,0);">ord&nbsp; open&nbsp; is&nbsp; not</span>&nbsp; b<span style="color:rgb(255,0,0);">oolean</span>'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; Cylinder(<BR>
+&nbsp; &nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; &nbsp; 8,<BR>
+&nbsp; &nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; &nbsp; <span style="color:rgb(255,0,0);">open</span>=<span style="color:rgb(255,0,0);">'foo'</span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 20</B><BR>Distance between two fragments = 2 <BR>Clone size = 9<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Sphere.py"<BR>The first line is 35</TD><TD></TD><TD>Source file "pov/infinite_solid/Plane.py"<BR>The first line is 38</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector', ('float', 'int')]<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Center point Vector has more or less than 3 dimensions'</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector', ('float', 'int')]<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Normal vector has more or less than 3 dimensions'</span>)</TD>
+</TR>
+<TR>
+<TD>
+def _check_opts(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_opts = ['ObjectModifier', 'Texture', <span style="color: rgb(255, 0, 0);">'Translate'</span>]<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_opts(valid_opts)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_opts(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_opts = ['ObjectModifier', 'Texture', <span style="color: rgb(255, 0, 0);">'Pigment'</span>]<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_opts(valid_opts)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 21</B><BR>Distance between two fragments = 4 <BR>Clone size = 9<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 171</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 475</TD></TR><TR>
+<TD>
+def <span style="color: rgb(255, 0, 0);">test_create</span>(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">Box</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second = (<span style="color: rgb(255, 0, 0);">'box {'</span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += (<span style="color: rgb(255, 0, 0);">'  <1, 2, 3>, <4, 5, 6>'</span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += ('}') + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(str(self.sut), second)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def <span style="color: rgb(255, 0, 0);">test_creation</span>(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">Cylinder</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second = (<span style="color: rgb(255, 0, 0);">'cylinder {'</span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += (<span style="color: rgb(255, 0, 0);">'  <1, 2, 3>, <5, 6, 7>, 8'</span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += ('}') + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(str(self.sut), second)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 22</B><BR>Distance between two fragments = 3 <BR>Clone size = 9<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 55</TD><TD></TD><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 94</TD></TR><TR>
+<TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);">Include</span>(<span style="color: rgb(255, 0, 0);">'fixture/test.inc'</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);">Version</span>(<span style="color: rgb(255, 0, 0);">3.6</span>)</TD>
+</TR>
+<TR>
+<TD>
+def test_create(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">Include</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, LanguageDirective)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def test_create(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">Version</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, LanguageDirective)</TD>
+</TR>
+<TR>
+<TD>
+def test_str(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;lsp = os.linesep<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second = (<span style="color: rgb(255, 0, 0);">'#include "fixture/test.inc"'</span>) + (lsp)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(str(self.sut), second)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def test_str(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;lsp = os.linesep<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second = (<span style="color: rgb(255, 0, 0);">'#version 3.6;'</span>) + (lsp)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(str(self.sut), second)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 23</B><BR>Distance between two fragments = 4 <BR>Clone size = 10<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 364</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 315</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; SdlSyntaxException,<span style="color:rgb(255,0,0);"><BR>
+</span>&nbsp; '<span style="color:rgb(255,0,0);">P</span>a<span style="color:rgb(255,0,0);">ram</span>&nbsp; <span style="color:rgb(255,0,0);">cap&nbsp; radius&nbsp; is&nbsp; not&nbsp; of&nbsp; t</span>y<span style="color:rgb(255,0,0);">pe&nbsp; int&nbsp; </span>or<span style="color:rgb(255,0,0);"></span>&nbsp; f<span style="color:rgb(255,0,0);">l</span>o<span style="color:rgb(255,0,0);">at</span>'<BR>
+):<BR>
+&nbsp; self.sut&nbsp; =&nbsp; Cone(<BR>
+&nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; 4,<BR>
+&nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);">'foo'</span>,<BR>
+&nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);"></span>o<span style="color:rgb(255,0,0);">p</span>e<span style="color:rgb(255,0,0);">n=0.3</span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; SdlSyntaxException,<span style="color:rgb(255,0,0);"></span>&nbsp; '<span style="color:rgb(255,0,0);">Inv</span>a<span style="color:rgb(255,0,0);">lid</span>&nbsp; <span style="color:rgb(255,0,0);">ke</span>y<span style="color:rgb(255,0,0);">w</span>or<span style="color:rgb(255,0,0);">d:</span>&nbsp; f<span style="color:rgb(255,0,0);"></span>o<span style="color:rgb(255,0,0);">o</span>'<BR>
+):<BR>
+&nbsp; self.sut&nbsp; =&nbsp; Cone(<BR>
+&nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; 4,<BR>
+&nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);">8</span>,<BR>
+&nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);">f</span>o<span style="color:rgb(255,0,0);">o=Tru</span>e<span style="color:rgb(255,0,0);"></span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 24</B><BR>Distance between two fragments = 4 <BR>Clone size = 10<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 347</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 315</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; SdlSyntaxException,<span style="color:rgb(255,0,0);"><BR>
+</span>&nbsp; '<span style="color:rgb(255,0,0);">P</span>a<span style="color:rgb(255,0,0);">ram</span>&nbsp; <span style="color:rgb(255,0,0);">bas</span>e<span style="color:rgb(255,0,0);">&nbsp; radius&nbsp; is&nbsp; not&nbsp; of&nbsp; t</span>y<span style="color:rgb(255,0,0);">pe&nbsp; int&nbsp; </span>or<span style="color:rgb(255,0,0);"></span>&nbsp; f<span style="color:rgb(255,0,0);">l</span>o<span style="color:rgb(255,0,0);">at</span>'<BR>
+):<BR>
+&nbsp; self.sut&nbsp; =&nbsp; Cone(<BR>
+&nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);">'foo'</span>,<BR>
+&nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; 8,<BR>
+&nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);"></span>o<span style="color:rgb(255,0,0);">p</span>e<span style="color:rgb(255,0,0);">n=0.3</span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; SdlSyntaxException,<span style="color:rgb(255,0,0);"></span>&nbsp; '<span style="color:rgb(255,0,0);">Inv</span>a<span style="color:rgb(255,0,0);">lid</span>&nbsp; <span style="color:rgb(255,0,0);">k</span>e<span style="color:rgb(255,0,0);"></span>y<span style="color:rgb(255,0,0);">w</span>or<span style="color:rgb(255,0,0);">d:</span>&nbsp; f<span style="color:rgb(255,0,0);"></span>o<span style="color:rgb(255,0,0);">o</span>'<BR>
+):<BR>
+&nbsp; self.sut&nbsp; =&nbsp; Cone(<BR>
+&nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);">4</span>,<BR>
+&nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; 8,<BR>
+&nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);">f</span>o<span style="color:rgb(255,0,0);">o=Tru</span>e<span style="color:rgb(255,0,0);"></span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 25</B><BR>Distance between two fragments = 4 <BR>Clone size = 9<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 602</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 510</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; SdlSyntaxException,<span style="color:rgb(255,0,0);"><BR>
+</span>&nbsp; '<span style="color:rgb(255,0,0);">P</span>ar<span style="color:rgb(255,0,0);">am&nbsp; radius&nbsp; is&nbsp; not&nbsp; of&nbsp; type&nbsp; int&nbsp; or&nbsp; float</span>'<BR>
+):<BR>
+&nbsp; self.sut&nbsp; =&nbsp; Cylinder(<BR>
+&nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);">'foo'</span>,<BR>
+&nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);">op</span>e<span style="color:rgb(255,0,0);">n=0.3</span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; SdlSyntaxException,<span style="color:rgb(255,0,0);"></span>&nbsp; '<span style="color:rgb(255,0,0);">Invalid&nbsp; keyword:&nbsp; b</span>ar<span style="color:rgb(255,0,0);"></span>'<BR>
+):<BR>
+&nbsp; self.sut&nbsp; =&nbsp; Cylinder(<BR>
+&nbsp; &nbsp; Vector(1,&nbsp; 2,&nbsp; 3),<BR>
+&nbsp; &nbsp; Vector(5,&nbsp; 6,&nbsp; 7),<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);">8</span>,<BR>
+&nbsp; &nbsp; ObjectModifier('foo'),<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);">bar=Tru</span>e<span style="color:rgb(255,0,0);"></span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 26</B><BR>Distance between two fragments = 4 <BR>Clone size = 8<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/Basic_Test.py"<BR>The first line is 524</TD><TD></TD><TD>Source file "pov/tests/Basic_Test.py"<BR>The first line is 541</TD></TR><TR>
+<TD>
+first = str(self.sut)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+first = str(self.sut)</TD>
+</TR>
+<TR>
+<TD>
+second = ('foo {') + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+second = ('foo {') + (os.linesep)</TD>
+</TR>
+<TR>
+<TD>
+second += ('  1, 2, 3') + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+second += ('  1, 2, 3') + (os.linesep)</TD>
+</TR>
+<TR>
+<TD>
+second += ('  4') + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+second += ('  4') + (os.linesep)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);">'  5'</span>) + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);">'  bar {'</span>) + (os.linesep)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);">'  6'</span>) + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);">'  }'</span>) + (os.linesep)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);">'  bar 7'</span>) + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);">'  6'</span>) + (os.linesep)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);">'}'</span>) + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);">'  bar 7'</span>) + (os.linesep)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 27</B><BR>Distance between two fragments = 3 <BR>Clone size = 8<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 641</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 780</TD></TR><TR>
+<TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">HeightField</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">JuliaFractal</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)</TD>
+</TR>
+<TR>
+<TD>
+<span style="font-family: monospace;">def&nbsp; test_create_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; 'Value&nbsp; of&nbsp; Argument&nbsp; 0&nbsp; is&nbsp; expectet&nbsp; to&nbsp; be&nbsp; type&nbsp; <span style="color:rgb(255,0,0);">st</span>r&nbsp; but&nbsp; got&nbsp; <span style="color:rgb(255,0,0);">float</span>'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; <span style="color:rgb(255,0,0);">Height</span>F<span style="color:rgb(255,0,0);">ield</span>(<span style="color:rgb(255,0,0);">1.0</span>)<span style="color:rgb(255,0,0);"></span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">def&nbsp; test_create_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; 'Value&nbsp; of&nbsp; Argument&nbsp; 0&nbsp; is&nbsp; expectet&nbsp; to&nbsp; be&nbsp; type&nbsp; <span style="color:rgb(255,0,0);">Vecto</span>r&nbsp; but&nbsp; got&nbsp; <span style="color:rgb(255,0,0);">str</span>'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; <span style="color:rgb(255,0,0);">Julia</span>F<span style="color:rgb(255,0,0);">ractal</span>(<span style="color:rgb(255,0,0);">'foo'</span>)<span style="color:rgb(255,0,0);"></span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 28</B><BR>Distance between two fragments = 4 <BR>Clone size = 8<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/other/Camera.py"<BR>The first line is 56</TD><TD></TD><TD>Source file "pov/atmeff/Fog.py"<BR>The first line is 37</TD></TR><TR>
+<TD>
+def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);">Camera</span>, self).__init__(<span style="color: rgb(255, 0, 0);">'camera'</span>, [], opts, kwargs)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);">Fog</span>, self).__init__(<span style="color: rgb(255, 0, 0);">'fog'</span>, [], opts, kwargs)</TD>
+</TR>
+<TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = []<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = []<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+</TR>
+<TR>
+<TD>
+def _check_opts(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_opts = [<span style="color: rgb(255, 0, 0);">'Angle'</span>, <span style="color: rgb(255, 0, 0);">'Normal'</span>, 'Transformation']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_opts(valid_opts)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_opts(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_opts = [<span style="color: rgb(255, 0, 0);">'Color'</span>, <span style="color: rgb(255, 0, 0);">'Turbulence'</span>, 'Transformation']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_opts(valid_opts)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 29</B><BR>Distance between two fragments = 3 <BR>Clone size = 7<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/Basic_Test.py"<BR>The first line is 544</TD><TD></TD><TD>Source file "pov/tests/Basic_Test.py"<BR>The first line is 526</TD></TR><TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);">'  4'</span>) + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);">'  1, 2, 3'</span>) + (os.linesep)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'  bar {'</span></span>) + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);">'  4'</span>) + (os.linesep)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'  }'</span></span>) + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'  5'</span></span>) + (os.linesep)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);">'  6'</span>) + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);">'  6'</span>) + (os.linesep)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);">'  bar 7'</span>) + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);">'  bar 7'</span>) + (os.linesep)</TD>
+</TR>
+<TR>
+<TD>
+second += ('}') + (os.linesep)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);">'}'</span>) + (os.linesep)</TD>
+</TR>
+<TR>
+<TD>
+self.assertEqual(first, second)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+self.assertEqual(first, second)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 30</B><BR>Distance between two fragments = 2 <BR>Clone size = 7<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 368</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 299</TD></TR><TR>
+<TD>
+self.sut = Cone(Vector(1, 2, 3), <span style="color: rgb(255, 0, 0);">4</span>, Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'foo'</span></span></span></span>, ObjectModifier(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'foo'</span></span></span></span>), <span style="color: rgb(255, 0, 0);">open</span>=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">0.3</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+self.sut = Cone(Vector(1, 2, 3), 4, Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);">8</span>, ObjectModifier(<span style="color: rgb(255, 0, 0);">'foo'</span>), open=<span style="color: rgb(255, 0, 0);">True</span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 31</B><BR>Distance between two fragments = 2 <BR>Clone size = 7<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 351</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 299</TD></TR><TR>
+<TD>
+self.sut = Cone(Vector(1, 2, 3), <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'foo'</span></span></span></span>, Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);">8</span>, ObjectModifier(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'foo'</span></span></span></span>), <span style="color: rgb(255, 0, 0);">open</span>=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">0.3</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+self.sut = Cone(Vector(1, 2, 3), <span style="color: rgb(255, 0, 0);">4</span>, Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);">8</span>, ObjectModifier(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'foo'</span></span>), open=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">True</span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 32</B><BR>Distance between two fragments = 1 <BR>Clone size = 7<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 334</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 299</TD></TR><TR>
+<TD>
+self.sut = Cone(Vector(1, 2, 3), <span style="color: rgb(255, 0, 0);">4</span>, Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);">8</span>, ObjectModifier(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'foo'</span></span>), <span style="color: rgb(255, 0, 0);">open</span>=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">0.3</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+self.sut = Cone(Vector(1, 2, 3), <span style="color: rgb(255, 0, 0);">4</span>, Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);">8</span>, ObjectModifier(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'foo'</span></span>), open=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">True</span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 33</B><BR>Distance between two fragments = 1 <BR>Clone size = 7<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 318</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 299</TD></TR><TR>
+<TD>
+self.sut = Cone(Vector(1, 2, 3), <span style="color: rgb(255, 0, 0);">4</span>, Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);">8</span>, ObjectModifier(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'foo'</span></span>), <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">foo</span></span></span></span>=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">True</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+self.sut = Cone(Vector(1, 2, 3), <span style="color: rgb(255, 0, 0);">4</span>, Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);">8</span>, ObjectModifier(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'foo'</span></span>), <span style="color: rgb(255, 0, 0);">open</span>=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">True</span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 34</B><BR>Distance between two fragments = 1 <BR>Clone size = 8<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/EndToEnd_Test.py"<BR>The first line is 588</TD><TD></TD><TD>Source file "pov/examples/basic_scene.py"<BR>The first line is 89</TD></TR><TR>
+<TD>
+fix = SceneFile('test.pov')</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix = SceneFile('test.pov')</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Version(3.6))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(Version(3.6))</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Include(<span style="color: rgb(255, 0, 0);">'fixture/colors.inc'</span>))</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+fix.append(Include(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'colors.inc'</span></span>))</TD>
+</TR>
+<TR>
+<TD>
+fix.append(GlobalSettings(assumed_gamma=1.0))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(GlobalSettings(assumed_gamma=1.0))</TD>
+</TR>
+<TR>
+<TD>
+image_width = 800</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+image_width = 800</TD>
+</TR>
+<TR>
+<TD>
+image_height = 600</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+image_height = 600</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 35</B><BR>Distance between two fragments = 0 <BR>Clone size = 8<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/EndToEnd_Test.py"<BR>The first line is 588</TD><TD></TD><TD>Source file "pov/tests/EndToEnd_Test.py"<BR>The first line is 309</TD></TR><TR>
+<TD>
+fix = SceneFile('test.pov')</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix = SceneFile('test.pov')</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Version(3.6))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(Version(3.6))</TD>
+</TR>
+<TR>
+<TD>
+fix.append(Include(<span style="color: rgb(255, 0, 0);">'fixture/colors.inc'</span>))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(Include(<span style="color: rgb(255, 0, 0);">'fixture/colors.inc'</span>))</TD>
+</TR>
+<TR>
+<TD>
+fix.append(GlobalSettings(assumed_gamma=1.0))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+fix.append(GlobalSettings(assumed_gamma=1.0))</TD>
+</TR>
+<TR>
+<TD>
+image_width = 800</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+image_width = 800</TD>
+</TR>
+<TR>
+<TD>
+image_height = 600</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+image_height = 600</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 36</B><BR>Distance between two fragments = 4 <BR>Clone size = 7<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/Texture_Test.py"<BR>The first line is 104</TD><TD></TD><TD>Source file "pov/tests/Texture_Test.py"<BR>The first line is 123</TD></TR><TR>
+<TD>
+class <span style="color: rgb(255, 0, 0);">NormalTestCase</span>(unittest.TestCase):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);">Normal</span>(<span style="color: rgb(255, 0, 0);">bumps</span>=<span style="color: rgb(255, 0, 0);">0.1</span>, diffuse=0.9)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">Normal</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, BlockObject)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)<BR>
+</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+class <span style="color: rgb(255, 0, 0);">PigmentTestCase</span>(unittest.TestCase):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);">Pigment</span>(<span style="color: rgb(255, 0, 0);">bozo</span>=<span style="color: rgb(255, 0, 0);">True</span>, diffuse=0.9)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">Pigment</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, BlockObject)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)<BR>
+</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 37</B><BR>Distance between two fragments = 4 <BR>Clone size = 7<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 681</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 694</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">smooth</span>_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; '&nbsp; '.join((<BR>
+&nbsp; &nbsp; &nbsp; 'Value&nbsp; of&nbsp; KW&nbsp; Argument&nbsp; <span style="color:rgb(255,0,0);">smooth&nbsp; is</span>',<BR>
+&nbsp; &nbsp; &nbsp; '<span style="color:rgb(255,0,0);">expectet&nbsp; </span>to&nbsp; be&nbsp; type&nbsp; bool&nbsp; but&nbsp; got&nbsp; str'<BR>
+&nbsp; &nbsp; ))<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; HeightField('pov/tests/fixture/test.gif',&nbsp; <span style="color:rgb(255,0,0);">smooth</span>='bar')<span style="color:rgb(255,0,0);"></span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">hierarchy</span>_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; '&nbsp; '.join((<BR>
+&nbsp; &nbsp; &nbsp; 'Value&nbsp; of&nbsp; KW&nbsp; Argument&nbsp; <span style="color:rgb(255,0,0);">hierarchy&nbsp; is&nbsp; expectet</span>',<BR>
+&nbsp; &nbsp; &nbsp; '<span style="color:rgb(255,0,0);"></span>to&nbsp; be&nbsp; type&nbsp; bool&nbsp; but&nbsp; got&nbsp; str'<BR>
+&nbsp; &nbsp; ))<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; HeightField('pov/tests/fixture/test.gif',&nbsp; <span style="color:rgb(255,0,0);">hierarchy</span>='bar')<span style="color:rgb(255,0,0);"></span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 38</B><BR>Distance between two fragments = 4 <BR>Clone size = 7<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 694</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 746</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">hierarchy_</span>w<span style="color:rgb(255,0,0);">rong_type</span>(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; '&nbsp; '.join((<BR>
+&nbsp; &nbsp; &nbsp; 'Value&nbsp; of&nbsp; KW&nbsp; Argument&nbsp; <span style="color:rgb(255,0,0);">hierar</span>c<span style="color:rgb(255,0,0);">h</span>y<span style="color:rgb(255,0,0);">&nbsp; is&nbsp; expectet',<BR>
+&nbsp; &nbsp; &nbsp; 'to&nbsp; be&nbsp; type&nbsp; bool</span>&nbsp; but&nbsp; got&nbsp; str'<BR>
+&nbsp; &nbsp; ))<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; HeightField('pov/tests/fixture/test.gif',&nbsp; <span style="color:rgb(255,0,0);">hierarchy</span>='bar')<span style="color:rgb(255,0,0);"></span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);"></span>w<span style="color:rgb(255,0,0);">aterlevel_not_float</span>(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; '&nbsp; '.join((<BR>
+&nbsp; &nbsp; &nbsp; 'Value&nbsp; of&nbsp; KW&nbsp; Argument&nbsp; <span style="color:rgb(255,0,0);">water_level&nbsp; is',<BR>
+&nbsp; &nbsp; &nbsp; 'expe</span>c<span style="color:rgb(255,0,0);">tet&nbsp; to&nbsp; be&nbsp; t</span>y<span style="color:rgb(255,0,0);">pe&nbsp; float</span>&nbsp; but&nbsp; got&nbsp; str'<BR>
+&nbsp; &nbsp; ))<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; HeightField('pov/tests/fixture/test.gif',&nbsp; <span style="color:rgb(255,0,0);">water_level</span>='bar')<span style="color:rgb(255,0,0);"></span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 39</B><BR>Distance between two fragments = 4 <BR>Clone size = 7<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 681</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 746</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);">smooth_</span>w<span style="color:rgb(255,0,0);">rong_type</span>(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; '&nbsp; '.join((<BR>
+&nbsp; &nbsp; &nbsp; 'Value&nbsp; of&nbsp; KW&nbsp; Argument&nbsp; <span style="color:rgb(255,0,0);">smooth</span>&nbsp; is',<BR>
+&nbsp; &nbsp; &nbsp; 'expectet&nbsp; to&nbsp; be&nbsp; type&nbsp; <span style="color:rgb(255,0,0);">bool</span>&nbsp; but&nbsp; got&nbsp; str'<BR>
+&nbsp; &nbsp; ))<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; HeightField('pov/tests/fixture/test.gif',&nbsp; <span style="color:rgb(255,0,0);">smooth</span>='bar')<span style="color:rgb(255,0,0);"></span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">def&nbsp; test_create_<span style="color:rgb(255,0,0);"></span>w<span style="color:rgb(255,0,0);">aterlevel_not_float</span>(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; Test&nbsp; parameter&nbsp; syntax<BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; '&nbsp; '.join((<BR>
+&nbsp; &nbsp; &nbsp; 'Value&nbsp; of&nbsp; KW&nbsp; Argument&nbsp; <span style="color:rgb(255,0,0);">water_level</span>&nbsp; is',<BR>
+&nbsp; &nbsp; &nbsp; 'expectet&nbsp; to&nbsp; be&nbsp; type&nbsp; <span style="color:rgb(255,0,0);">float</span>&nbsp; but&nbsp; got&nbsp; str'<BR>
+&nbsp; &nbsp; ))<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; HeightField('pov/tests/fixture/test.gif',&nbsp; <span style="color:rgb(255,0,0);">water_level</span>='bar')<span style="color:rgb(255,0,0);"></span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 40</B><BR>Distance between two fragments = 4 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/Texture_Test.py"<BR>The first line is 53</TD><TD></TD><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 150</TD></TR><TR>
+<TD>
+lsp = os.linesep</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+lsp = os.linesep</TD>
+</TR>
+<TR>
+<TD>
+first = str(self.sut)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+first = str(self.sut)</TD>
+</TR>
+<TR>
+<TD>
+second = (<span style="color: rgb(255, 0, 0);">'finish {'</span>) + (lsp)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second = (<span style="color: rgb(255, 0, 0);">'#default {'</span>) + (lsp)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);">'  ambient 0.1'</span>) + (lsp)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);">'  finish {'</span>) + (lsp)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);">'  diffuse 0.9'</span>) + (lsp)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);">'    ambient 0.43'</span>) + (lsp)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);">'}'</span>) + (lsp)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);">'  }'</span>) + (lsp)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 41</B><BR>Distance between two fragments = 0 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/include/colors_inc.py"<BR>The first line is 301</TD><TD></TD><TD>Source file "pov/include/colors_inc.py"<BR>The first line is 257</TD></TR><TR>
+<TD>
+red = incolor.red</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+red = incolor.red</TD>
+</TR>
+<TR>
+<TD>
+green = incolor.green</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+green = incolor.green</TD>
+</TR>
+<TR>
+<TD>
+blue = incolor.blue</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+blue = incolor.blue</TD>
+</TR>
+<TR>
+<TD>
+minimum = min(red, min(green, blue))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+minimum = min(red, min(green, blue))</TD>
+</TR>
+<TR>
+<TD>
+maximum = max(red, max(green, blue))</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+maximum = max(red, max(green, blue))</TD>
+</TR>
+<TR>
+<TD>
+span = (maximum) - (minimum)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+span = (maximum) - (minimum)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 42</B><BR>Distance between two fragments = 4 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/infinite_solid/Plane.py"<BR>The first line is 38</TD><TD></TD><TD>Source file "pov/object_modifier/Rotate.py"<BR>The first line is 30</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);">['Vector', ('float', 'int')]</span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Normal vector has more or less than 3 dimensions'</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);">['Vector']</span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">3</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector RVector has more or less than 4 dimensions'</span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 43</B><BR>Distance between two fragments = 4 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/infinite_solid/Plane.py"<BR>The first line is 38</TD><TD></TD><TD>Source file "pov/object_modifier/Translate.py"<BR>The first line is 30</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">['Vector', ('float', 'int')]</span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Normal vector has more or less than 3 dimensions'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);">['Vector']</span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">3</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector TVector has more or less than 3 dimensions'</span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 44</B><BR>Distance between two fragments = 4 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/infinite_solid/Plane.py"<BR>The first line is 38</TD><TD></TD><TD>Source file "pov/object_modifier/Scale.py"<BR>The first line is 30</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">['Vector', ('float', 'int')]</span></span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Normal vector has more or less than 3 dimensions'</span></span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);">['Vector']</span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">3</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector SVector has more or less than 3 dimensions'</span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 45</B><BR>Distance between two fragments = 4 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Sphere.py"<BR>The first line is 35</TD><TD></TD><TD>Source file "pov/object_modifier/Rotate.py"<BR>The first line is 30</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);">['Vector', ('float', 'int')]</span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Center point Vector has more or less than 3 dimensions'</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">['Vector']</span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">3</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector RVector has more or less than 4 dimensions'</span></span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 46</B><BR>Distance between two fragments = 4 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Sphere.py"<BR>The first line is 35</TD><TD></TD><TD>Source file "pov/object_modifier/Translate.py"<BR>The first line is 30</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">['Vector', ('float', 'int')]</span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Center point Vector has more or less than 3 dimensions'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">['Vector']</span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">3</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector TVector has more or less than 3 dimensions'</span></span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 47</B><BR>Distance between two fragments = 4 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Sphere.py"<BR>The first line is 35</TD><TD></TD><TD>Source file "pov/object_modifier/Scale.py"<BR>The first line is 30</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">['Vector', ('float', 'int')]</span></span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Center point Vector has more or less than 3 dimensions'</span></span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">['Vector']</span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">3</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector SVector has more or less than 3 dimensions'</span></span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 48</B><BR>Distance between two fragments = 2 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/JuliaFractal.py"<BR>The first line is 51</TD><TD></TD><TD>Source file "pov/object_modifier/Rotate.py"<BR>The first line is 30</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);">4</span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Vector param4d has more or less than 4 dimensions'</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">['Vector']</span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">3</span></span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector RVector has more or less than 4 dimensions'</span></span></span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 49</B><BR>Distance between two fragments = 2 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/JuliaFractal.py"<BR>The first line is 51</TD><TD></TD><TD>Source file "pov/object_modifier/Matrix.py"<BR>The first line is 32</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">4</span></span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector param4d has more or less than 4 dimensions'</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">12</span></span></span></span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector RVector has more or less than 12 dimensions'</span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 50</B><BR>Distance between two fragments = 2 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/JuliaFractal.py"<BR>The first line is 51</TD><TD></TD><TD>Source file "pov/object_modifier/Translate.py"<BR>The first line is 30</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">4</span></span></span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector param4d has more or less than 4 dimensions'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">['Vector']</span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">3</span></span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector TVector has more or less than 3 dimensions'</span></span></span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 51</B><BR>Distance between two fragments = 2 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/JuliaFractal.py"<BR>The first line is 51</TD><TD></TD><TD>Source file "pov/object_modifier/Scale.py"<BR>The first line is 30</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = ['Vector']<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">4</span></span></span></span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector param4d has more or less than 4 dimensions'</span></span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">['Vector']</span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;if not len(self.args[0]) == <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">3</span></span>:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector SVector has more or less than 3 dimensions'</span></span></span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 52</B><BR>Distance between two fragments = 4 <BR>Clone size = 7<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/texture/Finish.py"<BR>The first line is 16</TD><TD></TD><TD>Source file "pov/texture/Reflection.py"<BR>The first line is 17</TD></TR><TR>
+<TD>
+class <span style="color: rgb(255, 0, 0);">Finish</span>(BlockObject):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);">Finish</span>, self).__init__(<span style="color: rgb(255, 0, 0);">'finish'</span>, <span style="color: rgb(255, 0, 0);">()</span>, opts, kwargs)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (<span style="color: rgb(255, 0, 0);">'conserve_energy'</span> in self.kwargs) and (self.kwargs[<span style="color: rgb(255, 0, 0);">'conserve_energy'</span>] is True):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.kwargs[<span style="color: rgb(255, 0, 0);">'conserve_energy'</span>]<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.args.append(<span style="color: rgb(255, 0, 0);">'conserve_energy'</span>)<BR>
+</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+class <span style="color: rgb(255, 0, 0);">Reflection</span>(BlockObject):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);">Reflection</span>, self).__init__(<span style="color: rgb(255, 0, 0);">'reflection'</span>, <span style="color: rgb(255, 0, 0);">[]</span>, opts, kwargs)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (<span style="color: rgb(255, 0, 0);">'metallic'</span> in self.kwargs) and (self.kwargs[<span style="color: rgb(255, 0, 0);">'metallic'</span>] is True):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.kwargs[<span style="color: rgb(255, 0, 0);">'metallic'</span>]<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.args.append(<span style="color: rgb(255, 0, 0);">'metallic'</span>)<BR>
+</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 53</B><BR>Distance between two fragments = 4 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 750</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 711</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; SdlSyntaxException,<BR>
+&nbsp; '&nbsp; '.join((<BR>
+&nbsp; &nbsp; 'Value&nbsp; of&nbsp; KW&nbsp; Argument&nbsp; <span style="color:rgb(255,0,0);">water</span>_<span style="color:rgb(255,0,0);">level&nbsp; is</span>',<BR>
+&nbsp; &nbsp; '<span style="color:rgb(255,0,0);">expectet&nbsp; </span>to&nbsp; be&nbsp; type&nbsp; <span style="color:rgb(255,0,0);">float</span>&nbsp; but&nbsp; got&nbsp; <span style="color:rgb(255,0,0);">str</span>'<BR>
+&nbsp; ))<BR>
+):<BR>
+&nbsp; self.sut&nbsp; =&nbsp; HeightField('pov/tests/fixture/test.gif',&nbsp; <span style="color:rgb(255,0,0);">water</span>_<span style="color:rgb(255,0,0);">level</span>=<span style="color:rgb(255,0,0);">'bar')</span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; SdlSyntaxException,<BR>
+&nbsp; '&nbsp; '.join((<BR>
+&nbsp; &nbsp; 'Value&nbsp; of&nbsp; KW&nbsp; Argument&nbsp; <span style="color:rgb(255,0,0);">hf</span>_<span style="color:rgb(255,0,0);">type&nbsp; is&nbsp; expectet</span>',<BR>
+&nbsp; &nbsp; '<span style="color:rgb(255,0,0);"></span>to&nbsp; be&nbsp; type&nbsp; <span style="color:rgb(255,0,0);">str</span>&nbsp; but&nbsp; got&nbsp; <span style="color:rgb(255,0,0);">float</span>'<BR>
+&nbsp; ))<BR>
+):<BR>
+&nbsp; self.sut&nbsp; =&nbsp; HeightField('pov/tests/fixture/test.gif',&nbsp; <span style="color:rgb(255,0,0);">hf</span>_<span style="color:rgb(255,0,0);">type</span>=<span style="color:rgb(255,0,0);">0.2)</span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 54</B><BR>Distance between two fragments = 4 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 711</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 698</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; SdlSyntaxException,<BR>
+&nbsp; '&nbsp; '.join((<BR>
+&nbsp; &nbsp; 'Value&nbsp; of&nbsp; KW&nbsp; Argument&nbsp; h<span style="color:rgb(255,0,0);">f_type</span>&nbsp; is&nbsp; expectet',<BR>
+&nbsp; &nbsp; 'to&nbsp; be&nbsp; type&nbsp; <span style="color:rgb(255,0,0);">str&nbsp; but&nbsp; got&nbsp; float</span>'<BR>
+&nbsp; ))<BR>
+):<BR>
+&nbsp; self.sut&nbsp; =&nbsp; HeightField('pov/tests/fixture/test.gif',&nbsp; h<span style="color:rgb(255,0,0);">f_type</span>=<span style="color:rgb(255,0,0);">0.2)</span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; SdlSyntaxException,<BR>
+&nbsp; '&nbsp; '.join((<BR>
+&nbsp; &nbsp; 'Value&nbsp; of&nbsp; KW&nbsp; Argument&nbsp; h<span style="color:rgb(255,0,0);">ierarchy</span>&nbsp; is&nbsp; expectet',<BR>
+&nbsp; &nbsp; 'to&nbsp; be&nbsp; type&nbsp; <span style="color:rgb(255,0,0);">bool&nbsp; but&nbsp; got&nbsp; str</span>'<BR>
+&nbsp; ))<BR>
+):<BR>
+&nbsp; self.sut&nbsp; =&nbsp; HeightField('pov/tests/fixture/test.gif',&nbsp; h<span style="color:rgb(255,0,0);">ierarchy</span>=<span style="color:rgb(255,0,0);">'bar')</span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 55</B><BR>Distance between two fragments = 4 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 711</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 685</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; SdlSyntaxException,<BR>
+&nbsp; '&nbsp; '.join((<BR>
+&nbsp; &nbsp; 'Value&nbsp; of&nbsp; KW&nbsp; Argument&nbsp; <span style="color:rgb(255,0,0);">hf_</span>type&nbsp; <span style="color:rgb(255,0,0);">is&nbsp; expectet',<BR>
+&nbsp; &nbsp; 'to&nbsp; be&nbsp; type&nbsp; str&nbsp; but&nbsp; got&nbsp; float</span>'<BR>
+&nbsp; ))<BR>
+):<BR>
+&nbsp; self.sut&nbsp; =&nbsp; HeightField('pov/tests/fixture/test.gif',&nbsp; <span style="color:rgb(255,0,0);">hf_type</span>=<span style="color:rgb(255,0,0);">0.2)</span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; SdlSyntaxException,<BR>
+&nbsp; '&nbsp; '.join((<BR>
+&nbsp; &nbsp; 'Value&nbsp; of&nbsp; KW&nbsp; Argument&nbsp; <span style="color:rgb(255,0,0);">smooth&nbsp; is',<BR>
+&nbsp; &nbsp; 'expectet&nbsp; to&nbsp; be&nbsp; </span>type&nbsp; <span style="color:rgb(255,0,0);">bool&nbsp; but&nbsp; got&nbsp; str</span>'<BR>
+&nbsp; ))<BR>
+):<BR>
+&nbsp; self.sut&nbsp; =&nbsp; HeightField('pov/tests/fixture/test.gif',&nbsp; <span style="color:rgb(255,0,0);">smooth</span>=<span style="color:rgb(255,0,0);">'bar')</span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 56</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/Texture_Test.py"<BR>The first line is 127</TD><TD></TD><TD>Source file "pov/tests/Texture_Test.py"<BR>The first line is 35</TD></TR><TR>
+<TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Pigment</span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">bozo</span></span>=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">True</span></span>, diffuse=0.9)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);">Finish</span>(<span style="color: rgb(255, 0, 0);">ambient</span>=<span style="color: rgb(255, 0, 0);">0.1</span>, diffuse=0.9)</TD>
+</TR>
+<TR>
+<TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Pigment</span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, BlockObject)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">Finish</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, BlockObject)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 57</B><BR>Distance between two fragments = 2 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/Texture_Test.py"<BR>The first line is 108</TD><TD></TD><TD>Source file "pov/tests/Texture_Test.py"<BR>The first line is 35</TD></TR><TR>
+<TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Normal</span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">bumps</span></span>=<span style="color: rgb(255, 0, 0);">0.1</span>, diffuse=0.9)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Finish</span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">ambient</span></span>=<span style="color: rgb(255, 0, 0);">0.1</span>, diffuse=0.9)</TD>
+</TR>
+<TR>
+<TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Normal</span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, BlockObject)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Finish</span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, BlockObject)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 58</B><BR>Distance between two fragments = 1 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/language_directive/LanguageDirective.py"<BR>The first line is 45</TD><TD></TD><TD>Source file "pov/basic/SceneItem.py"<BR>The first line is 152</TD></TR><TR>
+<TD>
+if args is None:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;args = []</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+if args is None:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;args = []</TD>
+</TR>
+<TR>
+<TD>
+if opts is None:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;opts = []</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+if opts is None:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;opts = []</TD>
+</TR>
+<TR>
+<TD>
+if kwargs is None:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs = <span style="color: rgb(255, 0, 0);">[]</span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if kwargs is None:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs = <span style="color: rgb(255, 0, 0);">{}</span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 59</B><BR>Distance between two fragments = 2 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 606</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 495</TD></TR><TR>
+<TD>
+self.sut = Cylinder(Vector(1, 2, 3), Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'foo'</span></span></span>, ObjectModifier(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'foo'</span></span></span>), <span style="color: rgb(255, 0, 0);">open</span>=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">0.3</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+self.sut = Cylinder(Vector(1, 2, 3), Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);">8</span>, ObjectModifier(<span style="color: rgb(255, 0, 0);">'foo'</span>), open=<span style="color: rgb(255, 0, 0);">True</span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 60</B><BR>Distance between two fragments = 1 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 528</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 495</TD></TR><TR>
+<TD>
+self.sut = Cylinder(Vector(1, 2, 3), Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);">8</span>, ObjectModifier(<span style="color: rgb(255, 0, 0);">'foo'</span>), <span style="color: rgb(255, 0, 0);">open</span>=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'foo'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+self.sut = Cylinder(Vector(1, 2, 3), Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);">8</span>, ObjectModifier(<span style="color: rgb(255, 0, 0);">'foo'</span>), open=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">True</span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 61</B><BR>Distance between two fragments = 1 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 513</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 495</TD></TR><TR>
+<TD>
+self.sut = Cylinder(Vector(1, 2, 3), Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);">8</span>, ObjectModifier(<span style="color: rgb(255, 0, 0);">'foo'</span>), <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">bar</span></span></span>=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">True</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+self.sut = Cylinder(Vector(1, 2, 3), Vector(5, 6, 7), <span style="color: rgb(255, 0, 0);">8</span>, ObjectModifier(<span style="color: rgb(255, 0, 0);">'foo'</span>), <span style="color: rgb(255, 0, 0);">open</span>=<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">True</span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 62</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/other/Camera.py"<BR>The first line is 62</TD><TD></TD><TD>Source file "pov/global_settings/Photons.py"<BR>The first line is 37</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = []<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = []<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+</TR>
+<TR>
+<TD>
+def _check_opts(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_opts = [<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Angle'</span></span>, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Normal'</span></span>, <span style="color: rgb(255, 0, 0);">'Transformation'</span>]<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_opts(valid_opts)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_opts(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_opts = [<span style="color: rgb(255, 0, 0);">'Gather'</span>, <span style="color: rgb(255, 0, 0);">'Media'</span>, <span style="color: rgb(255, 0, 0);">'ExpandThresholds'</span>]<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_opts(valid_opts)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 63</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/atmeff/Fog.py"<BR>The first line is 43</TD><TD></TD><TD>Source file "pov/global_settings/Photons.py"<BR>The first line is 37</TD></TR><TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = []<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = []<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+</TR>
+<TR>
+<TD>
+def _check_opts(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_opts = [<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Color'</span></span>, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Turbulence'</span></span>, <span style="color: rgb(255, 0, 0);">'Transformation'</span>]<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_opts(valid_opts)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_opts(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_opts = [<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Gather'</span></span>, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Media'</span></span>, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'ExpandThresholds'</span></span>]<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_opts(valid_opts)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 64</B><BR>Distance between two fragments = 4 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/Basic_Test.py"<BR>The first line is 82</TD><TD></TD><TD>Source file "pov/tests/Basic_Test.py"<BR>The first line is 60</TD></TR><TR>
+<TD>
+self.assertEqual(type(self.sut.<span style="color: rgb(255, 0, 0);">kwargs</span>), <span style="color: rgb(255, 0, 0);">dict</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+self.assertEqual(type(self.sut.<span style="color: rgb(255, 0, 0);">opts</span>), <span style="color: rgb(255, 0, 0);">list</span>)</TD>
+</TR>
+<TR>
+<TD>
+self.assertEqual(self.sut.<span style="color: rgb(255, 0, 0);">kwargs</span>, <span style="color: rgb(255, 0, 0);">{'baz': item}</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+self.assertEqual(self.sut.<span style="color: rgb(255, 0, 0);">opts</span>, <span style="color: rgb(255, 0, 0);">[second]</span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 65</B><BR>Distance between two fragments = 0 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Cone.py"<BR>The first line is 47</TD><TD></TD><TD>Source file "pov/finite_solid/Cylinder.py"<BR>The first line is 43</TD></TR><TR>
+<TD>
+if not isinstance(basepoint, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException('Parameter basepoint is not of type Vector')</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+if not isinstance(basepoint, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException('Parameter basepoint is not of type Vector')</TD>
+</TR>
+<TR>
+<TD>
+if not len(basepoint) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException('Base point Vector has more or less than 3 dimensions')</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+if not len(basepoint) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException('Base point Vector has more or less than 3 dimensions')</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 66</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Cylinder.py"<BR>The first line is 43</TD><TD></TD><TD>Source file "pov/finite_solid/Cylinder.py"<BR>The first line is 51</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);">basepoint</span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Parameter basepoint is not of type Vector'</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);">cappoint</span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Parameter cappoint is not of type Vector'</span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);">basepoint</span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Base point Vector has more or less than 3 dimensions'</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);">cappoint</span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Cap point Vector has more or less than 3 dimensions'</span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 67</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Cylinder.py"<BR>The first line is 43</TD><TD></TD><TD>Source file "pov/finite_solid/Cone.py"<BR>The first line is 59</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">basepoint</span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter basepoint is not of type Vector'</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);">cappoint</span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Parameter cappoint is not of type Vector'</span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">basepoint</span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Base point Vector has more or less than 3 dimensions'</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);">cappoint</span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Cap point Vector has more or less than 3 dimensions'</span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 68</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Cone.py"<BR>The first line is 47</TD><TD></TD><TD>Source file "pov/finite_solid/Cylinder.py"<BR>The first line is 51</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);">basepoint</span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Parameter basepoint is not of type Vector'</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">cappoint</span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter cappoint is not of type Vector'</span></span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);">basepoint</span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Base point Vector has more or less than 3 dimensions'</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">cappoint</span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Cap point Vector has more or less than 3 dimensions'</span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 69</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Cone.py"<BR>The first line is 47</TD><TD></TD><TD>Source file "pov/finite_solid/Cone.py"<BR>The first line is 59</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">basepoint</span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter basepoint is not of type Vector'</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">cappoint</span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter cappoint is not of type Vector'</span></span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">basepoint</span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Base point Vector has more or less than 3 dimensions'</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">cappoint</span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Cap point Vector has more or less than 3 dimensions'</span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 70</B><BR>Distance between two fragments = 1 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/basic/SceneItem.py"<BR>The first line is 299</TD><TD></TD><TD>Source file "pov/basic/SceneItem.py"<BR>The first line is 291</TD></TR><TR>
+<TD>
+if not self.args[i].__class__.__name__ <span style="color: rgb(255, 0, 0);">==</span> valid_args[i]:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;msg = 'Value of Argument %s is expectet to be type %s'<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;msg += ' but got %s'<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException((msg) % ((i, valid_args[i], self.args[i].__class__.__name__)))</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not self.args[i].__class__.__name__ <span style="color: rgb(255, 0, 0);">in</span> valid_args[i]:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;msg = 'Value of Argument %s is expectet to be type %s'<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;msg += ' but got %s'<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException((msg) % ((i, valid_args[i], self.args[i].__class__.__name__)))</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 71</B><BR>Distance between two fragments = 3 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/Texture_Test.py"<BR>The first line is 95</TD><TD></TD><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 150</TD></TR><TR>
+<TD>
+lsp = os.linesep</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+lsp = os.linesep</TD>
+</TR>
+<TR>
+<TD>
+first = str(self.sut)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+first = str(self.sut)</TD>
+</TR>
+<TR>
+<TD>
+second = (<span style="color: rgb(255, 0, 0);">'color_map {'</span>) + (lsp)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second = (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'#default {'</span></span>) + (lsp)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);">'  [0.3 color rgb <0.1, 0.2, 0.3>]'</span>) + (lsp)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'  finish {'</span></span>) + (lsp)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);">'}'</span>) + (lsp)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'    ambient 0.43'</span></span>) + (lsp)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 72</B><BR>Distance between two fragments = 3 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/Texture_Test.py"<BR>The first line is 95</TD><TD></TD><TD>Source file "pov/tests/Texture_Test.py"<BR>The first line is 53</TD></TR><TR>
+<TD>
+lsp = os.linesep</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+lsp = os.linesep</TD>
+</TR>
+<TR>
+<TD>
+first = str(self.sut)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+first = str(self.sut)</TD>
+</TR>
+<TR>
+<TD>
+second = (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'color_map {'</span></span>) + (lsp)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second = (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'finish {'</span></span>) + (lsp)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'  [0.3 color rgb <0.1, 0.2, 0.3>]'</span></span>) + (lsp)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'  ambient 0.1'</span></span>) + (lsp)</TD>
+</TR>
+<TR>
+<TD>
+second += (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'}'</span></span>) + (lsp)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+second += (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'  diffuse 0.9'</span></span>) + (lsp)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 73</B><BR>Distance between two fragments = 2 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 116</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 787</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">def&nbsp; test_create_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);">@</span>T<span style="color:rgb(255,0,0);">odo:&nbsp; DocString</span><BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; 'Value&nbsp; of&nbsp; Argument&nbsp; 0&nbsp; is&nbsp; expectet&nbsp; to&nbsp; be&nbsp; type&nbsp; <span style="color:rgb(255,0,0);">float</span>&nbsp; but&nbsp; got&nbsp; str'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; <span style="color:rgb(255,0,0);">Version</span>('foo')<span style="color:rgb(255,0,0);"></span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">def&nbsp; test_create_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);"></span>T<span style="color:rgb(255,0,0);">est&nbsp; parameter&nbsp; syntax</span><BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; 'Value&nbsp; of&nbsp; Argument&nbsp; 0&nbsp; is&nbsp; expectet&nbsp; to&nbsp; be&nbsp; type&nbsp; <span style="color:rgb(255,0,0);">Vector</span>&nbsp; but&nbsp; got&nbsp; str'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; <span style="color:rgb(255,0,0);">JuliaFractal</span>('foo')<span style="color:rgb(255,0,0);"></span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 74</B><BR>Distance between two fragments = 3 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 116</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 648</TD></TR><TR>
+<TD>
+<span style="font-family: monospace;">def&nbsp; test_create_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);">@</span>T<span style="color:rgb(255,0,0);">odo:&nbsp; DocString</span><BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; 'Value&nbsp; of&nbsp; Argument&nbsp; 0&nbsp; is&nbsp; expectet&nbsp; to&nbsp; be&nbsp; type&nbsp; <span style="color:rgb(255,0,0);">float</span>&nbsp; but&nbsp; got&nbsp; <span style="color:rgb(255,0,0);">str</span>'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; <span style="color:rgb(255,0,0);">Version</span>(<span style="color:rgb(255,0,0);">'foo'</span>)<span style="color:rgb(255,0,0);"></span></span></TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="font-family: monospace;">def&nbsp; test_create_wrong_type(self):<BR>
+&nbsp; '''<BR>
+&nbsp; &nbsp; <span style="color:rgb(255,0,0);"></span>T<span style="color:rgb(255,0,0);">est&nbsp; parameter&nbsp; syntax</span><BR>
+&nbsp; '''<BR>
+&nbsp; with&nbsp; self.assertRaisesRegexp(<BR>
+&nbsp; &nbsp; SdlSyntaxException,<BR>
+&nbsp; &nbsp; 'Value&nbsp; of&nbsp; Argument&nbsp; 0&nbsp; is&nbsp; expectet&nbsp; to&nbsp; be&nbsp; type&nbsp; <span style="color:rgb(255,0,0);">str</span>&nbsp; but&nbsp; got&nbsp; <span style="color:rgb(255,0,0);">float</span>'<BR>
+&nbsp; ):<BR>
+&nbsp; &nbsp; self.sut&nbsp; =&nbsp; <span style="color:rgb(255,0,0);">HeightField</span>(<span style="color:rgb(255,0,0);">1.0</span>)<span style="color:rgb(255,0,0);"></span></span></TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 75</B><BR>Distance between two fragments = 2 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/include/colors_inc.py"<BR>The first line is 233</TD><TD></TD><TD>Source file "pov/include/colors_inc.py"<BR>The first line is 280</TD></TR><TR>
+<TD>
+<span style="color: rgb(255, 0, 0);">incolor</span> = Color(vector)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="color: rgb(255, 0, 0);">hsvft</span> = Color(vector)</TD>
+</TR>
+<TR>
+<TD>
+hue = <span style="color: rgb(255, 0, 0);">incolor</span>.red</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+hue = <span style="color: rgb(255, 0, 0);">hsvft</span>.red</TD>
+</TR>
+<TR>
+<TD>
+saturation = <span style="color: rgb(255, 0, 0);">incolor</span>.green</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+saturation = <span style="color: rgb(255, 0, 0);">hsvft</span>.green</TD>
+</TR>
+<TR>
+<TD>
+<span style="color: rgb(255, 0, 0);">lightness</span> = <span style="color: rgb(255, 0, 0);">incolor</span>.blue</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+<span style="color: rgb(255, 0, 0);">value</span> = <span style="color: rgb(255, 0, 0);">hsvft</span>.blue</TD>
+</TR>
+<TR>
+<TD>
+sat_rgb = ch2rgb(hue)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+sat_rgb = ch2rgb(hue)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 76</B><BR>Distance between two fragments = 2 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 635</TD><TD></TD><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 29</TD></TR><TR>
+<TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);">HeightField</span>(<span style="color: rgb(255, 0, 0);">'pov/tests/fixture/test.gif'</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);">LanguageDirective</span>(<span style="color: rgb(255, 0, 0);">'#foo'</span>)</TD>
+</TR>
+<TR>
+<TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">HeightField</span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">LanguageDirective</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 77</B><BR>Distance between two fragments = 4 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 635</TD><TD></TD><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 94</TD></TR><TR>
+<TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">HeightField</span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'pov/tests/fixture/test.gif'</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Version</span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">3.6</span></span>)</TD>
+</TR>
+<TR>
+<TD>
+def <span style="color: rgb(255, 0, 0);">test_creation</span>(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">HeightField</span></span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">SceneItem</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def <span style="color: rgb(255, 0, 0);">test_create</span>(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Version</span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">LanguageDirective</span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 78</B><BR>Distance between two fragments = 4 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 635</TD><TD></TD><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 55</TD></TR><TR>
+<TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">HeightField</span></span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'pov/tests/fixture/test.gif'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Include</span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'fixture/test.inc'</span></span>)</TD>
+</TR>
+<TR>
+<TD>
+def <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">test_creation</span></span>(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">HeightField</span></span></span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">SceneItem</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def <span style="color: rgb(255, 0, 0);">test_create</span>(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Include</span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">LanguageDirective</span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 79</B><BR>Distance between two fragments = 4 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 29</TD><TD></TD><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 94</TD></TR><TR>
+<TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">LanguageDirective</span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'#foo'</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Version</span></span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">3.6</span></span></span>)</TD>
+</TR>
+<TR>
+<TD>
+def <span style="color: rgb(255, 0, 0);">test_creation</span>(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">LanguageDirective</span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">SceneItem</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">test_create</span></span>(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Version</span></span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">LanguageDirective</span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 80</B><BR>Distance between two fragments = 4 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 29</TD><TD></TD><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 55</TD></TR><TR>
+<TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">LanguageDirective</span></span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'#foo'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Include</span></span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'fixture/test.inc'</span></span></span>)</TD>
+</TR>
+<TR>
+<TD>
+def <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">test_creation</span></span>(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">LanguageDirective</span></span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">SceneItem</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">test_create</span></span>(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Include</span></span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">LanguageDirective</span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 81</B><BR>Distance between two fragments = 4 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/Other_Test.py"<BR>The first line is 47</TD><TD></TD><TD>Source file "pov/tests/LanguageDirective_Test.py"<BR>The first line is 29</TD></TR><TR>
+<TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);">LightSource</span>(<span style="color: rgb(255, 0, 0);">(1, 2, 3)</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">LanguageDirective</span></span></span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'#foo'</span></span></span></span>)</TD>
+</TR>
+<TR>
+<TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">LightSource</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">test_creation</span></span>(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">LanguageDirective</span></span></span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">SceneItem</span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 82</B><BR>Distance between two fragments = 4 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/Other_Test.py"<BR>The first line is 47</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 635</TD></TR><TR>
+<TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">LightSource</span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">(1, 2, 3)</span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">HeightField</span></span></span></span>(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'pov/tests/fixture/test.gif'</span></span></span></span>)</TD>
+</TR>
+<TR>
+<TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">LightSource</span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">test_creation</span></span>(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">HeightField</span></span></span></span></span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">SceneItem</span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 83</B><BR>Distance between two fragments = 1 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/Other_Test.py"<BR>The first line is 29</TD><TD></TD><TD>Source file "pov/tests/GlobalSettings_Test.py"<BR>The first line is 25</TD></TR><TR>
+<TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);">Camera</span>()</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def setUp(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.sut = <span style="color: rgb(255, 0, 0);">GlobalSettings</span>()</TD>
+</TR>
+<TR>
+<TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">Camera</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def test_creation(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, <span style="color: rgb(255, 0, 0);">GlobalSettings</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertIsInstance(self.sut, SceneItem)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 84</B><BR>Distance between two fragments = 2 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/basic/SceneItem.py"<BR>The first line is 354</TD><TD></TD><TD>Source file "pov/basic/SceneItem.py"<BR>The first line is 363</TD></TR><TR>
+<TD>
+def <span style="color: rgb(255, 0, 0);">_format_args</span>(self, <span style="color: rgb(255, 0, 0);">args</span>):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(255, 0, 0);">args</span> = list(<span style="color: rgb(255, 0, 0);">args</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;for i in range(len(<span style="color: rgb(255, 0, 0);">args</span>)):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(255, 0, 0);">args</span>[i] = self.map_arg(<span style="color: rgb(255, 0, 0);">args</span>[i])<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<span style="color: rgb(255, 0, 0);">args</span> = self.flatten(<span style="color: rgb(255, 0, 0);">args</span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def <span style="color: rgb(255, 0, 0);">_format_opts</span>(self, <span style="color: rgb(255, 0, 0);">opts</span>):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(255, 0, 0);">opts</span> = list(<span style="color: rgb(255, 0, 0);">opts</span>)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;for i in range(len(<span style="color: rgb(255, 0, 0);">opts</span>)):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(255, 0, 0);">opts</span>[i] = self.map_arg(<span style="color: rgb(255, 0, 0);">opts</span>[i])<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.<span style="color: rgb(255, 0, 0);">opts</span> = self.flatten(<span style="color: rgb(255, 0, 0);">opts</span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 85</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Cylinder.py"<BR>The first line is 43</TD><TD></TD><TD>Source file "pov/finite_solid/Box.py"<BR>The first line is 64</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">basepoint</span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter basepoint is not of type Vector'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);">vector1</span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Parameter v1 not of type Vector'</span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">basepoint</span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Base point Vector has more or less than 3 dimensions'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);">vector1</span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Vector v1 has more or less than 3 dimensions'</span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 86</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Cylinder.py"<BR>The first line is 51</TD><TD></TD><TD>Source file "pov/finite_solid/Box.py"<BR>The first line is 70</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">cappoint</span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter cappoint is not of type Vector'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);">vector2</span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Parameter v2 not of type Vector'</span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">cappoint</span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Cap point Vector has more or less than 3 dimensions'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);">vector2</span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);">'Vector v2 has more or less than 3 dimensions'</span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 87</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Cone.py"<BR>The first line is 59</TD><TD></TD><TD>Source file "pov/finite_solid/Box.py"<BR>The first line is 70</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">cappoint</span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter cappoint is not of type Vector'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector2</span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter v2 not of type Vector'</span></span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">cappoint</span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Cap point Vector has more or less than 3 dimensions'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector2</span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector v2 has more or less than 3 dimensions'</span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 88</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Cone.py"<BR>The first line is 47</TD><TD></TD><TD>Source file "pov/finite_solid/Box.py"<BR>The first line is 64</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">basepoint</span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter basepoint is not of type Vector'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector1</span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter v1 not of type Vector'</span></span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">basepoint</span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Base point Vector has more or less than 3 dimensions'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector1</span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector v1 has more or less than 3 dimensions'</span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 89</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Box.py"<BR>The first line is 64</TD><TD></TD><TD>Source file "pov/finite_solid/Cylinder.py"<BR>The first line is 51</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector1</span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter v1 not of type Vector'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">cappoint</span></span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter cappoint is not of type Vector'</span></span></span></span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector1</span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector v1 has more or less than 3 dimensions'</span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">cappoint</span></span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Cap point Vector has more or less than 3 dimensions'</span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 90</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Box.py"<BR>The first line is 64</TD><TD></TD><TD>Source file "pov/finite_solid/Cone.py"<BR>The first line is 59</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector1</span></span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter v1 not of type Vector'</span></span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">cappoint</span></span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter cappoint is not of type Vector'</span></span></span></span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector1</span></span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector v1 has more or less than 3 dimensions'</span></span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">cappoint</span></span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Cap point Vector has more or less than 3 dimensions'</span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 91</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Cylinder.py"<BR>The first line is 43</TD><TD></TD><TD>Source file "pov/finite_solid/Box.py"<BR>The first line is 70</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">basepoint</span></span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter basepoint is not of type Vector'</span></span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector2</span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter v2 not of type Vector'</span></span></span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">basepoint</span></span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Base point Vector has more or less than 3 dimensions'</span></span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector2</span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector v2 has more or less than 3 dimensions'</span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 92</B><BR>Distance between two fragments = 3 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Box.py"<BR>The first line is 64</TD><TD></TD><TD>Source file "pov/finite_solid/Box.py"<BR>The first line is 70</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector1</span></span></span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter v1 not of type Vector'</span></span></span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector2</span></span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter v2 not of type Vector'</span></span></span></span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector1</span></span></span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector v1 has more or less than 3 dimensions'</span></span></span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector2</span></span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector v2 has more or less than 3 dimensions'</span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 93</B><BR>Distance between two fragments = 3 <BR>Clone size = 6<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Cone.py"<BR>The first line is 47</TD><TD></TD><TD>Source file "pov/finite_solid/Box.py"<BR>The first line is 70</TD></TR><TR>
+<TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">basepoint</span></span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter basepoint is not of type Vector'</span></span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not isinstance(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector2</span></span></span></span></span>, Vector):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Parameter v2 not of type Vector'</span></span></span></span></span>)</TD>
+</TR>
+<TR>
+<TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">basepoint</span></span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Base point Vector has more or less than 3 dimensions'</span></span></span></span>)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+if not len(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">vector2</span></span></span></span></span>) == 3:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;raise SdlSyntaxException(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'Vector v2 has more or less than 3 dimensions'</span></span></span></span></span>)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 94</B><BR>Distance between two fragments = 4 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 959</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 944</TD></TR><TR>
+<TD>
+self.sut = Sphere(Vector(1, 2, 3), <span style="color: rgb(255, 0, 0);">8</span>, <span style="color: rgb(255, 0, 0);">'foo'</span>, open=0.3)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+self.sut = Sphere(Vector(1, 2, 3), <span style="color: rgb(255, 0, 0);">'foo'</span>, <span style="color: rgb(255, 0, 0);">ObjectModifier('foo')</span>, open=0.3)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 95</B><BR>Distance between two fragments = 3 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/other/Camera.py"<BR>The first line is 56</TD><TD></TD><TD>Source file "pov/finite_solid/Blob.py"<BR>The first line is 33</TD></TR><TR>
+<TD>
+def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Camera</span></span>, self).__init__(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'camera'</span></span>, [], opts, kwargs)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);">Blob</span>, self).__init__(<span style="color: rgb(255, 0, 0);">'blob'</span>, [], opts, kwargs)</TD>
+</TR>
+<TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);">[]</span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);">['']</span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 96</B><BR>Distance between two fragments = 3 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/other/Camera.py"<BR>The first line is 56</TD><TD></TD><TD>Source file "pov/atmeff/SkySphere.py"<BR>The first line is 27</TD></TR><TR>
+<TD>
+def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Camera</span></span></span>, self).__init__(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'camera'</span></span></span>, [], opts, kwargs)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);">SkySphere</span>, self).__init__(<span style="color: rgb(255, 0, 0);">'sky_sphere'</span>, [], opts, kwargs)</TD>
+</TR>
+<TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">[]</span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);">['']</span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 97</B><BR>Distance between two fragments = 2 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Blob.py"<BR>The first line is 33</TD><TD></TD><TD>Source file "pov/atmeff/SkySphere.py"<BR>The first line is 27</TD></TR><TR>
+<TD>
+def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Blob</span></span>, self).__init__(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'blob'</span></span>, [], opts, kwargs)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">SkySphere</span></span>, self).__init__(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'sky_sphere'</span></span>, [], opts, kwargs)</TD>
+</TR>
+<TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);">['']</span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+<TD style="width: 10px;" BGCOLOR=AQUA> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);">['']</span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 98</B><BR>Distance between two fragments = 3 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/finite_solid/Blob.py"<BR>The first line is 33</TD><TD></TD><TD>Source file "pov/atmeff/Fog.py"<BR>The first line is 37</TD></TR><TR>
+<TD>
+def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Blob</span></span></span>, self).__init__(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'blob'</span></span></span>, [], opts, kwargs)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Fog</span></span>, self).__init__(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'fog'</span></span>, [], opts, kwargs)</TD>
+</TR>
+<TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">['']</span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);">[]</span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 99</B><BR>Distance between two fragments = 3 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/atmeff/SkySphere.py"<BR>The first line is 27</TD><TD></TD><TD>Source file "pov/atmeff/Fog.py"<BR>The first line is 37</TD></TR><TR>
+<TD>
+def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">SkySphere</span></span></span>, self).__init__(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'sky_sphere'</span></span></span>, [], opts, kwargs)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def __init__(self, *opts, **kwargs):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;super(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">Fog</span></span></span>, self).__init__(<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'fog'</span></span></span>, [], opts, kwargs)</TD>
+</TR>
+<TR>
+<TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">['']</span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def _check_arguments(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;valid_args = <span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">[]</span></span><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self._validate_args(valid_args)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 100</B><BR>Distance between two fragments = 2 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 1004</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 829</TD></TR><TR>
+<TD>
+def test_to_string(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second = (<span style="color: rgb(255, 0, 0);">'lathe {'</span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += (<span style="color: rgb(255, 0, 0);">'  linear_spline, 2, <1, 2, 3>, <1, 2, 3>'</span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += ('}') + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(str(self.sut), second)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def test_to_string(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second = (<span style="color: rgb(255, 0, 0);">'julia_fractal {'</span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += (<span style="color: rgb(255, 0, 0);">'  <1, 2, 3, 4>'</span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += ('}') + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(str(self.sut), second)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 101</B><BR>Distance between two fragments = 2 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 1004</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 759</TD></TR><TR>
+<TD>
+def test_to_string(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second = (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'lathe {'</span></span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'  linear_spline, 2, <1, 2, 3>, <1, 2, 3>'</span></span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += ('}') + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(str(self.sut), second)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def test_to_string(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second = (<span style="color: rgb(255, 0, 0);">'height_field {'</span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += (<span style="color: rgb(255, 0, 0);">'  "fixture/test.gif"'</span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += ('}') + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(str(self.sut), second)</TD>
+</TR>
+</TABLE> </P> <HR><BR>
+<P><B>Clone # 102</B><BR>Distance between two fragments = 2 <BR>Clone size = 5<TABLE NOWRAP WIDTH=100% BORDER=1><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 829</TD><TD></TD><TD>Source file "pov/tests/FiniteSolid_Test.py"<BR>The first line is 759</TD></TR><TR>
+<TD>
+def test_to_string(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second = (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'julia_fractal {'</span></span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'  <1, 2, 3, 4>'</span></span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += ('}') + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(str(self.sut), second)</TD>
+<TD style="width: 10px;" BGCOLOR=RED> </TD><TD>
+def test_to_string(self):<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second = (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'height_field {'</span></span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += (<span style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);">'  "fixture/test.gif"'</span></span>) + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;second += ('}') + (os.linesep)<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;self.assertEqual(str(self.sut), second)</TD>
+</TR>
+</TABLE> </P> <HR>
+    
+    
+    <HR>
+    Clone Digger is aimed to find software clones in Python and Java programs. It is provided under the GPL license and can be downloaded from the site <a href="http://clonedigger.sourceforge.net">http://clonedigger.sourceforge.net</a>
+    </BODY>
+</HTML>
