@@ -12,6 +12,7 @@ Plain Tasks ToDo List
 
 import subprocess
 import os
+import time
 
 def main():
     """
@@ -42,7 +43,7 @@ def main():
 
         processed += line + os.linesep
 
-    outfile = open('metrics/prospector.todo', 'w')
+    outfile = open('metrics/prospector_'+ str(time.time()) +'.todo', 'w')
     outfile.write(processed)
     outfile.close()
 
