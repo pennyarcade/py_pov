@@ -1,16 +1,14 @@
-'''***************************************************************************
-*                                                                            *
-* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)     *
-*                                                                            *
-* 19970623 Lutz Uhlmann                                                      *
-* 20071226 Lutz Uhlmann fixed stud orientation                               *
-*                                                                            *
-* This file is in no way related to the LEGO(tm) Group.                      *
-* It is provided for private non-commercial use only.                        *
-*                                                                            *
-* lg_3022: Plate 2 x 2                                                       *
-*                                                                            *
-***************************************************************************'''
+"""
+LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)
+
+19970623 Lutz Uhlmann
+20071226 Lutz Uhlmann fixed stud orientation
+
+This file is in no way related to the LEGO(tm) Group.
+It is provided for private non-commercial use only.
+
+lg_3022: Plate 2 x 2
+"""
 
 from lgeo.include.common.lg_defs import LG_CORNER_SPACE, LG_BRICK_WIDTH
 from lgeo.include.common.lg_defs import LG_PLATE_HEIGHT, lg_plate_cylinder
