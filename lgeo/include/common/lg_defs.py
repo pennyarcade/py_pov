@@ -1,23 +1,21 @@
-'''**************************************************************************/
-*                                                                           */
-* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)    */
-*                                                                           */
-* 19970623 Lutz Uhlmann                                                     */
-* 2002xxxx Lutz Uhlmann added LGEO logo derived from Larc C. Hassings L3Logo*/
-* 20071112 Lutz Uhlmann added lg_knob_dot for patterned baseplates          */
-* 20071124 Lutz Uhlmann added lg_quality for L3P comptibility               */
-* 20071129 Lutz Uhlmann added lg_tech_knob_logo for lg_quality > 3          */
-* 20080229 Lutz Uhlmann added lg_test variable for development              */
-* 20080720 Lutz Uhlmann added lg_studs variable                             */
-*                                                                           */
-* This file is in no way related to the LEGO(tm) Group.                     */
-* It is provided for private non-commercial use only.                       */
-*                                                                           */
-* lg_defs: Definitions of standard sub-parts and sizes                      */
-*                                                                           */
-***************************************************************************'''
+"""
+LGEO Libray Include File.
 
-import math
+(C) lgeo@digitalbricks.org (Lutz Uhlmann)
+
+19970623 Lutz Uhlmann
+2002xxxx Lutz Uhlmann added LGEO logo derived from Larc C. Hassings L3Logo
+20071112 Lutz Uhlmann added lg_knob_dot for patterned baseplates
+20071124 Lutz Uhlmann added lg_quality for L3P comptibility
+20071129 Lutz Uhlmann added lg_tech_knob_logo for lg_quality > 3
+20080229 Lutz Uhlmann added lg_test variable for development
+20080720 Lutz Uhlmann added lg_studs variable
+
+This file is in no way related to the LEGO(tm) Group.
+It is provided for private non-commercial use only.
+
+lg_defs: Definitions of standard sub-parts and sizes
+"""
 
 from lgeo.config.lgeo_cfg import *
 
@@ -56,20 +54,20 @@ LG_BRICK_HEIGHT = 0.96
 LG_BRICK_INNER_HEIGHT = 0.84
 LG_PLATE_HEIGHT = 0.32
 LG_PLATE_INNER_HEIGHT = 0.2
-LG_TOP_HEIGHT = LG_BRICK_HEIGHT-LG_BRICK_INNER_HEIGHT
-LG_CYLINDER_RADIUS = (sqrt(2)*LG_BRICK_WIDTH/2-LG_KNOB_RADIUS)
-LG_CYLINDER_WALL_WIDTH = (LG_CYLINDER_RADIUS-LG_KNOB_RADIUS)
+LG_TOP_HEIGHT = LG_BRICK_HEIGHT - LG_BRICK_INNER_HEIGHT
+LG_CYLINDER_RADIUS = (sqrt(2) * LG_BRICK_WIDTH / 2 - LG_KNOB_RADIUS)
+LG_CYLINDER_WALL_WIDTH = (LG_CYLINDER_RADIUS - LG_KNOB_RADIUS)
 LG_CORNER_SPACE = 0.016   # 0.025
 LG_KNOB_CORNER_SPACE = LG_CORNER_SPACE * 1.5
 LG_CROSSAXLE_WIDTH = 0.18
-LG_GRID_WIDTH = LG_BRICK_WIDTH/sqrt(2)-2*LG_KNOB_RADIUS
+LG_GRID_WIDTH = LG_BRICK_WIDTH / sqrt(2) - 2 * LG_KNOB_RADIUS
 LG_E = 0.01
 
 
 '''***************************************************************************
 Custom Shorthands
 ***************************************************************************'''
-LDU = 0.8/20
+LDU = 0.8 / 20
 LGBW = LG_BRICK_WIDTH
 LGBH = LG_BRICK_HEIGHT
 LGPH = LG_PLATE_HEIGHT
@@ -97,7 +95,7 @@ def lego_logo_text():
         Sphere(Vector(59, 0, -24), 6),
         Cylinder(Vector(-59, 0, -36), Vector(59, 0, -62), 6),
     ),
-    if (lg_stud_logo > 0):
+    if lg_stud_logo > 0:
         letter_e.append(
             Translate(Vector(0, 0, 60))
         )
@@ -121,12 +119,12 @@ def lego_logo_text():
         Cylinder(Vector(0, 0, 49), Vector(0, 0, 34), 6),
         Sphere(Vector(0, 0, 34), 6),
     )
-    if (lg_stud_logo > 0):
+    if lg_stud_logo > 0:
         letter_g.append(
             Translate(Vector(0, 0, -65))
         )
 
-    if (lg_quality > 2):
+    if lg_quality > 2:
         return Union(
             Union(
                 # Letter L
@@ -176,7 +174,7 @@ def lego_logo_text_clear():
         Sphere(Vector(59, 0, -24), 6),
         Cylinder(Vector(-59, 0, -36), Vector(59, 0, -62), 6),
     ),
-    if (lg_stud_logo > 0):
+    if lg_stud_logo > 0:
         letter_e.append(
             Translate(Vector(0, 0, 60))
         )
@@ -200,7 +198,7 @@ def lego_logo_text_clear():
         Cylinder(Vector(0, 0, 49), Vector(0, 0, 34), 6),
         Sphere(Vector(0, 0, 34), 6),
     ),
-    if (lg_stud_logo > 0):
+    if lg_stud_logo > 0:
         letter_g.append(
             Translate(Vector(0, 0, -65))
         )
@@ -231,9 +229,9 @@ def lego_logo_text_clear():
             ),
             Cylinder(Vector(44.05, 0, 99), Vector(-35.95, 0, 117), 6),
         ),
-        Scale(4.5/128),
-        Rotate(y*90),
-        Rotate(x*-90),
+        Scale(4.5 / 128),
+        Rotate(y * 90),
+        Rotate(x * -90),
         Scale(Vector(-1, 1, 1)),
         Scale(.08 * LG_KNOB_RADIUS * 2)
     ),
@@ -249,25 +247,25 @@ def lg_knob():
     result = Union(
         Union(
             Cylinder(
-                Vector(0, 0, LG_KNOB_HEIGHT-LG_KNOB_CORNER_SPACE),
+                Vector(0, 0, LG_KNOB_HEIGHT - LG_KNOB_CORNER_SPACE),
                 Vector(0, 0, -LG_E),
                 (LG_KNOB_RADIUS)
             ),
             Cylinder(
                 Vector(0, 0, LG_KNOB_HEIGHT),
                 Vector(0, 0, -LG_E),
-                (LG_KNOB_RADIUS-LG_KNOB_CORNER_SPACE)
+                (LG_KNOB_RADIUS - LG_KNOB_CORNER_SPACE)
             ),
         ),
         Torus(
-            (LG_KNOB_RADIUS-LG_KNOB_CORNER_SPACE),
+            (LG_KNOB_RADIUS - LG_KNOB_CORNER_SPACE),
             (LG_KNOB_CORNER_SPACE),
             Rotate(Vector(90, 0, 0)),
-            Translate(Vector(0, 0, (LG_KNOB_HEIGHT-LG_KNOB_CORNER_SPACE)))
+            Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_KNOB_CORNER_SPACE)))
         )
     )
 
-    if (lg_quality > 2):
+    if lg_quality > 2:
         result.append(
             Object(
                 lego_logo_text(),
@@ -285,8 +283,8 @@ lg_knob_dot = Intersection(
         Translate(Vector(0, 0, 0.001))
     ),
     Cylinder(
-        Vector(0, 0, LG_KNOB_HEIGHT-0.001),
-        Vector(0, 0, LG_KNOB_HEIGHT+0.1),
+        Vector(0, 0, LG_KNOB_HEIGHT - 0.001),
+        Vector(0, 0, LG_KNOB_HEIGHT + 0.1),
         LG_KNOB_INNER_RADIUS
     )
 )
@@ -297,7 +295,7 @@ lg_tech_knob = Union(
     Difference(
         Union(
             Cylinder(
-                Vector(0, 0, LG_KNOB_HEIGHT-LG_CORNER_SPACE),
+                Vector(0, 0, LG_KNOB_HEIGHT - LG_CORNER_SPACE),
                 Vector(0, 0, -LG_E),
                 (LG_KNOB_RADIUS)
             ),
@@ -305,32 +303,32 @@ lg_tech_knob = Union(
                 Cylinder(
                     Vector(0, 0, LG_KNOB_HEIGHT),
                     Vector(0, 0, -LG_E),
-                    (LG_KNOB_RADIUS-LG_CORNER_SPACE)
+                    (LG_KNOB_RADIUS - LG_CORNER_SPACE)
                 ),
                 Cylinder(
-                    Vector(0, 0, LG_KNOB_HEIGHT+LG_E),
-                    Vector(0, 0, -2*LG_E),
-                    (LG_KNOB_INNER_RADIUS+LG_CORNER_SPACE)
+                    Vector(0, 0, LG_KNOB_HEIGHT + LG_E),
+                    Vector(0, 0, -2 * LG_E),
+                    (LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE)
                 )
             )
         ),
         Cylinder(
-            Vector(0, 0, (LG_KNOB_HEIGHT+2*LG_E)),
-            Vector(0, 0, -3*LG_E),
+            Vector(0, 0, (LG_KNOB_HEIGHT + 2 * LG_E)),
+            Vector(0, 0, -3 * LG_E),
             (LG_KNOB_INNER_RADIUS)
         )
     ),
     Torus(
-        (LG_KNOB_INNER_RADIUS+LG_CORNER_SPACE),
+        (LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE),
         (LG_CORNER_SPACE),
         Rotate(Vector(90, 0, 0)),
-        Translate(Vector(0, 0, (LG_KNOB_HEIGHT-LG_CORNER_SPACE)))
+        Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_CORNER_SPACE)))
     ),
     Torus(
-        (LG_KNOB_RADIUS-LG_CORNER_SPACE),
+        (LG_KNOB_RADIUS - LG_CORNER_SPACE),
         (LG_CORNER_SPACE),
         Rotate(Vector(90, 0, 0)),
-        Translate(Vector(0, 0, (LG_KNOB_HEIGHT-LG_CORNER_SPACE)))
+        Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_CORNER_SPACE)))
     )
 )
 
@@ -369,7 +367,7 @@ lg_brick_cylinder = Union(
         )
     ),
     Torus(
-        (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
+        (LG_CYLINDER_RADIUS - LG_CYLINDER_WALL_WIDTH/2),
         (LG_CYLINDER_WALL_WIDTH/2),
         Rotate(Vector(90, 0, 0)),
         Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)))
@@ -392,7 +390,7 @@ lg_plate_cylinder = Union(
         )
     ),
     Torus(
-        (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
+        (LG_CYLINDER_RADIUS - LG_CYLINDER_WALL_WIDTH/2),
         (LG_CYLINDER_WALL_WIDTH/2),
         Rotate(Vector(90, 0, 0)),
         Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)))
@@ -428,7 +426,7 @@ lg_support_wall = Box(
     Vector(-LG_CYLINDER_WALL_WIDTH/2, -LG_E, 0.225),
     Vector(
         LG_CYLINDER_WALL_WIDTH/2,
-        LG_BRICK_WIDTH-LG_CYLINDER_RADIUS-LG_WALL_WIDTH+LG_E,
+        LG_BRICK_WIDTH-LG_CYLINDER_RADIUS - LG_WALL_WIDTH+LG_E,
         LG_BRICK_HEIGHT
     )
 )
@@ -450,21 +448,21 @@ def lg_knob_clear():
     result = Merge(
         Merge(
             Cylinder(
-                Vector(0, 0, LG_KNOB_HEIGHT-LG_KNOB_CORNER_SPACE),
+                Vector(0, 0, LG_KNOB_HEIGHT - LG_KNOB_CORNER_SPACE),
                 Vector(0, 0, -LG_E),
                 (LG_KNOB_RADIUS)
             ),
             Cylinder(
                 Vector(0, 0, LG_KNOB_HEIGHT),
                 Vector(0, 0, -LG_E),
-                (LG_KNOB_RADIUS-LG_KNOB_CORNER_SPACE)
+                (LG_KNOB_RADIUS - LG_KNOB_CORNER_SPACE)
             )
         ),
         Torus(
-            (LG_KNOB_RADIUS-LG_KNOB_CORNER_SPACE),
+            (LG_KNOB_RADIUS - LG_KNOB_CORNER_SPACE),
             (LG_KNOB_CORNER_SPACE),
             Rotate(Vector(90, 0, 0)),
-            Translate(Vector(0, 0, (LG_KNOB_HEIGHT-LG_KNOB_CORNER_SPACE)))
+            Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_KNOB_CORNER_SPACE)))
         )
     )
 
@@ -481,7 +479,7 @@ lg_tech_knob_clear = Merge(
     Difference(
         Merge(
             Cylinder(
-                Vector(0, 0, LG_KNOB_HEIGHT-LG_CORNER_SPACE),
+                Vector(0, 0, LG_KNOB_HEIGHT - LG_CORNER_SPACE),
                 Vector(0, 0, -LG_E),
                 (LG_KNOB_RADIUS)
             ),
@@ -489,12 +487,12 @@ lg_tech_knob_clear = Merge(
                 Cylinder(
                     Vector(0, 0, LG_KNOB_HEIGHT),
                     Vector(0, 0, -LG_E),
-                    (LG_KNOB_RADIUS-LG_CORNER_SPACE)
+                    (LG_KNOB_RADIUS - LG_CORNER_SPACE)
                 ),
                 Cylinder(
                     Vector(0, 0, LG_KNOB_HEIGHT+LG_E),
                     Vector(0, 0, -2*LG_E),
-                    (LG_KNOB_INNER_RADIUS+LG_CORNER_SPACE)
+                    (LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE)
                 )
             )
         ),
@@ -505,16 +503,16 @@ lg_tech_knob_clear = Merge(
         )
     ),
     Torus(
-        (LG_KNOB_INNER_RADIUS+LG_CORNER_SPACE),
+        (LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE),
         (LG_CORNER_SPACE),
         Rotate(Vector(90, 0, 0)),
-        Translate(Vector(0, 0, (LG_KNOB_HEIGHT-LG_CORNER_SPACE)))
+        Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_CORNER_SPACE)))
     ),
     Torus(
-        (LG_KNOB_RADIUS-LG_CORNER_SPACE),
+        (LG_KNOB_RADIUS - LG_CORNER_SPACE),
         (LG_CORNER_SPACE),
         Rotate(Vector(90, 0, 0)),
-        Translate(Vector(0, 0, (LG_KNOB_HEIGHT-LG_CORNER_SPACE)))
+        Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_CORNER_SPACE)))
     )
 )
 
@@ -543,7 +541,7 @@ lg_brick_cylinder_clear = Merge(
         ),
     ),
     Torus(
-        (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
+        (LG_CYLINDER_RADIUS - LG_CYLINDER_WALL_WIDTH/2),
         (LG_CYLINDER_WALL_WIDTH/2),
         Rotate(Vector(90, 0, 0)),
         Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)))
@@ -565,7 +563,7 @@ lg_plate_cylinder_clear = Merge(
         ),
     ),
     Torus(
-        (LG_CYLINDER_RADIUS-LG_CYLINDER_WALL_WIDTH/2),
+        (LG_CYLINDER_RADIUS - LG_CYLINDER_WALL_WIDTH/2),
         (LG_CYLINDER_WALL_WIDTH/2),
         Rotate(Vector(90, 0, 0)),
         Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH/2)))
@@ -598,7 +596,7 @@ lg_support_wall_clear = Box(
     Vector(-LG_CYLINDER_WALL_WIDTH/2, -LG_E, 0.225),
     Vector(
         LG_CYLINDER_WALL_WIDTH/2,
-        LG_BRICK_WIDTH-LG_CYLINDER_RADIUS-LG_WALL_WIDTH+LG_E,
+        LG_BRICK_WIDTH-LG_CYLINDER_RADIUS - LG_WALL_WIDTH+LG_E,
         LG_BRICK_HEIGHT
     )
 )

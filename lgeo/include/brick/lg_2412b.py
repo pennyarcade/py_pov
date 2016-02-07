@@ -591,8 +591,8 @@ def solid(length=2, width=1):
                 Box(
                     Vector(0.04, 0.04, 0),
                     Vector(
-                        (length * LG_BRICK_WIDTH-0.04),
-                        (width * LG_BRICK_WIDTH-0.04),
+                        (length * LG_BRICK_WIDTH - 0.04),
+                        (width * LG_BRICK_WIDTH - 0.04),
                         0.04 + LG_E
                     )
                 )
@@ -944,7 +944,8 @@ LG_CORNER_SPACE
  ),
  Cylinder(
   Vector(length * LG_BRICK_WIDTH - LG_CORNER_SPACE,
-    2 * LG_WALL_WIDTH + LG_CORNER_SPACE, LG_PLATE_INNER_HEIGHT - LG_CORNER_SPACE),
+    2 * LG_WALL_WIDTH + LG_CORNER_SPACE,
+    LG_PLATE_INNER_HEIGHT - LG_CORNER_SPACE),
   Vector(length * LG_BRICK_WIDTH - LG_CORNER_SPACE,
     2 * LG_WALL_WIDTH + LG_CORNER_SPACE, LG_PLATE_HEIGHT - LG_CORNER_SPACE),
   LG_CORNER_SPACE
@@ -958,7 +959,8 @@ LG_CORNER_SPACE
  ),
  Cylinder(
   Vector(length * LG_BRICK_WIDTH - LG_CORNER_SPACE,
-    3 * LG_WALL_WIDTH - LG_CORNER_SPACE, LG_PLATE_INNER_HEIGHT - LG_CORNER_SPACE),
+    3 * LG_WALL_WIDTH - LG_CORNER_SPACE,
+    LG_PLATE_INNER_HEIGHT - LG_CORNER_SPACE),
   Vector(length * LG_BRICK_WIDTH - LG_CORNER_SPACE,
     3 * LG_WALL_WIDTH - LG_CORNER_SPACE, LG_PLATE_HEIGHT - LG_CORNER_SPACE),
   LG_CORNER_SPACE
@@ -972,7 +974,8 @@ LG_CORNER_SPACE
  ),
  Cylinder(
   Vector(length * LG_BRICK_WIDTH - LG_CORNER_SPACE,
-    4 * LG_WALL_WIDTH + LG_CORNER_SPACE, LG_PLATE_INNER_HEIGHT - LG_CORNER_SPACE),
+    4 * LG_WALL_WIDTH + LG_CORNER_SPACE,
+    LG_PLATE_INNER_HEIGHT - LG_CORNER_SPACE),
   Vector(length * LG_BRICK_WIDTH - LG_CORNER_SPACE,
     4 * LG_WALL_WIDTH + LG_CORNER_SPACE, LG_PLATE_HEIGHT - LG_CORNER_SPACE),
   LG_CORNER_SPACE
@@ -1064,8 +1067,8 @@ LG_CORNER_SPACE
    ),
    Box(
     Vector(0.04, 0.04, 0),
-    Vector((length * LG_BRICK_WIDTH-0.04),
-        (width * LG_BRICK_WIDTH-0.04), 0.04 + LG_E)
+    Vector((length * LG_BRICK_WIDTH - 0.04),
+        (width * LG_BRICK_WIDTH - 0.04), 0.04 + LG_E)
    ),
   ),
   Union(

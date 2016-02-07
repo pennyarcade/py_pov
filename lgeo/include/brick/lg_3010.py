@@ -1,5 +1,7 @@
 """
-LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)
+LGEO Libray Include File.
+
+(C) lgeo@digitalbricks.org (Lutz Uhlmann)
 
 19970623 Lutz Uhlmann
 20071226 Lutz Uhlmann fixed stud orientation

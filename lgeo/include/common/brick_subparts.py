@@ -1,12 +1,12 @@
-'''***************************************************************************
- Persistence of Vision Ray Tracer Scene Description File
- File: custom_macros.inc
- Vers: 3.6
- Desc: include file with macros to simplify placing of bricks
- Link: -
- Date: 04/2013
- Auth: Chocokiko
-**************************************************************************'''
+"""
+Persistence of Vision Ray Tracer Scene Description File
+File: custom_macros.inc
+Vers: 3.6
+Desc: include file with macros to simplify placing of bricks
+Link: -
+Date: 04/2013
+Auth: Chocokiko
+"""
 
 # ****************************************************************************
 # LGEO Disclaimer
@@ -43,15 +43,13 @@ from lgeo.include.common.lg_defs import LG_BRICK_HEIGHT, lg_brick_column
 
 
 def get_knob_inner_space(length=1, width=1):
-    '''
-        @Todo: Docstring
-    '''
+    """@Todo: DocString."""
     result = Union(
         Box(
             Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LG_CORNER_SPACE),
             Vector(
-                length*LG_BRICK_WIDTH-LG_WALL_WIDTH,
-                width*LG_BRICK_WIDTH-LG_WALL_WIDTH,
+                length * LG_BRICK_WIDTH-LG_WALL_WIDTH,
+                width * LG_BRICK_WIDTH-LG_WALL_WIDTH,
                 LG_PLATE_INNER_HEIGHT
             )
         )
@@ -66,8 +64,8 @@ def get_knob_inner_space(length=1, width=1):
                     lg_knob_inner_space,
                     Translate(
                         Vector(
-                            (ks_x+0.5)*LG_BRICK_WIDTH,
-                            (ks_y+0.5)*LG_BRICK_WIDTH,
+                            (ks_x + 0.5) * LG_BRICK_WIDTH,
+                            (ks_y + 0.5) * LG_BRICK_WIDTH,
                             LG_BRICK_INNER_HEIGHT
                         )
                     )
@@ -80,9 +78,7 @@ def get_knob_inner_space(length=1, width=1):
 
 
 def get_knob_objects(length=1, width=1, height=LG_BRICK_HEIGHT):
-    '''
-        @Todo: Docstring
-    '''
+    """@Todo: DocString."""
     result = Union()
 
     knob_x = 0
@@ -95,8 +91,8 @@ def get_knob_objects(length=1, width=1, height=LG_BRICK_HEIGHT):
                     Rotate(Vector(0, 0, -90)),
                     Translate(
                         Vector(
-                            (0.5+knob_x)*LG_BRICK_WIDTH,
-                            (0.5+knob_y)*LG_BRICK_WIDTH,
+                            (0.5 + knob_x) * LG_BRICK_WIDTH,
+                            (0.5 + knob_y) * LG_BRICK_WIDTH,
                             height
                         )
                     ),
@@ -109,9 +105,7 @@ def get_knob_objects(length=1, width=1, height=LG_BRICK_HEIGHT):
 
 
 def get_brick_coloumn(length=1):
-    '''
-        @Todo: Docstring
-    '''
+    """@Todo: DocString."""
     result = Union()
 
     col_x = 1
@@ -121,8 +115,8 @@ def get_brick_coloumn(length=1):
                 lg_brick_column,
                 Translate(
                     Vector(
-                        col_x*LG_BRICK_WIDTH,
-                        0.5*LG_BRICK_WIDTH,
+                        col_x * LG_BRICK_WIDTH,
+                        0.5 * LG_BRICK_WIDTH,
                         0
                     )
                 ),

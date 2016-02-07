@@ -112,7 +112,9 @@ def solid():
                     Cylinder(
                         Vector(0, 0, 0),
                         Vector(
-                            (0.175 + LG_CORNER_SPACE) / cos(LG_ANGLE * pi / 180),
+                            (0.175 + LG_CORNER_SPACE) / cos(
+                                LG_ANGLE * pi / 180
+                            ),
                             0,
                             0
                         ),
@@ -129,7 +131,9 @@ def solid():
                     Cylinder(
                         Vector(0, 0, 0),
                         Vector(
-                            -(0.175 + LG_CORNER_SPACE) / cos(LG_ANGLE * pi / 180),
+                            -(0.175 + LG_CORNER_SPACE) / cos(
+                                LG_ANGLE * pi / 180
+                            ),
                             0,
                             0
                         ),
@@ -175,7 +179,9 @@ def solid():
                     Cylinder(
                         Vector(0, 0, 0),
                         Vector(
-                            (0.175 + LG_CORNER_SPACE) / cos(LG_ANGLE * pi / 180),
+                            (0.175 + LG_CORNER_SPACE) / cos(
+                                LG_ANGLE * pi / 180
+                            ),
                             0,
                             0
                         ),
@@ -192,7 +198,9 @@ def solid():
                     Cylinder(
                         Vector(0, 0, 0),
                         Vector(
-                            -(0.175 + LG_CORNER_SPACE) / cos(LG_ANGLE * pi / 180),
+                            -(0.175 + LG_CORNER_SPACE) / cos(
+                                LG_ANGLE * pi / 180
+                            ),
                             0,
                             0
                         ),
@@ -259,7 +267,9 @@ def solid():
                     Box(
                         Vector(0, LG_CORNER_SPACE, -0.1 - LG_CORNER_SPACE),
                         Vector(
-                            -(0.175 + LG_CORNER_SPACE) / cos(LG_ANGLE * pi / 180),
+                            -(0.175 + LG_CORNER_SPACE) / cos(
+                                LG_ANGLE * pi / 180
+                            ),
                             -0.08,
                             -LG_PLATE_HEIGHT + LG_CORNER_SPACE
                         ),
@@ -275,7 +285,9 @@ def solid():
                     Box(
                         Vector(0, 0, -0.1),
                         Vector(
-                            -(0.175 + LG_CORNER_SPACE) / cos(LG_ANGLE * pi / 180),
+                            -(0.175 + LG_CORNER_SPACE) / cos(
+                                LG_ANGLE * pi / 180
+                            ),
                             -0.08,
                             -LG_PLATE_HEIGHT
                         ),
@@ -291,7 +303,9 @@ def solid():
                     Box(
                         Vector(0, LG_CORNER_SPACE, -0.1 - LG_CORNER_SPACE),
                         Vector(
-                            (0.175 + LG_CORNER_SPACE) / cos(LG_ANGLE * pi / 180),
+                            (0.175 + LG_CORNER_SPACE) / cos(
+                                LG_ANGLE * pi / 180
+                            ),
                             -0.08,
                             -LG_PLATE_HEIGHT + LG_CORNER_SPACE
                         ),
@@ -307,7 +321,9 @@ def solid():
                     Box(
                         Vector(0, 0, -0.1),
                         Vector(
-                            (0.175 + LG_CORNER_SPACE) / cos(LG_ANGLE * pi / 180),
+                            (0.175 + LG_CORNER_SPACE) / cos(
+                                LG_ANGLE * pi / 180
+                            ),
                             -0.08,
                             -LG_PLATE_HEIGHT
                         ),
@@ -417,7 +433,7 @@ def solid():
                         Union(
                             Box(
                                 Vector(
-                                    0.03, LG_BRICK_WIDTH + 0.56 + LutzG_E, 0
+                                    0.03, LG_BRICK_WIDTH + 0.56 + LG_E, 0
                                     ),
                                 Vector(-0.03, LG_BRICK_WIDTH + 0.3, -0.4 - LG_E)
                             ),

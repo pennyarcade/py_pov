@@ -1,11 +1,12 @@
-'''***************************************************************************
- Persistence of Vision Ray Tracer Scene Description File
- File: custom_macros.inc
- Vers: 3.6
- Desc: include file with macros to simplify placing of bricks
- Link: -
- Date: 04/2013
- Auth: Chocokiko
+"""
+Persistence of Vision Ray Tracer Scene Description File.
+
+File: custom_macros.inc
+Vers: 3.6
+Desc: include file with macros to simplify placing of bricks
+Link: -
+Date: 04/2013
+Auth: Chocokiko
 
 
 LGEO Disclaimer
@@ -17,7 +18,7 @@ Sorry for that, but my understanding of coordinate to this time was a flat
 standard XY coordinate system with a third Z axis coming out of the plane.
 Scaling is to real measurements, where 1 POV-Ray unit is 10mm. So 0.8 is 20
 LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
-***************************************************************************'''
+"""
 
 # #Only load once
 # ifdef(custom_macros)
@@ -94,9 +95,7 @@ from pov.texture.Texture import Texture
 
 
 def UnchangedBrick(brick, texture):
-    '''
-        Create Brick + Texture Object
-    '''
+    """Create Brick + Texture Object"""
     return Object(
         brick,
         Texture(texture)
@@ -104,9 +103,7 @@ def UnchangedBrick(brick, texture):
 
 
 def StdBrick(brick, texture, tx, ty, tz, rx, ry, rz):
-    '''
-        Create rotated + translated Brick object
-    '''
+    """Create rotated + translated Brick object"""
     return Object(
         brick,
         texture,

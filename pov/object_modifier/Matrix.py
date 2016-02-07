@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -16,23 +16,21 @@ from pov.object_modifier.ObjectModifier import ObjectModifier
 
 
 class Matrix(ObjectModifier):
-    '''
-        MATRIX:
-            matrix < F_VAL00, F_VAL01, F_VAL02, F_VAL10, F_VAL11, F_VAL12,
-            F_VAL20, F_VAL21, F_VAL22, F_VAL30, F_VAL31, F_VAL32 >
-    '''
+    """
+    Matrix Object.
+
+    MATRIX:
+        matrix < F_VAL00, F_VAL01, F_VAL02, F_VAL10, F_VAL11, F_VAL12,
+        F_VAL20, F_VAL21, F_VAL22, F_VAL30, F_VAL31, F_VAL32 >
+    """
 
     def __init__(self, rvector):
-        '''
-            Create Matrix object
-        '''
+        """Create Matrix object."""
 
         super(Matrix, self).__init__('matrix', [rvector], [], [])
 
     def _check_arguments(self):
-        '''
-            Argument Syntax checks
-        '''
+        """Argument Syntax checks."""
         valid_args = ['Vector']
 
         self._validate_args(valid_args)
@@ -44,6 +42,7 @@ class Matrix(ObjectModifier):
             )
 
     def __str__(self):
+        """@Todo: DocString."""
         code = ''
 
         code += "  " * self._get_indent() + self.name + ' '

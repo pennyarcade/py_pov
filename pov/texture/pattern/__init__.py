@@ -1,3 +1,1 @@
-'''
-    @TODO: Docstring
-'''
+"""@TODO: Docstring."""

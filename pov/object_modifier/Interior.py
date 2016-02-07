@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -10,28 +10,20 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
-# import os
-# from pov.basic.Vector import Vector
-# from pov.other.SdlSyntaxException import SdlSyntaxException
 from pov.object_modifier.ObjectModifier import ObjectModifier
 
 
 class Interior(ObjectModifier):
-    '''
-        interior VECTOR
-    '''
+    """interior VECTOR."""
 
     def __init__(self, *opts, **kwargs):
-        '''
-            Create Interior object
-        '''
-
+        """Create Interior object."""
         super(Interior, self).__init__('interior', [], opts, kwargs)
 
 #    def _check_arguments(self):
-#        '''
+#        """
 #            Argument Syntax checks
-#        '''
+#        """
 #        valid_args = ['Vector']
 #
 #        self._validate_args(valid_args)

@@ -1,26 +1,25 @@
-"""***************************************************************************
-*                                                                            *
-* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)     *
-*                                                                            *
-* 19970623 Lutz Uhlmann                                                      *
-* 20070929 Lutz Uhlmann changed to use predefined finishes                   *
-* 20070929 Lutz Uhlmann changed to use RGB values from ldconfig.ldr          *
-* 20071124 Lutz Uhlmann added lg_quality for L3P compatibility               *
-*                                                                            *
-* This file is in no way related to the LEGO(tm) Group.                      *
-* It is provided for private non-commercial use only.                        *
-*                                                                            *
-* lg_color: Color Definitions for LGEO POV-Ray Library                       *
-*                                                                            *
-******************************************************************************
+"""
+LGEO Libray Include File.
+
+(C) lgeo@digitalbricks.org (Lutz Uhlmann)
+
+19970623 Lutz Uhlmann
+20070929 Lutz Uhlmann changed to use predefined finishes
+20070929 Lutz Uhlmann changed to use RGB values from ldconfig.ldr
+20071124 Lutz Uhlmann added lg_quality for L3P compatibility
+
+This file is in no way related to the LEGO(tm) Group.
+It is provided for private non-commercial use only.
+
+lg_color: Color Definitions for LGEO POV-Ray Library
 """
 
-#from lgeo.config.lgeo_cfg import *
+# from lgeo.config.lgeo_cfg import *
 
 from pov.basic.Color import Color
 from pov.basic.Vector import Vector
 
-#from pov.include.colors_inc import *
+# from pov.include.colors_inc import *
 
 from pov.object_modifier.Interior import Interior
 
@@ -32,19 +31,19 @@ from pov.texture.Texture import Texture
 
 if lg_quality > 1:
     lg_solid_finish = Finish(
-        ambient = 0.1
+        ambient=0.1
     )
 else:
     lg_solid_finish = Finish(
-        ambient = 0.1,
-        phong = 0.2,
-        phong_size = 20
+        ambient=0.1,
+        phong=0.2,
+        phong_size=20
     )
 
 
 if lg_quality > 1:
     lg_chrome_finish = Finish(
-        ambient = 0.25
+        ambient=0.25
     )
 else:
     lg_chrome_finish = Finish(
@@ -53,7 +52,7 @@ else:
         diffuse = 0.6,
         metallic = True,
         specular = 0.70,
-        roughness = 1  /  100,
+        roughness = 1 / 100,
         reflection = 0.6,
     )
 
@@ -143,7 +142,7 @@ lg_brown = Texture(
 
 # 7
 lg_grey = Texture(
-    Pigment(Color(rgb=Vector(193/255.0, 194/255.0, 193/255.0))),
+    Pigment(Color(rgb=Vector(193 / 255.0, 194 / 255.0, 193 / 255.0))),
     lg_solid_finish
 )
 
@@ -268,7 +267,8 @@ lg_light_purple = Texture(
 
 # Helper to build complex colors
 def get_clear_color(cvector, quality):
-    if (quality > 1):
+    """@Todo: DocString."""
+    if quality > 1:
         return Texture(
             Pigment(
                 Color(rgb=cvector),

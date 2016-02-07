@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-runprospector.py
+runprospector.py.
 
 This script runs prospector and processes the output into a Sublime
 Plain Tasks ToDo List
@@ -16,7 +16,7 @@ import time
 
 def main():
     """
-    Main Fuction
+    Main Fuction.
 
     Does all the work
     """
