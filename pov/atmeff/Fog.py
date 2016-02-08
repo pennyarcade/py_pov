@@ -11,10 +11,10 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 
-from pov.basic.SceneItem import SceneItem
+from pov.basic.BlockObject import BlockObject
 
 
-class Fog(SceneItem):
+class Fog(BlockObject):
     """
     Fog object.
 

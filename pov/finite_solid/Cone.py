@@ -10,6 +10,8 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+from logging import debug
+
 from pov.basic.BlockObject import BlockObject
 from pov.basic.Vector import Vector
 from pov.object_modifier.ObjectModifier import ObjectModifier
@@ -72,11 +74,12 @@ class Cone(BlockObject):
             )
 
         # Make sure only valid Object Modifiers are passed
-        for i in enumerate(opts):
-            if not isinstance(opts[i], ObjectModifier):
+        for i, item in enumerate(opts):
+            if not isinstance(item, ObjectModifier):
                 raise SdlSyntaxException(
                     'Only ObjectModifier objects may be passed as options'
                 )
+            debug(i);
 
         for key, val in kwargs.items():
             if key not in ['open']:

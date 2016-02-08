@@ -63,11 +63,11 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "    diffuse 0.9" + lsep
         ref += "  }" + lsep
         ref += "}" + lsep
-        ref += "#include \"fixture/colors.inc\"" + lsep
-        ref += "#include \"fixture/textures.inc\"" + lsep
+        ref += "#include \"pov/tests/fixture/colors.inc\"" + lsep
+        ref += "#include \"pov/tests/fixture/textures.inc\"" + lsep
         ref += "camera {" + lsep
         ref += "  location <0.0, 1.0, -3.0>" + lsep
-        ref += "  anglsep 75" + lsep
+        ref += "  angle 75" + lsep
         ref += "  right <1.33333333333, 0.0, 0.0>" + lsep
         ref += "  look_at <0.0, 1.0, 0.0>" + lsep
         ref += "}" + lsep
@@ -87,9 +87,9 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "        [1.0 color rgb <0.5, 0.5, 0.5>]" + lsep
         ref += "        [0.7 color rgb <1.0, 1.0, 1.0>]" + lsep
         ref += "      }" + lsep
-        ref += "      scalsep <2.5, 2.5, 3.75>" + lsep
+        ref += "      scale <2.5, 2.5, 3.75>" + lsep
         ref += "      translate <0.0, 0.0, 0.0>" + lsep
-        ref += "      turbulsepnce 0.92" + lsep
+        ref += "      turbulence 0.92" + lsep
         ref += "    }" + lsep
         ref += "    finish {" + lsep
         ref += "      ambient 1.0" + lsep
@@ -97,15 +97,15 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "    }" + lsep
         ref += "  }" + lsep
         ref += "  hollow" + lsep
-        ref += "  scalsep 10000.0" + lsep
+        ref += "  scale 10000.0" + lsep
         ref += "}" + lsep
         ref += "fog {" + lsep
         ref += "  color rgb <0.8, 0.8, 0.8>" + lsep
-        ref += "  distance 50.0" + lsep
+        ref += "  turbulence 1.8" + lsep
         ref += "  fog_offset 0.1" + lsep
         ref += "  fog_alt 1.5" + lsep
         ref += "  fog_type 2" + lsep
-        ref += "  turbulsepnce 1.8" + lsep
+        ref += "  distance 50.0" + lsep
         ref += "}" + lsep
         ref += "plane {" + lsep
         ref += "  <0.0, 1.0, 0.0>, 0.0" + lsep
@@ -115,7 +115,7 @@ class EndToEndTestCase(unittest.TestCase):
         ref += "    }" + lsep
         ref += "    normal {" + lsep
         ref += "      bumps 0.75" + lsep
-        ref += "      scalsep 0.015" + lsep
+        ref += "      scale 0.015" + lsep
         ref += "    }" + lsep
         ref += "    finish {" + lsep
         ref += "      phong 0.1" + lsep
@@ -149,8 +149,8 @@ class EndToEndTestCase(unittest.TestCase):
             )
         )
         fix.append(
-            Include('fixture/colors.inc'),
-            Include('fixture/textures.inc')
+            Include('pov/tests/fixture/colors.inc'),
+            Include('pov/tests/fixture/textures.inc')
         )
 
         # @TODO: Read from Config
@@ -203,10 +203,10 @@ class EndToEndTestCase(unittest.TestCase):
             Fog(
                 Color(rgb=Vector(1, 1, 1))*0.8,
                 fog_type=2,
-                distance=50.0,
+                turbulence=1.8,
                 fog_offset=0.1,
                 fog_alt=1.5,
-                turbulence=1.8
+                distance=50.0
             )
         )
 
@@ -258,7 +258,7 @@ class EndToEndTestCase(unittest.TestCase):
         lsep = os.linesep
 
         ref = '#version 3.6;' + lsep
-        ref += '#include "fixture/colors.inc"' + lsep
+        ref += '#include "pov/tests/fixture/colors.inc"' + lsep
         ref += 'global_settings {' + lsep
         ref += '  assumed_gamma 1.0' + lsep
         ref += '}' + lsep
@@ -308,7 +308,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         fix = SceneFile('test.pov')
         fix.append(Version(3.6))
-        fix.append(Include('fixture/colors.inc'))
+        fix.append(Include('pov/tests/fixture/colors.inc'))
         fix.append(
             GlobalSettings(assumed_gamma=1.0)
         )
@@ -387,10 +387,10 @@ class EndToEndTestCase(unittest.TestCase):
         lsep = os.linesep
 
         ref = '#version 3.6;' + lsep
-        ref += '#include "fixture/colors.inc"' + lsep
+        ref += '#include "pov/tests/fixture/colors.inc"' + lsep
         ref += 'global_settings {' + lsep
         ref += '  assumed_gamma 1.0' + lsep
-        ref += '  max_trace_lsepvel 5' + lsep
+        ref += '  max_trace_level 5' + lsep
         ref += '}' + lsep
         ref += 'camera {' + lsep
         ref += '  location <0.0, 0.5, -4.0>' + lsep
@@ -419,7 +419,7 @@ class EndToEndTestCase(unittest.TestCase):
         ref += '      checker' + lsep
         ref += '      color rgb <1, 1, 1>' + lsep
         ref += '      color rgbft <0, 0, 1, 0, 0>' + lsep
-        ref += '      scalsep 0.5' + lsep
+        ref += '      scale 0.5' + lsep
         ref += '    }' + lsep
         ref += '    finish {' + lsep
         ref += '      ambient 0.1' + lsep
@@ -435,7 +435,7 @@ class EndToEndTestCase(unittest.TestCase):
         ref += '    }' + lsep
         ref += '    finish {' + lsep
         ref += '      conserve_energy' + lsep
-        ref += '      reflsepction {' + lsep
+        ref += '      reflection {' + lsep
         ref += '        metallic' + lsep
         ref += '        0.8' + lsep
         ref += '      }' + lsep
@@ -448,7 +448,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         fix = SceneFile('test.pov')
         fix.append(Version(3.6))
-        fix.append(Include('fixture/colors.inc'))
+        fix.append(Include('pov/tests/fixture/colors.inc'))
         fix.append(
             GlobalSettings(
                 assumed_gamma=1.0,
@@ -535,7 +535,7 @@ class EndToEndTestCase(unittest.TestCase):
         """
         ref = os.linesep.join([
             '#version 3.6;',
-            '#include "fixture/colors.inc"',
+            '#include "pov/tests/"',
             'global_settings {',
             '  assumed_gamma 1.0',
             '}',
@@ -587,7 +587,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         fix = SceneFile('test.pov')
         fix.append(Version(3.6))
-        fix.append(Include('fixture/colors.inc'))
+        fix.append(Include('pov/tests/fixture/colors.inc'))
         fix.append(
             GlobalSettings(
                 assumed_gamma=1.0,

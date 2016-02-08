@@ -661,10 +661,7 @@ class HeightFieldTestCase(unittest.TestCase):
         """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            ' '.join((
-                'Invalid option type Vector not in allowed opts',
-                '\n\\[\'ObjectModifier\']'
-            ))
+            r'Invalid option type Vector not in allowed opts\[.*]'
         ):
             self.sut = HeightField('pov/tests/fixture/test.gif', Vector(1, 2, 3, 4))
 
@@ -761,7 +758,7 @@ class HeightFieldTestCase(unittest.TestCase):
             Test sut.__str__()
         """
         second = 'height_field {' + os.linesep
-        second += '  "fixture/test.gif"' + os.linesep
+        second += '  "pov/tests/fixture/test.gif"' + os.linesep
         second += '}' + os.linesep
 
         self.assertEqual(str(self.sut), second)
@@ -810,10 +807,7 @@ class JuliaFractalTestCase(unittest.TestCase):
         """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            ' '.join((
-                'Invalid option type Vector not in allowed',
-                'opts \n\\[\\\'ObjectModifier\\\']'
-            ))
+            r"Invalid option type Vector not in allowed opts\[.*]"
         ):
             self.sut = JuliaFractal(Vector(1, 2, 3, 4), Vector(1, 2, 3, 4))
 
@@ -954,7 +948,7 @@ class SphereTestCase(unittest.TestCase):
         """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Invalid option type str not in allowed opts \n\\[.*]'
+            r'Invalid option type str not in allowed opts\[.*]'
         ):
             self.sut = Sphere(
                 Vector(1, 2, 3),

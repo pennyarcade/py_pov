@@ -10,6 +10,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 """
 
+import os
 from logging import debug
 
 from pov.language_directive.LanguageDirective import LanguageDirective

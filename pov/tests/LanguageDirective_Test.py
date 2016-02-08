@@ -56,7 +56,7 @@ class IncludeTestCase(unittest.TestCase):
         """
             @Todo: DocString
         """
-        self.sut = Include('fixture/test.inc')
+        self.sut = Include('pov/tests/fixture/test.inc')
 
     def test_create(self):
         """
@@ -70,7 +70,7 @@ class IncludeTestCase(unittest.TestCase):
             @Todo: DocString
         """
         lsp = os.linesep
-        second = '#include "fixture/test.inc"' + lsp
+        second = '#include "pov/tests/fixture/test.inc"' + lsp
 
         self.assertEqual(str(self.sut), second)
 
@@ -83,7 +83,7 @@ class IncludeTestCase(unittest.TestCase):
         with self.assertRaisesRegexp(
             IOError,
             'No such file: %s%s%s' % (
-                os.getcwd(), os.sep, 'fixture/nonexistant.inc'
+                os.getcwd(), os.sep, 'pov/tests/fixture/nonexistant.inc'
             )
         ):
             self.sut = Include('pov/tests/fixture/nonexistant.inc')

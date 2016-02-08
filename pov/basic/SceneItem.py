@@ -330,7 +330,7 @@ class SceneItem(object):
                     msg % (key, valid_kw[key], val.__class__.__name__)
                 )
 
-    def _checkKwargsValue(self, kwarg, validvalues):
+    def _checkKwargValue(self, kwarg, validvalues):
         """Check value range for kwargs"""
 
         if kwarg in self.kwargs:
