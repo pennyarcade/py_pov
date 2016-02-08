@@ -30,7 +30,7 @@ from pov.finite_solid.Lathe import Lathe
 
 
 class BlobTestCase(unittest.TestCase):
-    '''
+    """
         BLOB:
             blob { BLOB_ITEM... [BLOB_MODIFIERS...]}
         BLOB_ITEM:
@@ -44,18 +44,18 @@ class BlobTestCase(unittest.TestCase):
             TEXTURE | PIGMENT | NORMAL | FINISH | TRANSFORMATION
         BLOB_MODIFIER:
             hierarchy [Boolean] | sturm [Boolean] | OBJECT_MODIFIER
-    '''
+    """
 
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = Blob()
 
     def test_create(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertIsInstance(self.sut, Blob)
         self.assertIsInstance(self.sut, SceneItem)
 
@@ -65,7 +65,7 @@ class BlobTestCase(unittest.TestCase):
 
 
 class BoxTestCase(unittest.TestCase):
-    '''
+    """
         BOX:
             box
             {
@@ -160,18 +160,18 @@ class BoxTestCase(unittest.TestCase):
             @ToDo: KwArg: 0..1 transform string; existing identifier;
                    transform object
             @ToDo: only one "transform"
-    '''
+    """
 
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = Box(Vector(1, 2, 3), Vector(4, 5, 6))
 
     def test_create(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertIsInstance(self.sut, Box)
         self.assertIsInstance(self.sut, SceneItem)
 
@@ -185,18 +185,18 @@ class BoxTestCase(unittest.TestCase):
         )
 
     def test_create_with_option(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         sut = Box(Vector(1, 2, 3), Vector(4, 5, 6), ObjectModifier('foo'))
 
         self.assertIsInstance(sut, Box)
         self.assertIsInstance(sut, SceneItem)
 
     def test_create_v1_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Parameter v1 not of type Vector'
         ):
@@ -207,9 +207,9 @@ class BoxTestCase(unittest.TestCase):
             )
 
     def test_create_v2_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Parameter v2 not of type Vector'
         ):
@@ -220,9 +220,9 @@ class BoxTestCase(unittest.TestCase):
             )
 
     def test_create_v1_wrong_length(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Vector v1 has more or less than 3 dimensions'
         ):
@@ -233,9 +233,9 @@ class BoxTestCase(unittest.TestCase):
             )
 
     def test_create_v2_wrong_length(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Vector v2 has more or less than 3 dimensions'
         ):
@@ -246,9 +246,9 @@ class BoxTestCase(unittest.TestCase):
             )
 
     def test_create_option_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Only ObjectModifier objects may be passed as options'
@@ -261,13 +261,13 @@ class BoxTestCase(unittest.TestCase):
 
 
 class ConeTestCase(unittest.TestCase):
-    '''
+    """
         Test Cone class
-    '''
+    """
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = Cone(
             Vector(1, 2, 3),
             4,
@@ -276,9 +276,9 @@ class ConeTestCase(unittest.TestCase):
         )
 
     def test_creation(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertIsInstance(self.sut, Cone)
         self.assertIsInstance(self.sut, SceneItem)
 
@@ -293,9 +293,9 @@ class ConeTestCase(unittest.TestCase):
         )
 
     def test_creation_with_option_and_kwarg(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         self.sut = Cone(
             Vector(1, 2, 3),
             4,
@@ -309,9 +309,9 @@ class ConeTestCase(unittest.TestCase):
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_create_non_existant_kw(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Invalid keyword: foo'
         ):
@@ -325,9 +325,9 @@ class ConeTestCase(unittest.TestCase):
             )
 
     def test_create_open_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Value of keyword open is not boolean'
         ):
@@ -341,9 +341,9 @@ class ConeTestCase(unittest.TestCase):
             )
 
     def test_create_baseradius_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Param base radius is not of type int or float'
@@ -358,9 +358,9 @@ class ConeTestCase(unittest.TestCase):
             )
 
     def test_create_capradius_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Param cap radius is not of type int or float'
@@ -375,9 +375,9 @@ class ConeTestCase(unittest.TestCase):
             )
 
     def test_create_option_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Only ObjectModifier objects may be passed as options'
@@ -392,9 +392,9 @@ class ConeTestCase(unittest.TestCase):
             )
 
     def test_create_basepoint_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Parameter basepoint is not of type Vector'
         ):
@@ -408,9 +408,9 @@ class ConeTestCase(unittest.TestCase):
             )
 
     def test_create_cappoint_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Parameter cappoint is not of type Vector'
         ):
@@ -424,9 +424,9 @@ class ConeTestCase(unittest.TestCase):
             )
 
     def test_create_basepoint_wrong_length(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Base point Vector has more or less than 3 dimensions'
@@ -441,9 +441,9 @@ class ConeTestCase(unittest.TestCase):
             )
 
     def test_create_cappoint_wrong_length(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Cap point Vector has more or less than 3 dimensions'
@@ -459,13 +459,13 @@ class ConeTestCase(unittest.TestCase):
 
 
 class CylinderTestCase(unittest.TestCase):
-    '''
+    """
         Test Cylinder class
-    '''
+    """
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = Cylinder(
             Vector(1, 2, 3),
             Vector(5, 6, 7),
@@ -473,9 +473,9 @@ class CylinderTestCase(unittest.TestCase):
         )
 
     def test_creation(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertIsInstance(self.sut, Cylinder)
         self.assertIsInstance(self.sut, SceneItem)
 
@@ -489,9 +489,9 @@ class CylinderTestCase(unittest.TestCase):
         )
 
     def test_creation_with_option_and_kwarg(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         self.sut = Cylinder(
             Vector(1, 2, 3),
             Vector(5, 6, 7),
@@ -504,9 +504,9 @@ class CylinderTestCase(unittest.TestCase):
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_create_non_existant_kw(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Invalid keyword: bar'
         ):
@@ -519,9 +519,9 @@ class CylinderTestCase(unittest.TestCase):
             )
 
     def test_create_open_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Value of keyword open is not boolean'
         ):
@@ -534,9 +534,9 @@ class CylinderTestCase(unittest.TestCase):
             )
 
     def test_create_basepoint_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Parameter basepoint is not of type Vector'
         ):
@@ -549,9 +549,9 @@ class CylinderTestCase(unittest.TestCase):
             )
 
     def test_create_cappoint_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Parameter cappoint is not of type Vector'
         ):
@@ -564,9 +564,9 @@ class CylinderTestCase(unittest.TestCase):
             )
 
     def test_create_basepoint_wrong_length(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Base point Vector has more or less than 3 dimensions'
@@ -580,9 +580,9 @@ class CylinderTestCase(unittest.TestCase):
             )
 
     def test_create_cappoint_wrong_length(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Cap point Vector has more or less than 3 dimensions'
@@ -596,9 +596,9 @@ class CylinderTestCase(unittest.TestCase):
             )
 
     def test_create_radius_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Param radius is not of type int or float'
@@ -612,9 +612,9 @@ class CylinderTestCase(unittest.TestCase):
             )
 
     def test_create_object_modifier_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Only ObjectModifier objects may be passed as options'
@@ -629,26 +629,26 @@ class CylinderTestCase(unittest.TestCase):
 
 
 class HeightFieldTestCase(unittest.TestCase):
-    '''
+    """
         Test HeightField class
-    '''
+    """
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = HeightField('pov/tests/fixture/test.gif')
 
     def test_creation(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertIsInstance(self.sut, HeightField)
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_create_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Value of Argument 0 is expectet to be type str but got float'
@@ -656,9 +656,9 @@ class HeightFieldTestCase(unittest.TestCase):
             self.sut = HeightField(1.0)
 
     def test_create_vector_wrong_option(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
@@ -669,9 +669,9 @@ class HeightFieldTestCase(unittest.TestCase):
             self.sut = HeightField('pov/tests/fixture/test.gif', Vector(1, 2, 3, 4))
 
     def test_create_non_existant_kw(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'No such Keyword: foo'
@@ -679,9 +679,9 @@ class HeightFieldTestCase(unittest.TestCase):
             self.sut = HeightField('pov/tests/fixture/test.gif', foo='bar')
 
     def test_create_smooth_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
@@ -692,9 +692,9 @@ class HeightFieldTestCase(unittest.TestCase):
             self.sut = HeightField('pov/tests/fixture/test.gif', smooth='bar')
 
     def test_create_hierarchy_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
@@ -705,9 +705,9 @@ class HeightFieldTestCase(unittest.TestCase):
             self.sut = HeightField('pov/tests/fixture/test.gif', hierarchy='bar')
 
     def test_create_hf_type_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
@@ -718,9 +718,9 @@ class HeightFieldTestCase(unittest.TestCase):
             self.sut = HeightField('pov/tests/fixture/test.gif', hf_type=0.2)
 
     def test_create_hf_type_non_existant_value(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
@@ -732,9 +732,9 @@ class HeightFieldTestCase(unittest.TestCase):
             self.sut = HeightField('pov/tests/fixture/test.gif', hf_type='bar')
 
     def test_create_hf_non_existant_file(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             IOError,
             'No such file: %s%s%s' % (
@@ -744,9 +744,9 @@ class HeightFieldTestCase(unittest.TestCase):
             self.sut = HeightField('fixture/nonexistant.gif', hf_type='bar')
 
     def test_create_waterlevel_not_float(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
@@ -757,9 +757,9 @@ class HeightFieldTestCase(unittest.TestCase):
             self.sut = HeightField('pov/tests/fixture/test.gif', water_level='bar')
 
     def test_to_string(self):
-        '''
+        """
             Test sut.__str__()
-        '''
+        """
         second = 'height_field {' + os.linesep
         second += '  "fixture/test.gif"' + os.linesep
         second += '}' + os.linesep
@@ -768,26 +768,26 @@ class HeightFieldTestCase(unittest.TestCase):
 
 
 class JuliaFractalTestCase(unittest.TestCase):
-    '''
+    """
         Test JuliaFractal class
-    '''
+    """
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = JuliaFractal(Vector(1, 2, 3, 4))
 
     def test_creation(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertIsInstance(self.sut, JuliaFractal)
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_create_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Value of Argument 0 is expectet to be type Vector but got str'
@@ -795,9 +795,9 @@ class JuliaFractalTestCase(unittest.TestCase):
             self.sut = JuliaFractal('foo')
 
     def test_create_vector_wrong_dimension(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Vector param4d has more or less than 4 dimensions'
@@ -805,9 +805,9 @@ class JuliaFractalTestCase(unittest.TestCase):
             self.sut = JuliaFractal(Vector(1, 2))
 
     def test_create_vector_wrong_option(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
@@ -818,18 +818,18 @@ class JuliaFractalTestCase(unittest.TestCase):
             self.sut = JuliaFractal(Vector(1, 2, 3, 4), Vector(1, 2, 3, 4))
 
     def test_create_non_existant_kw(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'No such Keyword: foo'
         ):
             self.sut = JuliaFractal(Vector(1, 2, 3, 4), foo='bar')
 
     def test_to_string(self):
-        '''
+        """
             Test sut.__str__()
-        '''
+        """
         second = 'julia_fractal {' + os.linesep
         second += '  <1, 2, 3, 4>' + os.linesep
         second += '}' + os.linesep
@@ -838,28 +838,28 @@ class JuliaFractalTestCase(unittest.TestCase):
 
 
 class SphereTestCase(unittest.TestCase):
-    '''
+    """
         SPHERE:
             sphere
             {
                 <Center>, Radius
                 [OBJECT_MODIFIERS...]
             }
-    '''
+    """
 
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = Sphere(
             Vector(1, 2, 3),
             8
         )
 
     def test_creation(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertIsInstance(self.sut, Sphere)
         self.assertIsInstance(self.sut, SceneItem)
 
@@ -874,9 +874,9 @@ class SphereTestCase(unittest.TestCase):
         )
 
     def test_creation_with_option(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         self.sut = Sphere(
             Vector(1, 2, 3),
             8,
@@ -887,9 +887,9 @@ class SphereTestCase(unittest.TestCase):
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_create_non_existant_kw(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'No such Keyword: bar'
         ):
@@ -901,9 +901,9 @@ class SphereTestCase(unittest.TestCase):
             )
 
     def test_create_center_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Value of Argument 0 is expectet to be type Vector but got str'
@@ -916,9 +916,9 @@ class SphereTestCase(unittest.TestCase):
             )
 
     def test_create_center_wrong_length(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Center point Vector has more or less than 3 dimensions'
@@ -931,9 +931,9 @@ class SphereTestCase(unittest.TestCase):
             )
 
     def test_create_radius_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
@@ -949,9 +949,9 @@ class SphereTestCase(unittest.TestCase):
             )
 
     def test_create_object_modifier_wrong_type(self):
-        '''
+        """
             Test parameter syntax
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Invalid option type str not in allowed opts \n\\[.*]'
@@ -965,7 +965,7 @@ class SphereTestCase(unittest.TestCase):
 
 
 class LatheTestCase(unittest.TestCase):
-    '''
+    """
         LATHE:
             lathe
             {
@@ -977,20 +977,20 @@ class LatheTestCase(unittest.TestCase):
             linear_spline | quadratic_spline | cubic_spline | bezier_spline
         LATHE_MODIFIER:
             sturm | OBJECT_MODIFIER
-    '''
+    """
 
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = Lathe(
             'linear_spline', 2, [Vector(1, 2, 3), Vector(1, 2, 3)]
         )
 
     def test_creation(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertIsInstance(self.sut, Lathe)
         self.assertIsInstance(self.sut, SceneItem)
 
@@ -1002,9 +1002,9 @@ class LatheTestCase(unittest.TestCase):
 #            self.sut = HeightField(1.0)
 
     def test_to_string(self):
-        '''
+        """
             Test sut.__str__()
-        '''
+        """
         second = 'lathe {' + os.linesep
         second += '  linear_spline, 2, <1, 2, 3>, <1, 2, 3>' + os.linesep
         second += '}' + os.linesep

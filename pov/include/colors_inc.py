@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -173,11 +173,12 @@ VERY_LIGHT_PURPLE = Color(red=0.94, green=0.81, blue=0.99)
 
 # Color manipulation macros
 
-# Takes Hue value as input, returns RGB vector.
 def ch2rgb(hue):
     """
-        @todo: Apidoc
-        @Todo: Param Syntax checks
+    Takes Hue value as input, returns RGB vector.
+
+    @todo: Apidoc
+    @Todo: Param Syntax checks
     """
     hue %= 360
     if hue < 0:
@@ -200,9 +201,9 @@ def ch2rgb(hue):
 
 def crgb2h(rgb, maximum, span):
     """
-        Takes rgb vector, maximum component, and span as input,
-        returns Hue value.
-        @Todo: Param Syntax checks
+    Takes rgb vector, maximum component, and span as input, returns Hue value.
+
+    @Todo: Param Syntax checks
     """
     red = rgb.red
     green = rgb.green
@@ -223,12 +224,13 @@ def crgb2h(rgb, maximum, span):
 
 def chsl2rgb(vector):
     """
-        Converts a color in HSL color space to a color in RGB color space.
-        Input:  < Hue, Saturation, Lightness, Filter, Transmit >
-        Output: < Red, Green, Blue, Filter, Transmit >
+    Converts a color in HSL color space to a color in RGB color space.
 
-        @Todo: Param Syntax checks
-        @todo: support this?
+    Input:  < Hue, Saturation, Lightness, Filter, Transmit >
+    Output: < Red, Green, Blue, Filter, Transmit >
+
+    @Todo: Param Syntax checks
+    @todo: support this?
     """
     incolor = Color(vector)
     hue = (incolor.red)
@@ -246,14 +248,15 @@ def chsl2rgb(vector):
 
 
 def crgb2hsl(incolor):
-    '''
-        Converts a color in RGB color space to a color in HSL color space.
-        Input:  < Red, Green, Blue, Filter, Transmit >
-        Output: < Hue, Saturation, Lightness, Filter, Transmit >
+    """
+    Converts a color in RGB color space to a color in HSL color space.
 
-        @Todo: Param Syntax checks
-        @todo: support this?
-    '''
+    Input:  < Red, Green, Blue, Filter, Transmit >
+    Output: < Hue, Saturation, Lightness, Filter, Transmit >
+
+    @Todo: Param Syntax checks
+    @todo: support this?
+    """
     red = (incolor.red)
     green = (incolor.green)
     blue = (incolor.blue)
@@ -272,17 +275,18 @@ def crgb2hsl(incolor):
 
 
 def chsv2rgb(vector):
-    '''
-        Converts a color in HSV color space to a color in RGB color space.
-        Input:  < Hue, Saturation, Value, Filter, Transmit >
-        Output: < Red, Green, Blue, Filter, Transmit >
-    '''
+    """
+    Converts a color in HSV color space to a color in RGB color space.
+
+    Input:  < Hue, Saturation, Value, Filter, Transmit >
+    Output: < Red, Green, Blue, Filter, Transmit >
+    """
     hsvft = Color(vector)
     hue = hsvft.red
     saturation = hsvft.green
     value = hsvft.blue
     sat_rgb = ch2rgb(hue)
-    rgb = ((1-saturation) * Color(rgb=Vector(1, 1, 1)) + saturation * sat_rgb)
+    rgb = ((1 - saturation) * Color(rgb=Vector(1, 1, 1)) + saturation * sat_rgb)
     rgb *= value
     return Color(
         rgbft=Vector(
@@ -292,11 +296,12 @@ def chsv2rgb(vector):
 
 
 def crgb2hsv(vector):
-    '''
-        Converts a color in RGB color space to a color in HSV color space.
-        Input:  < Red, Green, Blue, Filter, Transmit >
-        Output: < Hue, Saturation, Value, Filter, Transmit >
-    '''
+    """
+    Converts a color in RGB color space to a color in HSV color space.
+
+    Input:  < Red, Green, Blue, Filter, Transmit >
+    Output: < Hue, Saturation, Value, Filter, Transmit >
+    """
     incolor = Color(vector)
     red = incolor.red
     green = incolor.green
@@ -306,7 +311,7 @@ def crgb2hsv(vector):
     span = maximum - minimum
     hue = crgb2h(Color(rgb=Vector(red, green, blue)), maximum, span)
     saturation = 0
-    if (maximum != 0):
+    if maximum != 0:
         saturation = span / maximum
     return Color(
         rgbft=Vector(

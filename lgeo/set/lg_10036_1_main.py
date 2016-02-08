@@ -1,13 +1,13 @@
-'''**************************************************************************
+"""
+Persistence of Vision Ray Tracer Scene Description File.
 
- Persistence of Vision Ray Tracer Scene Description File
- File: 10036-1_main.pov
- Vers: 3.6
- Desc: Lego Set "Pizza To Go"
- Link: www.peeron.com/inv/sets/10036-1
- Date: 04/2013
- Auth: Chocokiko
- Subparts:
+File: 10036-1_main.pov
+Vers: 3.6
+Desc: Lego Set "Pizza To Go"
+Link: www.peeron.com/inv/sets/10036-1
+Date: 04/2013
+Auth: Chocokiko
+Subparts:
   * House
   * Car
   * Baseplate
@@ -18,10 +18,7 @@
   * Chef
   * Delivery guy
 
-***************************************************************************'''
 
-# noqa
-'''***************************************************************************
 Parts List
 ----------
 
@@ -104,10 +101,7 @@ Parts List
 2   3856    White   Window 1 x 2 x 3 Shutter (Pic)
 1   3853    White   Window 1 x 4 x 3 (Pic)
 1   3823    TrLtBlue    Windscreen 2 x 4 x 2 (Pic)
-***************************************************************************'''
 
-# noqa
-'''***************************************************************************
 LGEO Disclaimer
 Well, it is possible but not recommended. LGEO uses a different coordinate
 system and scaling than LDRAW, so it may be pretty hard to build a model by
@@ -117,7 +111,7 @@ Sorry for that, but my understanding of coordinate to this time was a flat
 standard XY coordinate system with a third Z axis coming out of the plane.
 Scaling is to real measurements, where 1 POV-Ray unit is 10mm. So 0.8 is 20
 LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
-***************************************************************************'''
+"""
 
 # Only load once
 # ifndef(set_10036_1_main)

@@ -27,32 +27,32 @@ from pov.other.IllegalStateException import IllegalStateException
 
 
 class SceneItemTestCase(unittest.TestCase):
-    '''
+    """
         Tests for SceneItem class
-    '''
+    """
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = SceneItem('foo')
 
     def test_creation(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_to_string(self):
-        '''
+        """
             Test sut.__str__()
-        '''
+        """
         second = 'foo'
         self.assertEqual(str(self.sut), second)
 
     def test_append(self):
-        '''
+        """
             Test sut.append()
-        '''
+        """
         second = SceneItem('bar')
 
         self.sut.append([second])
@@ -73,9 +73,9 @@ class SceneItemTestCase(unittest.TestCase):
         )
 
     def test_append_with_kwarg(self):
-        '''
+        """
             Test sut.append()
-        '''
+        """
         item = SceneItem('bar')
         self.sut.append(baz=item)
 
@@ -95,16 +95,16 @@ class SceneItemTestCase(unittest.TestCase):
         )
 
     def test_flatten(self):
-        '''
+        """
             Test sut.flatten()
-        '''
+        """
         first = self.sut.flatten([1, [1, 2], 3, 4])
         self.assertEqual(first, [1, 1, 2, 3, 4])
 
     def test_create_with_options(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.sut = SceneItem('foo', [], [(1, 2, 3), SceneItem('bar')])
 
         self.assertEqual(type(self.sut.args), list)
@@ -120,9 +120,9 @@ class SceneItemTestCase(unittest.TestCase):
         self.assertEqual(self.sut.kwargs, {})
 
     def test_create_with_kwargs(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.sut = SceneItem(
             'foo', [], [], {'bar': (1, 2, 3), 'baz': SceneItem('bar')}
         )
@@ -145,9 +145,9 @@ class SceneItemTestCase(unittest.TestCase):
         self.assertEqual(SceneItem('bar'), self.sut.kwargs['baz'])
 
     def test_setitem_replaces_arg(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.sut = SceneItem("foo", [SceneItem("bar")])
         other = SceneItem("foo", [SceneItem("baz")])
 
@@ -159,22 +159,22 @@ class SceneItemTestCase(unittest.TestCase):
         )
 
     def test_setitem_nonexisting_index(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         with self.assertRaisesRegexp(IndexError, ''):
             self.sut[2] = SceneItem('baz')
 
     def test_block_end_zero_indentation(self):
-        '''
+        """
             Test pseudo private method
-        '''
+        """
         self.assertEqual(self.sut._block_end(), os.linesep)
 
     def test_setitem_replaces_opt(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.sut = SceneItem('foo', [1, 2, 3], [4, 5, 6], {'bar': 7})
 
         # before
@@ -190,34 +190,34 @@ class SceneItemTestCase(unittest.TestCase):
         self.assertEqual(self.sut.kwargs, {'bar': 7})
 
     def test_getitem(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.sut = SceneItem('foo', [1, 2, 3], [4, 5, 6], {'bar': 7})
 
         self.assertEqual(self.sut[1], 2)
         self.assertEqual(self.sut[4], 5)
 
     def test_getitem_raises_index_error(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         with self.assertRaisesRegexp(IndexError, ''):
             warn(str(self.sut[2]))
 
     def test__dedent_below_zero(self):
-        '''
+        """
             Test pseudo private method
-        '''
+        """
         with self.assertRaisesRegexp(
             IllegalStateException, 'Indentation below zero'
         ):
             self.sut._dedent()
 
     def test__validate_kwargs_invanild_kwarg(self):
-        '''
+        """
             Test pseudo private method
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Keyword agate not allowed for object SceneItem'
@@ -229,9 +229,9 @@ class SceneItemTestCase(unittest.TestCase):
             self.sut._validate_kwargs({'boo': 'Vector'})
 
     def test__validate_kwargs_invanild_kwarg_type(self):
-        '''
+        """
             Test pseudo private method
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join([
@@ -243,9 +243,9 @@ class SceneItemTestCase(unittest.TestCase):
             self.sut._validate_kwargs({'adaptive': 'String'})
 
     def test__is_valid_identifier(self):
-        '''
+        """
             Test pseudo private method
-        '''
+        """
         self.assertTrue(
             self.sut._is_valid_identifier('foobar'), msg='Valid Identifier'
         )
@@ -254,9 +254,9 @@ class SceneItemTestCase(unittest.TestCase):
         )
 
     def test___eq__wrong_type(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         with self.assertRaisesRegexp(
             TypeError,
             'can only be compared to objects of same type'
@@ -265,9 +265,9 @@ class SceneItemTestCase(unittest.TestCase):
                 pass
 
     def test__check_kwarg_value_invalid_value(self):
-        '''
+        """
             Test pseudo private method
-        '''
+        """
         self.sut = SceneItem('foo', [], [], {'baz': 'bar'})
 
         with self.assertRaisesRegexp(
@@ -278,119 +278,119 @@ class SceneItemTestCase(unittest.TestCase):
 
 
 class VectorTestCase(unittest.TestCase):
-    '''
+    """
         Tests for Vector class
-    '''
+    """
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = Vector(1, 2, 3)
 
     def test_create(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertIsInstance(self.sut, Vector)
 
     def test_create_with_vector(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.sut = Vector(Vector(1, 2, 3))
         self.assertIsInstance(self.sut, Vector)
 
     def test_repr(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.assertEqual(repr(self.sut), "Vector(1, 2, 3)")
 
     def test_equals(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.assertEqual(self.sut, Vector(1, 2, 3))
 
     def test_equals_no_vector(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.assertNotEqual(self.sut, SceneItem('bar'))
 
     def test_setattr(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.sut[1] = 4
         self.assertEqual(self.sut, Vector(1, 4, 3))
 
     def test_getattr(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.assertEqual(self.sut[1], 2)
 
     def test_mul(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.assertEqual(self.sut * 2, Vector(2, 4, 6))
 
     def test_rmul(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.assertEqual(2 * self.sut, Vector(2, 4, 6))
 
     def test_div(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.assertEqual(Vector(2, 4, 6) / 2, Vector(1, 2, 3))
 
     def test_add(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.assertEqual(self.sut + self.sut, Vector(2, 4, 6))
 
     def test_sub(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.assertEqual(Vector(2, 4, 6) - self.sut, self.sut)
 
     def test_neg(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         self.assertEqual(-self.sut, Vector(-1, -2, -3))
 
     def test_norm(self):
-        '''
+        """
             Test sut.norm()
-        '''
+        """
         SUT = Vector(1, 2, 2)
         self.assertEqual(SUT.norm(), 3)
 
     def test_normalize(self):
-        '''
+        """
             Test sut.normalize()
-        '''
+        """
         SUT = Vector(1, 2, 2)
         self.assertEqual(SUT.normalize(), Vector(1.0 / 3, 2.0 / 3, 2.0 / 3))
 
     def test_dot(self):
-        '''
+        """
             Test sut.dot()
-        '''
+        """
         self.assertEqual(self.sut.dot(self.sut), 14)
 
     def test_mul_wrong_type(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Parameter not of type float or int'
@@ -398,36 +398,36 @@ class VectorTestCase(unittest.TestCase):
             self.sut * 'foo'
 
     def test_rmul__wrong_type(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Parameter not of type float or int'
         ):
             'foo' * self.sut
 
     def test_div__wrong_type(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Parameter not of type float or int'
         ):
             self.sut / 'foo'
 
     def test_add__wrong_type(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Parameter not of type Vector'
         ):
             self.sut + 'foo'
 
     def test_sub__wrong_type(self):
-        '''
+        """
             Test magic method
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Parameter not of type Vector'
@@ -435,9 +435,9 @@ class VectorTestCase(unittest.TestCase):
             self.sut - 'foo'
 
     def test_dot_wrong_type(self):
-        '''
+        """
             Test sut.dot()
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException, 'Parameter not of type Vector'
         ):
@@ -445,50 +445,50 @@ class VectorTestCase(unittest.TestCase):
 
 
 class SceneFileTestCase(unittest.TestCase):
-    '''
+    """
         Tests for SceneFile class
-    '''
+    """
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = SceneFile('test.pov', SceneItem('foo'), SceneItem('bar'))
 
     def tearDown(self):
-        '''
+        """
             Cleanup after tests
-        '''
+        """
         self.sut.close()
         # os.remove(self.sut.file.name)
 
     def test_create(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertIsInstance(self.sut, SceneFile)
 
     def test_append(self):
-        '''
+        """
             Test sut.append()
-        '''
+        """
         item = SceneItem('baz')
         self.sut.append(item)
 
         self.assertIn(item, self.sut.items)
 
     def test_create_fnam_wrong_type(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         with self.assertRaisesRegexp(
             TypeError, 'Filename String expected but got int'
         ):
             self.sut = SceneFile(0, SceneItem('foo'), SceneItem('bar'))
 
     def test_append_wrong_type(self):
-        '''
+        """
             Test sut.append()
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Item is expectet to be a SceneItem object but got str'
@@ -496,9 +496,9 @@ class SceneFileTestCase(unittest.TestCase):
             self.sut.append('foo')
 
     def test_to_string(self):
-        '''
+        """
             Test sut.__str__()
-        '''
+        """
         first = str(self.sut)
 
         second = 'foo {' + os.linesep
@@ -508,19 +508,19 @@ class SceneFileTestCase(unittest.TestCase):
 
 
 class BlockObjectTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = BlockObject("foo", [1, 2, 3], [4, 5, 6], {'bar': 7})
 
     def test_to_string(self):
-        '''
+        """
             Test sut.__str__()
-        '''
+        """
         first = str(self.sut)
         second = 'foo {' + os.linesep
         second += '  1, 2, 3' + os.linesep
@@ -533,9 +533,9 @@ class BlockObjectTestCase(unittest.TestCase):
         self.assertEqual(first, second)
 
     def test_to_string_with_object_option(self):
-        '''
+        """
             Test sut.__str__()
-        '''
+        """
         self.sut[4] = BlockObject('bar')
 
         first = str(self.sut)
@@ -551,9 +551,9 @@ class BlockObjectTestCase(unittest.TestCase):
         self.assertEqual(first, second)
 
     def test_to_string_with_indent(self):
-        '''
+        """
             Test sut.__str__()
-        '''
+        """
         self.sut = BlockObject('bar')
 
         self.sut._indent()
@@ -567,7 +567,7 @@ class BlockObjectTestCase(unittest.TestCase):
 
 
 class ColorTestCase(unittest.TestCase):
-    '''
+    """
         Color Expressions
 
         COLOR:
@@ -588,56 +588,56 @@ class ColorTestCase(unittest.TestCase):
 
         @TODO: enable setting color by passing float
                options e.g. Color(0.0, 0.2, 0.75)
-    '''
+    """
 
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = Color(rgb=Vector(100, 150, 200))
 
     def test_create(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertIsInstance(self.sut, Color)
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_create_rgb_color(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.assertEqual(self.sut.type, 'rgb')
         self.assertEqual(self.sut.vector, Vector(100, 150, 200))
 
     def test_create_rgbf_color(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.sut = Color(rgbf=Vector(100, 150, 200, 1))
         self.assertEqual(self.sut.type, 'rgbf')
         self.assertEqual(self.sut.vector, Vector(100, 150, 200, 1))
 
     def test_create_rgbt_color(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.sut = Color(rgbt=Vector(100, 150, 200, 2))
         self.assertEqual(self.sut.type, 'rgbt')
         self.assertEqual(self.sut.vector, Vector(100, 150, 200, 2))
 
     def test_create_rgbft_color(self):
-        '''
+        """
             Test creation and inheritance
-        '''
+        """
         self.sut = Color(rgbft=Vector(100, 150, 200, 1, 2))
         self.assertEqual(self.sut.type, 'rgbft')
         self.assertEqual(self.sut.vector, Vector(100, 150, 200, 1, 2))
 
     def test_to_string_rgb(self):
-        '''
+        """
             Test sut.__str__()
-        '''
+        """
         lsp = os.linesep
         first = str(self.sut)
         second = 'color rgb <100, 150, 200>' + lsp
@@ -645,9 +645,9 @@ class ColorTestCase(unittest.TestCase):
         self.assertEqual(first, second)
 
     def test_mul_color(self):
-        '''
+        """
             Test sut.__mul__()
-        '''
+        """
         self.sut *= 0.1
         print self.sut
         self.assertEqual(self.sut.vector, Vector(10, 15, 20))

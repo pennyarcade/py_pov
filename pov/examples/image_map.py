@@ -1,5 +1,6 @@
-'''
-// Persistence of Vision Ray Tracer Scene Description File
+"""
+// Persistence of Vision Ray Tracer Scene Description File.
+
 // File: ?.pov
 // Vers: 3.6
 // Desc: Image Map Example
@@ -68,4 +69,4 @@ plane {
     finish { ambient 0.3 }
   }
 }
-'''
+"""

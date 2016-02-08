@@ -1819,7 +1819,7 @@ def solid():
 
 
 # noqa
-'''
+"""
 #declare lg_2441_clear =
 merge {
  #declare MIR = 0;
@@ -2842,4 +2842,4 @@ merge {
  Translate(Vector(-0.5 * LG_BRICK_WIDTH, 0, 0)
 ),
 
-'''
+"""

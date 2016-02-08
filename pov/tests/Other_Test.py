@@ -23,36 +23,36 @@ from pov.other.LightSource import LightSource
 
 
 class CameraTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.sut = Camera()
 
     def test_creation(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, Camera)
         self.assertIsInstance(self.sut, SceneItem)
 
 
 class LightSourceTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.sut = LightSource((1, 2, 3))
 
     def test_creation(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, LightSource)
         self.assertIsInstance(self.sut, SceneItem)

@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -16,18 +16,17 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class Plane(BlockObject):
-    '''
-        PLANE:
-            plane { V_NORMAL, F_DISTANCE [OBJECT_MODIFIERS] }
+    """
+    Plane Object.
 
-        @TODO: Syntax checks
-    '''
+    PLANE:
+        plane { V_NORMAL, F_DISTANCE [OBJECT_MODIFIERS] }
+
+    @TODO: Syntax checks
+    """
 
     def __init__(self, normal, distance, *opts, **kwargs):
-        '''
-            Create plane object
-        '''
-
+        """Create plane object."""
         super(Plane, self).__init__('plane', [normal, distance], opts, kwargs)
 
         # @Todo: Generalize handling of boolean keywords
@@ -36,9 +35,7 @@ class Plane(BlockObject):
             self.opts.append('hollow')
 
     def _check_arguments(self):
-        '''
-            Argument Syntax checks
-        '''
+        """Argument Syntax checks."""
         valid_args = ['Vector', ('float', 'int')]
 
         self._validate_args(valid_args)
@@ -50,20 +47,17 @@ class Plane(BlockObject):
             )
 
     def _check_opts(self):
-        '''
-            Option Syntax checks
+        """
+        Option Syntax checks.
 
-            @Todo: get rid of Object Modifier superclass?
-        '''
+        @Todo: get rid of Object Modifier superclass?
+        """
         valid_opts = ['ObjectModifier', 'Texture', 'Pigment']
 
         self._validate_opts(valid_opts)
 
     def _check_kwargs(self):
-        '''
-            Keyword Argument Syntax checks
-        '''
-
+        """Keyword Argument Syntax checks."""
         valid_kw = {
             # Object modifier kw
             'no_shadow': 'bool',

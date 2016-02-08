@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -14,22 +14,21 @@ from pov.basic.BlockObject import BlockObject
 
 
 class Torus(BlockObject):
-    '''
-        TORUS:
-            torus
-            {
-                Major, Minor
-                [TORUS_MODIFIER...]
-            }
-        TORUS_MODIFIER:
-            sturm | OBJECT_MODIFIER
+    """
+    Torus object.
 
-        @Todo: Implement
-    '''
+    TORUS:
+        torus
+        {
+            Major, Minor
+            [TORUS_MODIFIER...]
+        }
+    TORUS_MODIFIER:
+        sturm | OBJECT_MODIFIER
+
+    @Todo: Implement
+    """
 
     def __init__(self, major, minor, *opts, **kwargs):
-        '''
-            Create Torus object
-        '''
-
+        """Create Torus object."""
         super(Torus, self).__init__('torus', [major, minor], opts, kwargs)

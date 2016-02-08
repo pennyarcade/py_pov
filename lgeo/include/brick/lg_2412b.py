@@ -736,7 +736,7 @@ def solid(length=2, width=1):
     )
 
 # noqa
-'''
+"""
 #declare lg_2412b_clear =
 Merge(
  Sphere(
@@ -1149,4 +1149,4 @@ LG_CORNER_SPACE
  Rotate(Vector(0, 0, 90))
 ),
 
-'''
+"""

@@ -32,7 +32,7 @@ sz = bg.get_size()
 def aspect(sz):
   return float(sz[0])/sz[1]
 
-def blit(im): 
+def blit(im):
   imsz = im.get_size()
   mul = min( float(sz[0])/imsz[0], float(sz[1])/imsz[1] )
   #mul *= 0.7

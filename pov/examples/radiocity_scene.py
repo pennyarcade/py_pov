@@ -1,5 +1,5 @@
-'''
-@Todo: Translate
+"""
+@Todo: Translate.
 
 // Persistence of Vision Ray Tracer Scene Description File
 // File: ?.pov
@@ -102,4 +102,4 @@ sphere {
   <0,1,0>, 1
 }
 
-'''
+"""

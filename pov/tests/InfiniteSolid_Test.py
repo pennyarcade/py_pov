@@ -18,9 +18,9 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class PlaneTestCase(unittest.TestCase):
-    '''
+    """
         Test Plane class
-    '''
+    """
     def setUp(self):
         self.sut = Plane(
             (1, 2, 3),
@@ -29,16 +29,16 @@ class PlaneTestCase(unittest.TestCase):
         )
 
     def test_creation(self):
-        '''
+        """
             Test creation and inheritance of object
-        '''
+        """
         self.assertIsInstance(self.sut, Plane)
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_creation_vector_to_big(self):
-        '''
+        """
             Test vector parameter
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Normal vector has more or less than 3 dimensions'

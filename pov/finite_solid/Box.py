@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -18,46 +18,47 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 class Box(BlockObject):
     """
-        BOX:
-            box
-            {
-                <Corner_1>, <Corner_2>
-                [OBJECT_MODIFIERS...]
-            }
+    Box object.
 
-        OBJECT_MODIFIERS:
-            [OBJECT_PHOTONS] |
-            [CLIPPED_BY] |
-            [BOUNDED_BY] |
-            [MATERIAL] |
-            [INTERIOR] |
-            [INTERIOR_TEXTURE] |
-            [TEXTURE] |
-            [PIGMENT] |
-            [NORMAL] |
-            [FINISH] |
-            [TRANSFORMATION...] |
-            [no_shadow] |
-            [no_image[BOOL]] |
-            [no_reflection{BOOL]] |
-            [inverse] |
-            [double_illuminate[BOOL]] |
-            [hollow [BOOL]]
+    BOX:
+        box
+        {
+            <Corner_1>, <Corner_2>
+            [OBJECT_MODIFIERS...]
+        }
 
-        OBJECT_PHOTONS:
-            photons { OBJECT_PHOTON_ITEMS }
+    OBJECT_MODIFIERS:
+        [OBJECT_PHOTONS] |
+        [CLIPPED_BY] |
+        [BOUNDED_BY] |
+        [MATERIAL] |
+        [INTERIOR] |
+        [INTERIOR_TEXTURE] |
+        [TEXTURE] |
+        [PIGMENT] |
+        [NORMAL] |
+        [FINISH] |
+        [TRANSFORMATION...] |
+        [no_shadow] |
+        [no_image[BOOL]] |
+        [no_reflection{BOOL]] |
+        [inverse] |
+        [double_illuminate[BOOL]] |
+        [hollow [BOOL]]
 
+    OBJECT_PHOTONS:
+        photons { OBJECT_PHOTON_ITEMS }
     """
     def __init__(self, vector1, vector2, *opts, **kwargs):
         """
-            Construct a box object
+        Construct a box object.
 
-            @param vector1: vertex of box
-            @type vector1: Vector()
-            @param vector2: opposing vertex of box
-            @type vector2: Vector()
+        @param vector1: vertex of box
+        @type vector1: Vector()
+        @param vector2: opposing vertex of box
+        @type vector2: Vector()
 
-            @Todo: Use Syntax checking Methods (See JuliaFractal)
+        @Todo: Use Syntax checking Methods (See JuliaFractal)
         """
 
         # Syntax checking
@@ -75,7 +76,7 @@ class Box(BlockObject):
             )
 
         # make sure only valid object modifiers are passed
-        for i in range(len(opts)):
+        for i in enumerate(opts):
             if not isinstance(opts[i], ObjectModifier):
                 raise SdlSyntaxException(
                     'Only ObjectModifier objects may be passed as options'

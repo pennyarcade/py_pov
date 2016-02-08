@@ -572,32 +572,32 @@ Messages
     ☐ pylint: invalid-name / Invalid constant name "lg_knob_inner_space_clear"
 
 ☐ lgeo/lgeo_city.py
-  ☐ Line: 1
-    ☐ pep257: D209 / Multi-line docstring closing quotes should be on a separate line
-    ☐ pep257: D400 / First line should end with a period (not '*')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 119
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 'g')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+  ✔ Line: 1 @done (16-02-08 11:36)
+    ✔ pep257: D209 / Multi-line docstring closing quotes should be on a separate line @done (16-02-08 11:36)
+    ✔ pep257: D400 / First line should end with a period (not '*') @done (16-02-08 11:36)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 11:36)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:36)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:36)
+  ✔ Line: 119 @done (16-02-08 11:36)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 11:36)
+    ✔ pep257: D400 / First line should end with a period (not 'g') @done (16-02-08 11:36)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:36)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:36)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:36)
   ☐ Line: 145
     ☐ pylint: unused-variable / Unused variable 'lg_quality' (col 4)
-  ☐ Line: 180
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 26)
-  ☐ Line: 181
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 20)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 32)
+  ✔ Line: 180 @done (16-02-08 11:37)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26) @done (16-02-08 11:37)
+  ✔ Line: 181 @done (16-02-08 11:37)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 20) @done (16-02-08 11:37)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 32) @done (16-02-08 11:37)
 
-☐ lgeo/set/__init__.py
-  ☐ Line: 1
-    ☐ pep257: D209 / Multi-line docstring closing quotes should be on a separate line
-    ☐ pep257: D400 / First line should end with a period (not '*')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
+✔ lgeo/set/__init__.py @done (16-02-08 11:35)
+  ✔ Line: 1 @done (16-02-08 11:35)
+    ✔ pep257: D209 / Multi-line docstring closing quotes should be on a separate line @done (16-02-08 11:35)
+    ✔ pep257: D400 / First line should end with a period (not '*') @done (16-02-08 11:35)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 11:35)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:35)
 
 ☐ lgeo/set/lg_10036_1_car.py
   ☐ Line: 1
@@ -764,217 +764,217 @@ Messages
     ☐ pylint: pointless-string-statement / String statement has no effect
 
 ☐ lgeo/set/lg_10036_1_house.py
-  ☐ Line: 1
-    ☐ pep257: D209 / Multi-line docstring closing quotes should be on a separate line
-    ☐ pep257: D400 / First line should end with a period (not '*')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 54
-    ☐ pylint: pointless-string-statement / String statement has no effect
-  ☐ Line: 67
-    ☐ pylint: pointless-string-statement / String statement has no effect
+  ✔ Line: 1 @done (16-02-08 11:25)
+    ✔ pep257: D209 / Multi-line docstring closing quotes should be on a separate line @done (16-02-08 11:25)
+    ✔ pep257: D400 / First line should end with a period (not '*') @done (16-02-08 11:25)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 11:25)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:25)
+  ✔ Line: 54 @done (16-02-08 11:25)
+    ✔ pylint: pointless-string-statement / String statement has no effect @done (16-02-08 11:25)
+  ✔ Line: 67 @done (16-02-08 11:25)
+    ✔ pylint: pointless-string-statement / String statement has no effect @done (16-02-08 11:25)
   ☐ Line: 169
-    ☐ pylint: undefined-variable / Undefined variable 'Union' (col 30)
+    ✔ pylint: undefined-variable / Undefined variable 'Union' (col 30) @done (16-02-08 11:26)
     ☐ pylint: invalid-name / Invalid constant name "set_10036_1_house_nonmoving"
 
-☐ lgeo/set/lg_10036_1_main.py
-  ☐ Line: 1
-    ☐ pep257: D209 / Multi-line docstring closing quotes should be on a separate line
-    ☐ pep257: D400 / First line should end with a period (not '*')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 107
-    ☐ pylint: pointless-string-statement / String statement has no effect
-  ☐ Line: 120
-    ☐ pylint: pointless-string-statement / String statement has no effect
+✔ lgeo/set/lg_10036_1_main.py @done (16-02-08 11:24)
+  ✔ Line: 1 @done (16-02-08 11:24)
+    ✔ pep257: D209 / Multi-line docstring closing quotes should be on a separate line @done (16-02-08 11:24)
+    ✔ pep257: D400 / First line should end with a period (not '*') @done (16-02-08 11:24)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:24)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:24)
+  ✔ Line: 107 @done (16-02-08 11:24)
+    ✔ pylint: pointless-string-statement / String statement has no effect @done (16-02-08 11:24)
+  ✔ Line: 120 @done (16-02-08 11:24)
+    ✔ pylint: pointless-string-statement / String statement has no effect @done (16-02-08 11:24)
 
-☐ main.py
-  ☐ Line: 1
-    ☐ pep257: D100 / Missing docstring in public module
-  ☐ Line: 9
-    ☐ pylint: invalid-name / Invalid constant name "infile"
+✔ main.py @done (16-02-08 11:21)
+  ✔ Line: 1 @done (16-02-08 11:21)
+    ✔ pep257: D100 / Missing docstring in public module @done (16-02-08 11:21)
+  ✔ Line: 9 @done (16-02-08 11:21)
+    ✔ pylint: invalid-name / Invalid constant name "infile" @done (16-02-08 11:21)
 
-☐ pov/__init__.py
-  ☐ Line: 13
-    ☐ pyflakes: F401 / 'pov' imported but unused (col 1)
+✔ pov/__init__.py @done (16-02-08 11:20)
+  ✔ Line: 13 @done (16-02-08 11:20)
+    ✔ pyflakes: F401 / 'pov' imported but unused (col 1) @done (16-02-08 11:20)
 
-☐ pov/atmeff/Fog.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 37
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 43
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 51
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 59
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/atmeff/Fog.py @done (16-02-08 11:19)
+  ✔ Line: 1 @done (16-02-08 11:19)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 11:19)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 11:19)
+  ✔ Line: 17 @done (16-02-08 11:19)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 11:19)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 11:19)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 11:19)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:19)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:19)
+  ✔ Line: 37 @done (16-02-08 11:19)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 11:19)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:19)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:19)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:19)
+  ✔ Line: 43 @done (16-02-08 11:19)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 11:19)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:19)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:19)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:19)
+  ✔ Line: 51 @done (16-02-08 11:19)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 11:19)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:19)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:19)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:19)
+  ✔ Line: 59 @done (16-02-08 11:19)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 11:19)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 11:19)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:19)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:19)
 
-☐ pov/atmeff/SkySphere.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 27
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 33
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 41
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 49
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/atmeff/SkySphere.py @done (16-02-08 11:18)
+  ✔ Line: 1 @done (16-02-08 11:18)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 11:18)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 11:18)
+  ✔ Line: 17 @done (16-02-08 11:18)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 11:18)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 11:18)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 11:18)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:18)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:18)
+  ✔ Line: 27 @done (16-02-08 11:18)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 11:18)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:18)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:18)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:18)
+  ✔ Line: 33 @done (16-02-08 11:18)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 11:18)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:18)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:18)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:18)
+  ✔ Line: 41 @done (16-02-08 11:18)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 11:18)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:18)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:18)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:18)
+  ✔ Line: 49 @done (16-02-08 11:18)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 11:18)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 11:18)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:18)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:18)
 
-☐ pov/atmeff/__init__.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
+✔ pov/atmeff/__init__.py @done (16-02-08 11:16)
+  ✔ Line: 1 @done (16-02-08 11:16)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 11:16)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 11:16)
 
-☐ pov/basic/BlockObject.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D204 / 1 blank line required after class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 21
-    ☐ pep257: D400 / First line should end with a period (not 'n')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 43
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 55
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/basic/BlockObject.py @done (16-02-08 11:15)
+  ✔ Line: 1 @done (16-02-08 11:15)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 11:15)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 11:15)
+  ✔ Line: 17 @done (16-02-08 11:15)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 11:15)
+    ✔ pep257: D204 / 1 blank line required after class docstring (found 0) @done (16-02-08 11:15)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 11:15)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:15)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:15)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:15)
+  ✔ Line: 21 @done (16-02-08 11:15)
+    ✔ pep257: D400 / First line should end with a period (not 'n') @done (16-02-08 11:15)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:15)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:15)
+  ✔ Line: 43 @done (16-02-08 11:15)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 11:15)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 11:15)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:15)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:15)
+  ✔ Line: 55 @done (16-02-08 11:15)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 11:15)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:15)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:15)
 
 ☐ pov/basic/Color.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 18
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
+  ✔ Line: 1 @done (16-02-08 11:13)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 11:13)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 11:13)
+  ✔ Line: 18 @done (16-02-08 11:13)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 11:13)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 11:13)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:13)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:13)
   ☐ Line: 44
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 11:13)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:13)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:13)
     ☐ mccabe: MC0001 / Color.__init__ is too complex (12)
-  ☐ Line: 93
-    ☐ pep257: D105 / Missing docstring in magic method
-  ☐ Line: 102
-    ☐ pep257: D105 / Missing docstring in magic method
-  ☐ Line: 106
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+  ✔ Line: 93 @done (16-02-08 11:14)
+    ✔ pep257: D105 / Missing docstring in magic method @done (16-02-08 11:14)
+  ✔ Line: 102 @done (16-02-08 11:14)
+    ✔ pep257: D105 / Missing docstring in magic method @done (16-02-08 11:14)
+  ✔ Line: 106 @done (16-02-08 11:14)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 11:14)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 11:14)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:14)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:14)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:14)
 
-☐ pov/basic/PoVObject.py
-  ☐ Line: 1
-    ☐ pep257: D100 / Missing docstring in public module
-  ☐ Line: 16
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/basic/PoVObject.py @done (16-02-08 11:12)
+  ✔ Line: 1 @done (16-02-08 11:12)
+    ✔ pep257: D100 / Missing docstring in public module @done (16-02-08 11:12)
+  ✔ Line: 16 @done (16-02-08 11:12)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 11:12)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 11:12)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 11:12)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:12)
 
 ☐ pov/basic/SceneFile.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
+  ✔ Line: 1 @done (16-02-08 11:08)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 11:08)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 11:08)
   ☐ Line: 18
     ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:09)
   ☐ Line: 33
-    ☐ pep257: D208 / Docstring is over-indented
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:09)
   ☐ Line: 44
-    ☐ pylint: unneeded-not / Consider changing "not type(fnam) == str" to "type(fnam) != str" (col 11)
+    ✔ pylint: unneeded-not / Consider changing "not type(fnam) == str" to "type(fnam) != str" (col 11) @done (16-02-08 11:09)
     ☐ pylint: unidiomatic-typecheck / Using type() instead of isinstance() for a typecheck. (col 15)
-  ☐ Line: 59
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 72
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 86
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 103
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+  ✔ Line: 59 @done (16-02-08 11:10)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 11:10)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:10)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:10)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:10)
+  ✔ Line: 72 @done (16-02-08 11:10)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 11:10)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 11:10)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:10)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:10)
+  ✔ Line: 86 @done (16-02-08 11:10)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 11:10)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:10)
+  ✔ Line: 103 @done (16-02-08 11:10)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 11:10)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 11:10)
 
 ☐ pov/basic/SceneItem.py
-  ☐ Line: 1
-    ☐ pep257: D100 / Missing docstring in public module
-  ☐ Line: 19
-    ☐ pylint: global-at-module-level / Using the global statement at the module level
-    ☐ pylint: invalid-name / Invalid constant name "indentation"
-  ☐ Line: 22
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 136
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 173
-    ☐ pylint: global-variable-undefined / Global variable 'indentation' undefined at the module level (col 12)
-    ☐ pylint: invalid-name / Invalid constant name "indentation" (col 12)
-  ☐ Line: 191
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pylint: no-self-use / Method could be a function (col 4)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 195
-    ☐ pylint: global-variable-undefined / Global variable 'indentation' undefined at the module level (col 8)
-    ☐ pylint: invalid-name / Invalid constant name "indentation" (col 8)
+  ✔ Line: 1 @done (16-02-08 10:36)
+    ✔ pep257: D100 / Missing docstring in public module @done (16-02-08 10:36)
+  ✔ Line: 19 @done (16-02-08 10:39)
+    ✔ pylint: global-at-module-level / Using the global statement at the module level @done (16-02-08 10:39)
+    ✔ pylint: invalid-name / Invalid constant name "indentation" @done (16-02-08 10:39)
+  ✔ Line: 22 @done (16-02-08 10:37)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 10:37)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 10:37)
+  ✔ Line: 136 @done (16-02-08 10:37)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 10:37)
+  ✔ Line: 173 @done (16-02-08 10:40)
+    ✔ pylint: global-variable-undefined / Global variable 'indentation' undefined at the module level (col 12) @done (16-02-08 10:40)
+    ✔ pylint: invalid-name / Invalid constant name "indentation" (col 12) @done (16-02-08 10:40)
+  ✔ Line: 191 @done (16-02-08 10:57)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 10:57)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 10:57)
+    ✔ pylint: no-self-use / Method could be a function (col 4) @done (16-02-08 10:57)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 10:57)
+  ✔ Line: 195 @done (16-02-08 10:57)
+    ✔ pylint: global-variable-undefined / Global variable 'indentation' undefined at the module level (col 8) @done (16-02-08 10:57)
+    ✔ pylint: invalid-name / Invalid constant name "indentation" (col 8) @done (16-02-08 10:57)
   ☐ Line: 199
     ☐ pep257: D400 / First line should end with a period (not 'e')
     ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
@@ -1113,77 +1113,77 @@ Messages
   ☐ Line: 521
     ☐ pylint: unidiomatic-typecheck / Using type() instead of isinstance() for a typecheck. (col 15)
 
-☐ pov/basic/Vector.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 18
-    ☐ pep257: D209 / Multi-line docstring closing quotes should be on a separate line
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D204 / 1 blank line required after class docstring (found 0)
-  ☐ Line: 22
-    ☐ pep257: D102 / Missing docstring in public method
-  ☐ Line: 32
-    ☐ pep257: D105 / Missing docstring in magic method
-  ☐ Line: 35
-    ☐ pep257: D105 / Missing docstring in magic method
-  ☐ Line: 38
-    ☐ pep257: D105 / Missing docstring in magic method
-  ☐ Line: 42
-    ☐ pep257: D105 / Missing docstring in magic method
-  ☐ Line: 45
-    ☐ pep257: D210 / No whitespaces allowed surrounding docstring text
-    ☐ pep257: D400 / First line should end with a period (not 'n')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '-quotes)
+✔ pov/basic/Vector.py @done (16-02-08 10:30)
+  ✔ Line: 1 @done (16-02-08 10:30)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 10:30)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 10:30)
+  ✔ Line: 18 @done (16-02-08 10:30)
+    ✔ pep257: D209 / Multi-line docstring closing quotes should be on a separate line @done (16-02-08 10:30)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 10:30)
+    ✔ pep257: D204 / 1 blank line required after class docstring (found 0) @done (16-02-08 10:30)
+  ✔ Line: 22 @done (16-02-08 10:31)
+    ✔ pep257: D102 / Missing docstring in public method @done (16-02-08 10:31)
+  ✔ Line: 32 @done (16-02-08 10:31)
+    ✔ pep257: D105 / Missing docstring in magic method @done (16-02-08 10:31)
+  ✔ Line: 35 @done (16-02-08 10:31)
+    ✔ pep257: D105 / Missing docstring in magic method @done (16-02-08 10:31)
+  ✔ Line: 38 @done (16-02-08 10:31)
+    ✔ pep257: D105 / Missing docstring in magic method @done (16-02-08 10:31)
+  ✔ Line: 42 @done (16-02-08 10:31)
+    ✔ pep257: D105 / Missing docstring in magic method @done (16-02-08 10:31)
+  ✔ Line: 45 @done (16-02-08 10:31)
+    ✔ pep257: D210 / No whitespaces allowed surrounding docstring text @done (16-02-08 10:31)
+    ✔ pep257: D400 / First line should end with a period (not 'n') @done (16-02-08 10:31)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '-quotes) @done (16-02-08 10:31)
   ☐ Line: 47
-    ☐ pylint: unneeded-not / Consider changing "not type(other) in (float, int)" to "type(other) not in (float, int)" (col 11)
+    ✔ pylint: unneeded-not / Consider changing "not type(other) in (float, int)" to "type(other) not in (float, int)" (col 11) @done (16-02-08 10:31)
     ☐ pylint: unidiomatic-typecheck / Using type() instead of isinstance() for a typecheck. (col 15)
-  ☐ Line: 49
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 25)
-  ☐ Line: 51
-    ☐ pep257: D210 / No whitespaces allowed surrounding docstring text
-    ☐ pep257: D400 / First line should end with a period (not 'n')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '-quotes)
+  ✔ Line: 49 @done (16-02-08 10:32)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 25) @done (16-02-08 10:32)
+  ✔ Line: 51 @done (16-02-08 10:33)
+    ✔ pep257: D210 / No whitespaces allowed surrounding docstring text @done (16-02-08 10:33)
+    ✔ pep257: D400 / First line should end with a period (not 'n') @done (16-02-08 10:33)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '-quotes) @done (16-02-08 10:33)
   ☐ Line: 53
-    ☐ pylint: unneeded-not / Consider changing "not type(other) in (float, int)" to "type(other) not in (float, int)" (col 11)
+    ✔ pylint: unneeded-not / Consider changing "not type(other) in (float, int)" to "type(other) not in (float, int)" (col 11) @done (16-02-08 10:33)
     ☐ pylint: unidiomatic-typecheck / Using type() instead of isinstance() for a typecheck. (col 15)
-  ☐ Line: 55
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 25)
-  ☐ Line: 57
-    ☐ pep257: D105 / Missing docstring in magic method
+  ✔ Line: 55 @done (16-02-08 10:33)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 25) @done (16-02-08 10:33)
+  ✔ Line: 57 @done (16-02-08 10:33)
+    ✔ pep257: D105 / Missing docstring in magic method @done (16-02-08 10:33)
   ☐ Line: 58
-    ☐ pylint: unneeded-not / Consider changing "not type(other) in (float, int)" to "type(other) not in (float, int)" (col 11)
+    ✔ pylint: unneeded-not / Consider changing "not type(other) in (float, int)" to "type(other) not in (float, int)" (col 11) @done (16-02-08 10:34)
     ☐ pylint: unidiomatic-typecheck / Using type() instead of isinstance() for a typecheck. (col 15)
-  ☐ Line: 60
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 25)
-  ☐ Line: 62
-    ☐ pep257: D105 / Missing docstring in magic method
-  ☐ Line: 66
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 28)
-  ☐ Line: 69
-    ☐ pep257: D105 / Missing docstring in magic method
-  ☐ Line: 73
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 28)
-  ☐ Line: 76
-    ☐ pep257: D105 / Missing docstring in magic method
-  ☐ Line: 79
-    ☐ pep257: D105 / Missing docstring in magic method
-  ☐ Line: 86
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 27)
-  ☐ Line: 89
-    ☐ pep257: D400 / First line should end with a period (not 'r')
-  ☐ Line: 92
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 30)
-  ☐ Line: 95
-    ☐ pep257: D400 / First line should end with a period (not 's')
-  ☐ Line: 101
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 37)
-  ☐ Line: 104
-    ☐ pep257: D105 / Missing docstring in magic method
-  ☐ Line: 106
-    ☐ pep8: W293 / blank line contains whitespace (col 1)
-  ☐ Line: 107
-    ☐ pep8: W293 / blank line contains whitespace (col 1)
+  ✔ Line: 60 @done (16-02-08 10:34)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 25) @done (16-02-08 10:34)
+  ✔ Line: 62 @done (16-02-08 10:34)
+    ✔ pep257: D105 / Missing docstring in magic method @done (16-02-08 10:34)
+  ✔ Line: 66 @done (16-02-08 10:34)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 28) @done (16-02-08 10:34)
+  ✔ Line: 69 @done (16-02-08 10:34)
+    ✔ pep257: D105 / Missing docstring in magic method @done (16-02-08 10:34)
+  ✔ Line: 73 @done (16-02-08 10:34)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 28) @done (16-02-08 10:34)
+  ✔ Line: 76 @done (16-02-08 10:34)
+    ✔ pep257: D105 / Missing docstring in magic method @done (16-02-08 10:34)
+  ✔ Line: 79 @done (16-02-08 10:34)
+    ✔ pep257: D105 / Missing docstring in magic method @done (16-02-08 10:34)
+  ✔ Line: 86 @done (16-02-08 10:34)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 27) @done (16-02-08 10:34)
+  ✔ Line: 89 @done (16-02-08 10:34)
+    ✔ pep257: D400 / First line should end with a period (not 'r') @done (16-02-08 10:34)
+  ✔ Line: 92 @done (16-02-08 10:35)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 30) @done (16-02-08 10:35)
+  ✔ Line: 95 @done (16-02-08 10:35)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 10:35)
+  ✔ Line: 101 @done (16-02-08 10:35)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 37) @done (16-02-08 10:35)
+  ✔ Line: 104 @done (16-02-08 10:35)
+    ✔ pep257: D105 / Missing docstring in magic method @done (16-02-08 10:35)
+  ✔ Line: 106 @done (16-02-08 10:35)
+    ✔ pep8: W293 / blank line contains whitespace (col 1) @done (16-02-08 10:35)
+  ✔ Line: 107 @done (16-02-08 10:35)
+    ✔ pep8: W293 / blank line contains whitespace (col 1) @done (16-02-08 10:35)
   ☐ Line: 109
     ☐ pylint: invalid-name / Invalid constant name "x"
   ☐ Line: 110
@@ -1191,646 +1191,646 @@ Messages
   ☐ Line: 111
     ☐ pylint: invalid-name / Invalid constant name "z"
 
-☐ pov/basic/__init__.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
+✔ pov/basic/__init__.py @done (16-02-08 10:28)
+  ✔ Line: 1 @done (16-02-08 10:28)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 10:28)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 10:28)
 
-☐ pov/csg/Csg.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/csg/Csg.py @done (16-02-08 10:04)
+  ✔ Line: 1 @done (16-02-08 10:04)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 10:04)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 10:04)
+  ✔ Line: 17 @done (16-02-08 10:04)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 10:04)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 10:04)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 10:04)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 10:04)
 
-☐ pov/csg/Difference.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 26
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/csg/Difference.py @done (16-02-08 10:04)
+  ✔ Line: 1 @done (16-02-08 10:04)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 10:04)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 10:04)
+  ✔ Line: 17 @done (16-02-08 10:04)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 10:04)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 10:04)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 10:04)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 10:04)
+  ✔ Line: 26 @done (16-02-08 10:04)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 10:04)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 10:04)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 10:04)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 10:04)
 
-☐ pov/csg/Intersection.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 30
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/csg/Intersection.py @done (16-02-08 10:02)
+  ✔ Line: 1 @done (16-02-08 10:02)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 10:02)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 10:02)
+  ✔ Line: 17 @done (16-02-08 10:02)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 10:02)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 10:02)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 10:02)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 10:02)
+  ✔ Line: 30 @done (16-02-08 10:02)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 10:02)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 10:02)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 10:02)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 10:02)
 
-☐ pov/csg/Merge.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not '}')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 23
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/csg/Merge.py @done (16-02-08 10:00)
+  ✔ Line: 1 @done (16-02-08 10:00)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 10:00)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 10:00)
+  ✔ Line: 17 @done (16-02-08 10:00)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 10:00)
+    ✔ pep257: D400 / First line should end with a period (not '}') @done (16-02-08 10:00)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 10:00)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 10:00)
+  ✔ Line: 23 @done (16-02-08 10:00)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 10:00)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 10:00)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 10:00)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 10:00)
 
-☐ pov/csg/Union.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 28
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/csg/Union.py @done (16-02-08 09:59)
+  ✔ Line: 1 @done (16-02-08 09:59)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:59)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:59)
+  ✔ Line: 17 @done (16-02-08 09:59)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:59)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:59)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:59)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:59)
+  ✔ Line: 28 @done (16-02-08 09:59)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 09:59)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:59)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 09:59)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:59)
 
-☐ pov/csg/__init__.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
+✔ pov/csg/__init__.py @done (16-02-08 09:58)
+  ✔ Line: 1 @done (16-02-08 09:58)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:58)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:58)
 
-☐ pov/examples/basic_scene.py
-  ☐ Line: 1
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-  ☐ Line: 70
-    ☐ pyflakes: F401 / 'debug' imported but unused (col 1)
+✔ pov/examples/basic_scene.py @done (16-02-08 09:58)
+  ✔ Line: 1 @done (16-02-08 09:57)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 09:57)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:57)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:57)
+  ✔ Line: 70 @done (16-02-08 09:57)
+    ✔ pyflakes: F401 / 'debug' imported but unused (col 1) @done (16-02-08 09:57)
 
 ☐ pov/examples/basic_sphere.py
   ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:56)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:56)
   ☐ Line: 13
     ☐ pyflakes: F403 / 'from logging import *' used; unable to detect undefined names (col 1)
   ☐ Line: 19
     ☐ pyflakes: F403 / 'from pov.basic.Vector import *' used; unable to detect undefined names (col 1)
 
-☐ pov/examples/checkered_floor.py
-  ☐ Line: 1
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
+✔ pov/examples/checkered_floor.py @done (16-02-08 09:56)
+  ✔ Line: 1 @done (16-02-08 09:56)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 09:56)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:56)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:56)
 
-☐ pov/examples/image_map.py
-  ☐ Line: 1
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
+✔ pov/examples/image_map.py @done (16-02-08 09:55)
+  ✔ Line: 1 @done (16-02-08 09:55)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 09:55)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:55)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:55)
 
-☐ pov/examples/orthographic_scene.py
-  ☐ Line: 1
-    ☐ pep257: D301 / Use r""" if any backslashes in a docstring
-    ☐ pep257: D400 / First line should end with a period (not '!')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
+✔ pov/examples/orthographic_scene.py @done (16-02-08 09:55)
+  ✔ Line: 1 @done (16-02-08 09:55)
+    ✔ pep257: D301 / Use r""" if any backslashes in a docstring @done (16-02-08 09:55)
+    ✔ pep257: D400 / First line should end with a period (not '!') @done (16-02-08 09:55)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:55)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:55)
 
-☐ pov/examples/radiocity_scene.py
-  ☐ Line: 1
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
+✔ pov/examples/radiocity_scene.py @done (16-02-08 09:54)
+  ✔ Line: 1 @done (16-02-08 09:54)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 09:54)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:54)
 
-☐ pov/examples/text_fonts.py
-  ☐ Line: 1
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
+✔ pov/examples/text_fonts.py @done (16-02-08 09:54)
+  ✔ Line: 1 @done (16-02-08 09:54)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 09:54)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:54)
 
-☐ pov/finite_patch/FinitePatch.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 16
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/finite_patch/FinitePatch.py @done (16-02-08 09:53)
+  ✔ Line: 1 @done (16-02-08 09:53)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:53)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:53)
+  ✔ Line: 16 @done (16-02-08 09:53)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:53)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:53)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:53)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:53)
 
-☐ pov/finite_patch/__init__.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
+✔ pov/finite_patch/__init__.py @done (16-02-08 09:52)
+  ✔ Line: 1 @done (16-02-08 09:52)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:52)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:52)
 
-☐ pov/finite_solid/Blob.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 16
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 33
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 42
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 50
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 60
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/finite_solid/Blob.py @done (16-02-08 09:52)
+  ✔ Line: 1 @done (16-02-08 09:52)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:52)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:52)
+  ✔ Line: 16 @done (16-02-08 09:52)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:52)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:52)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:52)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:52)
+  ✔ Line: 33 @done (16-02-08 09:52)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 09:52)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 09:52)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:52)
+  ✔ Line: 42 @done (16-02-08 09:52)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:52)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:52)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 09:52)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:52)
+  ✔ Line: 50 @done (16-02-08 09:52)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:52)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:52)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:52)
+  ✔ Line: 60 @done (16-02-08 09:52)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 09:52)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:52)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:52)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 09:52)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:52)
 
-☐ pov/finite_solid/Box.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 19
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D204 / 1 blank line required after class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 51
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 78
-    ☐ pylint: consider-using-enumerate / Consider using enumerate instead of iterating with range and len (col 8)
+✔ pov/finite_solid/Box.py @done (16-02-08 09:50)
+  ✔ Line: 1 @done (16-02-08 09:50)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:50)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:50)
+  ✔ Line: 19 @done (16-02-08 09:50)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:50)
+    ✔ pep257: D204 / 1 blank line required after class docstring (found 0) @done (16-02-08 09:50)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:50)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:50)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:50)
+  ✔ Line: 51 @done (16-02-08 09:50)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 09:50)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 09:50)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:50)
+  ✔ Line: 78 @done (16-02-08 09:50)
+    ✔ pylint: consider-using-enumerate / Consider using enumerate instead of iterating with range and len (col 8) @done (16-02-08 09:50)
 
 ☐ pov/finite_solid/Cone.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 19
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D204 / 1 blank line required after class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 28
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D208 / Docstring is over-indented
-    ☐ mccabe: MC0001 / Cone.__init__ is too complex (12)
+  ✔ Line: 1 @done (16-02-08 09:44)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:44)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:44)
+  ✔ Line: 19 @done (16-02-08 09:44)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:44)
+    ✔ pep257: D204 / 1 blank line required after class docstring (found 0) @done (16-02-08 09:44)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:44)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:44)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:44)
+  ✔ Line: 28 @done (16-02-08 09:44)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 09:44)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 09:44)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:44)
+    ✔ mccabe: MC0001 / Cone.__init__ is too complex (12) @done (16-02-08 09:44)
   ☐ Line: 55
-    ☐ pylint: unneeded-not / Consider changing "not type(baseradius) in (int, float)" to "type(baseradius) not in (int, float)" (col 11)
+    ✔ pylint: unneeded-not / Consider changing "not type(baseradius) in (int, float)" to "type(baseradius) not in (int, float)" (col 11) @done (16-02-08 09:45)
     ☐ pylint: unidiomatic-typecheck / Using type() instead of isinstance() for a typecheck. (col 15)
   ☐ Line: 67
-    ☐ pylint: unneeded-not / Consider changing "not type(capradius) in (int, float)" to "type(capradius) not in (int, float)" (col 11)
+    ✔ pylint: unneeded-not / Consider changing "not type(capradius) in (int, float)" to "type(capradius) not in (int, float)" (col 11) @done (16-02-08 09:46)
     ☐ pylint: unidiomatic-typecheck / Using type() instead of isinstance() for a typecheck. (col 15)
   ☐ Line: 73
-    ☐ pylint: consider-using-enumerate / Consider using enumerate instead of iterating with range and len (col 8)
+    ✔ pylint: consider-using-enumerate / Consider using enumerate instead of iterating with range and len (col 8) @done (16-02-08 09:46)
   ☐ Line: 82
-    ☐ pylint: unneeded-not / Consider changing "not type(val) == bool" to "type(val) != bool" (col 15)
+    ✔ pylint: unneeded-not / Consider changing "not type(val) == bool" to "type(val) != bool" (col 15) @done (16-02-08 09:46)
     ☐ pylint: unidiomatic-typecheck / Using type() instead of isinstance() for a typecheck. (col 19)
 
 ☐ pov/finite_solid/Cylinder.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 19
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D204 / 1 blank line required after class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 28
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D208 / Docstring is over-indented
-    ☐ mccabe: MC0001 / Cylinder.__init__ is too complex (11)
+  ✔ Line: 1 @done (16-02-08 09:40)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:40)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:40)
+  ✔ Line: 19 @done (16-02-08 09:40)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:40)
+    ✔ pep257: D204 / 1 blank line required after class docstring (found 0) @done (16-02-08 09:40)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:40)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:40)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:40)
+  ✔ Line: 28 @done (16-02-08 09:40)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 09:40)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 09:40)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:40)
+    ✔ mccabe: MC0001 / Cylinder.__init__ is too complex (11) @done (16-02-08 09:40)
   ☐ Line: 59
-    ☐ pylint: unneeded-not / Consider changing "not type(radius) in (int, float)" to "type(radius) not in (int, float)" (col 11)
+    ✔ pylint: unneeded-not / Consider changing "not type(radius) in (int, float)" to "type(radius) not in (int, float)" (col 11) @done (16-02-08 09:41)
     ☐ pylint: unidiomatic-typecheck / Using type() instead of isinstance() for a typecheck. (col 15)
   ☐ Line: 65
-    ☐ pylint: consider-using-enumerate / Consider using enumerate instead of iterating with range and len (col 8)
+    ✔ pylint: consider-using-enumerate / Consider using enumerate instead of iterating with range and len (col 8) @done (16-02-08 09:43)
   ☐ Line: 74
-    ☐ pylint: unneeded-not / Consider changing "not type(val) == bool" to "type(val) != bool" (col 15)
+    ✔ pylint: unneeded-not / Consider changing "not type(val) == bool" to "type(val) != bool" (col 15) @done (16-02-08 09:43)
     ☐ pylint: unidiomatic-typecheck / Using type() instead of isinstance() for a typecheck. (col 19)
 
-☐ pov/finite_solid/HeightField.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D204 / 1 blank line required after class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 33
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 51
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 59
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 74
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 84
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/finite_solid/HeightField.py @done (16-02-08 09:38)
+  ✔ Line: 1 @done (16-02-08 09:38)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:38)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:38)
+  ✔ Line: 17 @done (16-02-08 09:38)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:38)
+    ✔ pep257: D204 / 1 blank line required after class docstring (found 0) @done (16-02-08 09:38)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:38)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:38)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:38)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:38)
+  ✔ Line: 33 @done (16-02-08 09:38)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 09:38)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 09:38)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:38)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:38)
+  ✔ Line: 51 @done (16-02-08 09:38)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 09:38)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 09:38)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:38)
+  ✔ Line: 59 @done (16-02-08 09:38)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:38)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:38)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 09:38)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:38)
+  ✔ Line: 74 @done (16-02-08 09:38)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:38)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:38)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:38)
+  ✔ Line: 84 @done (16-02-08 09:38)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 09:38)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:38)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:38)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 09:38)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:38)
 
-☐ pov/finite_solid/JuliaFractal.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D204 / 1 blank line required after class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 39
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 51
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 65
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 75
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/finite_solid/JuliaFractal.py @done (16-02-08 09:37)
+  ✔ Line: 1 @done (16-02-08 09:37)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:37)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:37)
+  ✔ Line: 17 @done (16-02-08 09:37)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:37)
+    ✔ pep257: D204 / 1 blank line required after class docstring (found 0) @done (16-02-08 09:37)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:37)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:37)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:37)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:37)
+  ✔ Line: 39 @done (16-02-08 09:37)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 09:37)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:37)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:37)
+  ✔ Line: 51 @done (16-02-08 09:36)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:36)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:36)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 09:36)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:36)
+  ✔ Line: 65 @done (16-02-08 09:36)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:36)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:36)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:36)
+  ✔ Line: 75 @done (16-02-08 09:36)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 09:36)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:36)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:36)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:36)
 
 ☐ pov/finite_solid/Lathe.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 18
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 36
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 51
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+  ✔ Line: 1 @done (16-02-08 09:31)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:31)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:31)
+  ✔ Line: 18 @done (16-02-08 09:34)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:34)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:34)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:34)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:34)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:34)
+  ✔ Line: 36 @done (16-02-08 09:34)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 09:34)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:34)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:34)
+  ✔ Line: 51 @done (16-02-08 09:34)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:34)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:34)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 09:34)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:34)
   ☐ Line: 83
     ☐ pep8: W503 / line break before binary operator (col 21)
-  ☐ Line: 87
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 97
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
+  ✔ Line: 87 @done (16-02-08 09:35)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:35)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:35)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:35)
+  ✔ Line: 97 @done (16-02-08 09:35)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 09:35)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:35)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:35)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:35)
 
-☐ pov/finite_solid/Prism.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 16
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/finite_solid/Prism.py @done (16-02-08 09:23)
+  ✔ Line: 1 @done (16-02-08 09:23)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:23)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:23)
+  ✔ Line: 16 @done (16-02-08 09:23)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:23)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:23)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:23)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:23)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:23)
 
-☐ pov/finite_solid/Sor.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 16
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/finite_solid/Sor.py @done (16-02-08 09:22)
+  ✔ Line: 1 @done (16-02-08 09:22)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:22)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:22)
+  ✔ Line: 16 @done (16-02-08 09:22)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:22)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:22)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:22)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:22)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:22)
 
-☐ pov/finite_solid/Sphere.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 28
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 35
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 51
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 61
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 4)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/finite_solid/Sphere.py @done (16-02-08 09:22)
+  ✔ Line: 1 @done (16-02-08 09:22)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:22)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:22)
+  ✔ Line: 17 @done (16-02-08 09:22)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:22)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:22)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:22)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:22)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:22)
+  ✔ Line: 28 @done (16-02-08 09:22)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 09:22)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 09:22)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:22)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 09:22)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:22)
+  ✔ Line: 35 @done (16-02-08 09:22)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:22)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:22)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:22)
+  ✔ Line: 51 @done (16-02-08 09:22)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:22)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:22)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:22)
+  ✔ Line: 61 @done (16-02-08 09:22)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 09:22)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 09:22)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:22)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 4) @done (16-02-08 09:22)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:22)
 
-☐ pov/finite_solid/SphereSweep.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 16
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/finite_solid/SphereSweep.py @done (16-02-08 09:20)
+  ✔ Line: 1 @done (16-02-08 09:20)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:20)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:20)
+  ✔ Line: 16 @done (16-02-08 09:20)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:20)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:20)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:20)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:20)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:20)
 
-☐ pov/finite_solid/SuperEllipsoid.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 16
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/finite_solid/SuperEllipsoid.py @done (16-02-08 09:19)
+  ✔ Line: 1 @done (16-02-08 09:19)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:19)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:19)
+  ✔ Line: 16 @done (16-02-08 09:19)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:19)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:19)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:19)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:19)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:19)
 
-☐ pov/finite_solid/Text.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 16
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/finite_solid/Text.py @done (16-02-08 09:18)
+  ✔ Line: 1 @done (16-02-08 09:18)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:18)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:18)
+  ✔ Line: 16 @done (16-02-08 09:18)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:18)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:18)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:18)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:18)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:18)
 
-☐ pov/finite_solid/Torus.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 16
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 30
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/finite_solid/Torus.py @done (16-02-08 09:17)
+  ✔ Line: 1 @done (16-02-08 09:17)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 09:17)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 09:17)
+  ✔ Line: 16 @done (16-02-08 09:17)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 09:17)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 09:17)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 09:17)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:17)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:17)
+  ✔ Line: 30 @done (16-02-08 09:17)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 09:17)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 09:17)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 09:17)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 09:17)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 09:17)
 
-☐ pov/finite_solid/__init__.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
+✔ pov/finite_solid/__init__.py @done (16-02-08 08:48)
+  ✔ Line: 1 @done (16-02-08 08:48)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 08:48)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 08:48)
 
-☐ pov/global_settings/GlobalSettings.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D204 / 1 blank line required after class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 39
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 50
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 59
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/global_settings/GlobalSettings.py @done (16-02-08 08:48)
+  ✔ Line: 1 @done (16-02-08 08:48)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 08:48)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 08:48)
+  ✔ Line: 17 @done (16-02-08 08:48)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 08:48)
+    ✔ pep257: D204 / 1 blank line required after class docstring (found 0) @done (16-02-08 08:48)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 08:48)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 08:48)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:48)
+  ✔ Line: 39 @done (16-02-08 08:48)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 08:48)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 08:48)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:48)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:48)
+  ✔ Line: 50 @done (16-02-08 08:48)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 08:48)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:48)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:48)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:48)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:48)
+  ✔ Line: 59 @done (16-02-08 08:48)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 08:48)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:48)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:48)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:48)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:48)
 
-☐ pov/global_settings/Photons.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 37
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 44
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 51
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/global_settings/Photons.py @done (16-02-08 08:46)
+  ✔ Line: 1 @done (16-02-08 08:45)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 08:45)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 08:45)
+  ✔ Line: 17 @done (16-02-08 08:46)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 08:46)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 08:46)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 08:46)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:46)
+  ✔ Line: 37 @done (16-02-08 08:46)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:46)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:46)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:46)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:46)
+  ✔ Line: 44 @done (16-02-08 08:46)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:46)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:46)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:46)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:46)
+  ✔ Line: 51 @done (16-02-08 08:46)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:46)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:46)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:46)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:46)
 
-☐ pov/global_settings/Radiosity.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 17
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 43
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 58
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 68
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/global_settings/Radiosity.py @done (16-02-08 08:44)
+  ✔ Line: 1 @done (16-02-08 08:36)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 08:36)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 08:36)
+  ✔ Line: 17 @done (16-02-08 08:44)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 08:44)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 08:44)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 08:44)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:44)
+  ✔ Line: 43 @done (16-02-08 08:44)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:44)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:44)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:44)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:44)
+  ✔ Line: 58 @done (16-02-08 08:44)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:44)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:44)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:44)
+  ✔ Line: 68 @done (16-02-08 08:44)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 08:44)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:44)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:44)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:44)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:44)
 
-☐ pov/global_settings/__init__.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
+✔ pov/global_settings/__init__.py @done (16-02-08 08:32)
+  ✔ Line: 1 @done (16-02-08 08:32)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 08:32)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 08:32)
 
-☐ pov/include/__init__.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
+✔ pov/include/__init__.py @done (16-02-08 08:32)
+  ✔ Line: 1 @done (16-02-08 08:32)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 08:32)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 08:32)
 
-☐ pov/include/chars_inc.py
-  ☐ Line: 1
-    ☐ pep257: D301 / Use r""" if any backslashes in a docstring
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
+✔ pov/include/chars_inc.py @done (16-02-08 08:31)
+  ✔ Line: 1 @done (16-02-08 08:31)
+    ✔ pep257: D301 / Use r""" if any backslashes in a docstring @done (16-02-08 08:31)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 08:31)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 08:31)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:31)
 
-☐ pov/include/colors_inc.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 177
-    ☐ pep257: D400 / First line should end with a period (not 'c')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 201
-    ☐ pep257: D401 / First line should be in imperative mood ('Take', not 'Takes')
-    ☐ pep257: D400 / First line should end with a period (not ',')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 224
-    ☐ pep257: D401 / First line should be in imperative mood ('Convert', not 'Converts')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 248
-    ☐ pep257: D401 / First line should be in imperative mood ('Convert', not 'Converts')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 274
-    ☐ pep257: D401 / First line should be in imperative mood ('Convert', not 'Converts')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 285
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 14)
-  ☐ Line: 294
-    ☐ pep257: D401 / First line should be in imperative mood ('Convert', not 'Converts')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 309
-    ☐ pylint: superfluous-parens / Unnecessary parens after u'if' keyword
+✔ pov/include/colors_inc.py @done (16-02-08 08:29)
+  ✔ Line: 1 @done (16-02-08 08:25)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 08:25)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 08:25)
+  ✔ Line: 177 @done (16-02-08 08:26)
+    ✔ pep257: D400 / First line should end with a period (not 'c') @done (16-02-08 08:26)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 08:26)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:26)
+  ✔ Line: 201 @done (16-02-08 08:26)
+    ✔ pep257: D401 / First line should be in imperative mood ('Take', not 'Takes') @done (16-02-08 08:26)
+    ✔ pep257: D400 / First line should end with a period (not ',') @done (16-02-08 08:26)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 08:26)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:26)
+  ✔ Line: 224 @done (16-02-08 08:27)
+    ✔ pep257: D401 / First line should be in imperative mood ('Convert', not 'Converts') @done (16-02-08 08:27)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 08:27)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:27)
+  ✔ Line: 248 @done (16-02-08 08:28)
+    ✔ pep257: D401 / First line should be in imperative mood ('Convert', not 'Converts') @done (16-02-08 08:28)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 08:28)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:28)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:28)
+  ✔ Line: 274 @done (16-02-08 08:28)
+    ✔ pep257: D401 / First line should be in imperative mood ('Convert', not 'Converts') @done (16-02-08 08:28)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 08:28)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:28)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:28)
+  ✔ Line: 285 @done (16-02-08 08:28)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 14) @done (16-02-08 08:28)
+  ✔ Line: 294 @done (16-02-08 08:28)
+    ✔ pep257: D401 / First line should be in imperative mood ('Convert', not 'Converts') @done (16-02-08 08:28)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 08:28)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:28)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:28)
+  ✔ Line: 309 @done (16-02-08 08:28)
+    ✔ pylint: superfluous-parens / Unnecessary parens after u'if' keyword @done (16-02-08 08:28)
 
-☐ pov/infinite_solid/Plane.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 18
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 26
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 38
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 52
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 62
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/infinite_solid/Plane.py @done (16-02-08 08:17)
+  ✔ Line: 1 @done (16-02-08 08:16)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 08:16)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 08:16)
+  ✔ Line: 18 @done (16-02-08 08:17)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 08:17)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 08:17)
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0) @done (16-02-08 08:17)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:17)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:17)
+  ✔ Line: 26 @done (16-02-08 08:17)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 08:17)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 08:17)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:17)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:17)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:17)
+  ✔ Line: 38 @done (16-02-08 08:17)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:17)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:17)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:17)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:17)
+  ✔ Line: 52 @done (16-02-08 08:17)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:17)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:17)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:17)
+  ✔ Line: 62 @done (16-02-08 08:17)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 08:17)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:17)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:17)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:17)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:17)
 
-☐ pov/infinite_solid/__init__.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
+✔ pov/infinite_solid/__init__.py @done (16-02-08 08:15)
+  ✔ Line: 1 @done (16-02-08 08:15)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 08:15)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 08:15)
 
-☐ pov/language_directive/Default.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-  ☐ Line: 19
-    ☐ pep257: D203 / 1 blank line required before class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not ':')
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 29
-    ☐ pep257: D400 / First line should end with a period (not 't')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 37
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 45
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 53
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pep257: D400 / First line should end with a period (not 's')
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/language_directive/Default.py @done (16-02-08 08:15)
+  ✔ Line: 1 @done (16-02-08 08:13)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 08:13)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 08:13)
+  ✔ Line: 19 @done (16-02-08 08:14)
+    ✔ pep257: D203 / 1 blank line required before class docstring (found 0) @done (16-02-08 08:14)
+    ✔ pep257: D400 / First line should end with a period (not ':') @done (16-02-08 08:14)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:14)
+  ✔ Line: 29 @done (16-02-08 08:15)
+    ✔ pep257: D400 / First line should end with a period (not 't') @done (16-02-08 08:15)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:15)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:15)
+  ✔ Line: 37 @done (16-02-08 08:15)
+    ✔ pep257: D400 / First line should end with a period (not 'e') @done (16-02-08 08:15)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:15)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:15)
+  ✔ Line: 45 @done (16-02-08 08:15)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 08:15)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:15)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:15)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:15)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:15)
+  ✔ Line: 53 @done (16-02-08 08:15)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 08:15)
+    ✔ pep257: D400 / First line should end with a period (not 's') @done (16-02-08 08:15)
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes) @done (16-02-08 08:15)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 08:15)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 08:15)
 
 ✔ pov/language_directive/Include.py @done (16-02-07 19:59)
   ✔ Line: 1 @done (16-02-07 19:58)

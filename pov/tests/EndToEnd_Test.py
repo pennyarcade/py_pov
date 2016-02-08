@@ -41,16 +41,16 @@ from pov.texture.ImageMap import ImageMap
 
 
 class EndToEndTestCase(unittest.TestCase):
-    '''
+    """
         End To End Tests
-    '''
+    """
 
     # @unittest.skip
     def test_scene1(self):
-        '''
+        """
             Example taken from:
             http://www.f-lohmueller.de/pov_tut/basic/povkurs3.htm
-        '''
+        """
         lsep = os.linesep
 
         ref = "#version 3.6;" + lsep
@@ -252,9 +252,9 @@ class EndToEndTestCase(unittest.TestCase):
 
     # @unittest.skip
     def test_examples_basic_scene(self):
-        '''
+        """
             examples/basic_scene.pov
-        '''
+        """
         lsep = os.linesep
 
         ref = '#version 3.6;' + lsep
@@ -381,9 +381,9 @@ class EndToEndTestCase(unittest.TestCase):
 
     # @unittest.skip
     def test_checkered_floor_example(self):
-        '''
+        """
             examples/checkered_floor.pov
-        '''
+        """
         lsep = os.linesep
 
         ref = '#version 3.6;' + lsep
@@ -530,9 +530,9 @@ class EndToEndTestCase(unittest.TestCase):
 
     # @unittest.skip
     def test_image_map_example(self):
-        '''
+        """
             @TODO: Apidoc
-        '''
+        """
         ref = os.linesep.join([
             '#version 3.6;',
             '#include "fixture/colors.inc"',

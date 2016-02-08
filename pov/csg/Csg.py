@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -16,9 +16,11 @@ from pov.basic.BlockObject import BlockObject
 
 class Csg(BlockObject):
     """
-        CSG_OBJECT:
-            UNION | INTERSECTION | DIFFERENCE | MERGE
+    Csg object.
 
-        @Todo: Implement
-        @Todo: Deprecate Csg Superclass
+    CSG_OBJECT:
+        UNION | INTERSECTION | DIFFERENCE | MERGE
+
+    @Todo: Implement
+    @Todo: Deprecate Csg Superclass
     """

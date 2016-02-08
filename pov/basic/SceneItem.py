@@ -1,5 +1,7 @@
-﻿"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+﻿# coding=UTF-8
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
+
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
 See LICENSE file.
@@ -15,20 +17,20 @@ from pov.basic.Vector import Vector
 from pov.other.SdlSyntaxException import SdlSyntaxException
 from pov.other.IllegalStateException import IllegalStateException
 
-
-global indentation
+# set global Indentation variable
+INDENTATION = 0
 
 
 class SceneItem(object):
     """
-        Base class for POV objects.
+    Base class for POV objects.
 
-        SCENE_ITEM:
-            LANGUAGE_DIRECTIVES        |
-            camera { CAMERA_ITEMS... } |
-            OBJECTS                    |
-            ATMOSPHERIC_EFFECTS        |
-            global_settings { GLOBAL_ITEMS }
+    SCENE_ITEM:
+        LANGUAGE_DIRECTIVES        |
+        camera { CAMERA_ITEMS... } |
+        OBJECTS                    |
+        ATMOSPHERIC_EFFECTS        |
+        global_settings { GLOBAL_ITEMS }
     """
 
     # All reserved identifiers for syntax checking purposes
@@ -135,19 +137,19 @@ class SceneItem(object):
 
     def __init__(self, name, args=None, opts=None, kwargs=None):
         """
-            Base class for POV objects.
+        Base class for POV objects.
 
-            @param name: POV object name
-            @type name: string
-            @param args: compulsory (comma separated?) pov args XX commas
-                         don't seem to matter?
-            @type args: list
-            @param opts: eg. CSG items
-            @type opts: list
-            @param kwargs: key value pairs
-            @type kwargs: dict
+        @param name: POV object name
+        @type name: string
+        @param args: compulsory (comma separated?) pov args XX commas
+                     don't seem to matter?
+        @type args: list
+        @param opts: eg. CSG items
+        @type opts: list
+        @param kwargs: key value pairs
+        @type kwargs: dict
 
-            @TODO: move indentation check to own function
+        @TODO: move INDENTATION check to own function
         """
         if args is None:
             args = []
@@ -168,11 +170,11 @@ class SceneItem(object):
         self._format_opts(opts)
         self._format_kwargs(kwargs)
 
-        # @todo: Does indentation really have to stay in the constructor??
-        if "indentation" not in globals():
-            global indentation
-            indentation = 0
-            debug("set initial indentation to 0")
+        # @todo: Does INDENTATION really have to stay in the constructor??
+        if "INDENTATION" not in globals():
+            global INDENTATION
+            INDENTATION = 0
+            debug("set initial INDENTATION to 0")
 
         # Call syntax check methods
         self._check_arguments()
@@ -189,37 +191,32 @@ class SceneItem(object):
     # ------------------------------------------------------------------------
 
     def _indent(self):
-        """
-            Indent PoV code
-        """
-        global indentation
-        indentation += 1
-        debug("indent: %s", indentation)
+        """Indent PoV code."""
+        global INDENTATION
+        INDENTATION += 1
+        debug("indent: %s", INDENTATION)
 
     def _dedent(self):
-        """
-            Dedent PoV code
-        """
-        global indentation
+        """Dedent PoV code."""
+        global INDENTATION
 
-        if not indentation > 0:
+        if not INDENTATION > 0:
             raise IllegalStateException('Indentation below zero')
 
-        indentation -= 1
-        debug("dedent: %s", indentation)
+        INDENTATION -= 1
+        debug("dedent: %s", INDENTATION)
 
     def _get_indent(self):
-        """
-            Get indentation
-        """
-        global indentation
-        return indentation
+        """Get INDENTATION."""
+        global INDENTATION
+        return INDENTATION
 
     def _block_begin(self):
         """
-            Begin code block
-                * return opening bracket and line separator
-                * increase indentation
+        Begin code block.
+
+        * return opening bracket and line separator
+        * increase INDENTATION
         """
         debug("begin block")
         code = " {" + linesep
@@ -230,14 +227,15 @@ class SceneItem(object):
 
     def _block_end(self):
         """
-            End code block
-                * reduce indentation
-                * add line with closing bracket
-        """
-        global indentation
-        debug("end block: indentation= %s", indentation)
+        End code block
 
-        if indentation == 0:
+        * reduce INDENTATION
+        * add line with closing bracket
+        """
+        global INDENTATION
+        debug("end block: INDENTATION= %s", INDENTATION)
+
+        if INDENTATION == 0:
             # blank line if this is a top level end
             code = self._get_line()
         else:
@@ -247,42 +245,40 @@ class SceneItem(object):
         return code
 
     def _get_line(self, string=""):
-        """
-            format line of code with indentation and line separator
-        """
+        """format line of code with INDENTATION and line separator."""
         info("'" + "  " * self._get_indent() + string + "'")
         return "  " * self._get_indent() + string + linesep
 
     def _check_opts(self):
-        '''
-            Option Syntax checks
+        """
+        Option Syntax checks.
 
-            to be overwritten in subclasses
-        '''
+        to be overwritten in subclasses
+        """
         pass
 
     def _check_arguments(self):
-        '''
-            Argument Syntax checks
+        """
+        Argument Syntax checks.
 
-            to be overwritten in subclasses
-        '''
+        to be overwritten in subclasses
+        """
         pass
 
     def _check_kwargs(self):
-        '''
-            Keyword Argument Syntax checks
+        """
+        Keyword Argument Syntax checks.
 
-            to be overwritten in subclasses
-        '''
+        to be overwritten in subclasses
+        """
         pass
 
     def _validate_args(self, valid_args):
-        '''
-            Typecheck mandatory args agains given lost
+        """
+        Typecheck mandatory args agains given lost.
 
-            @TODO: make valid_args a fixed list of arguments?
-        '''
+        @TODO: make valid_args a fixed list of arguments?
+        """
         # args validation against objects list
         for i in range(len(self.args)):
             # type of  arguments
@@ -305,11 +301,9 @@ class SceneItem(object):
                         )
 
     def _validate_opts(self, valid_opts):
-        '''
-            Typecheck Keywords agains givien dictionary
-        '''
+        """Typecheck Keywords agains givien dictionary."""
         # make sure only valid object modifiers are passed
-        for i in range(len(self.opts)):
+        for i in enumerate(self.opts):
             if not self.opts[i].__class__.__name__ in valid_opts:
                 raise SdlSyntaxException(
                     'Invalid option type %s not in allowed opts \n%s' %
@@ -317,9 +311,7 @@ class SceneItem(object):
                 )
 
     def _validate_kwargs(self, valid_kw):
-        '''
-            Typecheck Keywords agains givien dictionary
-        '''
+        """Typecheck Keywords agains given dictionary."""
         # kwargs validation against objects dictionary
         for key, val in self.kwargs.items():
             # kwargs validation against global list
@@ -339,9 +331,7 @@ class SceneItem(object):
                 )
 
     def _checkKwargValue(self, kwarg, validvalues):
-        '''
-            Check value range for kwargs
-        '''
+        """Check value range for kwargs"""
 
         if kwarg in self.kwargs:
             if not self.kwargs[kwarg] in validvalues:
@@ -352,27 +342,21 @@ class SceneItem(object):
                 )
 
     def _format_args(self, args):
-        '''
-            format argument parameters
-        '''
+        """format argument parameters."""
         args = list(args)
-        for i in range(len(args)):
+        for i in enumerate(args):
             args[i] = self.map_arg(args[i])
         self.args = self.flatten(args)
 
     def _format_opts(self, opts):
-        '''
-            format option parameters
-        '''
+        """format option parameters."""
         opts = list(opts)
-        for i in range(len(opts)):
+        for i in enumerate(opts):
             opts[i] = self.map_arg(opts[i])
         self.opts = self.flatten(opts)
 
     def _format_kwargs(self, kwargs):
-        '''
-            format keyword parameters
-        '''
+        """format keyword parameters."""
         # debug('kwargs: %s', kwargs)
         self.kwargs = dict(kwargs)  # take a copy
         kwargs = dict(kwargs).items()
@@ -385,17 +369,13 @@ class SceneItem(object):
                 self.kwargs[key] = self.map_arg(val)
 
     def _is_valid_keyword(self, name):
-        '''
-            Test if keyword is Valid
-        '''
+        """Test if keyword is Valid."""
         if name in self.__reserved_keywords:
             return True
         return False
 
     def _is_valid_identifier(self, name):
-        '''
-            Test if name is not a keyword
-        '''
+        """Test if name is not a keyword."""
         if name not in self.__reserved_keywords:
             return True
         return False
@@ -406,9 +386,9 @@ class SceneItem(object):
 
     def __str__(self):
         """
-            return PoV code as string representation
+        return PoV code as string representation.
 
-            this method is meant to be overridden in subclasses
+        this method is meant to be overridden in subclasses
         """
         debug("%s: SceneItem.__str__(): %s, %s, %s" %
               (self.__class__.__name__, self.name, self.args, self.opts))
@@ -417,9 +397,9 @@ class SceneItem(object):
 
     def __setitem__(self, i, item):
         """
-            Set Item magic method
+        Set Item magic method.
 
-            e.g. foo[i] = bar
+        e.g. foo[i] = bar
         """
         if i < len(self.args):
             self.args[i] = self.map_arg(item)
@@ -432,9 +412,9 @@ class SceneItem(object):
 
     def __delitem__(self, i):
         """
-            Delete Item magic method
+        Delete Item magic method.
 
-            e.g. foo[i] = bar
+        e.g. foo[i] = bar
         """
         if i < len(self.args):
             del self.args[i]
@@ -447,9 +427,9 @@ class SceneItem(object):
 
     def __getitem__(self, i):
         """
-            Get Item magic method
+        Get Item magic method.
 
-            e.g. foo = bar[i]
+        e.g. foo = bar[i]
         """
         if i < len(self.args):
             return self.args[i]
@@ -461,9 +441,7 @@ class SceneItem(object):
                 raise IndexError()
 
     def __eq__(self, other):
-        '''
-            Operator Overload "="
-        '''
+        """Operator Overload "="."""
         if not isinstance(other, SceneItem):
             raise TypeError('can only be compared to objects of same type')
         vala = self.name == other.name
@@ -477,6 +455,7 @@ class SceneItem(object):
         return vala & valb & valc & vald
 
     def __len__(self):
+        """@Todo: ApiDoc."""
         return len(self.args) + len(self.opts)
 
     # ------------------------------------------------------------------------
@@ -485,9 +464,9 @@ class SceneItem(object):
 
     def append(self, *opts, **kwargs):
         """
-            append Subitem(s) to Item
+        append Subitem(s) to Item.
 
-            works for Options and kwargs
+        works for Options and kwargs
         """
 
         for item in self.flatten(opts):
@@ -501,9 +480,7 @@ class SceneItem(object):
         self._check_kwargs()
 
     def map_arg(self, arg):
-        """
-            Map an argument list to an appropriate format
-        """
+        """Map an argument list to an appropriate format."""
         if type(arg) in (tuple, list):
             # if multiple-component, floating-point value, return a vector
             if len(arg) and hasattr(arg[0], "__float__"):
@@ -512,9 +489,7 @@ class SceneItem(object):
         return arg
 
     def flatten(self, seq):
-        '''
-            flatten lists to one dimension
-        '''
+        """flatten lists to one dimension."""
         seq = list(seq)
         i = 0
         while i < len(seq):

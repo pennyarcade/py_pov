@@ -29,27 +29,27 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class FinishTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.sut = Finish(ambient=0.1, diffuse=0.9)
 
     def test_creation(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, Finish)
         self.assertIsInstance(self.sut, BlockObject)
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_toString(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         lsp = os.linesep
         first = str(self.sut)
 
@@ -62,36 +62,36 @@ class FinishTestCase(unittest.TestCase):
 
 
 class ColorMapTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.sut = ColorMap({0.3: Color(rgb=Vector(0.1, 0.2, 0.3))})
 
     def test_creation(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, ColorMap)
         self.assertIsInstance(self.sut, BlockObject)
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_creation_britisch(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.sut = ColourMap({'foo': 'bar'})
         self.assertIsInstance(self.sut, ColourMap)
         self.assertIsInstance(self.sut, BlockObject)
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_toString(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         lsp = os.linesep
         first = str(self.sut)
         second = 'color_map {' + lsp
@@ -102,57 +102,57 @@ class ColorMapTestCase(unittest.TestCase):
 
 
 class NormalTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.sut = Normal(bumps=0.1, diffuse=0.9)
 
     def test_creation(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, Normal)
         self.assertIsInstance(self.sut, BlockObject)
         self.assertIsInstance(self.sut, SceneItem)
 
 
 class PigmentTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.sut = Pigment(bozo=True, diffuse=0.9)
 
     def test_creation(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, Pigment)
         self.assertIsInstance(self.sut, BlockObject)
         self.assertIsInstance(self.sut, SceneItem)
 
 
 class TextureTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.sut = Texture()
 
     def test_creation(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, Texture)
         self.assertIsInstance(self.sut, BlockObject)
         self.assertIsInstance(self.sut, SceneItem)

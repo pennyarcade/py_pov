@@ -1,5 +1,6 @@
-'''
-@Todo: Translate!
+r"""
+@Todo: Translate.
+
 // Persistence of Vision Ray Tracer Scene Description File
 // File: ?.pov
 // Vers: 3.6
@@ -44,4 +45,4 @@ box {                  // this box fits exactly in view
     }
   }
 }
-'''
+"""

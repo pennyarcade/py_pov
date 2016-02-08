@@ -1,5 +1,5 @@
-'''
-@Todo: translate
+"""
+@Todo: translate.
 
 // Persistence of Vision Ray Tracer Scene Description File
 // File: ?.pov
@@ -68,4 +68,4 @@ text {
 
 
 plane { y, 0 pigment { color rgb <0.7,0.5,0.3> } }
-'''
+"""

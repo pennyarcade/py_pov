@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -16,38 +16,38 @@ from pov.basic.Vector import Vector
 
 
 class Color(SceneItem):
-    '''
-        Color Expressions
+    """
+    Color Expressions.
 
-        COLOR:
-            [color] COLOR_BODY | colour COLOR_BODY
+    COLOR:
+        [color] COLOR_BODY | colour COLOR_BODY
 
-        COLOR_BODY:
-            COLOR_VECTOR | COLOR_KEYWORD_GROUP | COLOR_IDENTIFIER
+    COLOR_BODY:
+        COLOR_VECTOR | COLOR_KEYWORD_GROUP | COLOR_IDENTIFIER
 
-        COLOR_VECTOR:
-            rgb 3D_VECTOR | rgbf 4D_VECTOR | rgbt 4D_VECTOR
-                | [rgbft] 5D_VECTOR
+    COLOR_VECTOR:
+        rgb 3D_VECTOR | rgbf 4D_VECTOR | rgbt 4D_VECTOR
+            | [rgbft] 5D_VECTOR
 
-        COLOR_KEYWORD_GROUP:
-            [COLOR_IDENTIFIER] COLOR_KEYWORD_ITEMS
+    COLOR_KEYWORD_GROUP:
+        [COLOR_IDENTIFIER] COLOR_KEYWORD_ITEMS
 
-        COLOR_KEYWORD_ITEMS:
-            [red FLOAT] & [green FLOAT] & [blue FLOAT]
-            & [filter FLOAT] & [transmit FLOAT]
+    COLOR_KEYWORD_ITEMS:
+        [red FLOAT] & [green FLOAT] & [blue FLOAT]
+        & [filter FLOAT] & [transmit FLOAT]
 
-        @TODO: enable setting color by passing float
-            options e.g. Color(0.0, 0.2, 0.75)
-        @TODO: check syntax of kwargs
-    '''
+    @TODO: enable setting color by passing float
+        options e.g. Color(0.0, 0.2, 0.75)
+    @TODO: check syntax of kwargs
+    """
 
     def __init__(self, *opts, **kwargs):
-        '''
-            Create Color object
+        """
+        Create Color object.
 
-            @Todo: add properties for all color components @see colors_ink.py
-            @TODO: Syntax Checks
-        '''
+        @Todo: add properties for all color components @see colors_ink.py
+        @TODO: Syntax Checks
+        """
         super(Color, self).__init__('color', [], opts, kwargs)
 
         if 'rgb' in self.kwargs:
@@ -91,6 +91,7 @@ class Color(SceneItem):
             self.transmit = self.vector[4]
 
     def __str__(self):
+        """@Todo: ApiDoc."""
         code = ''
 
         if self.type in ['rgb', 'rgbt', 'rgbf', 'rgbft']:
@@ -100,14 +101,16 @@ class Color(SceneItem):
         return code
 
     def __mul__(self, other):
+        """@Todo: ApiDoc."""
         self.vector *= other
         return self
 
     def _check_kwargs(self):
-        '''
-            Keyword Argument Syntax checks
-        '''
+        """
+        Keyword Argument Syntax checks.
 
+        @Todo: ApiDoc
+        """
         valid_kw = {
             'rgb':  'Vector',
             'rgbf': 'Vector',

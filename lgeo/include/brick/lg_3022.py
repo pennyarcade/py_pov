@@ -294,7 +294,7 @@ def solid(length=2, width=2):
 
 
 # noqa
-'''
+"""
 
 #declare lg_3022_clear =
 Merge(
@@ -477,4 +477,4 @@ LG_CORNER_SPACE
  Rotate(Vector(0, 0, 90)
 ),
 
-'''
+"""

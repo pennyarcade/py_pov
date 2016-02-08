@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -16,42 +16,42 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class Lathe(BlockObject):
-    '''
-        LATHE:
-            lathe
-            {
-                [SPLINE_TYPE] Number_Of_Points, <Point_1>
-                <Point_2>... <Point_n>
-                [LATHE_MODIFIER...]
-            }
-        SPLINE_TYPE:
-            linear_spline | quadratic_spline | cubic_spline | bezier_spline
-        LATHE_MODIFIER:
-            sturm | OBJECT_MODIFIER
+    """
+    Lathe Object.
 
-        @TODO: Implement
-        @Todo: Syntax Checks
-    '''
+    LATHE:
+        lathe
+        {
+            [SPLINE_TYPE] Number_Of_Points, <Point_1>
+            <Point_2>... <Point_n>
+            [LATHE_MODIFIER...]
+        }
+    SPLINE_TYPE:
+        linear_spline | quadratic_spline | cubic_spline | bezier_spline
+    LATHE_MODIFIER:
+        sturm | OBJECT_MODIFIER
+
+    @TODO: Implement
+    @Todo: Syntax Checks
+    """
 
     def __init__(self, stype, number, points, *opts, **kwargs):
-        '''
-            Construct a Lathe object
+        """
+        Construct a Lathe object.
 
-            @Param stype: spline type
-            @Type type: String
-            @Param type: number of points
-            @Type type: Int
-            @Param type: points
-            @Type type: List of Vector length 3
-        '''
+        @Param stype: spline type
+        @Type type: String
+        @Param type: number of points
+        @Type type: Int
+        @Param type: points
+        @Type type: List of Vector length 3
+        """
         super(Lathe, self).__init__(
             "lathe", [stype, number, points], opts, kwargs
         )
 
     def _check_arguments(self):
-        '''
-            Argument Syntax checks
-        '''
+        """Argument Syntax checks."""
         valid_args = ['str', 'int', 'Vector']
 
         warn(self.args)
@@ -85,22 +85,21 @@ class Lathe(BlockObject):
                 )
 
     def _check_opts(self):
-        '''
-            Option Syntax checks
+        """
+        Option Syntax checks.
 
-            @Todo: get rid of Object Modifier superclass?
-        '''
+        @Todo: get rid of Object Modifier superclass?
+        """
         valid_opts = ['ObjectModifier']
 
         self._validate_opts(valid_opts)
 
     def _check_kwargs(self):
-        '''
-            Keyword Argument Syntax checks
+        """
+        Keyword Argument Syntax checks.
 
-            @Todo: Finish syntax checks
-        '''
-
+        @Todo: Finish syntax checks
+        """
         valid_kw = {
             'points': 'Vector',
             'sturm': 'bool',

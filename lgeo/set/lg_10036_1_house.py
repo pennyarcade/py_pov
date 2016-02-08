@@ -1,60 +1,56 @@
 # coding=UTF-8
-"""***************************************************************************
-    Persistence of Vision Ray Tracer Scene Description File
-    File: 10036-1_car.pov
-    Vers: 3.6
-    Desc: Lego Set "Pizza To Go" Subpart: house
-    Link: www.peeron.com/inv/sets/10036-1
-    Date: 04/2013
-    Auth: Chocokiko
-**************************************************************************"""
+"""
+Persistence of Vision Ray Tracer Scene Description File.
 
-# noqa
-'''**************************************************************************
-    Parts List
-    ----------
+File: 10036-1_car.pov
+Vers: 3.6
+Desc: Lego Set "Pizza To Go" Subpart: house
+Link: www.peeron.com/inv/sets/10036-1
+Date: 04/2013
+Auth: Chocokiko
 
-    3659    White   Arch 1 x 4 (Pic)
-    3865    OldGray Baseplate 8 x 16 (Pic)
-    3005    White   Brick 1 x 1 (Pic)
-    4070    Black   Brick 1 x 1 with Headlight (Pic)
-    3004    White   Brick 1 x 2 (Pic)
-    3622    White   Brick 1 x 3 (Pic)
-    3010    White   Brick 1 x 4 (Pic)
-    3009    White   Brick 1 x 6 (Pic)
-    3008    White   Brick 1 x 8
-    3003    Yellow  Brick 2 x 2 (Pic)
-    2357    White   Brick 2 x 2 Corner (Pic)
-    3001    White   Brick 2 x 4 (Pic)
-    4589    Black   Cone 1 x 1 (Pic)
-    3192    Black   Door 1 x 3 x 3 Right
-    3024    Red Plate 1 x 1 (Pic)
-    4085c   Red Plate 1 x 1 with Clip Vertical - Type 3 (Pic)
-    3023    Red Plate 1 x 2 (Pic)
-    3023    OldGray Plate 1 x 2 (Pic)
-    3623    Red Plate 1 x 3 (Pic)
-    3710    White   Plate 1 x 4 (Pic)
-    3460    Red Plate 1 x 8
-    3022    Red Plate 2 x 2 (Pic)
-    3022    White   Plate 2 x 2 (Pic)
-    2420    Red Plate 2 x 2 Corner (Pic)
-    3021    Red Plate 2 x 3 (Pic)
-    3020    White   Plate 2 x 4 (Pic)
-    3795    Red Plate 2 x 6 (Pic)
-    4515    Red Slope Brick 10 6 x 8 (Pic)
-    3675    Red Slope Brick 33 3 x 3 Double Convex (Pic)
-    3665    White   Slope Brick 45 2 x 1 Inverted (Pic)
-    3660    White   Slope Brick 45 2 x 2 Inverted (Pic)
-    821407  White   Sticker Sheet Town Pizzeria Pizza Logos (Pic)   821407
-    69c01   White   Tap 1 x 2 Assembly with Gray Spout (Pic)
-    2412b   Red Tile 1 x 2 Grille with Groove (Pic)
-    2412b   Yellow  Tile 1 x 2 Grille with Groove (Pic)
-    4150p02 Yellow  Tile 2 x 2 Round with Pizza Pattern (Pic)
-    3068b   Black   Tile 2 x 2 with Groove (Pic)
-************************************************************************* '''
+Parts List
+----------
 
-# noqa
-''' ***************************************************************************
+3659    White   Arch 1 x 4 (Pic)
+3865    OldGray Baseplate 8 x 16 (Pic)
+3005    White   Brick 1 x 1 (Pic)
+4070    Black   Brick 1 x 1 with Headlight (Pic)
+3004    White   Brick 1 x 2 (Pic)
+3622    White   Brick 1 x 3 (Pic)
+3010    White   Brick 1 x 4 (Pic)
+3009    White   Brick 1 x 6 (Pic)
+3008    White   Brick 1 x 8
+3003    Yellow  Brick 2 x 2 (Pic)
+2357    White   Brick 2 x 2 Corner (Pic)
+3001    White   Brick 2 x 4 (Pic)
+4589    Black   Cone 1 x 1 (Pic)
+3192    Black   Door 1 x 3 x 3 Right
+3024    Red Plate 1 x 1 (Pic)
+4085c   Red Plate 1 x 1 with Clip Vertical - Type 3 (Pic)
+3023    Red Plate 1 x 2 (Pic)
+3023    OldGray Plate 1 x 2 (Pic)
+3623    Red Plate 1 x 3 (Pic)
+3710    White   Plate 1 x 4 (Pic)
+3460    Red Plate 1 x 8
+3022    Red Plate 2 x 2 (Pic)
+3022    White   Plate 2 x 2 (Pic)
+2420    Red Plate 2 x 2 Corner (Pic)
+3021    Red Plate 2 x 3 (Pic)
+3020    White   Plate 2 x 4 (Pic)
+3795    Red Plate 2 x 6 (Pic)
+4515    Red Slope Brick 10 6 x 8 (Pic)
+3675    Red Slope Brick 33 3 x 3 Double Convex (Pic)
+3665    White   Slope Brick 45 2 x 1 Inverted (Pic)
+3660    White   Slope Brick 45 2 x 2 Inverted (Pic)
+821407  White   Sticker Sheet Town Pizzeria Pizza Logos (Pic)   821407
+69c01   White   Tap 1 x 2 Assembly with Gray Spout (Pic)
+2412b   Red Tile 1 x 2 Grille with Groove (Pic)
+2412b   Yellow  Tile 1 x 2 Grille with Groove (Pic)
+4150p02 Yellow  Tile 2 x 2 Round with Pizza Pattern (Pic)
+3068b   Black   Tile 2 x 2 with Groove (Pic)
+
+
 LGEO Disclaimer
 Well, it is possible but not recommended. LGEO uses a different coordinate
 system and scaling than LDRAW, so it may be pretty hard to build a model by
@@ -64,7 +60,7 @@ Sorry for that, but my understanding of coordinate to this time was a flat
 standard XY coordinate system with a third Z axis coming out of the plane.
 Scaling is to real measurements, where 1 POV-Ray unit is 10mm. So 0.8 is 20
 LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
-*************************************************************************** '''
+"""
 
 # Only load once
 # #ifndef(set_10036_1_car)
@@ -165,6 +161,8 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # declare set_10036_1_house_base_ox= 0;
 # declare set_10036_1_house_base_oy= 0;
 # declare set_10036_1_house_base_oz= 0;
+
+from pov.csg.Union import Union
 
 set_10036_1_house_nonmoving = Union(
     # 3001    White   Brick 2 x 4 (Pic)

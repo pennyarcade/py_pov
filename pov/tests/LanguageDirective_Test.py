@@ -23,61 +23,61 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class LanguageDirectiveTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.sut = LanguageDirective('#foo')
 
     def test_creation(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, LanguageDirective)
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_str(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         second = '#foo'
 
         self.assertEqual(str(self.sut), second)
 
 
 class IncludeTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.sut = Include('fixture/test.inc')
 
     def test_create(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, Include)
         self.assertIsInstance(self.sut, LanguageDirective)
 
     def test_str(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         lsp = os.linesep
         second = '#include "fixture/test.inc"' + lsp
 
         self.assertEqual(str(self.sut), second)
 
     def test_create_non_existant_file(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         with self.assertRaisesRegexp(
             IOError,
             'No such file: %s%s%s' % (
@@ -88,35 +88,35 @@ class IncludeTestCase(unittest.TestCase):
 
 
 class VersionTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.sut = Version(3.6)
 
     def test_create(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, Version)
         self.assertIsInstance(self.sut, LanguageDirective)
 
     def test_str(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         lsp = os.linesep
         second = '#version 3.6;' + lsp
 
         self.assertEqual(str(self.sut), second)
 
     def test_create_wrong_type(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Value of Argument 0 is expectet to be type float but got str'
@@ -125,27 +125,27 @@ class VersionTestCase(unittest.TestCase):
 
 
 class DefaultTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         debug('---------------------------------')
         self.sut = Default(Finish(ambient=0.43))
 
     def test_creation(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, Default)
         self.assertIsInstance(self.sut, LanguageDirective)
 
     def test_tostring(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         debug('---------------------------------')
         lsp = os.linesep
         first = str(self.sut)

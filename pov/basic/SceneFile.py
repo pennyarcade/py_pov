@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -17,31 +17,32 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 class SceneFile(object):
     """
-        POV-Ray scene file object.
+    POV-Ray scene file object.
 
-        @Todo: Proper Apidoc
-        @Todo: Add param for PovRay Ini file
+    @Todo: Proper Apidoc
+    @Todo: Add param for PovRay Ini file
 
-        @var private __lock
-        @var private __indent
-        @var public  file
+    @var private __lock
+    @var private __indent
+    @var public  file
     """
 
     #######################################################
     # Public
 
     def __init__(self, fnam="out.pov", *items):
-        """Open POV-Ray scene file.
-
-            Open file and write some components.
-
-            @param fnam: POV-Ray scene file name.
-            @type fnam: string
-            @param items
-
-            @Todo: check if file is writeable?
         """
-        if not type(fnam) == str:
+        Open POV-Ray scene file.
+
+        Open file and write some components.
+
+        @param fnam: POV-Ray scene file name.
+        @type fnam: string
+        @param items
+
+        @Todo: check if file is writeable?
+        """
+        if type(fnam) != str:
             raise TypeError(
                 'Filename String expected but got %s'
                 % fnam.__class__.__name__
@@ -57,9 +58,7 @@ class SceneFile(object):
         # self.file = open(fnam, "w")
 
     def __str__(self):
-        '''
-            Return PoV source code for complete scene file
-        '''
+        """Return PoV source code for complete scene file."""
         code = ''
 
         for i in self.items:
@@ -70,9 +69,7 @@ class SceneFile(object):
         return code
 
     def append(self, *items):
-        '''
-            Append Scene Item(s) to Scene Filename
-        '''
+        """Append Scene Item(s) to Scene Filename."""
         for i in items:
             # each item has to be derived of SceneItem
             if not isinstance(i, SceneItem):
@@ -85,12 +82,11 @@ class SceneFile(object):
 
     def write(self):
         """
-            Write commands into scene file.
+        Write commands into scene file.
 
-            @TODO: There should be no more type/syntax checking here
-            @Todo: Write to file code
+        @TODO: There should be no more type/syntax checking here
+        @Todo: Write to file code
         """
-
         # for item in items:
         #    if type(item) == list:
         #        for _item in item:
@@ -101,7 +97,5 @@ class SceneFile(object):
         #        item.write(self)
 
     def close(self):
-        """
-            Close POV-Ray scene file.
-        """
+        """Close POV-Ray scene file."""
         # self.file.close()

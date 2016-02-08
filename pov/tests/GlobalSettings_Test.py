@@ -19,26 +19,26 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class GlobalSettingsTestCase(unittest.TestCase):
-    '''
+    """
         @Todo: DocString
-    '''
+    """
     def setUp(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.sut = GlobalSettings()
 
     def test_creation(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, GlobalSettings)
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_create_Option_wrong_type(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((

@@ -1,5 +1,5 @@
 # noqa
-'''
+"""
 @Todo: Translate
 
 // Persistence of Vision Ray Tracer Scene Description File
@@ -126,4 +126,4 @@ cylinder {
     reflection on
   }
 }
-'''
+"""

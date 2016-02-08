@@ -1,13 +1,12 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
 See LICENSE file.
 
 Some modifications by W.T. Bridgman, 2006-2007.
-
 """
 
 import os
@@ -16,34 +15,34 @@ from pov.basic.BlockObject import BlockObject
 
 class Radiosity(BlockObject):
     """
-        RADIOSITY:
-            radiosity { [RADIOSITY_ITEMS] }
-        RADIOSITY_ITEMS:
-            [adc_bailout FLOAT] &
-            [always_sample BOOL] &
-            [brightness FLOAT] &
-            [count INT] &
-            [error_bound FLOAT] &
-            [gray_threshold FLOAT] &
-            [load_file FILE_NAME] &
-            [low_error_factor FLOAT] &
-            [max_sample FLOAT] &
-            [media BOOL] &
-            [minimum_reuse FLOAT] &
-            [nearest_count INT] &
-            [normal BOOL] &
-            [pretrace_end FLOAT] &
-            [pretrace_start FLOAT] &
-            [recursion_limit INT] &
-            [save_file FILE_NAME]
+    Radiosity Object.
 
-        @Todo: Implement
+    RADIOSITY:
+        radiosity { [RADIOSITY_ITEMS] }
+    RADIOSITY_ITEMS:
+        [adc_bailout FLOAT] &
+        [always_sample BOOL] &
+        [brightness FLOAT] &
+        [count INT] &
+        [error_bound FLOAT] &
+        [gray_threshold FLOAT] &
+        [load_file FILE_NAME] &
+        [low_error_factor FLOAT] &
+        [max_sample FLOAT] &
+        [media BOOL] &
+        [minimum_reuse FLOAT] &
+        [nearest_count INT] &
+        [normal BOOL] &
+        [pretrace_end FLOAT] &
+        [pretrace_start FLOAT] &
+        [recursion_limit INT] &
+        [save_file FILE_NAME]
+
+    @Todo: Implement
     """
 
     def _check_arguments(self):
-        '''
-            Argument Syntax checks
-        '''
+        """Argument Syntax checks."""
         valid_args = ['str']
 
         self._validate_args(valid_args)
@@ -56,20 +55,17 @@ class Radiosity(BlockObject):
         # @TODO: check file type
 
     def _check_opts(self):
-        '''
-            Option Syntax checks
+        """
+        Option Syntax checks.
 
-            @Todo: get rid of Object Modifier superclass?
-        '''
+        @Todo: get rid of Object Modifier superclass?
+        """
         valid_opts = ['ObjectModifier']
 
         self._validate_opts(valid_opts)
 
     def _check_kwargs(self):
-        '''
-            Keyword Argument Syntax checks
-        '''
-
+        """Keyword Argument Syntax checks."""
         valid_kw = {
             'hf_type': 'str',
             'hierarchy': 'bool',

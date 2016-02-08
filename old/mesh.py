@@ -37,7 +37,7 @@ def test00():
     C = [ random()*100 for j in range(3) ]
     mesh.append( Triangle(A,B,C,textures[i]) )
     #mesh.append( Triangle(A,B,C) )
-  mesh.append( 
+  mesh.append(
     Texture(
       Finish(
         ambient = 0.2,
@@ -72,7 +72,7 @@ def test01():
     B = [ a + random()*32 for a in A ]
     C = [ b + random()*32 for b in B ]
     mesh.append( Triangle(A,B,C,textures[i]) )
-  mesh.append( 
+  mesh.append(
     Texture(
       Finish(
         ambient = 0.2,
@@ -124,7 +124,7 @@ def test02():
     #mesh.append( Triangle(A,B,C,textures[i]) )
     mesh.append( Triangle(X,Y,Z,textures[i]) )
     theta+=dtheta
-  mesh.append( 
+  mesh.append(
     Texture(
       Finish(
         ambient = 0.2,
@@ -176,7 +176,7 @@ def mkmesh(file,theta=0.0,omega=6.0,h=3.0,N=192):
         (x+1,y,field(x+1,y)),
         (x,y+1,field(x,y+1)))
       mesh.append( Triangle(A,B,C,Texture("water")) )
-  mesh.append( 
+  mesh.append(
     Texture(
       Finish(
         ambient = 0.2,
@@ -198,7 +198,7 @@ def mkortho(r):
   v1, v2 = mkv(r), mkv(r)
   #print v1,v2,v1.dot(v2)
   rv2 = v2.norm()
-  # gram-schmidt 
+  # gram-schmidt
   r = (v1/v1.norm()).dot(v2)
   #print r, v1, v2
   #print v2 - r*v1
@@ -206,7 +206,7 @@ def mkortho(r):
   #v2 *= rv2 / v2.norm() # restore norm
   #print v1,v2,v1.dot(v2)
   #print v1.norm(),v2.norm()
-  assert abs(v1.dot(v2)) < 0.001 
+  assert abs(v1.dot(v2)) < 0.001
   return v1,v2
 
 def test10():
@@ -243,7 +243,7 @@ def test10():
       v3 = ortho[2][0]*sin(theta) + ortho[2][1]*cos(theta)
       mesh.append( Triangle(v1,v2,v3,textures[i]) )
       thetas[i] += dtheta
-    mesh.append( 
+    mesh.append(
       Texture(
         Finish(
           ambient = 0.2,
@@ -277,7 +277,7 @@ def test11():
     B = [ random()*100 for j in range(3) ]
     C = [ random()*100 for j in range(3) ]
     mesh.append( Triangle(A,B,C,textures[i%len(textures)]) )
-  mesh.append( 
+  mesh.append(
     Texture(
       Finish(
         ambient = 0.2,
@@ -316,7 +316,7 @@ def test12():
     B = [ random()*100 for j in range(3) ]
     C = [ random()*100 for j in range(3) ]
     mesh.append( Triangle(A,B,C,textures[i%len(textures)]) )
-  mesh.append( 
+  mesh.append(
     Texture(
       Finish(
         ambient = 0.2,
@@ -376,7 +376,7 @@ def test13():
     B = [ random()*100 for j in range(3) ]
     C = [ random()*100 for j in range(3) ]
     mesh.append( Triangle(A,B,C,textures[i%len(textures)]) )
-  mesh.append( 
+  mesh.append(
     Texture(
       Finish(
         ambient = 0.2,
@@ -413,7 +413,7 @@ def test130():
     B = [ random()*100 for j in range(3) ]
     C = [ random()*100 for j in range(3) ]
     mesh.append( Triangle(A,B,C,textures[i%len(textures)]) )
-  mesh.append( 
+  mesh.append(
     Texture(
       Finish(
         ambient = 0.2,
@@ -450,7 +450,7 @@ def test14():
     C = [ random()*100 for j in range(3) ]
     #mesh.append( Triangle(A,B,C,textures[i]) )
     mesh.append( Triangle(A,B,C) )
-  mesh.append( 
+  mesh.append(
     Texture(
       Finish(
         ambient = 0.2,
@@ -531,7 +531,7 @@ def test15():
   mkbox(file)
   LightSource((0,0,0),(1,1,1)).write(file)
   LightSource((-0,0,-92),(1,1,1)).write(file)
-  Plane( (0,0,1), 512, 
+  Plane( (0,0,1), 512,
     Texture(
       Finish(
         ambient = 0.2,

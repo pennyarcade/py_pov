@@ -1,5 +1,6 @@
-'''
-//    Persistence of Vision Ray Tracer version 3.5 Include File
+u"""
+//    Persistence of Vision Ray Tracer version 3.5 Include File.
+
 //    File: chars.inc
 //    Last updated: 2001.7.21
 //    Description: This file contains letters as objects.
@@ -668,4 +669,4 @@
 // End of CHARS.INC
 #version Chars_Inc_Temp;
 #end
-'''
+"""

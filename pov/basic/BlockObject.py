@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -15,13 +15,9 @@ from pov.basic.SceneItem import SceneItem
 
 
 class BlockObject(SceneItem):
-    '''
-        provides methods to generate code blocks
-    '''
+    """provides methods to generate code blocks."""
     def __str__(self):
-        """
-            return PoV code as string representation
-        """
+        """return PoV code as string representation."""
         debug(
             "BlockObject.__str__ %s, %s, %s",
             self.name, self.args, self.opts
@@ -41,9 +37,7 @@ class BlockObject(SceneItem):
         return code
 
     def _get_begin_code(self):
-        """
-            Start block of code
-        """
+        """Start block of code."""
 
         code = "  " * self._get_indent() + self.name + self._block_begin()
         if self.args:
@@ -53,9 +47,7 @@ class BlockObject(SceneItem):
         return code
 
     def _get_end_code(self):
-        """
-            End block of code
-        """
+        """End block of code."""
         code = ""
 
         # debug('kwargs: %s', self.kwargs)

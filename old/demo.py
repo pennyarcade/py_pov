@@ -87,7 +87,7 @@ def test10():
   Intersection(
     Sphere( (0,0,0), 1, translate=-0.5*x ),
     Sphere( (0,0,0), 1, translate=0.5*x ),
-    Pigment("Red") 
+    Pigment("Red")
   ).write(file)
 
 gamma = (sqrt(5)-1)/2
@@ -252,7 +252,7 @@ def test31():
   cam.location=(0,0,-64)
   dtheta = 0.0
   i=0
-  N = 1024 * 4 
+  N = 1024 * 4
   ddtheta = 2*pi / N
   for i in range(N):
     cam.rotate = x*(180*dtheta/pi)

@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -15,31 +15,32 @@ from pov.basic.BlockObject import BlockObject
 
 
 class HeightField(BlockObject):
-    '''
-        HEIGHT_FIELD:
-            height_field{
-              [HF_TYPE]
-              "filename"
-              [HF_MODIFIER...]
-              [OBJECT_MODIFIER...]
-            }
-        HF_TYPE:
-            gif | tga | pot | png | pgm | ppm | jpeg | tiff | sys | function
-        HF_MODIFIER:
-            hierarchy [Boolean]  |
-            smooth               |
-            water_level float
-    '''
+    """
+    height field object.
+
+    HEIGHT_FIELD:
+        height_field{
+          [HF_TYPE]
+          "filename"
+          [HF_MODIFIER...]
+          [OBJECT_MODIFIER...]
+        }
+    HF_TYPE:
+        gif | tga | pot | png | pgm | ppm | jpeg | tiff | sys | function
+    HF_MODIFIER:
+        hierarchy [Boolean]  |
+        smooth               |
+        water_level float
+    """
     def __init__(self, filename, *opts, **kwargs):
-        '''
-            Construct a HeightField object
+        """
+        Construct a HeightField object.
 
-            @param filename: Input file name
-            @param type: string
+        @param filename: Input file name
+        @param type: string
 
-            @TODO: check if file matches given type
-        '''
-
+        @TODO: check if file matches given type
+        """
         # call superclass constructor
         super(HeightField, self).__init__(
             "height_field",
@@ -49,17 +50,13 @@ class HeightField(BlockObject):
         )
 
     def _get_begin_code(self):
-        """
-            Start block of code
-        """
+        """Start block of code."""
         code = "  " * self._get_indent() + self.name + self._block_begin()
         code = code + self._get_line('"' + str(self.args[0]) + '"')
         return code
 
     def _check_arguments(self):
-        '''
-            Argument Syntax checks
-        '''
+        """Argument Syntax checks."""
         valid_args = ['str']
 
         self._validate_args(valid_args)
@@ -72,20 +69,17 @@ class HeightField(BlockObject):
         # @TODO: check file type
 
     def _check_opts(self):
-        '''
-            Option Syntax checks
+        """
+        Option Syntax checks.
 
-            @Todo: get rid of Object Modifier superclass?
-        '''
+        @Todo: get rid of Object Modifier superclass?
+        """
         valid_opts = ['ObjectModifier']
 
         self._validate_opts(valid_opts)
 
     def _check_kwargs(self):
-        '''
-            Keyword Argument Syntax checks
-        '''
-
+        """Keyword Argument Syntax checks."""
         valid_kw = {
             'hf_type': 'str',
             'hierarchy': 'bool',

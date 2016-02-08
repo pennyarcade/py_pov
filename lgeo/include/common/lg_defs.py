@@ -64,22 +64,22 @@ LG_GRID_WIDTH = LG_BRICK_WIDTH / sqrt(2) - 2 * LG_KNOB_RADIUS
 LG_E = 0.01
 
 
-'''***************************************************************************
+"""
 Custom Shorthands
-***************************************************************************'''
+"""
 LDU = 0.8 / 20
 LGBW = LG_BRICK_WIDTH
 LGBH = LG_BRICK_HEIGHT
 LGPH = LG_PLATE_HEIGHT
 
 
-'''*********************************************************************
+"""
 *  Stud Logo
 *
 *  Declare lg_quality < 3 if you do not want the LGEO logo on the studs.
 *  Remove the translate statements to rearrange letters of logo...
 *
-*********************************************************************'''
+"""
 
 
 def lego_logo_text():
@@ -237,9 +237,9 @@ def lego_logo_text_clear():
     ),
 
 
-'''********************************************************************
+"""
 *  LGEO Primitives
-********************************************************************'''
+"""
 
 
 # solid stud
@@ -334,7 +334,7 @@ lg_tech_knob = Union(
 
 
 # hollow stud with logo
-'''
+"""
 def lg_tech_knob_logo():
     #if (lg_quality > 3)
         Union(
@@ -350,7 +350,7 @@ def lg_tech_knob_logo():
     #if (lg_quality > 3)
         ),
     #end
-'''
+"""
 
 # brick inner cylinder to fit stud inside
 lg_brick_cylinder = Union(
@@ -439,9 +439,9 @@ lg_knob_inner_space = Cylinder(
     (0.125)
 )
 
-'''********************************************************************
+"""
 *  LGEO Primitives Clear versions
-********************************************************************'''
+"""
 
 
 def lg_knob_clear():

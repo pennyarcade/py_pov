@@ -1,12 +1,13 @@
-'''****************************************************************************
- Persistence of Vision Ray Tracer Scene Description File
- File: main.pov
- Vers: 3.6
- Desc: Main file for testing scenes
- Link:
- Date: 04/2013
- Auth: Chocokiko
-****************************************************************************'''
+"""
+Persistence of Vision Ray Tracer Scene Description File.
+
+File: main.pov
+Vers: 3.6
+Desc: Main file for testing scenes
+Link:
+Date: 04/2013
+Auth: Chocokiko
+"""
 
 # Only load once
 # ifdef(main)
@@ -117,9 +118,7 @@ from lgeo.set import lg_10036_1_car
 
 
 def main():
-    '''
-        @Todo: DocString
-    '''
+    """@Todo: DocString."""
 
     fix = SceneFile('test.pov')
     fix.append(Version(3.6))
@@ -177,8 +176,8 @@ def main():
     fix.append(
         Camera(
             location=Vector(5, 12, 12),
-            direction=1.5*z,
-            right=x*image_width/image_height,
+            direction=1.5 * z,
+            right=x * image_width / image_height,
             look_at=(0.0, 5.0, 0.0)
         )
     )

@@ -20,33 +20,33 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class TranslateTestCase(unittest.TestCase):
-    '''
+    """
         Test Translate class
-    '''
+    """
     def setUp(self):
-        '''
+        """
             Set up fixture
-        '''
+        """
         self.sut = Translate(Vector(1, 2, 3))
 
     def test_creation(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         self.assertIsInstance(self.sut, Translate)
         self.assertIsInstance(self.sut, ObjectModifier)
 
     def test_str(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         second = 'translate <1, 2, 3>' + os.linesep
         self.assertEqual(str(self.sut), second)
 
     def test_create_arg_wrong_type(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Value of Argument 0 is expectet to be type Vector but got str'
@@ -54,9 +54,9 @@ class TranslateTestCase(unittest.TestCase):
             Translate('foo')
 
     def test_create_arg_wrong_length_vector(self):
-        '''
+        """
             @Todo: DocString
-        '''
+        """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Vector TVector has more or less than 3 dimensions'

@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -15,10 +15,12 @@ from pov.basic.BlockObject import BlockObject
 
 class FinitePatch(BlockObject):
     """
-        FINITE_PATCH_OBJECT:
-            BICUBIC_PATCH | DISC | MESH | MESH2 | POLYGON | TRIANGLE |
-            SMOOTH_TRIANGLE
+    Finite Patch object.
 
-        @TODO: Implement
-        @Todo: Deprecate initePatch Superclass
+    FINITE_PATCH_OBJECT:
+        BICUBIC_PATCH | DISC | MESH | MESH2 | POLYGON | TRIANGLE |
+        SMOOTH_TRIANGLE
+
+    @TODO: Implement
+    @Todo: Deprecate initePatch Superclass
     """

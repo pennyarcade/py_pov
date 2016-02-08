@@ -1,5 +1,6 @@
-'''
-// Persistence of Vision Ray Tracer Scene Description File
+"""
+// Persistence of Vision Ray Tracer Scene Description File.
+
 // File: ?.pov
 // Vers: 3.6
 // Desc: Basic Scene Example
@@ -65,9 +66,7 @@ sphere {
     }
   }
 }
-'''
-
-from logging import debug
+"""
 
 from pov.atmeff.SkySphere import SkySphere
 from pov.basic.SceneFile import SceneFile
