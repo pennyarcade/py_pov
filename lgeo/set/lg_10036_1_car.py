@@ -171,7 +171,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
         custom_macros.StdBrick(
             lg_2441.solid(),
-            lg_red,
+            LG_RED,
             0, 3 * LGPH, 0,
             -90, 0, 0),
 
@@ -184,7 +184,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         Comment('**** Start 3022 White Plate 2 x 2 ****'),
         custom_macros.StdBrick(
             lg_3022.solid(),
-            lg_white,
+            LG_WHITE,
             2.5 * LGBW, 4 * LGPH, 0,
             -90, 0, 0
         ),
@@ -192,7 +192,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         Comment('**** Start 2412b White Tile 1 x 2 Grille with Groove ****'),
         custom_macros.StdBrick(
             lg_2412b.solid(),
-            lg_white,
+            LG_WHITE,
             0.5 * LGBW, 3 * LGPH, -1.5 * LGBW,
             -90, 90, 0
         ),
@@ -200,7 +200,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         Comment('**** Start 2412b White Tile 1 x 2 Grille with Groove ****'),
         custom_macros.StdBrick(
             lg_2412b.solid(),
-            lg_white,
+            LG_WHITE,
             0.5 * LGBW, 3 * LGPH, 1.5 * LGBW,
             -90, 90, 0
         ),
@@ -213,7 +213,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         Comment('**** Start 3022 White Plate 2 x 2 ****'),
         custom_macros.StdBrick(
             lg_3022.solid(),
-            lg_white,
+            LG_WHITE,
             -2.5 * LGBW, 4 * LGPH, 0,
             -90, 0, 0
         ),
@@ -221,7 +221,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         Comment('**** Start 3010 White Brick 1 x 4 ****'),
         custom_macros.StdBrick(
             lg_3010.solid(),
-            lg_white,
+            LG_WHITE,
             -1 * LGBW, 5 * LGPH, 0,
             -90, 0, 0
         ),
@@ -234,7 +234,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         Comment('**** Start 3003 Yellow Brick 2 x 2 ****'),
         custom_macros.StdBrick(
             lg_3003.solid(),
-            lg_yellow,
+            LG_YELLOW,
             0.5 * LGBW, 5 * LGPH, 0,
             -90, 0, 0
         ),
@@ -242,7 +242,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
         custom_macros.StdBrick(
             lg_3788.solid(),
-            lg_white,
+            LG_WHITE,
             2.5 * LGBW, 6 * LGPH, 0,
             -90, 180, 0
         ),
@@ -255,7 +255,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
         custom_macros.StdBrick(
             lg_3788.solid(),
-            lg_white,
+            LG_WHITE,
             -2.5 * LGBW, 6 * LGPH, 0,
             -90, 0, 0
         ),

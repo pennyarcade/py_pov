@@ -846,7 +846,7 @@ def solid():
                         Vector(
                             -3 * LG_BRICK_WIDTH + LG_CORNER_SPACE,
                             LG_BRICK_WIDTH - LG_CORNER_SPACE,
-                            -LG_PLATE_HEIGHT + LG_CORNER_SPACE, 2 * LG_E
+                            -LG_PLATE_HEIGHT + LG_CORNER_SPACE + 2 * LG_E
                         ),
                         Vector(
                             -2 * LG_BRICK_WIDTH + LG_CORNER_SPACE,
@@ -870,7 +870,7 @@ def solid():
                         Vector(
                             4 * LG_BRICK_WIDTH - LG_CORNER_SPACE,
                             LG_BRICK_WIDTH - LG_CORNER_SPACE,
-                            -LG_PLATE_HEIGHT + LG_CORNER_SPAC2 * LG_E
+                            -LG_PLATE_HEIGHT + LG_CORNER_SPACE + 2 * LG_E
                         ),
                         Vector(
                             3 * LG_BRICK_WIDTH - LG_CORNER_SPACE,
@@ -906,7 +906,7 @@ def solid():
                         Vector(
                             3 * LG_BRICK_WIDTH - LG_CORNER_SPACE,
                             LG_BRICK_WIDTH - LG_WALL_WIDTH,
-                            -LG_PLATE_HEIGHT + LG_CORNER_SPAC2 * LG_E),
+                            -LG_PLATE_HEIGHT + LG_CORNER_SPACE + 2 * LG_E),
                         Vector(
                             2 * LG_BRICK_WIDTH + LG_CORNER_SPACE,
                             LG_BRICK_WIDTH,
@@ -917,7 +917,7 @@ def solid():
                         Vector(
                             -LG_BRICK_WIDTH - LG_CORNER_SPACE,
                             LG_BRICK_WIDTH - LG_WALL_WIDTH,
-                            -LG_PLATE_HEIGHT + LG_CORNER_SPAC2 * LG_E
+                            -LG_PLATE_HEIGHT + LG_CORNER_SPACE + 2 * LG_E
                         ),
                         Vector(
                             -2 * LG_BRICK_WIDTH + LG_CORNER_SPACE,
@@ -976,7 +976,7 @@ def solid():
                         Vector(
                             -LG_BRICK_WIDTH + LG_WALL_WIDTH,
                             2 * LG_BRICK_WIDTH - LG_CORNER_SPACE,
-                            -2 * LG_PLATE_HEIGHT + LG_CORNER_SPAC2 * LG_E
+                            -2 * LG_PLATE_HEIGHT + LG_CORNER_SPACE + 2 * LG_E
                         ),
                         Vector(
                             -LG_BRICK_WIDTH + LG_CORNER_SPACE,
@@ -988,7 +988,7 @@ def solid():
                         Vector(
                             2 * LG_BRICK_WIDTH - LG_WALL_WIDTH,
                             2 * LG_BRICK_WIDTH - LG_CORNER_SPACE,
-                            -2 * LG_PLATE_HEIGHT + LG_CORNER_SPAC2 * LG_E
+                            -2 * LG_PLATE_HEIGHT + LG_CORNER_SPACE + 2 * LG_E
                         ),
                         Vector(
                             2 * LG_BRICK_WIDTH - LG_CORNER_SPACE,
@@ -1000,7 +1000,7 @@ def solid():
                         Vector(
                             2 * LG_BRICK_WIDTH - LG_CORNER_SPACE,
                             2 * LG_BRICK_WIDTH - LG_CORNER_SPACE,
-                            -2 * LG_PLATE_HEIGHT + LG_CORNER_SPAC2 * LG_E
+                            -2 * LG_PLATE_HEIGHT + LG_CORNER_SPACE + 2 * LG_E
                         ),
                         Vector(
                             -LG_BRICK_WIDTH + LG_CORNER_SPACE,
@@ -1430,7 +1430,7 @@ def solid():
             Vector(
                 4 * LG_BRICK_WIDTH - LG_WALL_WIDTH,
                 -LG_BRICK_WIDTH + LG_CORNER_SPACE,
-                -LG_PLATE_HEIGHT + LG_CORNER_SPAC2 * LG_E
+                -LG_PLATE_HEIGHT + LG_CORNER_SPACE +2 * LG_E
             )
         ),
         Box(
@@ -1442,7 +1442,7 @@ def solid():
             Vector(
                 3 * LG_BRICK_WIDTH - LG_WALL_WIDTH,
                 -LG_BRICK_WIDTH + LG_CORNER_SPACE,
-                -2 * LG_PLATE_HEIGHT + LG_CORNER_SPAC2 * LG_E
+                -2 * LG_PLATE_HEIGHT + LG_CORNER_SPACE + 2 * LG_E
             )
         ),
         Box(
@@ -1454,7 +1454,7 @@ def solid():
             Vector(
                 -2 * LG_BRICK_WIDTH + LG_WALL_WIDTH,
                 -LG_BRICK_WIDTH + LG_CORNER_SPACE,
-                -2 * LG_PLATE_HEIGHT + LG_CORNER_SPAC2 * LG_E
+                -2 * LG_PLATE_HEIGHT + LG_CORNER_SPACE + 2 * LG_E
             )
         ),
         Box(
@@ -1466,7 +1466,7 @@ def solid():
             Vector(
                 -3 * LG_BRICK_WIDTH + LG_WALL_WIDTH,
                 -LG_BRICK_WIDTH + LG_CORNER_SPACE,
-                -LG_PLATE_HEIGHT + LG_CORNER_SPAC2 * LG_E
+                -LG_PLATE_HEIGHT + LG_CORNER_SPACE + 2 * LG_E
             )
         ),
         Box(
@@ -1543,7 +1543,7 @@ def solid():
         ),
         Box(
             Vector(
-                -LG_BRICK_WIDTH + LG_CORNER_SPAC2 * LG_E,
+                -LG_BRICK_WIDTH + LG_CORNER_SPACE + 2 * LG_E,
                 LG_BRICK_WIDTH - LG_CORNER_SPACE,
                 -LG_PLATE_HEIGHT
             ),

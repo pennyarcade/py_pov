@@ -169,14 +169,14 @@ LG_TURQUOISE = Texture(
     Pigment(Color(rgb=Vector(51 / 255.0, 166 / 255.0, 167 / 255.0))),
     LG_SOLID_FINISH
 )
-LG_BLUE_GREEN = lg_turquoise
+LG_BLUE_GREEN = LG_TURQUOISE
 
 # 12
 LG_SALMON = Texture(
     Pigment(Color(rgb=Vector(255 / 255.0, 133 / 255.0, 122 / 255.0))),
     LG_SOLID_FINISH
 )
-LG_LIGHT_RED = lg_salmon
+LG_LIGHT_RED = LG_SALMON
 
 # 13
 LG_PINK = Texture(
