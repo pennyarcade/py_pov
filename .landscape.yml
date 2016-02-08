@@ -8,3 +8,6 @@ ignore-paths:
     - docs
     - metrics
     - old
+
+dodgy:
+  run: false
