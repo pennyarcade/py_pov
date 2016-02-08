@@ -6,7 +6,7 @@ LGEO Libray Include File.
 19970623 Lutz Uhlmann
 20070929 Lutz Uhlmann changed to use predefined finishes
 20070929 Lutz Uhlmann changed to use RGB values from ldconfig.ldr
-20071124 Lutz Uhlmann added lg_quality for L3P compatibility
+20071124 Lutz Uhlmann added LG_QUALITY for L3P compatibility
 
 This file is in no way related to the LEGO(tm) Group.
 It is provided for private non-commercial use only.
@@ -14,7 +14,7 @@ It is provided for private non-commercial use only.
 lg_color: Color Definitions for LGEO POV-Ray Library
 """
 
-# from lgeo.config.lgeo_cfg import *
+from lgeo.config.lgeo_cfg import LG_QUALITY
 
 from pov.basic.Color import Color
 from pov.basic.Vector import Vector
@@ -29,239 +29,239 @@ from pov.texture.Pigment import Pigment
 from pov.texture.Texture import Texture
 
 
-if lg_quality > 1:
-    lg_solid_finish = Finish(
+if LG_QUALITY > 1:
+    LG_SOLID_FINISH = Finish(
         ambient=0.1
     )
 else:
-    lg_solid_finish = Finish(
+    LG_SOLID_FINISH = Finish(
         ambient=0.1,
         phong=0.2,
         phong_size=20
     )
 
 
-if lg_quality > 1:
-    lg_chrome_finish = Finish(
+if LG_QUALITY > 1:
+    LG_CHROME_FINISH = Finish(
         ambient=0.25
     )
 else:
-    lg_chrome_finish = Finish(
-        ambient = 0.25,
-        brilliance = 5,
-        diffuse = 0.6,
-        metallic = True,
-        specular = 0.70,
-        roughness = 1 / 100,
-        reflection = 0.6,
+    LG_CHROME_FINISH = Finish(
+        ambient=0.25,
+        brilliance=5,
+        diffuse=0.6,
+        metallic=True,
+        specular=0.70,
+        roughness=1 / 100,
+        reflection=0.6,
     )
 
 
-if lg_quality > 1:
-    lg_pearl_finish = Finish(
-        ambient = 0.22
+if LG_QUALITY > 1:
+    LG_PEARL_FINISH = Finish(
+        ambient=0.22
     )
 else:
-    lg_pearl_finish = Finish(
+    LG_PEARL_FINISH = Finish(
         Irid(
             0.2,
-            thickness = 0.5,
-            turbulence = 2.5
+            thickness=0.5,
+            turbulence=2.5
         ),
-        ambient = 0.22,
-        brilliance = 2,
-        diffuse = 0.6,
-        metallic = True,
-        specular = 0.1,
-        roughness = 32 / 100,
-        reflection = 0.07
+        ambient=0.22,
+        brilliance=2,
+        diffuse=0.6,
+        metallic=True,
+        specular=0.1,
+        roughness=32 / 100,
+        reflection=0.07
     )
 
 
-if (lg_quality > 1):
-    lg_transparent_finish = Finish(
-        ambient = 0.3
+if LG_QUALITY > 1:
+    LG_TRANSPARENT_FINISH = Finish(
+        ambient=0.3
     )
 else:
-    lg_transparent_finish = Finish(
-        ambient = 0.3,
-        diffuse = 0.2,
-        reflection = 0.25,
-        phong = 0.3,
-        phong_size = 60
+    LG_TRANSPARENT_FINISH = Finish(
+        ambient=0.3,
+        diffuse=0.2,
+        reflection=0.25,
+        phong=0.3,
+        phong_size=60
     )
 
 
-lg_ior = Interior(
+LG_IOR = Interior(
     ior = 1.4
 )
 
 
 # 0
-lg_black = Texture(
+LG_BLACK = Texture(
     Pigment(Color(rgb=Vector(33 / 255.0, 33 / 255.0, 33 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 1
-lg_blue = Texture(
+LG_BLUE = Texture(
     Pigment(Color(rgb=Vector(0 / 255.0, 51 / 255.0, 178 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 2
-lg_green = Texture(
+LG_GREEN = Texture(
     Pigment(Color(rgb=Vector(0 / 255.0, 140 / 255.0, 20 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 3
-lg_teal = Texture(
+LG_TEAL = Texture(
     Pigment(Color(rgb=Vector(0 / 255.0, 153 / 255.0, 159 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
-lg_cyan = lg_teal
+LG_CYAN = LG_TEAL
 
 # 4
-lg_red = Texture(
+LG_RED = Texture(
     Pigment(Color(rgb=Vector(196 / 255.0, 0 / 255.0, 38 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 5
-lg_dark_pink = Texture(
+LG_DARK_PINK = Texture(
     Pigment(Color(rgb=Vector(223 / 255.0, 102 / 255.0, 149 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 6
-lg_brown = Texture(
+LG_BROWN = Texture(
     Pigment(Color(rgb=Vector(92 / 255.0, 32 / 255.0, 0 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 7
-lg_grey = Texture(
+LG_GREY = Texture(
     Pigment(Color(rgb=Vector(193 / 255.0, 194 / 255.0, 193 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 8
-lg_dark_grey = Texture(
+LG_DARK_GREY = Texture(
     Pigment(Color(rgb=Vector(99 / 255.0, 89 / 255.0, 82 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 9
-lg_light_blue = Texture(
+LG_LIGHT_BLUE = Texture(
     Pigment(Color(rgb=Vector(107 / 255.0, 172 / 255.0, 220 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 10
-lg_bright_green = Texture(
+LG_BRIGHT_GREEN = Texture(
     Pigment(Color(rgb=Vector(97 / 255.0, 238 / 255.0, 104 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 11
-lg_turquoise = Texture(
+LG_TURQUOISE = Texture(
     Pigment(Color(rgb=Vector(51 / 255.0, 166 / 255.0, 167 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
-lg_blue_green = lg_turquoise
+LG_BLUE_GREEN = lg_turquoise
 
 # 12
-lg_salmon = Texture(
+LG_SALMON = Texture(
     Pigment(Color(rgb=Vector(255 / 255.0, 133 / 255.0, 122 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
-lg_light_red = lg_salmon
+LG_LIGHT_RED = lg_salmon
 
 # 13
-lg_pink = Texture(
+LG_PINK = Texture(
     Pigment(Color(rgb=Vector(249 / 255.0, 163 / 255.0, 198 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
-lg_rose = lg_pink
+LG_ROSE = LG_PINK
 
 # 14
-lg_yellow = Texture(
+LG_YELLOW = Texture(
     Pigment(Color(rgb=Vector(1, 220 / 255.0, 0 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 15
-lg_white = Texture(
+LG_WHITE = Texture(
     Pigment(Color(rgb=Vector(255 / 255.0, 255 / 255.0, 255 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 17
-lg_light_green = Texture(
+LG_LIGHT_GREEN = Texture(
     Pigment(Color(rgb=Vector(186 / 255.0, 255 / 255.0, 206 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 18
-lg_light_yellow = Texture(
+LG_LIGHT_YELLOW = Texture(
     Pigment(Color(rgb=Vector(253 / 255.0, 232 / 255.0, 150 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 19
-lg_tan = Texture(
+LG_TAN = Texture(
     Pigment(Color(rgb=Vector(232 / 255.0, 207 / 255.0, 161 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 20
-lg_light_violet = Texture(
+LG_LIGHT_VIOLET = Texture(
     Pigment(Color(rgb=Vector(215 / 255.0, 196 / 255.0, 230 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 22
-lg_purple = Texture(
+LG_PURPLE = Texture(
     Pigment(Color(rgb=Vector(129 / 255.0, 0 / 255.0, 124 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
-lg_violet = lg_purple
+LG_VIOLET = LG_PURPLE
 
 # 23
-lg_violet_blue = Texture(
+LG_VIOLET_BLUE = Texture(
     Pigment(Color(rgb=Vector(71 / 255.0, 50 / 255.0, 176 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 25
-lg_orange = Texture(
+LG_ORANGE = Texture(
     Pigment(Color(rgb=Vector(249 / 255.0, 96 / 255.0, 0 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 26
-lg_magenta = Texture(
+LG_MAGENTA = Texture(
     Pigment(Color(rgb=Vector(232 / 255.0, 27 / 255.0, 109 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 27
-lg_lime = Texture(
+LG_LIME = Texture(
     Pigment(Color(rgb=Vector(231 / 255.0, 240 / 255.0, 0 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 27
-lg_dark_tan = Texture(
+LG_DARK_TAN = Texture(
     Pigment(Color(rgb=Vector(187 / 255.0, 141 / 255.0, 75 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 29
-lg_light_purple = Texture(
+LG_LIGHT_PURPLE = Texture(
     Pigment(Color(rgb=Vector(205 / 255.0, 173 / 255.0, 200 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
@@ -274,325 +274,325 @@ def get_clear_color(cvector, quality):
                 Color(rgb=cvector),
                 filter=0.9
             ),
-            lg_transparent_finish
+            LG_TRANSPARENT_FINISH
         )
     else:
         return Texture(
             Pigment(
                 Color(rgb=cvector)
             ),
-            lg_transparent_finish
+            LG_TRANSPARENT_FINISH
         )
 
 
 # 33
-lg_clear_blue = get_clear_color(
+LG_CLEAR_BLUE = get_clear_color(
     Vector(0 / 255.0, 32 / 255.0, 160 / 255.0),
-    lg_quality
+    LG_QUALITY
 )
 
 
 # 34
-lg_clear_blue = get_clear_color(
+LG_CLEAR_BLUE = get_clear_color(
     Vector(6 / 255.0, 98 / 255.0, 50 / 255.0),
-    lg_quality
+    LG_QUALITY
 )
 
 
 # 36
-lg_clear_blue = get_clear_color(
+LG_CLEAR_BLUE = get_clear_color(
     Vector(196 / 255.0, 0 / 255.0, 38 / 255.0),
-    lg_quality
+    LG_QUALITY
 )
 
 
 # 37
-lg_clear_blue = get_clear_color(
+LG_CLEAR_BLUE = get_clear_color(
     Vector(100 / 255.0, 0 / 255.0, 97 / 255.0),
-    lg_quality
+    LG_QUALITY
 )
 
 
 # 40
-lg_clear_blue = get_clear_color(
+LG_CLEAR_BLUE = get_clear_color(
     Vector(99 / 255.0, 89 / 255.0, 82 / 255.0),
-    lg_quality
+    LG_QUALITY
 )
 
 
 # 41
-lg_clear_blue = get_clear_color(
+LG_CLEAR_BLUE = get_clear_color(
     Vector(174 / 255.0, 239 / 255.0, 237 / 255.0),
-    lg_quality
+    LG_QUALITY
 )
 
 
 # 42
-lg_clear_blue = get_clear_color(
+LG_CLEAR_BLUE = get_clear_color(
     Vector(192 / 255.0, 255 / 255.0, 0 / 255.0),
-    lg_quality
+    LG_QUALITY
 )
 
 
 # 45
-lg_clear_blue = get_clear_color(
+LG_CLEAR_BLUE = get_clear_color(
     Vector(223 / 255.0, 102 / 255.0, 149 / 255.0),
-    lg_quality
+    LG_QUALITY
 )
 
 
 # 46
-lg_clear_blue = get_clear_color(
+LG_CLEAR_BLUE = get_clear_color(
     Vector(202 / 255.0, 176 / 255.0, 0 / 255.0),
-    lg_quality
+    LG_QUALITY
 )
 
 
 # 47
-lg_clear = get_clear_color(
+LG_CLEAR = get_clear_color(
     Vector(255 / 255.0, 255 / 255.0, 255 / 255.0),
-    lg_quality
+    LG_QUALITY
 )
 
 
 # 57
-lg_clear_neon_orange = get_clear_color(
+LG_CLEAR_NEON_ORANGE = get_clear_color(
     Vector(249 / 255.0, 96 / 255.0, 0 / 255.0),
-    lg_quality
+    LG_QUALITY
 )
 
 
 # 69
-lg_bright_purple = Texture(
+LG_BRIGHT_PURPLE = Texture(
     Pigment(Color(rgb=Vector(205 / 255.0, 98 / 255.0, 152 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 70
-lg_reddish_brown = Texture(
+LG_REDDISH_BROWN = Texture(
     Pigment(Color(rgb=Vector(105 / 255.0, 64 / 255.0, 39 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 71
-lg_bluish_grey = Texture(
+LG_BLUISH_GREY = Texture(
     Pigment(Color(rgb=Vector(163 / 255.0, 162 / 255.0, 164 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 72
-lg_dark_bluish_grey = Texture(
+LG_DARK_BLUISH_GREY = Texture(
     Pigment(Color(rgb=Vector(99 / 255.0, 95 / 255.0, 97 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 73
-lg_medium_blue = Texture(
+LG_MEDIUM_BLUE = Texture(
     Pigment(Color(rgb=Vector(110 / 255.0, 153 / 255.0, 201 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 74
-lg_medium_green = Texture(
+LG_MEDIUM_GREEN = Texture(
     Pigment(Color(rgb=Vector(161 / 255.0, 196 / 255.0, 139 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 77
-lg_paradisa_pink = Texture(
+LG_PARADISA_PINK = Texture(
     Pigment(Color(rgb=Vector(254 / 255.0, 204 / 255.0, 204 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 78
-lg_light_flesh = Texture(
+LG_LIGHT_FLESH = Texture(
     Pigment(Color(rgb=Vector(250 / 255.0, 215 / 255.0, 195 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 85
-lg_medium_violet = Texture(
+LG_MEDIUM_VIOLET = Texture(
     Pigment(Color(rgb=Vector(52 / 255.0, 43 / 255.0, 117 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 86
-lg_dark_flesh = Texture(
+LG_DARK_FLESH = Texture(
     Pigment(Color(rgb=Vector(124 / 255.0, 92 / 255.0, 69 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 89
-lg_royal_blue = Texture(
+LG_ROYAL_BLUE = Texture(
     Pigment(Color(rgb=Vector(155 / 255.0, 178 / 255.0, 239 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 92
-lg_flesh = Texture(
+LG_FLESH = Texture(
     Pigment(Color(rgb=Vector(204 / 255.0, 142 / 255.0, 104 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 134
-lg_pearl_copper = Texture(
+LG_PEARL_COPPER = Texture(
     Pigment(Color(rgb=Vector(147 / 255.0, 135 / 255.0, 103 / 255.0))),
-    lg_pearl_finish,
+    LG_PEARL_FINISH,
 )
 
 
 # 135
-lg_pearl_grey = Texture(
+LG_PEARL_GREY = Texture(
     Pigment(Color(rgb=Vector(171 / 255.0, 173 / 255.0, 172 / 255.0))),
-    lg_pearl_finish,
+    LG_PEARL_FINISH,
 )
 
 
 # 137
-lg_pearl_blue = Texture(
+LG_PEARL_BLUE = Texture(
     Pigment(Color(rgb=Vector(106 / 255.0, 122 / 255.0, 150 / 255.0))),
-    lg_pearl_finish,
+    LG_PEARL_FINISH,
 )
 
 
 # 142
-lg_pearl_gold = Texture(
+LG_PEARL_GOLD = Texture(
     Pigment(Color(rgb=Vector(215 / 255.0, 169 / 255.0, 75 / 255.0))),
-    lg_pearl_finish,
+    LG_PEARL_FINISH,
 )
 
 
 # 151
-lg_very_light_bluish_grey = Texture(
+LG_VERY_LIGHT_BLUISH_GREY = Texture(
     Pigment(Color(rgb=Vector(229 / 255.0, 228 / 255.0, 222 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 272
-lg_dark_blue = Texture(
+LG_DARK_BLUE = Texture(
     Pigment(Color(rgb=Vector(0 / 255.0, 29 / 255.0, 104 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 288
-lg_dark_green = Texture(
+LG_DARK_GREEN = Texture(
     Pigment(Color(rgb=Vector(39 / 255.0, 70 / 255.0, 44 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 320
-lg_dark_red = Texture(
+LG_DARK_RED = Texture(
     Pigment(Color(rgb=Vector(120 / 255.0, 0 / 255.0, 28 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 313
-lg_maersk_blue = Texture(
+LG_MAERSK_BLUE = Texture(
     Pigment(Color(rgb=Vector(53 / 255.0, 162 / 255.0, 189 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 334
-lg_gold_chrome = Texture(
+LG_GOLD_CHROME = Texture(
     Pigment(Color(rgb=Vector(233 / 255.0, 110 / 255.0, 19 / 255.0))),
-    lg_chrome_finish,
+    LG_CHROME_FINISH,
 )
 
 
 # 373
-lg_sand_purple = Texture(
+LG_SAND_PURPLE = Texture(
     Pigment(Color(rgb=Vector(132 / 255.0, 94 / 255.0, 132 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 335
-lg_sand_red = Texture(
+LG_SAND_RED = Texture(
     Pigment(Color(rgb=Vector(191 / 255.0, 135 / 255.0, 130 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 366
-lg_earth_orange = Texture(
+LG_EARTH_ORANGE = Texture(
     Pigment(Color(rgb=Vector(209 / 255.0, 131 / 255.0, 4 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 373
-lg_sand_purple = Texture(
+LG_SAND_PURPLE = Texture(
     Pigment(Color(rgb=Vector(132 / 255.0, 94 / 255.0, 132 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 378
-lg_sand_green = Texture(
+LG_SAND_GREEN = Texture(
     Pigment(Color(rgb=Vector(160 / 255.0, 188 / 255.0, 172 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 379
-lg_sand_blue = Texture(
+LG_SAND_BLUE = Texture(
     Pigment(Color(rgb=Vector(106 / 255.0, 122 / 255.0, 150 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 # 383
-lg_chrome = Texture(
+LG_CHROME = Texture(
     Pigment(Color(rgb=Vector(232 / 255.0, 232 / 255.0, 232 / 255.0))),
-    Finish(lg_chrome_finish),
+    Finish(LG_CHROME_FINISH),
 )
 
 
 # 462
-lg_light_orange = Texture(
+LG_LIGHT_ORANGE = Texture(
     Pigment(Color(rgb=Vector(254 / 255.0, 159 / 255.0, 6 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 484
-lg_dark_orange = Texture(
+LG_DARK_ORANGE = Texture(
     Pigment(Color(rgb=Vector(179 / 255.0, 62 / 255.0, 0 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 503
-lg_very_light_grey = Texture(
+LG_VERY_LIGHT_GREY = Texture(
     Pigment(Color(rgb=Vector(230 / 255.0, 227 / 255.0, 219 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )
 
 
 # 999
-lg_undefined = Texture(
+LG_UNDEFINED = Texture(
     Pigment(Color(rgb=Vector(0.5, 0.7, 0.9))),
 )
 
 
 # 998 (no code known)
-lg_medium_orange = Texture(
+LG_MEDIUM_ORANGE = Texture(
     Pigment(Color(rgb=Vector(224 / 255.0, 129 / 255.0, 6 / 255.0))),
-    lg_solid_finish
+    LG_SOLID_FINISH
 )

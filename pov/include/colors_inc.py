@@ -175,7 +175,7 @@ VERY_LIGHT_PURPLE = Color(red=0.94, green=0.81, blue=0.99)
 
 def ch2rgb(hue):
     """
-    Takes Hue value as input, returns RGB vector.
+    Take Hue value as input, returns RGB vector.
 
     @todo: Apidoc
     @Todo: Param Syntax checks
@@ -201,7 +201,7 @@ def ch2rgb(hue):
 
 def crgb2h(rgb, maximum, span):
     """
-    Takes rgb vector, maximum component, and span as input, returns Hue value.
+    Take rgb vector, maximum component, and span as input, returns Hue value.
 
     @Todo: Param Syntax checks
     """
@@ -224,7 +224,7 @@ def crgb2h(rgb, maximum, span):
 
 def chsl2rgb(vector):
     """
-    Converts a color in HSL color space to a color in RGB color space.
+    Convert a color in HSL color space to a color in RGB color space.
 
     Input:  < Hue, Saturation, Lightness, Filter, Transmit >
     Output: < Red, Green, Blue, Filter, Transmit >
@@ -249,7 +249,7 @@ def chsl2rgb(vector):
 
 def crgb2hsl(incolor):
     """
-    Converts a color in RGB color space to a color in HSL color space.
+    Convert a color in RGB color space to a color in HSL color space.
 
     Input:  < Red, Green, Blue, Filter, Transmit >
     Output: < Hue, Saturation, Lightness, Filter, Transmit >
@@ -276,7 +276,7 @@ def crgb2hsl(incolor):
 
 def chsv2rgb(vector):
     """
-    Converts a color in HSV color space to a color in RGB color space.
+    Convert a color in HSV color space to a color in RGB color space.
 
     Input:  < Hue, Saturation, Value, Filter, Transmit >
     Output: < Red, Green, Blue, Filter, Transmit >
@@ -286,7 +286,9 @@ def chsv2rgb(vector):
     saturation = hsvft.green
     value = hsvft.blue
     sat_rgb = ch2rgb(hue)
-    rgb = ((1 - saturation) * Color(rgb=Vector(1, 1, 1)) + saturation * sat_rgb)
+    rgb = ((1 - saturation) * Color(
+        rgb=Vector(1, 1, 1)
+    ) + saturation * sat_rgb)
     rgb *= value
     return Color(
         rgbft=Vector(
@@ -297,7 +299,7 @@ def chsv2rgb(vector):
 
 def crgb2hsv(vector):
     """
-    Converts a color in RGB color space to a color in HSV color space.
+    Convert a color in RGB color space to a color in HSV color space.
 
     Input:  < Red, Green, Blue, Filter, Transmit >
     Output: < Hue, Saturation, Value, Filter, Transmit >
