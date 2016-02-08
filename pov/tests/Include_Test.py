@@ -11,7 +11,7 @@ Some modifications by W.T. Bridgman, 2006-2007.
 """
 
 import sys
-# import os
+import os
 import unittest
 # import traceback
 # from logging import *
@@ -31,5 +31,5 @@ class ColorsIncTestCase(unittest.TestCase):
         """
         self.assertEqual(
             str(colors_inc.RED),
-            'rgb <1.0, 0.0, 0.0>'
+            'color rgb <1, 0, 0>' + os.linesep
         )

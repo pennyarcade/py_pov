@@ -110,24 +110,26 @@
 <p id="n41" class="pln"><a href="#n41">41</a></p>
 <p id="n42" class="pln"><a href="#n42">42</a></p>
 <p id="n43" class="pln"><a href="#n43">43</a></p>
-<p id="n44" class="stm run hide_run"><a href="#n44">44</a></p>
+<p id="n44" class="pln"><a href="#n44">44</a></p>
 <p id="n45" class="pln"><a href="#n45">45</a></p>
-<p id="n46" class="pln"><a href="#n46">46</a></p>
+<p id="n46" class="stm run hide_run"><a href="#n46">46</a></p>
 <p id="n47" class="pln"><a href="#n47">47</a></p>
 <p id="n48" class="pln"><a href="#n48">48</a></p>
 <p id="n49" class="pln"><a href="#n49">49</a></p>
 <p id="n50" class="pln"><a href="#n50">50</a></p>
-<p id="n51" class="stm run hide_run"><a href="#n51">51</a></p>
+<p id="n51" class="pln"><a href="#n51">51</a></p>
 <p id="n52" class="pln"><a href="#n52">52</a></p>
 <p id="n53" class="stm run hide_run"><a href="#n53">53</a></p>
-<p id="n54" class="stm run hide_run"><a href="#n54">54</a></p>
+<p id="n54" class="pln"><a href="#n54">54</a></p>
 <p id="n55" class="stm run hide_run"><a href="#n55">55</a></p>
+<p id="n56" class="stm run hide_run"><a href="#n56">56</a></p>
+<p id="n57" class="stm run hide_run"><a href="#n57">57</a></p>
                 
             </td>
             <td class="text">
 <p id="t1" class="pln"><span class="com"># coding=UTF-8</span><span class="strut">&nbsp;</span></p>
 <p id="t2" class="stm run hide_run"><span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
-<p id="t3" class="pln"><span class="str">Py_Pov 0.0.1 Copyright (c) Martin T&#246;nnishoff, 2013</span><span class="strut">&nbsp;</span></p>
+<p id="t3" class="pln"><span class="str">Py_Pov 0.0.1 Copyright (c) Martin Toennishoff, 2013.</span><span class="strut">&nbsp;</span></p>
 <p id="t4" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t5" class="pln"><span class="str">based on:</span><span class="strut">&nbsp;</span></p>
 <p id="t6" class="pln"><span class="str">PyPov-0.0.X Copyright (c) Simon Burton, 2003</span><span class="strut">&nbsp;</span></p>
@@ -142,44 +144,46 @@
 <p id="t15" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t16" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t17" class="stm run hide_run"><span class="key">class</span> <span class="nam">Reflection</span><span class="op">(</span><span class="nam">BlockObject</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t18" class="pln">&nbsp; &nbsp; <span class="str">&#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t19" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; FINISH:</span><span class="strut">&nbsp;</span></p>
-<p id="t20" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Jump to SDL</span><span class="strut">&nbsp;</span></p>
-<p id="t21" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }</span><span class="strut">&nbsp;</span></p>
-<p id="t22" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; FINISH_ITEMS:</span><span class="strut">&nbsp;</span></p>
-<p id="t23" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [ambient COLOR] &amp; [diffuse FLOAT] &amp; [brilliance FLOAT]</span><span class="strut">&nbsp;</span></p>
-<p id="t24" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp; [PHONG] &amp; [SPECULAR] &amp; [REFLECTION] &amp; [IRID]</span><span class="strut">&nbsp;</span></p>
-<p id="t25" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp; [crand FLOAT] &amp; [conserve_energy [BOOL]]</span><span class="strut">&nbsp;</span></p>
-<p id="t26" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PHONG:</span><span class="strut">&nbsp;</span></p>
-<p id="t27" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; phong FLOAT &amp; [phong_size FLOAT] &amp; [metallic [FLOAT]]</span><span class="strut">&nbsp;</span></p>
-<p id="t28" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; SPECULAR:</span><span class="strut">&nbsp;</span></p>
-<p id="t29" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; specular FLOAT &amp; [roughness FLOAT] &amp; [metallic [FLOAT]]</span><span class="strut">&nbsp;</span></p>
-<p id="t30" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; REFLECTION:</span><span class="strut">&nbsp;</span></p>
-<p id="t31" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reflection COLOR [reflection_exponent FLOAT] |</span><span class="strut">&nbsp;</span></p>
-<p id="t32" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; reflection { [COLOR,] COLOR [REFLECTION_ITEMS] }</span><span class="strut">&nbsp;</span></p>
-<p id="t33" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; REFLECTION_ITEMS:</span><span class="strut">&nbsp;</span></p>
-<p id="t34" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [fresnel BOOL] &amp; [falloff FLOAT] &amp; [exponent FLOAT]</span><span class="strut">&nbsp;</span></p>
-<p id="t35" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp; [metallic [FLOAT]]</span><span class="strut">&nbsp;</span></p>
-<p id="t36" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Must also use interior {ior FLOAT} in the object</span><span class="strut">&nbsp;</span></p>
-<p id="t37" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; when fresnel is used.</span><span class="strut">&nbsp;</span></p>
-<p id="t38" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; IRID:</span><span class="strut">&nbsp;</span></p>
-<p id="t39" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; irid { F_AMOUNT [IRID_ITEMS] }</span><span class="strut">&nbsp;</span></p>
-<p id="t40" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; IRID_ITEMS:</span><span class="strut">&nbsp;</span></p>
-<p id="t41" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [thickness FLOAT] &amp; [turbulence FLOAT]</span><span class="strut">&nbsp;</span></p>
-<p id="t42" class="pln"><span class="str">&nbsp; &nbsp; &#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t43" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t44" class="stm run hide_run">&nbsp; &nbsp; <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">*</span><span class="nam">opts</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t45" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t46" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Create Reflection object</span><span class="strut">&nbsp;</span></p>
-<p id="t47" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t48" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @todo: implement</span><span class="strut">&nbsp;</span></p>
-<p id="t49" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @todo: Syntax checks</span><span class="strut">&nbsp;</span></p>
-<p id="t50" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t51" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">super</span><span class="op">(</span><span class="nam">Reflection</span><span class="op">,</span> <span class="nam">self</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="str">&#39;reflection&#39;</span><span class="op">,</span> <span class="op">[</span><span class="op">]</span><span class="op">,</span> <span class="nam">opts</span><span class="op">,</span> <span class="nam">kwargs</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t52" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t53" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="str">&#39;metallic&#39;</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span> <span class="key">and</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;metallic&#39;</span><span class="op">]</span> <span class="key">is</span> <span class="nam">True</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t54" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">del</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;metallic&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
-<p id="t55" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">&#39;metallic&#39;</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t18" class="pln">&nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t19" class="pln"><span class="str">&nbsp; &nbsp; Reflection Object.</span><span class="strut">&nbsp;</span></p>
+<p id="t20" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t21" class="pln"><span class="str">&nbsp; &nbsp; FINISH:</span><span class="strut">&nbsp;</span></p>
+<p id="t22" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; Jump to SDL</span><span class="strut">&nbsp;</span></p>
+<p id="t23" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; finish { [FINISH_IDENTIFIER] [FINISH_ITEMS] }</span><span class="strut">&nbsp;</span></p>
+<p id="t24" class="pln"><span class="str">&nbsp; &nbsp; FINISH_ITEMS:</span><span class="strut">&nbsp;</span></p>
+<p id="t25" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [ambient COLOR] &amp; [diffuse FLOAT] &amp; [brilliance FLOAT]</span><span class="strut">&nbsp;</span></p>
+<p id="t26" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp; [PHONG] &amp; [SPECULAR] &amp; [REFLECTION] &amp; [IRID]</span><span class="strut">&nbsp;</span></p>
+<p id="t27" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp; [crand FLOAT] &amp; [conserve_energy [BOOL]]</span><span class="strut">&nbsp;</span></p>
+<p id="t28" class="pln"><span class="str">&nbsp; &nbsp; PHONG:</span><span class="strut">&nbsp;</span></p>
+<p id="t29" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; phong FLOAT &amp; [phong_size FLOAT] &amp; [metallic [FLOAT]]</span><span class="strut">&nbsp;</span></p>
+<p id="t30" class="pln"><span class="str">&nbsp; &nbsp; SPECULAR:</span><span class="strut">&nbsp;</span></p>
+<p id="t31" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; specular FLOAT &amp; [roughness FLOAT] &amp; [metallic [FLOAT]]</span><span class="strut">&nbsp;</span></p>
+<p id="t32" class="pln"><span class="str">&nbsp; &nbsp; REFLECTION:</span><span class="strut">&nbsp;</span></p>
+<p id="t33" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; reflection COLOR [reflection_exponent FLOAT] |</span><span class="strut">&nbsp;</span></p>
+<p id="t34" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; reflection { [COLOR,] COLOR [REFLECTION_ITEMS] }</span><span class="strut">&nbsp;</span></p>
+<p id="t35" class="pln"><span class="str">&nbsp; &nbsp; REFLECTION_ITEMS:</span><span class="strut">&nbsp;</span></p>
+<p id="t36" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [fresnel BOOL] &amp; [falloff FLOAT] &amp; [exponent FLOAT]</span><span class="strut">&nbsp;</span></p>
+<p id="t37" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp; [metallic [FLOAT]]</span><span class="strut">&nbsp;</span></p>
+<p id="t38" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; Must also use interior {ior FLOAT} in the object</span><span class="strut">&nbsp;</span></p>
+<p id="t39" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; when fresnel is used.</span><span class="strut">&nbsp;</span></p>
+<p id="t40" class="pln"><span class="str">&nbsp; &nbsp; IRID:</span><span class="strut">&nbsp;</span></p>
+<p id="t41" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; irid { F_AMOUNT [IRID_ITEMS] }</span><span class="strut">&nbsp;</span></p>
+<p id="t42" class="pln"><span class="str">&nbsp; &nbsp; IRID_ITEMS:</span><span class="strut">&nbsp;</span></p>
+<p id="t43" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [thickness FLOAT] &amp; [turbulence FLOAT]</span><span class="strut">&nbsp;</span></p>
+<p id="t44" class="pln"><span class="str">&nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t45" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t46" class="stm run hide_run">&nbsp; &nbsp; <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">*</span><span class="nam">opts</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t47" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t48" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; Create Reflection object.</span><span class="strut">&nbsp;</span></p>
+<p id="t49" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t50" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; @todo: implement</span><span class="strut">&nbsp;</span></p>
+<p id="t51" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; @todo: Syntax checks</span><span class="strut">&nbsp;</span></p>
+<p id="t52" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t53" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">super</span><span class="op">(</span><span class="nam">Reflection</span><span class="op">,</span> <span class="nam">self</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="str">&#39;reflection&#39;</span><span class="op">,</span> <span class="op">[</span><span class="op">]</span><span class="op">,</span> <span class="nam">opts</span><span class="op">,</span> <span class="nam">kwargs</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t54" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t55" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="str">&#39;metallic&#39;</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span> <span class="key">and</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;metallic&#39;</span><span class="op">]</span> <span class="key">is</span> <span class="nam">True</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t56" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">del</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;metallic&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t57" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">&#39;metallic&#39;</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
                 
             </td>
         </tr>
@@ -190,7 +194,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.org">coverage.py v4.0.3</a>,
-            created at 2016-02-05 19:03
+            created at 2016-02-08 15:01
         </p>
     </div>
 </div>

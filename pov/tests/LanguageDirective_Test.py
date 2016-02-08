@@ -76,7 +76,9 @@ class IncludeTestCase(unittest.TestCase):
 
     def test_create_non_existant_file(self):
         """
-            @Todo: DocString
+        Create Include directive with non existing file.
+
+        Expect IOError Exception
         """
         with self.assertRaisesRegexp(
             IOError,

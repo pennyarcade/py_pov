@@ -51,7 +51,6 @@ class GlobalSettings(BlockObject):
     def _check_opts(self):
         """Option Syntax checks."""
         valid_opts = ['Radiosity', 'Photons']
-
         self._validate_opts(valid_opts)
 
     def _check_kwargs(self):

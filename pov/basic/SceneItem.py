@@ -306,7 +306,7 @@ class SceneItem(object):
         for i, item in enumerate(self.opts):
             if not item.__class__.__name__ in valid_opts:
                 raise SdlSyntaxException(
-                    'Invalid option type %s not in allowed opts[%s] \n%s' %
+                    'Invalid option type %s not in allowed opts[%s] %s' %
                     (item.__class__.__name__, i, valid_opts)
                 )
 

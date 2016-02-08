@@ -80,11 +80,11 @@
 <p id="n11" class="pln"><a href="#n11">11</a></p>
 <p id="n12" class="pln"><a href="#n12">12</a></p>
 <p id="n13" class="pln"><a href="#n13">13</a></p>
-<p id="n14" class="pln"><a href="#n14">14</a></p>
-<p id="n15" class="stm run hide_run"><a href="#n15">15</a></p>
+<p id="n14" class="stm run hide_run"><a href="#n14">14</a></p>
+<p id="n15" class="pln"><a href="#n15">15</a></p>
 <p id="n16" class="pln"><a href="#n16">16</a></p>
-<p id="n17" class="pln"><a href="#n17">17</a></p>
-<p id="n18" class="stm run hide_run"><a href="#n18">18</a></p>
+<p id="n17" class="stm run hide_run"><a href="#n17">17</a></p>
+<p id="n18" class="pln"><a href="#n18">18</a></p>
 <p id="n19" class="pln"><a href="#n19">19</a></p>
 <p id="n20" class="pln"><a href="#n20">20</a></p>
 <p id="n21" class="pln"><a href="#n21">21</a></p>
@@ -110,12 +110,13 @@
 <p id="n41" class="pln"><a href="#n41">41</a></p>
 <p id="n42" class="pln"><a href="#n42">42</a></p>
 <p id="n43" class="pln"><a href="#n43">43</a></p>
+<p id="n44" class="pln"><a href="#n44">44</a></p>
                 
             </td>
             <td class="text">
 <p id="t1" class="pln"><span class="com"># coding=UTF-8</span><span class="strut">&nbsp;</span></p>
-<p id="t2" class="stm run hide_run"><span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
-<p id="t3" class="pln"><span class="str">Py_Pov 0.0.1 Copyright (c) Martin T&#246;nnishoff, 2013</span><span class="strut">&nbsp;</span></p>
+<p id="t2" class="stm run hide_run"><span class="str">u&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t3" class="pln"><span class="str">Py_Pov 0.0.1 Copyright (c) Martin T&#246;nnishoff, 2013.</span><span class="strut">&nbsp;</span></p>
 <p id="t4" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t5" class="pln"><span class="str">based on:</span><span class="strut">&nbsp;</span></p>
 <p id="t6" class="pln"><span class="str">PyPov-0.0.X Copyright (c) Simon Burton, 2003</span><span class="strut">&nbsp;</span></p>
@@ -124,38 +125,39 @@
 <p id="t9" class="pln"><span class="str">Some modifications by W.T. Bridgman, 2006-2007.</span><span class="strut">&nbsp;</span></p>
 <p id="t10" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t11" class="pln"><span class="str">Unittests File</span><span class="strut">&nbsp;</span></p>
-<p id="t12" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t13" class="pln"><span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
-<p id="t14" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t15" class="stm run hide_run"><span class="key">from</span> <span class="nam">pov</span><span class="op">.</span><span class="nam">basic</span><span class="op">.</span><span class="nam">SceneItem</span> <span class="key">import</span> <span class="nam">SceneItem</span><span class="strut">&nbsp;</span></p>
+<p id="t12" class="pln"><span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t13" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t14" class="stm run hide_run"><span class="key">from</span> <span class="nam">pov</span><span class="op">.</span><span class="nam">basic</span><span class="op">.</span><span class="nam">SceneItem</span> <span class="key">import</span> <span class="nam">SceneItem</span><span class="strut">&nbsp;</span></p>
+<p id="t15" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t16" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t17" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t18" class="stm run hide_run"><span class="key">class</span> <span class="nam">ObjectModifier</span><span class="op">(</span><span class="nam">SceneItem</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t19" class="pln">&nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
-<p id="t20" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; OBJECT_MODIFIERS:</span><span class="strut">&nbsp;</span></p>
-<p id="t21" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [OBJECT_PHOTONS] |</span><span class="strut">&nbsp;</span></p>
-<p id="t22" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [CLIPPED_BY] |</span><span class="strut">&nbsp;</span></p>
-<p id="t23" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [BOUNDED_BY] |</span><span class="strut">&nbsp;</span></p>
-<p id="t24" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [MATERIAL] |</span><span class="strut">&nbsp;</span></p>
-<p id="t25" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [INTERIOR] |</span><span class="strut">&nbsp;</span></p>
-<p id="t26" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [INTERIOR_TEXTURE] |</span><span class="strut">&nbsp;</span></p>
-<p id="t27" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [TEXTURE] |</span><span class="strut">&nbsp;</span></p>
-<p id="t28" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PIGMENT] |</span><span class="strut">&nbsp;</span></p>
-<p id="t29" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [NORMAL] |</span><span class="strut">&nbsp;</span></p>
-<p id="t30" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [FINISH] |</span><span class="strut">&nbsp;</span></p>
-<p id="t31" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [TRANSFORMATION...] |</span><span class="strut">&nbsp;</span></p>
-<p id="t32" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [no_shadow] |</span><span class="strut">&nbsp;</span></p>
-<p id="t33" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [no_image[BOOL]] |</span><span class="strut">&nbsp;</span></p>
-<p id="t34" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [no_reflection{BOOL]] |</span><span class="strut">&nbsp;</span></p>
-<p id="t35" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [inverse] |</span><span class="strut">&nbsp;</span></p>
-<p id="t36" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [double_illuminate[BOOL]] |</span><span class="strut">&nbsp;</span></p>
-<p id="t37" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [hollow [BOOL]]</span><span class="strut">&nbsp;</span></p>
-<p id="t38" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t39" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; OBJECT_PHOTONS:</span><span class="strut">&nbsp;</span></p>
-<p id="t40" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; photons { OBJECT_PHOTON_ITEMS }</span><span class="strut">&nbsp;</span></p>
-<p id="t41" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t42" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; @Todo: Implement subclasses</span><span class="strut">&nbsp;</span></p>
-<p id="t43" class="pln"><span class="str">&nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t17" class="stm run hide_run"><span class="key">class</span> <span class="nam">ObjectModifier</span><span class="op">(</span><span class="nam">SceneItem</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t18" class="pln">&nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t19" class="pln"><span class="str">&nbsp; &nbsp; ObjectModifier Object.</span><span class="strut">&nbsp;</span></p>
+<p id="t20" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t21" class="pln"><span class="str">&nbsp; &nbsp; OBJECT_MODIFIERS:</span><span class="strut">&nbsp;</span></p>
+<p id="t22" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [OBJECT_PHOTONS] |</span><span class="strut">&nbsp;</span></p>
+<p id="t23" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [CLIPPED_BY] |</span><span class="strut">&nbsp;</span></p>
+<p id="t24" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [BOUNDED_BY] |</span><span class="strut">&nbsp;</span></p>
+<p id="t25" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [MATERIAL] |</span><span class="strut">&nbsp;</span></p>
+<p id="t26" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [INTERIOR] |</span><span class="strut">&nbsp;</span></p>
+<p id="t27" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [INTERIOR_TEXTURE] |</span><span class="strut">&nbsp;</span></p>
+<p id="t28" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [TEXTURE] |</span><span class="strut">&nbsp;</span></p>
+<p id="t29" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [PIGMENT] |</span><span class="strut">&nbsp;</span></p>
+<p id="t30" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [NORMAL] |</span><span class="strut">&nbsp;</span></p>
+<p id="t31" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [FINISH] |</span><span class="strut">&nbsp;</span></p>
+<p id="t32" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [TRANSFORMATION...] |</span><span class="strut">&nbsp;</span></p>
+<p id="t33" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [no_shadow] |</span><span class="strut">&nbsp;</span></p>
+<p id="t34" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [no_image[BOOL]] |</span><span class="strut">&nbsp;</span></p>
+<p id="t35" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [no_reflection{BOOL]] |</span><span class="strut">&nbsp;</span></p>
+<p id="t36" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [inverse] |</span><span class="strut">&nbsp;</span></p>
+<p id="t37" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [double_illuminate[BOOL]] |</span><span class="strut">&nbsp;</span></p>
+<p id="t38" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; [hollow [BOOL]]</span><span class="strut">&nbsp;</span></p>
+<p id="t39" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t40" class="pln"><span class="str">&nbsp; &nbsp; OBJECT_PHOTONS:</span><span class="strut">&nbsp;</span></p>
+<p id="t41" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; photons { OBJECT_PHOTON_ITEMS }</span><span class="strut">&nbsp;</span></p>
+<p id="t42" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t43" class="pln"><span class="str">&nbsp; &nbsp; @Todo: Implement subclasses</span><span class="strut">&nbsp;</span></p>
+<p id="t44" class="pln"><span class="str">&nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
                 
             </td>
         </tr>
@@ -166,7 +168,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.org">coverage.py v4.0.3</a>,
-            created at 2016-02-05 19:03
+            created at 2016-02-08 15:01
         </p>
     </div>
 </div>

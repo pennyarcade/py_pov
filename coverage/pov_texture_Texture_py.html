@@ -147,19 +147,21 @@
 <p id="n78" class="pln"><a href="#n78">78</a></p>
 <p id="n79" class="pln"><a href="#n79">79</a></p>
 <p id="n80" class="pln"><a href="#n80">80</a></p>
-<p id="n81" class="stm run hide_run"><a href="#n81">81</a></p>
+<p id="n81" class="pln"><a href="#n81">81</a></p>
 <p id="n82" class="pln"><a href="#n82">82</a></p>
-<p id="n83" class="pln"><a href="#n83">83</a></p>
+<p id="n83" class="stm run hide_run"><a href="#n83">83</a></p>
 <p id="n84" class="pln"><a href="#n84">84</a></p>
 <p id="n85" class="pln"><a href="#n85">85</a></p>
 <p id="n86" class="pln"><a href="#n86">86</a></p>
-<p id="n87" class="stm run hide_run"><a href="#n87">87</a></p>
+<p id="n87" class="pln"><a href="#n87">87</a></p>
+<p id="n88" class="pln"><a href="#n88">88</a></p>
+<p id="n89" class="stm run hide_run"><a href="#n89">89</a></p>
                 
             </td>
             <td class="text">
 <p id="t1" class="pln"><span class="com"># coding=UTF-8</span><span class="strut">&nbsp;</span></p>
 <p id="t2" class="stm run hide_run"><span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
-<p id="t3" class="pln"><span class="str">Py_Pov 0.0.1 Copyright (c) Martin T&#246;nnishoff, 2013</span><span class="strut">&nbsp;</span></p>
+<p id="t3" class="pln"><span class="str">Py_Pov 0.0.1 Copyright (c) Martin Toennishoff, 2013.</span><span class="strut">&nbsp;</span></p>
 <p id="t4" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t5" class="pln"><span class="str">based on:</span><span class="strut">&nbsp;</span></p>
 <p id="t6" class="pln"><span class="str">PyPov-0.0.X Copyright (c) Simon Burton, 2003</span><span class="strut">&nbsp;</span></p>
@@ -174,76 +176,78 @@
 <p id="t15" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t16" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t17" class="stm run hide_run"><span class="key">class</span> <span class="nam">Texture</span><span class="op">(</span><span class="nam">BlockObject</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t18" class="pln">&nbsp; &nbsp; <span class="str">&#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t19" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; TEXTURE:</span><span class="strut">&nbsp;</span></p>
-<p id="t20" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PLAIN_TEXTURE | LAYERED_TEXTURE | PATTERNED_TEXTURE</span><span class="strut">&nbsp;</span></p>
-<p id="t21" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t22" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PLAIN_TEXTURE:</span><span class="strut">&nbsp;</span></p>
-<p id="t23" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; texture { PLAIN_TEXTURE_BODY }</span><span class="strut">&nbsp;</span></p>
-<p id="t24" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t25" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PLAIN_TEXTURE_BODY:</span><span class="strut">&nbsp;</span></p>
-<p id="t26" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PLAIN_TEXTURE_IDENT] [PNF_IDENTIFIERS] [PNF_ITEMS]</span><span class="strut">&nbsp;</span></p>
-<p id="t27" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t28" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PNF_IDENTIFIERS:</span><span class="strut">&nbsp;</span></p>
-<p id="t29" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PIGMENT_IDENTIFIER] &amp; [NORMAL_IDENTIFIER]</span><span class="strut">&nbsp;</span></p>
-<p id="t30" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp; [FINISH_IDENTIFIER]</span><span class="strut">&nbsp;</span></p>
-<p id="t31" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t32" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PNF_ITEMS:</span><span class="strut">&nbsp;</span></p>
-<p id="t33" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PIGMENT] &amp; [NORMAL] &amp; [FINISH] &amp; [TRANSFORMATION...]</span><span class="strut">&nbsp;</span></p>
-<p id="t34" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t35" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; LAYERED_TEXTURE:</span><span class="strut">&nbsp;</span></p>
-<p id="t36" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; texture { LAYERED_TEXTURE_IDENT } |</span><span class="strut">&nbsp;</span></p>
-<p id="t37" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PLAIN_TEXTURE PLAIN_TEXTURE...</span><span class="strut">&nbsp;</span></p>
-<p id="t38" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t39" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PATTERNED_TEXTURE:</span><span class="strut">&nbsp;</span></p>
-<p id="t40" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; texture { PATTERNED_TEXTURE_BODY }</span><span class="strut">&nbsp;</span></p>
-<p id="t41" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t42" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PATTERNED_TEXTURE_BODY:</span><span class="strut">&nbsp;</span></p>
-<p id="t43" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PATTERNED_TEXTURE_IDENT [TRANSFORMATION...]</span><span class="strut">&nbsp;</span></p>
-<p id="t44" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | TEXTURE_PATTERN [PATTERN_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
-<p id="t45" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | MATERIAL_MAP [TRANSFORMATION...]</span><span class="strut">&nbsp;</span></p>
-<p id="t46" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t47" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_PATTERN:</span><span class="strut">&nbsp;</span></p>
-<p id="t48" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_LIST_PATTERN | MAP_PATTERN TEXTURE_MAP</span><span class="strut">&nbsp;</span></p>
-<p id="t49" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t50" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_LIST_PATTERN:</span><span class="strut">&nbsp;</span></p>
-<p id="t51" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; brick TEXTURE, TEXTURE [BRICK_ITEMS] |</span><span class="strut">&nbsp;</span></p>
-<p id="t52" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; checker TEXTURE, TEXTURE |</span><span class="strut">&nbsp;</span></p>
-<p id="t53" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hexagon TEXTURE, TEXTURE, TEXTURE |</span><span class="strut">&nbsp;</span></p>
-<p id="t54" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object { LIST_OBJECT TEXTURE, TEXTURE }</span><span class="strut">&nbsp;</span></p>
-<p id="t55" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t56" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BRICK_ITEMS:</span><span class="strut">&nbsp;</span></p>
-<p id="t57" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [brick_size VECTOR] &amp; [mortar FLOAT]</span><span class="strut">&nbsp;</span></p>
-<p id="t58" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t59" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; LIST_OBJECT:</span><span class="strut">&nbsp;</span></p>
-<p id="t60" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; UNTEXTURED_SOLID_OBJECT | UNTEXTURED_SOLID_OBJECT_IDENT</span><span class="strut">&nbsp;</span></p>
-<p id="t61" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t62" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_MAP:</span><span class="strut">&nbsp;</span></p>
-<p id="t63" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; texture_map { TEXTURE_MAP_BODY } [BLEND_MAP_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
-<p id="t64" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t65" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_MAP_BODY:</span><span class="strut">&nbsp;</span></p>
-<p id="t66" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_MAP_IDENTIFIER | TEXTURE_MAP_ENTRY...</span><span class="strut">&nbsp;</span></p>
-<p id="t67" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; There may be from 2 to 256 map entries.</span><span class="strut">&nbsp;</span></p>
-<p id="t68" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t69" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_MAP_ENTRY:</span><span class="strut">&nbsp;</span></p>
-<p id="t70" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [ FLOAT TEXTURE_BODY ]</span><span class="strut">&nbsp;</span></p>
-<p id="t71" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The brackets here are part of the map entry.</span><span class="strut">&nbsp;</span></p>
-<p id="t72" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t73" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_BODY:</span><span class="strut">&nbsp;</span></p>
-<p id="t74" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PLAIN_TEXTURE_BODY | LAYERED_TEXTURE_IDENT</span><span class="strut">&nbsp;</span></p>
-<p id="t75" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | PATTERNED_TEXTURE_BODY</span><span class="strut">&nbsp;</span></p>
-<p id="t76" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t77" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MATERIAL_MAP:</span><span class="strut">&nbsp;</span></p>
-<p id="t78" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; material_map { BITMAP_IMAGE [BITMAP_MODIFIERS] TEXTURE... }</span><span class="strut">&nbsp;</span></p>
-<p id="t79" class="pln"><span class="str">&nbsp; &nbsp; &#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t80" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t81" class="stm run hide_run">&nbsp; &nbsp; <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">*</span><span class="nam">opts</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t82" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t83" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Create Texture object</span><span class="strut">&nbsp;</span></p>
-<p id="t84" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t85" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Todo: Syntax Checks</span><span class="strut">&nbsp;</span></p>
-<p id="t86" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t87" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">super</span><span class="op">(</span><span class="nam">Texture</span><span class="op">,</span> <span class="nam">self</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="str">&#39;texture&#39;</span><span class="op">,</span> <span class="op">[</span><span class="op">]</span><span class="op">,</span> <span class="nam">opts</span><span class="op">,</span> <span class="nam">kwargs</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t18" class="pln">&nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t19" class="pln"><span class="str">&nbsp; &nbsp; Texture Object.</span><span class="strut">&nbsp;</span></p>
+<p id="t20" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t21" class="pln"><span class="str">&nbsp; &nbsp; TEXTURE:</span><span class="strut">&nbsp;</span></p>
+<p id="t22" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PLAIN_TEXTURE | LAYERED_TEXTURE | PATTERNED_TEXTURE</span><span class="strut">&nbsp;</span></p>
+<p id="t23" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t24" class="pln"><span class="str">&nbsp; &nbsp; PLAIN_TEXTURE:</span><span class="strut">&nbsp;</span></p>
+<p id="t25" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; texture { PLAIN_TEXTURE_BODY }</span><span class="strut">&nbsp;</span></p>
+<p id="t26" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t27" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PLAIN_TEXTURE_BODY:</span><span class="strut">&nbsp;</span></p>
+<p id="t28" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PLAIN_TEXTURE_IDENT] [PNF_IDENTIFIERS] [PNF_ITEMS]</span><span class="strut">&nbsp;</span></p>
+<p id="t29" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t30" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PNF_IDENTIFIERS:</span><span class="strut">&nbsp;</span></p>
+<p id="t31" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PIGMENT_IDENTIFIER] &amp; [NORMAL_IDENTIFIER]</span><span class="strut">&nbsp;</span></p>
+<p id="t32" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp; [FINISH_IDENTIFIER]</span><span class="strut">&nbsp;</span></p>
+<p id="t33" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t34" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PNF_ITEMS:</span><span class="strut">&nbsp;</span></p>
+<p id="t35" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PIGMENT] &amp; [NORMAL] &amp; [FINISH] &amp; [TRANSFORMATION...]</span><span class="strut">&nbsp;</span></p>
+<p id="t36" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t37" class="pln"><span class="str">&nbsp; &nbsp; LAYERED_TEXTURE:</span><span class="strut">&nbsp;</span></p>
+<p id="t38" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; texture { LAYERED_TEXTURE_IDENT } |</span><span class="strut">&nbsp;</span></p>
+<p id="t39" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PLAIN_TEXTURE PLAIN_TEXTURE...</span><span class="strut">&nbsp;</span></p>
+<p id="t40" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t41" class="pln"><span class="str">&nbsp; &nbsp; PATTERNED_TEXTURE:</span><span class="strut">&nbsp;</span></p>
+<p id="t42" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; texture { PATTERNED_TEXTURE_BODY }</span><span class="strut">&nbsp;</span></p>
+<p id="t43" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t44" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PATTERNED_TEXTURE_BODY:</span><span class="strut">&nbsp;</span></p>
+<p id="t45" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PATTERNED_TEXTURE_IDENT [TRANSFORMATION...]</span><span class="strut">&nbsp;</span></p>
+<p id="t46" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | TEXTURE_PATTERN [PATTERN_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
+<p id="t47" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | MATERIAL_MAP [TRANSFORMATION...]</span><span class="strut">&nbsp;</span></p>
+<p id="t48" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t49" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_PATTERN:</span><span class="strut">&nbsp;</span></p>
+<p id="t50" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_LIST_PATTERN | MAP_PATTERN TEXTURE_MAP</span><span class="strut">&nbsp;</span></p>
+<p id="t51" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t52" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_LIST_PATTERN:</span><span class="strut">&nbsp;</span></p>
+<p id="t53" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; brick TEXTURE, TEXTURE [BRICK_ITEMS] |</span><span class="strut">&nbsp;</span></p>
+<p id="t54" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; checker TEXTURE, TEXTURE |</span><span class="strut">&nbsp;</span></p>
+<p id="t55" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hexagon TEXTURE, TEXTURE, TEXTURE |</span><span class="strut">&nbsp;</span></p>
+<p id="t56" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object { LIST_OBJECT TEXTURE, TEXTURE }</span><span class="strut">&nbsp;</span></p>
+<p id="t57" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t58" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; BRICK_ITEMS:</span><span class="strut">&nbsp;</span></p>
+<p id="t59" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [brick_size VECTOR] &amp; [mortar FLOAT]</span><span class="strut">&nbsp;</span></p>
+<p id="t60" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t61" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; LIST_OBJECT:</span><span class="strut">&nbsp;</span></p>
+<p id="t62" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; UNTEXTURED_SOLID_OBJECT | UNTEXTURED_SOLID_OBJECT_IDENT</span><span class="strut">&nbsp;</span></p>
+<p id="t63" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t64" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_MAP:</span><span class="strut">&nbsp;</span></p>
+<p id="t65" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; texture_map { TEXTURE_MAP_BODY } [BLEND_MAP_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
+<p id="t66" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t67" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_MAP_BODY:</span><span class="strut">&nbsp;</span></p>
+<p id="t68" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_MAP_IDENTIFIER | TEXTURE_MAP_ENTRY...</span><span class="strut">&nbsp;</span></p>
+<p id="t69" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; There may be from 2 to 256 map entries.</span><span class="strut">&nbsp;</span></p>
+<p id="t70" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t71" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_MAP_ENTRY:</span><span class="strut">&nbsp;</span></p>
+<p id="t72" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [ FLOAT TEXTURE_BODY ]</span><span class="strut">&nbsp;</span></p>
+<p id="t73" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The brackets here are part of the map entry.</span><span class="strut">&nbsp;</span></p>
+<p id="t74" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t75" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; TEXTURE_BODY:</span><span class="strut">&nbsp;</span></p>
+<p id="t76" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PLAIN_TEXTURE_BODY | LAYERED_TEXTURE_IDENT</span><span class="strut">&nbsp;</span></p>
+<p id="t77" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | PATTERNED_TEXTURE_BODY</span><span class="strut">&nbsp;</span></p>
+<p id="t78" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t79" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; MATERIAL_MAP:</span><span class="strut">&nbsp;</span></p>
+<p id="t80" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; material_map { BITMAP_IMAGE [BITMAP_MODIFIERS] TEXTURE... }</span><span class="strut">&nbsp;</span></p>
+<p id="t81" class="pln"><span class="str">&nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t82" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t83" class="stm run hide_run">&nbsp; &nbsp; <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">*</span><span class="nam">opts</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t84" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t85" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; Create Texture object.</span><span class="strut">&nbsp;</span></p>
+<p id="t86" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t87" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; @Todo: Syntax Checks</span><span class="strut">&nbsp;</span></p>
+<p id="t88" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t89" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">super</span><span class="op">(</span><span class="nam">Texture</span><span class="op">,</span> <span class="nam">self</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="str">&#39;texture&#39;</span><span class="op">,</span> <span class="op">[</span><span class="op">]</span><span class="op">,</span> <span class="nam">opts</span><span class="op">,</span> <span class="nam">kwargs</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
                 
             </td>
         </tr>
@@ -254,7 +258,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.org">coverage.py v4.0.3</a>,
-            created at 2016-02-05 19:03
+            created at 2016-02-08 15:01
         </p>
     </div>
 </div>

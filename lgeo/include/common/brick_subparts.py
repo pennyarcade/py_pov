@@ -31,11 +31,11 @@ from pov.object_modifier.Translate import Translate
 
 from pov.other.Object import Object
 
-from lgeo.include.common.lg_defs import LG_WALL_WIDTH, LG_BRICK_WIDTH
+from lgeo.include.common.lg_defs import LG_WALL_WIDTH, LGBW
 from lgeo.include.common.lg_defs import LG_PLATE_INNER_HEIGHT, LG_CORNER_SPACE
 from lgeo.include.common.lg_defs import LG_BRICK_INNER_HEIGHT
 from lgeo.include.common.lg_defs import lg_knob_inner_space, lg_knob
-from lgeo.include.common.lg_defs import LG_BRICK_HEIGHT, lg_brick_column
+from lgeo.include.common.lg_defs import LGBH, lg_brick_column
 
 # **************************************************************************
 # LGEO Standard Brick common subparts
@@ -48,8 +48,8 @@ def get_knob_inner_space(length=1, width=1):
         Box(
             Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LG_CORNER_SPACE),
             Vector(
-                length * LG_BRICK_WIDTH-LG_WALL_WIDTH,
-                width * LG_BRICK_WIDTH-LG_WALL_WIDTH,
+                length * LGBW-LG_WALL_WIDTH,
+                width * LGBW-LG_WALL_WIDTH,
                 LG_PLATE_INNER_HEIGHT
             )
         )
@@ -64,8 +64,8 @@ def get_knob_inner_space(length=1, width=1):
                     lg_knob_inner_space,
                     Translate(
                         Vector(
-                            (ks_x + 0.5) * LG_BRICK_WIDTH,
-                            (ks_y + 0.5) * LG_BRICK_WIDTH,
+                            (ks_x + 0.5) * LGBW,
+                            (ks_y + 0.5) * LGBW,
                             LG_BRICK_INNER_HEIGHT
                         )
                     )
@@ -77,7 +77,7 @@ def get_knob_inner_space(length=1, width=1):
     return result
 
 
-def get_knob_objects(length=1, width=1, height=LG_BRICK_HEIGHT):
+def get_knob_objects(length=1, width=1, height=LGBH):
     """@Todo: DocString."""
     result = Union()
 
@@ -91,8 +91,8 @@ def get_knob_objects(length=1, width=1, height=LG_BRICK_HEIGHT):
                     Rotate(Vector(0, 0, -90)),
                     Translate(
                         Vector(
-                            (0.5 + knob_x) * LG_BRICK_WIDTH,
-                            (0.5 + knob_y) * LG_BRICK_WIDTH,
+                            (0.5 + knob_x) * LGBW,
+                            (0.5 + knob_y) * LGBW,
                             height
                         )
                     ),
@@ -115,8 +115,8 @@ def get_brick_coloumn(length=1):
                 lg_brick_column,
                 Translate(
                     Vector(
-                        col_x * LG_BRICK_WIDTH,
-                        0.5 * LG_BRICK_WIDTH,
+                        col_x * LGBW,
+                        0.5 * LGBW,
                         0
                     )
                 ),

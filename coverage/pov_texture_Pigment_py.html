@@ -145,27 +145,29 @@
 <p id="n76" class="pln"><a href="#n76">76</a></p>
 <p id="n77" class="pln"><a href="#n77">77</a></p>
 <p id="n78" class="pln"><a href="#n78">78</a></p>
-<p id="n79" class="stm run hide_run"><a href="#n79">79</a></p>
+<p id="n79" class="pln"><a href="#n79">79</a></p>
 <p id="n80" class="pln"><a href="#n80">80</a></p>
-<p id="n81" class="pln"><a href="#n81">81</a></p>
+<p id="n81" class="stm run hide_run"><a href="#n81">81</a></p>
 <p id="n82" class="pln"><a href="#n82">82</a></p>
 <p id="n83" class="pln"><a href="#n83">83</a></p>
 <p id="n84" class="pln"><a href="#n84">84</a></p>
-<p id="n85" class="stm run hide_run"><a href="#n85">85</a></p>
+<p id="n85" class="pln"><a href="#n85">85</a></p>
 <p id="n86" class="pln"><a href="#n86">86</a></p>
 <p id="n87" class="stm run hide_run"><a href="#n87">87</a></p>
-<p id="n88" class="stm run hide_run"><a href="#n88">88</a></p>
+<p id="n88" class="pln"><a href="#n88">88</a></p>
 <p id="n89" class="stm run hide_run"><a href="#n89">89</a></p>
-<p id="n90" class="pln"><a href="#n90">90</a></p>
+<p id="n90" class="stm run hide_run"><a href="#n90">90</a></p>
 <p id="n91" class="stm run hide_run"><a href="#n91">91</a></p>
-<p id="n92" class="stm run hide_run"><a href="#n92">92</a></p>
+<p id="n92" class="pln"><a href="#n92">92</a></p>
 <p id="n93" class="stm run hide_run"><a href="#n93">93</a></p>
+<p id="n94" class="stm run hide_run"><a href="#n94">94</a></p>
+<p id="n95" class="stm run hide_run"><a href="#n95">95</a></p>
                 
             </td>
             <td class="text">
 <p id="t1" class="pln"><span class="com"># coding=UTF-8</span><span class="strut">&nbsp;</span></p>
 <p id="t2" class="stm run hide_run"><span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
-<p id="t3" class="pln"><span class="str">Py_Pov 0.0.1 Copyright (c) Martin T&#246;nnishoff, 2013</span><span class="strut">&nbsp;</span></p>
+<p id="t3" class="pln"><span class="str">Py_Pov 0.0.1 Copyright (c) Martin Toennishoff, 2013.</span><span class="strut">&nbsp;</span></p>
 <p id="t4" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t5" class="pln"><span class="str">based on:</span><span class="strut">&nbsp;</span></p>
 <p id="t6" class="pln"><span class="str">PyPov-0.0.X Copyright (c) Simon Burton, 2003</span><span class="strut">&nbsp;</span></p>
@@ -180,82 +182,84 @@
 <p id="t15" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t16" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t17" class="stm run hide_run"><span class="key">class</span> <span class="nam">Pigment</span><span class="op">(</span><span class="nam">BlockObject</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t18" class="pln">&nbsp; &nbsp; <span class="str">&#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t19" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PIGMENT:</span><span class="strut">&nbsp;</span></p>
-<p id="t20" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pigment { PIGMENT_BODY }</span><span class="strut">&nbsp;</span></p>
-<p id="t21" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t22" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_BODY:</span><span class="strut">&nbsp;</span></p>
-<p id="t23" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PIGMENT_IDENTIFIER] [PIGMENT_TYPE] [PIGMENT_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
-<p id="t24" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t25" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_TYPE:</span><span class="strut">&nbsp;</span></p>
-<p id="t26" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; COLOR | COLOR_LIST_PATTERN | PIGMENT_LIST_PATTERN |</span><span class="strut">&nbsp;</span></p>
-<p id="t27" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IMAGE_MAP | MAP_PATTERN [COLOR_MAP] | MAP_PATTERN PIGMENT_MAP</span><span class="strut">&nbsp;</span></p>
-<p id="t28" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t29" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; COLOR_LIST_PATTERN:</span><span class="strut">&nbsp;</span></p>
-<p id="t30" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; brick [COLOR [, COLOR]] [BRICK_ITEMS] |</span><span class="strut">&nbsp;</span></p>
-<p id="t31" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; checker [COLOR [, COLOR]] |</span><span class="strut">&nbsp;</span></p>
-<p id="t32" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hexagon [COLOR [, COLOR [, COLOR]]] |</span><span class="strut">&nbsp;</span></p>
-<p id="t33" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object { LIST_OBJECT [COLOR [, COLOR]] }</span><span class="strut">&nbsp;</span></p>
-<p id="t34" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t35" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_LIST_PATTERN:</span><span class="strut">&nbsp;</span></p>
-<p id="t36" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; brick PIGMENT, PIGMENT [BRICK_ITEMS] |</span><span class="strut">&nbsp;</span></p>
-<p id="t37" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; checker PIGMENT, PIGMENT |</span><span class="strut">&nbsp;</span></p>
-<p id="t38" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hexagon PIGMENT, PIGMENT, PIGMENT |</span><span class="strut">&nbsp;</span></p>
-<p id="t39" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object { LIST_OBJECT PIGMENT, PIGMENT }</span><span class="strut">&nbsp;</span></p>
-<p id="t40" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t41" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IMAGE_MAP:</span><span class="strut">&nbsp;</span></p>
-<p id="t42" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; image_map {BITMAP_IMAGE [IMAGE_MAP_MODIFIER...]</span><span class="strut">&nbsp;</span></p>
-<p id="t43" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [BITMAP_MODIFIERS] }</span><span class="strut">&nbsp;</span></p>
-<p id="t44" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t45" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IMAGE_MAP_MODIFIER:</span><span class="strut">&nbsp;</span></p>
-<p id="t46" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; filter I_PALETTE, F_AMOUNT | filter all F_AMOUNT |</span><span class="strut">&nbsp;</span></p>
-<p id="t47" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transmit I_PALETTE, F_AMOUNT | transmit all F_AMOUNT</span><span class="strut">&nbsp;</span></p>
-<p id="t48" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t49" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; COLOR_MAP:</span><span class="strut">&nbsp;</span></p>
-<p id="t50" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color_map { COLOR_MAP_BODY } [BLEND_MAP_MODIFIERS] |</span><span class="strut">&nbsp;</span></p>
-<p id="t51" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; colour_map { COLOR_MAP_BODY } [BLEND_MAP_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
-<p id="t52" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t53" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; COLOR_MAP_BODY:</span><span class="strut">&nbsp;</span></p>
-<p id="t54" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; COLOR_MAP_IDENTIFIER | COLOR_MAP_ENTRY...</span><span class="strut">&nbsp;</span></p>
-<p id="t55" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; There may be from 2 to 256 map entries.</span><span class="strut">&nbsp;</span></p>
-<p id="t56" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t57" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; COLOR_MAP_ENTRY:</span><span class="strut">&nbsp;</span></p>
-<p id="t58" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [ FLOAT COLOR ]</span><span class="strut">&nbsp;</span></p>
-<p id="t59" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The brackets here are part of the map entry.</span><span class="strut">&nbsp;</span></p>
-<p id="t60" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t61" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_MAP:</span><span class="strut">&nbsp;</span></p>
-<p id="t62" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pigment_map { PIGMENT_MAP_BODY } [BLEND_MAP_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
-<p id="t63" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t64" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_MAP_BODY:</span><span class="strut">&nbsp;</span></p>
-<p id="t65" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_MAP_IDENTIFIER | PIGMENT_MAP_ENTRY...</span><span class="strut">&nbsp;</span></p>
-<p id="t66" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; There may be from 2 to 256 map entries.</span><span class="strut">&nbsp;</span></p>
-<p id="t67" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t68" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_MAP_ENTRY:</span><span class="strut">&nbsp;</span></p>
-<p id="t69" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [ FLOAT PIGMENT_BODY ]</span><span class="strut">&nbsp;</span></p>
-<p id="t70" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The brackets here are part of the map entry.</span><span class="strut">&nbsp;</span></p>
-<p id="t71" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t72" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_MODIFIERS:</span><span class="strut">&nbsp;</span></p>
-<p id="t73" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [QUICK_COLOR] &amp; [PATTERN_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
-<p id="t74" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t75" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; QUICK_COLOR:</span><span class="strut">&nbsp;</span></p>
-<p id="t76" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; quick_color COLOR | quick_colour COLOR</span><span class="strut">&nbsp;</span></p>
-<p id="t77" class="pln"><span class="str">&nbsp; &nbsp; &#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t78" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t79" class="stm run hide_run">&nbsp; &nbsp; <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">*</span><span class="nam">opts</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t80" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t81" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Create Pigment object</span><span class="strut">&nbsp;</span></p>
-<p id="t82" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t83" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @todo: Syntax checks</span><span class="strut">&nbsp;</span></p>
-<p id="t84" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t85" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">super</span><span class="op">(</span><span class="nam">Pigment</span><span class="op">,</span> <span class="nam">self</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="str">&#39;pigment&#39;</span><span class="op">,</span> <span class="op">[</span><span class="op">]</span><span class="op">,</span> <span class="nam">opts</span><span class="op">,</span> <span class="nam">kwargs</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t86" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t87" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="str">&#39;bozo&#39;</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span> <span class="key">and</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;bozo&#39;</span><span class="op">]</span> <span class="key">is</span> <span class="nam">True</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t88" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">del</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;bozo&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
-<p id="t89" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">&#39;bozo&#39;</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t90" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t91" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="str">&#39;checker&#39;</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span> <span class="key">and</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;checker&#39;</span><span class="op">]</span> <span class="key">is</span> <span class="nam">True</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t92" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">del</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;checker&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
-<p id="t93" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">&#39;checker&#39;</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t18" class="pln">&nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t19" class="pln"><span class="str">&nbsp; &nbsp; Pigment Object.</span><span class="strut">&nbsp;</span></p>
+<p id="t20" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t21" class="pln"><span class="str">&nbsp; &nbsp; PIGMENT:</span><span class="strut">&nbsp;</span></p>
+<p id="t22" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; pigment { PIGMENT_BODY }</span><span class="strut">&nbsp;</span></p>
+<p id="t23" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t24" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_BODY:</span><span class="strut">&nbsp;</span></p>
+<p id="t25" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PIGMENT_IDENTIFIER] [PIGMENT_TYPE] [PIGMENT_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
+<p id="t26" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t27" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_TYPE:</span><span class="strut">&nbsp;</span></p>
+<p id="t28" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; COLOR | COLOR_LIST_PATTERN | PIGMENT_LIST_PATTERN |</span><span class="strut">&nbsp;</span></p>
+<p id="t29" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IMAGE_MAP | MAP_PATTERN [COLOR_MAP] | MAP_PATTERN PIGMENT_MAP</span><span class="strut">&nbsp;</span></p>
+<p id="t30" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t31" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; COLOR_LIST_PATTERN:</span><span class="strut">&nbsp;</span></p>
+<p id="t32" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; brick [COLOR [, COLOR]] [BRICK_ITEMS] |</span><span class="strut">&nbsp;</span></p>
+<p id="t33" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; checker [COLOR [, COLOR]] |</span><span class="strut">&nbsp;</span></p>
+<p id="t34" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hexagon [COLOR [, COLOR [, COLOR]]] |</span><span class="strut">&nbsp;</span></p>
+<p id="t35" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object { LIST_OBJECT [COLOR [, COLOR]] }</span><span class="strut">&nbsp;</span></p>
+<p id="t36" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t37" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_LIST_PATTERN:</span><span class="strut">&nbsp;</span></p>
+<p id="t38" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; brick PIGMENT, PIGMENT [BRICK_ITEMS] |</span><span class="strut">&nbsp;</span></p>
+<p id="t39" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; checker PIGMENT, PIGMENT |</span><span class="strut">&nbsp;</span></p>
+<p id="t40" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hexagon PIGMENT, PIGMENT, PIGMENT |</span><span class="strut">&nbsp;</span></p>
+<p id="t41" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object { LIST_OBJECT PIGMENT, PIGMENT }</span><span class="strut">&nbsp;</span></p>
+<p id="t42" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t43" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; IMAGE_MAP:</span><span class="strut">&nbsp;</span></p>
+<p id="t44" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; image_map {BITMAP_IMAGE [IMAGE_MAP_MODIFIER...]</span><span class="strut">&nbsp;</span></p>
+<p id="t45" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [BITMAP_MODIFIERS] }</span><span class="strut">&nbsp;</span></p>
+<p id="t46" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t47" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; IMAGE_MAP_MODIFIER:</span><span class="strut">&nbsp;</span></p>
+<p id="t48" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; filter I_PALETTE, F_AMOUNT | filter all F_AMOUNT |</span><span class="strut">&nbsp;</span></p>
+<p id="t49" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transmit I_PALETTE, F_AMOUNT | transmit all F_AMOUNT</span><span class="strut">&nbsp;</span></p>
+<p id="t50" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t51" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; COLOR_MAP:</span><span class="strut">&nbsp;</span></p>
+<p id="t52" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color_map { COLOR_MAP_BODY } [BLEND_MAP_MODIFIERS] |</span><span class="strut">&nbsp;</span></p>
+<p id="t53" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; colour_map { COLOR_MAP_BODY } [BLEND_MAP_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
+<p id="t54" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t55" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; COLOR_MAP_BODY:</span><span class="strut">&nbsp;</span></p>
+<p id="t56" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; COLOR_MAP_IDENTIFIER | COLOR_MAP_ENTRY...</span><span class="strut">&nbsp;</span></p>
+<p id="t57" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; There may be from 2 to 256 map entries.</span><span class="strut">&nbsp;</span></p>
+<p id="t58" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t59" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; COLOR_MAP_ENTRY:</span><span class="strut">&nbsp;</span></p>
+<p id="t60" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [ FLOAT COLOR ]</span><span class="strut">&nbsp;</span></p>
+<p id="t61" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The brackets here are part of the map entry.</span><span class="strut">&nbsp;</span></p>
+<p id="t62" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t63" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_MAP:</span><span class="strut">&nbsp;</span></p>
+<p id="t64" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pigment_map { PIGMENT_MAP_BODY } [BLEND_MAP_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
+<p id="t65" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t66" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_MAP_BODY:</span><span class="strut">&nbsp;</span></p>
+<p id="t67" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_MAP_IDENTIFIER | PIGMENT_MAP_ENTRY...</span><span class="strut">&nbsp;</span></p>
+<p id="t68" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; There may be from 2 to 256 map entries.</span><span class="strut">&nbsp;</span></p>
+<p id="t69" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t70" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_MAP_ENTRY:</span><span class="strut">&nbsp;</span></p>
+<p id="t71" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [ FLOAT PIGMENT_BODY ]</span><span class="strut">&nbsp;</span></p>
+<p id="t72" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The brackets here are part of the map entry.</span><span class="strut">&nbsp;</span></p>
+<p id="t73" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t74" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; PIGMENT_MODIFIERS:</span><span class="strut">&nbsp;</span></p>
+<p id="t75" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [QUICK_COLOR] &amp; [PATTERN_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
+<p id="t76" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t77" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; QUICK_COLOR:</span><span class="strut">&nbsp;</span></p>
+<p id="t78" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; quick_color COLOR | quick_colour COLOR</span><span class="strut">&nbsp;</span></p>
+<p id="t79" class="pln"><span class="str">&nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t80" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t81" class="stm run hide_run">&nbsp; &nbsp; <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">*</span><span class="nam">opts</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t82" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t83" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; Create Pigment object.</span><span class="strut">&nbsp;</span></p>
+<p id="t84" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t85" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; @todo: Syntax checks</span><span class="strut">&nbsp;</span></p>
+<p id="t86" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t87" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">super</span><span class="op">(</span><span class="nam">Pigment</span><span class="op">,</span> <span class="nam">self</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="str">&#39;pigment&#39;</span><span class="op">,</span> <span class="op">[</span><span class="op">]</span><span class="op">,</span> <span class="nam">opts</span><span class="op">,</span> <span class="nam">kwargs</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t88" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t89" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="str">&#39;bozo&#39;</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span> <span class="key">and</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;bozo&#39;</span><span class="op">]</span> <span class="key">is</span> <span class="nam">True</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t90" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">del</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;bozo&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t91" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">&#39;bozo&#39;</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t92" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t93" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="str">&#39;checker&#39;</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span> <span class="key">and</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;checker&#39;</span><span class="op">]</span> <span class="key">is</span> <span class="nam">True</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t94" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">del</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;checker&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t95" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">&#39;checker&#39;</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
                 
             </td>
         </tr>
@@ -266,7 +270,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.org">coverage.py v4.0.3</a>,
-            created at 2016-02-05 19:03
+            created at 2016-02-08 15:01
         </p>
     </div>
 </div>

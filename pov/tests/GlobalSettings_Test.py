@@ -39,11 +39,8 @@ class GlobalSettingsTestCase(unittest.TestCase):
         """
             @Todo: DocString
         """
-        with self.assertRaisesRegexp(
+        with self.assertRaises(
             SdlSyntaxException,
-            ' '.join((
-                'Invalid option type str not in allowed opts',
-                '\n\\[\'Radiosity\', \'Photons\']'
-            ))
         ):
             self.sut = GlobalSettings('foo', 'bar')
+

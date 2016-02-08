@@ -143,24 +143,26 @@
 <p id="n74" class="pln"><a href="#n74">74</a></p>
 <p id="n75" class="pln"><a href="#n75">75</a></p>
 <p id="n76" class="pln"><a href="#n76">76</a></p>
-<p id="n77" class="stm run hide_run"><a href="#n77">77</a></p>
+<p id="n77" class="pln"><a href="#n77">77</a></p>
 <p id="n78" class="pln"><a href="#n78">78</a></p>
-<p id="n79" class="pln"><a href="#n79">79</a></p>
+<p id="n79" class="stm run hide_run"><a href="#n79">79</a></p>
 <p id="n80" class="pln"><a href="#n80">80</a></p>
 <p id="n81" class="pln"><a href="#n81">81</a></p>
 <p id="n82" class="pln"><a href="#n82">82</a></p>
 <p id="n83" class="pln"><a href="#n83">83</a></p>
-<p id="n84" class="stm run hide_run"><a href="#n84">84</a></p>
+<p id="n84" class="pln"><a href="#n84">84</a></p>
 <p id="n85" class="pln"><a href="#n85">85</a></p>
 <p id="n86" class="stm run hide_run"><a href="#n86">86</a></p>
-<p id="n87" class="stm run hide_run"><a href="#n87">87</a></p>
+<p id="n87" class="pln"><a href="#n87">87</a></p>
 <p id="n88" class="stm run hide_run"><a href="#n88">88</a></p>
+<p id="n89" class="stm run hide_run"><a href="#n89">89</a></p>
+<p id="n90" class="stm run hide_run"><a href="#n90">90</a></p>
                 
             </td>
             <td class="text">
 <p id="t1" class="pln"><span class="com"># coding=UTF-8</span><span class="strut">&nbsp;</span></p>
 <p id="t2" class="stm run hide_run"><span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
-<p id="t3" class="pln"><span class="str">Py_Pov 0.0.1 Copyright (c) Martin T&#246;nnishoff, 2013</span><span class="strut">&nbsp;</span></p>
+<p id="t3" class="pln"><span class="str">Py_Pov 0.0.1 Copyright (c) Martin Toennishoff, 2013.</span><span class="strut">&nbsp;</span></p>
 <p id="t4" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t5" class="pln"><span class="str">based on:</span><span class="strut">&nbsp;</span></p>
 <p id="t6" class="pln"><span class="str">PyPov-0.0.X Copyright (c) Simon Burton, 2003</span><span class="strut">&nbsp;</span></p>
@@ -175,77 +177,79 @@
 <p id="t15" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t16" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t17" class="stm run hide_run"><span class="key">class</span> <span class="nam">Normal</span><span class="op">(</span><span class="nam">BlockObject</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t18" class="pln">&nbsp; &nbsp; <span class="str">&#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t19" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; NORMAL:</span><span class="strut">&nbsp;</span></p>
-<p id="t20" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; normal { NORMAL_BODY }</span><span class="strut">&nbsp;</span></p>
-<p id="t21" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t22" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_BODY:</span><span class="strut">&nbsp;</span></p>
-<p id="t23" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [NORMAL_IDENTIFIER] [NORMAL_TYPE] [NORMAL_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
-<p id="t24" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t25" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_TYPE:</span><span class="strut">&nbsp;</span></p>
-<p id="t26" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_PATTERN | BUMP_MAP</span><span class="strut">&nbsp;</span></p>
-<p id="t27" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t28" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_PATTERN:</span><span class="strut">&nbsp;</span></p>
-<p id="t29" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_LIST_PATTERN |</span><span class="strut">&nbsp;</span></p>
-<p id="t30" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MAP_PATTERN [F_DEPTH] [SLOPE_MAP] |</span><span class="strut">&nbsp;</span></p>
-<p id="t31" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MAP_PATTERN NORMAL_MAP</span><span class="strut">&nbsp;</span></p>
-<p id="t32" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t33" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_LIST_PATTERN:</span><span class="strut">&nbsp;</span></p>
-<p id="t34" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; brick NORMAL, NORMAL [BRICK_ITEMS]</span><span class="strut">&nbsp;</span></p>
-<p id="t35" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | brick [F_DEPTH] [BRICK_ITEMS] |</span><span class="strut">&nbsp;</span></p>
-<p id="t36" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; checker NORMAL, NORMAL | checker [F_DEPTH] |</span><span class="strut">&nbsp;</span></p>
-<p id="t37" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hexagon NORMAL, NORMAL, NORMAL | hexagon [F_DEPTH] |</span><span class="strut">&nbsp;</span></p>
-<p id="t38" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object { LIST_OBJECT NORMAL, NORMAL }</span><span class="strut">&nbsp;</span></p>
-<p id="t39" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | object { LIST_OBJECT } [F_DEPTH]</span><span class="strut">&nbsp;</span></p>
-<p id="t40" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t41" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_MAP:</span><span class="strut">&nbsp;</span></p>
-<p id="t42" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; normal_map { NORMAL_MAP_BODY } [BLEND_MAP_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
-<p id="t43" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t44" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_MAP_BODY:</span><span class="strut">&nbsp;</span></p>
-<p id="t45" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_MAP_IDENTIFIER | NORMAL_MAP_ENTRY...</span><span class="strut">&nbsp;</span></p>
-<p id="t46" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; There may be from 2 to 256 map entries.</span><span class="strut">&nbsp;</span></p>
-<p id="t47" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t48" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_MAP_ENTRY:</span><span class="strut">&nbsp;</span></p>
-<p id="t49" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [ FLOAT NORMAL_BODY ]</span><span class="strut">&nbsp;</span></p>
-<p id="t50" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The brackets here are part of the map entry.</span><span class="strut">&nbsp;</span></p>
-<p id="t51" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t52" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SLOPE_MAP:</span><span class="strut">&nbsp;</span></p>
-<p id="t53" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; slope_map { SLOPE_MAP_BODY } [BLEND_MAP_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
-<p id="t54" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t55" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SLOPE_MAP_BODY:</span><span class="strut">&nbsp;</span></p>
-<p id="t56" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SLOPE_MAP_IDENTIFIER | SLOPE_MAP_ENTRY...</span><span class="strut">&nbsp;</span></p>
-<p id="t57" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; There may be from 2 to 256 map entries.</span><span class="strut">&nbsp;</span></p>
-<p id="t58" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t59" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SLOPE_MAP_ENTRY:</span><span class="strut">&nbsp;</span></p>
-<p id="t60" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [ FLOAT, &lt; F_HEIGHT, F_SLOPE &gt; ]</span><span class="strut">&nbsp;</span></p>
-<p id="t61" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The brackets here are part of the map entry.</span><span class="strut">&nbsp;</span></p>
-<p id="t62" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t63" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BUMP_MAP:</span><span class="strut">&nbsp;</span></p>
-<p id="t64" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bump_map { BITMAP_IMAGE [BUMP_MAP_MODIFIERS] }</span><span class="strut">&nbsp;</span></p>
-<p id="t65" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t66" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BUMP_MAP_MODIFIERS:</span><span class="strut">&nbsp;</span></p>
-<p id="t67" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [BITMAP_MODIFIERS] &amp; [BUMP_METHOD] &amp; [bump_size FLOAT]</span><span class="strut">&nbsp;</span></p>
-<p id="t68" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t69" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BUMP_METHOD:</span><span class="strut">&nbsp;</span></p>
-<p id="t70" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; use_index | use_color | use_colour</span><span class="strut">&nbsp;</span></p>
-<p id="t71" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t72" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_MODIFIERS:</span><span class="strut">&nbsp;</span></p>
-<p id="t73" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PATTERN_MODIFIERS] &amp; [bump_size FLOAT] &amp;</span><span class="strut">&nbsp;</span></p>
-<p id="t74" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [no_bump_scale [BOOL]] &amp; [accuracy FLOAT]</span><span class="strut">&nbsp;</span></p>
-<p id="t75" class="pln"><span class="str">&nbsp; &nbsp; &#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t76" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t77" class="stm run hide_run">&nbsp; &nbsp; <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">*</span><span class="nam">opts</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t78" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t79" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Create Normal object</span><span class="strut">&nbsp;</span></p>
-<p id="t80" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t81" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @todo: implement</span><span class="strut">&nbsp;</span></p>
-<p id="t82" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @todo: Syntax checks</span><span class="strut">&nbsp;</span></p>
-<p id="t83" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &#39;&#39;&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t84" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">super</span><span class="op">(</span><span class="nam">Normal</span><span class="op">,</span> <span class="nam">self</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="str">&#39;normal&#39;</span><span class="op">,</span> <span class="op">[</span><span class="op">]</span><span class="op">,</span> <span class="nam">opts</span><span class="op">,</span> <span class="nam">kwargs</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t85" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t86" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="str">&#39;bumps&#39;</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t87" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">&#39;bumps %s&#39;</span> <span class="op">%</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;bumps&#39;</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t88" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">del</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;bumps&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t18" class="pln">&nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t19" class="pln"><span class="str">&nbsp; &nbsp; Normal Object.</span><span class="strut">&nbsp;</span></p>
+<p id="t20" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t21" class="pln"><span class="str">&nbsp; &nbsp; NORMAL:</span><span class="strut">&nbsp;</span></p>
+<p id="t22" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; normal { NORMAL_BODY }</span><span class="strut">&nbsp;</span></p>
+<p id="t23" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t24" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; NORMAL_BODY:</span><span class="strut">&nbsp;</span></p>
+<p id="t25" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [NORMAL_IDENTIFIER] [NORMAL_TYPE] [NORMAL_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
+<p id="t26" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t27" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; NORMAL_TYPE:</span><span class="strut">&nbsp;</span></p>
+<p id="t28" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_PATTERN | BUMP_MAP</span><span class="strut">&nbsp;</span></p>
+<p id="t29" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t30" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; NORMAL_PATTERN:</span><span class="strut">&nbsp;</span></p>
+<p id="t31" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_LIST_PATTERN |</span><span class="strut">&nbsp;</span></p>
+<p id="t32" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MAP_PATTERN [F_DEPTH] [SLOPE_MAP] |</span><span class="strut">&nbsp;</span></p>
+<p id="t33" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MAP_PATTERN NORMAL_MAP</span><span class="strut">&nbsp;</span></p>
+<p id="t34" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t35" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; NORMAL_LIST_PATTERN:</span><span class="strut">&nbsp;</span></p>
+<p id="t36" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; brick NORMAL, NORMAL [BRICK_ITEMS]</span><span class="strut">&nbsp;</span></p>
+<p id="t37" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | brick [F_DEPTH] [BRICK_ITEMS] |</span><span class="strut">&nbsp;</span></p>
+<p id="t38" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; checker NORMAL, NORMAL | checker [F_DEPTH] |</span><span class="strut">&nbsp;</span></p>
+<p id="t39" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hexagon NORMAL, NORMAL, NORMAL | hexagon [F_DEPTH] |</span><span class="strut">&nbsp;</span></p>
+<p id="t40" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object { LIST_OBJECT NORMAL, NORMAL }</span><span class="strut">&nbsp;</span></p>
+<p id="t41" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | object { LIST_OBJECT } [F_DEPTH]</span><span class="strut">&nbsp;</span></p>
+<p id="t42" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t43" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; NORMAL_MAP:</span><span class="strut">&nbsp;</span></p>
+<p id="t44" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; normal_map { NORMAL_MAP_BODY } [BLEND_MAP_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
+<p id="t45" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t46" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; NORMAL_MAP_BODY:</span><span class="strut">&nbsp;</span></p>
+<p id="t47" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_MAP_IDENTIFIER | NORMAL_MAP_ENTRY...</span><span class="strut">&nbsp;</span></p>
+<p id="t48" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; There may be from 2 to 256 map entries.</span><span class="strut">&nbsp;</span></p>
+<p id="t49" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t50" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NORMAL_MAP_ENTRY:</span><span class="strut">&nbsp;</span></p>
+<p id="t51" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [ FLOAT NORMAL_BODY ]</span><span class="strut">&nbsp;</span></p>
+<p id="t52" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The brackets here are part of the map entry.</span><span class="strut">&nbsp;</span></p>
+<p id="t53" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t54" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; SLOPE_MAP:</span><span class="strut">&nbsp;</span></p>
+<p id="t55" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; slope_map { SLOPE_MAP_BODY } [BLEND_MAP_MODIFIERS]</span><span class="strut">&nbsp;</span></p>
+<p id="t56" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t57" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SLOPE_MAP_BODY:</span><span class="strut">&nbsp;</span></p>
+<p id="t58" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SLOPE_MAP_IDENTIFIER | SLOPE_MAP_ENTRY...</span><span class="strut">&nbsp;</span></p>
+<p id="t59" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; There may be from 2 to 256 map entries.</span><span class="strut">&nbsp;</span></p>
+<p id="t60" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t61" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SLOPE_MAP_ENTRY:</span><span class="strut">&nbsp;</span></p>
+<p id="t62" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [ FLOAT, &lt; F_HEIGHT, F_SLOPE &gt; ]</span><span class="strut">&nbsp;</span></p>
+<p id="t63" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The brackets here are part of the map entry.</span><span class="strut">&nbsp;</span></p>
+<p id="t64" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t65" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; BUMP_MAP:</span><span class="strut">&nbsp;</span></p>
+<p id="t66" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bump_map { BITMAP_IMAGE [BUMP_MAP_MODIFIERS] }</span><span class="strut">&nbsp;</span></p>
+<p id="t67" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t68" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BUMP_MAP_MODIFIERS:</span><span class="strut">&nbsp;</span></p>
+<p id="t69" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [BITMAP_MODIFIERS] &amp; [BUMP_METHOD] &amp; [bump_size FLOAT]</span><span class="strut">&nbsp;</span></p>
+<p id="t70" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t71" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BUMP_METHOD:</span><span class="strut">&nbsp;</span></p>
+<p id="t72" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; use_index | use_color | use_colour</span><span class="strut">&nbsp;</span></p>
+<p id="t73" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t74" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; NORMAL_MODIFIERS:</span><span class="strut">&nbsp;</span></p>
+<p id="t75" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [PATTERN_MODIFIERS] &amp; [bump_size FLOAT] &amp;</span><span class="strut">&nbsp;</span></p>
+<p id="t76" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [no_bump_scale [BOOL]] &amp; [accuracy FLOAT]</span><span class="strut">&nbsp;</span></p>
+<p id="t77" class="pln"><span class="str">&nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t78" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t79" class="stm run hide_run">&nbsp; &nbsp; <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">*</span><span class="nam">opts</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t80" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t81" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; Create Normal object.</span><span class="strut">&nbsp;</span></p>
+<p id="t82" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t83" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; @todo: implement</span><span class="strut">&nbsp;</span></p>
+<p id="t84" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; @todo: Syntax checks</span><span class="strut">&nbsp;</span></p>
+<p id="t85" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t86" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">super</span><span class="op">(</span><span class="nam">Normal</span><span class="op">,</span> <span class="nam">self</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="str">&#39;normal&#39;</span><span class="op">,</span> <span class="op">[</span><span class="op">]</span><span class="op">,</span> <span class="nam">opts</span><span class="op">,</span> <span class="nam">kwargs</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t87" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t88" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="str">&#39;bumps&#39;</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t89" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">&#39;bumps %s&#39;</span> <span class="op">%</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;bumps&#39;</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t90" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">del</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;bumps&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
                 
             </td>
         </tr>
@@ -256,7 +260,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.org">coverage.py v4.0.3</a>,
-            created at 2016-02-05 19:03
+            created at 2016-02-08 15:01
         </p>
     </div>
 </div>
