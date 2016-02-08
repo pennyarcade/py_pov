@@ -5,19 +5,19 @@ Messages
   ☐ Line: None
     ☐ dodgy: failure / Tool dodgy failed to run (exception was raised)
 
-☐ lgeo/config/lgeo_cfg.py
-  ☐ Line: 7
-    ☐ pylint: invalid-name / Invalid constant name "lg_quality"
-  ☐ Line: 13
-    ☐ pylint: invalid-name / Invalid constant name "lg_test"
-  ☐ Line: 18
-    ☐ pylint: invalid-name / Invalid constant name "lg_studs"
-  ☐ Line: 25
-    ☐ pylint: invalid-name / Invalid constant name "lg_stud_logo"
+✔ lgeo/config/lgeo_cfg.py @done (16-02-08 12:01)
+  ✔ Line: 7 @done (16-02-08 12:01)
+    ✔ pylint: invalid-name / Invalid constant name "lg_quality" @done (16-02-08 12:01)
+  ✔ Line: 13 @done (16-02-08 12:01)
+    ✔ pylint: invalid-name / Invalid constant name "lg_test" @done (16-02-08 12:01)
+  ✔ Line: 18 @done (16-02-08 12:01)
+    ✔ pylint: invalid-name / Invalid constant name "lg_studs" @done (16-02-08 12:01)
+  ✔ Line: 25 @done (16-02-08 12:01)
+    ✔ pylint: invalid-name / Invalid constant name "lg_stud_logo" @done (16-02-08 12:01)
 
-☐ lgeo/include/brick/lg_2412b.py
-  ☐ Line: 1152
-    ☐ pylint: pointless-string-statement / String statement has no effect
+✔ lgeo/include/brick/lg_2412b.py @done (16-02-08 12:04)
+  ✔ Line: 1152 @done (16-02-08 12:04)
+    ✔ pylint: pointless-string-statement / String statement has no effect @done (16-02-08 12:04)
 
 ☐ lgeo/include/brick/lg_2441.py
   ☐ Line: 1
@@ -26,12 +26,12 @@ Messages
     ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
   ☐ Line: 414
     ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
-  ☐ Line: 437
-    ☐ pep8: E123 / closing bracket does not match indentation of opening bracket's line (col 37)
-  ☐ Line: 438
-    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
-  ☐ Line: 447
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 41)
+  ✔ Line: 437 @done (16-02-08 12:07)
+    ✔ pep8: E123 / closing bracket does not match indentation of opening bracket's line (col 37) @done (16-02-08 12:07)
+  ✔ Line: 438 @done (16-02-08 12:06)
+    ✔ pep8: E501 / line too long (80 > 79 characters) (col 80) @done (16-02-08 12:06)
+  ✔ Line: 447 @done (16-02-08 12:07)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 41) @done (16-02-08 12:07)
   ☐ Line: 457
     ☐ pylint: redefined-variable-type / Redefinition of mirmatrix type from pov.object_modifier.Matrix.Matrix to str (col 16)
   ☐ Line: 847
@@ -1094,7 +1094,7 @@ Check Information
        Formatter: grouped
         Profiles: .landscape.yml, doc_warnings, no_test_warnings, strictness_veryhigh, no_member_warnings
       Strictness: from profile
-  Libraries Used: 
+  Libraries Used:
        Tools Run: dodgy, mccabe, pep257, pep8, profile-validator, pyflakes, pylint
   Messages Found: 481
  External Config: pylint: /home/mtoennishoff/devel/py_pov/.pylintrc
