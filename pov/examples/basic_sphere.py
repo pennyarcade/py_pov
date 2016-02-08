@@ -9,14 +9,14 @@ See LICENSE file.
 Some modifications by W.T. Bridgman, 2006-2007.
 
 """
-import sys
-from logging import *
+import sys, os
+# from logging import *
 
-sys.path.append('../')
+sys.path.append(os.path.abspath(os.path.join('..', '..')))
 
 from pov.atmeff.Fog import Fog
 from pov.basic.SceneFile import SceneFile
-from pov.basic.Vector import *
+from pov.basic.Vector import Vector, x
 from pov.basic.Color import Color
 from pov.global_settings.GlobalSettings import GlobalSettings
 from pov.finite_solid.Sphere import Sphere
@@ -33,12 +33,12 @@ from pov.texture.ColorMap import ColorMap
 from pov.texture.Normal import Normal
 
 
-fix = SceneFile('test.pov')
-fix.append(Version(3.6))
-fix.append(
+FIXTURE = SceneFile('test.pov')
+FIXTURE.append(Version(3.6))
+FIXTURE.append(
     GlobalSettings(assumed_gamma=1.0)
 )
-fix.append(
+FIXTURE.append(
     Default(
         Finish(
             ambient=0.1,
@@ -46,21 +46,21 @@ fix.append(
         )
     )
 )
-fix.append(
+FIXTURE.append(
     Include('colors.inc'),
     Include('textures.inc')
 )
 
 # @TODO: Read from Config
-image_width = 800
+IMAGE_WIDTH = 800
 # @TODO: Read from Config
-image_height = 600
+IMAGE_HEIGHT = 600
 
-fix.append(
+FIXTURE.append(
     Camera(
         location=Vector(0.0, 1.0, -3.0),
         look_at=Vector(0.0, 1.0, 0.0),
-        right=(x * image_width / image_height),
+        right=(x * IMAGE_WIDTH / IMAGE_HEIGHT),
         angle=75
     ),
     LightSource(
@@ -69,7 +69,7 @@ fix.append(
     )
 )
 
-fix.append(
+FIXTURE.append(
     Plane(
         Vector(0.0, 1.0, 0.0),
         1.0,
@@ -97,7 +97,7 @@ fix.append(
     )
 )
 
-fix.append(
+FIXTURE.append(
     Fog(
         fog_type=2.0,
         distance=50.0,
@@ -108,7 +108,7 @@ fix.append(
     )
 )
 
-fix.append(
+FIXTURE.append(
     Plane(
         Vector(0.0, 1.0, 0.0),
         0.0,
@@ -141,4 +141,4 @@ fix.append(
 )
 
 # print everything to stdout for now
-print str(fix)
+print str(FIXTURE)

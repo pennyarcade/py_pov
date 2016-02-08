@@ -371,15 +371,15 @@ class VectorTestCase(unittest.TestCase):
         """
             Test sut.norm()
         """
-        SUT = Vector(1, 2, 2)
-        self.assertEqual(SUT.norm(), 3)
+        self.sut = Vector(1, 2, 2)
+        self.assertEqual(self.sut.norm(), 3)
 
     def test_normalize(self):
         """
             Test sut.normalize()
         """
-        SUT = Vector(1, 2, 2)
-        self.assertEqual(SUT.normalize(), Vector(1.0 / 3, 2.0 / 3, 2.0 / 3))
+        self.sut = Vector(1, 2, 2)
+        self.assertEqual(self.sut.normalize(), Vector(1.0 / 3, 2.0 / 3, 2.0 / 3))
 
     def test_dot(self):
         """
@@ -651,3 +651,8 @@ class ColorTestCase(unittest.TestCase):
         self.sut *= 0.1
         print self.sut
         self.assertEqual(self.sut.vector, Vector(10, 15, 20))
+
+    def test_color_return_type(self):
+        """Test for color type."""
+        self.sut = Color(rgb=Vector(33 / 255.0, 33 / 255.0, 33 / 255.0))
+        self.assertEqual(type(self.sut), tuple)

@@ -94,7 +94,7 @@ from pov.texture.Texture import Texture
 # ***************************************************************************
 
 
-def UnchangedBrick(brick, texture):
+def unchanged_brick(brick, texture):
     """Create Brick + Texture Object"""
     return Object(
         brick,
@@ -102,7 +102,7 @@ def UnchangedBrick(brick, texture):
     )
 
 
-def StdBrick(brick, texture, tx, ty, tz, rx, ry, rz):
+def std_brick(brick, texture, tx, ty, tz, rx, ry, rz):
     """Create rotated + translated Brick object"""
     return Object(
         brick,

@@ -17,6 +17,8 @@ It is provided for private non-commercial use only.
 lg_defs: Definitions of standard sub-parts and sizes
 """
 
+from math import sqrt
+
 from lgeo.config.lgeo_cfg import LG_STUD_LOGO
 from lgeo.config.lgeo_cfg import LG_QUALITY
 
@@ -25,7 +27,7 @@ from pov.csg.Intersection import Intersection
 from pov.csg.Merge import Merge
 from pov.csg.Union import Union
 
-from pov.basic.Vector import *
+from pov.basic.Vector import Vector, x, y
 
 from pov.finite_solid.Box import Box
 from pov.finite_solid.Cylinder import Cylinder

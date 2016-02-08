@@ -62,10 +62,13 @@ class Cylinder(BlockObject):
             )
 
         # Make sure only valid Object Modifiers are passed
-        for i in enumerate(opts):
-            if not isinstance(opts[i], ObjectModifier):
+        for i, item in enumerate(opts):
+            if not isinstance(item, ObjectModifier):
                 raise SdlSyntaxException(
-                    'Only ObjectModifier objects may be passed as options'
+                    ' '.join([
+                        'Only ObjectModifier objects may',
+                        'be passed as options (Index %s)'
+                    ]) % (i)
                 )
 
         for key, val in kwargs.items():

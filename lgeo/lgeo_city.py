@@ -104,6 +104,7 @@ from pov.texture.pattern.Gradient import Gradient
 
 
 # ==== LGEO Colors and Definitions ====
+# from lgeo.config.lg_cfg import LG_QUALITY
 # include "lg_color.inc"
 # include "lg_defs.inc"
 
@@ -138,10 +139,6 @@ def main():
             ambient_light=Color(rgb=Vector(1, 1, 1))
         )
     )
-
-    # LGEO Settings
-    # TODO: Same as below
-    lg_quality = 4
 
     # L3P Settings
     # l3_version = 1.4

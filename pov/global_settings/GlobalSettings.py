@@ -70,5 +70,5 @@ class GlobalSettings(BlockObject):
 
         self._validate_kwargs(valid_kw)
 
-        self._checkKwargValue('charset', ['ascii', 'utf8', 'sys'])
-        self._checkKwargValue('noise_generator', [1, 2, 3])
+        # self._checkKwargValue('charset', ['ascii', 'utf8', 'sys'])
+        # self._checkKwargValue('noise_generator', [1, 2, 3])

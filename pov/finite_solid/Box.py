@@ -76,7 +76,7 @@ class Box(BlockObject):
             )
 
         # make sure only valid object modifiers are passed
-        for i in enumerate(opts):
+        for i, item in enumerate(opts):
             if not isinstance(opts[i], ObjectModifier):
                 raise SdlSyntaxException(
                     'Only ObjectModifier objects may be passed as options'

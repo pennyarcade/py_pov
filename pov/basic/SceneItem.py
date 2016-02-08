@@ -303,11 +303,11 @@ class SceneItem(object):
     def _validate_opts(self, valid_opts):
         """Typecheck Keywords agains givien dictionary."""
         # make sure only valid object modifiers are passed
-        for i in enumerate(self.opts):
-            if not self.opts[i].__class__.__name__ in valid_opts:
+        for i, item in enumerate(self.opts):
+            if not item.__class__.__name__ in valid_opts:
                 raise SdlSyntaxException(
-                    'Invalid option type %s not in allowed opts \n%s' %
-                    (self.opts[i].__class__.__name__, valid_opts)
+                    'Invalid option type %s not in allowed opts[%s] \n%s' %
+                    (item.__class__.__name__, i, valid_opts)
                 )
 
     def _validate_kwargs(self, valid_kw):
@@ -330,7 +330,7 @@ class SceneItem(object):
                     msg % (key, valid_kw[key], val.__class__.__name__)
                 )
 
-    def _checkKwargValue(self, kwarg, validvalues):
+    def _checkKwargsValue(self, kwarg, validvalues):
         """Check value range for kwargs"""
 
         if kwarg in self.kwargs:
@@ -344,15 +344,15 @@ class SceneItem(object):
     def _format_args(self, args):
         """format argument parameters."""
         args = list(args)
-        for i in enumerate(args):
-            args[i] = self.map_arg(args[i])
+        for i, item in enumerate(args):
+            args[i] = self.map_arg(item)
         self.args = self.flatten(args)
 
     def _format_opts(self, opts):
         """format option parameters."""
         opts = list(opts)
-        for i in enumerate(opts):
-            opts[i] = self.map_arg(opts[i])
+        for i, item in enumerate(opts):
+            opts[i] = self.map_arg(item)
         self.opts = self.flatten(opts)
 
     def _format_kwargs(self, kwargs):
