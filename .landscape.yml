@@ -1,13 +1,56 @@
-doc-warnings: yes
-test-warnings: no
-strictness: veryhigh
-max-line-length: 79
 autodetect: yes
+strictness: veryhigh
+test-warnings: true
+doc-warnings: true
+
 ignore-paths:
-    - coverage
-    - docs
-    - metrics
-    - old
+  - lib
+  - .git
+  - coverage
+  - docs
+  - metrics
+  - old
+
+ignore-patterns:
+  - (^|/)skip(this)?(/|$)
+
+pep8:
+  run: true
+  # disable:
+  #   - W602
+  #   - W603
+  enable:
+    - W601
+  options:
+    max-line-length: 79
+    single-line-if-stmt: n
+
+pep257:
+  disable:
+    - D203
+  run: true
+
+pylint:
+  run: true
+
+pyroma:
+  run: true
+
+mccabe:
+  run: true
+  options:
+    max-complexity: 10
 
 dodgy:
   run: false
+
+pyflakes:
+  run: true
+
+frosted:
+  run: true
+
+vulture:
+  run: true
+
+

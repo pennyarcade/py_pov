@@ -1,14 +1,15 @@
-output-format: grouped
-
-strictness: high
+autodetect: yes
+strictness: veryhigh
 test-warnings: true
 doc-warnings: true
-# inherits:
-#   - my/other/profile.yml
 
 ignore-paths:
   - lib
   - .git
+  - coverage
+  - docs
+  - metrics
+  - old
 
 ignore-patterns:
   - (^|/)skip(this)?(/|$)
@@ -41,7 +42,7 @@ mccabe:
     max-complexity: 10
 
 dodgy:
-  run: true
+  run: false
 
 pyflakes:
   run: true
@@ -51,4 +52,5 @@ frosted:
 
 vulture:
   run: true
+
 
