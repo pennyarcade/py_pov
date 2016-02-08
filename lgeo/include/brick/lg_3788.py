@@ -32,11 +32,11 @@ from pov.object_modifier.Rotate import Rotate
 from pov.other.Object import Object
 
 
-lg_angle = atan2(0.44, 0.38) * 180 / pi
+LG_ANGLE = atan2(0.44, 0.38) * 180 / pi
 
 
 def solid():
-    """LG 3788 Solid brick"""
+    """LG 3788 Solid brick."""
     mainpart = Union()
 
     for rot in (0, 1):
@@ -147,7 +147,7 @@ def solid():
             ),
             Cylinder(
                 Vector(
-                    -LGBW + 0.12 -LG_CORNER_SPACE,
+                    -LGBW + 0.12 - LG_CORNER_SPACE,
                     2 * LGBW - LG_CORNER_SPACE,
                     -2 * LGPH + LG_CORNER_SPACE
                 ),
@@ -296,7 +296,7 @@ def solid():
                     -2 * LGPH + LG_CORNER_SPACE
                 ),
                 Vector(
-                    -LGBW + 0.12 -LG_CORNER_SPACE,
+                    -LGBW + 0.12 - LG_CORNER_SPACE,
                     -LGBW + LG_CORNER_SPACE,
                     -2 * LGPH + LG_CORNER_SPACE
                 ), LG_CORNER_SPACE
@@ -315,12 +315,12 @@ def solid():
             ),
             Cylinder(
                 Vector(0, 0, 0),
-                Vector(0.38 / cos( lg_angle * pi / 180), 0, 0),
+                Vector(0.38 / cos(LG_ANGLE * pi / 180), 0, 0),
                 LG_CORNER_SPACE,
-                Rotate(Vector(0, -lg_angle, 0)),
+                Rotate(Vector(0, -LG_ANGLE, 0)),
                 Translate(
                     Vector(
-                        -LGBW + 0.12 -LG_CORNER_SPACE,
+                        -LGBW + 0.12 - LG_CORNER_SPACE,
                         2 * LGBW - LG_CORNER_SPACE,
                         -2 * LGPH + LG_CORNER_SPACE
                     )
@@ -328,9 +328,9 @@ def solid():
             ),
             Cylinder(
                 Vector(0, 0, 0),
-                Vector(-0.38 / cos( lg_angle * pi / 180), 0, 0),
+                Vector(-0.38 / cos(LG_ANGLE * pi / 180), 0, 0),
                 LG_CORNER_SPACE,
-                Rotate(Vector(0, lg_angle, 0)),
+                Rotate(Vector(0, LG_ANGLE, 0)),
                 Translate(
                     Vector(
                         LGBW - 0.12 + LG_CORNER_SPACE,
@@ -418,7 +418,7 @@ def solid():
                             -2 * LGPH + LG_CORNER_SPACE
                         ),
                         Vector(
-                            -LGBW + 0.12 -LG_CORNER_SPACE,
+                            -LGBW + 0.12 - LG_CORNER_SPACE,
                             LGBW - LG_CORNER_SPACE,
                             -2 * LGPH - LG_E
                         )
@@ -426,14 +426,14 @@ def solid():
                     Box(
                         Vector(-LG_CORNER_SPACE, -LG_WALL_WIDTH, 0),
                         Vector(
-                            0.38 / cos( lg_angle * pi / 180),
+                            0.38 / cos(LG_ANGLE * pi / 180),
                             LG_CORNER_SPACE + LG_E,
                             -0.5
                         ),
-                        Rotate(Vector(0, -lg_angle, 0)),
+                        Rotate(Vector(0, -LG_ANGLE, 0)),
                         Translate(
                             Vector(
-                                -LGBW + 0.12 -LG_CORNER_SPACE,
+                                -LGBW + 0.12 - LG_CORNER_SPACE,
                                 2 * LGBW - LG_CORNER_SPACE,
                                 -2 * LGPH + LG_CORNER_SPACE
                             )
@@ -442,11 +442,11 @@ def solid():
                     Box(
                         Vector(LG_CORNER_SPACE, -LG_WALL_WIDTH, 0),
                         Vector(
-                            -0.38 / cos( lg_angle * pi / 180),
+                            -0.38 / cos(LG_ANGLE * pi / 180),
                             LG_CORNER_SPACE + LG_E,
                             -0.5
                         ),
-                        Rotate(Vector(0, lg_angle, 0)),
+                        Rotate(Vector(0, LG_ANGLE, 0)),
                         Translate(
                             Vector(
                                 LGBW - 0.12 + LG_CORNER_SPACE,
@@ -573,20 +573,20 @@ def solid():
             ),
             Box(
                 Vector(0, - 0.12 + LG_CORNER_SPACE, -LG_CORNER_SPACE),
-                Vector(0.38 / cos(lg_angle * pi / 180), 0, LG_E),
-                Rotate(Vector(0, -lg_angle, 0)),
+                Vector(0.38 / cos(LG_ANGLE * pi / 180), 0, LG_E),
+                Rotate(Vector(0, -LG_ANGLE, 0)),
                 Translate(
                     Vector(
-                        -LGBW + 0.12 -LG_CORNER_SPACE,
+                        -LGBW + 0.12 - LG_CORNER_SPACE,
                         2 * LGBW - LG_CORNER_SPACE,
                         -2 * LGPH + LG_CORNER_SPACE
                     )
                 )
             ),
             Box(
-                Vector(0,  - 0.12 + LG_CORNER_SPACE, -LG_CORNER_SPACE),
-                Vector(-0.38 / cos( lg_angle * pi / 180), 0, LG_E),
-                Rotate(Vector(0, lg_angle, 0)),
+                Vector(0, -0.12 + LG_CORNER_SPACE, -LG_CORNER_SPACE),
+                Vector(-0.38 / cos(LG_ANGLE * pi / 180), 0, LG_E),
+                Rotate(Vector(0, LG_ANGLE, 0)),
                 Translate(
                     Vector(
                         LGBW - 0.12 + LG_CORNER_SPACE,

@@ -37,13 +37,13 @@ class GlobalSettings(BlockObject):
     NG_TYPE:
         1 | 2 | 3
     """
+
     def __init__(self, *opts, **kwargs):
         """
         Construct a GlobalSettings object.
 
         @Todo: test __str__
         """
-
         super(GlobalSettings, self).__init__(
             "global_settings", [], opts, kwargs
         )
@@ -69,5 +69,5 @@ class GlobalSettings(BlockObject):
 
         self._validate_kwargs(valid_kw)
 
-        # self._checkKwargValue('charset', ['ascii', 'utf8', 'sys'])
-        # self._checkKwargValue('noise_generator', [1, 2, 3])
+        self._checkKwargValue('charset', ['ascii', 'utf8', 'sys'])
+        self._checkKwargValue('noise_generator', [1, 2, 3])

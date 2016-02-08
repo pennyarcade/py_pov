@@ -19,13 +19,14 @@ class Cylinder(BlockObject):
     """
     Cylinder object.
 
-   CYLINDER:
+    CYLINDER:
         cylinder
         {
             <Base_Point>, <Cap_Point>, Radius
             [ open ][OBJECT_MODIFIERS...]
         }
     """
+
     def __init__(self, basepoint, cappoint, radius, *opts, **kwargs):
         """
         Construct a cylinder Object.

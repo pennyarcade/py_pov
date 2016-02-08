@@ -227,7 +227,7 @@ class SceneItem(object):
 
     def _block_end(self):
         """
-        End code block
+        End code block.
 
         * reduce INDENTATION
         * add line with closing bracket
@@ -304,7 +304,7 @@ class SceneItem(object):
         """Typecheck Keywords agains givien dictionary."""
         # make sure only valid object modifiers are passed
         for i, item in enumerate(self.opts):
-            if not item.__class__.__name__ in valid_opts:
+            if item.__class__.__name__ not in valid_opts:
                 raise SdlSyntaxException(
                     'Invalid option type %s not in allowed opts[%s] %s' %
                     (item.__class__.__name__, i, valid_opts)
@@ -331,10 +331,9 @@ class SceneItem(object):
                 )
 
     def _checkKwargValue(self, kwarg, validvalues):
-        """Check value range for kwargs"""
-
+        """Check value range for kwargs."""
         if kwarg in self.kwargs:
-            if not self.kwargs[kwarg] in validvalues:
+            if self.kwargs[kwarg] not in validvalues:
                 msg = 'Value of KW Argument %s is expectet '
                 msg += 'to be in %s but got %s'
                 raise SdlSyntaxException(
@@ -468,7 +467,6 @@ class SceneItem(object):
 
         works for Options and kwargs
         """
-
         for item in self.flatten(opts):
             self.opts.append(item)
         for key, val in kwargs.items():

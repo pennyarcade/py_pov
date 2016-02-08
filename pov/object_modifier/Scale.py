@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-uPy_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -24,7 +24,6 @@ class Scale(ObjectModifier):
 
     def __init__(self, svector):
         """Create Scale object."""
-
         super(Scale, self).__init__('scale', [svector], [], [])
 
     def _check_arguments(self):
@@ -34,7 +33,6 @@ class Scale(ObjectModifier):
         @Todo: ApiDoc
         """
         valid_args = ['Vector']
-
         self._validate_args(valid_args)
 
         # param syntax checks
@@ -46,8 +44,6 @@ class Scale(ObjectModifier):
     def __str__(self):
         """@Todo: DocString."""
         code = ''
-
         code += "  " * self._get_indent() + self.name + ' '
         code += str(self.args[0]) + os.linesep
-
         return code

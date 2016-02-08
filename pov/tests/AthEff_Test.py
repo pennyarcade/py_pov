@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -24,34 +24,24 @@ from pov.basic.Vector import Vector
 
 
 class FogTestCase(unittest.TestCase):
-    """
-        @Todo: DocString
-    """
+    """@Todo: DocString."""
+
     def setUp(self):
-        """
-            @Todo: DocString
-        """
+        """@Todo: DocString."""
         self.sut = Fog(Color(rgb=Vector(100, 100, 100)))
 
     def test_creation(self):
-        """
-            @Todo: DocString
-        """
+        """@Todo: DocString."""
         self.assertIsInstance(self.sut, Fog)
 
 
 class SkySphereTestCase(unittest.TestCase):
-    """
-        @Todo: DocString
-    """
+    """@Todo: DocString."""
+
     def setUp(self):
-        """
-            @Todo: DocString
-        """
+        """@Todo: DocString."""
         self.sut = SkySphere(Pigment())
 
     def test_creation(self):
-        """
-            @Todo: DocString
-        """
+        """@Todo: DocString."""
         self.assertIsInstance(self.sut, SkySphere)

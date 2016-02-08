@@ -37,7 +37,6 @@ class Sphere(BlockObject):
         @Todo: How to allow int and float as type
         """
         valid_args = ['Vector', ('float', 'int')]
-
         self._validate_args(valid_args)
 
         # param syntax checks
@@ -53,12 +52,10 @@ class Sphere(BlockObject):
         @Todo: get rid of Object Modifier superclass?
         """
         valid_opts = ['ObjectModifier', 'Texture', 'Translate']
-
         self._validate_opts(valid_opts)
 
     def _check_kwargs(self):
         """Keyword Argument Syntax checks."""
-
         valid_kw = {
             # Object modifier kw
             'no_shadow': 'bool',

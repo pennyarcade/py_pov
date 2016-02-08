@@ -7,7 +7,6 @@ PyPov-0.0.X Copyright (c) Simon Burton, 2003
 See LICENSE file.
 
 Some modifications by W.T. Bridgman, 2006-2007.
-
 """
 
 import os
@@ -20,13 +19,11 @@ class Translate(ObjectModifier):
 
     def __init__(self, tvector):
         """Create Translate object."""
-
         super(Translate, self).__init__('translate', [tvector], [], [])
 
     def _check_arguments(self):
         """Argument Syntax checks."""
         valid_args = ['Vector']
-
         self._validate_args(valid_args)
 
         # param syntax checks
@@ -38,8 +35,6 @@ class Translate(ObjectModifier):
     def __str__(self):
         """@Todo: DocString."""
         code = ''
-
         code += "  " * self._get_indent() + self.name + ' '
         code += str(self.args[0]) + os.linesep
-
         return code

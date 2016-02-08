@@ -49,6 +49,7 @@ class Box(BlockObject):
     OBJECT_PHOTONS:
         photons { OBJECT_PHOTON_ITEMS }
     """
+
     def __init__(self, vector1, vector2, *opts, **kwargs):
         """
         Construct a box object.
@@ -60,7 +61,6 @@ class Box(BlockObject):
 
         @Todo: Use Syntax checking Methods (See JuliaFractal)
         """
-
         # Syntax checking
         if not isinstance(vector1, Vector):
             raise SdlSyntaxException('Parameter v1 not of type Vector')

@@ -37,6 +37,7 @@ class JuliaFractal(BlockObject):
              asinh | cos | acos | cosh | acosh | tan | atan |tanh |
              atanh | ln | pwr( X_Val, Y_Val )
     """
+
     def __init__(self, param4d, *opts, **kwargs):
         """
         Construct a Julia Fractal object.
@@ -51,7 +52,6 @@ class JuliaFractal(BlockObject):
     def _check_arguments(self):
         """Argument Syntax checks."""
         valid_args = ['Vector']
-
         self._validate_args(valid_args)
 
         # param syntax checks
@@ -67,7 +67,6 @@ class JuliaFractal(BlockObject):
         @Todo: get rid of Object Modifier superclass?
         """
         valid_opts = ['ObjectModifier']
-
         self._validate_opts(valid_opts)
 
     def _check_kwargs(self):
@@ -76,7 +75,6 @@ class JuliaFractal(BlockObject):
 
         @Todo: Finish syntax checks
         """
-
         valid_kw = {
             'algebra_type': 'string',
             'function_type': 'string',

@@ -93,7 +93,7 @@ else:
 
 
 LG_IOR = Interior(
-    ior = 1.4
+    ior=1.4
 )
 
 

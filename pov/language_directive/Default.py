@@ -38,15 +38,12 @@ class Default(LanguageDirective, BlockObject):
 
     def _check_kwargs(self):
         """Keyword Argument Syntax checks."""
-
         valid_kw = {}
         self._validate_kwargs(valid_kw)
 
     def _check_opts(self):
         """Optional Argument Syntax checks."""
-
         valid_kw = [
             'Texture', 'Pigment', 'Normal', 'Finish'
         ]
-
         self._validate_kwargs(valid_kw)

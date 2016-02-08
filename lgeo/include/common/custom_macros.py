@@ -95,7 +95,7 @@ from pov.texture.Texture import Texture
 
 
 def unchanged_brick(brick, texture):
-    """Create Brick + Texture Object"""
+    """Create Brick + Texture Object."""
     return Object(
         brick,
         Texture(texture)
@@ -103,7 +103,7 @@ def unchanged_brick(brick, texture):
 
 
 def std_brick(brick, texture, tx, ty, tz, rx, ry, rz):
-    """Create rotated + translated Brick object"""
+    """Create rotated + translated Brick object."""
     return Object(
         brick,
         texture,

@@ -155,9 +155,9 @@ def lego_logo_text():
                 ),
                 Cylinder(Vector(44.05, 0, 99), Vector(-35.95, 0, 117), 6),
             ),
-            Scale(Vector(4.5/128, 4.5/128, 4.5/128)),
-            Rotate(y*90),
-            Rotate(x*-90),
+            Scale(Vector(4.5 / 128, 4.5 / 128, 4.5 / 128)),
+            Rotate(y * 90),
+            Rotate(x * -90),
             Scale(Vector(-1, 1, 1)),
             Scale(Vector(1, 1, 1) * .08 * LG_KNOB_RADIUS * 2)
         )
@@ -470,7 +470,7 @@ def lg_knob_clear():
         )
     )
 
-    if (LG_QUALITY > 2):
+    if LG_QUALITY > 2:
         result.append(
             Object(
                 lego_logo_text_clear(),
@@ -522,7 +522,8 @@ lg_tech_knob_clear = Merge(
 
 
 def lg_tech_knob_logo_clear():
-    if (LG_QUALITY > 3):
+    """@Todo: ApiDoc."""
+    if LG_QUALITY > 3:
         return Union(
             lg_tech_knob_clear,
             Object(lego_logo_text(), Scale(Vector(3 / 4, 3 / 4, 3 / 4)))

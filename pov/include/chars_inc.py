@@ -1,4 +1,4 @@
-u"""
+r"""
 //    Persistence of Vision Ray Tracer version 3.5 Include File.
 
 //    File: chars.inc

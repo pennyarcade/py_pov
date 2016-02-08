@@ -7,7 +7,6 @@ PyPov-0.0.X Copyright (c) Simon Burton, 2003
 See LICENSE file.
 
 Some modifications by W.T. Bridgman, 2006-2007.
-
 """
 
 from pov.basic.BlockObject import BlockObject

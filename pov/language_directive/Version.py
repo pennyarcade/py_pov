@@ -30,15 +30,12 @@ class Version(LanguageDirective):
         @param version: Full name of file to be included
         @type version: float
         """
-
         super(Version, self).__init__('#version', [version], [], {})
 
     def __str__(self):
         """Generate PoV source code."""
         code = self._get_line('#' + 'version ' + str(self.args[0]) + ';')
-
         debug("Version.__str__(): %s\n%s" % (self.args[0], code))
-
         return code
 
     def _check_arguments(self):
@@ -48,5 +45,4 @@ class Version(LanguageDirective):
         to be overwritten in subclasses
         """
         valid_args = ['float']
-
         self._validate_args(valid_args)

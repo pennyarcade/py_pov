@@ -7,7 +7,6 @@ PyPov-0.0.X Copyright (c) Simon Burton, 2003
 See LICENSE file.
 
 Some modifications by W.T. Bridgman, 2006-2007.
-
 """
 
 from logging import debug
@@ -16,6 +15,7 @@ from pov.basic.SceneItem import SceneItem
 
 class BlockObject(SceneItem):
     """provides methods to generate code blocks."""
+
     def __str__(self):
         """return PoV code as string representation."""
         debug(
@@ -38,7 +38,6 @@ class BlockObject(SceneItem):
 
     def _get_begin_code(self):
         """Start block of code."""
-
         code = "  " * self._get_indent() + self.name + self._block_begin()
         if self.args:
             code = code + self._get_line(

@@ -120,7 +120,6 @@ from lgeo.set import lg_10036_1_car
 
 def main():
     """@Todo: DocString."""
-
     fix = SceneFile('test.pov')
     fix.append(Version(3.6))
 

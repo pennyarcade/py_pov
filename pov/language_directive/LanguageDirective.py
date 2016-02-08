@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -40,6 +40,7 @@ class LanguageDirective(SceneItem):
     @Todo: Is this superclass deprecated?
     @Todo: Implement subclasses
     """
+
     def __init__(self, name, args=None, opts=None, kwargs=None):
         """@Todo: DocString."""
         debug("%s: LanguageDirective.__init__(): %s, %s, %s, %s" %

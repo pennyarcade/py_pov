@@ -30,6 +30,7 @@ from pov.object_modifier.Translate import Translate
 from pov.object_modifier.Scale import Scale
 
 from pov.other.Object import Object
+from pov.other.EmptyObject import EmptyObject
 
 from lgeo.include.common.lg_defs import LGBW, LG_CORNER_SPACE
 from lgeo.include.common.lg_defs import LGPH, LG_E, LG_KNOB_RADIUS
@@ -456,7 +457,7 @@ def solid():
                     Vector(1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0)
                 )
             else:
-                mirmatrix = ''
+                mirmatrix = EmptyObject()
 
             result.append(
                 Union(
@@ -1430,7 +1431,7 @@ def solid():
             Vector(
                 4 * LGBW - LG_WALL_WIDTH,
                 -LGBW + LG_CORNER_SPACE,
-                -LGPH + LG_CORNER_SPACE +2 * LG_E
+                -LGPH + LG_CORNER_SPACE + 2 * LG_E
             )
         ),
         Box(

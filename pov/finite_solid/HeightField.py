@@ -32,6 +32,7 @@ class HeightField(BlockObject):
         smooth               |
         water_level float
     """
+
     def __init__(self, filename, *opts, **kwargs):
         """
         Construct a HeightField object.

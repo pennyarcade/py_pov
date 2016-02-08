@@ -29,6 +29,7 @@ class Cone(BlockObject):
             [ open ][OBJECT_MODIFIERS...]
         }
     """
+
     def __init__(
             self, basepoint, baseradius, cappoint, capradius, *opts, **kwargs
     ):
@@ -46,7 +47,6 @@ class Cone(BlockObject):
 
         @Todo: use Syntax Checking Methods (See juliaFractal)
         """
-
         # Syntax checking
         if not isinstance(basepoint, Vector):
             raise SdlSyntaxException(
@@ -79,7 +79,7 @@ class Cone(BlockObject):
                 raise SdlSyntaxException(
                     'Only ObjectModifier objects may be passed as options'
                 )
-            debug(i);
+            debug(i)
 
         for key, val in kwargs.items():
             if key not in ['open']:

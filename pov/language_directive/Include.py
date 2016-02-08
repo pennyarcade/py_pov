@@ -27,6 +27,7 @@ class Include(LanguageDirective):
     FILE_NAME:
         STRING
     """
+
     def __init__(self, filename):
         """
         Construct an Include statement.
@@ -34,21 +35,17 @@ class Include(LanguageDirective):
         @param filename: Full name of file to be included
         @type filename: string
         """
-
         super(Include, self).__init__("include", [filename], [], [])
 
     def __str__(self):
         """Generate PoV source code."""
         code = self._get_line('#' + 'include \"%s\"' % self.args[0])
-
         debug('Include.__str__: %s \n%s' % (self.args[0], code))
-
         return code
 
     def _check_arguments(self):
         """Argument Syntax checks."""
         valid_args = ['str']
-
         self._validate_args(valid_args)
 
         # param syntax checks

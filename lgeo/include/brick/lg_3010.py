@@ -298,7 +298,6 @@ def solid(length=4, width=1):
     )
 
 
-
 # #declare lg_3010_clear =
 # Merge(
 #  Sphere(

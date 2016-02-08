@@ -21,7 +21,9 @@ class Vector(object):
 
     Handles arbitrary component vectors.
     """
+
     def __init__(self, *args):
+        """@Todo: ApiDoc."""
         if len(args) == 1:
             if isinstance(args[0], Vector):
                 self.values = args[0].values
@@ -79,7 +81,7 @@ class Vector(object):
         if not isinstance(other, Vector):
             raise SdlSyntaxException('Parameter not of type Vector')
         return Vector(
-            [self.values[i]-other.values[i] for i in range(len(self.values))]
+            [self.values[i] - other.values[i] for i in range(len(self.values))]
         )
 
     def __neg__(self):
@@ -94,7 +96,7 @@ class Vector(object):
         """Compute norm of vector."""
         result = 0.0
         for item in self.values:
-            result += item*item
+            result += item * item
         return sqrt(result)
 
     def normalize(self):
@@ -109,7 +111,7 @@ class Vector(object):
             raise SdlSyntaxException('Parameter not of type Vector')
         result = 0.0
         for i in range(len(self.values)):
-            result += self.values[i]*other.values[i]
+            result += self.values[i] * other.values[i]
         return result
 
     def __len__(self):

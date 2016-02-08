@@ -15,7 +15,7 @@ lg_3022: Plate 2 x 2
 from lgeo.include.common.lg_defs import LG_CORNER_SPACE, LGBW
 from lgeo.include.common.lg_defs import LGPH, lg_plate_cylinder
 
-from lgeo.include.common.brick_subparts import  get_knob_objects
+from lgeo.include.common.brick_subparts import get_knob_objects
 from lgeo.include.common.brick_subparts import get_knob_inner_space
 
 from pov.basic.Vector import Vector
@@ -284,7 +284,7 @@ def solid(length=2, width=2):
         get_knob_objects(length, width, LGPH),
         Translate(
             Vector(
-                -length/2*LGBW,
+                -length / 2 * LGBW,
                 -LGBW,
                 -LGPH
             )
@@ -473,5 +473,3 @@ def solid(length=2, width=2):
 #     -LGBW, -LGPH)
 #  Rotate(Vector(0, 0, 90)
 # ),
-
-

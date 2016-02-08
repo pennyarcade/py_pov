@@ -79,9 +79,10 @@ class Lathe(BlockObject):
         for idx in range(2, len(self.args)):
             if not self.args[idx].__class__.__name__ == 'Vector':
                 raise SdlSyntaxException(
-                    'Invalid value for param points expected elements '
-                    + 'of type Vector but got %s'
-                    % (self.args[2].__class__.__name__)
+                    ''.join([
+                        'Invalid value for param points expected elements ',
+                        'of type Vector but got %s'
+                    ]) % (self.args[2].__class__.__name__)
                 )
 
     def _check_opts(self):

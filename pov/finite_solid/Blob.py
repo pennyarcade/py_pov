@@ -37,13 +37,11 @@ class Blob(BlockObject):
 
         @TODO: How to deal with Comopnent Modifiers?
         """
-
         super(Blob, self).__init__("blob", [], opts, kwargs)
 
     def _check_arguments(self):
         """Argument Syntax checks."""
         valid_args = ['']
-
         self._validate_args(valid_args)
 
     def _check_opts(self):
@@ -53,7 +51,6 @@ class Blob(BlockObject):
         @Todo: get rid of Object Modifier superclass?
         """
         valid_opts = ['Sphere', 'Cylinder', 'Component', 'ObjectModifier']
-
         self._validate_opts(valid_opts)
 
     def _check_kwargs(self):
@@ -70,5 +67,4 @@ class Blob(BlockObject):
             'double_illuminate': 'bool',
             'hollow': 'bool'
         }
-
         self._validate_kwargs(valid_kw)
