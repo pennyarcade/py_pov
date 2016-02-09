@@ -907,9 +907,9 @@ Messages
   ✔ Line: 25 @done (16-02-08 21:42)
     ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 21:42)
 
-☐ pov/object_modifier/Translate.py
-  ☐ Line: 21
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
+✔ pov/object_modifier/Translate.py @done (16-02-08 21:43)
+  ✔ Line: 21 @done (16-02-08 21:43)
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1) @done (16-02-08 21:43)
 
 ☐ pov/other/IsoSurface.py
   ☐ Line: 17
@@ -919,39 +919,39 @@ Messages
   ☐ Line: 17
     ☐ vulture: unused-function / Unused function ParametricObj
 
-☐ pov/tests/AthEff_Test.py
-  ☐ Line: 1
-    ☐ pep257: D302 / Use u""" for Unicode docstrings
-    ☐ pep257: D400 / First line should end with a period (not '3')
-    ☐ pylint: invalid-name / Invalid module name "AthEff_Test"
-  ☐ Line: 26
-    ☐ pep257: D204 / 1 blank line required after class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not 'g')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ vulture: unused-function / Unused function FogTestCase
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 30
-    ☐ pep257: D400 / First line should end with a period (not 'g')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 36
-    ☐ pep257: D400 / First line should end with a period (not 'g')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 43
-    ☐ pep257: D204 / 1 blank line required after class docstring (found 0)
-    ☐ pep257: D400 / First line should end with a period (not 'g')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ vulture: unused-function / Unused function SkySphereTestCase
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 47
-    ☐ pep257: D400 / First line should end with a period (not 'g')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
-  ☐ Line: 53
-    ☐ pep257: D400 / First line should end with a period (not 'g')
-    ☐ pep257: D200 / One-line docstring should fit on one line with quotes (found 3)
-    ☐ pep257: D208 / Docstring is over-indented
+✔ pov/tests/AthEff_Test.py @done (16-02-08 21:45)
+  ✔ Line: 1 @done (16-02-08 21:44)
+    ✔ pep257: D302 / Use u""" for Unicode docstrings @done (16-02-08 21:44)
+    ✔ pep257: D400 / First line should end with a period (not '3') @done (16-02-08 21:44)
+    ✔ pylint: invalid-name / Invalid module name "AthEff_Test" @done (16-02-08 21:44)
+  ✔ Line: 26 @done (16-02-08 21:45)
+    ✔ pep257: D204 / 1 blank line required after class docstring (found 0) @done (16-02-08 21:45)
+    ✔ pep257: D400 / First line should end with a period (not 'g') @done (16-02-08 21:45)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 21:45)
+    ✔ vulture: unused-function / Unused function FogTestCase @done (16-02-08 21:45)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 21:45)
+  ✔ Line: 30 @done (16-02-08 21:45)
+    ✔ pep257: D400 / First line should end with a period (not 'g') @done (16-02-08 21:45)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 21:45)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 21:45)
+  ✔ Line: 36 @done (16-02-08 21:45)
+    ✔ pep257: D400 / First line should end with a period (not 'g') @done (16-02-08 21:45)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 21:45)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 21:45)
+  ✔ Line: 43 @done (16-02-08 21:45)
+    ✔ pep257: D204 / 1 blank line required after class docstring (found 0) @done (16-02-08 21:45)
+    ✔ pep257: D400 / First line should end with a period (not 'g') @done (16-02-08 21:45)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 21:45)
+    ✔ vulture: unused-function / Unused function SkySphereTestCase @done (16-02-08 21:45)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 21:45)
+  ✔ Line: 47 @done (16-02-08 21:45)
+    ✔ pep257: D400 / First line should end with a period (not 'g') @done (16-02-08 21:45)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 21:45)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 21:45)
+  ✔ Line: 53 @done (16-02-08 21:45)
+    ✔ pep257: D400 / First line should end with a period (not 'g') @done (16-02-08 21:45)
+    ✔ pep257: D200 / One-line docstring should fit on one line with quotes (found 3) @done (16-02-08 21:45)
+    ✔ pep257: D208 / Docstring is over-indented @done (16-02-08 21:45)
 
 ☐ pov/tests/Basic_Test.py
   ☐ Line: 1

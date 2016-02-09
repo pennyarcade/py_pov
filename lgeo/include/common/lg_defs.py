@@ -83,11 +83,9 @@ LGPH = LG_PLATE_HEIGHT
 *  Remove the translate statements to rearrange letters of logo...
 *
 """
-
-
-def lego_logo_text():
+def __letter_e(lclass):
     """@Todo: ApiDoc."""
-    letter_e = Union(
+    result = lclass(
         # Letter E
         Sphere(Vector(-59, 0, -36), 6),
         Cylinder(Vector(-59, 0, -36), Vector(-59, 0, 1), 6),
@@ -98,13 +96,17 @@ def lego_logo_text():
         Cylinder(Vector(59, 0, -62), Vector(59, 0, -24), 6),
         Sphere(Vector(59, 0, -24), 6),
         Cylinder(Vector(-59, 0, -36), Vector(59, 0, -62), 6),
-    ),
+    )
     if LG_STUD_LOGO > 0:
-        letter_e.append(
+        result.append(
             Translate(Vector(0, 0, 60))
         )
+    return result
 
-    letter_g = Union(
+
+def __letter_g(lclass):
+    """@Todo: ApiDoc."""
+    letter_g = lclass(
         # Letter G
         Sphere(Vector(-35.95, 0, 57), 6),
         Torus(
@@ -127,34 +129,48 @@ def lego_logo_text():
         letter_g.append(
             Translate(Vector(0, 0, -65))
         )
+    return letter_g
 
+
+def __letter_l(lclass):
+    """@Todo: ApiDoc."""
+    return lclass(
+        # Letter L
+        Sphere(Vector(-59, 0, -96), 6),
+        Cylinder(Vector(-59, 0, -96), Vector(59, 0, -122), 6),
+        Sphere(Vector(59, 0, -122), 6),
+        Cylinder(Vector(59, 0, -122), Vector(59, 0, -84), 6),
+        Sphere(Vector(59, 0, -84), 6),
+    )
+
+
+def __letter_o(lclass):
+    """@Todo: ApiDoc."""
+    return lclass(
+        # Letter O
+        Torus(
+            18.45, 6,
+            ClippedBy(Plane(Vector(40, 0, -9), 0)),
+            Translate(Vector(-40, 0, 99))
+        ),
+        Cylinder(Vector(-44.05, 0, 81), Vector(35.95, 0, 63), 6),
+        Torus(
+            18.45, 6,
+            ClippedBy(Plane(Vector(-40, 0, 9), 0)),
+            Translate(Vector(40, 0, 81))
+        ),
+        Cylinder(Vector(44.05, 0, 99), Vector(-35.95, 0, 117), 6),
+    )
+
+
+def __lego_logo_text_function(lclass):
+    """@Todo: ApiDoc."""
     if LG_QUALITY > 2:
-        return Union(
-            Union(
-                # Letter L
-                Sphere(Vector(-59, 0, -96), 6),
-                Cylinder(Vector(-59, 0, -96), Vector(59, 0, -122), 6),
-                Sphere(Vector(59, 0, -122), 6),
-                Cylinder(Vector(59, 0, -122), Vector(59, 0, -84), 6),
-                Sphere(Vector(59, 0, -84), 6),
-            ),
-            letter_e,
-            letter_g,
-            Union(
-                # Letter O
-                Torus(
-                    18.45, 6,
-                    ClippedBy(Plane(Vector(40, 0, -9), 0)),
-                    Translate(Vector(-40, 0, 99))
-                ),
-                Cylinder(Vector(-44.05, 0, 81), Vector(35.95, 0, 63), 6),
-                Torus(
-                    18.45, 6,
-                    ClippedBy(Plane(Vector(-40, 0, 9), 0)),
-                    Translate(Vector(40, 0, 81))
-                ),
-                Cylinder(Vector(44.05, 0, 99), Vector(-35.95, 0, 117), 6),
-            ),
+        return lclass(
+            __letter_l(lclass),
+            __letter_e(lclass),
+            __letter_g(lclass),
+            __letter_o(lclass),
             Scale(Vector(4.5 / 128, 4.5 / 128, 4.5 / 128)),
             Rotate(y * 90),
             Rotate(x * -90),
@@ -165,93 +181,19 @@ def lego_logo_text():
         return Object()
 
 
-def lego_logo_text_clear():
-    """@Todo: ApiDoc."""
-    letter_e = Merge(
-        # Letter E
-        Sphere(Vector(-59, 0, -36), 6),
-        Cylinder(Vector(-59, 0, -36), Vector(-59, 0, 1), 6),
-        Sphere(Vector(-59, 0, 1), 6),
-        Cylinder(Vector(0, 0, -49), Vector(0, 0, -25), 6),
-        Sphere(Vector(0, 0, -25), 6),
-        Sphere(Vector(59, 0, -62), 6),
-        Cylinder(Vector(59, 0, -62), Vector(59, 0, -24), 6),
-        Sphere(Vector(59, 0, -24), 6),
-        Cylinder(Vector(-59, 0, -36), Vector(59, 0, -62), 6),
-    ),
-    if LG_STUD_LOGO > 0:
-        letter_e.append(
-            Translate(Vector(0, 0, 60))
-        )
-
-    letter_g = Merge(
-        # Letter G
-        Sphere(Vector(-35.95, 0, 57), 6),
-        Torus(
-            18.45, 6,
-            ClippedBy(Plane(Vector(40, 0, -9), 0)),
-            Translate(Vector(-40, 0, 39))
-        ),
-        Cylinder(Vector(-44.05, 0, 21), Vector(35.95, 0, 3), 6),
-        Torus(
-            18.45, 6,
-            ClippedBy(Plane(Vector(-40, 0, 9), 0)),
-            Translate(Vector(40, 0, 21))
-        ),
-        Cylinder(Vector(44.05, 0, 39), Vector(0, 0, 49), 6),
-        Sphere(Vector(0, 0, 49), 6),
-        Cylinder(Vector(0, 0, 49), Vector(0, 0, 34), 6),
-        Sphere(Vector(0, 0, 34), 6),
-    ),
-    if LG_STUD_LOGO > 0:
-        letter_g.append(
-            Translate(Vector(0, 0, -65))
-        )
-
-    return Merge(
-        Merge(
-            # Letter L
-            Sphere(Vector(-59, 0, -96), 6),
-            Cylinder(Vector(-59, 0, -96), Vector(59, 0, -122), 6),
-            Sphere(Vector(59, 0, -122), 6),
-            Cylinder(Vector(59, 0, -122), Vector(59, 0, -84), 6),
-            Sphere(Vector(59, 0, -84), 6),
-        ),
-        letter_e,
-        letter_g,
-        Merge(
-            # Letter O
-            Torus(
-                18.45, 6,
-                ClippedBy(Plane(Vector(40, 0, -9), 0)),
-                Translate(Vector(-40, 0, 99))
-            ),
-            Cylinder(Vector(-44.05, 0, 81), Vector(35.95, 0, 63), 6),
-            Torus(
-                18.45, 6,
-                ClippedBy(Plane(Vector(-40, 0, 9), 0)),
-                Translate(Vector(40, 0, 81))
-            ),
-            Cylinder(Vector(44.05, 0, 99), Vector(-35.95, 0, 117), 6),
-        ),
-        Scale(4.5 / 128),
-        Rotate(y * 90),
-        Rotate(x * -90),
-        Scale(Vector(-1, 1, 1)),
-        Scale(.08 * LG_KNOB_RADIUS * 2)
-    ),
+lego_logo_text = __lego_logo_text_function(Union)
+lego_logo_text_clear = __lego_logo_text_function(Merge)
 
 
 # ***
 # LGEO Primitives
 # ***
 
-
 # solid stud
-def lg_knob():
+def lg_knob_function(knobclass, textfunction):
     """@Todo: ApiDoc."""
-    result = Union(
-        Union(
+    result = knobclass(
+        knobclass(
             Cylinder(
                 Vector(0, 0, LG_KNOB_HEIGHT - LG_KNOB_CORNER_SPACE),
                 Vector(0, 0, -LG_E),
@@ -274,12 +216,18 @@ def lg_knob():
     if LG_QUALITY > 2:
         result.append(
             Object(
-                lego_logo_text(),
+                textfunction(),
                 Translate(Vector(0, 0, LG_KNOB_HEIGHT))
             )
         )
 
     return result
+
+
+# solid stud
+def lg_knob():
+    """@Todo: ApiDoc."""
+    return lg_knob_function(Union, lego_logo_text)
 
 
 # solid stud top for dotted baseplates
@@ -295,49 +243,51 @@ lg_knob_dot = Intersection(
     )
 )
 
-
-# hollow stud
-lg_tech_knob = Union(
-    Difference(
-        Union(
-            Cylinder(
-                Vector(0, 0, LG_KNOB_HEIGHT - LG_CORNER_SPACE),
-                Vector(0, 0, -LG_E),
-                (LG_KNOB_RADIUS)
-            ),
-            Difference(
+def __lg_tech_knob_function(knobclass):
+    return knobclass(
+        Difference(
+            knobclass(
                 Cylinder(
-                    Vector(0, 0, LG_KNOB_HEIGHT),
+                    Vector(0, 0, LG_KNOB_HEIGHT - LG_CORNER_SPACE),
                     Vector(0, 0, -LG_E),
-                    (LG_KNOB_RADIUS - LG_CORNER_SPACE)
+                    (LG_KNOB_RADIUS)
                 ),
-                Cylinder(
-                    Vector(0, 0, LG_KNOB_HEIGHT + LG_E),
-                    Vector(0, 0, -2 * LG_E),
-                    (LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE)
+                Difference(
+                    Cylinder(
+                        Vector(0, 0, LG_KNOB_HEIGHT),
+                        Vector(0, 0, -LG_E),
+                        (LG_KNOB_RADIUS - LG_CORNER_SPACE)
+                    ),
+                    Cylinder(
+                        Vector(0, 0, LG_KNOB_HEIGHT + LG_E),
+                        Vector(0, 0, -2 * LG_E),
+                        (LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE)
+                    )
                 )
+            ),
+            Cylinder(
+                Vector(0, 0, (LG_KNOB_HEIGHT + 2 * LG_E)),
+                Vector(0, 0, -3 * LG_E),
+                (LG_KNOB_INNER_RADIUS)
             )
         ),
-        Cylinder(
-            Vector(0, 0, (LG_KNOB_HEIGHT + 2 * LG_E)),
-            Vector(0, 0, -3 * LG_E),
-            (LG_KNOB_INNER_RADIUS)
+        Torus(
+            (LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE),
+            (LG_CORNER_SPACE),
+            Rotate(Vector(90, 0, 0)),
+            Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_CORNER_SPACE)))
+        ),
+        Torus(
+            (LG_KNOB_RADIUS - LG_CORNER_SPACE),
+            (LG_CORNER_SPACE),
+            Rotate(Vector(90, 0, 0)),
+            Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_CORNER_SPACE)))
         )
-    ),
-    Torus(
-        (LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE),
-        (LG_CORNER_SPACE),
-        Rotate(Vector(90, 0, 0)),
-        Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_CORNER_SPACE)))
-    ),
-    Torus(
-        (LG_KNOB_RADIUS - LG_CORNER_SPACE),
-        (LG_CORNER_SPACE),
-        Rotate(Vector(90, 0, 0)),
-        Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_CORNER_SPACE)))
     )
-)
 
+
+# hollow stud
+lg_tech_knob = __lg_tech_knob_function(Union)
 
 # hollow stud with logo
 # def lg_tech_knob_logo():
@@ -356,50 +306,33 @@ lg_tech_knob = Union(
 #         ),
 #     #end
 
-# brick inner cylinder to fit stud inside
-lg_brick_cylinder = Union(
-    Difference(
-        Cylinder(
-            Vector(0, 0, LG_BRICK_INNER_HEIGHT + LG_E),
-            Vector(0, 0, (LG_CYLINDER_WALL_WIDTH / 2)),
-            (LG_CYLINDER_RADIUS)
+# brick/plate inner cylinder to fit stud inside
+def __lg_cylinder_function(cylinderclass, height):
+    """@Todo:ApiDoc."""
+    return cylinderclass(
+        Difference(
+            Cylinder(
+                Vector(0, 0, height + LG_E),
+                Vector(0, 0, (LG_CYLINDER_WALL_WIDTH / 2)),
+                (LG_CYLINDER_RADIUS)
+            ),
+            Cylinder(
+                Vector(0, 0, height + LG_CORNER_SPACE),
+                Vector(0, 0, 0),
+                (LG_KNOB_RADIUS)
+            )
         ),
-        Cylinder(
-            Vector(0, 0, LG_BRICK_INNER_HEIGHT + LG_CORNER_SPACE),
-            Vector(0, 0, 0),
-            (LG_KNOB_RADIUS)
+        Torus(
+            (LG_CYLINDER_RADIUS - LG_CYLINDER_WALL_WIDTH / 2),
+            (LG_CYLINDER_WALL_WIDTH / 2),
+            Rotate(Vector(90, 0, 0)),
+            Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH / 2)))
         )
-    ),
-    Torus(
-        (LG_CYLINDER_RADIUS - LG_CYLINDER_WALL_WIDTH / 2),
-        (LG_CYLINDER_WALL_WIDTH / 2),
-        Rotate(Vector(90, 0, 0)),
-        Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH / 2)))
     )
-)
 
 
-# plate inner cylinder to fit stud inside
-lg_plate_cylinder = Union(
-    Difference(
-        Cylinder(
-            Vector(0, 0, LG_PLATE_INNER_HEIGHT + LG_E),
-            Vector(0, 0, (LG_CYLINDER_WALL_WIDTH / 2)),
-            (LG_CYLINDER_RADIUS)
-        ),
-        Cylinder(
-            Vector(0, 0, LG_PLATE_INNER_HEIGHT + LG_CORNER_SPACE),
-            Vector(0, 0, 0),
-            (LG_KNOB_RADIUS)
-        )
-    ),
-    Torus(
-        (LG_CYLINDER_RADIUS - LG_CYLINDER_WALL_WIDTH / 2),
-        (LG_CYLINDER_WALL_WIDTH / 2),
-        Rotate(Vector(90, 0, 0)),
-        Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH / 2)))
-    )
-)
+lg_brick_cylinder = __lg_cylinder_function(Union, LG_BRICK_INNER_HEIGHT)
+lg_plate_cylinder = __lg_cylinder_function(Union, LG_PLATE_INNER_HEIGHT)
 
 
 # brick inner cylinder to fit into hollow stud
@@ -443,83 +376,12 @@ lg_knob_inner_space = Cylinder(
     (0.125)
 )
 
-"""
-*  LGEO Primitives Clear versions
-"""
+# """
+# *  LGEO Primitives Clear versions
+# """
 
-
-def lg_knob_clear():
-    result = Merge(
-        Merge(
-            Cylinder(
-                Vector(0, 0, LG_KNOB_HEIGHT - LG_KNOB_CORNER_SPACE),
-                Vector(0, 0, -LG_E),
-                (LG_KNOB_RADIUS)
-            ),
-            Cylinder(
-                Vector(0, 0, LG_KNOB_HEIGHT),
-                Vector(0, 0, -LG_E),
-                (LG_KNOB_RADIUS - LG_KNOB_CORNER_SPACE)
-            )
-        ),
-        Torus(
-            (LG_KNOB_RADIUS - LG_KNOB_CORNER_SPACE),
-            (LG_KNOB_CORNER_SPACE),
-            Rotate(Vector(90, 0, 0)),
-            Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_KNOB_CORNER_SPACE)))
-        )
-    )
-
-    if LG_QUALITY > 2:
-        result.append(
-            Object(
-                lego_logo_text_clear(),
-                Translate(Vector(0, 0, LG_KNOB_HEIGHT))
-            )
-        )
-    return result
-
-lg_tech_knob_clear = Merge(
-    Difference(
-        Merge(
-            Cylinder(
-                Vector(0, 0, LG_KNOB_HEIGHT - LG_CORNER_SPACE),
-                Vector(0, 0, -LG_E),
-                (LG_KNOB_RADIUS)
-            ),
-            Difference(
-                Cylinder(
-                    Vector(0, 0, LG_KNOB_HEIGHT),
-                    Vector(0, 0, -LG_E),
-                    (LG_KNOB_RADIUS - LG_CORNER_SPACE)
-                ),
-                Cylinder(
-                    Vector(0, 0, LG_KNOB_HEIGHT + LG_E),
-                    Vector(0, 0, -2 * LG_E),
-                    (LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE)
-                )
-            )
-        ),
-        Cylinder(
-            Vector(0, 0, (LG_KNOB_HEIGHT + 2 * LG_E)),
-            Vector(0, 0, -3 * LG_E),
-            (LG_KNOB_INNER_RADIUS)
-        )
-    ),
-    Torus(
-        (LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE),
-        (LG_CORNER_SPACE),
-        Rotate(Vector(90, 0, 0)),
-        Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_CORNER_SPACE)))
-    ),
-    Torus(
-        (LG_KNOB_RADIUS - LG_CORNER_SPACE),
-        (LG_CORNER_SPACE),
-        Rotate(Vector(90, 0, 0)),
-        Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_CORNER_SPACE)))
-    )
-)
-
+lg_knob_clear = lg_knob_function(Merge, lego_logo_text_clear)
+lg_tech_knob_clear = __lg_tech_knob_function(Merge)
 
 def lg_tech_knob_logo_clear():
     """@Todo: ApiDoc."""
@@ -531,84 +393,9 @@ def lg_tech_knob_logo_clear():
     else:
         return lg_tech_knob_clear
 
-
-lg_brick_cylinder_clear = Merge(
-    Difference(
-        Cylinder(
-            Vector(0, 0, LG_BRICK_INNER_HEIGHT + LG_E),
-            Vector(0, 0, (LG_CYLINDER_WALL_WIDTH / 2)),
-            (LG_CYLINDER_RADIUS)
-        ),
-        Cylinder(
-            Vector(0, 0, LG_BRICK_INNER_HEIGHT + LG_CORNER_SPACE),
-            Vector(0, 0, 0),
-            (LG_KNOB_RADIUS)
-        ),
-    ),
-    Torus(
-        (LG_CYLINDER_RADIUS - LG_CYLINDER_WALL_WIDTH / 2),
-        (LG_CYLINDER_WALL_WIDTH / 2),
-        Rotate(Vector(90, 0, 0)),
-        Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH / 2)))
-    )
-)
-
-
-lg_plate_cylinder_clear = Merge(
-    Difference(
-        Cylinder(
-            Vector(0, 0, LG_PLATE_INNER_HEIGHT + LG_E),
-            Vector(0, 0, (LG_CYLINDER_WALL_WIDTH / 2)),
-            (LG_CYLINDER_RADIUS)
-        ),
-        Cylinder(
-            Vector(0, 0, LG_PLATE_INNER_HEIGHT + LG_CORNER_SPACE),
-            Vector(0, 0, 0),
-            (LG_KNOB_RADIUS)
-        ),
-    ),
-    Torus(
-        (LG_CYLINDER_RADIUS - LG_CYLINDER_WALL_WIDTH / 2),
-        (LG_CYLINDER_WALL_WIDTH / 2),
-        Rotate(Vector(90, 0, 0)),
-        Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH / 2)))
-    )
-)
-
-
-lg_brick_column_clear = Cylinder(
-    Vector(0, 0, LG_BRICK_INNER_HEIGHT + LG_E),
-    Vector(0, 0, 0),
-    (LG_KNOB_INNER_RADIUS)
-)
-
-
-lg_plate_column_clear = Difference(
-    Cylinder(
-        Vector(0, 0, LG_PLATE_INNER_HEIGHT + LG_E),
-        Vector(0, 0, 0),
-        (LG_KNOB_INNER_RADIUS)
-    ),
-    Cylinder(
-        Vector(0, 0, 1),
-        Vector(0, 0, -1),
-        (0.06)
-    )
-)
-
-
-lg_support_wall_clear = Box(
-    Vector(-LG_CYLINDER_WALL_WIDTH / 2, -LG_E, 0.225),
-    Vector(
-        LG_CYLINDER_WALL_WIDTH / 2,
-        LG_BRICK_WIDTH - LG_CYLINDER_RADIUS - LG_WALL_WIDTH + LG_E,
-        LG_BRICK_HEIGHT
-    )
-)
-
-
-lg_knob_inner_space_clear = Cylinder(
-    Vector(0, 0, -LG_CORNER_SPACE),
-    Vector(0, 0, 0.15),
-    (0.125)
-)
+lg_brick_cylinder_clear = __lg_cylinder_function(Merge, LG_BRICK_INNER_HEIGHT)
+lg_plate_cylinder_clear = __lg_cylinder_function(Merge, LG_PLATE_INNER_HEIGHT)
+lg_brick_column_clear = lg_brick_column
+lg_plate_column_clear = lg_plate_column
+lg_support_wall_clear = lg_support_wall
+lg_knob_inner_space_clear = lg_knob_inner_space

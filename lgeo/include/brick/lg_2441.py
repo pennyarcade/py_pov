@@ -52,32 +52,22 @@ def solid():
 
         pin = -2
         while pin < 4:
-
+            pin_x = 0.2 + LG_E
             if pin == -2:
-                pinbox = Box(
-                    Vector(
-                        0,
-                        LGBW - LG_CORNER_SPACE - LG_E,
-                        -LGPH + LG_E
-                    ),
-                    Vector(
-                        -0.2 - LG_E,
-                        LGBW + LG_CORNER_SPACE,
-                        -0.4 - LG_E
-                    )
+                pin_x = -0.2 - LG_E
+
+            pinbox = Box(
+                Vector(
+                    0,
+                    LGBW - LG_CORNER_SPACE - LG_E,
+                    -LGPH + LG_E
+                ),
+                Vector(
+                    pin_x,
+                    LGBW + LG_CORNER_SPACE,
+                    -0.4 - LG_E
                 )
-            else:
-                pinbox = Box(
-                    Vector(
-                        0,
-                        LGBW - LG_CORNER_SPACE - LG_E,
-                        -LGPH + LG_E
-                    ),
-                    Vector(
-                        0.2 + LG_E, LGBW + LG_CORNER_SPACE,
-                        -0.4 - LG_E
-                    )
-                )
+            )
 
             subpart.append(
                 Union(
