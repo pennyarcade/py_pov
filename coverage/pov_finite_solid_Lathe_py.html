@@ -153,24 +153,24 @@
 <p id="n84" class="pln"><a href="#n84">84</a></p>
 <p id="n85" class="pln"><a href="#n85">85</a></p>
 <p id="n86" class="pln"><a href="#n86">86</a></p>
-<p id="n87" class="stm run hide_run"><a href="#n87">87</a></p>
-<p id="n88" class="pln"><a href="#n88">88</a></p>
+<p id="n87" class="pln"><a href="#n87">87</a></p>
+<p id="n88" class="stm run hide_run"><a href="#n88">88</a></p>
 <p id="n89" class="pln"><a href="#n89">89</a></p>
 <p id="n90" class="pln"><a href="#n90">90</a></p>
 <p id="n91" class="pln"><a href="#n91">91</a></p>
 <p id="n92" class="pln"><a href="#n92">92</a></p>
-<p id="n93" class="stm run hide_run"><a href="#n93">93</a></p>
-<p id="n94" class="pln"><a href="#n94">94</a></p>
-<p id="n95" class="stm run hide_run"><a href="#n95">95</a></p>
-<p id="n96" class="pln"><a href="#n96">96</a></p>
-<p id="n97" class="stm run hide_run"><a href="#n97">97</a></p>
-<p id="n98" class="pln"><a href="#n98">98</a></p>
+<p id="n93" class="pln"><a href="#n93">93</a></p>
+<p id="n94" class="stm run hide_run"><a href="#n94">94</a></p>
+<p id="n95" class="pln"><a href="#n95">95</a></p>
+<p id="n96" class="stm run hide_run"><a href="#n96">96</a></p>
+<p id="n97" class="pln"><a href="#n97">97</a></p>
+<p id="n98" class="stm run hide_run"><a href="#n98">98</a></p>
 <p id="n99" class="pln"><a href="#n99">99</a></p>
 <p id="n100" class="pln"><a href="#n100">100</a></p>
 <p id="n101" class="pln"><a href="#n101">101</a></p>
 <p id="n102" class="pln"><a href="#n102">102</a></p>
-<p id="n103" class="stm run hide_run"><a href="#n103">103</a></p>
-<p id="n104" class="pln"><a href="#n104">104</a></p>
+<p id="n103" class="pln"><a href="#n103">103</a></p>
+<p id="n104" class="stm run hide_run"><a href="#n104">104</a></p>
 <p id="n105" class="pln"><a href="#n105">105</a></p>
 <p id="n106" class="pln"><a href="#n106">106</a></p>
 <p id="n107" class="pln"><a href="#n107">107</a></p>
@@ -181,7 +181,8 @@
 <p id="n112" class="pln"><a href="#n112">112</a></p>
 <p id="n113" class="pln"><a href="#n113">113</a></p>
 <p id="n114" class="pln"><a href="#n114">114</a></p>
-<p id="n115" class="stm run hide_run"><a href="#n115">115</a></p>
+<p id="n115" class="pln"><a href="#n115">115</a></p>
+<p id="n116" class="stm run hide_run"><a href="#n116">116</a></p>
                 
             </td>
             <td class="text">
@@ -266,40 +267,41 @@
 <p id="t79" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">for</span> <span class="nam">idx</span> <span class="key">in</span> <span class="nam">range</span><span class="op">(</span><span class="num">2</span><span class="op">,</span> <span class="nam">len</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">)</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t80" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="key">not</span> <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">[</span><span class="nam">idx</span><span class="op">]</span><span class="op">.</span><span class="nam">__class__</span><span class="op">.</span><span class="nam">__name__</span> <span class="op">==</span> <span class="str">&#39;Vector&#39;</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t81" class="stm mis">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">raise</span> <span class="nam">SdlSyntaxException</span><span class="op">(</span><span class="strut">&nbsp;</span></p>
-<p id="t82" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;Invalid value for param points expected elements &#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t83" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="op">+</span> <span class="str">&#39;of type Vector but got %s&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t84" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="op">%</span> <span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">[</span><span class="num">2</span><span class="op">]</span><span class="op">.</span><span class="nam">__class__</span><span class="op">.</span><span class="nam">__name__</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t85" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t86" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t87" class="stm run hide_run">&nbsp; &nbsp; <span class="key">def</span> <span class="nam">_check_opts</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t88" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
-<p id="t89" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; Option Syntax checks.</span><span class="strut">&nbsp;</span></p>
-<p id="t90" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t91" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; @Todo: get rid of Object Modifier superclass?</span><span class="strut">&nbsp;</span></p>
-<p id="t92" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
-<p id="t93" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">valid_opts</span> <span class="op">=</span> <span class="op">[</span><span class="str">&#39;ObjectModifier&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
-<p id="t94" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t95" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">_validate_opts</span><span class="op">(</span><span class="nam">valid_opts</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t96" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t97" class="stm run hide_run">&nbsp; &nbsp; <span class="key">def</span> <span class="nam">_check_kwargs</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t98" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
-<p id="t99" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; Keyword Argument Syntax checks.</span><span class="strut">&nbsp;</span></p>
-<p id="t100" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t101" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; @Todo: Finish syntax checks</span><span class="strut">&nbsp;</span></p>
-<p id="t102" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
-<p id="t103" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">valid_kw</span> <span class="op">=</span> <span class="op">{</span><span class="strut">&nbsp;</span></p>
-<p id="t104" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;points&#39;</span><span class="op">:</span> <span class="str">&#39;Vector&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
-<p id="t105" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;sturm&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
-<p id="t106" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="com"># Object modifier kw</span><span class="strut">&nbsp;</span></p>
-<p id="t107" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;no_shadow&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
-<p id="t108" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;no_image&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
-<p id="t109" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;no_reflection&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
-<p id="t110" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;inverse&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
-<p id="t111" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;double_illuminate&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
-<p id="t112" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;hollow&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="strut">&nbsp;</span></p>
-<p id="t113" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="op">}</span><span class="strut">&nbsp;</span></p>
-<p id="t114" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t115" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">_validate_kwargs</span><span class="op">(</span><span class="nam">valid_kw</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t82" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;&#39;</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="op">[</span><span class="strut">&nbsp;</span></p>
+<p id="t83" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;Invalid value for param points expected elements &#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t84" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;of type Vector but got %s&#39;</span><span class="strut">&nbsp;</span></p>
+<p id="t85" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="op">]</span><span class="op">)</span> <span class="op">%</span> <span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">[</span><span class="num">2</span><span class="op">]</span><span class="op">.</span><span class="nam">__class__</span><span class="op">.</span><span class="nam">__name__</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t86" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t87" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t88" class="stm run hide_run">&nbsp; &nbsp; <span class="key">def</span> <span class="nam">_check_opts</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t89" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t90" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; Option Syntax checks.</span><span class="strut">&nbsp;</span></p>
+<p id="t91" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t92" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; @Todo: get rid of Object Modifier superclass?</span><span class="strut">&nbsp;</span></p>
+<p id="t93" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t94" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">valid_opts</span> <span class="op">=</span> <span class="op">[</span><span class="str">&#39;ObjectModifier&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t95" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t96" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">_validate_opts</span><span class="op">(</span><span class="nam">valid_opts</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t97" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t98" class="stm run hide_run">&nbsp; &nbsp; <span class="key">def</span> <span class="nam">_check_kwargs</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t99" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t100" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; Keyword Argument Syntax checks.</span><span class="strut">&nbsp;</span></p>
+<p id="t101" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t102" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; @Todo: Finish syntax checks</span><span class="strut">&nbsp;</span></p>
+<p id="t103" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
+<p id="t104" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">valid_kw</span> <span class="op">=</span> <span class="op">{</span><span class="strut">&nbsp;</span></p>
+<p id="t105" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;points&#39;</span><span class="op">:</span> <span class="str">&#39;Vector&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t106" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;sturm&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t107" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="com"># Object modifier kw</span><span class="strut">&nbsp;</span></p>
+<p id="t108" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;no_shadow&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t109" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;no_image&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t110" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;no_reflection&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t111" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;inverse&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t112" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;double_illuminate&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t113" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="str">&#39;hollow&#39;</span><span class="op">:</span> <span class="str">&#39;bool&#39;</span><span class="strut">&nbsp;</span></p>
+<p id="t114" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="op">}</span><span class="strut">&nbsp;</span></p>
+<p id="t115" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t116" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">_validate_kwargs</span><span class="op">(</span><span class="nam">valid_kw</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
                 
             </td>
         </tr>
@@ -310,7 +312,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.org">coverage.py v4.0.3</a>,
-            created at 2016-02-08 15:01
+            created at 2016-02-09 08:54
         </p>
     </div>
 </div>

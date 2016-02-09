@@ -38,6 +38,7 @@ from pov.texture.ColorMap import ColorMap
 from pov.texture.Normal import Normal
 from pov.texture.Reflection import Reflection
 from pov.texture.ImageMap import ImageMap
+from pov.texture.Filter import Filter
 
 
 class EndToEndTestCase(unittest.TestCase):
@@ -535,23 +536,23 @@ class EndToEndTestCase(unittest.TestCase):
         """
         ref = os.linesep.join([
             '#version 3.6;',
-            '#include "pov/tests/"',
+            '#include "pov/tests/fixture/colors.inc"',
             'global_settings {',
             '  assumed_gamma 1.0',
             '}',
             'camera {',
-            '  location  <0.0, 0.0, -4.0>',
-            '  direction 2*z',
-            '  right     x*image_width/image_height',
-            '  look_at   <0.0, 0.0,  0.0>',
+            '  location <0.0, 0.0, -4.0>',
+            '  look_at <0.0, 0.0, 0.0>',
+            '  right <1.33333333333, 0.0, 0.0>',
+            '  direction <0.0, 0.0, 2.0>',
             '}',
             'sky_sphere {',
             '  pigment {',
-            '    gradient y',
             '    color_map {',
-            '      [0.0 color blue 0.6]',
-            '      [1.0 color rgb 1]',
+            '      [0.0 color rgbft <0, 0, 0.6, 0, 0>]',
+            '      [1.0 color rgb <1, 1, 1>]',
             '    }',
+            '    gradient <0.0, 1.0, 0.0>',
             '  }',
             '}',
             'light_source {',
@@ -560,29 +561,39 @@ class EndToEndTestCase(unittest.TestCase):
             '  translate <-30, 30, -30>',
             '}',
             'plane {',
-            '  y, -1',
+            '  <0.0, 1.0, 0.0>, -1',
             '  texture {',
-            '    pigment { checker color rgb 1 color blue 1 scale 0.5 }',
-            '    finish { reflection 0.2 }',
+            '    pigment {',
+            '      checker',
+            '      color rgb <1, 1, 1>',
+            '      color rgbft <0, 0, 1, 0, 0>',
+            '      scale 0.5',
+            '    }',
+            '    finish {',
+            '      reflection 0.2',
+            '    }',
             '  }',
             '}',
             'plane {',
-            '  z, -1',
+            '  <0.0, 0.0, 1.0>, -1',
             '  texture {',
             '    pigment {',
             '      image_map {',
             '        png "test.png"',
-            '        interpolate 2',
-            '        once',
             '        filter 0 0.8',
             '        filter 1 0.8',
+            '        once',
+            '        interpolate 2',
             '      }',
-            '      translate -0.5*(x+y)',
+            '      translate <-0.5, -0.5, -0.0>',
             '      scale 2',
             '    }',
-            '    finish { ambient 0.3 }',
+            '    finish {',
+            '      ambient 0.3',
+            '    }',
             '  }',
-            '}'
+            '}',
+            ''
         ])
 
         fix = SceneFile('test.pov')
@@ -609,8 +620,8 @@ class EndToEndTestCase(unittest.TestCase):
             SkySphere(
                 Pigment(
                     ColorMap({
-                        0.0: Color(rgb=Vector(0.6, 0.7, 1.0)),
-                        0.7: Color(rgb=Vector(0.0, 0.1, 0.8))
+                        0.0: Color(blue=0.6),
+                        1.0: Color(rgb=Vector(1, 1, 1))
                     }),
                     gradient=y
                 )
@@ -633,9 +644,7 @@ class EndToEndTestCase(unittest.TestCase):
                         scale=0.5
                     ),
                     Finish(
-                        Reflection(
-                            0.2
-                        )
+                        reflection=0.2
                     )
                 )
             ),
@@ -649,13 +658,13 @@ class EndToEndTestCase(unittest.TestCase):
                             Filter(1, 0.8),
                             interpolate=2,
                             once=True,
-                        )
+                        ),
+                        Translate(-0.5*(x+y)),
+                        scale=2
                     ),
-                    Translate(-0.5*(x+y)),
-                    scale=2
-                ),
-                Finish(
-                    ambient=0.3
+                    Finish(
+                        ambient=0.3
+                    )
                 )
             )
         )

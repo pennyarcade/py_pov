@@ -1,56 +1,127 @@
-............................................................E.....................................................................................
-======================================================================
-ERROR: @TODO: Apidoc
+..................................................................................................................................................
+Name                                          Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------------
+lgeo.py                                           0      0   100%   
+lgeo/config.py                                    0      0   100%   
+lgeo/config/lgeo_cfg.py                           4      0   100%   
+lgeo/include.py                                   0      0   100%   
+lgeo/include/brick.py                             0      0   100%   
+lgeo/include/brick/lg_2412b.py                   14      1    93%   36
+lgeo/include/brick/lg_2441.py                    39     18    54%   47-1821
+lgeo/include/brick/lg_3003.py                    12      1    92%   37
+lgeo/include/brick/lg_3010.py                    15      1    93%   38
+lgeo/include/brick/lg_3022.py                    15      1    93%   38
+lgeo/include/brick/lg_3788.py                    25      8    68%   40-741
+lgeo/include/common.py                            0      0   100%   
+lgeo/include/common/brick_subparts.py            38     24    37%   47-77, 82-104, 109-127
+lgeo/include/common/custom_macros.py              9      2    78%   99, 107
+lgeo/include/common/lg_color.py                 102      5    95%   37, 49, 65, 86, 280
+lgeo/include/common/lg_defs.py                   87     17    80%   103, 127, 165, 170-211, 452-480, 526-532
+lgeo/lgeo_city.py                                27     11    59%   123-255
+lgeo/set.py                                       0      0   100%   
+lgeo/set/lg_10036_1_car.py                       15      2    87%   163-263
+lgeo/set/lg_10036_1_house.py                      3      0   100%   
+lgeo/set/lg_10036_1_main.py                       0      0   100%   
+lgeo/tests.py                                     0      0   100%   
+pov.py                                            1      0   100%   
+pov/atmeff/Fog.py                                15      0   100%   
+pov/atmeff/SkySphere.py                          14      0   100%   
+pov/atmeff.py                                     1      0   100%   
+pov/basic/BlockObject.py                         30      0   100%   
+pov/basic/Color.py                               52      2    96%   77, 79
+pov/basic/PoVObject.py                            3      0   100%   
+pov/basic/SceneFile.py                           25      0   100%   
+pov/basic/SceneItem.py                          183      9    95%   176-177, 420-427, 460
+pov/basic/Vector.py                              66      0   100%   
+pov/basic.py                                      1      0   100%   
+pov/csg/Csg.py                                    3      0   100%   
+pov/csg/Difference.py                             5      0   100%   
+pov/csg/Intersection.py                           5      0   100%   
+pov/csg/Merge.py                                  5      0   100%   
+pov/csg/Union.py                                  5      0   100%   
+pov/csg.py                                        1      0   100%   
+pov/finite_patch/FinitePatch.py                   3      0   100%   
+pov/finite_patch.py                               1      0   100%   
+pov/finite_solid/Blob.py                         14      0   100%   
+pov/finite_solid/Box.py                          19      0   100%   
+pov/finite_solid/Cone.py                         30      0   100%   
+pov/finite_solid/Cylinder.py                     26      0   100%   
+pov/finite_solid/HeightField.py                  22      0   100%   
+pov/finite_solid/JuliaFractal.py                 17      0   100%   
+pov/finite_solid/Lathe.py                        25      3    88%   68, 74, 81
+pov/finite_solid/Prism.py                         3      0   100%   
+pov/finite_solid/Sor.py                           3      0   100%   
+pov/finite_solid/Sphere.py                       17      0   100%   
+pov/finite_solid/SphereSweep.py                   3      0   100%   
+pov/finite_solid/SuperEllipsoid.py                3      0   100%   
+pov/finite_solid/Text.py                          3      0   100%   
+pov/finite_solid/Torus.py                         5      0   100%   
+pov/finite_solid.py                               1      0   100%   
+pov/global_settings/GlobalSettings.py            13      0   100%   
+pov/global_settings/Photons.py                   12      6    50%   41-42, 46-47, 51-63
+pov/global_settings/Radiosity.py                 17     10    41%   46-52, 63-65, 69-89
+pov/global_settings.py                            1      0   100%   
+pov/include.py                                    1      0   100%   
+pov/include/chars_inc.py                          0      0   100%   
+pov/include/colors_inc.py                       218     75    66%   183-199, 208-222, 235-245, 260-274, 284-293, 307-318
+pov/infinite_solid/Plane.py                      20      0   100%   
+pov/infinite_solid.py                             1      0   100%   
+pov/language_directive/Default.py                17      0   100%   
+pov/language_directive/Include.py                16      0   100%   
+pov/language_directive/LanguageDirective.py      17      0   100%   
+pov/language_directive/Version.py                13      0   100%   
+pov/language_directive.py                         1      0   100%   
+pov/object_modifier/ClippedBy.py                  6      0   100%   
+pov/object_modifier/Interior.py                   5      0   100%   
+pov/object_modifier/Matrix.py                    17      9    47%   28, 32-37, 43-46
+pov/object_modifier/ObjectModifier.py             3      0   100%   
+pov/object_modifier/Rotate.py                    17      5    71%   37, 43-48
+pov/object_modifier/Scale.py                     17      5    71%   40, 46-49
+pov/object_modifier/Transformation.py             5      1    80%   31
+pov/object_modifier/Translate.py                 17      0   100%   
+pov/object_modifier.py                            1      0   100%   
+pov/other/Camera.py                              14      0   100%   
+pov/other/Comment.py                             10      3    70%   28, 36-39
+pov/other/EmptyObject.py                         10      3    70%   28, 36-39
+pov/other/IllegalStateException.py                2      0   100%   
+pov/other/IsoSurface.py                           3      0   100%   
+pov/other/LightSource.py                          5      0   100%   
+pov/other/Object.py                               5      0   100%   
+pov/other/ParametricObj.py                        3      0   100%   
+pov/other/SdlSyntaxException.py                   2      0   100%   
+pov/other.py                                      1      0   100%   
+pov/tests/AthEff_Test.py                         17      0   100%   
+pov/tests/Basic_Test.py                         243      1    99%   224
+pov/tests/Csg_Test.py                             1      0   100%   
+pov/tests/EndToEnd_Test.py                      268      0   100%   
+pov/tests/FinitePatch_Test.py                     1      0   100%   
+pov/tests/FiniteSolid_Test.py                   234      0   100%   
+pov/tests/GlobalSettings_Test.py                 14      0   100%   
+pov/tests/Include_Test.py                         9      0   100%   
+pov/tests/InfiniteSolid_Test.py                  14      0   100%   
+pov/tests/LanguageDirective_Test.py              63      0   100%   
+pov/tests/ObjectModifier_Test.py                 22      0   100%   
+pov/tests/Other_Test.py                          17      0   100%   
+pov/tests/Texture_Test.py                        69      0   100%   
+pov/tests.py                                     13      0   100%   
+pov/texture/ColorMap.py                          16      0   100%   
+pov/texture/Filter.py                            11      0   100%   
+pov/texture/Finish.py                             8      0   100%   
+pov/texture/ImageMap.py                           6      0   100%   
+pov/texture/Irid.py                               5      1    80%   27
+pov/texture/Normal.py                             8      0   100%   
+pov/texture/Pigment.py                           11      0   100%   
+pov/texture/Reflection.py                         8      0   100%   
+pov/texture/Texture.py                            5      0   100%   
+pov/texture.py                                    1      0   100%   
+pov/texture/pattern/Gradient.py                  10      4    60%   34, 38-42
+pov/texture/pattern.py                            0      0   100%   
+encodings/latin_1.py                             19     19     0%   9-42
+encodings/unicode_escape.py                      16     16     0%   9-37
+encodings/utf_32_be.py                           15     15     0%   4-29
+---------------------------------------------------------------------------
+TOTAL                                          2629    278    89%   
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/home/chocokiko/devel/py_pov/pov/tests/EndToEnd_Test.py", line 648, in test_image_map_example
-    Filter(0, 0.8),
-NameError: global name 'Filter' is not defined
--------------------- >> begin captured logging << --------------------
-root: DEBUG: Version: LanguageDirective.__init__(): #version, [3.6], [], {}
-root: DEBUG: Version: SceneItem.__init__(): Start: #version, [3.6], [], {}
-root: DEBUG: Version: SceneItem.__init__(): Stop: #version, [3.6], [], {}
-root: DEBUG: Include: LanguageDirective.__init__(): include, ['pov/tests/fixture/colors.inc'], [], []
-root: DEBUG: Include: SceneItem.__init__(): Start: include, ['pov/tests/fixture/colors.inc'], [], []
-root: DEBUG: Include: SceneItem.__init__(): Stop: include, ['pov/tests/fixture/colors.inc'], [], []
-root: DEBUG: GlobalSettings: SceneItem.__init__(): Start: global_settings, [], (), {'assumed_gamma': 1.0}
-root: DEBUG: GlobalSettings: SceneItem.__init__(): Stop: global_settings, [], (), {'assumed_gamma': 1.0}
-root: DEBUG: Camera: SceneItem.__init__(): Start: camera, [], (), {'direction': Vector(0.0, 0.0, 2.0), 'right': Vector(1.3333333333333333, 0.0, 0.0), 'look_at': Vector(0.0, 0.0, 0.0), 'location': Vector(0.0, 0.0, -4.0)}
-root: DEBUG: Camera: SceneItem.__init__(): Stop: camera, [], (), {'direction': Vector(0.0, 0.0, 2.0), 'right': Vector(1.3333333333333333, 0.0, 0.0), 'look_at': Vector(0.0, 0.0, 0.0), 'location': Vector(0.0, 0.0, -4.0)}
-root: DEBUG: Color: SceneItem.__init__(): Start: color, [], (), {'rgb': Vector(0.6, 0.7, 1.0)}
-root: DEBUG: Color: SceneItem.__init__(): Stop: color, [], (), {'rgb': Vector(0.6, 0.7, 1.0)}
-root: DEBUG: Color: SceneItem.__init__(): Start: color, [], (), {'rgb': Vector(0.0, 0.1, 0.8)}
-root: DEBUG: Color: SceneItem.__init__(): Stop: color, [], (), {'rgb': Vector(0.0, 0.1, 0.8)}
-root: DEBUG: ColorMap: SceneItem.__init__(): Start: color_map, [{0.0: <pov.basic.Color.Color object at 0x7f777d2da890>, 0.7: <pov.basic.Color.Color object at 0x7f777d2da510>}], (), {}
-root: DEBUG: ColorMap: SceneItem.__init__(): Stop: color_map, [{0.0: <pov.basic.Color.Color object at 0x7f777d2da890>, 0.7: <pov.basic.Color.Color object at 0x7f777d2da510>}], (), {}
-root: DEBUG: Pigment: SceneItem.__init__(): Start: pigment, [], (<pov.texture.ColorMap.ColorMap object at 0x7f777d2da850>,), {'gradient': Vector(0.0, 1.0, 0.0)}
-root: DEBUG: Pigment: SceneItem.__init__(): Stop: pigment, [], (<pov.texture.ColorMap.ColorMap object at 0x7f777d2da850>,), {'gradient': Vector(0.0, 1.0, 0.0)}
-root: DEBUG: SkySphere: SceneItem.__init__(): Start: sky_sphere, [], (<pov.texture.Pigment.Pigment object at 0x7f777d2da810>,), {}
-root: DEBUG: SkySphere: SceneItem.__init__(): Stop: sky_sphere, [], (<pov.texture.Pigment.Pigment object at 0x7f777d2da810>,), {}
-root: DEBUG: Color: SceneItem.__init__(): Start: color, [], (), {'rgb': Vector(1, 1, 1)}
-root: DEBUG: Color: SceneItem.__init__(): Stop: color, [], (), {'rgb': Vector(1, 1, 1)}
-root: DEBUG: Translate: SceneItem.__init__(): Start: translate, [Vector(-30, 30, -30)], [], []
-root: DEBUG: Translate: SceneItem.__init__(): Stop: translate, [Vector(-30, 30, -30)], [], []
-root: DEBUG: LightSource: SceneItem.__init__(): Start: light_source, [Vector(0, 0, 0)], (<pov.basic.Color.Color object at 0x7f777d2dad90>, <pov.object_modifier.Translate.Translate object at 0x7f777d2dae10>), {}
-root: DEBUG: LightSource: SceneItem.__init__(): Stop: light_source, [Vector(0, 0, 0)], (<pov.basic.Color.Color object at 0x7f777d2dad90>, <pov.object_modifier.Translate.Translate object at 0x7f777d2dae10>), {}
-root: DEBUG: Color: SceneItem.__init__(): Start: color, [], (), {'rgb': Vector(1, 1, 1)}
-root: DEBUG: Color: SceneItem.__init__(): Stop: color, [], (), {'rgb': Vector(1, 1, 1)}
-root: DEBUG: Color: SceneItem.__init__(): Start: color, [], (), {'blue': 1}
-root: DEBUG: Color: SceneItem.__init__(): Stop: color, [], (), {'blue': 1}
-root: DEBUG: __setitem__: [0, 0, 0, 0, 0] 2 1
-root: DEBUG: Pigment: SceneItem.__init__(): Start: pigment, [], (<pov.basic.Color.Color object at 0x7f777d2dad10>, <pov.basic.Color.Color object at 0x7f777d2daf10>), {'checker': True, 'scale': 0.5}
-root: DEBUG: Pigment: SceneItem.__init__(): Stop: pigment, [], (<pov.basic.Color.Color object at 0x7f777d2dad10>, <pov.basic.Color.Color object at 0x7f777d2daf10>), {'checker': True, 'scale': 0.5}
-root: DEBUG: Reflection: SceneItem.__init__(): Start: reflection, [], (0.2,), {}
-root: DEBUG: Reflection: SceneItem.__init__(): Stop: reflection, [], (0.2,), {}
-root: DEBUG: Finish: SceneItem.__init__(): Start: finish, (), (<pov.texture.Reflection.Reflection object at 0x7f777d2dab50>,), {}
-root: DEBUG: Finish: SceneItem.__init__(): Stop: finish, (), (<pov.texture.Reflection.Reflection object at 0x7f777d2dab50>,), {}
-root: DEBUG: Texture: SceneItem.__init__(): Start: texture, [], (<pov.texture.Pigment.Pigment object at 0x7f777d2dab90>, <pov.texture.Finish.Finish object at 0x7f777d2dab10>), {}
-root: DEBUG: Texture: SceneItem.__init__(): Stop: texture, [], (<pov.texture.Pigment.Pigment object at 0x7f777d2dab90>, <pov.texture.Finish.Finish object at 0x7f777d2dab10>), {}
-root: DEBUG: Plane: SceneItem.__init__(): Start: plane, [Vector(0.0, 1.0, 0.0), -1], (<pov.texture.Texture.Texture object at 0x7f777d2daad0>,), {}
-root: DEBUG: Plane: SceneItem.__init__(): Stop: plane, [Vector(0.0, 1.0, 0.0), -1], (<pov.texture.Texture.Texture object at 0x7f777d2daad0>,), {}
---------------------- >> end captured logging << ---------------------
+Ran 146 tests in 0.309s
 
-----------------------------------------------------------------------
-Ran 146 tests in 0.239s
-
-FAILED (errors=1)
+OK

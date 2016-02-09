@@ -542,8 +542,6 @@
 <p id="n473" class="pln"><a href="#n473">473</a></p>
 <p id="n474" class="pln"><a href="#n474">474</a></p>
 <p id="n475" class="pln"><a href="#n475">475</a></p>
-<p id="n476" class="pln"><a href="#n476">476</a></p>
-<p id="n477" class="pln"><a href="#n477">477</a></p>
                 
             </td>
             <td class="text">
@@ -564,7 +562,7 @@
 <p id="t15" class="stm run hide_run"><span class="key">from</span> <span class="nam">lgeo</span><span class="op">.</span><span class="nam">include</span><span class="op">.</span><span class="nam">common</span><span class="op">.</span><span class="nam">lg_defs</span> <span class="key">import</span> <span class="nam">LG_CORNER_SPACE</span><span class="op">,</span> <span class="nam">LGBW</span><span class="strut">&nbsp;</span></p>
 <p id="t16" class="stm run hide_run"><span class="key">from</span> <span class="nam">lgeo</span><span class="op">.</span><span class="nam">include</span><span class="op">.</span><span class="nam">common</span><span class="op">.</span><span class="nam">lg_defs</span> <span class="key">import</span> <span class="nam">LGPH</span><span class="op">,</span> <span class="nam">lg_plate_cylinder</span><span class="strut">&nbsp;</span></p>
 <p id="t17" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t18" class="stm run hide_run"><span class="key">from</span> <span class="nam">lgeo</span><span class="op">.</span><span class="nam">include</span><span class="op">.</span><span class="nam">common</span><span class="op">.</span><span class="nam">brick_subparts</span> <span class="key">import</span>&nbsp; <span class="nam">get_knob_objects</span><span class="strut">&nbsp;</span></p>
+<p id="t18" class="stm run hide_run"><span class="key">from</span> <span class="nam">lgeo</span><span class="op">.</span><span class="nam">include</span><span class="op">.</span><span class="nam">common</span><span class="op">.</span><span class="nam">brick_subparts</span> <span class="key">import</span> <span class="nam">get_knob_objects</span><span class="strut">&nbsp;</span></p>
 <p id="t19" class="stm run hide_run"><span class="key">from</span> <span class="nam">lgeo</span><span class="op">.</span><span class="nam">include</span><span class="op">.</span><span class="nam">common</span><span class="op">.</span><span class="nam">brick_subparts</span> <span class="key">import</span> <span class="nam">get_knob_inner_space</span><span class="strut">&nbsp;</span></p>
 <p id="t20" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t21" class="stm run hide_run"><span class="key">from</span> <span class="nam">pov</span><span class="op">.</span><span class="nam">basic</span><span class="op">.</span><span class="nam">Vector</span> <span class="key">import</span> <span class="nam">Vector</span><span class="strut">&nbsp;</span></p>
@@ -833,7 +831,7 @@
 <p id="t284" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">get_knob_objects</span><span class="op">(</span><span class="nam">length</span><span class="op">,</span> <span class="nam">width</span><span class="op">,</span> <span class="nam">LGPH</span><span class="op">)</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
 <p id="t285" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">Translate</span><span class="op">(</span><span class="strut">&nbsp;</span></p>
 <p id="t286" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">Vector</span><span class="op">(</span><span class="strut">&nbsp;</span></p>
-<p id="t287" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="op">-</span><span class="nam">length</span><span class="op">/</span><span class="num">2</span><span class="op">*</span><span class="nam">LGBW</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t287" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="op">-</span><span class="nam">length</span> <span class="op">/</span> <span class="num">2</span> <span class="op">*</span> <span class="nam">LGBW</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
 <p id="t288" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="op">-</span><span class="nam">LGBW</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
 <p id="t289" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="op">-</span><span class="nam">LGPH</span><span class="strut">&nbsp;</span></p>
 <p id="t290" class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="op">)</span><span class="strut">&nbsp;</span></p>
@@ -1022,8 +1020,6 @@
 <p id="t473" class="pln"><span class="com">#&nbsp; &nbsp;&nbsp; -LGBW, -LGPH)</span><span class="strut">&nbsp;</span></p>
 <p id="t474" class="pln"><span class="com">#&nbsp; Rotate(Vector(0, 0, 90)</span><span class="strut">&nbsp;</span></p>
 <p id="t475" class="pln"><span class="com"># ),</span><span class="strut">&nbsp;</span></p>
-<p id="t476" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t477" class="pln"><span class="strut">&nbsp;</span></p>
                 
             </td>
         </tr>
@@ -1034,7 +1030,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.org">coverage.py v4.0.3</a>,
-            created at 2016-02-08 15:01
+            created at 2016-02-09 08:54
         </p>
     </div>
 </div>

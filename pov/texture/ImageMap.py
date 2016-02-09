@@ -24,6 +24,8 @@ class ImageMap(BlockObject):
         @todo: implement
         @todo: Syntax checks
         """
+        arg = str(btype) + ' "' + str(bfile) + '"'
         super(ImageMap, self).__init__(
-            'image_map', [btype, bfile], opts, kwargs
+            'image_map', [arg], opts, kwargs
         )
+

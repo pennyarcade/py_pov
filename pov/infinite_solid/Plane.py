@@ -52,7 +52,7 @@ class Plane(BlockObject):
 
         @Todo: get rid of Object Modifier superclass?
         """
-        valid_opts = ['ObjectModifier', 'Texture', 'Pigment']
+        valid_opts = ['ObjectModifier', 'Texture', 'Pigment', 'Finish']
 
         self._validate_opts(valid_opts)
 
