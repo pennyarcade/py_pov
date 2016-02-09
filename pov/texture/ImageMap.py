@@ -28,4 +28,3 @@ class ImageMap(BlockObject):
         super(ImageMap, self).__init__(
             'image_map', [arg], opts, kwargs
         )
-

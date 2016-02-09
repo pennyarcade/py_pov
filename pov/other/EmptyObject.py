@@ -9,7 +9,6 @@ See LICENSE file.
 Some modifications by W.T. Bridgman, 2006-2007.
 """
 
-import os
 from logging import debug
 from pov.basic.SceneItem import SceneItem
 
@@ -25,7 +24,7 @@ class EmptyObject(SceneItem):
 
     def __init__(self):
         """Create empty object."""
-        super(Comment, self).__init__('', [empty], [], [])
+        super(EmptyObject, self).__init__('', [], [], [])
 
     def __str__(self):
         """

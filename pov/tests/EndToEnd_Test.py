@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -15,7 +15,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 import os
 import unittest
 import difflib
-from logging import debug
 
 from pov.atmeff.Fog import Fog
 from pov.atmeff.SkySphere import SkySphere
@@ -42,15 +41,15 @@ from pov.texture.Filter import Filter
 
 
 class EndToEndTestCase(unittest.TestCase):
-    """
-        End To End Tests
-    """
+    """End To End Tests."""
 
     # @unittest.skip
     def test_scene1(self):
         """
-            Example taken from:
-            http://www.f-lohmueller.de/pov_tut/basic/povkurs3.htm
+        Test Scene 1.
+
+        Example taken from:
+        http://www.f-lohmueller.de/pov_tut/basic/povkurs3.htm
         """
         lsep = os.linesep
 
@@ -202,7 +201,7 @@ class EndToEndTestCase(unittest.TestCase):
 
         fix.append(
             Fog(
-                Color(rgb=Vector(1, 1, 1))*0.8,
+                Color(rgb=Vector(1, 1, 1)) * 0.8,
                 fog_type=2,
                 turbulence=1.8,
                 fog_offset=0.1,
@@ -253,9 +252,7 @@ class EndToEndTestCase(unittest.TestCase):
 
     # @unittest.skip
     def test_examples_basic_scene(self):
-        """
-            examples/basic_scene.pov
-        """
+        """Test examples/basic_scene.pov."""
         lsep = os.linesep
 
         ref = '#version 3.6;' + lsep
@@ -323,7 +320,7 @@ class EndToEndTestCase(unittest.TestCase):
             Camera(
                 location=Vector(0.0, 0.5, -4.0),
                 direction=1.5 * z,
-                right=x*image_width/image_height,
+                right=x * image_width / image_height,
                 look_at=Vector(0.0, 0.0, 0.0)
             )
         )
@@ -382,9 +379,7 @@ class EndToEndTestCase(unittest.TestCase):
 
     # @unittest.skip
     def test_checkered_floor_example(self):
-        """
-            examples/checkered_floor.pov
-        """
+        """Test examples/checkered_floor.pov."""
         lsep = os.linesep
 
         ref = '#version 3.6;' + lsep
@@ -531,9 +526,7 @@ class EndToEndTestCase(unittest.TestCase):
 
     # @unittest.skip
     def test_image_map_example(self):
-        """
-            @TODO: Apidoc
-        """
+        """@TODO: Apidoc."""
         ref = os.linesep.join([
             '#version 3.6;',
             '#include "pov/tests/fixture/colors.inc"',
@@ -659,7 +652,7 @@ class EndToEndTestCase(unittest.TestCase):
                             interpolate=2,
                             once=True,
                         ),
-                        Translate(-0.5*(x+y)),
+                        Translate(-0.5 * (x + y)),
                         scale=2
                     ),
                     Finish(

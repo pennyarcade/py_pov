@@ -12,9 +12,6 @@ Some modifications by W.T. Bridgman, 2006-2007.
 
 import os
 import unittest
-# import difflib
-# import copy
-# from pov.texture.Finish import Finish
 from pov.texture.ColorMap import ColorMap
 from pov.texture.ColorMap import ColourMap
 from pov.texture.Normal import Normal
@@ -25,31 +22,23 @@ from pov.basic.BlockObject import BlockObject
 from pov.basic.SceneItem import SceneItem
 from pov.basic.Color import Color
 from pov.basic.Vector import Vector
-from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class FinishTestCase(unittest.TestCase):
-    """
-        @Todo: DocString
-    """
+    """Test Finish class."""
+
     def setUp(self):
-        """
-            @Todo: DocString
-        """
+        """Setup test environment."""
         self.sut = Finish(ambient=0.1, diffuse=0.9)
 
     def test_creation(self):
-        """
-            @Todo: DocString
-        """
+        """Test creation of Finish object."""
         self.assertIsInstance(self.sut, Finish)
         self.assertIsInstance(self.sut, BlockObject)
         self.assertIsInstance(self.sut, SceneItem)
 
-    def test_toString(self):
-        """
-            @Todo: DocString
-        """
+    def test_to_string(self):
+        """Test converting Finish object to string (__str__ magic method)."""
         lsp = os.linesep
         first = str(self.sut)
 
@@ -62,36 +51,27 @@ class FinishTestCase(unittest.TestCase):
 
 
 class ColorMapTestCase(unittest.TestCase):
-    """
-        @Todo: DocString
-    """
+    """Test Colormap class."""
+
     def setUp(self):
-        """
-            @Todo: DocString
-        """
+        """Setup test environment."""
         self.sut = ColorMap({0.3: Color(rgb=Vector(0.1, 0.2, 0.3))})
 
     def test_creation(self):
-        """
-            @Todo: DocString
-        """
+        """Test creation of Colormap object."""
         self.assertIsInstance(self.sut, ColorMap)
         self.assertIsInstance(self.sut, BlockObject)
         self.assertIsInstance(self.sut, SceneItem)
 
-    def test_creation_britisch(self):
-        """
-            @Todo: DocString
-        """
+    def test_creation_british(self):
+        """Test creation of Colourmap object."""
         self.sut = ColourMap({'foo': 'bar'})
         self.assertIsInstance(self.sut, ColourMap)
         self.assertIsInstance(self.sut, BlockObject)
         self.assertIsInstance(self.sut, SceneItem)
 
-    def test_toString(self):
-        """
-            @Todo: DocString
-        """
+    def test_to_string(self):
+        """Test converting Finish object to string (__str__ magic method)."""
         lsp = os.linesep
         first = str(self.sut)
         second = 'color_map {' + lsp
@@ -102,57 +82,42 @@ class ColorMapTestCase(unittest.TestCase):
 
 
 class NormalTestCase(unittest.TestCase):
-    """
-        @Todo: DocString
-    """
+    """Test Normal class."""
+
     def setUp(self):
-        """
-            @Todo: DocString
-        """
+        """Setup test environment."""
         self.sut = Normal(bumps=0.1, diffuse=0.9)
 
     def test_creation(self):
-        """
-            @Todo: DocString
-        """
+        """Test creation of Normal object."""
         self.assertIsInstance(self.sut, Normal)
         self.assertIsInstance(self.sut, BlockObject)
         self.assertIsInstance(self.sut, SceneItem)
 
 
 class PigmentTestCase(unittest.TestCase):
-    """
-        @Todo: DocString
-    """
+    """Test Pigment class."""
+
     def setUp(self):
-        """
-            @Todo: DocString
-        """
-        self.sut = Pigment(bozo=True, diffuse=0.9)
+        """Setup test environment."""
+        self.sut = Pigment()
 
     def test_creation(self):
-        """
-            @Todo: DocString
-        """
+        """Test creation of Pigment object."""
         self.assertIsInstance(self.sut, Pigment)
         self.assertIsInstance(self.sut, BlockObject)
         self.assertIsInstance(self.sut, SceneItem)
 
 
 class TextureTestCase(unittest.TestCase):
-    """
-        @Todo: DocString
-    """
+    """Test Texture class."""
+
     def setUp(self):
-        """
-            @Todo: DocString
-        """
+        """Setup test environment."""
         self.sut = Texture()
 
     def test_creation(self):
-        """
-            @Todo: DocString
-        """
+        """Test creation of Texture object."""
         self.assertIsInstance(self.sut, Texture)
         self.assertIsInstance(self.sut, BlockObject)
         self.assertIsInstance(self.sut, SceneItem)

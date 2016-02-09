@@ -20,43 +20,32 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class TranslateTestCase(unittest.TestCase):
-    """
-        Test Translate class
-    """
+    """Test Translate class."""
+
     def setUp(self):
-        """
-            Set up fixture
-        """
+        """Setup test environment."""
         self.sut = Translate(Vector(1, 2, 3))
 
     def test_creation(self):
-        """
-            @Todo: DocString
-        """
+        """Test creation of Translate object."""
         self.assertIsInstance(self.sut, Translate)
         self.assertIsInstance(self.sut, ObjectModifier)
 
     def test_str(self):
-        """
-            @Todo: DocString
-        """
+        """Test converting Finish object to string (__str__ magic method)."""
         second = 'translate <1, 2, 3>' + os.linesep
         self.assertEqual(str(self.sut), second)
 
     def test_create_arg_wrong_type(self):
-        """
-            @Todo: DocString
-        """
+        """Test creation of Translate object."""
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Value of Argument 0 is expectet to be type Vector but got str'
         ):
             Translate('foo')
 
-    def test_create_arg_wrong_length_vector(self):
-        """
-            @Todo: DocString
-        """
+    def test_create_wrong_length_vector(self):
+        """Test creation of Translate object."""
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             'Vector TVector has more or less than 3 dimensions'

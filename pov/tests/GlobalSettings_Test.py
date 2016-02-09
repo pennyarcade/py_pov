@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-    Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+    Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
     based on:
     PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -19,28 +19,24 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class GlobalSettingsTestCase(unittest.TestCase):
-    """
-        @Todo: DocString
-    """
+    """Test Default class."""
+
     def setUp(self):
-        """
-            @Todo: DocString
-        """
+        """Setup test environment."""
         self.sut = GlobalSettings()
 
     def test_creation(self):
-        """
-            @Todo: DocString
-        """
+        """Test creation of Translate object."""
         self.assertIsInstance(self.sut, GlobalSettings)
         self.assertIsInstance(self.sut, SceneItem)
 
-    def test_create_Option_wrong_type(self):
+    def test_create_option_wrong_type(self):
         """
-            @Todo: DocString
+        Create GlobalSettings object with wrong type param.
+
+        Expect SdlSyntaxException
         """
         with self.assertRaises(
             SdlSyntaxException,
         ):
             self.sut = GlobalSettings('foo', 'bar')
-

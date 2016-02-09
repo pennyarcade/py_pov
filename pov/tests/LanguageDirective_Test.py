@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -23,55 +23,39 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class LanguageDirectiveTestCase(unittest.TestCase):
-    """
-        @Todo: DocString
-    """
+    """Test LanguageDirective class."""
+
     def setUp(self):
-        """
-            @Todo: DocString
-        """
+        """Setup test environment."""
         self.sut = LanguageDirective('#foo')
 
     def test_creation(self):
-        """
-            @Todo: DocString
-        """
+        """Test creation of LanguageDirective object."""
         self.assertIsInstance(self.sut, LanguageDirective)
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_str(self):
-        """
-            @Todo: DocString
-        """
+        """Test converting Finish object to string (__str__ magic method)."""
         second = '#foo'
-
         self.assertEqual(str(self.sut), second)
 
 
 class IncludeTestCase(unittest.TestCase):
-    """
-        @Todo: DocString
-    """
+    """Test Include class."""
+
     def setUp(self):
-        """
-            @Todo: DocString
-        """
+        """Setup test environment."""
         self.sut = Include('pov/tests/fixture/test.inc')
 
     def test_create(self):
-        """
-            @Todo: DocString
-        """
+        """Test creation of Include object."""
         self.assertIsInstance(self.sut, Include)
         self.assertIsInstance(self.sut, LanguageDirective)
 
     def test_str(self):
-        """
-            @Todo: DocString
-        """
+        """Test converting Finish object to string (__str__ magic method)."""
         lsp = os.linesep
         second = '#include "pov/tests/fixture/test.inc"' + lsp
-
         self.assertEqual(str(self.sut), second)
 
     def test_create_non_existant_file(self):
@@ -90,34 +74,28 @@ class IncludeTestCase(unittest.TestCase):
 
 
 class VersionTestCase(unittest.TestCase):
-    """
-        @Todo: DocString
-    """
+    """Test Version class."""
+
     def setUp(self):
-        """
-            @Todo: DocString
-        """
+        """Setup test environment."""
         self.sut = Version(3.6)
 
     def test_create(self):
-        """
-            @Todo: DocString
-        """
+        """Test creation of Version object."""
         self.assertIsInstance(self.sut, Version)
         self.assertIsInstance(self.sut, LanguageDirective)
 
     def test_str(self):
-        """
-            @Todo: DocString
-        """
+        """Test converting Finish object to string (__str__ magic method)."""
         lsp = os.linesep
         second = '#version 3.6;' + lsp
-
         self.assertEqual(str(self.sut), second)
 
     def test_create_wrong_type(self):
         """
-            @Todo: DocString
+        Create Version directive with non existing file.
+
+        Expect SdlSyntaxException
         """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
@@ -127,27 +105,20 @@ class VersionTestCase(unittest.TestCase):
 
 
 class DefaultTestCase(unittest.TestCase):
-    """
-        @Todo: DocString
-    """
+    """Test Default class."""
+
     def setUp(self):
-        """
-            @Todo: DocString
-        """
+        """Setup test environment."""
         debug('---------------------------------')
         self.sut = Default(Finish(ambient=0.43))
 
     def test_creation(self):
-        """
-            @Todo: DocString
-        """
+        """Test creation of Translate object."""
         self.assertIsInstance(self.sut, Default)
         self.assertIsInstance(self.sut, LanguageDirective)
 
     def test_tostring(self):
-        """
-            @Todo: DocString
-        """
+        """Test converting Finish object to string (__str__ magic method)."""
         debug('---------------------------------')
         lsp = os.linesep
         first = str(self.sut)
