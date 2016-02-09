@@ -83,7 +83,7 @@ LGPH = LG_PLATE_HEIGHT
 *  Remove the translate statements to rearrange letters of logo...
 *
 """
-def __letter_e(lclass):
+def _letter_e(lclass):
     """@Todo: ApiDoc."""
     result = lclass(
         # Letter E
@@ -104,7 +104,7 @@ def __letter_e(lclass):
     return result
 
 
-def __letter_g(lclass):
+def _letter_g(lclass):
     """@Todo: ApiDoc."""
     letter_g = lclass(
         # Letter G
@@ -132,7 +132,7 @@ def __letter_g(lclass):
     return letter_g
 
 
-def __letter_l(lclass):
+def _letter_l(lclass):
     """@Todo: ApiDoc."""
     return lclass(
         # Letter L
@@ -144,7 +144,7 @@ def __letter_l(lclass):
     )
 
 
-def __letter_o(lclass):
+def _letter_o(lclass):
     """@Todo: ApiDoc."""
     return lclass(
         # Letter O
@@ -163,7 +163,7 @@ def __letter_o(lclass):
     )
 
 
-def __lego_logo_text_function(lclass):
+def _lego_logo_text_function(lclass):
     """@Todo: ApiDoc."""
     if LG_QUALITY > 2:
         return lclass(
@@ -181,8 +181,8 @@ def __lego_logo_text_function(lclass):
         return Object()
 
 
-lego_logo_text = __lego_logo_text_function(Union)
-lego_logo_text_clear = __lego_logo_text_function(Merge)
+lego_logo_text = _lego_logo_text_function(Union)
+lego_logo_text_clear = _lego_logo_text_function(Merge)
 
 
 # ***
@@ -243,7 +243,9 @@ lg_knob_dot = Intersection(
     )
 )
 
-def __lg_tech_knob_function(knobclass):
+
+def _lg_tech_knob_function(knobclass):
+    """@Todo: ApiDoc."""
     return knobclass(
         Difference(
             knobclass(
@@ -287,7 +289,7 @@ def __lg_tech_knob_function(knobclass):
 
 
 # hollow stud
-lg_tech_knob = __lg_tech_knob_function(Union)
+lg_tech_knob = _lg_tech_knob_function(Union)
 
 # hollow stud with logo
 # def lg_tech_knob_logo():
@@ -306,8 +308,9 @@ lg_tech_knob = __lg_tech_knob_function(Union)
 #         ),
 #     #end
 
+
 # brick/plate inner cylinder to fit stud inside
-def __lg_cylinder_function(cylinderclass, height):
+def _lg_cylinder_function(cylinderclass, height):
     """@Todo:ApiDoc."""
     return cylinderclass(
         Difference(
@@ -331,9 +334,8 @@ def __lg_cylinder_function(cylinderclass, height):
     )
 
 
-lg_brick_cylinder = __lg_cylinder_function(Union, LG_BRICK_INNER_HEIGHT)
-lg_plate_cylinder = __lg_cylinder_function(Union, LG_PLATE_INNER_HEIGHT)
-
+lg_brick_cylinder = _lg_cylinder_function(Union, LG_BRICK_INNER_HEIGHT)
+lg_plate_cylinder = _lg_cylinder_function(Union, LG_PLATE_INNER_HEIGHT)
 
 # brick inner cylinder to fit into hollow stud
 lg_brick_column = Cylinder(
@@ -381,7 +383,8 @@ lg_knob_inner_space = Cylinder(
 # """
 
 lg_knob_clear = lg_knob_function(Merge, lego_logo_text_clear)
-lg_tech_knob_clear = __lg_tech_knob_function(Merge)
+lg_tech_knob_clear = _lg_tech_knob_function(Merge)
+
 
 def lg_tech_knob_logo_clear():
     """@Todo: ApiDoc."""
@@ -393,8 +396,8 @@ def lg_tech_knob_logo_clear():
     else:
         return lg_tech_knob_clear
 
-lg_brick_cylinder_clear = __lg_cylinder_function(Merge, LG_BRICK_INNER_HEIGHT)
-lg_plate_cylinder_clear = __lg_cylinder_function(Merge, LG_PLATE_INNER_HEIGHT)
+lg_brick_cylinder_clear = _lg_cylinder_function(Merge, LG_BRICK_INNER_HEIGHT)
+lg_plate_cylinder_clear = _lg_cylinder_function(Merge, LG_PLATE_INNER_HEIGHT)
 lg_brick_column_clear = lg_brick_column
 lg_plate_column_clear = lg_plate_column
 lg_support_wall_clear = lg_support_wall

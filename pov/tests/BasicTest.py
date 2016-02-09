@@ -511,7 +511,7 @@ class ColorTestCase(unittest.TestCase):
         self.assertEqual(self.sut.vector, Vector(100, 150, 200, 1, 2))
 
     def test_to_string_rgb(self):
-        """Test sut.__str__() rgb color"""
+        """Test sut.__str__() rgb color."""
         lsp = os.linesep
         first = str(self.sut)
         second = 'color rgb <100, 150, 200>' + lsp
