@@ -42,7 +42,7 @@ class SceneFile(object):
 
         @Todo: check if file is writeable?
         """
-        if type(fnam) != str:
+        if not isinstance(fnam, str):
             raise TypeError(
                 'Filename String expected but got %s'
                 % fnam.__class__.__name__
@@ -74,7 +74,7 @@ class SceneFile(object):
             # each item has to be derived of SceneItem
             if not isinstance(i, SceneItem):
                 raise SdlSyntaxException(
-                    'Item is expectet to be a SceneItem object but got %s'
+                    'Item is expected to be a SceneItem object but got %s'
                     % (i.__class__.__name__)
                 )
 

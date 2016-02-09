@@ -57,7 +57,7 @@ class Cylinder(BlockObject):
             raise SdlSyntaxException(
                 'Cap point Vector has more or less than 3 dimensions'
             )
-        if type(radius) not in (int, float):
+        if not isinstance(radius, (int, float)):
             raise SdlSyntaxException(
                 'Param radius is not of type int or float'
             )
@@ -75,7 +75,7 @@ class Cylinder(BlockObject):
         for key, val in kwargs.items():
             if key not in ['open']:
                 raise SdlSyntaxException('Invalid keyword: ' + str(key))
-            if type(val) != bool:
+            if not isinstance(val, (bool)):
                 raise SdlSyntaxException(
                     'Value of keyword %s is not boolean' % key
                 )

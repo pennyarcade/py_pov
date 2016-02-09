@@ -99,7 +99,7 @@ class VersionTestCase(unittest.TestCase):
         """
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Value of Argument 0 is expectet to be type float but got str'
+            'Value of Argument 0 is expected to be type float but got str'
         ):
             self.sut = Version('foo')
 

@@ -574,10 +574,10 @@ class HeightFieldTestCase(unittest.TestCase):
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_create_wrong_type(self):
-        """Test Value of Argument 0 is expectet to be type str."""
+        """Test Value of Argument 0 is expected to be type str."""
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Value of Argument 0 is expectet to be type str but got float'
+            'Value of Argument 0 is expected to be type str but got float'
         ):
             self.sut = HeightField(1.0)
 
@@ -601,22 +601,22 @@ class HeightFieldTestCase(unittest.TestCase):
             self.sut = HeightField('pov/tests/fixture/test.gif', foo='bar')
 
     def test_create_smooth_wrong_type(self):
-        """Test Value of KW Argument smooth is expectet to be type bool."""
+        """Test Value of KW Argument smooth is expected to be type bool."""
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
                 'Value of KW Argument smooth is',
-                'expectet to be type bool but got str'
+                'expected to be type bool but got str'
             ))
         ):
             self.sut = HeightField('pov/tests/fixture/test.gif', smooth='bar')
 
     def test_create_hier_wrong_type(self):
-        """Test Value of KW Argument hierarchy is expectet to be type bool."""
+        """Test Value of KW Argument hierarchy is expected to be type bool."""
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
-                'Value of KW Argument hierarchy is expectet',
+                'Value of KW Argument hierarchy is expected',
                 'to be type bool but got str'
             ))
         ):
@@ -637,11 +637,11 @@ class HeightFieldTestCase(unittest.TestCase):
             self.sut = HeightField('pov/tests/fixture/test.gif', hf_type=0.2)
 
     def test_crt_hf_type_nonexist_val(self):
-        """Test Value of KW Argument hf_type is expectet to be in [...]."""
+        """Test Value of KW Argument hf_type is expected to be in [...]."""
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
-                'Value of KW Argument hf_type is expectet to be in',
+                'Value of KW Argument hf_type is expected to be in',
                 '\\[\'gif\', \'tga\', \'pot\', \'png\', \'pgm\', \'ppm\',',
                 '\'jpeg\', \'tiff\', \'sys\', \'function\'] but got bar'
             ))
@@ -659,12 +659,12 @@ class HeightFieldTestCase(unittest.TestCase):
             self.sut = HeightField('fixture/nonexistant.gif', hf_type='bar')
 
     def test_create_waterlvl_not_float(self):
-        """Test Value of KWarg water_level is expectet to be type float."""
+        """Test Value of KWarg water_level is expected to be type float."""
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
                 'Value of KW Argument water_level is',
-                'expectet to be type float but got str'
+                'expected to be type float but got str'
             ))
         ):
             self.sut = HeightField(
@@ -694,10 +694,10 @@ class JuliaFractalTestCase(unittest.TestCase):
         self.assertIsInstance(self.sut, SceneItem)
 
     def test_create_wrong_type(self):
-        """Test Value of Arg 0 is expectet to be type Vector but got str."""
+        """Test Value of Arg 0 is expected to be type Vector but got str."""
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Value of Argument 0 is expectet to be type Vector but got str'
+            'Value of Argument 0 is expected to be type Vector but got str'
         ):
             self.sut = JuliaFractal('foo')
 
@@ -791,10 +791,10 @@ class SphereTestCase(unittest.TestCase):
             )
 
     def test_create_center_wrong_type(self):
-        """Test Value of Arg 0 is expectet to be type Vector but got str."""
+        """Test Value of Arg 0 is expected to be type Vector but got str."""
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Value of Argument 0 is expectet to be type Vector but got str'
+            'Value of Argument 0 is expected to be type Vector but got str'
         ):
             self.sut = Sphere(
                 'foo',
@@ -817,11 +817,11 @@ class SphereTestCase(unittest.TestCase):
             )
 
     def test_create_radius_wrong_type(self):
-        """Test Value of Argument 1 is expectet to be type."""
+        """Test Value of Argument 1 is expected to be type."""
         with self.assertRaisesRegexp(
             SdlSyntaxException,
             ' '.join((
-                'Value of Argument 1 is expectet to be type',
+                'Value of Argument 1 is expected to be type',
                 '\\(\'float\', \'int\'\\) but got str'
             ))
         ):
@@ -870,16 +870,15 @@ class LatheTestCase(unittest.TestCase):
         )
 
     def test_creation(self):
-        """Test creation and inheritance"""
+        """Test creation and inheritance."""
         self.assertIsInstance(self.sut, Lathe)
         self.assertIsInstance(self.sut, SceneItem)
 
-
     def test_create_wrong_type(self):
-        """@Todo: fix me"""
+        """@Todo: fix me."""
         # with self.assertRaisesRegexp(
         #     SdlSyntaxException,
-        #     'Value of Argument 0 is expectet to be type str but got float'
+        #     'Value of Argument 0 is expected to be type str but got float'
         # ):
         #     self.sut = HeightField(1.0)
 

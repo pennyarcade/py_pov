@@ -17,9 +17,10 @@ from pov.other.SdlSyntaxException import SdlSyntaxException
 
 
 class PlaneTestCase(unittest.TestCase):
-    """ Test Plane class."""
+    """Test Plane class."""
 
     def setUp(self):
+        """Setup test environment."""
         self.sut = Plane(
             (1, 2, 3),
             4,

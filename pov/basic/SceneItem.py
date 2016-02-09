@@ -7,7 +7,6 @@ PyPov-0.0.X Copyright (c) Simon Burton, 2003
 See LICENSE file.
 
 Some modifications by W.T. Bridgman, 2006-2007.
-
 """
 
 from __future__ import nested_scopes
@@ -285,7 +284,7 @@ class SceneItem(object):
             if i < len(valid_args):
                 if isinstance(valid_args[i], (list, tuple)):
                     if not self.args[i].__class__.__name__ in valid_args[i]:
-                        msg = 'Value of Argument %s is expectet to be type %s'
+                        msg = 'Value of Argument %s is expected to be type %s'
                         msg += ' but got %s'
                         raise SdlSyntaxException(
                             msg %
@@ -293,7 +292,7 @@ class SceneItem(object):
                         )
                 else:
                     if not self.args[i].__class__.__name__ == valid_args[i]:
-                        msg = 'Value of Argument %s is expectet to be type %s'
+                        msg = 'Value of Argument %s is expected to be type %s'
                         msg += ' but got %s'
                         raise SdlSyntaxException(
                             msg %
@@ -324,7 +323,7 @@ class SceneItem(object):
                 raise SdlSyntaxException(msg % (key, self.__class__.__name__))
             # type of kw arguments
             if val.__class__.__name__ not in valid_kw[key]:
-                msg = 'Value of KW Argument %s is expectet to be type %s'
+                msg = 'Value of KW Argument %s is expected to be type %s'
                 msg += ' but got %s'
                 raise SdlSyntaxException(
                     msg % (key, valid_kw[key], val.__class__.__name__)
@@ -334,7 +333,7 @@ class SceneItem(object):
         """Check value range for kwargs."""
         if kwarg in self.kwargs:
             if self.kwargs[kwarg] not in validvalues:
-                msg = 'Value of KW Argument %s is expectet '
+                msg = 'Value of KW Argument %s is expected '
                 msg += 'to be in %s but got %s'
                 raise SdlSyntaxException(
                     msg % (kwarg, validvalues, self.kwargs[kwarg])
@@ -364,7 +363,7 @@ class SceneItem(object):
         # debug('kwargs: %s', kwargs)
 
         for key, val in kwargs:
-            if type(val) == tuple or type(val) == list:
+            if isinstance(val, (tuple, list)):
                 self.kwargs[key] = self.map_arg(val)
 
     def _is_valid_keyword(self, name):
@@ -479,7 +478,7 @@ class SceneItem(object):
 
     def map_arg(self, arg):
         """Map an argument list to an appropriate format."""
-        if type(arg) in (tuple, list):
+        if isinstance(arg, (tuple, list)):
             # if multiple-component, floating-point value, return a vector
             if len(arg) and hasattr(arg[0], "__float__"):
                 return Vector(arg)
@@ -491,7 +490,7 @@ class SceneItem(object):
         seq = list(seq)
         i = 0
         while i < len(seq):
-            if type(seq[i]) in (list, tuple):
+            if isinstance(seq[i], (list, tuple)):
                 listarg = seq.pop(i)
                 for item in listarg:
                     seq.insert(i, item)

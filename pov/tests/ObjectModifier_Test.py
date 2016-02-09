@@ -1,6 +1,6 @@
 # coding=UTF-8
-"""
-Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013
+u"""
+Py_Pov 0.0.1 Copyright (c) Martin Tönnishoff, 2013.
 
 based on:
 PyPov-0.0.X Copyright (c) Simon Burton, 2003
@@ -40,7 +40,7 @@ class TranslateTestCase(unittest.TestCase):
         """Test creation of Translate object."""
         with self.assertRaisesRegexp(
             SdlSyntaxException,
-            'Value of Argument 0 is expectet to be type Vector but got str'
+            'Value of Argument 0 is expected to be type Vector but got str'
         ):
             Translate('foo')
 

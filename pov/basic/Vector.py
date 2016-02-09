@@ -7,7 +7,6 @@ PyPov-0.0.X Copyright (c) Simon Burton, 2003
 See LICENSE file.
 
 Some modifications by W.T. Bridgman, 2006-2007.
-
 """
 
 from logging import debug
@@ -52,19 +51,19 @@ class Vector(object):
 
     def __mul__(self, other):
         """scalar multiplication."""
-        if type(other) not in (float, int):
+        if not isinstance(other, (float, int)):
             raise SdlSyntaxException('Parameter not of type float or int')
         return Vector([r * other for r in self.values])
 
     def __rmul__(self, other):
         """scalar multiplication."""
-        if type(other) not in (float, int):
+        if not isinstance(other, (float, int)):
             raise SdlSyntaxException('Parameter not of type float or int')
         return Vector([r * other for r in self.values])
 
     def __div__(self, other):
         """@Todo: ApiDoc."""
-        if type(other) not in (float, int):
+        if not isinstance(other, (float, int)):
             raise SdlSyntaxException('Parameter not of type float or int')
         return Vector([r / other for r in self.values])
 
@@ -115,6 +114,7 @@ class Vector(object):
         return result
 
     def __len__(self):
+        """Return Vector length."""
         return len(self.values)
 
 

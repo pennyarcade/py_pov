@@ -56,7 +56,7 @@ class Cone(BlockObject):
             raise SdlSyntaxException(
                 'Base point Vector has more or less than 3 dimensions'
             )
-        if type(baseradius) not in (int, float):
+        if not isinstance(baseradius, (int, float)):
             raise SdlSyntaxException(
                 'Param base radius is not of type int or float'
             )
@@ -68,7 +68,7 @@ class Cone(BlockObject):
             raise SdlSyntaxException(
                 'Cap point Vector has more or less than 3 dimensions'
             )
-        if type(capradius) not in (int, float):
+        if not isinstance(capradius, (int, float)):
             raise SdlSyntaxException(
                 'Param cap radius is not of type int or float'
             )
@@ -84,7 +84,7 @@ class Cone(BlockObject):
         for key, val in kwargs.items():
             if key not in ['open']:
                 raise SdlSyntaxException('Invalid keyword: ' + str(key))
-            if type(val) != bool:
+            if not isinstance(val, bool):
                 raise SdlSyntaxException(
                     'Value of keyword %s is not boolean' % key
                 )
