@@ -121,9 +121,9 @@ from lgeo.include.brick import lg_3003
 # include "lg_3004.inc"
 from lgeo.include.brick import lg_3010
 # include "lg_3020.inc"
-# include "lg_3021.inc"
+from lgeo.include.brick import lg_3021
 from lgeo.include.brick import lg_3022
-# include "lg_3024.inc"
+from lgeo.include.brick import lg_3024
 # include "lg_3069b.inc"
 # include "lg_3641.inc"
 from lgeo.include.brick import lg_3788
@@ -261,10 +261,20 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         std_brick(
             lg_3021.solid(),
             LG_RED,
-            -2 * LGBW, 6 * LGPH, 0,
-            -90, 90, 0
+            -1.5 * LGBW, 6 * LGPH, 0,
+            -90, 0, 0
         ),
-        Comment('**** 3021  Red   Plate 2 x 3 ****'),
+        Comment('**** 3021 Red Plate 2 x 3 ****'),
+        Comment('**** 3024 White Plate 1 x 1 ****'),
+        std_brick(
+            lg_3024.solid(),
+            LG_WHITE,
+            -1.5 * LGBW, 6 * LGPH, -2 * LGBW,
+            -90, 0, 0
+        ),
+        Comment('**** 3024 White Plate 1 x 1 ****'),
+
+
     )
 
     return part
@@ -276,10 +286,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
 #        ),
 #        Comment('****  ****'),
 
-# 3021  Red   Plate 2 x 3
-# std_brick(lg_3021,  lg_red, -2*LGBW, 6*LGPH,   0,  -90,  90, 0)
-# 3024  White Plate 1 x 1
-# std_brick(lg_3024,  lg_white, -1*LGBW, 6*LGPH, -1.5*LGBW,  -90, 0, 0)
+
 # 4085c White Plate 1 x 1 with Clip Vertical - Type 3
 # std_brick(lg_4085c,  lg_white, -1*LGBW, 6*LGPH,  1.5*LGBW,  -90, 0, 0)
 

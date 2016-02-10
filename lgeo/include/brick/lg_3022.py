@@ -12,7 +12,7 @@ It is provided for private non-commercial use only.
 lg_3022: Plate 2 x 2
 """
 
-from lgeo.include.common.lg_defs import LG_CORNER_SPACE, LGBW
+from lgeo.include.common.lg_defs import LGCS, LGBW
 from lgeo.include.common.lg_defs import LGPH, lg_plate_cylinder
 
 from lgeo.include.common.brick_subparts import get_knob_objects
@@ -37,241 +37,241 @@ def solid(length=2, width=2):
     """@Todo: DocString."""
     return Union(
         Sphere(
-            Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
-            LG_CORNER_SPACE
+            Vector(LGCS, LGCS, LGCS),
+            LGCS
         ),
         Cylinder(
-            Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
+            Vector(LGCS, LGCS, LGCS),
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                LGCS,
+                LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Sphere(
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                LGCS,
+                LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Cylinder(
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                LGCS,
+                LGCS
             ),
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                LGCS,
+                LGPH - LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Sphere(
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                LGCS,
+                LGPH - LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Cylinder(
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                LGCS,
+                LGPH - LGCS
             ),
             Vector(
-                LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                LGCS,
+                LGCS,
+                LGPH - LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Sphere(
             Vector(
-                LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                LGCS,
+                LGCS,
+                LGPH - LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Cylinder(
             Vector(
-                LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                LGCS,
+                LGCS,
+                LGCS
             ),
             Vector(
-                LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                LGCS,
+                LGCS,
+                LGPH - LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Cylinder(
             Vector(
-                LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                LGCS,
+                LGCS,
+                LGCS
             ),
             Vector(
-                LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                LGCS,
+                width * LGBW - LGCS,
+                LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Sphere(
             Vector(
-                LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                LGCS,
+                width * LGBW - LGCS,
+                LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Cylinder(
             Vector(
-                LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                LGCS,
+                width * LGBW - LGCS,
+                LGCS
             ),
             Vector(
-                LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                LGCS,
+                width * LGBW - LGCS,
+                LGPH - LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Sphere(
             Vector(
-                LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                LGCS,
+                width * LGBW - LGCS,
+                LGPH - LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Cylinder(
             Vector(
-                LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                LGCS,
+                LGCS,
+                LGPH - LGCS
             ),
             Vector(
-                LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                LGCS,
+                width * LGBW - LGCS,
+                LGPH - LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Cylinder(
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                LGCS,
+                LGCS
             ),
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                width * LGBW - LGCS,
+                LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Sphere(
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                width * LGBW - LGCS,
+                LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Cylinder(
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                width * LGBW - LGCS,
+                LGCS
             ),
             Vector(
-                LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                LGCS,
+                width * LGBW - LGCS,
+                LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Cylinder(
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                width * LGBW - LGCS,
+                LGCS
             ),
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                width * LGBW - LGCS,
+                LGPH - LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Sphere(
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                width * LGBW - LGCS,
+                LGPH - LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Cylinder(
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                width * LGBW - LGCS,
+                LGPH - LGCS
             ),
             Vector(
-                LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                LGCS,
+                width * LGBW - LGCS,
+                LGPH - LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Cylinder(
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                LGCS,
+                LGPH - LGCS
             ),
             Vector(
-                length * LGBW - LG_CORNER_SPACE,
-                width * LGBW - LG_CORNER_SPACE,
-                LGPH - LG_CORNER_SPACE
+                length * LGBW - LGCS,
+                width * LGBW - LGCS,
+                LGPH - LGCS
             ),
-            LG_CORNER_SPACE
+            LGCS
         ),
         Difference(
             Union(
                 Box(
-                    Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, 0),
+                    Vector(LGCS, LGCS, 0),
                     Vector(
-                        length * LGBW - LG_CORNER_SPACE,
-                        width * LGBW - LG_CORNER_SPACE,
+                        length * LGBW - LGCS,
+                        width * LGBW - LGCS,
                         LGPH
                     )
                 ),
                 Box(
-                    Vector(0, LG_CORNER_SPACE, LG_CORNER_SPACE),
+                    Vector(0, LGCS, LGCS),
                     Vector(
                         length * LGBW,
-                        width * LGBW - LG_CORNER_SPACE,
-                        LGPH - LG_CORNER_SPACE
+                        width * LGBW - LGCS,
+                        LGPH - LGCS
                     )
                 ),
                 Box(
-                    Vector(LG_CORNER_SPACE, 0, LG_CORNER_SPACE),
+                    Vector(LGCS, 0, LGCS),
                     Vector(
-                        length * LGBW - LG_CORNER_SPACE,
+                        length * LGBW - LGCS,
                         width * LGBW,
-                        LGPH - LG_CORNER_SPACE
+                        LGPH - LGCS
                     )
                 ),
             ),
@@ -296,142 +296,142 @@ def solid(length=2, width=2):
 # #declare lg_3022_clear =
 # Merge(
 #  Sphere(
-#   Vector(LG_CORNER_SPACE, LG_CORNER_SPACE,
-#     LG_CORNER_SPACE), LG_CORNER_SPACE
+#   Vector(LGCS, LGCS,
+#     LGCS), LGCS
 #  ),
 #  Cylinder(
-#   Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
-#   Vector((length * LGBW - LG_CORNER_SPACE),
-#     LG_CORNER_SPACE, LG_CORNER_SPACE),
-#   LG_CORNER_SPACE
+#   Vector(LGCS, LGCS, LGCS),
+#   Vector((length * LGBW - LGCS),
+#     LGCS, LGCS),
+#   LGCS
 #  ),
 #  Sphere(
-#   Vector((length * LGBW - LG_CORNER_SPACE),
-#     LG_CORNER_SPACE, LG_CORNER_SPACE), LG_CORNER_SPACE
+#   Vector((length * LGBW - LGCS),
+#     LGCS, LGCS), LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     LG_CORNER_SPACE, LG_CORNER_SPACE),
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     LG_CORNER_SPACE, (LGPH - LG_CORNER_SPACE)),
-#   LG_CORNER_SPACE
+#   Vector(((length * LGBW)-LGCS),
+#     LGCS, LGCS),
+#   Vector(((length * LGBW)-LGCS),
+#     LGCS, (LGPH - LGCS)),
+#   LGCS
 #  ),
 #  Sphere(
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     LG_CORNER_SPACE, (LGPH - LG_CORNER_SPACE)), LG_CORNER_SPACE
+#   Vector(((length * LGBW)-LGCS),
+#     LGCS, (LGPH - LGCS)), LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     LG_CORNER_SPACE, (LGPH - LG_CORNER_SPACE)),
-#   Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, (LGPH - LG_CORNER_SPACE)),
-#   LG_CORNER_SPACE
+#   Vector(((length * LGBW)-LGCS),
+#     LGCS, (LGPH - LGCS)),
+#   Vector(LGCS, LGCS, (LGPH - LGCS)),
+#   LGCS
 #  ),
 #  Sphere(
-#   Vector(LG_CORNER_SPACE, LG_CORNER_SPACE,
-#     (LGPH - LG_CORNER_SPACE)), LG_CORNER_SPACE
+#   Vector(LGCS, LGCS,
+#     (LGPH - LGCS)), LGCS
 #  ),
 #  Cylinder(
-#   Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
-#   Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, (LGPH - LG_CORNER_SPACE)),
-#   LG_CORNER_SPACE
+#   Vector(LGCS, LGCS, LGCS),
+#   Vector(LGCS, LGCS, (LGPH - LGCS)),
+#   LGCS
 #  ),
 #  Cylinder(
-#   Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE),
-#   Vector(LG_CORNER_SPACE, ((width * LGBW)-LG_CORNER_SPACE),
-#     LG_CORNER_SPACE),
-#   LG_CORNER_SPACE
+#   Vector(LGCS, LGCS, LGCS),
+#   Vector(LGCS, ((width * LGBW)-LGCS),
+#     LGCS),
+#   LGCS
 #  ),
 #  Sphere(
-#   Vector(LG_CORNER_SPACE, ((width * LGBW)-LG_CORNER_SPACE),
-#     LG_CORNER_SPACE), LG_CORNER_SPACE
+#   Vector(LGCS, ((width * LGBW)-LGCS),
+#     LGCS), LGCS
 #  ),
 #  Cylinder(
-#   Vector(LG_CORNER_SPACE, ((width * LGBW)-LG_CORNER_SPACE),
-#     LG_CORNER_SPACE),
-#   Vector(LG_CORNER_SPACE, ((width * LGBW)-LG_CORNER_SPACE),
-#     (LGPH - LG_CORNER_SPACE)),
-#   LG_CORNER_SPACE
+#   Vector(LGCS, ((width * LGBW)-LGCS),
+#     LGCS),
+#   Vector(LGCS, ((width * LGBW)-LGCS),
+#     (LGPH - LGCS)),
+#   LGCS
 #  ),
 #  Sphere(
-#   Vector(LG_CORNER_SPACE, ((width * LGBW)-LG_CORNER_SPACE),
-#     (LGPH - LG_CORNER_SPACE)), LG_CORNER_SPACE
+#   Vector(LGCS, ((width * LGBW)-LGCS),
+#     (LGPH - LGCS)), LGCS
 #  ),
 #  Cylinder(
-#   Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, (LGPH - LG_CORNER_SPACE)),
-#   Vector(LG_CORNER_SPACE, ((width * LGBW)-LG_CORNER_SPACE),
-#     (LGPH - LG_CORNER_SPACE)),
-#   LG_CORNER_SPACE
+#   Vector(LGCS, LGCS, (LGPH - LGCS)),
+#   Vector(LGCS, ((width * LGBW)-LGCS),
+#     (LGPH - LGCS)),
+#   LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     LG_CORNER_SPACE, LG_CORNER_SPACE),
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     ((width * LGBW)-LG_CORNER_SPACE), LG_CORNER_SPACE),
-#   LG_CORNER_SPACE
+#   Vector(((length * LGBW)-LGCS),
+#     LGCS, LGCS),
+#   Vector(((length * LGBW)-LGCS),
+#     ((width * LGBW)-LGCS), LGCS),
+#   LGCS
 #  ),
 #  Sphere(
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     ((width * LGBW)-LG_CORNER_SPACE), LG_CORNER_SPACE),
-# LG_CORNER_SPACE
+#   Vector(((length * LGBW)-LGCS),
+#     ((width * LGBW)-LGCS), LGCS),
+# LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     ((width * LGBW)-LG_CORNER_SPACE), LG_CORNER_SPACE),
-#   Vector(LG_CORNER_SPACE, ((width * LGBW)-LG_CORNER_SPACE),
-#     LG_CORNER_SPACE),
-#   LG_CORNER_SPACE
+#   Vector(((length * LGBW)-LGCS),
+#     ((width * LGBW)-LGCS), LGCS),
+#   Vector(LGCS, ((width * LGBW)-LGCS),
+#     LGCS),
+#   LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     ((width * LGBW)-LG_CORNER_SPACE), LG_CORNER_SPACE),
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     ((width * LGBW)-LG_CORNER_SPACE),
-#     (LGPH - LG_CORNER_SPACE)),
-#   LG_CORNER_SPACE
+#   Vector(((length * LGBW)-LGCS),
+#     ((width * LGBW)-LGCS), LGCS),
+#   Vector(((length * LGBW)-LGCS),
+#     ((width * LGBW)-LGCS),
+#     (LGPH - LGCS)),
+#   LGCS
 #  ),
 #  Sphere(
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     ((width * LGBW)-LG_CORNER_SPACE),
-#     (LGPH - LG_CORNER_SPACE)), LG_CORNER_SPACE
+#   Vector(((length * LGBW)-LGCS),
+#     ((width * LGBW)-LGCS),
+#     (LGPH - LGCS)), LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     ((width * LGBW)-LG_CORNER_SPACE),
-#     (LGPH - LG_CORNER_SPACE)),
-#   Vector(LG_CORNER_SPACE, ((width * LGBW)-LG_CORNER_SPACE),
-#     (LGPH - LG_CORNER_SPACE)),
-#   LG_CORNER_SPACE
+#   Vector(((length * LGBW)-LGCS),
+#     ((width * LGBW)-LGCS),
+#     (LGPH - LGCS)),
+#   Vector(LGCS, ((width * LGBW)-LGCS),
+#     (LGPH - LGCS)),
+#   LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     LG_CORNER_SPACE, (LGPH - LG_CORNER_SPACE)),
-#   Vector(((length * LGBW)-LG_CORNER_SPACE),
-#     ((width * LGBW)-LG_CORNER_SPACE),
-#     (LGPH - LG_CORNER_SPACE)),
-#   LG_CORNER_SPACE
+#   Vector(((length * LGBW)-LGCS),
+#     LGCS, (LGPH - LGCS)),
+#   Vector(((length * LGBW)-LGCS),
+#     ((width * LGBW)-LGCS),
+#     (LGPH - LGCS)),
+#   LGCS
 #  ),
 #  Difference(
 #   Merge(
 #    Box(
-#     Vector(LG_CORNER_SPACE, LG_CORNER_SPACE, 0),
-#     Vector(length * LGBW - LG_CORNER_SPACE,
-#         width * LGBW - LG_CORNER_SPACE, LGPH)
+#     Vector(LGCS, LGCS, 0),
+#     Vector(length * LGBW - LGCS,
+#         width * LGBW - LGCS, LGPH)
 #    ),
 #    Box(
-#     Vector(0, LG_CORNER_SPACE, LG_CORNER_SPACE),
+#     Vector(0, LGCS, LGCS),
 #     Vector(length * LGBW,
-#         width * LGBW - LG_CORNER_SPACE,
-#         LGPH - LG_CORNER_SPACE)
+#         width * LGBW - LGCS,
+#         LGPH - LGCS)
 #    ),
 #    Box(
-#     Vector(LG_CORNER_SPACE, 0, LG_CORNER_SPACE),
-#     Vector(length * LGBW - LG_CORNER_SPACE,
-#         width * LGBW, LGPH - LG_CORNER_SPACE)
+#     Vector(LGCS, 0, LGCS),
+#     Vector(length * LGBW - LGCS,
+#         width * LGBW, LGPH - LGCS)
 #    ),
 #   ),
 #   Merge(
 #    Box(
-#     Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LG_CORNER_SPACE),
+#     Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LGCS),
 #     Vector(length * LGBW - LG_WALL_WIDTH,
 #         width * LGBW - LG_WALL_WIDTH,
 #         LG_PLATE_INNER_HEIGHT)

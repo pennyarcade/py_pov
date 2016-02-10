@@ -12,298 +12,182 @@ It is provided for private non-commercial use only.
 lg_3021: Plate 2 x 3
 """
 
-# #ifdef(lg_3021)
-# #else
-# #declare LENGTH = 3;
-# #declare WIDTH = 2;
-# #declare lg_3021 =
-# union {
-#  sphere {
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#   <(LENGTH*LG_BRICK_WIDTH-LG_CORNER_SPACE), LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <(LENGTH*LG_BRICK_WIDTH-LG_CORNER_SPACE), LG_CORNER_SPACE, LG_CORNER_SPACE>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>,
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>,
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>,
-#   LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>,
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  difference {
-#   union {
-#    box {
-#     <LG_CORNER_SPACE, LG_CORNER_SPACE, 0>,
-#     <LENGTH*LG_BRICK_WIDTH-LG_CORNER_SPACE, WIDTH*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_PLATE_HEIGHT>
-#    }
-#    box {
-#     <0, LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#     <LENGTH*LG_BRICK_WIDTH, WIDTH*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_PLATE_HEIGHT-LG_CORNER_SPACE>
-#    }
-#    box {
-#     <LG_CORNER_SPACE, 0, LG_CORNER_SPACE>,
-#     <LENGTH*LG_BRICK_WIDTH-LG_CORNER_SPACE, WIDTH*LG_BRICK_WIDTH, LG_PLATE_HEIGHT-LG_CORNER_SPACE>
-#    }
-#   }
-#   union {
-#    box {
-#     <LG_WALL_WIDTH, LG_WALL_WIDTH, -LG_CORNER_SPACE>,
-#     <LENGTH*LG_BRICK_WIDTH-LG_WALL_WIDTH, WIDTH*LG_BRICK_WIDTH-LG_WALL_WIDTH, LG_PLATE_INNER_HEIGHT>
-#    }
-#    #declare KS_X = 0;
-#    #while (KS_X < LENGTH)
-#     #declare KS_Y = 0;
-#     #while (KS_Y < WIDTH)
-#      object {
-#       lg_knob_inner_space
-#       translate <(KS_X+0.5)*LG_BRICK_WIDTH, (KS_Y+0.5)*LG_BRICK_WIDTH, LG_PLATE_INNER_HEIGHT>
-#      }
-#      #declare KS_Y = KS_Y + 1;
-#      #end
-#     #declare KS_X = KS_X + 1;
-#    #end
-#   }
-#  }
-#  #declare CYL_X = 1;
-#  #while (CYL_X < LENGTH)
-#   object {
-#    lg_plate_cylinder
-#    translate <CYL_X*LG_BRICK_WIDTH, LG_BRICK_WIDTH, 0>
-#   }
-#   #declare CYL_X = CYL_X + 1;
-#  #end
-#  #declare KNOB_X = 0;
-#  #while (KNOB_X < LENGTH)
-#   #declare KNOB_Y = 0;
-#   #while (KNOB_Y < WIDTH)
-#    object {
-#     lg_knob
-#     rotate <0, 0, -90>
-#     translate <(0.5+KNOB_X)*LG_BRICK_WIDTH, (0.5+KNOB_Y)*LG_BRICK_WIDTH, LG_PLATE_HEIGHT>
-#    }
-#    #declare KNOB_Y = KNOB_Y + 1;
-#   #end
-#   #declare KNOB_X = KNOB_X + 1;
-#  #end
-#  translate <-LENGTH/2*LG_BRICK_WIDTH, -LG_BRICK_WIDTH, -LG_PLATE_HEIGHT>
-#  rotate <0, 0, 90>
-# }
+# from pov.basic.Vector import Vector
+
+# from pov.csg.Union import Union
+# from pov.csg.Difference import Difference
+
+# from pov.finite_solid.Sphere import Sphere
+# from pov.finite_solid.Cylinder import Cylinder
+# from pov.finite_solid.Box import Box
+
+# from pov.object_modifier.Rotate import Rotate
+# from pov.object_modifier.Translate import Translate
+
+# from pov.other.Object import Object
+
+# from lgeo.include.common.lg_defs import LGPH, LGBW, LGCS
+# from lgeo.include.common.lg_defs import LG_PLATE_INNER_HEIGHT
+# from lgeo.include.common.lg_defs import lg_plate_cylinder
+
+# from lgeo.include.common.brick_subparts import get_knob_inner_space
+# from lgeo.include.common.brick_subparts import get_knob_objects
+from lgeo.include.common.brick_subparts import standard_plate
+
+
+def solid():
+    """Return lg_3021: Plate 2 x 3."""
+    return standard_plate(2, 3)
+
+
+
+
+
+
 
 # #declare lg_3021_clear =
-# merge {
-#  sphere {
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#   <(LENGTH*LG_BRICK_WIDTH-LG_CORNER_SPACE), LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <(LENGTH*LG_BRICK_WIDTH-LG_CORNER_SPACE), LG_CORNER_SPACE, LG_CORNER_SPACE>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>,
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <LG_CORNER_SPACE, LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>,
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>,
-#   LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE>,
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  sphere {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>, LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   <LG_CORNER_SPACE, ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  cylinder {
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), LG_CORNER_SPACE, (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   <((LENGTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), ((WIDTH*LG_BRICK_WIDTH)-LG_CORNER_SPACE), (LG_PLATE_HEIGHT-LG_CORNER_SPACE)>,
-#   LG_CORNER_SPACE
-#  }
-#  difference {
-#   merge {
-#    box {
-#     <LG_CORNER_SPACE, LG_CORNER_SPACE, 0>,
-#     <LENGTH*LG_BRICK_WIDTH-LG_CORNER_SPACE, WIDTH*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_PLATE_HEIGHT>
-#    }
-#    box {
-#     <0, LG_CORNER_SPACE, LG_CORNER_SPACE>,
-#     <LENGTH*LG_BRICK_WIDTH, WIDTH*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_PLATE_HEIGHT-LG_CORNER_SPACE>
-#    }
-#    box {
-#     <LG_CORNER_SPACE, 0, LG_CORNER_SPACE>,
-#     <LENGTH*LG_BRICK_WIDTH-LG_CORNER_SPACE, WIDTH*LG_BRICK_WIDTH, LG_PLATE_HEIGHT-LG_CORNER_SPACE>
-#    }
-#   }
-#   merge {
-#    box {
-#     <LG_WALL_WIDTH, LG_WALL_WIDTH, -LG_CORNER_SPACE>,
-#     <LENGTH*LG_BRICK_WIDTH-LG_WALL_WIDTH, WIDTH*LG_BRICK_WIDTH-LG_WALL_WIDTH, LG_PLATE_INNER_HEIGHT>
-#    }
+# merge (
+#  Sphere(
+#   Vector(LGCS, LGCS, LGCS), LGCS
+#  )
+# Cylinder(
+#   Vector(LGCS, LGCS, LGCS),
+#   Vector((length*LGBW-LGCS), LGCS, LGCS),
+#   LGCS
+#  )
+#  Sphere(
+#   Vector((length*LGBW-LGCS), LGCS, LGCS), LGCS
+#  )
+# Cylinder(
+#   Vector(((length*LGBW)-LGCS), LGCS, LGCS),
+#   Vector(((length*LGBW)-LGCS), LGCS, (LGPH-LGCS)),
+#   LGCS
+#  )
+#  Sphere(
+#   Vector(((length*LGBW)-LGCS), LGCS, (LGPH-LGCS)), LGCS
+#  )
+# Cylinder(
+#   Vector(((length*LGBW)-LGCS), LGCS, (LGPH-LGCS)),
+#   Vector(LGCS, LGCS, (LGPH-LGCS)),
+#   LGCS
+#  )
+#  Sphere(
+#   Vector(LGCS, LGCS, (LGPH-LGCS)), LGCS
+#  )
+# Cylinder(
+#   Vector(LGCS, LGCS, LGCS),
+#   Vector(LGCS, LGCS, (LGPH-LGCS)),
+#   LGCS
+#  )
+# Cylinder(
+#   Vector(LGCS, LGCS, LGCS),
+#   Vector(LGCS, ((width*LGBW)-LGCS), LGCS),
+#   LGCS
+#  )
+#  Sphere(
+#   Vector(LGCS, ((width*LGBW)-LGCS), LGCS), LGCS
+#  )
+# Cylinder(
+#   Vector(LGCS, ((width*LGBW)-LGCS), LGCS),
+#   Vector(LGCS, ((width*LGBW)-LGCS), (LGPH-LGCS)),
+#   LGCS
+#  )
+#  Sphere(
+#   Vector(LGCS, ((width*LGBW)-LGCS), (LGPH-LGCS)), LGCS
+#  )
+# Cylinder(
+#   Vector(LGCS, LGCS, (LGPH-LGCS)),
+#   Vector(LGCS, ((width*LGBW)-LGCS), (LGPH-LGCS)),
+#   LGCS
+#  )
+# Cylinder(
+#   Vector(((length*LGBW)-LGCS), LGCS, LGCS),
+#   Vector(((length*LGBW)-LGCS), ((width*LGBW)-LGCS), LGCS),
+#   LGCS
+#  )
+#  Sphere(
+#   Vector(((length*LGBW)-LGCS), ((width*LGBW)-LGCS), LGCS), LGCS
+#  )
+# Cylinder(
+#   Vector(((length*LGBW)-LGCS), ((width*LGBW)-LGCS), LGCS),
+#   Vector(LGCS, ((width*LGBW)-LGCS), LGCS),
+#   LGCS
+#  )
+# Cylinder(
+#   Vector(((length*LGBW)-LGCS), ((width*LGBW)-LGCS), LGCS),
+#   Vector(((length*LGBW)-LGCS), ((width*LGBW)-LGCS), (LGPH-LGCS)),
+#   LGCS
+#  )
+#  Sphere(
+#   Vector(((length*LGBW)-LGCS), ((width*LGBW)-LGCS), (LGPH-LGCS)), LGCS
+#  )
+# Cylinder(
+#   Vector(((length*LGBW)-LGCS), ((width*LGBW)-LGCS), (LGPH-LGCS)),
+#   Vector(LGCS, ((width*LGBW)-LGCS), (LGPH-LGCS)),
+#   LGCS
+#  )
+# Cylinder(
+#   Vector(((length*LGBW)-LGCS), LGCS, (LGPH-LGCS)),
+#   Vector(((length*LGBW)-LGCS), ((width*LGBW)-LGCS), (LGPH-LGCS)),
+#   LGCS
+#  )
+# Difference(
+#   merge (
+#    box (
+#     Vector(LGCS, LGCS, 0),
+#     Vector(length*LGBW-LGCS, width*LGBW-LGCS, LGPH)
+#    )
+#    box (
+#     Vector(0, LGCS, LGCS),
+#     Vector(length*LGBW, width*LGBW-LGCS, LGPH-LGCS)
+#    )
+#    box (
+#     Vector(LGCS, 0, LGCS),
+#     Vector(length*LGBW-LGCS, width*LGBW, LGPH-LGCS)
+#    )
+#   )
+#   merge (
+#    box (
+#     Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LGCS),
+#     Vector(length*LGBW-LG_WALL_WIDTH, width*LGBW-LG_WALL_WIDTH, LG_PLATE_INNER_HEIGHT)
+#    )
 #    #declare KS_X = 0;
-#    #while (KS_X < LENGTH)
+#    #while (KS_X Vector( length)
 #     #declare KS_Y = 0;
-#     #while (KS_Y < WIDTH)
-#      object {
+#     #while (KS_Y Vector( width)
+#      object (
 #       lg_knob_inner_space_clear
-#       translate <(KS_X+0.5)*LG_BRICK_WIDTH, (KS_Y+0.5)*LG_BRICK_WIDTH, LG_PLATE_INNER_HEIGHT>
-#      }
+#       translate Vector((KS_X+0.5)*LGBW, (KS_Y+0.5)*LGBW, LG_PLATE_INNER_HEIGHT)
+#      )
 #      #declare KS_Y = KS_Y + 1;
 #      #end
 #     #declare KS_X = KS_X + 1;
 #    #end
-#   }
-#  }
+#   )
+#  )
 #  #declare CYL_X = 1;
-#  #while (CYL_X < LENGTH)
-#   object {
+#  #while (CYL_X Vector( length)
+#   object (
 #    lg_plate_cylinder_clear
-#    translate <CYL_X*LG_BRICK_WIDTH, LG_BRICK_WIDTH, 0>
-#   }
+#    translate Vector(CYL_X*LGBW, LGBW, 0)
+#   )
 #   #declare CYL_X = CYL_X + 1;
 #  #end
 #  #declare KNOB_X = 0;
-#  #while (KNOB_X < LENGTH)
+#  #while (KNOB_X Vector( length)
 #   #declare KNOB_Y = 0;
-#   #while (KNOB_Y < WIDTH)
-#    object {
+#   #while (KNOB_Y Vector( width)
+#    object (
 #     lg_knob_clear
-#     rotate <0, 0, -90>
-#     translate <(0.5+KNOB_X)*LG_BRICK_WIDTH, (0.5+KNOB_Y)*LG_BRICK_WIDTH, LG_PLATE_HEIGHT>
-#    }
+#     rotate Vector(0, 0, -90)
+#     translate Vector((0.5+KNOB_X)*LGBW, (0.5+KNOB_Y)*LGBW, LGPH)
+#    )
 #    #declare KNOB_Y = KNOB_Y + 1;
 #   #end
 #   #declare KNOB_X = KNOB_X + 1;
 #  #end
-#  translate <-LENGTH/2*LG_BRICK_WIDTH, -LG_BRICK_WIDTH, -LG_PLATE_HEIGHT>
-#  rotate <0, 0, 90>
-# }
+#  translate Vector(-length/2*LGBW, -LGBW, -LGPH)
+#  rotate Vector(0, 0, 90)
+# )
 
 # #end
