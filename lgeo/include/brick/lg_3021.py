@@ -28,7 +28,7 @@ lg_3021: Plate 2 x 3
 
 # from lgeo.include.common.lg_defs import LGPH, LGBW, LGCS
 # from lgeo.include.common.lg_defs import LG_PLATE_INNER_HEIGHT
-# from lgeo.include.common.lg_defs import lg_plate_cylinder
+# from lgeo.include.common.lg_defs import get_lg_cylinder(Union, LG_PLATE_INNER_HEIGHT)
 
 # from lgeo.include.common.brick_subparts import get_knob_inner_space
 # from lgeo.include.common.brick_subparts import get_knob_objects
@@ -168,7 +168,7 @@ def solid():
 #  #declare CYL_X = 1;
 #  #while (CYL_X Vector( length)
 #   object (
-#    lg_plate_cylinder_clear
+#    get_lg_cylinder(Union, LG_PLATE_INNER_HEIGHT)_clear
 #    translate Vector(CYL_X*LGBW, LGBW, 0)
 #   )
 #   #declare CYL_X = CYL_X + 1;

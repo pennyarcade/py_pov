@@ -14,10 +14,10 @@ lg_3788: Car Mudguard 2 x 4
 
 from math import atan2, pi, cos
 
-from lgeo.include.common.lg_defs import LGBW, LGCS
+from lgeo.include.common.lg_defs import LGBW, LGCS, LG_PLATE_INNER_HEIGHT
 from lgeo.include.common.lg_defs import LGPH, lg_knob_inner_space
 from lgeo.include.common.lg_defs import LG_TOP_HEIGHT, LG_E, LG_WALL_WIDTH
-from lgeo.include.common.lg_defs import lg_plate_cylinder
+from lgeo.include.common.lg_defs import get_lg_cylinder
 from lgeo.include.common.brick_subparts import lg_knob
 
 from pov.basic.Vector import Vector
@@ -733,7 +733,7 @@ def solid():
             )
         ),
         Object(
-            lg_plate_cylinder,
+            get_lg_cylinder(Union, LG_PLATE_INNER_HEIGHT),
             Translate(Vector(0, 0, -2 * LGPH))
         )
     )
