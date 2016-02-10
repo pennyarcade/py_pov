@@ -167,10 +167,10 @@ def _lego_logo_text_function(lclass):
     """@Todo: ApiDoc."""
     if LG_QUALITY > 2:
         return lclass(
-            __letter_l(lclass),
-            __letter_e(lclass),
-            __letter_g(lclass),
-            __letter_o(lclass),
+            _letter_l(lclass),
+            _letter_e(lclass),
+            _letter_g(lclass),
+            _letter_o(lclass),
             Scale(Vector(4.5 / 128, 4.5 / 128, 4.5 / 128)),
             Rotate(y * 90),
             Rotate(x * -90),
@@ -216,7 +216,7 @@ def lg_knob_function(knobclass, textfunction):
     if LG_QUALITY > 2:
         result.append(
             Object(
-                textfunction(),
+                textfunction,
                 Translate(Vector(0, 0, LG_KNOB_HEIGHT))
             )
         )

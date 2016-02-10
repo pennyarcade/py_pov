@@ -172,7 +172,6 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             LG_RED,
             0, 3 * LGPH, 0,
             -90, 0, 0),
-
         Comment('**** End 2441 Red Car Base 7 x 4 x 2/3 ****'),
         Comment("""
         # *******************************************************************
@@ -258,6 +257,14 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             -90, 0, 0
         ),
         Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
+        Comment('**** 3021  Red   Plate 2 x 3 ****'),
+        std_brick(
+            lg_3021.solid(),
+            LG_RED,
+            -2 * LGBW, 6 * LGPH, 0,
+            -90, 90, 0
+        ),
+        Comment('**** 3021  Red   Plate 2 x 3 ****'),
     )
 
     return part
