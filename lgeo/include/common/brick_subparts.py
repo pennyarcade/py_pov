@@ -39,7 +39,7 @@ from lgeo.include.common.lg_defs import LG_PLATE_INNER_HEIGHT, LGCS
 from lgeo.include.common.lg_defs import LG_BRICK_INNER_HEIGHT
 from lgeo.include.common.lg_defs import lg_knob_inner_space, lg_knob
 from lgeo.include.common.lg_defs import LGBH, lg_brick_column
-from lgeo.include.common.lg_defs import lg_plate_cylinder
+from lgeo.include.common.lg_defs import get_lg_cylinder
 
 # **************************************************************************
 # LGEO Standard Brick common subparts
@@ -123,22 +123,23 @@ def get_brick_coloumn(length=1):
     return result
 
 
-def get_plate_cylinder(length=1):
+def get_cylinder(length=1, width=1, cclass=Union, height=LG_PLATE_INNER_HEIGHT):
     """Return Plate Cylinder"""
-    result = Union()
+    result = cclass()
 
-    if length > 1:
-        result.append(
-            Object(
-                lg_plate_cylinder,
-                Translate(Vector(LGBW, LGBW, 0))
+    for cyl_x in range(1, length):
+        for cyl_y in range(1, width):
+            result.append(
+                Object(
+                    get_lg_cylinder(cclass, height),
+                    Translate(Vector(cyl_x * LGBW, cyl_y * LGBW, 0))
+                )
             )
-        )
 
     return result
 
 
-def standard_plate(length=1, width=1):
+def standard_plate(length=1, width=1, height=LGPH, innerheight=LG_PLATE_INNER_HEIGHT):
     """Standard plate brick"""
     return Union(
         Sphere(
@@ -156,25 +157,25 @@ def standard_plate(length=1, width=1):
         ),
         Cylinder(
             Vector(length * LGBW - LGCS, LGCS, LGCS),
-            Vector(length * LGBW - LGCS, LGCS, LGPH - LGCS),
+            Vector(length * LGBW - LGCS, LGCS, height - LGCS),
             LGCS
         ),
         Sphere(
-            Vector(length * LGBW - LGCS, LGCS, LGPH - LGCS),
+            Vector(length * LGBW - LGCS, LGCS, height - LGCS),
             LGCS
         ),
         Cylinder(
-            Vector(length * LGBW - LGCS, LGCS, LGPH - LGCS),
-            Vector(LGCS, LGCS, LGPH - LGCS),
+            Vector(length * LGBW - LGCS, LGCS, height - LGCS),
+            Vector(LGCS, LGCS, height - LGCS),
             LGCS
         ),
         Sphere(
-            Vector(LGCS, LGCS, LGPH - LGCS),
+            Vector(LGCS, LGCS, height - LGCS),
             LGCS
         ),
         Cylinder(
             Vector(LGCS, LGCS, LGCS),
-            Vector(LGCS, LGCS, LGPH - LGCS),
+            Vector(LGCS, LGCS, height - LGCS),
             LGCS
         ),
         Cylinder(
@@ -188,16 +189,16 @@ def standard_plate(length=1, width=1):
         ),
         Cylinder(
             Vector(LGCS, width * LGBW - LGCS, LGCS),
-            Vector(LGCS, width * LGBW - LGCS, LGPH - LGCS),
+            Vector(LGCS, width * LGBW - LGCS, height - LGCS),
             LGCS
         ),
         Sphere(
-            Vector(LGCS, width * LGBW - LGCS, LGPH - LGCS),
+            Vector(LGCS, width * LGBW - LGCS, height - LGCS),
             LGCS
         ),
         Cylinder(
-            Vector(LGCS, LGCS, LGPH - LGCS),
-            Vector(LGCS, width * LGBW - LGCS, LGPH - LGCS),
+            Vector(LGCS, LGCS, height - LGCS),
+            Vector(LGCS, width * LGBW - LGCS, height - LGCS),
             LGCS
         ),
         Cylinder(
@@ -216,44 +217,44 @@ def standard_plate(length=1, width=1):
         ),
         Cylinder(
             Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGCS),
-            Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGPH - LGCS),
+            Vector(length * LGBW - LGCS, width * LGBW - LGCS, height - LGCS),
             LGCS
         ),
         Sphere(
-            Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGPH - LGCS),
+            Vector(length * LGBW - LGCS, width * LGBW - LGCS, height - LGCS),
             LGCS
         ),
         Cylinder(
-            Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGPH - LGCS),
-            Vector(LGCS, width * LGBW - LGCS, LGPH - LGCS),
+            Vector(length * LGBW - LGCS, width * LGBW - LGCS, height - LGCS),
+            Vector(LGCS, width * LGBW - LGCS, height - LGCS),
             LGCS
         ),
         Cylinder(
-            Vector(length * LGBW - LGCS, LGCS, LGPH - LGCS),
-            Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGPH - LGCS),
+            Vector(length * LGBW - LGCS, LGCS, height - LGCS),
+            Vector(length * LGBW - LGCS, width * LGBW - LGCS, height - LGCS),
             LGCS
         ),
         Difference(
             Union(
                 Box(
                     Vector(LGCS, LGCS, 0),
-                    Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGPH)
+                    Vector(length * LGBW - LGCS, width * LGBW - LGCS, height)
                 ),
                 Box(
                     Vector(0, LGCS, LGCS),
-                    Vector(length * LGBW, width * LGBW - LGCS, LGPH - LGCS)
+                    Vector(length * LGBW, width * LGBW - LGCS, height - LGCS)
                 ),
                 Box(
                     Vector(LGCS, 0, LGCS),
-                    Vector(length * LGBW - LGCS, width * LGBW, LGPH - LGCS)
+                    Vector(length * LGBW - LGCS, width * LGBW, height - LGCS)
                 ),
             ),
             get_knob_inner_space(length, width)
         ),
-        get_plate_cylinder(length),
-        get_knob_objects(length, width, LGPH),
+        get_cylinder(length, width, Union, innerheight),
+        get_knob_objects(length, width, height),
         Translate(
-            Vector(-length / 2 * LGBW, -LGBW, -LGPH)
+            Vector(-length / 2 * LGBW, -LGBW, -height)
         ),
         Rotate(Vector(0, 0, 90))
     )

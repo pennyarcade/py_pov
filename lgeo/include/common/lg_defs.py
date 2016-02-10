@@ -311,7 +311,7 @@ lg_tech_knob = _lg_tech_knob_function(Union)
 
 
 # brick/plate inner cylinder to fit stud inside
-def _lg_cylinder_function(cylinderclass, height):
+def get_lg_cylinder(cylinderclass, height):
     """@Todo:ApiDoc."""
     return cylinderclass(
         Difference(
@@ -335,8 +335,8 @@ def _lg_cylinder_function(cylinderclass, height):
     )
 
 
-lg_brick_cylinder = _lg_cylinder_function(Union, LG_BRICK_INNER_HEIGHT)
-lg_plate_cylinder = _lg_cylinder_function(Union, LG_PLATE_INNER_HEIGHT)
+lg_brick_cylinder = get_lg_cylinder(Union, LG_BRICK_INNER_HEIGHT)
+lg_plate_cylinder = get_lg_cylinder(Union, LG_PLATE_INNER_HEIGHT)
 
 # brick inner cylinder to fit into hollow stud
 lg_brick_column = Cylinder(
@@ -397,8 +397,8 @@ def lg_tech_knob_logo_clear():
     else:
         return lg_tech_knob_clear
 
-lg_brick_cylinder_clear = _lg_cylinder_function(Merge, LG_BRICK_INNER_HEIGHT)
-lg_plate_cylinder_clear = _lg_cylinder_function(Merge, LG_PLATE_INNER_HEIGHT)
+lg_brick_cylinder_clear = get_lg_cylinder(Merge, LG_BRICK_INNER_HEIGHT)
+lg_plate_cylinder_clear = get_lg_cylinder(Merge, LG_PLATE_INNER_HEIGHT)
 lg_brick_column_clear = lg_brick_column
 lg_plate_column_clear = lg_plate_column
 lg_support_wall_clear = lg_support_wall

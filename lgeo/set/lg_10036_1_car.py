@@ -241,7 +241,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             lg_3788.solid(),
             LG_WHITE,
             2.5 * LGBW, 6 * LGPH, 0,
-            -90, 180, 0
+            -90, 0, 0
         ),
         Comment('**** 3788    White   Car Mudguard 2 x 4 ****'),
         Comment("""
