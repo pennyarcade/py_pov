@@ -12,26 +12,6 @@ It is provided for private non-commercial use only.
 lg_3021: Plate 2 x 3
 """
 
-# from pov.basic.Vector import Vector
-
-# from pov.csg.Union import Union
-# from pov.csg.Difference import Difference
-
-# from pov.finite_solid.Sphere import Sphere
-# from pov.finite_solid.Cylinder import Cylinder
-# from pov.finite_solid.Box import Box
-
-# from pov.object_modifier.Rotate import Rotate
-# from pov.object_modifier.Translate import Translate
-
-# from pov.other.Object import Object
-
-# from lgeo.include.common.lg_defs import LGPH, LGBW, LGCS
-# from lgeo.include.common.lg_defs import LG_PLATE_INNER_HEIGHT
-# from lgeo.include.common.lg_defs import get_lg_cylinder(Union, LG_PLATE_INNER_HEIGHT)
-
-# from lgeo.include.common.brick_subparts import get_knob_inner_space
-# from lgeo.include.common.brick_subparts import get_knob_objects
 from lgeo.include.common.brick_subparts import standard_plate
 
 

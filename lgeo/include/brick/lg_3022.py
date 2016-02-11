@@ -14,9 +14,10 @@ lg_3022: Plate 2 x 2
 
 from lgeo.include.common.brick_subparts import standard_plate
 
+
 def solid(length=2, width=2):
     """Return lg_3022: Plate 2 x 2."""
-    return standard_plate(2, 2)
+    return standard_plate(length, width)
 
 
 # #declare lg_3022_clear =
