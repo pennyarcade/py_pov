@@ -132,7 +132,7 @@ from lgeo.include.brick import lg_3788
 # include "lg_3853.inc"
 # include "lg_3856.inc"
 # include "lg_4073.inc"
-# include "lg_4085c"
+from lgeo.include.brick import lg_4085c
 # include "lg_4624.inc"
 # include "lg_4625.inc"
 # include "lg_4865.inc"
@@ -273,24 +273,34 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             -90, 0, 0
         ),
         Comment('**** 3024 White Plate 1 x 1 ****'),
+        Comment(
+            '**** 4085c White Plate 1 x 1 with Clip Vertical - Type 3 ****'
+        ),
+        std_brick(
+            lg_4085c.solid,
+            LG_WHITE,
+            -1 * LGBW, 6 * LGPH, 1.5 * LGBW,
+            -90, 0, 0
+        ),
+        Comment(
+            '**** 4085c White Plate 1 x 1 with Clip Vertical - Type 3 ****'
+        ),
+        Comment("""
+        ********************************************************************
+        * Objects (Step 6)
+        ********************************************************************
+        """),
 
 
     )
 
     return part
 
-
 #        Comment('****  ****'),
 #        std_brick(
 #
 #        ),
 #        Comment('****  ****'),
-
-
-# 4085c White Plate 1 x 1 with Clip Vertical - Type 3
-# std_brick(lg_4085c,  lg_white, -1*LGBW, 6*LGPH,  1.5*LGBW,  -90, 0, 0)
-
-# Objects (Step 6)
 
 # 2436  White Bracket 1 x 2 - 1 x 4
 # std_brick(lg_2436 ,  lg_white,  3*LGBW, 6*LGPH,  0*LGBW,  -90, 0, 0)
