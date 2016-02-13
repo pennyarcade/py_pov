@@ -277,7 +277,7 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
             '**** 4085c White Plate 1 x 1 with Clip Vertical - Type 3 ****'
         ),
         std_brick(
-            lg_4085c.solid,
+            lg_4085c.solid(),
             LG_WHITE,
             -1 * LGBW, 6 * LGPH, 1.5 * LGBW,
             -90, 0, 0
