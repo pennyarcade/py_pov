@@ -143,22 +143,11 @@ from lgeo.include.common.custom_macros import std_brick
 
 
 # declare set_10036_1_car_nonmoving= union {
-def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
+def nonmoving(tx=0, ty=0, tz=0, rx=0, ry=0, rz=0):
     """
     docstring for lg_10036_car.
-
-    # Offset X
-    #self.ox = ox
-    # Offset Y
-    #self.oy = oy
-    # Offset Z
-    #self.oz = oz
-    # Rotation X
-    #self.rx = rx
-    # Rotation Y
-    #self.ry = ry
-    # Rotation Z
-    #self.rz = rz
+    
+    @Todo: ApiDoc.
     """
     part = Union(
         Comment("""
@@ -291,7 +280,8 @@ def nonmoving(ox=0, oy=0, oz=0, rx=0, ry=0, rz=0):
         ********************************************************************
         """),
 
-
+        Rotate(Vector(rx, ry, rz)),
+        Translate(Vector(tx, ty, tz))
     )
 
     return part

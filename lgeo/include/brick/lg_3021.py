@@ -129,7 +129,11 @@ def solid():
 #   merge (
 #    box (
 #     Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LGCS),
-#     Vector(length*LGBW-LG_WALL_WIDTH, width*LGBW-LG_WALL_WIDTH, LG_PLATE_INNER_HEIGHT)
+#     Vector(
+#         length * LGBW-LG_WALL_WIDTH, 
+#         width * LGBW-LG_WALL_WIDTH, 
+#         LG_PLATE_INNER_HEIGHT
+#     )
 #    )
 #    #declare KS_X = 0;
 #    #while (KS_X Vector( length)
@@ -137,7 +141,9 @@ def solid():
 #     #while (KS_Y Vector( width)
 #      object (
 #       lg_knob_inner_space_clear
-#       translate Vector((KS_X+0.5)*LGBW, (KS_Y+0.5)*LGBW, LG_PLATE_INNER_HEIGHT)
+#       translate Vector(
+#           (KS_X+0.5)*LGBW, (KS_Y+0.5)*LGBW, LG_PLATE_INNER_HEIGHT
+#       )
 #      )
 #      #declare KS_Y = KS_Y + 1;
 #      #end

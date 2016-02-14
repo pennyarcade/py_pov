@@ -16,7 +16,7 @@ from lgeo.include.common.brick_subparts import standard_plate
 
 
 def solid():
-    "Return standard_plate(length, width), solid."
+    """Return standard_plate(length, width), solid."""
     return standard_plate(1, 1)
 
 
@@ -110,7 +110,8 @@ def solid():
 #  }
 #  sphere {
 #   <LENGTH*LG_BRICK_WIDTH-LG_CORNER_SPACE,
-#   WIDTH*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_PLATE_HEIGHT-LG_CORNER_SPACE>, LG_CORNER_SPACE
+#   WIDTH*LG_BRICK_WIDTH-LG_CORNER_SPACE, 
+#   LG_PLATE_HEIGHT-LG_CORNER_SPACE>, LG_CORNER_SPACE
 #  }
 #  cylinder {
 #   <LENGTH*LG_BRICK_WIDTH-LG_CORNER_SPACE,

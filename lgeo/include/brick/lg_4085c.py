@@ -513,12 +513,17 @@ def solid():
 #     LGCS
 #    ),
 #    Sphere(
-#     Vector(LGBW + (LG_KNOB_INNER_RADIUS + LGCS) * sin(LG_ANGLE), 0.13 + LGCS, -LGCS),
+#     Vector(
+#         LGBW + (LG_KNOB_INNER_RADIUS + LGCS) * sin(LG_ANGLE), 
+#         0.13 + LGCS, 
+#         -LGCS
+#     ),
 #     LGCS
 #    ),
 #    Cylinder(
 #     Vector(LGBW + LG_WALL_WIDTH - LGCS, 0.13 + LGCS, -LGCS),
-#     Vector(LGBW + (LG_KNOB_INNER_RADIUS + LGCS) * sin(LG_ANGLE), 0.13 + LGCS, -LGCS),
+#     Vector(LGBW + (LG_KNOB_INNER_RADIUS + LGCS) * sin(LG_ANGLE), 
+#       0.13 + LGCS, -LGCS),
 #     LGCS
 #    ),
 #    Sphere(
@@ -540,12 +545,14 @@ def solid():
 #     LGCS
 #    ),
 #    Sphere(
-#     Vector(LGBW + (LG_KNOB_INNER_RADIUS + LGCS) * sin(LG_ANGLE), 0.13 + LGCS, -LGPH + LGCS),
+#     Vector(LGBW + (LG_KNOB_INNER_RADIUS + LGCS) * sin(LG_ANGLE), 
+#      0.13 + LGCS, -LGPH + LGCS),
 #     LGCS
 #    ),
 #    Cylinder(
 #     Vector(LGBW + LG_WALL_WIDTH - LGCS, 0.13 + LGCS, -LGPH + LGCS),
-#     Vector(LGBW + (LG_KNOB_INNER_RADIUS + LGCS) * sin(LG_ANGLE), 0.13 + LGCS, -LGPH + LGCS),
+#     Vector(LGBW + (LG_KNOB_INNER_RADIUS + LGCS) * sin(LG_ANGLE), 
+#         0.13 + LGCS, -LGPH + LGCS),
 #     LGCS
 #    ),
 #    Sphere(

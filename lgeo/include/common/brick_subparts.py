@@ -123,7 +123,12 @@ def get_brick_coloumn(length=1):
     return result
 
 
-def get_cylinder(length=1, width=1, cclass=Union, height=LG_PLATE_INNER_HEIGHT):
+def get_cylinder(
+    length=1,
+    width=1,
+    cclass=Union,
+    height=LG_PLATE_INNER_HEIGHT
+):
     """Return Plate Cylinder"""
     result = cclass()
 
@@ -139,7 +144,12 @@ def get_cylinder(length=1, width=1, cclass=Union, height=LG_PLATE_INNER_HEIGHT):
     return result
 
 
-def standard_plate(length=1, width=1, height=LGPH, innerheight=LG_PLATE_INNER_HEIGHT):
+def standard_plate(
+    length=1,
+    width=1,
+    height=LGPH,
+    innerheight=LG_PLATE_INNER_HEIGHT
+):
     """Standard plate brick"""
     return Union(
         Sphere(
