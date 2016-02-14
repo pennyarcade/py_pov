@@ -49,7 +49,7 @@ from pov.other.Object import Object
 
 LG_KNOB_RADIUS = 0.24
 LG_KNOB_HEIGHT = 0.16
-LG_KNOB_HEIGHT_LOGO = 0.16
+# LG_KNOB_HEIGHT_LOGO = 0.16
 LG_KNOB_INNER_RADIUS = 0.16
 LG_WALL_WIDTH = 0.16
 LG_BRICK_WIDTH = 0.8
@@ -62,15 +62,15 @@ LG_CYLINDER_RADIUS = (sqrt(2) * LG_BRICK_WIDTH / 2 - LG_KNOB_RADIUS)
 LG_CYLINDER_WALL_WIDTH = (LG_CYLINDER_RADIUS - LG_KNOB_RADIUS)
 LG_CORNER_SPACE = 0.016   # 0.025
 LG_KNOB_CORNER_SPACE = LG_CORNER_SPACE * 1.5
-LG_CROSSAXLE_WIDTH = 0.18
-LG_GRID_WIDTH = LG_BRICK_WIDTH / sqrt(2) - 2 * LG_KNOB_RADIUS
+# LG_CROSSAXLE_WIDTH = 0.18
+# LG_GRID_WIDTH = LG_BRICK_WIDTH / sqrt(2) - 2 * LG_KNOB_RADIUS
 LG_E = 0.01
 
 
 """
 Custom Shorthands
 """
-LDU = 0.8 / 20
+# LDU = 0.8 / 20
 LGBW = LG_BRICK_WIDTH
 LGBH = LG_BRICK_HEIGHT
 LGPH = LG_PLATE_HEIGHT
@@ -232,17 +232,17 @@ def lg_knob():
 
 
 # solid stud top for dotted baseplates
-lg_knob_dot = Intersection(
-    Object(
-        lg_knob(),
-        Translate(Vector(0, 0, 0.001))
-    ),
-    Cylinder(
-        Vector(0, 0, LG_KNOB_HEIGHT - 0.001),
-        Vector(0, 0, LG_KNOB_HEIGHT + 0.1),
-        LG_KNOB_INNER_RADIUS
-    )
-)
+# lg_knob_dot = Intersection(
+#     Object(
+#         lg_knob(),
+#         Translate(Vector(0, 0, 0.001))
+#     ),
+#     Cylinder(
+#         Vector(0, 0, LG_KNOB_HEIGHT - 0.001),
+#         Vector(0, 0, LG_KNOB_HEIGHT + 0.1),
+#         LG_KNOB_INNER_RADIUS
+#     )
+# )
 
 
 def _lg_tech_knob_function(knobclass):
@@ -335,7 +335,7 @@ def get_lg_cylinder(cylinderclass, height):
     )
 
 
-lg_brick_cylinder = get_lg_cylinder(Union, LG_BRICK_INNER_HEIGHT)
+# lg_brick_cylinder = get_lg_cylinder(Union, LG_BRICK_INNER_HEIGHT)
 lg_plate_cylinder = get_lg_cylinder(Union, LG_PLATE_INNER_HEIGHT)
 
 # brick inner cylinder to fit into hollow stud
@@ -383,7 +383,7 @@ lg_knob_inner_space = Cylinder(
 # *  LGEO Primitives Clear versions
 # """
 
-lg_knob_clear = lg_knob_function(Merge, lego_logo_text_clear)
+# lg_knob_clear = lg_knob_function(Merge, lego_logo_text_clear)
 lg_tech_knob_clear = _lg_tech_knob_function(Merge)
 
 
@@ -397,9 +397,9 @@ def lg_tech_knob_logo_clear():
     else:
         return lg_tech_knob_clear
 
-lg_brick_cylinder_clear = get_lg_cylinder(Merge, LG_BRICK_INNER_HEIGHT)
-lg_plate_cylinder_clear = get_lg_cylinder(Merge, LG_PLATE_INNER_HEIGHT)
-lg_brick_column_clear = lg_brick_column
-lg_plate_column_clear = lg_plate_column
-lg_support_wall_clear = lg_support_wall
-lg_knob_inner_space_clear = lg_knob_inner_space
+# lg_brick_cylinder_clear = get_lg_cylinder(Merge, LG_BRICK_INNER_HEIGHT)
+# lg_plate_cylinder_clear = get_lg_cylinder(Merge, LG_PLATE_INNER_HEIGHT)
+# lg_brick_column_clear = lg_brick_column
+# lg_plate_column_clear = lg_plate_column
+# lg_support_wall_clear = lg_support_wall
+# lg_knob_inner_space_clear = lg_knob_inner_space

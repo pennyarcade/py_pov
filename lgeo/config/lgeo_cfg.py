@@ -10,12 +10,12 @@ LG_QUALITY = 4
 # 3: solid studs have logo
 # 4: solid and hollow stud have logo
 
-LG_TEST = 0
+# LG_TEST = 0
 # For internal use
 # 0: correct hollow studs
 # 1: hollow studs are scaled to 1/10 in height to check for logo orientation
 
-LG_STUDS = 1
+# LG_STUDS = 1
 # compatible to L3Ps L3Studs
 # 0: no studs and bottom cylinders for preview renderings
 # 1: objects have studs.
