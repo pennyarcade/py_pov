@@ -63,6 +63,7 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # ==== Py Pov Includes ====
 from pov.csg.Union import Union
 from pov.other.Comment import Comment
+from pov.object_modifier import Rotate, Translate
 
 # ==== Standard POV-Ray Includes ====
 # include "colors.inc"     # Standard Color definitions
