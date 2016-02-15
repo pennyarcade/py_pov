@@ -3,3 +3,8 @@ omit =
     */python?.?/*
     */site-packages/nose/*
     */pyshared/*
+    
+    
+[run]
+branch = True
+
