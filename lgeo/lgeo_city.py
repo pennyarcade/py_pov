@@ -41,7 +41,7 @@ from pov.object_modifier.Translate import Translate
 
 from pov.other.Camera import Camera
 from pov.other.LightSource import LightSource
-from pov.other.Object import Object
+# from pov.other.Object import Object
 
 from pov.texture.ColorMap import ColorMap
 # from pov.texture.Normal import Normal
@@ -114,7 +114,7 @@ from pov.texture.pattern.Gradient import Gradient
 
 # ==== Object includes ====
 from lgeo.set import lg_10036_1_car
-# include "10036-1_house.pov"
+from lgeo.set import lg_10036_1_house
 # include "10036-1_main.pov"
 
 
@@ -232,24 +232,24 @@ def main():
     # Pizza to go / Car
 
     fix.append(
-        Object(
-            # @Todo: fix file below
-            lg_10036_1_car.nonmoving()
-        )
-
-        # object {set_10036_1_car_steering_wheel}
-        # object {set_10036_1_car_schutter_l}
-        # object {set_10036_1_car_schutter_r}
-        # object {set_10036_1_car_sunroof}
-        # object {set_10036_1_car_sunroof_glass}
-        # object {set_10036_1_car_wheel_fr}
-        # object {set_10036_1_car_wheel_fl}
-        # object {set_10036_1_car_wheel_rr}
-        # object {set_10036_1_car_wheel_rl}
-
-        # object {set_10036_1_house_base}
-        # object {set_10036_1_house_nonmoving}
-        # object {set_10036_1_house_oven_door}
+        lg_10036_1_car.nonmoving()
     )
+
+    # object {set_10036_1_car_steering_wheel}
+    # object {set_10036_1_car_schutter_l}
+    # object {set_10036_1_car_schutter_r}
+    # object {set_10036_1_car_sunroof}
+    # object {set_10036_1_car_sunroof_glass}
+    # object {set_10036_1_car_wheel_fr}
+    # object {set_10036_1_car_wheel_fl}
+    # object {set_10036_1_car_wheel_rr}
+    # object {set_10036_1_car_wheel_rl}
+
+    # object {set_10036_1_house_base}
+    # object {set_10036_1_house_nonmoving
+    fix.append(
+        lg_10036_1_house.set_10036_1_house_nonmoving
+    )
+    # object {set_10036_1_house_oven_door}
 
     return fix

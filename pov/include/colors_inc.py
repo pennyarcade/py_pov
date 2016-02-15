@@ -37,8 +37,8 @@ RED = Color(rgb=Vector(1, 0, 0))
 # CYAN = Color(rgb=Vector(0, 1, 1))
 # MAGENTA = Color(rgb=Vector(1, 0, 1))
 # CLEAR = Color(rgbf=Vector(1, 1, 1, 1))
-WHITE = Color(rgb=Vector(1, 1, 1))
-BLACK = Color(rgb=Vector(0, 0, 0))
+# WHITE = Color(rgb=Vector(1, 1, 1))
+# BLACK = Color(rgb=Vector(0, 0, 0))
 
 # These grays are useful for fine-tuning lighting color values
 # and for other areas where subtle variations of grays are needed.
@@ -222,101 +222,101 @@ def crgb2h(rgb, maximum, span):
     return 0
 
 
-def chsl2rgb(vector):
-    """
-    Convert a color in HSL color space to a color in RGB color space.
+# def chsl2rgb(vector):
+#     """
+#     Convert a color in HSL color space to a color in RGB color space.
 
-    Input:  < Hue, Saturation, Lightness, Filter, Transmit >
-    Output: < Red, Green, Blue, Filter, Transmit >
+#     Input:  < Hue, Saturation, Lightness, Filter, Transmit >
+#     Output: < Red, Green, Blue, Filter, Transmit >
 
-    @Todo: Param Syntax checks
-    @todo: support this?
-    """
-    incolor = Color(vector)
-    hue = (incolor.red)
-    saturation = (incolor.green)
-    lightness = (incolor.blue)
-    sat_rgb = ch2rgb(hue)
-    col = 2 * saturation * sat_rgb + (1 - saturation) * Vector(1, 1, 1)
-    if lightness < 0.5:
-        rgb = lightness * col
-    else:
-        rgb = (1 - lightness) * col + (2 * lightness - 1) * Vector(1, 1, 1)
-    return Color(
-        rgb.red, rgb.green, rgb.blue, incolor.filter, incolor.transmit
-    )
-
-
-def crgb2hsl(incolor):
-    """
-    Convert a color in RGB color space to a color in HSL color space.
-
-    Input:  < Red, Green, Blue, Filter, Transmit >
-    Output: < Hue, Saturation, Lightness, Filter, Transmit >
-
-    @Todo: Param Syntax checks
-    @todo: support this?
-    """
-    red = (incolor.red)
-    green = (incolor.green)
-    blue = (incolor.blue)
-    minimum = min(red, min(green, blue))
-    maximum = max(red, max(green, blue))
-    span = maximum - minimum
-    lightness = (minimum + maximum) / 2
-    saturation = 0
-    if lightness != 0 & lightness != 1:
-        if lightness < 0.5:
-            saturation = span / (lightness * 2)
-        else:
-            saturation = span / (2 - lightness * 2)
-    hue = crgb2h(Vector(red, green, blue), maximum, span)
-    return Vector(hue, saturation, lightness, incolor.filter, incolor.transmit)
+#     @Todo: Param Syntax checks
+#     @todo: support this?
+#     """
+#     incolor = Color(vector)
+#     hue = (incolor.red)
+#     saturation = (incolor.green)
+#     lightness = (incolor.blue)
+#     sat_rgb = ch2rgb(hue)
+#     col = 2 * saturation * sat_rgb + (1 - saturation) * Vector(1, 1, 1)
+#     if lightness < 0.5:
+#         rgb = lightness * col
+#     else:
+#         rgb = (1 - lightness) * col + (2 * lightness - 1) * Vector(1, 1, 1)
+#     return Color(
+#         rgb.red, rgb.green, rgb.blue, incolor.filter, incolor.transmit
+#     )
 
 
-def chsv2rgb(vector):
-    """
-    Convert a color in HSV color space to a color in RGB color space.
+# def crgb2hsl(incolor):
+#     """
+#     Convert a color in RGB color space to a color in HSL color space.
 
-    Input:  < Hue, Saturation, Value, Filter, Transmit >
-    Output: < Red, Green, Blue, Filter, Transmit >
-    """
-    hsvft = Color(vector)
-    hue = hsvft.red
-    saturation = hsvft.green
-    value = hsvft.blue
-    sat_rgb = ch2rgb(hue)
-    rgb = ((1 - saturation) * Color(
-        rgb=Vector(1, 1, 1)
-    ) + saturation * sat_rgb)
-    rgb *= value
-    return Color(
-        rgbft=Vector(
-            rgb.red, rgb.green, rgb.blue, hsvft.filter, hsvft.transmit
-        )
-    )
+#     Input:  < Red, Green, Blue, Filter, Transmit >
+#     Output: < Hue, Saturation, Lightness, Filter, Transmit >
+
+#     @Todo: Param Syntax checks
+#     @todo: support this?
+#     """
+#     red = (incolor.red)
+#     green = (incolor.green)
+#     blue = (incolor.blue)
+#     minimum = min(red, min(green, blue))
+#     maximum = max(red, max(green, blue))
+#     span = maximum - minimum
+#     lightness = (minimum + maximum) / 2
+#     saturation = 0
+#     if lightness != 0 & lightness != 1:
+#         if lightness < 0.5:
+#             saturation = span / (lightness * 2)
+#         else:
+#             saturation = span / (2 - lightness * 2)
+#     hue = crgb2h(Vector(red, green, blue), maximum, span)
+#     return Vector(hue, saturation, lightness, incolor.filter, incolor.transmit)
 
 
-def crgb2hsv(vector):
-    """
-    Convert a color in RGB color space to a color in HSV color space.
+# def chsv2rgb(vector):
+#     """
+#     Convert a color in HSV color space to a color in RGB color space.
 
-    Input:  < Red, Green, Blue, Filter, Transmit >
-    Output: < Hue, Saturation, Value, Filter, Transmit >
-    """
-    incolor = Color(vector)
-    red = incolor.red
-    green = incolor.green
-    blue = incolor.blue
-    minimum = min(red, min(green, blue))
-    maximum = max(red, max(green, blue))
-    span = maximum - minimum
-    hue = crgb2h(Color(rgb=Vector(red, green, blue)), maximum, span)
-    saturation = 0
-    if maximum != 0:
-        saturation = span / maximum
-    return Color(
-        rgbft=Vector(
-            hue, saturation, maximum, incolor.filter, incolor.transmit
-        )
-    )
+#     Input:  < Hue, Saturation, Value, Filter, Transmit >
+#     Output: < Red, Green, Blue, Filter, Transmit >
+#     """
+#     hsvft = Color(vector)
+#     hue = hsvft.red
+#     saturation = hsvft.green
+#     value = hsvft.blue
+#     sat_rgb = ch2rgb(hue)
+#     rgb = ((1 - saturation) * Color(
+#         rgb=Vector(1, 1, 1)
+#     ) + saturation * sat_rgb)
+#     rgb *= value
+#     return Color(
+#         rgbft=Vector(
+#             rgb.red, rgb.green, rgb.blue, hsvft.filter, hsvft.transmit
+#         )
+#     )
+
+
+# def crgb2hsv(vector):
+#     """
+#     Convert a color in RGB color space to a color in HSV color space.
+
+#     Input:  < Red, Green, Blue, Filter, Transmit >
+#     Output: < Hue, Saturation, Value, Filter, Transmit >
+#     """
+#     incolor = Color(vector)
+#     red = incolor.red
+#     green = incolor.green
+#     blue = incolor.blue
+#     minimum = min(red, min(green, blue))
+#     maximum = max(red, max(green, blue))
+#     span = maximum - minimum
+#     hue = crgb2h(Color(rgb=Vector(red, green, blue)), maximum, span)
+#     saturation = 0
+#     if maximum != 0:
+#         saturation = span / maximum
+#     return Color(
+#         rgbft=Vector(
+#             hue, saturation, maximum, incolor.filter, incolor.transmit
+#         )
+#     )

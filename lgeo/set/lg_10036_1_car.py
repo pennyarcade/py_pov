@@ -61,9 +61,11 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # Includes
 # ---
 # ==== Py Pov Includes ====
+from pov.basic.Vector import Vector
 from pov.csg.Union import Union
 from pov.other.Comment import Comment
-from pov.object_modifier import Rotate, Translate
+from pov.object_modifier.Rotate import Rotate
+from pov.object_modifier.Translate import Translate
 
 # ==== Standard POV-Ray Includes ====
 # include "colors.inc"     # Standard Color definitions
@@ -144,10 +146,13 @@ from lgeo.include.common.custom_macros import std_brick
 
 
 # declare set_10036_1_car_nonmoving= union {
-def nonmoving(tx=0, ty=0, tz=0, rx=0, ry=0, rz=0):
+def nonmoving(
+        tvector=Vector(0, 0, 0),
+        rvector=Vector(0, 0, 0)
+):
     """
     docstring for lg_10036_car.
-    
+
     @Todo: ApiDoc.
     """
     part = Union(
@@ -281,8 +286,8 @@ def nonmoving(tx=0, ty=0, tz=0, rx=0, ry=0, rz=0):
         ********************************************************************
         """),
 
-        Rotate(Vector(rx, ry, rz)),
-        Translate(Vector(tx, ty, tz))
+        Rotate(rvector),
+        Translate(tvector)
     )
 
     return part
