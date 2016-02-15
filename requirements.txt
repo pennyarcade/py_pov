@@ -3,6 +3,7 @@ nose
 httmock
 coverage
 epydoc
+coveralls
 
 # Program requirements
 

@@ -4,15 +4,15 @@ test-warnings: true
 doc-warnings: true
 
 ignore-paths:
-  - lib
   - .git
   - coverage
   - docs
+  - lib
   - metrics
   - old
 
-ignore-patterns:
-  - (^|/)skip(this)?(/|$)
+# ignore-patterns:
+#   - (^|/)skip(this)?(/|$)
 
 pep8:
   run: true
@@ -47,8 +47,8 @@ dodgy:
 pyflakes:
   run: true
 
-frosted:
-  run: true
+#frosted:
+#  run: true
 
 vulture:
   run: true
