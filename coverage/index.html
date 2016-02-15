@@ -22,7 +22,7 @@
 <div id="header">
     <div class="content">
         <h1>Coverage report:
-            <span class="pc_cov">89%</span>
+            <span class="pc_cov">50%</span>
         </h1>
 
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
@@ -43,6 +43,9 @@
         <span class="key">m</span>
         <span class="key">x</span>
         
+        <span class="key">b</span>
+        <span class="key">p</span>
+        
         <span class="key">c</span> &nbsp; change column sorting
     </p>
     </div>
@@ -58,6 +61,9 @@
                 <th class="shortkey_m">missing</th>
                 <th class="shortkey_x">excluded</th>
                 
+                <th class="shortkey_b">branches</th>
+                <th class="shortkey_p">partial</th>
+                
                 <th class="right shortkey_c">coverage</th>
             </tr>
         </thead>
@@ -65,11 +71,14 @@
         <tfoot>
             <tr class="total">
                 <td class="name left">Total</td>
-                <td>2629</td>
-                <td>278</td>
+                <td>2395</td>
+                <td>1114</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="2351 2629">89%</td>
+                <td>326</td>
+                <td>57</td>
+                
+                <td class="right" data-ratio="1370 2721">50%</td>
             </tr>
         </tfoot>
         <tbody>
@@ -77,6 +86,9 @@
             <tr class="file">
                 <td class="name left"><a href="lgeo_py.html">lgeo.py</a></td>
                 <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -89,21 +101,30 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="0 0">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="lgeo_config_lgeo_cfg_py.html">lgeo/config/lgeo_cfg.py</a></td>
-                <td>4</td>
+                <td>2</td>
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="4 4">100%</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="2 2">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="lgeo_include_py.html">lgeo/include.py</a></td>
                 <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -116,6 +137,9 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="0 0">100%</td>
             </tr>
             
@@ -125,25 +149,34 @@
                 <td>1</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="13 14">93%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="lgeo_include_brick_lg_2441_py.html">lgeo/include/brick/lg_2441.py</a></td>
-                <td>39</td>
-                <td>18</td>
+                <td>40</td>
+                <td>19</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="21 39">54%</td>
+                <td>8</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="21 48">44%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="lgeo_include_brick_lg_3003_py.html">lgeo/include/brick/lg_3003.py</a></td>
-                <td>12</td>
+                <td>4</td>
                 <td>1</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="11 12">92%</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="3 4">75%</td>
             </tr>
             
             <tr class="file">
@@ -152,16 +185,46 @@
                 <td>1</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="14 15">93%</td>
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="lgeo_include_brick_lg_3022_py.html">lgeo/include/brick/lg_3022.py</a></td>
-                <td>15</td>
+                <td class="name left"><a href="lgeo_include_brick_lg_3021_py.html">lgeo/include/brick/lg_3021.py</a></td>
+                <td>3</td>
                 <td>1</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="14 15">93%</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="2 3">67%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="lgeo_include_brick_lg_3022_py.html">lgeo/include/brick/lg_3022.py</a></td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="2 3">67%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="lgeo_include_brick_lg_3024_py.html">lgeo/include/brick/lg_3024.py</a></td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="2 3">67%</td>
             </tr>
             
             <tr class="file">
@@ -170,7 +233,22 @@
                 <td>8</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="17 25">68%</td>
+                <td>4</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="17 29">59%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="lgeo_include_brick_lg_4085c_py.html">lgeo/include/brick/lg_4085c.py</a></td>
+                <td>28</td>
+                <td>8</td>
+                <td>0</td>
+                
+                <td>4</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="20 32">63%</td>
             </tr>
             
             <tr class="file">
@@ -179,16 +257,22 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="0 0">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="lgeo_include_common_brick_subparts_py.html">lgeo/include/common/brick_subparts.py</a></td>
-                <td>38</td>
-                <td>24</td>
+                <td>42</td>
+                <td>22</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="14 38">37%</td>
+                <td>14</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="20 56">36%</td>
             </tr>
             
             <tr class="file">
@@ -197,31 +281,43 @@
                 <td>2</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="7 9">78%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="lgeo_include_common_lg_color_py.html">lgeo/include/common/lg_color.py</a></td>
-                <td>102</td>
-                <td>5</td>
+                <td>28</td>
+                <td>7</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="97 102">95%</td>
+                <td>10</td>
+                <td>4</td>
+                
+                <td class="right" data-ratio="25 38">66%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="lgeo_include_common_lg_defs_py.html">lgeo/include/common/lg_defs.py</a></td>
-                <td>87</td>
-                <td>17</td>
+                <td>79</td>
+                <td>11</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="70 87">80%</td>
+                <td>10</td>
+                <td>3</td>
+                
+                <td class="right" data-ratio="71 89">80%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="lgeo_lgeo_city_py.html">lgeo/lgeo_city.py</a></td>
                 <td>27</td>
                 <td>11</td>
+                <td>0</td>
+                
+                <td>0</td>
                 <td>0</td>
                 
                 <td class="right" data-ratio="16 27">59%</td>
@@ -233,21 +329,30 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="0 0">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="lgeo_set_lg_10036_1_car_py.html">lgeo/set/lg_10036_1_car.py</a></td>
-                <td>15</td>
+                <td>19</td>
                 <td>2</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="13 15">87%</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="17 19">89%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="lgeo_set_lg_10036_1_house_py.html">lgeo/set/lg_10036_1_house.py</a></td>
                 <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -260,12 +365,18 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="0 0">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="lgeo_tests_py.html">lgeo/tests.py</a></td>
                 <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -278,30 +389,42 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="1 1">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_atmeff_Fog_py.html">pov/atmeff/Fog.py</a></td>
                 <td>15</td>
+                <td>8</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="15 15">100%</td>
+                <td class="right" data-ratio="7 15">47%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_atmeff_SkySphere_py.html">pov/atmeff/SkySphere.py</a></td>
                 <td>14</td>
+                <td>7</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="14 14">100%</td>
+                <td class="right" data-ratio="7 14">50%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_atmeff_py.html">pov/atmeff.py</a></td>
                 <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -311,24 +434,33 @@
             <tr class="file">
                 <td class="name left"><a href="pov_basic_BlockObject_py.html">pov/basic/BlockObject.py</a></td>
                 <td>30</td>
-                <td>0</td>
+                <td>5</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="30 30">100%</td>
+                <td>10</td>
+                <td>3</td>
+                
+                <td class="right" data-ratio="30 40">75%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_basic_Color_py.html">pov/basic/Color.py</a></td>
                 <td>52</td>
-                <td>2</td>
+                <td>25</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="50 52">96%</td>
+                <td>24</td>
+                <td>4</td>
+                
+                <td class="right" data-ratio="31 76">41%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_basic_PoVObject_py.html">pov/basic/PoVObject.py</a></td>
                 <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -338,33 +470,45 @@
             <tr class="file">
                 <td class="name left"><a href="pov_basic_SceneFile_py.html">pov/basic/SceneFile.py</a></td>
                 <td>25</td>
-                <td>0</td>
+                <td>15</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="25 25">100%</td>
+                <td>14</td>
+                <td>2</td>
+                
+                <td class="right" data-ratio="12 39">31%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_basic_SceneItem_py.html">pov/basic/SceneItem.py</a></td>
                 <td>183</td>
-                <td>9</td>
+                <td>66</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="174 183">95%</td>
+                <td>78</td>
+                <td>14</td>
+                
+                <td class="right" data-ratio="155 261">59%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_basic_Vector_py.html">pov/basic/Vector.py</a></td>
                 <td>66</td>
-                <td>0</td>
+                <td>31</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="66 66">100%</td>
+                <td>20</td>
+                <td>2</td>
+                
+                <td class="right" data-ratio="39 86">45%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_basic_py.html">pov/basic.py</a></td>
                 <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -377,6 +521,9 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="3 3">100%</td>
             </tr>
             
@@ -386,12 +533,6 @@
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="5 5">100%</td>
-            </tr>
-            
-            <tr class="file">
-                <td class="name left"><a href="pov_csg_Intersection_py.html">pov/csg/Intersection.py</a></td>
-                <td>5</td>
                 <td>0</td>
                 <td>0</td>
                 
@@ -399,8 +540,23 @@
             </tr>
             
             <tr class="file">
+                <td class="name left"><a href="pov_csg_Intersection_py.html">pov/csg/Intersection.py</a></td>
+                <td>5</td>
+                <td>1</td>
+                <td>0</td>
+                
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="4 5">80%</td>
+            </tr>
+            
+            <tr class="file">
                 <td class="name left"><a href="pov_csg_Merge_py.html">pov/csg/Merge.py</a></td>
                 <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -413,12 +569,18 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="5 5">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_csg_py.html">pov/csg.py</a></td>
                 <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -431,6 +593,9 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="3 3">100%</td>
             </tr>
             
@@ -440,75 +605,102 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="1 1">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_finite_solid_Blob_py.html">pov/finite_solid/Blob.py</a></td>
                 <td>14</td>
+                <td>7</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="14 14">100%</td>
+                <td class="right" data-ratio="7 14">50%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_finite_solid_Box_py.html">pov/finite_solid/Box.py</a></td>
                 <td>19</td>
-                <td>0</td>
+                <td>6</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="19 19">100%</td>
+                <td>12</td>
+                <td>5</td>
+                
+                <td class="right" data-ratio="18 31">58%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_finite_solid_Cone_py.html">pov/finite_solid/Cone.py</a></td>
                 <td>30</td>
-                <td>0</td>
+                <td>22</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="30 30">100%</td>
+                <td>22</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="8 52">15%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_finite_solid_Cylinder_py.html">pov/finite_solid/Cylinder.py</a></td>
                 <td>26</td>
-                <td>0</td>
+                <td>11</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="26 26">100%</td>
+                <td>20</td>
+                <td>7</td>
+                
+                <td class="right" data-ratio="22 46">48%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_finite_solid_HeightField_py.html">pov/finite_solid/HeightField.py</a></td>
                 <td>22</td>
-                <td>0</td>
+                <td>13</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="22 22">100%</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="9 24">38%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_finite_solid_JuliaFractal_py.html">pov/finite_solid/JuliaFractal.py</a></td>
                 <td>17</td>
-                <td>0</td>
+                <td>9</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="17 17">100%</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="8 19">42%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_finite_solid_Lathe_py.html">pov/finite_solid/Lathe.py</a></td>
                 <td>25</td>
-                <td>3</td>
+                <td>16</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="22 25">88%</td>
+                <td>8</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="9 33">27%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_finite_solid_Prism_py.html">pov/finite_solid/Prism.py</a></td>
                 <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -521,21 +713,30 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="3 3">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_finite_solid_Sphere_py.html">pov/finite_solid/Sphere.py</a></td>
                 <td>17</td>
-                <td>0</td>
+                <td>1</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="17 17">100%</td>
+                <td>2</td>
+                <td>1</td>
+                
+                <td class="right" data-ratio="17 19">89%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_finite_solid_SphereSweep_py.html">pov/finite_solid/SphereSweep.py</a></td>
                 <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -548,12 +749,18 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="3 3">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_finite_solid_Text_py.html">pov/finite_solid/Text.py</a></td>
                 <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -566,6 +773,9 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="5 5">100%</td>
             </tr>
             
@@ -575,22 +785,31 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="1 1">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_global_settings_GlobalSettings_py.html">pov/global_settings/GlobalSettings.py</a></td>
                 <td>13</td>
+                <td>7</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="13 13">100%</td>
+                <td class="right" data-ratio="6 13">46%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_global_settings_Photons_py.html">pov/global_settings/Photons.py</a></td>
                 <td>12</td>
                 <td>6</td>
+                <td>0</td>
+                
+                <td>0</td>
                 <td>0</td>
                 
                 <td class="right" data-ratio="6 12">50%</td>
@@ -602,12 +821,18 @@
                 <td>10</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="7 17">41%</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="7 19">37%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_global_settings_py.html">pov/global_settings.py</a></td>
                 <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -620,6 +845,9 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="1 1">100%</td>
             </tr>
             
@@ -629,30 +857,42 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="0 0">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_include_colors_inc_py.html">pov/include/colors_inc.py</a></td>
-                <td>218</td>
+                <td>91</td>
                 <td>75</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="143 218">66%</td>
+                <td>24</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="16 115">14%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_infinite_solid_Plane_py.html">pov/infinite_solid/Plane.py</a></td>
                 <td>20</td>
-                <td>0</td>
+                <td>3</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="20 20">100%</td>
+                <td>4</td>
+                <td>2</td>
+                
+                <td class="right" data-ratio="19 24">79%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_infinite_solid_py.html">pov/infinite_solid.py</a></td>
                 <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -662,42 +902,57 @@
             <tr class="file">
                 <td class="name left"><a href="pov_language_directive_Default_py.html">pov/language_directive/Default.py</a></td>
                 <td>17</td>
+                <td>8</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="17 17">100%</td>
+                <td class="right" data-ratio="9 17">53%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_language_directive_Include_py.html">pov/language_directive/Include.py</a></td>
                 <td>16</td>
-                <td>0</td>
+                <td>8</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="16 16">100%</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="8 18">44%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_language_directive_LanguageDirective_py.html">pov/language_directive/LanguageDirective.py</a></td>
                 <td>17</td>
-                <td>0</td>
+                <td>6</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="17 17">100%</td>
+                <td>6</td>
+                <td>3</td>
+                
+                <td class="right" data-ratio="14 23">61%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_language_directive_Version_py.html">pov/language_directive/Version.py</a></td>
                 <td>13</td>
+                <td>3</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="13 13">100%</td>
+                <td class="right" data-ratio="10 13">77%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_language_directive_py.html">pov/language_directive.py</a></td>
                 <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -710,16 +965,22 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="6 6">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_object_modifier_Interior_py.html">pov/object_modifier/Interior.py</a></td>
                 <td>5</td>
+                <td>1</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="5 5">100%</td>
+                <td class="right" data-ratio="4 5">80%</td>
             </tr>
             
             <tr class="file">
@@ -728,12 +989,18 @@
                 <td>9</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="8 17">47%</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="8 19">42%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_object_modifier_ObjectModifier_py.html">pov/object_modifier/ObjectModifier.py</a></td>
                 <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -746,7 +1013,10 @@
                 <td>5</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="12 17">71%</td>
+                <td>2</td>
+                <td>1</td>
+                
+                <td class="right" data-ratio="13 19">68%</td>
             </tr>
             
             <tr class="file">
@@ -755,13 +1025,19 @@
                 <td>5</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="12 17">71%</td>
+                <td>2</td>
+                <td>1</td>
+                
+                <td class="right" data-ratio="13 19">68%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_object_modifier_Transformation_py.html">pov/object_modifier/Transformation.py</a></td>
                 <td>5</td>
                 <td>1</td>
+                <td>0</td>
+                
+                <td>0</td>
                 <td>0</td>
                 
                 <td class="right" data-ratio="4 5">80%</td>
@@ -773,12 +1049,18 @@
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="17 17">100%</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="19 19">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_object_modifier_py.html">pov/object_modifier.py</a></td>
                 <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -791,6 +1073,9 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="14 14">100%</td>
             </tr>
             
@@ -800,21 +1085,30 @@
                 <td>3</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="7 10">70%</td>
-            </tr>
-            
-            <tr class="file">
-                <td class="name left"><a href="pov_other_EmptyObject_py.html">pov/other/EmptyObject.py</a></td>
-                <td>10</td>
-                <td>3</td>
+                <td>0</td>
                 <td>0</td>
                 
                 <td class="right" data-ratio="7 10">70%</td>
             </tr>
             
             <tr class="file">
+                <td class="name left"><a href="pov_other_EmptyObject_py.html">pov/other/EmptyObject.py</a></td>
+                <td>9</td>
+                <td>3</td>
+                <td>0</td>
+                
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="6 9">67%</td>
+            </tr>
+            
+            <tr class="file">
                 <td class="name left"><a href="pov_other_IllegalStateException_py.html">pov/other/IllegalStateException.py</a></td>
                 <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -827,6 +1121,9 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="3 3">100%</td>
             </tr>
             
@@ -836,12 +1133,6 @@
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="5 5">100%</td>
-            </tr>
-            
-            <tr class="file">
-                <td class="name left"><a href="pov_other_Object_py.html">pov/other/Object.py</a></td>
-                <td>5</td>
                 <td>0</td>
                 <td>0</td>
                 
@@ -849,8 +1140,23 @@
             </tr>
             
             <tr class="file">
+                <td class="name left"><a href="pov_other_Object_py.html">pov/other/Object.py</a></td>
+                <td>5</td>
+                <td>1</td>
+                <td>0</td>
+                
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="4 5">80%</td>
+            </tr>
+            
+            <tr class="file">
                 <td class="name left"><a href="pov_other_ParametricObj_py.html">pov/other/ParametricObj.py</a></td>
                 <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -863,6 +1169,9 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="2 2">100%</td>
             </tr>
             
@@ -872,30 +1181,42 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="1 1">100%</td>
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_AthEff_Test_py.html">pov/tests/AthEff_Test.py</a></td>
+                <td class="name left"><a href="pov_tests_AthEffTest_py.html">pov/tests/AthEffTest.py</a></td>
                 <td>17</td>
+                <td>4</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="17 17">100%</td>
+                <td class="right" data-ratio="13 17">76%</td>
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_Basic_Test_py.html">pov/tests/Basic_Test.py</a></td>
-                <td>243</td>
-                <td>1</td>
+                <td class="name left"><a href="pov_tests_BasicTest_py.html">pov/tests/BasicTest.py</a></td>
+                <td>244</td>
+                <td>166</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="242 243">99%</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="78 246">32%</td>
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_Csg_Test_py.html">pov/tests/Csg_Test.py</a></td>
+                <td class="name left"><a href="pov_tests_CsgTest_py.html">pov/tests/CsgTest.py</a></td>
                 <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -903,17 +1224,23 @@
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_EndToEnd_Test_py.html">pov/tests/EndToEnd_Test.py</a></td>
-                <td>268</td>
+                <td class="name left"><a href="pov_tests_EndToEndTest_py.html">pov/tests/EndToEndTest.py</a></td>
+                <td>267</td>
+                <td>236</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="268 268">100%</td>
+                <td class="right" data-ratio="31 267">12%</td>
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_FinitePatch_Test_py.html">pov/tests/FinitePatch_Test.py</a></td>
+                <td class="name left"><a href="pov_tests_FinitePatchTest_py.html">pov/tests/FinitePatchTest.py</a></td>
                 <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -921,53 +1248,71 @@
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_FiniteSolid_Test_py.html">pov/tests/FiniteSolid_Test.py</a></td>
-                <td>234</td>
-                <td>0</td>
+                <td class="name left"><a href="pov_tests_FiniteSolidTest_py.html">pov/tests/FiniteSolidTest.py</a></td>
+                <td>235</td>
+                <td>148</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="234 234">100%</td>
+                <td>2</td>
+                <td>1</td>
+                
+                <td class="right" data-ratio="88 237">37%</td>
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_GlobalSettings_Test_py.html">pov/tests/GlobalSettings_Test.py</a></td>
+                <td class="name left"><a href="pov_tests_GlobalSettingsTest_py.html">pov/tests/GlobalSettingsTest.py</a></td>
                 <td>14</td>
+                <td>5</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="14 14">100%</td>
+                <td class="right" data-ratio="9 14">64%</td>
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_Include_Test_py.html">pov/tests/Include_Test.py</a></td>
+                <td class="name left"><a href="pov_tests_IncludeTest_py.html">pov/tests/IncludeTest.py</a></td>
                 <td>9</td>
+                <td>1</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="9 9">100%</td>
+                <td class="right" data-ratio="8 9">89%</td>
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_InfiniteSolid_Test_py.html">pov/tests/InfiniteSolid_Test.py</a></td>
+                <td class="name left"><a href="pov_tests_InfiniteSolidTest_py.html">pov/tests/InfiniteSolidTest.py</a></td>
                 <td>14</td>
+                <td>5</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="14 14">100%</td>
+                <td class="right" data-ratio="9 14">64%</td>
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_LanguageDirective_Test_py.html">pov/tests/LanguageDirective_Test.py</a></td>
+                <td class="name left"><a href="pov_tests_LanguageDirectiveTest_py.html">pov/tests/LanguageDirectiveTest.py</a></td>
                 <td>63</td>
+                <td>34</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="63 63">100%</td>
+                <td class="right" data-ratio="29 63">46%</td>
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_ObjectModifier_Test_py.html">pov/tests/ObjectModifier_Test.py</a></td>
+                <td class="name left"><a href="pov_tests_ObjectModifierTest_py.html">pov/tests/ObjectModifierTest.py</a></td>
                 <td>22</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -975,8 +1320,11 @@
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_Other_Test_py.html">pov/tests/Other_Test.py</a></td>
+                <td class="name left"><a href="pov_tests_OtherTest_py.html">pov/tests/OtherTest.py</a></td>
                 <td>17</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -984,21 +1332,27 @@
             </tr>
             
             <tr class="file">
-                <td class="name left"><a href="pov_tests_Texture_Test_py.html">pov/tests/Texture_Test.py</a></td>
-                <td>69</td>
+                <td class="name left"><a href="pov_tests_TextureTest_py.html">pov/tests/TextureTest.py</a></td>
+                <td>68</td>
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="69 69">100%</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="68 68">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_tests_py.html">pov/tests.py</a></td>
-                <td>13</td>
+                <td>18</td>
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="13 13">100%</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="18 18">100%</td>
             </tr>
             
             <tr class="file">
@@ -1007,40 +1361,55 @@
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="16 16">100%</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="18 18">100%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_texture_Filter_py.html">pov/texture/Filter.py</a></td>
                 <td>11</td>
+                <td>5</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="11 11">100%</td>
+                <td class="right" data-ratio="6 11">55%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_texture_Finish_py.html">pov/texture/Finish.py</a></td>
                 <td>8</td>
-                <td>0</td>
+                <td>2</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="8 8">100%</td>
+                <td>2</td>
+                <td>1</td>
+                
+                <td class="right" data-ratio="7 10">70%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_texture_ImageMap_py.html">pov/texture/ImageMap.py</a></td>
                 <td>6</td>
+                <td>2</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="6 6">100%</td>
+                <td class="right" data-ratio="4 6">67%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_texture_Irid_py.html">pov/texture/Irid.py</a></td>
                 <td>5</td>
                 <td>1</td>
+                <td>0</td>
+                
+                <td>0</td>
                 <td>0</td>
                 
                 <td class="right" data-ratio="4 5">80%</td>
@@ -1052,30 +1421,42 @@
                 <td>0</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="8 8">100%</td>
+                <td>2</td>
+                <td>1</td>
+                
+                <td class="right" data-ratio="9 10">90%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_texture_Pigment_py.html">pov/texture/Pigment.py</a></td>
                 <td>11</td>
-                <td>0</td>
+                <td>4</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="11 11">100%</td>
+                <td>4</td>
+                <td>2</td>
+                
+                <td class="right" data-ratio="9 15">60%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_texture_Reflection_py.html">pov/texture/Reflection.py</a></td>
                 <td>8</td>
-                <td>0</td>
+                <td>4</td>
                 <td>0</td>
                 
-                <td class="right" data-ratio="8 8">100%</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="4 10">40%</td>
             </tr>
             
             <tr class="file">
                 <td class="name left"><a href="pov_texture_Texture_py.html">pov/texture/Texture.py</a></td>
                 <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                
                 <td>0</td>
                 <td>0</td>
                 
@@ -1088,6 +1469,9 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="1 1">100%</td>
             </tr>
             
@@ -1095,6 +1479,9 @@
                 <td class="name left"><a href="pov_texture_pattern_Gradient_py.html">pov/texture/pattern/Gradient.py</a></td>
                 <td>10</td>
                 <td>4</td>
+                <td>0</td>
+                
+                <td>0</td>
                 <td>0</td>
                 
                 <td class="right" data-ratio="6 10">60%</td>
@@ -1106,34 +1493,10 @@
                 <td>0</td>
                 <td>0</td>
                 
+                <td>0</td>
+                <td>0</td>
+                
                 <td class="right" data-ratio="0 0">100%</td>
-            </tr>
-            
-            <tr class="file">
-                <td class="name left"><a href="encodings_latin_1_py.html">encodings/latin_1.py</a></td>
-                <td>19</td>
-                <td>19</td>
-                <td>0</td>
-                
-                <td class="right" data-ratio="0 19">0%</td>
-            </tr>
-            
-            <tr class="file">
-                <td class="name left"><a href="encodings_unicode_escape_py.html">encodings/unicode_escape.py</a></td>
-                <td>16</td>
-                <td>16</td>
-                <td>0</td>
-                
-                <td class="right" data-ratio="0 16">0%</td>
-            </tr>
-            
-            <tr class="file">
-                <td class="name left"><a href="encodings_utf_32_be_py.html">encodings/utf_32_be.py</a></td>
-                <td>15</td>
-                <td>15</td>
-                <td>0</td>
-                
-                <td class="right" data-ratio="0 15">0%</td>
             </tr>
             
         </tbody>
@@ -1148,7 +1511,7 @@
     <div class="content">
         <p>
             <a class="nav" href="https://coverage.readthedocs.org">coverage.py v4.0.3</a>,
-            created at 2016-02-09 11:36
+            created at 2016-02-15 16:03
         </p>
     </div>
 </div>
