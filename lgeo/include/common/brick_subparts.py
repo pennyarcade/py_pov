@@ -37,8 +37,8 @@ from pov.other.Object import Object
 from lgeo.include.common.lg_defs import LG_WALL_WIDTH, LGBW, LGPH
 from lgeo.include.common.lg_defs import LG_PLATE_INNER_HEIGHT, LGCS
 from lgeo.include.common.lg_defs import LG_BRICK_INNER_HEIGHT
-from lgeo.include.common.lg_defs import lg_knob_inner_space, lg_knob
-from lgeo.include.common.lg_defs import LGBH, lg_brick_column
+from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE, lg_knob
+from lgeo.include.common.lg_defs import LGBH, LG_BRICK_COLUMN
 from lgeo.include.common.lg_defs import get_lg_cylinder
 
 # **************************************************************************
@@ -63,7 +63,7 @@ def get_knob_inner_space(length=1, width=1, height=LG_BRICK_INNER_HEIGHT):
         for ks_y in range(0, width):
             result.append(
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             (ks_x + 0.5) * LGBW,
@@ -108,7 +108,7 @@ def get_brick_coloumn(length=1):
     while col_x < length:
         result.append(
             Object(
-                lg_brick_column,
+                LG_BRICK_COLUMN,
                 Translate(
                     Vector(
                         col_x * LGBW,
@@ -124,12 +124,12 @@ def get_brick_coloumn(length=1):
 
 
 def get_cylinder(
-    length=1,
-    width=1,
-    cclass=Union,
-    height=LG_PLATE_INNER_HEIGHT
+        length=1,
+        width=1,
+        cclass=Union,
+        height=LG_PLATE_INNER_HEIGHT
 ):
-    """Return Plate Cylinder"""
+    """Return Plate Cylinder."""
     result = cclass()
 
     for cyl_x in range(1, length):
@@ -145,12 +145,12 @@ def get_cylinder(
 
 
 def standard_plate(
-    length=1,
-    width=1,
-    height=LGPH,
-    innerheight=LG_PLATE_INNER_HEIGHT
+        length=1,
+        width=1,
+        height=LGPH,
+        innerheight=LG_PLATE_INNER_HEIGHT
 ):
-    """Standard plate brick"""
+    """Standard plate brick."""
     return Union(
         Sphere(
             Vector(LGCS, LGCS, LGCS),

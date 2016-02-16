@@ -23,7 +23,7 @@ from lgeo.config.lgeo_cfg import LG_STUD_LOGO
 from lgeo.config.lgeo_cfg import LG_QUALITY
 
 from pov.csg.Difference import Difference
-from pov.csg.Intersection import Intersection
+# from pov.csg.Intersection import Intersection
 from pov.csg.Merge import Merge
 from pov.csg.Union import Union
 
@@ -77,13 +77,12 @@ LGPH = LG_PLATE_HEIGHT
 LGCS = LG_CORNER_SPACE
 
 
-"""
-*  Stud Logo
-*
-*  Declare lg_quality < 3 if you do not want the LGEO logo on the studs.
-*  Remove the translate statements to rearrange letters of logo...
-*
-"""
+# Stud Logo
+#
+# Declare lg_quality < 3 if you do not want the LGEO logo on the studs.
+# Remove the translate statements to rearrange letters of logo...
+
+
 def _letter_e(lclass):
     """@Todo: ApiDoc."""
     result = lclass(
@@ -182,8 +181,8 @@ def _lego_logo_text_function(lclass):
         return Object()
 
 
-lego_logo_text = _lego_logo_text_function(Union)
-lego_logo_text_clear = _lego_logo_text_function(Merge)
+LEGO_LOGO_TEXT = _lego_logo_text_function(Union)
+# LEGO_LOGO_TEXT_CLEAR = _lego_logo_text_function(Merge)
 
 
 # ***
@@ -228,7 +227,7 @@ def lg_knob_function(knobclass, textfunction):
 # solid stud
 def lg_knob():
     """@Todo: ApiDoc."""
-    return lg_knob_function(Union, lego_logo_text)
+    return lg_knob_function(Union, LEGO_LOGO_TEXT)
 
 
 # solid stud top for dotted baseplates
@@ -290,20 +289,20 @@ def _lg_tech_knob_function(knobclass):
 
 
 # hollow stud
-lg_tech_knob = _lg_tech_knob_function(Union)
+# LG_TECH_KNOB = _lg_tech_knob_function(Union)
 
 # hollow stud with logo
 # def lg_tech_knob_logo():
 #     #if (lg_quality > 3)
 #         Union(
 #     #end
-#     Object( lg_tech_knob
+#     Object( LG_TECH_KNOB
 #         #if (lg_test ) 0)
 #             Scale(Vector(1, 1, .1)
 #         #end
 #     ),
 #     #if (lg_quality > 3)
-#         Object( lego_logo_text Scale(Vector(3/4, 3/4, 3/4) ),
+#         Object( LEGO_LOGO_TEXT Scale(Vector(3/4, 3/4, 3/4) ),
 #     #end
 #     #if (lg_quality > 3)
 #         ),
@@ -336,10 +335,10 @@ def get_lg_cylinder(cylinderclass, height):
 
 
 # lg_brick_cylinder = get_lg_cylinder(Union, LG_BRICK_INNER_HEIGHT)
-lg_plate_cylinder = get_lg_cylinder(Union, LG_PLATE_INNER_HEIGHT)
+LG_PLATE_CYLINDER = get_lg_cylinder(Union, LG_PLATE_INNER_HEIGHT)
 
 # brick inner cylinder to fit into hollow stud
-lg_brick_column = Cylinder(
+LG_BRICK_COLUMN = Cylinder(
     Vector(0, 0, LG_BRICK_INNER_HEIGHT + LG_E),
     Vector(0, 0, 0),
     (LG_KNOB_INNER_RADIUS)
@@ -347,33 +346,33 @@ lg_brick_column = Cylinder(
 
 
 # plate inner cylinder to fit into hollow stud
-lg_plate_column = Difference(
-    Cylinder(
-        Vector(0, 0, LG_PLATE_INNER_HEIGHT + LG_E),
-        Vector(0, 0, 0),
-        (LG_KNOB_INNER_RADIUS)
-    ),
-    Cylinder(
-        Vector(0, 0, 1),
-        Vector(0, 0, -1),
-        (0.06)
-    )
-)
+# LG_PLATE_COLUMN = Difference(
+#     Cylinder(
+#         Vector(0, 0, LG_PLATE_INNER_HEIGHT + LG_E),
+#         Vector(0, 0, 0),
+#         (LG_KNOB_INNER_RADIUS)
+#     ),
+#     Cylinder(
+#         Vector(0, 0, 1),
+#         Vector(0, 0, -1),
+#         (0.06)
+#     )
+# )
 
 
 # wall between brick cylinder and brick wall
-lg_support_wall = Box(
-    Vector(-LG_CYLINDER_WALL_WIDTH / 2, -LG_E, 0.225),
-    Vector(
-        LG_CYLINDER_WALL_WIDTH / 2,
-        LG_BRICK_WIDTH - LG_CYLINDER_RADIUS - LG_WALL_WIDTH + LG_E,
-        LG_BRICK_HEIGHT
-    )
-)
+# LG_SUPPORT_WALL = Box(
+#     Vector(-LG_CYLINDER_WALL_WIDTH / 2, -LG_E, 0.225),
+#     Vector(
+#         LG_CYLINDER_WALL_WIDTH / 2,
+#         LG_BRICK_WIDTH - LG_CYLINDER_RADIUS - LG_WALL_WIDTH + LG_E,
+#         LG_BRICK_HEIGHT
+#     )
+# )
 
 
 # cutout for solid stud
-lg_knob_inner_space = Cylinder(
+LG_KNOB_INNER_SPACE = Cylinder(
     Vector(0, 0, -LG_CORNER_SPACE),
     Vector(0, 0, 0.15),
     (0.125)
@@ -383,23 +382,23 @@ lg_knob_inner_space = Cylinder(
 # *  LGEO Primitives Clear versions
 # """
 
-# lg_knob_clear = lg_knob_function(Merge, lego_logo_text_clear)
-lg_tech_knob_clear = _lg_tech_knob_function(Merge)
+# lg_knob_clear = lg_knob_function(Merge, LEGO_LOGO_TEXT_CLEAR)
+LG_TECH_KNOB_CLEAR = _lg_tech_knob_function(Merge)
 
 
-def lg_tech_knob_logo_clear():
-    """@Todo: ApiDoc."""
-    if LG_QUALITY > 3:
-        return Union(
-            lg_tech_knob_clear,
-            Object(lego_logo_text(), Scale(Vector(3 / 4, 3 / 4, 3 / 4)))
-        )
-    else:
-        return lg_tech_knob_clear
+# def lg_tech_knob_logo_clear():
+#     """@Todo: ApiDoc."""
+#     if LG_QUALITY > 3:
+#         return Union(
+#             LG_TECH_KNOB_CLEAR,
+#             Object(LEGO_LOGO_TEXT(), Scale(Vector(3 / 4, 3 / 4, 3 / 4)))
+#         )
+#     else:
+#         return LG_TECH_KNOB_CLEAR
 
 # lg_brick_cylinder_clear = get_lg_cylinder(Merge, LG_BRICK_INNER_HEIGHT)
 # lg_plate_cylinder_clear = get_lg_cylinder(Merge, LG_PLATE_INNER_HEIGHT)
-# lg_brick_column_clear = lg_brick_column
-# lg_plate_column_clear = lg_plate_column
-# lg_support_wall_clear = lg_support_wall
-# lg_knob_inner_space_clear = lg_knob_inner_space
+# lg_brick_column_clear = LG_BRICK_COLUMN
+# lg_plate_column_clear = LG_PLATE_COLUMN
+# lg_support_wall_clear = LG_SUPPORT_WALL
+# lg_knob_inner_space_clear = LG_KNOB_INNER_SPACE

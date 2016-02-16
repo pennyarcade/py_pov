@@ -20,11 +20,6 @@ def solid():
     return standard_plate(2, 3)
 
 
-
-
-
-
-
 # #declare lg_3021_clear =
 # merge (
 #  Sphere(
@@ -130,8 +125,8 @@ def solid():
 #    box (
 #     Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LGCS),
 #     Vector(
-#         length * LGBW-LG_WALL_WIDTH, 
-#         width * LGBW-LG_WALL_WIDTH, 
+#         length * LGBW-LG_WALL_WIDTH,
+#         width * LGBW-LG_WALL_WIDTH,
 #         LG_PLATE_INNER_HEIGHT
 #     )
 #    )

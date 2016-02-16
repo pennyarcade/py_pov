@@ -8,7 +8,7 @@
     
     
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for pov/texture/Pigment.py: 100%</title>
+    <title>Coverage for pov/texture/Pigment.py: 60%</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -24,17 +24,19 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>pov/texture/Pigment.py</b> :
-            <span class="pc_cov">100%</span>
+            <span class="pc_cov">60%</span>
         </h1>
 
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
 
         <h2 class="stats">
             11 statements &nbsp;
-            <span class="run hide_run shortkey_r button_toggle_run">11 run</span>
-            <span class="mis shortkey_m button_toggle_mis">0 missing</span>
+            <span class="run hide_run shortkey_r button_toggle_run">7 run</span>
+            <span class="mis shortkey_m button_toggle_mis">4 missing</span>
             <span class="exc shortkey_x button_toggle_exc">0 excluded</span>
 
+            
+                <span class="par run hide_run shortkey_p button_toggle_par">2 partial</span>
             
         </h2>
     </div>
@@ -155,13 +157,13 @@
 <p id="n86" class="pln"><a href="#n86">86</a></p>
 <p id="n87" class="stm run hide_run"><a href="#n87">87</a></p>
 <p id="n88" class="pln"><a href="#n88">88</a></p>
-<p id="n89" class="stm run hide_run"><a href="#n89">89</a></p>
-<p id="n90" class="stm run hide_run"><a href="#n90">90</a></p>
-<p id="n91" class="stm run hide_run"><a href="#n91">91</a></p>
+<p id="n89" class="stm par run hide_run"><a href="#n89">89</a></p>
+<p id="n90" class="stm mis"><a href="#n90">90</a></p>
+<p id="n91" class="stm mis"><a href="#n91">91</a></p>
 <p id="n92" class="pln"><a href="#n92">92</a></p>
-<p id="n93" class="stm run hide_run"><a href="#n93">93</a></p>
-<p id="n94" class="stm run hide_run"><a href="#n94">94</a></p>
-<p id="n95" class="stm run hide_run"><a href="#n95">95</a></p>
+<p id="n93" class="stm par run hide_run"><a href="#n93">93</a></p>
+<p id="n94" class="stm mis"><a href="#n94">94</a></p>
+<p id="n95" class="stm mis"><a href="#n95">95</a></p>
                 
             </td>
             <td class="text">
@@ -253,13 +255,13 @@
 <p id="t86" class="pln"><span class="str">&nbsp; &nbsp; &nbsp; &nbsp; &quot;&quot;&quot;</span><span class="strut">&nbsp;</span></p>
 <p id="t87" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">super</span><span class="op">(</span><span class="nam">Pigment</span><span class="op">,</span> <span class="nam">self</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="str">&#39;pigment&#39;</span><span class="op">,</span> <span class="op">[</span><span class="op">]</span><span class="op">,</span> <span class="nam">opts</span><span class="op">,</span> <span class="nam">kwargs</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t88" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t89" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="str">&#39;bozo&#39;</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span> <span class="key">and</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;bozo&#39;</span><span class="op">]</span> <span class="key">is</span> <span class="nam">True</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t90" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">del</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;bozo&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
-<p id="t91" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">&#39;bozo&#39;</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t89" class="stm par run hide_run"><span class="annotate" title="Line 89 was executed, but never jumped to line 90">89&#x202F;&#x219B;&#x202F;90 [?]</span>&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="str">&#39;bozo&#39;</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span> <span class="key">and</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;bozo&#39;</span><span class="op">]</span> <span class="key">is</span> <span class="nam">True</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t90" class="stm mis">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">del</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;bozo&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t91" class="stm mis">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">&#39;bozo&#39;</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t92" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t93" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="str">&#39;checker&#39;</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span> <span class="key">and</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;checker&#39;</span><span class="op">]</span> <span class="key">is</span> <span class="nam">True</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t94" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">del</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;checker&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
-<p id="t95" class="stm run hide_run">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">&#39;checker&#39;</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t93" class="stm par run hide_run"><span class="annotate" title="Line 93 was executed, but never jumped to line 94">93&#x202F;&#x219B;&#x202F;94 [?]</span>&nbsp; &nbsp; &nbsp; &nbsp; <span class="key">if</span> <span class="str">&#39;checker&#39;</span> <span class="key">in</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span> <span class="key">and</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;checker&#39;</span><span class="op">]</span> <span class="key">is</span> <span class="nam">True</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t94" class="stm mis">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="key">del</span> <span class="nam">self</span><span class="op">.</span><span class="nam">kwargs</span><span class="op">[</span><span class="str">&#39;checker&#39;</span><span class="op">]</span><span class="strut">&nbsp;</span></p>
+<p id="t95" class="stm mis">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="nam">self</span><span class="op">.</span><span class="nam">args</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">&#39;checker&#39;</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
                 
             </td>
         </tr>
@@ -270,7 +272,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.org">coverage.py v4.0.3</a>,
-            created at 2016-02-09 11:31
+            created at 2016-02-15 16:03
         </p>
     </div>
 </div>

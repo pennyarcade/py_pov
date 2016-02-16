@@ -86,27 +86,27 @@ from pov.other.Object import Object
 from pov.object_modifier.Rotate import Rotate
 from pov.object_modifier.Translate import Translate
 
-from pov.texture.Texture import Texture
-
 
 # ***************************************************************************
 # Macros
 # ***************************************************************************
 
 
-def unchanged_brick(brick, texture):
-    """Create Brick + Texture Object."""
-    return Object(
-        brick,
-        Texture(texture)
-    )
+# def unchanged_brick(brick, texture):
+#     """Create Brick + Texture Object."""
+#     return Object(
+#         brick,
+#         texture
+#     )
 
 
-def std_brick(brick, texture, tx, ty, tz, rx, ry, rz):
+def std_brick(
+        brick, texture, transx, transy, transz, rotatex, rotatey, rotatez
+):
     """Create rotated + translated Brick object."""
     return Object(
         brick,
         texture,
-        Rotate(Vector(rx, ry, rz)),
-        Translate(Vector(tx, ty, tz))
+        Rotate(Vector(rotatex, rotatey, rotatez)),
+        Translate(Vector(transx, transy, transz))
     )

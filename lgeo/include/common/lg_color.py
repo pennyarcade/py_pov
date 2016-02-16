@@ -19,10 +19,10 @@ from lgeo.config.lgeo_cfg import LG_QUALITY
 from pov.basic.Color import Color
 from pov.basic.Vector import Vector
 
-from pov.object_modifier.Interior import Interior
+# from pov.object_modifier.Interior import Interior
 
 from pov.texture.Finish import Finish
-from pov.texture.Irid import Irid
+# from pov.texture.Irid import Irid
 from pov.texture.Pigment import Pigment
 from pov.texture.Texture import Texture
 
@@ -39,55 +39,55 @@ else:
     )
 
 
-if LG_QUALITY > 1:
-    LG_CHROME_FINISH = Finish(
-        ambient=0.25
-    )
-else:
-    LG_CHROME_FINISH = Finish(
-        ambient=0.25,
-        brilliance=5,
-        diffuse=0.6,
-        metallic=True,
-        specular=0.70,
-        roughness=1 / 100,
-        reflection=0.6,
-    )
+# if LG_QUALITY > 1:
+#     LG_CHROME_FINISH = Finish(
+#         ambient=0.25
+#     )
+# else:
+#     LG_CHROME_FINISH = Finish(
+#         ambient=0.25,
+#         brilliance=5,
+#         diffuse=0.6,
+#         metallic=True,
+#         specular=0.70,
+#         roughness=1 / 100,
+#         reflection=0.6,
+#     )
 
 
-if LG_QUALITY > 1:
-    LG_PEARL_FINISH = Finish(
-        ambient=0.22
-    )
-else:
-    LG_PEARL_FINISH = Finish(
-        Irid(
-            0.2,
-            thickness=0.5,
-            turbulence=2.5
-        ),
-        ambient=0.22,
-        brilliance=2,
-        diffuse=0.6,
-        metallic=True,
-        specular=0.1,
-        roughness=32 / 100,
-        reflection=0.07
-    )
+# if LG_QUALITY > 1:
+#     LG_PEARL_FINISH = Finish(
+#         ambient=0.22
+#     )
+# else:
+#     LG_PEARL_FINISH = Finish(
+#         Irid(
+#             0.2,
+#             thickness=0.5,
+#             turbulence=2.5
+#         ),
+#         ambient=0.22,
+#         brilliance=2,
+#         diffuse=0.6,
+#         metallic=True,
+#         specular=0.1,
+#         roughness=32 / 100,
+#         reflection=0.07
+#     )
 
 
-if LG_QUALITY > 1:
-    LG_TRANSPARENT_FINISH = Finish(
-        ambient=0.3
-    )
-else:
-    LG_TRANSPARENT_FINISH = Finish(
-        ambient=0.3,
-        diffuse=0.2,
-        reflection=0.25,
-        phong=0.3,
-        phong_size=60
-    )
+# if LG_QUALITY > 1:
+#     LG_TRANSPARENT_FINISH = Finish(
+#         ambient=0.3
+#     )
+# else:
+#     LG_TRANSPARENT_FINISH = Finish(
+#         ambient=0.3,
+#         diffuse=0.2,
+#         reflection=0.25,
+#         phong=0.3,
+#         phong_size=60
+#     )
 
 
 # LG_IOR = Interior(
@@ -139,10 +139,10 @@ LG_RED = Texture(
 # )
 
 # 7
-LG_GREY = Texture(
-    Pigment(Color(rgb=Vector(193 / 255.0, 194 / 255.0, 193 / 255.0))),
-    LG_SOLID_FINISH
-)
+# LG_GREY = Texture(
+#     Pigment(Color(rgb=Vector(193 / 255.0, 194 / 255.0, 193 / 255.0))),
+#     LG_SOLID_FINISH
+# )
 
 # 8
 # LG_DARK_GREY = Texture(
@@ -264,23 +264,23 @@ LG_WHITE = Texture(
 
 
 # Helper to build complex colors
-def get_clear_color(cvector, quality):
-    """@Todo: DocString."""
-    if quality > 1:
-        return Texture(
-            Pigment(
-                Color(rgb=cvector),
-                filter=0.9
-            ),
-            LG_TRANSPARENT_FINISH
-        )
-    else:
-        return Texture(
-            Pigment(
-                Color(rgb=cvector)
-            ),
-            LG_TRANSPARENT_FINISH
-        )
+# def get_clear_color(cvector, quality):
+#     """@Todo: DocString."""
+#     if quality > 1:
+#         return Texture(
+#             Pigment(
+#                 Color(rgb=cvector),
+#                 filter=0.9
+#             ),
+#             LG_TRANSPARENT_FINISH
+#         )
+#     else:
+#         return Texture(
+#             Pigment(
+#                 Color(rgb=cvector)
+#             ),
+#             LG_TRANSPARENT_FINISH
+#         )
 
 
 # 33

@@ -30,13 +30,12 @@ from pov.object_modifier.Translate import Translate
 from pov.object_modifier.Scale import Scale
 
 from pov.other.Object import Object
-from pov.other.EmptyObject import EmptyObject
 
 from lgeo.include.common.lg_defs import LGBW, LGCS
 from lgeo.include.common.lg_defs import LGPH, LG_E, LG_KNOB_RADIUS
 from lgeo.include.common.lg_defs import LG_TOP_HEIGHT, LG_WALL_WIDTH
 from lgeo.include.common.lg_defs import LG_KNOB_INNER_RADIUS, lg_knob
-from lgeo.include.common.lg_defs import lg_plate_cylinder, lg_knob_inner_space
+from lgeo.include.common.lg_defs import LG_PLATE_CYLINDER, LG_KNOB_INNER_SPACE
 
 
 LG_ANGLE = 23.57817847
@@ -73,76 +72,50 @@ def solid():
                 Union(
                     Sphere(
                         Vector(
-                            -0.225 + LGCS,
-                            LGBW + 0.08 - LGCS,
-                            -LGPH + LGCS
+                            -0.225 + LGCS, LGBW + 0.08 - LGCS, -LGPH + LGCS
                         ),
                         LGCS
                     ),
                     Sphere(
-                        Vector(
-                            0.225 - LGCS,
-                            LGBW + 0.08 - LGCS,
-                            -LGPH + LGCS
-                        ),
+                        Vector(0.225 - LGCS, LGBW + 0.08 - LGCS, -LGPH + LGCS),
                         LGCS
                     ),
                     Cylinder(
                         Vector(
-                            -0.225 + LGCS,
-                            LGBW + 0.08 - LGCS,
-                            -LGPH + LGCS
+                            -0.225 + LGCS, LGBW + 0.08 - LGCS, -LGPH + LGCS
                         ),
-                        Vector(
-                            0.225 - LGCS,
-                            LGBW + 0.08 - LGCS,
-                            -LGPH + LGCS
-                        ),
+                        Vector(0.225 - LGCS, LGBW + 0.08 - LGCS, -LGPH + LGCS),
                         LGCS
                     ),
                     Cylinder(
                         Vector(0, 0, 0),
                         Vector(
-                            (0.175 + LGCS) / cos(
-                                LG_ANGLE * pi / 180
-                            ),
-                            0,
-                            0
+                            (0.175 + LGCS) / cos(LG_ANGLE * pi / 180 ), 0, 0
                         ),
                         LGCS,
                         Rotate(Vector(0, 0, -LG_ANGLE)),
                         Translate(
                             Vector(
-                                0.225 - LGCS,
-                                LGBW + 0.08 - LGCS,
-                                -LGPH + LGCS
+                                0.225 - LGCS, LGBW + 0.08 - LGCS, -LGPH + LGCS
                             )
                         )
                     ),
                     Cylinder(
                         Vector(0, 0, 0),
                         Vector(
-                            -(0.175 + LGCS) / cos(
-                                LG_ANGLE * pi / 180
-                            ),
-                            0,
-                            0
+                            -(0.175 + LGCS) / cos( LG_ANGLE * pi / 180), 0, 0
                         ),
                         LGCS,
                         Rotate(Vector(0, 0, LG_ANGLE)),
                         Translate(
                             Vector(
-                                -0.225 + LGCS,
-                                LGBW + 0.08 - LGCS,
-                                -LGPH + LGCS
+                                -0.225 + LGCS, LGBW + 0.08 - LGCS, -LGPH + LGCS
                             )
                         )
                     ),
                     Sphere(
                         Vector(
-                            -0.225 + LGCS,
-                            LGBW + 0.08 - LGCS,
-                            -0.1 - LGCS
+                            -0.225 + LGCS, LGBW + 0.08 - LGCS, -0.1 - LGCS
                         ),
                         LGCS
                     ),
@@ -423,12 +396,8 @@ def solid():
                         ),
                         Union(
                             Box(
-                                Vector(
-                                    0.03, LGBW + 0.56 + LG_E, 0
-                                ),
-                                Vector(
-                                    -0.03, LGBW + 0.3, -0.4 - LG_E
-                                )
+                                Vector(0.03, LGBW + 0.56 + LG_E, 0),
+                                Vector(-0.03, LGBW + 0.3, -0.4 - LG_E)
                             ),
                             Cylinder(
                                 Vector(0, LGBW + 0.3, 0),
@@ -447,390 +416,188 @@ def solid():
                     Vector(1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0)
                 )
             else:
-                mirmatrix = EmptyObject()
+                mirmatrix = Matrix(Vector(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0))
 
             result.append(
                 Union(
                     Sphere(
+                        Vector(2 * LGBW + LGCS, LGBW - LGCS, -LGCS),
+                        LGCS
+                    ),
+                    Sphere(
+                        Vector(4 * LGBW - LGCS, LGBW - LGCS, -LGCS),
+                        LGCS
+                    ),
+                    Sphere(
+                        Vector(-LGBW - LGCS, LGBW - LGCS, -LGCS),
+                        LGCS
+                    ),
+                    Sphere(
+                        Vector(-3 * LGBW + LGCS, LGBW - LGCS, -LGCS),
+                        LGCS
+                    ),
+                    Sphere(
+                        Vector(3 * LGBW - LGCS, LGBW - LGCS, -2 * LGPH + LGCS),
+                        LGCS
+                    ),
+                    Sphere(
+                        Vector(4 * LGBW - LGCS, LGBW - LGCS, -LGPH + LGCS),
+                        LGCS
+                    ),
+                    Sphere(
                         Vector(
-                            2 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGCS
+                            -2 * LGBW + LGCS, LGBW - LGCS, -2 * LGPH + LGCS
+                        ),
+                        LGCS
+                    ),
+                    Sphere(
+                        Vector(-3 * LGBW + LGCS, LGBW - LGCS, -LGPH + LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(-3 * LGBW + LGCS, LGBW - LGCS, -LGCS),
+                        Vector(-3 * LGBW + LGCS, LGBW - LGCS, -LGPH + LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(4 * LGBW - LGCS, LGBW - LGCS, LGCS),
+                        Vector(4 * LGBW - LGCS, LGBW - LGCS, LGPH + LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(-LGBW - LGCS, LGBW - LGCS, -LGCS),
+                        Vector(-LGBW - LGCS, LGBW - LGCS, -LGPH - LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(2 * LGBW + LGCS, LGBW - LGCS, LGCS),
+                        Vector(2 * LGBW + LGCS, LGBW - LGCS, LGPH - LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(
+                            -2 * LGBW + LGCS, LGBW - LGCS, -2 * LGPH + LGCS
+                        ),
+                        Vector(-2 * LGBW + LGCS, LGBW - LGCS, -LGPH + LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(3 * LGBW - LGCS, LGBW - LGCS, -2 * LGPH + LGCS),
+                        Vector(3 * LGBW - LGCS, LGBW - LGCS, -LGPH + LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(4 * LGBW - LGCS, LGBW - LGCS, -LGPH + LGCS),
+                        Vector(3 * LGBW - LGCS, LGBW - LGCS, -LGPH + LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(
+                            -2 * LGBW + LGCS, LGBW - LGCS, -2 * LGPH + LGCS
+                        ),
+                        Vector(-LGBW + LGCS, LGBW - LGCS, -2 * LGPH + LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(3 * LGBW - LGCS, LGBW - LGCS, -2 * LGPH + LGCS),
+                        Vector(2 * LGBW - LGCS, LGBW - LGCS, -2 * LGPH + LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(-3 * LGBW + LGCS, LGBW - LGCS, -LGPH + LGCS),
+                        Vector(-2 * LGBW + LGCS, LGBW - LGCS, -LGPH + LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(-LGBW + LGCS, 2 * LGBW - LGCS, -LGPH - LGCS),
+                        Vector(2 * LGBW - LGCS, 2 * LGBW - LGCS, -LGPH - LGCS),
+                        LGCS
+                    ),
+                    Sphere(
+                        Vector(
+                            -LGBW + LGCS, 2 * LGBW - LGCS, -2 * LGPH + LGCS
                         ),
                         LGCS
                     ),
                     Sphere(
                         Vector(
-                            4 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGCS
+                            2 * LGBW - LGCS, 2 * LGBW - LGCS, -2 * LGPH + LGCS
+                        ),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(
+                            -LGBW + LGCS, 2 * LGBW - LGCS, -2 * LGPH + LGCS
+                        ),
+                        Vector(
+                            2 * LGBW - LGCS, 2 * LGBW - LGCS, -2 * LGPH + LGCS
                         ),
                         LGCS
                     ),
                     Sphere(
-                        Vector(
-                            -LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGCS
-                        ),
+                        Vector(-LGBW + LGCS, 2 * LGBW - LGCS, -LGPH - LGCS),
                         LGCS
                     ),
                     Sphere(
-                        Vector(
-                            -3 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGCS
-                        ),
+                        Vector(2 * LGBW - LGCS, 2 * LGBW - LGCS, -LGPH - LGCS),
                         LGCS
                     ),
-                    Sphere(
+                    Cylinder(
+                        Vector(2 * LGBW - LGCS, 2 * LGBW - LGCS, -LGPH - LGCS),
                         Vector(
-                            3 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Sphere(
-                        Vector(
-                            4 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Sphere(
-                        Vector(
-                            -2 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Sphere(
-                        Vector(
-                            -3 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGPH + LGCS
+                            2 * LGBW - LGCS, 2 * LGBW - LGCS, -2 * LGPH + LGCS
                         ),
                         LGCS
                     ),
                     Cylinder(
                         Vector(
-                            -3 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGCS
+                            2 * LGBW - LGCS, 2 * LGBW - LGCS, -2 * LGPH + LGCS
                         ),
+                        Vector(2 * LGBW - LGCS, LGBW - LGCS, -2 * LGPH + LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(2 * LGBW - LGCS, 2 * LGBW - LGCS, -LGPH - LGCS),
+                        Vector(2 * LGBW - LGCS, LGBW - LGCS, -LGPH - LGCS),
+                        LGCS
+                    ),
+                    Cylinder(
+                        Vector(-LGBW + LGCS, 2 * LGBW - LGCS, -LGPH - LGCS),
                         Vector(
-                            -3 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGPH + LGCS
+                            -LGBW + LGCS, 2 * LGBW - LGCS, -2 * LGPH + LGCS
                         ),
                         LGCS
                     ),
                     Cylinder(
                         Vector(
-                            4 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            LGCS
+                            -LGBW + LGCS, 2 * LGBW - LGCS, -2 * LGPH + LGCS
                         ),
-                        Vector(
-                            4 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            LGPH + LGCS
-                        ),
+                        Vector(-LGBW + LGCS, LGBW - LGCS, -2 * LGPH + LGCS),
                         LGCS
                     ),
                     Cylinder(
-                        Vector(
-                            -LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGCS
-                        ),
-                        Vector(
-                            -LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
+                        Vector(-LGBW + LGCS, 2 * LGBW - LGCS, -LGPH - LGCS),
+                        Vector(-LGBW + LGCS, LGBW - LGCS, -LGPH - LGCS),
                         LGCS
                     ),
                     Cylinder(
-                        Vector(
-                            2 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            LGCS
-                        ),
-                        Vector(
-                            2 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            LGPH - LGCS
-                        ),
+                        Vector(-LGBW + LGCS, LGBW - LGCS, -LGPH - LGCS),
+                        Vector(-LGBW - LGCS, LGBW - LGCS, -LGPH - LGCS),
                         LGCS
                     ),
                     Cylinder(
-                        Vector(
-                            -2 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        Vector(
-                            -2 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGPH + LGCS
-                        ),
+                        Vector(2 * LGBW + LGCS, LGBW - LGCS, -LGPH - LGCS),
+                        Vector(2 * LGBW - LGCS, LGBW - LGCS, -LGPH - LGCS),
                         LGCS
                     ),
                     Cylinder(
-                        Vector(
-                            3 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        Vector(
-                            3 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGPH + LGCS
-                        ),
+                        Vector(-3 * LGBW + LGCS, LGBW - LGCS, -LGCS),
+                        Vector(-LGBW - LGCS, LGBW - LGCS, -LGCS),
                         LGCS
                     ),
                     Cylinder(
-                        Vector(
-                            4 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGPH + LGCS
-                        ),
-                        Vector(
-                            3 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            -2 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        Vector(
-                            -LGBW + LGCS,
-                            LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            3 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        Vector(
-                            2 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            -3 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGPH + LGCS
-                        ),
-                        Vector(
-                            -2 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            -LGBW + LGCS,
-                            2 * LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        Vector(
-                            2 * LGBW - LGCS,
-                            2 * LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        LGCS
-                    ),
-                    Sphere(
-                        Vector(
-                            -LGBW + LGCS,
-                            2 * LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Sphere(
-                        Vector(
-                            2 * LGBW - LGCS,
-                            2 * LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            -LGBW + LGCS,
-                            2 * LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        Vector(
-                            2 * LGBW - LGCS,
-                            2 * LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Sphere(
-                        Vector(
-                            -LGBW + LGCS,
-                            2 * LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        LGCS
-                    ),
-                    Sphere(
-                        Vector(
-                            2 * LGBW - LGCS,
-                            2 * LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            2 * LGBW - LGCS,
-                            2 * LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        Vector(
-                            2 * LGBW - LGCS,
-                            2 * LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            2 * LGBW - LGCS,
-                            2 * LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        Vector(
-                            2 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            2 * LGBW - LGCS,
-                            2 * LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        Vector(
-                            2 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            -LGBW + LGCS,
-                            2 * LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        Vector(
-                            -LGBW + LGCS,
-                            2 * LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            -LGBW + LGCS,
-                            2 * LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        Vector(
-                            -LGBW + LGCS,
-                            LGBW - LGCS,
-                            -2 * LGPH + LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            -LGBW + LGCS,
-                            2 * LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        Vector(
-                            -LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            -LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        Vector(
-                            -LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            2 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        Vector(
-                            2 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGPH - LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            -3 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGCS
-                        ),
-                        Vector(
-                            -LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGCS
-                        ),
-                        LGCS
-                    ),
-                    Cylinder(
-                        Vector(
-                            4 * LGBW - LGCS,
-                            LGBW - LGCS,
-                            -LGCS
-                        ),
-                        Vector(
-                            2 * LGBW + LGCS,
-                            LGBW - LGCS,
-                            -LGCS
-                        ),
+                        Vector(4 * LGBW - LGCS, LGBW - LGCS, -LGCS),
+                        Vector(2 * LGBW + LGCS, LGBW - LGCS, -LGCS),
                         LGCS
                     ),
                     Box(
@@ -839,23 +606,11 @@ def solid():
                             LGBW - LGCS,
                             -LGPH + LGCS + 2 * LG_E
                         ),
-                        Vector(
-                            -2 * LGBW + LGCS,
-                            LGBW - LG_WALL_WIDTH,
-                            -LGPH
-                        )
+                        Vector(-2 * LGBW + LGCS, LGBW - LG_WALL_WIDTH, -LGPH)
                     ),
                     Box(
-                        Vector(
-                            -3 * LGBW + LGCS,
-                            LGBW,
-                            -LGPH + LGCS
-                        ),
-                        Vector(
-                            -LGBW - LGCS,
-                            LGBW - LG_WALL_WIDTH,
-                            -LGCS
-                        )
+                        Vector(-3 * LGBW + LGCS, LGBW, -LGPH + LGCS),
+                        Vector(-LGBW - LGCS, LGBW - LG_WALL_WIDTH, -LGCS)
                     ),
                     Box(
                         Vector(
@@ -863,30 +618,16 @@ def solid():
                             LGBW - LGCS,
                             -LGPH + LGCS + 2 * LG_E
                         ),
-                        Vector(
-                            3 * LGBW - LGCS,
-                            LGBW - LG_WALL_WIDTH,
-                            -LGPH
-                        )
+                        Vector(3 * LGBW - LGCS, LGBW - LG_WALL_WIDTH, -LGPH)
                     ),
                     Box(
                         Vector(
-                            4 * LGBW - LGCS,
-                            LGBW - LG_WALL_WIDTH,
-                            -LGPH + LGCS
+                            4 * LGBW - LGCS, LGBW - LG_WALL_WIDTH, -LGPH + LGCS
                         ),
-                        Vector(
-                            2 * LGBW + LGCS,
-                            LGBW,
-                            -LGCS
-                        )
+                        Vector(2 * LGBW + LGCS, LGBW, -LGCS)
                     ),
                     Box(
-                        Vector(
-                            2 * LGBW - LGCS,
-                            LGBW,
-                            -2 * LGPH
-                        ),
+                        Vector(2 * LGBW - LGCS, LGBW, -2 * LGPH),
                         Vector(
                             -LGBW + LGCS,
                             LGBW - LG_WALL_WIDTH,
@@ -897,12 +638,9 @@ def solid():
                         Vector(
                             3 * LGBW - LGCS,
                             LGBW - LG_WALL_WIDTH,
-                            -LGPH + LGCS + 2 * LG_E),
-                        Vector(
-                            2 * LGBW + LGCS,
-                            LGBW,
-                            -2 * LGPH + LGCS
-                        )
+                            -LGPH + LGCS + 2 * LG_E
+                        ),
+                        Vector(2 * LGBW + LGCS, LGBW, -2 * LGPH + LGCS)
                     ),
                     Box(
                         Vector(
@@ -910,11 +648,7 @@ def solid():
                             LGBW - LG_WALL_WIDTH,
                             -LGPH + LGCS + 2 * LG_E
                         ),
-                        Vector(
-                            -2 * LGBW + LGCS,
-                            LGBW,
-                            -2 * LGPH + LGCS
-                        )
+                        Vector(-2 * LGBW + LGCS, LGBW, -2 * LGPH + LGCS)
                     ),
                     Box(
                         Vector(
@@ -937,7 +671,8 @@ def solid():
                         Vector(
                             3 * LGBW - LGCS,
                             LGBW - LGCS,
-                            -2 * LGPH + LGCS + LG_E)
+                            -2 * LGPH + LGCS + LG_E
+                        )
                     ),
                     Box(
                         Vector(
@@ -945,11 +680,7 @@ def solid():
                             LGBW - LG_WALL_WIDTH,
                             -LGPH - LGCS
                         ),
-                        Vector(
-                            2 * LGBW + LGCS + LG_E,
-                            LGBW,
-                            -2 * LGPH + LGCS
-                        )
+                        Vector(2 * LGBW + LGCS + LG_E, LGBW, -2 * LGPH + LGCS)
                     ),
                     Box(
                         Vector(
@@ -957,11 +688,7 @@ def solid():
                             LGBW - LG_WALL_WIDTH,
                             -LGPH - LGCS
                         ),
-                        Vector(
-                            -LGBW + LGCS + LG_E,
-                            LGBW,
-                            -2 * LGPH + LGCS
-                        )
+                        Vector(-LGBW + LGCS + LG_E, LGBW, -2 * LGPH + LGCS)
                     ),
                     Box(
                         Vector(
@@ -969,11 +696,7 @@ def solid():
                             2 * LGBW - LGCS,
                             -2 * LGPH + LGCS + 2 * LG_E
                         ),
-                        Vector(
-                            -LGBW + LGCS,
-                            LGBW - LGCS - LG_E,
-                            -2 * LGPH
-                        )
+                        Vector(-LGBW + LGCS, LGBW - LGCS - LG_E, -2 * LGPH)
                     ),
                     Box(
                         Vector(
@@ -981,11 +704,7 @@ def solid():
                             2 * LGBW - LGCS,
                             -2 * LGPH + LGCS + 2 * LG_E
                         ),
-                        Vector(
-                            2 * LGBW - LGCS,
-                            LGBW - LGCS - LG_E,
-                            -2 * LGPH
-                        )
+                        Vector(2 * LGBW - LGCS, LGBW - LGCS - LG_E, -2 * LGPH)
                     ),
                     Box(
                         Vector(
@@ -994,9 +713,7 @@ def solid():
                             -2 * LGPH + LGCS + 2 * LG_E
                         ),
                         Vector(
-                            -LGBW + LGCS,
-                            2 * LGBW - LG_WALL_WIDTH,
-                            -2 * LGPH
+                            -LGBW + LGCS, 2 * LGBW - LG_WALL_WIDTH, -2 * LGPH
                         )
                     ),
                     Box(
@@ -1005,11 +722,7 @@ def solid():
                             2 * LGBW - LGCS,
                             -2 * LGPH + LGCS
                         ),
-                        Vector(
-                            -LGBW,
-                            LGBW - LGCS - LG_E,
-                            -LGPH - LGCS
-                        )
+                        Vector(-LGBW, LGBW - LGCS - LG_E, -LGPH - LGCS)
                     ),
                     Box(
                         Vector(
@@ -1017,18 +730,10 @@ def solid():
                             2 * LGBW - LGCS,
                             -2 * LGPH + LGCS
                         ),
-                        Vector(
-                            2 * LGBW,
-                            LGBW - LGCS - LG_E,
-                            -LGPH - LGCS
-                        )
+                        Vector(2 * LGBW, LGBW - LGCS - LG_E, -LGPH - LGCS)
                     ),
                     Box(
-                        Vector(
-                            2 * LGBW - LGCS,
-                            2 * LGBW,
-                            -2 * LGPH + LGCS
-                        ),
+                        Vector(2 * LGBW - LGCS, 2 * LGBW, -2 * LGPH + LGCS),
                         Vector(
                             -LGBW + LGCS,
                             2 * LGBW - LG_WALL_WIDTH,
@@ -1036,11 +741,7 @@ def solid():
                         )
                     ),
                     Box(
-                        Vector(
-                            3 * LGBW - LGCS,
-                            2 * LG_WALL_WIDTH,
-                            -LGPH
-                        ),
+                        Vector(3 * LGBW - LGCS, 2 * LG_WALL_WIDTH, -LGPH),
                         Vector(
                             3 * LGBW + LG_WALL_WIDTH,
                             3 * LG_WALL_WIDTH,
@@ -1048,11 +749,7 @@ def solid():
                         )
                     ),
                     Box(
-                        Vector(
-                            -2 * LGBW + LGCS,
-                            2 * LG_WALL_WIDTH,
-                            -LGPH
-                        ),
+                        Vector(-2 * LGBW + LGCS, 2 * LG_WALL_WIDTH, -LGPH),
                         Vector(
                             -2 * LGBW - LG_WALL_WIDTH,
                             3 * LG_WALL_WIDTH,
@@ -1060,11 +757,7 @@ def solid():
                         )
                     ),
                     Box(
-                        Vector(
-                            -LGBW - LGCS,
-                            2 * LG_WALL_WIDTH,
-                            -2 * LGPH
-                        ),
+                        Vector(-LGBW - LGCS, 2 * LG_WALL_WIDTH, -2 * LGPH),
                         Vector(
                             -LGBW + LG_WALL_WIDTH,
                             3 * LG_WALL_WIDTH,
@@ -1072,11 +765,7 @@ def solid():
                         )
                     ),
                     Box(
-                        Vector(
-                            2 * LGBW + LGCS,
-                            2 * LG_WALL_WIDTH,
-                            -2 * LGPH
-                        ),
+                        Vector(2 * LGBW + LGCS, 2 * LG_WALL_WIDTH, -2 * LGPH),
                         Vector(
                             2 * LGBW - LG_WALL_WIDTH,
                             3 * LG_WALL_WIDTH,
@@ -1084,11 +773,7 @@ def solid():
                         )
                     ),
                     Box(
-                        Vector(
-                            1.5 * LGBW - 0.06,
-                            LGBW - LG_E,
-                            -2 * LGPH
-                        ),
+                        Vector(1.5 * LGBW - 0.06, LGBW - LG_E, -2 * LGPH),
                         Vector(
                             1.5 * LGBW + 0.06,
                             LGBW + LG_WALL_WIDTH,
@@ -1096,11 +781,7 @@ def solid():
                         )
                     ),
                     Box(
-                        Vector(
-                            0.5 * LGBW - 0.06,
-                            LGBW - LG_E,
-                            -2 * LGPH
-                        ),
+                        Vector(0.5 * LGBW - 0.06, LGBW - LG_E, -2 * LGPH),
                         Vector(
                             0.5 * LGBW + 0.06,
                             LGBW + LG_WALL_WIDTH,
@@ -1108,11 +789,7 @@ def solid():
                         )
                     ),
                     Box(
-                        Vector(
-                            -0.5 * LGBW - 0.06,
-                            LGBW - LG_E,
-                            -2 * LGPH
-                        ),
+                        Vector(-0.5 * LGBW - 0.06, LGBW - LG_E, -2 * LGPH),
                         Vector(
                             -0.5 * LGBW + 0.06,
                             LGBW + LG_WALL_WIDTH,
@@ -1120,37 +797,20 @@ def solid():
                         )
                     ),
                     Cylinder(
-                        Vector(
-                            LGBW,
-                            1.5 * LGBW,
-                            -2 * LGPH
-                        ),
-                        Vector(
-                            LGBW,
-                            1.5 * LGBW,
-                            -LGPH - LG_TOP_HEIGHT + LG_E
-                        ),
+                        Vector(LGBW, 1.5 * LGBW, -2 * LGPH),
+                        Vector(LGBW, 1.5 * LGBW, -LGPH - LG_TOP_HEIGHT + LG_E),
                         LG_WALL_WIDTH
                     ),
                     Cylinder(
-                        Vector(
-                            0,
-                            1.5 * LGBW,
-                            -2 * LGPH
-                        ),
-                        Vector(
-                            0,
-                            1.5 * LGBW,
-                            -LGPH - LG_TOP_HEIGHT + LG_E
-                        ),
+                        Vector(0, 1.5 * LGBW, -2 * LGPH),
+                        Vector(0, 1.5 * LGBW, -LGPH - LG_TOP_HEIGHT + LG_E),
                         LG_WALL_WIDTH
                     ),
                     Object(
                         lg_knob(),
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1 - 2 * mir, 1)),
-                        Translate(
-                            Vector(3.5 * LGBW, LGBW / 2, 0)
+                        Translate(Vector(3.5 * LGBW, LGBW / 2, 0)
                         )
                     ),
                     Object(
@@ -1166,10 +826,7 @@ def solid():
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1 - 2 * mir, 1)),
                         Translate(
-                            Vector(
-                                1.5 * LGBW,
-                                LGBW / 2,
-                                -LGPH
+                            Vector(1.5 * LGBW, LGBW / 2, -LGPH
                             )
                         )
                     ),
@@ -1178,10 +835,7 @@ def solid():
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1 - 2 * mir, 1)),
                         Translate(
-                            Vector(
-                                0.5 * LGBW,
-                                LGBW / 2,
-                                -LGPH
+                            Vector(0.5 * LGBW, LGBW / 2, -LGPH
                             )
                         )
                     ),
@@ -1190,10 +844,7 @@ def solid():
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1 - 2 * mir, 1)),
                         Translate(
-                            Vector(
-                                -0.5 * LGBW,
-                                LGBW / 2,
-                                -LGPH
+                            Vector(-0.5 * LGBW, LGBW / 2, -LGPH
                             )
                         )
                     ),
@@ -1202,10 +853,7 @@ def solid():
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1 - 2 * mir, 1)),
                         Translate(
-                            Vector(
-                                1.5 * LGBW,
-                                3 * LGBW / 2,
-                                -LGPH
+                            Vector(1.5 * LGBW, 3 * LGBW / 2, -LGPH
                             )
                         )
                     ),
@@ -1214,10 +862,7 @@ def solid():
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1 - 2 * mir, 1)),
                         Translate(
-                            Vector(
-                                0.5 * LGBW,
-                                3 * LGBW / 2,
-                                -LGPH
+                            Vector(0.5 * LGBW, 3 * LGBW / 2, -LGPH
                             )
                         )
                     ),
@@ -1226,10 +871,7 @@ def solid():
                         Rotate(Vector(0, 0, 90)),
                         Scale(Vector(1, 1 - 2 * mir, 1)),
                         Translate(
-                            Vector(
-                                -0.5 * LGBW,
-                                3 * LGBW / 2,
-                                -LGPH
+                            Vector(-0.5 * LGBW, 3 * LGBW / 2, -LGPH
                             )
                         )
                     ),
@@ -1371,11 +1013,11 @@ def solid():
             LG_WALL_WIDTH
         ),
         Object(
-            lg_plate_cylinder,
+            LG_PLATE_CYLINDER,
             Translate(Vector(LGBW, 0, -2 * LGPH))
         ),
         Object(
-            lg_plate_cylinder,
+            LG_PLATE_CYLINDER,
             Translate(Vector(0, 0, -2 * LGPH))
         ),
         Cylinder(
@@ -1571,7 +1213,7 @@ def solid():
             ),
             Union(
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             3.5 * LGBW,
@@ -1581,7 +1223,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             2.5 * LGBW,
@@ -1591,7 +1233,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             3.5 * LGBW,
@@ -1601,7 +1243,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             2.5 * LGBW,
@@ -1627,7 +1269,7 @@ def solid():
             ),
             Union(
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             -2.5 * LGBW,
@@ -1637,7 +1279,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             -1.5 * LGBW,
@@ -1647,7 +1289,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             -2.5 * LGBW,
@@ -1657,7 +1299,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             -1.5 * LGBW,
@@ -1683,7 +1325,7 @@ def solid():
             ),
             Union(
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             1.5 * LGBW,
@@ -1693,7 +1335,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             0.5 * LGBW,
@@ -1703,7 +1345,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             -0.5 * LGBW,
@@ -1713,7 +1355,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             1.5 * LGBW,
@@ -1723,7 +1365,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             0.5 * LGBW,
@@ -1733,7 +1375,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             -0.5 * LGBW,
@@ -1743,7 +1385,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             1.5 * LGBW,
@@ -1753,7 +1395,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             0.5 * LGBW,
@@ -1763,7 +1405,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             -0.5 * LGBW,
@@ -1773,7 +1415,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             1.5 * LGBW,
@@ -1783,7 +1425,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             0.5 * LGBW,
@@ -1793,7 +1435,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             -0.5 * LGBW,
