@@ -31,10 +31,9 @@ from pov.object_modifier.Translate import Translate
 from lgeo.include.common.lg_defs import LGCS, LGBW, LG_TOP_HEIGHT
 from lgeo.include.common.lg_defs import LGPH, LG_WALL_WIDTH
 from lgeo.include.common.lg_defs import LG_PLATE_INNER_HEIGHT, LG_E
-from lgeo.include.common.lg_defs import LG_KNOB_INNER_RADIUS
-from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE
-from lgeo.include.common.lg_defs import LG_KNOB_RADIUS
-
+from lgeo.include.common.lg_defs import LG_KNOB_INNER_RADIUS, lg_knob
+from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE, lg_tech_knob_logo
+from lgeo.include.common.lg_defs import LG_KNOB_RADIUS, LG_PLATE_COLUMN
 
 
 def solid():
@@ -113,22 +112,22 @@ def solid():
             LGCS
          ),
         Sphere(
-            Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGCS),
+            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
             LGCS
         ),
         Sphere(
-            Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGCS),
+            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGCS),
             LGCS
         ),
         Sphere(
             Vector(
-                LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGBW + LGCS
+                LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS
             ),
             LGCS
         ),
         Sphere(
             Vector(
-                LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGBW + LGCS
+                LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS
             ),
             LGCS
         ),
@@ -148,54 +147,54 @@ def solid():
             LGCS
         ),
         Cylinder(
-            Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGCS),
-            Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGCS),
+            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
+            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGCS),
             LGCS
         ),
         Cylinder(
             Vector(
-                LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGBW + LGCS
+                LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS
             ),
             Vector(
-                LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGBW + LGCS
+                LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS
             ),
             LGCS
         ),
         Cylinder(
             Vector(LGBW / 2 + LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
             Vector(
-                LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGBW + LGCS
+                LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS
             ),
             LGCS
         ),
         Cylinder(
             Vector(LGBW / 2 + LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
             Vector(
-                LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGBW + LGCS
+                LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS
             ),
             LGCS
         ),
         Cylinder(
             Vector(LGBW / 2 + LGCS, -2 * LGBW + LGCS, -LGCS),
-            Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGCS),
+            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGCS),
             LGCS
         ),
         Cylinder(
             Vector(LGBW / 2 + LGCS, 2 * LGBW - LGCS, -LGCS),
-            Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGCS),
+            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
             LGCS
         ),
         Cylinder(
-            Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGCS),
+            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGCS),
             Vector(
-                LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGBW + LGCS
+                LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS
             ),
             LGCS
         ),
         Cylinder(
-            Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGCS),
+            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
             Vector(
-                LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGBW + LGCS
+                LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS
             ),
             LGCS
         ),
@@ -212,16 +211,16 @@ def solid():
         Difference(
             Union(
                 Box(
-                    Vector(LGBW / 2 + LGCS+LG_E, -LGBW + LGCS, 0),
+                    Vector(LGBW / 2 + LGCS + LG_E, -LGBW + LGCS, 0),
                     Vector(-LGBW / 2 + LGCS, LGBW - LGCS, -LGPH)
                 ),
                 Box(
-                    Vector(LGBW / 2 + LGCS+LG_E, -LGBW, -LGCS),
+                    Vector(LGBW / 2 + LGCS + LG_E, -LGBW, -LGCS),
                     Vector(-LGBW / 2 + LGCS, LGBW, -LGPH + LGCS)
                 ),
                 Box(
-                    Vector(LGBW / 2 + LGCS+LG_E, -LGBW + LGCS, -LGCS),
-                    Vector(-LGBW/2, LGBW - LGCS, -LGPH + LGCS)
+                    Vector(LGBW / 2 + LGCS + LG_E, -LGBW + LGCS, -LGCS),
+                    Vector(-LGBW / 2, LGBW - LGCS, -LGPH + LGCS)
                 ),
             ),
             Union(
@@ -234,88 +233,84 @@ def solid():
                     Vector(
                         -LGBW / 2 + LG_WALL_WIDTH,
                         LGBW - LG_WALL_WIDTH,
-                        -LGPH-LG_E
+                        -LGPH - LG_E
                     )
                 ),
                 Object(
                     LG_KNOB_INNER_SPACE,
-                    Translate(Vector(0, -LGBW/2, -LG_TOP_HEIGHT))
+                    Translate(Vector(0, -LGBW / 2, -LG_TOP_HEIGHT))
                 ),
                 Object(
                     LG_KNOB_INNER_SPACE,
-                    Translate(Vector(0, LGBW/2, -LG_TOP_HEIGHT))
+                    Translate(Vector(0, LGBW / 2, -LG_TOP_HEIGHT))
                 ),
             ),
         ),
         Box(
             Vector(LGBW / 2 + LGCS, 2 * LGBW - LGCS, 0),
-            Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGBW)
+            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW)
         ),
         Box(
             Vector(LGBW / 2 + LGCS, 2 * LGBW, -LGCS),
-            Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW, -LGBW + LGCS)
+            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW, -LGBW + LGCS)
         ),
         Box(
-            Vector(LGBW/2, 2 * LGBW - LGCS, -LGCS),
+            Vector(LGBW / 2, 2 * LGBW - LGCS, -LGCS),
             Vector(LGBW / 2 + LG_WALL_WIDTH, -2 * LGBW + LGCS, -LGBW + LGCS)
         ),
         Box(
-            Vector(LG_KNOB_RADIUS, -LGBW/2+0.06, -LGPH),
-            Vector(LGBW / 2 + LG_E, -LGBW/2-0.06, -LG_TOP_HEIGHT+LG_E)
+            Vector(LG_KNOB_RADIUS, -LGBW / 2 + 0.06, -LGPH),
+            Vector(LGBW / 2 + LG_E, -LGBW / 2 - 0.06, -LG_TOP_HEIGHT + LG_E)
         ),
         Box(
-            Vector(LG_KNOB_RADIUS, LGBW/2+0.06, -LGPH),
-            Vector(LGBW / 2 + LG_E, LGBW/2-0.06, -LG_TOP_HEIGHT+LG_E)
+            Vector(LG_KNOB_RADIUS, LGBW / 2 + 0.06, -LGPH),
+            Vector(LGBW / 2 + LG_E, LGBW / 2 - 0.06, -LG_TOP_HEIGHT + LG_E)
         ),
-
-
-
-
+        Object(
+            LG_PLATE_COLUMN,
+            Translate(Vector(0, 0, -LGPH))
+        ),
+        Object(
+            lg_knob(),
+            Rotate(Vector(0, 0, 90)),
+            Translate(Vector(0, -LGBW / 2, 0))
+        ),
+        Object(
+            lg_knob(),
+            Rotate(Vector(0, 0, 90)),
+            Translate(Vector(0, LGBW / 2, 0))
+        ),
+        Object(
+            lg_tech_knob_logo(),
+            Rotate(Vector(0, 0, 90)),
+            Rotate(Vector(0, 90, 0)),
+            Translate(
+                Vector(LGBW / 2 + LG_WALL_WIDTH, -3 * LGBW / 2, -LGBW / 2)
+            )
+        ),
+        Object(
+            lg_tech_knob_logo(),
+            Rotate(Vector(0, 0, 90)),
+            Rotate(Vector(0, 90, 0)),
+            Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, -LGBW / 2, -LGBW / 2))
+        ),
+        Object(
+            lg_tech_knob_logo(),
+            Rotate(Vector(0, 0, 90)),
+            Rotate(Vector(0, 90, 0)),
+            Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, LGBW / 2, -LGBW / 2))
+        ),
+        Object(
+            lg_tech_knob_logo(),
+            Rotate(Vector(0, 0, 90)),
+            Rotate(Vector(0, 90, 0)),
+            Translate(
+                Vector(LGBW / 2 + LG_WALL_WIDTH, 3 * LGBW / 2, -LGBW / 2)
+            )
+        ),
     )
 
 
-"""
-
- Object(
-  lg_plate_column
-  Translate(Vector(0, 0, -LGPH)
- ),
- Object(
-  lg_knob
-  Rotate(Vector(0, 0, 90)
-  Translate(Vector(0, -LGBW/2, 0)
- ),
- Object(
-  lg_knob
-  Rotate(Vector(0, 0, 90)
-  Translate(Vector(0, LGBW/2, 0)
- ),
- Object(
-  lg_tech_knob_logo
-  Rotate(Vector(0, 0, 90)
-  Rotate(Vector(0, 90, 0)
-  Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, -3*LGBW/2, -LGBW/2)
- ),
- Object(
-  lg_tech_knob_logo
-  Rotate(Vector(0, 0, 90)
-  Rotate(Vector(0, 90, 0)
-  Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, -LGBW/2, -LGBW/2)
- ),
- Object(
-  lg_tech_knob_logo
-  Rotate(Vector(0, 0, 90)
-  Rotate(Vector(0, 90, 0)
-  Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, LGBW/2, -LGBW/2)
- ),
- Object(
-  lg_tech_knob_logo
-  Rotate(Vector(0, 0, 90)
-  Rotate(Vector(0, 90, 0)
-  Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, 3*LGBW/2, -LGBW/2)
- ),
-),
-"""
 
 """
 #declare lg_2436_clear =
@@ -393,19 +388,19 @@ merge {
   LGCS
  ),
  Sphere(
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
   LGCS
  ),
  Sphere(
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGCS),
   LGCS
  ),
  Sphere(
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
   LGCS
  ),
  Sphere(
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
   LGCS
  ),
  Cylinder(
@@ -424,43 +419,43 @@ merge {
   LGCS
  ),
  Cylinder(
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGCS),
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGCS),
   LGCS
  ),
  Cylinder(
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
   LGCS
  ),
  Cylinder(
   Vector(LGBW / 2 + LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
   LGCS
  ),
  Cylinder(
   Vector(LGBW / 2 + LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
   LGCS
  ),
  Cylinder(
   Vector(LGBW / 2 + LGCS, -2 * LGBW + LGCS, -LGCS),
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGCS),
   LGCS
  ),
  Cylinder(
   Vector(LGBW / 2 + LGCS, 2 * LGBW - LGCS, -LGCS),
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
   LGCS
  ),
  Cylinder(
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGCS),
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
   LGCS
  ),
  Cylinder(
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGCS),
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
   LGCS
  ),
  Cylinder(
@@ -476,90 +471,90 @@ merge {
  Difference(
   merge {
    Box(
-    Vector(LGBW / 2 + LGCS+LG_E, -LGBW + LGCS, 0),
+    Vector(LGBW / 2 + LGCS + LG_E, -LGBW + LGCS, 0),
     Vector(-LGBW / 2 + LGCS, LGBW - LGCS, -LGPH)
    ),
    Box(
-    Vector(LGBW / 2 + LGCS+LG_E, -LGBW, -LGCS),
+    Vector(LGBW / 2 + LGCS + LG_E, -LGBW, -LGCS),
     Vector(-LGBW / 2 + LGCS, LGBW, -LGPH + LGCS)
    ),
    Box(
-    Vector(LGBW / 2 + LGCS+LG_E, -LGBW + LGCS, -LGCS),
-    Vector(-LGBW/2, LGBW - LGCS, -LGPH + LGCS)
+    Vector(LGBW / 2 + LGCS + LG_E, -LGBW + LGCS, -LGCS),
+    Vector(-LGBW / 2, LGBW - LGCS, -LGPH + LGCS)
    ),
   ),
   merge {
    Box(
     Vector(LGBW / 2 + LG_E, -LGBW + LG_WALL_WIDTH, -LG_TOP_HEIGHT),
-    Vector(-LGBW / 2 + LG_WALL_WIDTH, LGBW - LG_WALL_WIDTH, -LGPH-LG_E)
+    Vector(-LGBW / 2 + LG_WALL_WIDTH, LGBW - LG_WALL_WIDTH, -LGPH - LG_E)
    ),
    Object(
     LG_KNOB_INNER_SPACE_clear
-    Translate(Vector(0, -LGBW/2, -LG_TOP_HEIGHT)
+    Translate(Vector(0, -LGBW / 2, -LG_TOP_HEIGHT)
    ),
    Object(
     LG_KNOB_INNER_SPACE_clear
-    Translate(Vector(0, LGBW/2, -LG_TOP_HEIGHT)
+    Translate(Vector(0, LGBW / 2, -LG_TOP_HEIGHT)
    ),
   ),
  ),
  Box(
   Vector(LGBW / 2 + LGCS, 2 * LGBW - LGCS, 0),
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW + LGCS, -LGBW)
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW)
  ),
  Box(
   Vector(LGBW / 2 + LGCS, 2 * LGBW, -LGCS),
-  Vector(LGBW / 2 + LG_WALL_WIDTH-LGCS, -2 * LGBW, -LGBW + LGCS)
+  Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW, -LGBW + LGCS)
  ),
  Box(
-  Vector(LGBW/2, 2 * LGBW - LGCS, -LGCS),
+  Vector(LGBW / 2, 2 * LGBW - LGCS, -LGCS),
   Vector(LGBW / 2 + LG_WALL_WIDTH, -2 * LGBW + LGCS, -LGBW + LGCS)
  ),
  Box(
-  Vector(LG_KNOB_RADIUS, -LGBW/2+0.06, -LGPH),
-  Vector(LGBW / 2 + LG_E, -LGBW/2-0.06, -LG_TOP_HEIGHT+LG_E)
+  Vector(LG_KNOB_RADIUS, -LGBW / 2+0.06, -LGPH),
+  Vector(LGBW / 2 + LG_E, -LGBW / 2-0.06, -LG_TOP_HEIGHT + LG_E)
  ),
  Box(
-  Vector(LG_KNOB_RADIUS, LGBW/2+0.06, -LGPH),
-  Vector(LGBW / 2 + LG_E, LGBW/2-0.06, -LG_TOP_HEIGHT+LG_E)
+  Vector(LG_KNOB_RADIUS, LGBW / 2+0.06, -LGPH),
+  Vector(LGBW / 2 + LG_E, LGBW / 2-0.06, -LG_TOP_HEIGHT + LG_E)
  ),
  Object(
-  lg_plate_column_clear
+  LG_PLATE_COLUMN_clear
   Translate(Vector(0, 0, -LGPH)
  ),
  Object(
   lg_knob_clear
   Rotate(Vector(0, 0, 90)
-  Translate(Vector(0, -LGBW/2, 0)
+  Translate(Vector(0, -LGBW / 2, 0)
  ),
  Object(
   lg_knob_clear
   Rotate(Vector(0, 0, 90)
-  Translate(Vector(0, LGBW/2, 0)
+  Translate(Vector(0, LGBW / 2, 0)
  ),
  Object(
   lg_tech_knob_logo_clear
   Rotate(Vector(0, 0, 90)
   Rotate(Vector(0, 90, 0)
-  Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, -3*LGBW/2, -LGBW/2)
+  Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, -3 * LGBW / 2, -LGBW / 2)
  ),
  Object(
   lg_tech_knob_logo_clear
   Rotate(Vector(0, 0, 90)
   Rotate(Vector(0, 90, 0)
-  Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, -LGBW/2, -LGBW/2)
+  Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, -LGBW / 2, -LGBW / 2)
  ),
  Object(
   lg_tech_knob_logo_clear
   Rotate(Vector(0, 0, 90)
   Rotate(Vector(0, 90, 0)
-  Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, LGBW/2, -LGBW/2)
+  Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, LGBW / 2, -LGBW / 2)
  ),
  Object(
   lg_tech_knob_logo_clear
   Rotate(Vector(0, 0, 90)
   Rotate(Vector(0, 90, 0)
-  Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, 3*LGBW/2, -LGBW/2)
+  Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, 3 * LGBW / 2, -LGBW / 2)
  ),
 ),
 

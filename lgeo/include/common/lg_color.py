@@ -76,18 +76,18 @@ else:
 #     )
 
 
-# if LG_QUALITY > 1:
-#     LG_TRANSPARENT_FINISH = Finish(
-#         ambient=0.3
-#     )
-# else:
-#     LG_TRANSPARENT_FINISH = Finish(
-#         ambient=0.3,
-#         diffuse=0.2,
-#         reflection=0.25,
-#         phong=0.3,
-#         phong_size=60
-#     )
+LG_TRANSPARENT_FINISH = Finish(
+    ambient=0.3,
+    diffuse=0.2,
+    reflection=0.25,
+    phong=0.3,
+    phong_size=60
+)
+
+if LG_QUALITY > 1:
+    LG_TRANSPARENT_FINISH = Finish(
+        ambient=0.3
+    )
 
 
 # LG_IOR = Interior(
@@ -264,23 +264,23 @@ LG_WHITE = Texture(
 
 
 # Helper to build complex colors
-# def get_clear_color(cvector, quality):
-#     """@Todo: DocString."""
-#     if quality > 1:
-#         return Texture(
-#             Pigment(
-#                 Color(rgb=cvector),
-#                 filter=0.9
-#             ),
-#             LG_TRANSPARENT_FINISH
-#         )
-#     else:
-#         return Texture(
-#             Pigment(
-#                 Color(rgb=cvector)
-#             ),
-#             LG_TRANSPARENT_FINISH
-#         )
+def get_clear_color(cvector, quality):
+    """@Todo: DocString."""
+    if quality > 1:
+        return Texture(
+            Pigment(
+                Color(rgb=cvector),
+                filter=0.9
+            ),
+            LG_TRANSPARENT_FINISH
+        )
+    else:
+        return Texture(
+            Pigment(
+                Color(rgb=cvector)
+            ),
+            LG_TRANSPARENT_FINISH
+        )
 
 
 # 33
@@ -291,7 +291,7 @@ LG_WHITE = Texture(
 # @Todo: Check Constant name
 
 # 34
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_GREEN = get_clear_color(
 #     Vector(6 / 255.0, 98 / 255.0, 50 / 255.0),
 #     LG_QUALITY
 # )
@@ -299,52 +299,52 @@ LG_WHITE = Texture(
 
 
 # 36
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_RED = get_clear_color(
 #     Vector(196 / 255.0, 0 / 255.0, 38 / 255.0),
 #     LG_QUALITY
 # )
 
 
 # 37
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_VIOLET = get_clear_color(
 #     Vector(100 / 255.0, 0 / 255.0, 97 / 255.0),
 #     LG_QUALITY
 # )
 
 
 # 40
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_BROWN = get_clear_color(
 #     Vector(99 / 255.0, 89 / 255.0, 82 / 255.0),
 #     LG_QUALITY
 # )
 
 
 # 41
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_CYAN = get_clear_color(
 #     Vector(174 / 255.0, 239 / 255.0, 237 / 255.0),
 #     LG_QUALITY
 # )
 
 
 # 42
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_NEON_YELLOW = get_clear_color(
 #     Vector(192 / 255.0, 255 / 255.0, 0 / 255.0),
 #     LG_QUALITY
 # )
 
 
 # 45
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_PINK = get_clear_color(
 #     Vector(223 / 255.0, 102 / 255.0, 149 / 255.0),
 #     LG_QUALITY
 # )
 
 
 # 46
-# LG_CLEAR_BLUE = get_clear_color(
-#     Vector(202 / 255.0, 176 / 255.0, 0 / 255.0),
-#     LG_QUALITY
-# )
+LG_CLEAR_YELLOW = get_clear_color(
+    Vector(202 / 255.0, 176 / 255.0, 0 / 255.0),
+    LG_QUALITY
+)
 
 
 # 47

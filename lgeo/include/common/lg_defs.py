@@ -20,7 +20,7 @@ lg_defs: Definitions of standard sub-parts and sizes
 from math import sqrt
 
 from lgeo.config.lgeo_cfg import LG_STUD_LOGO
-from lgeo.config.lgeo_cfg import LG_QUALITY
+from lgeo.config.lgeo_cfg import LG_QUALITY, LG_TEST
 
 from pov.csg.Difference import Difference
 # from pov.csg.Intersection import Intersection
@@ -182,7 +182,7 @@ def _lego_logo_text_function(lclass):
 
 
 LEGO_LOGO_TEXT = _lego_logo_text_function(Union)
-# LEGO_LOGO_TEXT_CLEAR = _lego_logo_text_function(Merge)
+LEGO_LOGO_TEXT_CLEAR = _lego_logo_text_function(Merge)
 
 
 # ***
@@ -292,21 +292,24 @@ def _lg_tech_knob_function(knobclass):
 # LG_TECH_KNOB = _lg_tech_knob_function(Union)
 
 # hollow stud with logo
-# def lg_tech_knob_logo():
-#     #if (lg_quality > 3)
-#         Union(
-#     #end
-#     Object( LG_TECH_KNOB
-#         #if (lg_test ) 0)
-#             Scale(Vector(1, 1, .1)
-#         #end
-#     ),
-#     #if (lg_quality > 3)
-#         Object( LEGO_LOGO_TEXT Scale(Vector(3/4, 3/4, 3/4) ),
-#     #end
-#     #if (lg_quality > 3)
-#         ),
-#     #end
+def lg_tech_knob_logo(knobclass=Union):
+    scale = ""
+    if LG_TEST > 0:
+        scale = Scale(Vector(1, 1, 0.1))
+
+    if LG_QUALITY > 3:
+        return Union(
+            Object(
+                _lg_tech_knob_function(knobclass),
+                scale
+            ),
+            Object(
+                LEGO_LOGO_TEXT,
+                Scale(Vector(3/4, 3/4, 3/4)),
+            )
+        )
+
+    return _lg_tech_knob_function(knobclass)
 
 
 # brick/plate inner cylinder to fit stud inside
@@ -346,18 +349,18 @@ LG_BRICK_COLUMN = Cylinder(
 
 
 # plate inner cylinder to fit into hollow stud
-# LG_PLATE_COLUMN = Difference(
-#     Cylinder(
-#         Vector(0, 0, LG_PLATE_INNER_HEIGHT + LG_E),
-#         Vector(0, 0, 0),
-#         (LG_KNOB_INNER_RADIUS)
-#     ),
-#     Cylinder(
-#         Vector(0, 0, 1),
-#         Vector(0, 0, -1),
-#         (0.06)
-#     )
-# )
+LG_PLATE_COLUMN = Difference(
+    Cylinder(
+        Vector(0, 0, LG_PLATE_INNER_HEIGHT + LG_E),
+        Vector(0, 0, 0),
+        (LG_KNOB_INNER_RADIUS)
+    ),
+    Cylinder(
+        Vector(0, 0, 1),
+        Vector(0, 0, -1),
+        (0.06)
+    )
+)
 
 
 # wall between brick cylinder and brick wall
@@ -382,7 +385,7 @@ LG_KNOB_INNER_SPACE = Cylinder(
 # *  LGEO Primitives Clear versions
 # """
 
-# lg_knob_clear = lg_knob_function(Merge, LEGO_LOGO_TEXT_CLEAR)
+LG_KNOB_CLEAR = lg_knob_function(Merge, LEGO_LOGO_TEXT_CLEAR)
 LG_TECH_KNOB_CLEAR = _lg_tech_knob_function(Merge)
 
 
@@ -401,4 +404,4 @@ LG_TECH_KNOB_CLEAR = _lg_tech_knob_function(Merge)
 # lg_brick_column_clear = LG_BRICK_COLUMN
 # lg_plate_column_clear = LG_PLATE_COLUMN
 # lg_support_wall_clear = LG_SUPPORT_WALL
-# lg_knob_inner_space_clear = LG_KNOB_INNER_SPACE
+LG_KNOB_INNER_SPACE_CLEAR = LG_KNOB_INNER_SPACE
