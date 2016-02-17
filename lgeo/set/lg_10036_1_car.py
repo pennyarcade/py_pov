@@ -118,7 +118,7 @@ from lgeo.include.common.lg_defs import LGPH, LGBW
 # include "lg_2349.inc"
 # include "lg_2357.inc"
 from lgeo.include.brick import lg_2412b
-# include "lg_2436.inc"
+from lgeo.include.brick import lg_2436
 from lgeo.include.brick import lg_2441
 from lgeo.include.brick import lg_3003
 # include "lg_3004.inc"
@@ -285,6 +285,15 @@ def nonmoving(
         * Objects (Step 6)
         ********************************************************************
         """),
+        Comment('**** 2436  White Bracket 1 x 2 - 1 x 4 ****'), 
+		std_brick(
+			lg_2436.solid(),  
+			LG_WHITE,  
+			3*LGBW, 6*LGPH, 0*LGBW, 
+			-90, 0, 0
+		),
+        Comment('**** 2436  White Bracket 1 x 2 - 1 x 4 ****'),
+
 
         Rotate(rvector),
         Translate(tvector)
@@ -298,8 +307,6 @@ def nonmoving(
 #        ),
 #        Comment('****  ****'),
 
-# 2436  White Bracket 1 x 2 - 1 x 4
-# std_brick(lg_2436 ,  lg_white,  3*LGBW, 6*LGPH,  0*LGBW,  -90, 0, 0)
 # 3020  White Plate 2 x 4
 # std_brick(lg_3020 ,  lg_white, -1.5*LGBW, 7*LGPH,  0*LGBW,  -90, 0, 0)
 
