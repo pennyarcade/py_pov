@@ -37,312 +37,315 @@ def solid(length=2, width=1, height=1):
         rotation = Rotate(Vector(0, 0, 0))
         if rot == 1:
             rotation = Rotate(Vector(0, 0, 180))
-        result.append(
 
+        result.append(
+            Union(
+             Sphere(
+              Vector(
+                  length / 2 * LGBW - LGCS,
+                  width / 2 * LGBW - LGCS,
+                  -height * LGBH + LGCS
+              ),
+              LGCS
+             ),
+             Sphere(
+              Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS), LGCS
+             ),
+             Cylinder(
+              Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS),
+              Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS),
+              LGCS
+             ),
+             Cylinder(
+              Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS),
+              Vector(length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -height*LGBH+LGCS),
+              LGCS
+             ),
+             rotation
+            ),
         )
 
     return result
 
-#   Union(
-#    Sphere(
-#     <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>, LGCS
-#    }
-#    Sphere(
-#     <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>, LGCS
-#    }
-#    cylinder {
-#     <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>,
-#     <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>,
-#     LGCS
-#    }
-#    cylinder {
-#     <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>,
-#     <length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -height*LGBH+LGCS>,
-#     LGCS
-#    }
-#    #if (ROT=1)
-#     rotate <0, 0, 180>
-#    #end
-#   }
-#   #declare ROT = ROT + 1;
+
 #  #end
-#  cylinder {
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS>,
-#   <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS>,
+#  Cylinder(
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS>,
-#   <-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS>,
-#   <-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS>,
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS),
 #   LGCS
-#  }
+#  ),
 #  Sphere(
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS>, LGCS
-#  }
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS), LGCS
+#  ),
 #  Sphere(
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS>, LGCS
-#  }
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS), LGCS
+#  ),
 #  Sphere(
-#   <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS>, LGCS
-#  }
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS), LGCS
+#  ),
 #  Sphere(
-#   <-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS>, LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS>,
-#   <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>,
+#   Vector(-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS), LGCS
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS>,
-#   <-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -height*LGBH+LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -height*LGBH+LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS>,
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW-LGCS+LG_WALL_WIDTH, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
-#   <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW-LGCS+LG_WALL_WIDTH, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
+#   Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW-LGCS+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
-#   <length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW-LGCS+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
+#   Vector(length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
-#   <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
+#   Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
-#   <length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -height*LGBH+LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
+#   Vector(length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -height*LGBH+LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
-#   <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
+#   Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW-LGCS+LG_WALL_WIDTH, width/2*LGBW-LGCS, -LGCS>,
-#   <-length/2*LGBW-LGCS+LG_WALL_WIDTH, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW-LGCS+LG_WALL_WIDTH, width/2*LGBW-LGCS, -LGCS),
+#   Vector(-length/2*LGBW-LGCS+LG_WALL_WIDTH, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW-LGCS+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -LGCS>,
-#   <-length/2*LGBW-LGCS+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW-LGCS+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -LGCS),
+#   Vector(-length/2*LGBW-LGCS+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
 #   LGCS
-#  }
+#  ),
 #  Sphere(
-#   <length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,LGCS
-#  }
+#   Vector(length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),LGCS
+#  ),
 #  Sphere(
-#   <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,LGCS
-#  }
+#   Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),LGCS
+#  ),
 #  difference {
 #   Union(
 #    box {
-#     <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LG_PLATE_HEIGHT>
-#     <-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -height*LGBH>
-#    }
+#     Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LG_PLATE_HEIGHT)
+#     Vector(-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -height*LGBH)
+#    ),
 #    box {
-#     <length/2*LGBW, width/2*LGBW-LGCS, -height*LGBH+LG_PLATE_HEIGHT-LGCS>
-#     <-length/2*LGBW, -width/2*LGBW+LGCS, -height*LGBH+LGCS>
-#    }
+#     Vector(length/2*LGBW, width/2*LGBW-LGCS, -height*LGBH+LG_PLATE_HEIGHT-LGCS)
+#     Vector(-length/2*LGBW, -width/2*LGBW+LGCS, -height*LGBH+LGCS)
+#    ),
 #    box {
-#     <length/2*LGBW-LGCS, width/2*LGBW, -height*LGBH+LG_PLATE_HEIGHT-LGCS>
-#     <-length/2*LGBW+LGCS, -width/2*LGBW, -height*LGBH+LGCS>
-#    }
-#   }
+#     Vector(length/2*LGBW-LGCS, width/2*LGBW, -height*LGBH+LG_PLATE_HEIGHT-LGCS)
+#     Vector(-length/2*LGBW+LGCS, -width/2*LGBW, -height*LGBH+LGCS)
+#    ),
+#   ),
 #   box {
-#    <length/2*LGBW-LG_WALL_WIDTH, width/2*LGBW-LG_WALL_WIDTH, -height*LGBH+LG_PLATE_HEIGHT-LG_TOP_HEIGHT>
-#    <-length/2*LGBW+LG_WALL_WIDTH, -width/2*LGBW+LG_WALL_WIDTH, -height*LGBH-LG_E>
-#   }
-#  }
+#    Vector(length/2*LGBW-LG_WALL_WIDTH, width/2*LGBW-LG_WALL_WIDTH, -height*LGBH+LG_PLATE_HEIGHT-LG_TOP_HEIGHT)
+#    Vector(-length/2*LGBW+LG_WALL_WIDTH, -width/2*LGBW+LG_WALL_WIDTH, -height*LGBH-LG_E)
+#   ),
+#  ),
 #  box {
-#   <-length/2*LGBW, width/2*LGBW-LGCS, -LGCS>
-#   <-length/2*LGBW+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -height*LGBH+LGCS>
-#  }
+#   Vector(-length/2*LGBW, width/2*LGBW-LGCS, -LGCS)
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -height*LGBH+LGCS)
+#  ),
 #  box {
-#   <-length/2*LGBW+LGCS, width/2*LGBW, -LGCS>
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW, -height*LGBH+LGCS>
-#  }
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW, -LGCS)
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW, -height*LGBH+LGCS)
+#  ),
 #  box {
-#   <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -2*LGCS>
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, 0>
-#  }
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -2*LGCS)
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, 0)
+#  ),
 #  object {
 #   lg_plate_column
-#   translate <0, 0, -height*LGBH>
-#  }
-# }
+#   translate Vector(0, 0, -height*LGBH)
+#  ),
+# ),
 
 # #declare lg_4865_clear =
 # merge {
 #  #declare ROT = 0;
-#  #while (ROT < 2)
+#  #while (ROT Vector( 2)
 #   merge {
 #    Sphere(
-#     <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>, LGCS
-#    }
+#     Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS), LGCS
+#    ),
 #    Sphere(
-#     <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>, LGCS
-#    }
-#    cylinder {
-#     <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>,
-#     <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>,
+#     Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS), LGCS
+#    ),
+#    Cylinder(
+#     Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS),
+#     Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS),
 #     LGCS
-#    }
-#    cylinder {
-#     <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>,
-#     <length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -height*LGBH+LGCS>,
+#    ),
+#    Cylinder(
+#     Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS),
+#     Vector(length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -height*LGBH+LGCS),
 #     LGCS
-#    }
+#    ),
 #    #if (ROT=1)
-#     rotate <0, 0, 180>
+#     rotate Vector(0, 0, 180)
 #    #end
-#   }
+#   ),
 #   #declare ROT = ROT + 1;
 #  #end
-#  cylinder {
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS>,
-#   <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS>,
+#  Cylinder(
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS>,
-#   <-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS>,
-#   <-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS>,
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS),
 #   LGCS
-#  }
+#  ),
 #  Sphere(
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS>, LGCS
-#  }
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS), LGCS
+#  ),
 #  Sphere(
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS>, LGCS
-#  }
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS), LGCS
+#  ),
 #  Sphere(
-#   <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS>, LGCS
-#  }
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS), LGCS
+#  ),
 #  Sphere(
-#   <-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS>, LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS>,
-#   <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>,
+#   Vector(-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS), LGCS
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS>,
-#   <-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -height*LGBH+LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -height*LGBH+LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS>,
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, -LGCS),
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, width/2*LGBW-LGCS, -LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW-LGCS+LG_WALL_WIDTH, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
-#   <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW-LGCS+LG_WALL_WIDTH, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
+#   Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW-LGCS+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
-#   <length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW-LGCS+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
+#   Vector(length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
-#   <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
+#   Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
-#   <length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -height*LGBH+LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
+#   Vector(length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -height*LGBH+LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
-#   <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
+#   Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW-LGCS+LG_WALL_WIDTH, width/2*LGBW-LGCS, -LGCS>,
-#   <-length/2*LGBW-LGCS+LG_WALL_WIDTH, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW-LGCS+LG_WALL_WIDTH, width/2*LGBW-LGCS, -LGCS),
+#   Vector(-length/2*LGBW-LGCS+LG_WALL_WIDTH, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
 #   LGCS
-#  }
-#  cylinder {
-#   <-length/2*LGBW-LGCS+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -LGCS>,
-#   <-length/2*LGBW-LGCS+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,
+#  ),
+#  Cylinder(
+#   Vector(-length/2*LGBW-LGCS+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -LGCS),
+#   Vector(-length/2*LGBW-LGCS+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),
 #   LGCS
-#  }
+#  ),
 #  Sphere(
-#   <length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,LGCS
-#  }
+#   Vector(length/2*LGBW-LGCS, -width/2*LGBW+LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),LGCS
+#  ),
 #  Sphere(
-#   <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS>,LGCS
-#  }
+#   Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -(height*3-1)*LG_PLATE_HEIGHT-LGCS),LGCS
+#  ),
 #  difference {
 #   merge {
 #    box {
-#     <length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LG_PLATE_HEIGHT>
-#     <-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -height*LGBH>
-#    }
+#     Vector(length/2*LGBW-LGCS, width/2*LGBW-LGCS, -height*LGBH+LG_PLATE_HEIGHT)
+#     Vector(-length/2*LGBW+LGCS, -width/2*LGBW+LGCS, -height*LGBH)
+#    ),
 #    box {
-#     <length/2*LGBW, width/2*LGBW-LGCS, -height*LGBH+LG_PLATE_HEIGHT-LGCS>
-#     <-length/2*LGBW, -width/2*LGBW+LGCS, -height*LGBH+LGCS>
-#    }
+#     Vector(length/2*LGBW, width/2*LGBW-LGCS, -height*LGBH+LG_PLATE_HEIGHT-LGCS)
+#     Vector(-length/2*LGBW, -width/2*LGBW+LGCS, -height*LGBH+LGCS)
+#    ),
 #    box {
-#     <length/2*LGBW-LGCS, width/2*LGBW, -height*LGBH+LG_PLATE_HEIGHT-LGCS>
-#     <-length/2*LGBW+LGCS, -width/2*LGBW, -height*LGBH+LGCS>
-#    }
-#   }
+#     Vector(length/2*LGBW-LGCS, width/2*LGBW, -height*LGBH+LG_PLATE_HEIGHT-LGCS)
+#     Vector(-length/2*LGBW+LGCS, -width/2*LGBW, -height*LGBH+LGCS)
+#    ),
+#   ),
 #   box {
-#    <length/2*LGBW-LG_WALL_WIDTH, width/2*LGBW-LG_WALL_WIDTH, -height*LGBH+LG_PLATE_HEIGHT-LG_TOP_HEIGHT>
-#    <-length/2*LGBW+LG_WALL_WIDTH, -width/2*LGBW+LG_WALL_WIDTH, -height*LGBH-LG_E>
-#   }
-#  }
+#    Vector(length/2*LGBW-LG_WALL_WIDTH, width/2*LGBW-LG_WALL_WIDTH, -height*LGBH+LG_PLATE_HEIGHT-LG_TOP_HEIGHT)
+#    Vector(-length/2*LGBW+LG_WALL_WIDTH, -width/2*LGBW+LG_WALL_WIDTH, -height*LGBH-LG_E)
+#   ),
+#  ),
 #  box {
-#   <-length/2*LGBW, width/2*LGBW-LGCS, -LGCS>
-#   <-length/2*LGBW+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -height*LGBH+LGCS>
-#  }
+#   Vector(-length/2*LGBW, width/2*LGBW-LGCS, -LGCS)
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH, -width/2*LGBW+LGCS, -height*LGBH+LGCS)
+#  ),
 #  box {
-#   <-length/2*LGBW+LGCS, width/2*LGBW, -LGCS>
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW, -height*LGBH+LGCS>
-#  }
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW, -LGCS)
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW, -height*LGBH+LGCS)
+#  ),
 #  box {
-#   <-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -2*LGCS>
-#   <-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, 0>
-#  }
+#   Vector(-length/2*LGBW+LGCS, width/2*LGBW-LGCS, -2*LGCS)
+#   Vector(-length/2*LGBW+LG_WALL_WIDTH-LGCS, -width/2*LGBW+LGCS, 0)
+#  ),
 #  object {
 #   lg_plate_column_clear
-#   translate <0, 0, -height*LGBH>
-#  }
-# }
+#   translate Vector(0, 0, -height*LGBH)
+#  ),
+# ),
 
 # #end
