@@ -345,8 +345,6 @@ def nonmoving(
 #        Comment('****  ****'),
 
 
-# 2412b Red   Tile 1 x 2 Grille with Groove
-# std_brick(lg_2412b, lg_red ,  4.0*LGBW, 4.7*LGPH, 0*LGBW, -90, 0,  -90)
 # 3069b Black Tile 1 x 2 with Groove
 # std_brick(lg_3069b, lg_black ,   -2*LGBW, 8*LGPH, 0*LGBW, -90,  180, 0)
 # 4865  Black Panel 1 x 2 x 1
