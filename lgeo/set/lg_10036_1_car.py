@@ -61,9 +61,11 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 # Includes
 # ---
 # ==== Py Pov Includes ====
+from pov.basic.Vector import Vector
 from pov.csg.Union import Union
 from pov.other.Comment import Comment
-from pov.object_modifier import Rotate, Translate
+from pov.object_modifier.Rotate import Rotate
+from pov.object_modifier.Translate import Translate
 
 # ==== Standard POV-Ray Includes ====
 # include "colors.inc"     # Standard Color definitions
@@ -107,6 +109,7 @@ from pov.object_modifier import Rotate, Translate
 
 # ==== LGEO Colors and Definitions ====
 from lgeo.include.common.lg_color import LG_RED, LG_WHITE, LG_YELLOW
+from lgeo.include.common.lg_color import LG_CLEAR_YELLOW
 from lgeo.include.common.lg_defs import LGPH, LGBW
 
 # ==== LGEO fixed parts ====
@@ -116,12 +119,12 @@ from lgeo.include.common.lg_defs import LGPH, LGBW
 # include "lg_2349.inc"
 # include "lg_2357.inc"
 from lgeo.include.brick import lg_2412b
-# include "lg_2436.inc"
+from lgeo.include.brick import lg_2436
 from lgeo.include.brick import lg_2441
 from lgeo.include.brick import lg_3003
 # include "lg_3004.inc"
 from lgeo.include.brick import lg_3010
-# include "lg_3020.inc"
+from lgeo.include.brick import lg_3020
 from lgeo.include.brick import lg_3021
 from lgeo.include.brick import lg_3022
 from lgeo.include.brick import lg_3024
@@ -132,7 +135,7 @@ from lgeo.include.brick import lg_3788
 # include "lg_3829c01.inc"
 # include "lg_3853.inc"
 # include "lg_3856.inc"
-# include "lg_4073.inc"
+from lgeo.include.brick import lg_4073
 from lgeo.include.brick import lg_4085c
 # include "lg_4624.inc"
 # include "lg_4625.inc"
@@ -144,10 +147,13 @@ from lgeo.include.common.custom_macros import std_brick
 
 
 # declare set_10036_1_car_nonmoving= union {
-def nonmoving(tx=0, ty=0, tz=0, rx=0, ry=0, rz=0):
+def nonmoving(
+        tvector=Vector(0, 0, 0),
+        rvector=Vector(0, 0, 0)
+):
     """
     docstring for lg_10036_car.
-    
+
     @Todo: ApiDoc.
     """
     part = Union(
@@ -280,9 +286,54 @@ def nonmoving(tx=0, ty=0, tz=0, rx=0, ry=0, rz=0):
         * Objects (Step 6)
         ********************************************************************
         """),
+        Comment('**** 2436  White Bracket 1 x 2 - 1 x 4 ****'),
+		std_brick(
+			lg_2436.solid(),
+			LG_WHITE,
+			3*LGBW, 6*LGPH, 0*LGBW,
+			-90, 0, 0
+		),
+        Comment('**** 2436  White Bracket 1 x 2 - 1 x 4 ****'),
+        Comment('**** 3020  White Plate 2 x 4 ****'),
+        std_brick(
+            lg_3020.solid(),
+            LG_WHITE,
+            -1.5 * LGBW, 7 * LGPH, 0 * LGBW,
+            -90, 0, 0
+        ),
+        Comment('**** 3020  White Plate 2 x 4 ****'),
+        Comment("""
+        ********************************************************************
+        * Objects (Step 7)
+        ********************************************************************
+        """),
+        Comment('**** 4073  TrYello Plate 1 x 1 Round ****'),
+        std_brick(
+            lg_4073.clear(),
+            LG_CLEAR_YELLOW,
+            4.1*LGBW, 5*LGPH, -1.5*LGBW,
+            0, 90, 0
+        ),
+        std_brick(
+            lg_4073.clear(),
+            LG_CLEAR_YELLOW,
+            4.1*LGBW, 5*LGPH,
+            1.5*LGBW, 0, 90, 0
+        ),
+        Comment('**** 4073  TrYello Plate 1 x 1 Round ****'),
+        Comment('**** 2412b Red   Tile 1 x 2 Grille with Groove ****'),
+        std_brick(
+            lg_2412b.solid(),
+            LG_RED,
+            4.0*LGBW, 4.7*LGPH, 0*LGBW,
+            -90, 0,  -90
+        ),
+        Comment('**** 2412b Red   Tile 1 x 2 Grille with Groove ****'),
 
-        Rotate(Vector(rx, ry, rz)),
-        Translate(Vector(tx, ty, tz))
+
+
+        Rotate(rvector),
+        Translate(tvector)
     )
 
     return part
@@ -293,16 +344,7 @@ def nonmoving(tx=0, ty=0, tz=0, rx=0, ry=0, rz=0):
 #        ),
 #        Comment('****  ****'),
 
-# 2436  White Bracket 1 x 2 - 1 x 4
-# std_brick(lg_2436 ,  lg_white,  3*LGBW, 6*LGPH,  0*LGBW,  -90, 0, 0)
-# 3020  White Plate 2 x 4
-# std_brick(lg_3020 ,  lg_white, -1.5*LGBW, 7*LGPH,  0*LGBW,  -90, 0, 0)
 
-# Objects (Step 7)
-
-# 4073  TrYello Plate 1 x 1 Round
-# std_brick(lg_4073 , lg_clear_yellow, 4.1*LGBW, 5*LGPH, -1.5*LGBW, 0, 90, 0)
-# std_brick(lg_4073 , lg_clear_yellow, 4.1*LGBW, 5*LGPH,  1.5*LGBW, 0, 90, 0)
 # 2412b Red   Tile 1 x 2 Grille with Groove
 # std_brick(lg_2412b, lg_red ,  4.0*LGBW, 4.7*LGPH, 0*LGBW, -90, 0,  -90)
 # 3069b Black Tile 1 x 2 with Groove

@@ -1,0 +1,296 @@
+Messages
+========
+
+☐ lgeo/include/brick/lg_2441.py
+  ☐ Line: 1
+    ☐ pylint: too-many-lines / Too many lines in module (2830/2000)
+  ✔ Line: 33 @done (16-02-15 20:55)
+    ✔ pylint: unused-import / Unused EmptyObject imported from pov.other.EmptyObject @done (16-02-15 20:55)
+
+✔ lgeo/include/brick/lg_4085c.py @done (16-02-15 20:56)
+  ✔ Line: 564 @done (16-02-15 20:56)
+    ✔ pep8: E501 / line too long (82 > 79 characters) (col 80) @done (16-02-15 20:56)
+
+☐ lgeo/include/common/custom_macros.py
+  ☐ Line: 89
+    ✔ pylint: unused-import / Unused Texture imported from pov.texture.Texture @done (16-02-15 20:58)
+  ☐ Line: 105
+    ☐ pylint: too-many-arguments / Too many arguments (8/5)
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80) @done (16-02-15 20:58)
+
+✔ lgeo/include/common/lg_color.py @done (16-02-15 20:59)
+  ✔ Line: 25 @done (16-02-15 20:59)
+    ✔ pylint: unused-import / Unused Irid imported from pov.texture.Irid @done (16-02-15 20:59)
+  ✔ Line: 80 @done (16-02-15 20:59)
+    ✔ vulture: unused-variable / Unused variable LG_TRANSPARENT_FINISH @done (16-02-15 20:59)
+
+☐ lgeo/include/common/lg_defs.py
+  ☐ Line: 32
+    ☐ pylint: unused-import / Unused Box imported from pov.finite_solid.Box
+  ☐ Line: 386
+    ☐ vulture: unused-variable / Unused variable LG_TECH_KNOB_CLEAR
+
+✔ lgeo/lgeo_city.py @done (16-02-15 21:02)
+  ✔ Line: 44 @done (16-02-15 21:02)
+    ✔ pylint: unused-import / Unused Object imported from pov.other.Object @done (16-02-15 21:02)
+  ✔ Line: 238 @done (16-02-15 21:02)
+    ✔ pep8: E116 / unexpected indentation (comment) (col 9) @done (16-02-15 21:02)
+  ✔ Line: 239 @done (16-02-15 21:02)
+    ✔ pep8: E116 / unexpected indentation (comment) (col 9) @done (16-02-15 21:02)
+  ✔ Line: 240 @done (16-02-15 21:02)
+    ✔ pep8: E116 / unexpected indentation (comment) (col 9) @done (16-02-15 21:02)
+  ✔ Line: 241 @done (16-02-15 21:02)
+    ✔ pep8: E116 / unexpected indentation (comment) (col 9) @done (16-02-15 21:02)
+  ✔ Line: 242 @done (16-02-15 21:02)
+    ✔ pep8: E116 / unexpected indentation (comment) (col 9) @done (16-02-15 21:02)
+  ✔ Line: 243 @done (16-02-15 21:02)
+    ✔ pep8: E116 / unexpected indentation (comment) (col 9) @done (16-02-15 21:02)
+  ✔ Line: 244 @done (16-02-15 21:02)
+    ✔ pep8: E116 / unexpected indentation (comment) (col 9) @done (16-02-15 21:02)
+  ✔ Line: 245 @done (16-02-15 21:02)
+    ✔ pep8: E116 / unexpected indentation (comment) (col 9) @done (16-02-15 21:02)
+  ✔ Line: 246 @done (16-02-15 21:02)
+    ✔ pep8: E116 / unexpected indentation (comment) (col 9) @done (16-02-15 21:02)
+  ✔ Line: 248 @done (16-02-15 21:02)
+    ✔ pep8: E116 / unexpected indentation (comment) (col 9) @done (16-02-15 21:02)
+  ✔ Line: 249 @done (16-02-15 21:02)
+    ✔ pep8: E116 / unexpected indentation (comment) (col 9) @done (16-02-15 21:02)
+  ✔ Line: 251 @done (16-02-15 21:02)
+    ✔ pylint: undefined-variable / Undefined variable 'set_10036_1_house_nonmoving' (col 8) @done (16-02-15 21:02)
+  ✔ Line: 253 @done (16-02-15 21:02)
+    ✔ pep8: E116 / unexpected indentation (comment) (col 9) @done (16-02-15 21:02)
+
+✔ lgeo/set/lg_10036_1_car.py @done (16-02-15 21:04)
+  ✔ Line: 150 @done (16-02-15 21:04)
+    ✔ pylint: unused-argument / Unused argument 'tvector' (col 8) @done (16-02-15 21:04)
+    ✔ pep8: E231 / missing whitespace after ',' (col 25) @done (16-02-15 21:04)
+  ✔ Line: 151 @done (16-02-15 21:04)
+    ✔ pylint: unused-argument / Unused argument 'rvector' (col 8) @done (16-02-15 21:04)
+    ✔ pep8: E231 / missing whitespace after ',' (col 25) @done (16-02-15 21:04)
+  ✔ Line: 289 @done (16-02-15 21:04)
+    ✔ pylint: undefined-variable / Undefined variable 'rx' (col 22) @done (16-02-15 21:04)
+  ✔ Line: 290 @done (16-02-15 21:04)
+    ✔ pylint: undefined-variable / Undefined variable 'tx' (col 25) @done (16-02-15 21:04)
+
+☐ lgeo/set/lg_10036_1_house.py
+  ☐ Line: 167
+    ☐ pylint: invalid-name / Invalid constant name "set_10036_1_house_nonmoving"
+
+☐ pov/basic/Color.py
+  ☐ Line: 44
+    ☐ mccabe: MC0001 / Color.__init__ is too complex (12)
+  ☐ Line: 84
+    ☐ vulture: unused-attribute / Unused attribute filter
+  ☐ Line: 85
+    ☐ vulture: unused-attribute / Unused attribute transmit
+
+☐ pov/basic/PoVObject.py
+  ☐ Line: 1
+    ☐ pep257: D100 / Missing docstring in public module
+
+☐ pov/basic/SceneItem.py
+  ☐ Line: 1
+    ☐ pep257: D100 / Missing docstring in public module
+  ☐ Line: 174
+    ☐ pylint: global-statement / Using the global statement (col 12)
+  ☐ Line: 192
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 194
+    ☐ pylint: global-statement / Using the global statement (col 8)
+  ☐ Line: 198
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 200
+    ☐ pylint: global-statement / Using the global statement (col 8)
+  ☐ Line: 208
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 210
+    ☐ pylint: global-variable-not-assigned / Using global for 'INDENTATION' but no assignment is done (col 8)
+  ☐ Line: 234
+    ☐ pylint: global-variable-not-assigned / Using global for 'INDENTATION' but no assignment is done (col 8)
+  ☐ Line: 332
+    ☐ pep8: N802 / function name should be lowercase (col 9)
+    ☐ pylint: invalid-name / Invalid method name "_checkKwargValue" (col 4)
+  ☐ Line: 479
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 488
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+
+☐ pov/basic/Vector.py
+  ☐ Line: 122
+    ☐ pylint: invalid-name / Invalid constant name "x"
+  ☐ Line: 123
+    ☐ pylint: invalid-name / Invalid constant name "y"
+  ☐ Line: 124
+    ☐ pylint: invalid-name / Invalid constant name "z"
+
+☐ pov/finite_patch/FinitePatch.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function FinitePatch
+
+☐ pov/finite_solid/Box.py
+  ☐ Line: 79
+    ☐ pylint: unused-variable / Unused variable 'item' (col 15)
+
+☐ pov/finite_solid/Cone.py
+  ☐ Line: 33
+    ☐ mccabe: MC0001 / Cone.__init__ is too complex (12)
+
+☐ pov/finite_solid/Cylinder.py
+  ☐ Line: 30
+    ☐ mccabe: MC0001 / Cylinder.__init__ is too complex (11)
+
+☐ pov/finite_solid/Prism.py
+  ☐ Line: 15
+    ☐ vulture: unused-function / Unused function Prism
+
+☐ pov/finite_solid/Sor.py
+  ☐ Line: 15
+    ☐ vulture: unused-function / Unused function Sor
+
+☐ pov/finite_solid/SphereSweep.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function SphereSweep
+
+☐ pov/finite_solid/SuperEllipsoid.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function SuperEllipsoid
+
+☐ pov/finite_solid/Text.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function Text
+
+☐ pov/global_settings/Photons.py
+  ☐ Line: 17
+    ☐ vulture: unused-function / Unused function Photons
+
+☐ pov/global_settings/Radiosity.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function Radiosity
+
+☐ pov/include/colors_inc.py
+  ☐ Line: 176
+    ☐ vulture: unused-function / Unused function ch2rgb
+  ☐ Line: 202
+    ☐ vulture: unused-function / Unused function crgb2h
+  ☐ Line: 274
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+
+☐ pov/other/IsoSurface.py
+  ☐ Line: 17
+    ☐ vulture: unused-function / Unused function IsoSurface
+
+☐ pov/other/ParametricObj.py
+  ☐ Line: 17
+    ☐ vulture: unused-function / Unused function ParametricObj
+
+☐ pov/tests/AthEffTest.py
+  ☐ Line: 26
+    ☐ vulture: unused-function / Unused function FogTestCase
+  ☐ Line: 38
+    ☐ vulture: unused-function / Unused function SkySphereTestCase
+
+☐ pov/tests/BasicTest.py
+  ☐ Line: 29
+    ☐ vulture: unused-function / Unused function SceneItemTestCase
+  ☐ Line: 147
+    ☐ pylint: protected-access / Access to a protected member _block_end of a client class (col 25)
+  ☐ Line: 182
+    ☐ pylint: protected-access / Access to a protected member _dedent of a client class (col 12)
+  ☐ Line: 194
+    ☐ pylint: protected-access / Access to a protected member _validate_kwargs of a client class (col 12)
+  ☐ Line: 206
+    ☐ pylint: protected-access / Access to a protected member _validate_kwargs of a client class (col 12)
+  ☐ Line: 211
+    ☐ pylint: protected-access / Access to a protected member _is_valid_identifier of a client class (col 12)
+  ☐ Line: 214
+    ☐ pylint: protected-access / Access to a protected member _is_valid_identifier of a client class (col 12)
+  ☐ Line: 234
+    ☐ pylint: protected-access / Access to a protected member _checkKwargValue of a client class (col 12)
+  ☐ Line: 237
+    ☐ pylint: too-many-public-methods / Too many public methods (23/20)
+    ☐ vulture: unused-function / Unused function VectorTestCase
+  ☐ Line: 360
+    ☐ vulture: unused-function / Unused function SceneFileTestCase
+  ☐ Line: 367
+    ☐ vulture: unused-function / Unused function tearDown
+  ☐ Line: 400
+    ☐ pylint: unused-variable / Unused variable 'first' (col 8)
+  ☐ Line: 407
+    ☐ vulture: unused-function / Unused function BlockObjectTestCase
+  ☐ Line: 447
+    ☐ pylint: protected-access / Access to a protected member _indent of a client class (col 8)
+  ☐ Line: 449
+    ☐ pylint: protected-access / Access to a protected member _dedent of a client class (col 8)
+  ☐ Line: 457
+    ☐ vulture: unused-function / Unused function ColorTestCase
+
+☐ pov/tests/EndToEndTest.py
+  ☐ Line: 43
+    ☐ vulture: unused-function / Unused function EndToEndTestCase
+  ☐ Line: 47
+    ☐ pylint: too-many-statements / Too many statements (96/50) (col 4)
+  ☐ Line: 254
+    ☐ pylint: too-many-statements / Too many statements (61/50) (col 4)
+  ☐ Line: 381
+    ☐ pylint: too-many-statements / Too many statements (71/50) (col 4)
+
+☐ pov/tests/FiniteSolidTest.py
+  ☐ Line: 31
+    ☐ vulture: unused-function / Unused function BlobTestCase
+  ☐ Line: 62
+    ☐ vulture: unused-function / Unused function BoxTestCase
+  ☐ Line: 244
+    ☐ vulture: unused-function / Unused function ConeTestCase
+  ☐ Line: 417
+    ☐ vulture: unused-function / Unused function CylinderTestCase
+  ☐ Line: 564
+    ☐ vulture: unused-function / Unused function HeightFieldTestCase
+  ☐ Line: 684
+    ☐ vulture: unused-function / Unused function JuliaFractalTestCase
+  ☐ Line: 736
+    ☐ vulture: unused-function / Unused function SphereTestCase
+  ☐ Line: 849
+    ☐ vulture: unused-function / Unused function LatheTestCase
+
+☐ pov/tests/GlobalSettingsTest.py
+  ☐ Line: 21
+    ☐ vulture: unused-function / Unused function GlobalSettingsTestCase
+
+☐ pov/tests/IncludeTest.py
+  ☐ Line: 19
+    ☐ pep8: E402 / module level import not at top of file (col 1)
+  ☐ Line: 22
+    ☐ vulture: unused-function / Unused function ColorsIncTestCase
+
+☐ pov/tests/InfiniteSolidTest.py
+  ☐ Line: 19
+    ☐ vulture: unused-function / Unused function PlaneTestCase
+
+☐ pov/tests/LanguageDirectiveTest.py
+  ☐ Line: 25
+    ☐ vulture: unused-function / Unused function LanguageDirectiveTestCase
+  ☐ Line: 28
+    ☐ vulture: unused-function / Unused function setUp
+  ☐ Line: 43
+    ☐ vulture: unused-function / Unused function IncludeTestCase
+  ☐ Line: 76
+    ☐ vulture: unused-function / Unused function VersionTestCase
+  ☐ Line: 107
+    ☐ vulture: unused-function / Unused function DefaultTestCase
+
+
+
+Check Information
+=================
+         Started: 2016-02-15 20:28:38.093434
+        Finished: 2016-02-15 20:29:04.168427
+      Time Taken: 26.07 seconds
+       Formatter: grouped
+        Profiles: .landscape.yml, doc_warnings, strictness_veryhigh, no_member_warnings
+      Strictness: from profile
+  Libraries Used:
+       Tools Run: frosted, mccabe, pep257, pep8, profile-validator, pyflakes, pylint, pyroma, vulture
+  Messages Found: 107
+ External Config: pylint: /home/chocokiko/devel/py_pov/.pylintrc
+
+

@@ -14,6 +14,6 @@ INFILE = open('main.pov', 'w')
 INFILE.write(str(lgeo_city.main()))
 INFILE.close()
 
-os.system("povray +I" + INFILE.name + " +Omain.png +W800 +H600 +V +D +X +P")
+os.system("povray +I" + INFILE.name + " +Omain.png +W640 +H480 +V +D +X +P")
 
 # os.unlink(INFILE.name)

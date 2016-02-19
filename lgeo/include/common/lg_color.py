@@ -19,10 +19,10 @@ from lgeo.config.lgeo_cfg import LG_QUALITY
 from pov.basic.Color import Color
 from pov.basic.Vector import Vector
 
-from pov.object_modifier.Interior import Interior
+# from pov.object_modifier.Interior import Interior
 
 from pov.texture.Finish import Finish
-from pov.texture.Irid import Irid
+# from pov.texture.Irid import Irid
 from pov.texture.Pigment import Pigment
 from pov.texture.Texture import Texture
 
@@ -39,54 +39,54 @@ else:
     )
 
 
-if LG_QUALITY > 1:
-    LG_CHROME_FINISH = Finish(
-        ambient=0.25
-    )
-else:
-    LG_CHROME_FINISH = Finish(
-        ambient=0.25,
-        brilliance=5,
-        diffuse=0.6,
-        metallic=True,
-        specular=0.70,
-        roughness=1 / 100,
-        reflection=0.6,
-    )
+# if LG_QUALITY > 1:
+#     LG_CHROME_FINISH = Finish(
+#         ambient=0.25
+#     )
+# else:
+#     LG_CHROME_FINISH = Finish(
+#         ambient=0.25,
+#         brilliance=5,
+#         diffuse=0.6,
+#         metallic=True,
+#         specular=0.70,
+#         roughness=1 / 100,
+#         reflection=0.6,
+#     )
 
 
-if LG_QUALITY > 1:
-    LG_PEARL_FINISH = Finish(
-        ambient=0.22
-    )
-else:
-    LG_PEARL_FINISH = Finish(
-        Irid(
-            0.2,
-            thickness=0.5,
-            turbulence=2.5
-        ),
-        ambient=0.22,
-        brilliance=2,
-        diffuse=0.6,
-        metallic=True,
-        specular=0.1,
-        roughness=32 / 100,
-        reflection=0.07
-    )
+# if LG_QUALITY > 1:
+#     LG_PEARL_FINISH = Finish(
+#         ambient=0.22
+#     )
+# else:
+#     LG_PEARL_FINISH = Finish(
+#         Irid(
+#             0.2,
+#             thickness=0.5,
+#             turbulence=2.5
+#         ),
+#         ambient=0.22,
+#         brilliance=2,
+#         diffuse=0.6,
+#         metallic=True,
+#         specular=0.1,
+#         roughness=32 / 100,
+#         reflection=0.07
+#     )
 
+
+LG_TRANSPARENT_FINISH = Finish(
+    ambient=0.3,
+    diffuse=0.2,
+    reflection=0.25,
+    phong=0.3,
+    phong_size=60
+)
 
 if LG_QUALITY > 1:
     LG_TRANSPARENT_FINISH = Finish(
         ambient=0.3
-    )
-else:
-    LG_TRANSPARENT_FINISH = Finish(
-        ambient=0.3,
-        diffuse=0.2,
-        reflection=0.25,
-        phong=0.3,
-        phong_size=60
     )
 
 
@@ -139,10 +139,10 @@ LG_RED = Texture(
 # )
 
 # 7
-LG_GREY = Texture(
-    Pigment(Color(rgb=Vector(193 / 255.0, 194 / 255.0, 193 / 255.0))),
-    LG_SOLID_FINISH
-)
+# LG_GREY = Texture(
+#     Pigment(Color(rgb=Vector(193 / 255.0, 194 / 255.0, 193 / 255.0))),
+#     LG_SOLID_FINISH
+# )
 
 # 8
 # LG_DARK_GREY = Texture(
@@ -291,7 +291,7 @@ def get_clear_color(cvector, quality):
 # @Todo: Check Constant name
 
 # 34
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_GREEN = get_clear_color(
 #     Vector(6 / 255.0, 98 / 255.0, 50 / 255.0),
 #     LG_QUALITY
 # )
@@ -299,52 +299,52 @@ def get_clear_color(cvector, quality):
 
 
 # 36
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_RED = get_clear_color(
 #     Vector(196 / 255.0, 0 / 255.0, 38 / 255.0),
 #     LG_QUALITY
 # )
 
 
 # 37
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_VIOLET = get_clear_color(
 #     Vector(100 / 255.0, 0 / 255.0, 97 / 255.0),
 #     LG_QUALITY
 # )
 
 
 # 40
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_BROWN = get_clear_color(
 #     Vector(99 / 255.0, 89 / 255.0, 82 / 255.0),
 #     LG_QUALITY
 # )
 
 
 # 41
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_CYAN = get_clear_color(
 #     Vector(174 / 255.0, 239 / 255.0, 237 / 255.0),
 #     LG_QUALITY
 # )
 
 
 # 42
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_NEON_YELLOW = get_clear_color(
 #     Vector(192 / 255.0, 255 / 255.0, 0 / 255.0),
 #     LG_QUALITY
 # )
 
 
 # 45
-# LG_CLEAR_BLUE = get_clear_color(
+# LG_CLEAR_PINK = get_clear_color(
 #     Vector(223 / 255.0, 102 / 255.0, 149 / 255.0),
 #     LG_QUALITY
 # )
 
 
 # 46
-# LG_CLEAR_BLUE = get_clear_color(
-#     Vector(202 / 255.0, 176 / 255.0, 0 / 255.0),
-#     LG_QUALITY
-# )
+LG_CLEAR_YELLOW = get_clear_color(
+    Vector(202 / 255.0, 176 / 255.0, 0 / 255.0),
+    LG_QUALITY
+)
 
 
 # 47

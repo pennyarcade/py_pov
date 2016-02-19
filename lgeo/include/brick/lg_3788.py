@@ -15,7 +15,7 @@ lg_3788: Car Mudguard 2 x 4
 from math import atan2, pi, cos
 
 from lgeo.include.common.lg_defs import LGBW, LGCS, LG_PLATE_INNER_HEIGHT
-from lgeo.include.common.lg_defs import LGPH, lg_knob_inner_space
+from lgeo.include.common.lg_defs import LGPH, LG_KNOB_INNER_SPACE
 from lgeo.include.common.lg_defs import LG_TOP_HEIGHT, LG_E, LG_WALL_WIDTH
 from lgeo.include.common.lg_defs import get_lg_cylinder
 from lgeo.include.common.brick_subparts import lg_knob
@@ -380,7 +380,7 @@ def solid():
                 ),
                 Union(
                     Object(
-                        lg_knob_inner_space,
+                        LG_KNOB_INNER_SPACE,
                         Translate(
                             Vector(
                                 LGBW / 2,
@@ -390,7 +390,7 @@ def solid():
                         )
                     ),
                     Object(
-                        lg_knob_inner_space,
+                        LG_KNOB_INNER_SPACE,
                         Translate(
                             Vector(
                                 -LGBW / 2,
@@ -691,7 +691,7 @@ def solid():
             ),
             Union(
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             LGBW / 2,
@@ -701,7 +701,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             -LGBW / 2,
@@ -711,7 +711,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             -LGBW / 2,
@@ -721,7 +721,7 @@ def solid():
                     )
                 ),
                 Object(
-                    lg_knob_inner_space,
+                    LG_KNOB_INNER_SPACE,
                     Translate(
                         Vector(
                             LGBW / 2,
