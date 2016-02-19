@@ -108,7 +108,7 @@ from pov.object_modifier.Translate import Translate
 
 
 # ==== LGEO Colors and Definitions ====
-from lgeo.include.common.lg_color import LG_RED, LG_WHITE, LG_YELLOW
+from lgeo.include.common.lg_color import LG_RED, LG_WHITE, LG_YELLOW, LG_BLACK
 from lgeo.include.common.lg_color import LG_CLEAR_YELLOW
 from lgeo.include.common.lg_defs import LGPH, LGBW
 
@@ -128,7 +128,7 @@ from lgeo.include.brick import lg_3020
 from lgeo.include.brick import lg_3021
 from lgeo.include.brick import lg_3022
 from lgeo.include.brick import lg_3024
-# include "lg_3069b.inc"
+from lgeo.include.brick import lg_3069b
 # include "lg_3641.inc"
 from lgeo.include.brick import lg_3788
 # include "lg_3823.inc"
@@ -139,7 +139,7 @@ from lgeo.include.brick import lg_4073
 from lgeo.include.brick import lg_4085c
 # include "lg_4624.inc"
 # include "lg_4625.inc"
-# include "lg_4865.inc"
+from lgeo.include.brick import lg_4865
 # # 821407 Missing
 
 # ==== Custom Includes ====
@@ -290,7 +290,7 @@ def nonmoving(
 		std_brick(
 			lg_2436.solid(),
 			LG_WHITE,
-			3*LGBW, 6*LGPH, 0*LGBW,
+			3 * LGBW, 6 * LGPH, 0,
 			-90, 0, 0
 		),
         Comment('**** 2436  White Bracket 1 x 2 - 1 x 4 ****'),
@@ -298,7 +298,7 @@ def nonmoving(
         std_brick(
             lg_3020.solid(),
             LG_WHITE,
-            -1.5 * LGBW, 7 * LGPH, 0 * LGBW,
+            -1.5 * LGBW, 7 * LGPH, 0,
             -90, 0, 0
         ),
         Comment('**** 3020  White Plate 2 x 4 ****'),
@@ -311,26 +311,40 @@ def nonmoving(
         std_brick(
             lg_4073.clear(),
             LG_CLEAR_YELLOW,
-            4.1*LGBW, 5*LGPH, -1.5*LGBW,
+            4.1 * LGBW, 5 * LGPH, -1.5 * LGBW,
             0, 90, 0
         ),
         std_brick(
             lg_4073.clear(),
             LG_CLEAR_YELLOW,
-            4.1*LGBW, 5*LGPH,
-            1.5*LGBW, 0, 90, 0
+            4.1 * LGBW, 5 * LGPH, 1.5 * LGBW,
+            0, 90, 0
         ),
         Comment('**** 4073  TrYello Plate 1 x 1 Round ****'),
         Comment('**** 2412b Red   Tile 1 x 2 Grille with Groove ****'),
         std_brick(
             lg_2412b.solid(),
             LG_RED,
-            4.0*LGBW, 4.7*LGPH, 0*LGBW,
-            -90, 0,  -90
+            4.0 * LGBW, 4.7 * LGPH, 0,
+            -90, 0, -90
         ),
         Comment('**** 2412b Red   Tile 1 x 2 Grille with Groove ****'),
-
-
+        Comment('**** 3069b Black Tile 1 x 2 with Groove ****'),
+        std_brick(
+            lg_3069b.solid(),
+            LG_BLACK,
+            -2 * LGBW, 8 * LGPH, 0,
+            -90, 180, 0
+        ),
+        Comment('**** 3069b Black Tile 1 x 2 with Groove ****'),
+        Comment('**** 4865  Black Panel 1 x 2 x 1 ****'),
+        std_brick(
+            lg_4865.solid(),
+            LG_BLACK,
+            -1 * LGBW, 10 * LGPH, 0,
+            -90, 180, 0
+        ),
+        Comment('**** 4865  Black Panel 1 x 2 x 1 ****'),
 
         Rotate(rvector),
         Translate(tvector)
@@ -339,67 +353,60 @@ def nonmoving(
     return part
 
 #        Comment('****  ****'),
-#        std_brick(
-#
-#        ),
+#        std_brick(),
 #        Comment('****  ****'),
 
-
-# 3069b Black Tile 1 x 2 with Groove
-# std_brick(lg_3069b, lg_black ,   -2*LGBW, 8*LGPH, 0*LGBW, -90,  180, 0)
-# 4865  Black Panel 1 x 2 x 1
-# std_brick(lg_4865 ,  lg_black,   -1*LGBW,  10*LGPH, 0*LGBW, -90,  180, 0)
 
 # Objects (Step 8)
 
 
 # # 3004  White Brick 1 x 2
-# std_brick(lg_3004 ,  lg_white, -1.5*LGBW,  10*LGPH, -1.5*LGBW,  -90,  90, 0)
-# std_brick(lg_3004 ,  lg_white, -1.5*LGBW,  10*LGPH,  1.5*LGBW,  -90,  90, 0)
+# std_brick(lg_3004 ,  lg_white, -1.5*LGBW,  10*LGPH, -1.5*LGBW,  -90,  90, 0),
+# std_brick(lg_3004 ,  lg_white, -1.5*LGBW,  10*LGPH,  1.5*LGBW,  -90,  90, 0),
 
 
 # Objects (Step 9)
 
 # # 3020  White Plate 2 x 4
-# std_brick(lg_3020 ,  lg_white, -1.5*LGBW,  11*LGPH,  0*LGBW,  -90, 0, 0)
+# std_brick(lg_3020 ,  lg_white, -1.5*LGBW,  11*LGPH,  0*LGBW,  -90, 0, 0),
 # # 2357  White Brick 2 x 2 Corner
-# std_brick(lg_2357 ,  lg_white,  3*LGBW, 9*LGPH, -1.5*LGBW,  -90, 0, 0)
-# std_brick(lg_2357 ,  lg_white,  3*LGBW, 9*LGPH,  1.5*LGBW,  -90, -90, 0)
+# std_brick(lg_2357 ,  lg_white,  3*LGBW, 9*LGPH, -1.5*LGBW,  -90, 0, 0),
+# std_brick(lg_2357 ,  lg_white,  3*LGBW, 9*LGPH,  1.5*LGBW,  -90, -90, 0),
 
 # Objects (Step 10)
 
 
 # # 3069b Black Tile 1 x 2 with Groove
-# std_brick(lg_3069b,  lg_black,  -2*LGBW,  12*LGPH,  0*LGBW,  -90, 180, 0)
+# std_brick(lg_3069b,  lg_black,  -2*LGBW,  12*LGPH,  0*LGBW,  -90, 180, 0),
 # # 4865  Black Panel 1 x 2 x 1
-# std_brick(lg_4865 ,  lg_black,  -1*LGBW,  14*LGPH,  0*LGBW,  -90, 180, 0)
+# std_brick(lg_4865 ,  lg_black,  -1*LGBW,  14*LGPH,  0*LGBW,  -90, 180, 0),
 # # 3823  TrLtBlu Windscreen 2 x 4 x 2
-# std_brick(lg_3823, lg_clear_cyan,  2*LGBW,  15*LGPH,  0*LGBW,  -90, 0, 0)
+# std_brick(lg_3823, lg_clear_cyan,  2*LGBW,  15*LGPH,  0*LGBW,  -90, 0, 0),
 
 
 # Objects (Step 11)
 
 # # 3853  White Window 1 x 4 x 3
-# std_brick(lg_3853, lg_white,  -3*LGBW,  15*LGPH,  0*LGBW,  -90,  180, 0)
+# std_brick(lg_3853, lg_white,  -3*LGBW,  15*LGPH,  0*LGBW,  -90,  180, 0),
 # # 3004  White Brick 1 x 2
-# std_brick(lg_3004, lg_white,  -1.5*LGBW,  14*LGPH, -1.5*LGBW,  -90,  90,  0)
-# std_brick(lg_3004, lg_white,  -1.5*LGBW,  14*LGPH,  1.5*LGBW,  -90,  90,  0)
+# std_brick(lg_3004, lg_white,  -1.5*LGBW,  14*LGPH, -1.5*LGBW,  -90,  90,  0),
+# std_brick(lg_3004, lg_white,  -1.5*LGBW,  14*LGPH,  1.5*LGBW,  -90,  90,  0),
 # # 3010  White Plate 1 x 4
-# std_brick(lg_3010, lg_white,  -2*LGBW,  15*LGPH,  0*LGBW,  -90, 0,  0)
+# std_brick(lg_3010, lg_white,  -2*LGBW,  15*LGPH,  0*LGBW,  -90, 0,  0),
 
 
 # Objects (Step 12)
 
 # # 4625  White Hinge Tile 1 x 4
-# std_brick(lg_4625, lg_white,  -1*LGBW,  15*LGPH,  0*LGBW,  -90, 0, 0)
+# std_brick(lg_4625, lg_white,  -1*LGBW,  15*LGPH,  0*LGBW,  -90, 0, 0),
 
 
 # Objects (Step 13)
 
 # # 3020  White Plate 2 x 4
-# std_brick(lg_3020, lg_white,  -2.5*LGBW,  16*LGPH,  0*LGBW,  -90, 0, 0)
+# std_brick(lg_3020, lg_white,  -2.5*LGBW,  16*LGPH,  0*LGBW,  -90, 0, 0),
 # # 4865  Black Panel 1 x 2 x 1
-# std_brick(lg_4865, lg_white,   2*LGBW,  19*LGPH,  0*LGBW,  -90, 180, 0)
+# std_brick(lg_4865, lg_white,   2*LGBW,  19*LGPH,  0*LGBW,  -90, 180, 0),
 # # TODO: Add Pizza design...
 
 #  split_union on
@@ -410,32 +417,32 @@ def nonmoving(
 # declare set_10036_1_car_steering_wheel_oy= 6*LGPH;
 # declare set_10036_1_car_steering_wheel_oz= 0;
 # declare set_10036_1_car_steering_wheel =
-# std_brick(lg_3829c01, lg_grey,  2*LGBW, 6*LGPH,  0*LGBW,  -90, 0,  0)
+# std_brick(lg_3829c01, lg_grey,  2*LGBW, 6*LGPH,  0*LGBW,  -90, 0,  0),
 
 # # 3856  White Window 1 x 2 x 3 Shutter
 # # declare set_10036_1_car_schutter_l=
-# std_brick(lg_3856, lg_white, -3.65*LGBW,  15*LGPH, -2*LGBW,  -90, -90, 0)
+# std_brick(lg_3856, lg_white, -3.65*LGBW,  15*LGPH, -2*LGBW,  -90, -90, 0),
 # # declare set_10036_1_car_schutter_l_ox= -3.65*LGBW;
 # # declare set_10036_1_car_schutter_l_oy= 15*LGPH;
 # #
 # # declare set_10036_1_car_schutter_l_oz= -2*LGBW;
 
 # # declare set_10036_1_car_schutter_r=
-# std_brick(lg_3856, lg_white, -3.65*LGBW,  15*LGPH,  2*LGBW,  -90,  90, 0)
+# std_brick(lg_3856, lg_white, -3.65*LGBW,  15*LGPH,  2*LGBW,  -90,  90, 0),
 # #declare set_10036_1_car_schutter_r_ox= -3.65*LGBW;
 # #declare set_10036_1_car_schutter_r_oy= 15*LGPH;
 # #declare set_10036_1_car_schutter_r_oz= 2*LGBW;
 
 # # 2349  White Hinge Car Roof 4 x 4 Sunroof
 # #declare set_10036_1_car_sunroof=
-# std_brick(lg_2349, lg_white, 0.5*LGBW,  16*LGPH,  0*LGBW,  -90, 0, 0)
+# std_brick(lg_2349, lg_white, 0.5*LGBW,  16*LGPH,  0*LGBW,  -90, 0, 0),
 # #declare set_10036_1_car_sunroof_ox= 0.5*LGBW;
 # #declare set_10036_1_car_sunroof_oy= 16*LGPH;
 # #declare set_10036_1_car_sunroof_oz= 0;
 
 # # 2348b TrBlue  Glass for Hinge Car Roof 4 x 4 Sunroof with Ridges
 # #declare set_10036_1_car_sunroof_glass=
-# std_brick(lg_2348b, lg_clear_cyan, 1.35*LGBW,15.5*LGPH, 0*LGBW,  -90, 0, 0)
+# std_brick(lg_2348b, lg_clear_cyan, 1.35*LGBW,15.5*LGPH, 0*LGBW,  -90, 0, 0),
 # #declare set_10036_1_car_sunroof_glass_ox= 1.35*LGBW;
 # #declare set_10036_1_car_sunroof_glass_oy= 15.5*LGPH;
 # #declare set_10036_1_car_sunroof_glass_oz= 0;
@@ -444,8 +451,8 @@ def nonmoving(
 # //3641  Black Tyre
 # #declare set_10036_1_car_wheel_fr=
 #   union {
-#   UnchangedBrick(lg_4624, lg_white)
-#   UnchangedBrick(lg_3641, lg_black)
+#   UnchangedBrick(lg_4624, lg_white),
+#   UnchangedBrick(lg_3641, lg_black),
 
 #   rotate <-90, 90, 0>
 #   translate <-2.5*LGBW, 2.5*LGPH, -2*LGBW>
@@ -456,8 +463,8 @@ def nonmoving(
 
 # #declare set_10036_1_car_wheel_fl=
 #   union {
-#   UnchangedBrick(lg_4624, lg_white)
-#   UnchangedBrick(lg_3641, lg_black)
+#   UnchangedBrick(lg_4624, lg_white),
+#   UnchangedBrick(lg_3641, lg_black),
 
 #   rotate <-90, 90, 0>
 #   translate <2.5*LGBW, 2.5*LGPH, -2*LGBW>
@@ -468,8 +475,8 @@ def nonmoving(
 
 # #declare set_10036_1_car_wheel_rl =
 #   union {
-#   UnchangedBrick(lg_4624, lg_white)
-#   UnchangedBrick(lg_3641, lg_black)
+#   UnchangedBrick(lg_4624, lg_white),
+#   UnchangedBrick(lg_3641, lg_black),
 
 #   rotate <-90, -90, 0>
 #   translate <-2.5*LGBW, 2.5*LGPH, 2*LGBW>
@@ -481,8 +488,8 @@ def nonmoving(
 
 # #declare set_10036_1_car_wheel_rr=
 #   union {
-#   UnchangedBrick(lg_4624, lg_white)
-#   UnchangedBrick(lg_3641, lg_black)
+#   UnchangedBrick(lg_4624, lg_white),
+#   UnchangedBrick(lg_3641, lg_black),
 
 #   rotate <-90, -90, 0>
 #   translate <2.5*LGBW, 2.5*LGPH, 2*LGBW>

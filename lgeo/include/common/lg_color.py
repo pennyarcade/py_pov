@@ -96,10 +96,10 @@ if LG_QUALITY > 1:
 
 
 # 0
-# LG_BLACK = Texture(
-#     Pigment(Color(rgb=Vector(33 / 255.0, 33 / 255.0, 33 / 255.0))),
-#     LG_SOLID_FINISH
-# )
+LG_BLACK = Texture(
+    Pigment(Color(rgb=Vector(33 / 255.0, 33 / 255.0, 33 / 255.0))),
+    LG_SOLID_FINISH
+)
 
 # 1
 # LG_BLUE = Texture(
