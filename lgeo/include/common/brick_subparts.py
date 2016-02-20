@@ -150,7 +150,12 @@ def standard_plate(
         height=LGPH,
         innerheight=LG_PLATE_INNER_HEIGHT
 ):
-    """Standard plate brick."""
+    """
+    Standard plate brick.
+
+
+    @Todo: fix plate column for 1x2 plate & bricks
+    """
     return Union(
         Sphere(
             Vector(LGCS, LGCS, LGCS),
