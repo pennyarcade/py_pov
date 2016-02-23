@@ -320,10 +320,10 @@ def get_clear_color(cvector, quality):
 
 
 # 41
-# LG_CLEAR_CYAN = get_clear_color(
-#     Vector(174 / 255.0, 239 / 255.0, 237 / 255.0),
-#     LG_QUALITY
-# )
+LG_CLEAR_CYAN = get_clear_color(
+    Vector(174 / 255.0, 239 / 255.0, 237 / 255.0),
+    LG_QUALITY
+)
 
 
 # 42

@@ -7,11 +7,11 @@ Testing Scene
 """
 import os
 
-from lgeo import lgeo_city
+from lgeo import testscene
 
 # INFILE = tempfile.NamedTemporaryFile(delete=False, suffix='.pov')
-INFILE = open('main.pov', 'w')
-INFILE.write(str(lgeo_city.main()))
+INFILE = open('test.pov', 'w')
+INFILE.write(str(testscene.main()))
 INFILE.close()
 
 os.system("povray +I" + INFILE.name + " +Omain.png +W1280 +H960 +V +D +X +P")

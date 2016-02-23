@@ -109,7 +109,7 @@ from pov.object_modifier.Translate import Translate
 
 # ==== LGEO Colors and Definitions ====
 from lgeo.include.common.lg_color import LG_RED, LG_WHITE, LG_YELLOW, LG_BLACK
-from lgeo.include.common.lg_color import LG_CLEAR_YELLOW
+from lgeo.include.common.lg_color import LG_CLEAR_YELLOW, LG_CLEAR_CYAN
 from lgeo.include.common.lg_defs import LGPH, LGBW
 
 # ==== LGEO fixed parts ====
@@ -117,7 +117,7 @@ from lgeo.include.common.lg_defs import LGPH, LGBW
 # ==== LGEO parts ====
 # include "lg_2348b.inc"
 # include "lg_2349.inc"
-# include "lg_2357.inc"
+from lgeo.include.brick import lg_2357
 from lgeo.include.brick import lg_2412b
 from lgeo.include.brick import lg_2436
 from lgeo.include.brick import lg_2441
@@ -130,8 +130,9 @@ from lgeo.include.brick import lg_3022
 from lgeo.include.brick import lg_3024
 from lgeo.include.brick import lg_3069b
 # include "lg_3641.inc"
+from lgeo.include.brick import lg_3710
 from lgeo.include.brick import lg_3788
-# include "lg_3823.inc"
+from lgeo.include.brick import lg_3823
 # include "lg_3829c01.inc"
 # include "lg_3853.inc"
 # include "lg_3856.inc"
@@ -379,7 +380,115 @@ def nonmoving(
             -90, 90, 0
         ),
         Comment('**** 3020  White Plate 2 x 4 ****'),
-
+        Comment('**** 2357  White Brick 2 x 2 Corner ****'),
+        std_brick(
+            lg_2357.solid(),
+            LG_WHITE,
+            3 * LGBW, 9 * LGPH, -1.5 * LGBW,
+            -90, 0, 0
+        ),
+        Comment('**** 2357  White Brick 2 x 2 Corner ****'),
+        Comment('**** 2357  White Brick 2 x 2 Corner ****'),
+        std_brick(
+            lg_2357.solid(),
+            LG_WHITE,
+            3 * LGBW, 9 * LGPH, 1.5 * LGBW,
+            -90, 270, 0
+        ),
+        Comment('**** 2357  White Brick 2 x 2 Corner ****'),
+        Comment("""
+        ********************************************************************
+        * Objects (Step 10)
+        ********************************************************************
+        """),
+        Comment('**** 3069b Black Tile 1 x 2 with Groove ****'),
+        std_brick(
+            lg_3069b.solid(),
+            LG_BLACK,
+            -2 * LGBW, 12 * LGPH, 0 * LGBW,
+            -90, 180, 0
+        ),
+        Comment('**** 3069b Black Tile 1 x 2 with Groove ****'),
+        Comment('**** 4865  Black Panel 1 x 2 x 1 ****'),
+        std_brick(
+            lg_4865.solid(),
+            LG_BLACK,
+            -1.5 * LGBW, 14 * LGPH, 0 * LGBW,
+            -90, 180, 0
+        ),
+        Comment('**** 4865  Black Panel 1 x 2 x 1 ****'),
+        Comment('**** 3823  TrLtBlu Windscreen 2 x 4 x 2 ****'),
+        # @Todo: Needs a lot of fixing
+        std_brick(
+            lg_3823.clear(),
+            LG_CLEAR_CYAN,
+            2 * LGBW, 15 * LGPH, 0*LGBW,
+            -90, 0, 0
+        ),
+        Comment('**** 3823  TrLtBlu Windscreen 2 x 4 x 2 ****'),
+        Comment("""
+        ********************************************************************
+        * Objects (Step 11)
+        ********************************************************************
+        """),
+        Comment('**** 3853  White Window 1 x 4 x 3 ****'),
+#         std_brick(
+#             lg_3853.solid(),
+#             LG_WHITE,
+#             -3 * LGBW, 15 * LGPH, 0 * LGBW,
+#             -90, 180, 0
+#         ),
+        Comment('**** 3853  White Window 1 x 4 x 3 ****'),
+        Comment('**** 3004  White Brick 1 x 2 ****'),
+        std_brick(
+            lg_3004.solid(),
+            LG_WHITE,
+            -1.5 * LGBW, 14 * LGPH, -1 * LGBW,
+            -90, 180, 0
+        ),
+        Comment('**** 3004  White Brick 1 x 2 ****'),
+        Comment('**** 3004  White Brick 1 x 2 ****'),
+        std_brick(
+            lg_3004.solid(),
+            LG_WHITE,
+            -1.5 * LGBW, 14 * LGPH, 2 * LGBW,
+            -90, 180, 0
+        ),
+        Comment('**** 3004  White Brick 1 x 2 ****'),
+        Comment('**** 3710  White Plate 1 x 4 ****'),
+        #Todo: fix plate coloumns
+        std_brick(
+            lg_3710.solid(),
+            LG_WHITE,
+            -2 * LGBW, 15 * LGPH, 0 * LGBW,
+            -90, 0, 0
+        ),
+        Comment('**** 3710  White Plate 1 x 4 ****'),
+        Comment("""
+        ********************************************************************
+        * Objects (Step 12)
+        ********************************************************************
+        """),
+#         Comment('**** White Hinge Tile 1 x 4 ****'),
+#         std_brick(
+#             lg_4625.solid(),
+#             LG_WHITE, -1*LGBW, 15*LGPH, 0*LGBW,
+#             -90, 0, 0
+#         ),
+#         Comment('**** White Hinge Tile 1 x 4 ****'),
+        Comment("""
+        ********************************************************************
+        * Objects (Step 13)
+        ********************************************************************
+        """),
+        Comment('**** 3020  White Plate 2 x 4 ****'),
+        std_brick(
+            lg_3020.solid(),
+            LG_WHITE,
+            -2.5*LGBW, 16*LGPH, -1*LGBW,
+            -90, 90, 0
+        ),
+        Comment('**** 3020  White Plate 2 x 4 ****'),
 
 
         Rotate(rvector),
@@ -388,47 +497,11 @@ def nonmoving(
 
     return part
 
-#        Comment('****  ****'),
-#        std_brick(),
-#        Comment('****  ****'),
+#         Comment('****  ****'),
+#         std_brick(),
+#         Comment('****  ****'),
 
 
-# # 2357  White Brick 2 x 2 Corner
-# std_brick(lg_2357 ,  LG_WHITE,  3*LGBW, 9*LGPH, -1.5*LGBW,  -90, 0, 0),
-# std_brick(lg_2357 ,  LG_WHITE,  3*LGBW, 9*LGPH,  1.5*LGBW,  -90, -90, 0),
-
-# Objects (Step 10)
-
-
-# # 3069b Black Tile 1 x 2 with Groove
-# std_brick(lg_3069b,  LG_BLACK,  -2*LGBW,  12*LGPH,  0*LGBW,  -90, 180, 0),
-# # 4865  Black Panel 1 x 2 x 1
-# std_brick(lg_4865 ,  LG_BLACK,  -1*LGBW,  14*LGPH,  0*LGBW,  -90, 180, 0),
-# # 3823  TrLtBlu Windscreen 2 x 4 x 2
-# std_brick(lg_3823, lg_clear_cyan,  2*LGBW,  15*LGPH,  0*LGBW,  -90, 0, 0),
-
-
-# Objects (Step 11)
-
-# # 3853  White Window 1 x 4 x 3
-# std_brick(lg_3853, LG_WHITE,  -3*LGBW,  15*LGPH,  0*LGBW,  -90,  180, 0),
-# # 3004  White Brick 1 x 2
-# std_brick(lg_3004, LG_WHITE,  -1.5*LGBW,  14*LGPH, -1.5*LGBW,  -90,  90,  0),
-# std_brick(lg_3004, LG_WHITE,  -1.5*LGBW,  14*LGPH,  1.5*LGBW,  -90,  90,  0),
-# # 3010  White Plate 1 x 4
-# std_brick(lg_3010, LG_WHITE,  -2*LGBW,  15*LGPH,  0*LGBW,  -90, 0,  0),
-
-
-# Objects (Step 12)
-
-# # 4625  White Hinge Tile 1 x 4
-# std_brick(lg_4625, LG_WHITE,  -1*LGBW,  15*LGPH,  0*LGBW,  -90, 0, 0),
-
-
-# Objects (Step 13)
-
-# # 3020  White Plate 2 x 4
-# std_brick(lg_3020, LG_WHITE,  -2.5*LGBW,  16*LGPH,  0*LGBW,  -90, 0, 0),
 # # 4865  Black Panel 1 x 2 x 1
 # std_brick(lg_4865, LG_WHITE,   2*LGBW,  19*LGPH,  0*LGBW,  -90, 180, 0),
 # # TODO: Add Pizza design...

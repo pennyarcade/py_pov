@@ -389,15 +389,15 @@ LG_KNOB_CLEAR = lg_knob_function(Merge, LEGO_LOGO_TEXT_CLEAR)
 LG_TECH_KNOB_CLEAR = _lg_tech_knob_function(Merge)
 
 
-# def lg_tech_knob_logo_clear():
-#     """@Todo: ApiDoc."""
-#     if LG_QUALITY > 3:
-#         return Union(
-#             LG_TECH_KNOB_CLEAR,
-#             Object(LEGO_LOGO_TEXT(), Scale(Vector(3 / 4, 3 / 4, 3 / 4)))
-#         )
-#     else:
-#         return LG_TECH_KNOB_CLEAR
+def lg_tech_knob_logo_clear():
+    """@Todo: ApiDoc."""
+    if LG_QUALITY > 3:
+        return Union(
+            LG_TECH_KNOB_CLEAR,
+            Object(LEGO_LOGO_TEXT, Scale(Vector(3 / 4, 3 / 4, 3 / 4)))
+        )
+    else:
+        return LG_TECH_KNOB_CLEAR
 
 # lg_brick_cylinder_clear = get_lg_cylinder(Merge, LG_BRICK_INNER_HEIGHT)
 # lg_plate_cylinder_clear = get_lg_cylinder(Merge, LG_PLATE_INNER_HEIGHT)
