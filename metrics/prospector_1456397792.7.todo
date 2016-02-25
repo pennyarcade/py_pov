@@ -73,57 +73,57 @@ Messages ✔☐
     ✔ pylint: bad-continuation / Wrong hanging indentation.
          ),
         |^  |
-  ☐ Line: 315
-    ☐ pep8: E303 / too many blank lines (3) (col 1)
+  ✔ Line: 315
+    ✔ pep8: E303 / too many blank lines (3) (col 1)
   ☐ Line: 562
     ☐ pylint: pointless-string-statement / String statement has no effect
 
-☐ lgeo/include/brick/lg_2441.py
-  ☐ Line: 1
-    ☐ pylint: too-many-lines / Too many lines in module (2476/2000)
-  ☐ Line: 93
-    ☐ pep8: E202 / whitespace before ')' (col 69)
-    ☐ pylint: bad-whitespace / No space allowed before bracket
+✔ lgeo/include/brick/lg_2441.py
+  ✔ Line: 1
+    ✔ pylint: too-many-lines / Too many lines in module (2476/2000)
+  ✔ Line: 93
+    ✔ pep8: E202 / whitespace before ')' (col 69)
+    ✔ pylint: bad-whitespace / No space allowed before bracket
                             (0.175 + LGCS) / cos(LG_ANGLE * pi / 180 ), 0, 0
                                                                      ^
-  ☐ Line: 106
-    ☐ pep8: E201 / whitespace after '(' (col 51)
-    ☐ pylint: bad-whitespace / No space allowed after bracket
+  ✔ Line: 106
+    ✔ pep8: E201 / whitespace after '(' (col 51)
+    ✔ pylint: bad-whitespace / No space allowed after bracket
                             -(0.175 + LGCS) / cos( LG_ANGLE * pi / 180), 0, 0
                                                  ^
-  ☐ Line: 814
-    ☐ pep8: E124 / closing bracket does not match visual indentation (col 25)
-    ☐ pylint: bad-continuation / Wrong continued indentation (add 9 spaces).
+  ✔ Line: 814
+    ✔ pep8: E124 / closing bracket does not match visual indentation (col 25)
+    ✔ pylint: bad-continuation / Wrong continued indentation (add 9 spaces).
                         )
                         ^        |
-  ☐ Line: 830
-    ☐ pep8: E124 / closing bracket does not match visual indentation (col 29)
-    ☐ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
+  ✔ Line: 830
+    ✔ pep8: E124 / closing bracket does not match visual indentation (col 29)
+    ✔ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
                             )
                             ^     |
-  ☐ Line: 839
-    ☐ pep8: E124 / closing bracket does not match visual indentation (col 29)
-    ☐ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
+  ✔ Line: 839
+    ✔ pep8: E124 / closing bracket does not match visual indentation (col 29)
+    ✔ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
                             )
                             ^     |
-  ☐ Line: 848
-    ☐ pep8: E124 / closing bracket does not match visual indentation (col 29)
-    ☐ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
+  ✔ Line: 848
+    ✔ pep8: E124 / closing bracket does not match visual indentation (col 29)
+    ✔ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
                             )
                             ^     |
-  ☐ Line: 857
-    ☐ pep8: E124 / closing bracket does not match visual indentation (col 29)
-    ☐ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
+  ✔ Line: 857
+    ✔ pep8: E124 / closing bracket does not match visual indentation (col 29)
+    ✔ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
                             )
                             ^     |
-  ☐ Line: 866
-    ☐ pep8: E124 / closing bracket does not match visual indentation (col 29)
-    ☐ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
+  ✔ Line: 866
+    ✔ pep8: E124 / closing bracket does not match visual indentation (col 29)
+    ✔ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
                             )
                             ^     |
-  ☐ Line: 875
-    ☐ pep8: E124 / closing bracket does not match visual indentation (col 29)
-    ☐ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
+  ✔ Line: 875
+    ✔ pep8: E124 / closing bracket does not match visual indentation (col 29)
+    ✔ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
                             )
                             ^     |
 
