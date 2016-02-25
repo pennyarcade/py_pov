@@ -1,0 +1,853 @@
+Messages ✔☐
+========
+
+✔ lgeo/include/brick/lg_2357.py
+  ✔ Line: 1
+    ✔ pep257: D400 / First line should end with a period (not '/')
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 0)
+  ✔ Line: 2
+    ✔ pylint: line-too-long / Line too long (81/79)
+  ✔ Line: 3
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 4
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 5
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 6
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 7
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 8
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 9
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 10
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 11
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 12
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 13
+    ✔ pylint: line-too-long / Line too long (81/79)
+  ✔ Line: 18
+    ✔ pylint: unused-import / Unused LGPH imported from lgeo.include.common.lg_defs
+  ✔ Line: 20
+    ✔ pylint: unused-import / Unused LG_TOP_HEIGHT imported from lgeo.include.common.lg_defs
+  ✔ Line: 39
+    ✔ pep8: E303 / too many blank lines (3) (col 1)
+  ✔ Line: 182
+    ✔ pep8: E121 / continuation line under-indented for hanging indent (col 31)
+    ✔ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
+                              length * LGBW, width * LGBW - LGCS, LGBH - LGCS
+                              ^ |
+  ✔ Line: 227
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 233
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 239
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 431
+    ✔ pep8: E501 / line too long (97 > 79 characters) (col 80)
+  ✔ Line: 435
+    ✔ pep8: E501 / line too long (112 > 79 characters) (col 80)
+  ✔ Line: 461
+    ✔ pep8: E501 / line too long (80 > 79 characters) (col 80)
+
+☐ lgeo/include/brick/lg_2436.py
+  ☐ Line: 33
+    ☐ pylint: unused-import / Unused LG_PLATE_INNER_HEIGHT imported from lgeo.include.common.lg_defs
+  ☐ Line: 34
+    ☐ pylint: unused-import / Unused LG_KNOB_INNER_RADIUS imported from lgeo.include.common.lg_defs
+  ☐ Line: 57
+    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 10)
+    ☐ pylint: bad-continuation / Wrong hanging indentation.
+         ),
+        |^  |
+  ☐ Line: 113
+    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 10)
+    ☐ pylint: bad-continuation / Wrong hanging indentation.
+         ),
+        |^  |
+  ☐ Line: 138
+    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 10)
+    ☐ pylint: bad-continuation / Wrong hanging indentation.
+         ),
+        |^  |
+  ☐ Line: 315
+    ☐ pep8: E303 / too many blank lines (3) (col 1)
+  ☐ Line: 562
+    ☐ pylint: pointless-string-statement / String statement has no effect
+
+☐ lgeo/include/brick/lg_2441.py
+  ☐ Line: 1
+    ☐ pylint: too-many-lines / Too many lines in module (2476/2000)
+  ☐ Line: 93
+    ☐ pep8: E202 / whitespace before ')' (col 69)
+    ☐ pylint: bad-whitespace / No space allowed before bracket
+                            (0.175 + LGCS) / cos(LG_ANGLE * pi / 180 ), 0, 0
+                                                                     ^
+  ☐ Line: 106
+    ☐ pep8: E201 / whitespace after '(' (col 51)
+    ☐ pylint: bad-whitespace / No space allowed after bracket
+                            -(0.175 + LGCS) / cos( LG_ANGLE * pi / 180), 0, 0
+                                                 ^
+  ☐ Line: 814
+    ☐ pep8: E124 / closing bracket does not match visual indentation (col 25)
+    ☐ pylint: bad-continuation / Wrong continued indentation (add 9 spaces).
+                        )
+                        ^        |
+  ☐ Line: 830
+    ☐ pep8: E124 / closing bracket does not match visual indentation (col 29)
+    ☐ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
+                            )
+                            ^     |
+  ☐ Line: 839
+    ☐ pep8: E124 / closing bracket does not match visual indentation (col 29)
+    ☐ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
+                            )
+                            ^     |
+  ☐ Line: 848
+    ☐ pep8: E124 / closing bracket does not match visual indentation (col 29)
+    ☐ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
+                            )
+                            ^     |
+  ☐ Line: 857
+    ☐ pep8: E124 / closing bracket does not match visual indentation (col 29)
+    ☐ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
+                            )
+                            ^     |
+  ☐ Line: 866
+    ☐ pep8: E124 / closing bracket does not match visual indentation (col 29)
+    ☐ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
+                            )
+                            ^     |
+  ☐ Line: 875
+    ☐ pep8: E124 / closing bracket does not match visual indentation (col 29)
+    ☐ pylint: bad-continuation / Wrong continued indentation (add 6 spaces).
+                            )
+                            ^     |
+
+☐ lgeo/include/brick/lg_3004.py
+  ☐ Line: 39
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 43
+    ☐ pep8: E501 / line too long (96 > 79 characters) (col 80)
+  ☐ Line: 46
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 47
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 51
+    ☐ pep8: E501 / line too long (116 > 79 characters) (col 80)
+  ☐ Line: 54
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 59
+    ☐ pep8: E501 / line too long (90 > 79 characters) (col 80)
+  ☐ Line: 68
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 72
+    ☐ pep8: E501 / line too long (97 > 79 characters) (col 80)
+  ☐ Line: 75
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 76
+    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
+  ☐ Line: 80
+    ☐ pep8: E501 / line too long (115 > 79 characters) (col 80)
+  ☐ Line: 84
+    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
+  ☐ Line: 88
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 89
+    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
+  ☐ Line: 93
+    ☐ pep8: E501 / line too long (123 > 79 characters) (col 80)
+  ☐ Line: 96
+    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
+  ☐ Line: 97
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 101
+    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
+  ☐ Line: 102
+    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
+  ☐ Line: 106
+    ☐ pep8: E501 / line too long (141 > 79 characters) (col 80)
+  ☐ Line: 109
+    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
+  ☐ Line: 110
+    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
+  ☐ Line: 114
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 115
+    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
+  ☐ Line: 122
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 126
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 130
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 136
+    ☐ pep8: E501 / line too long (102 > 79 characters) (col 80)
+  ☐ Line: 142
+    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ☐ Line: 157
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 172
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 176
+    ☐ pep8: E501 / line too long (96 > 79 characters) (col 80)
+  ☐ Line: 179
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 180
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 184
+    ☐ pep8: E501 / line too long (116 > 79 characters) (col 80)
+  ☐ Line: 187
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 192
+    ☐ pep8: E501 / line too long (90 > 79 characters) (col 80)
+  ☐ Line: 201
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 205
+    ☐ pep8: E501 / line too long (97 > 79 characters) (col 80)
+  ☐ Line: 208
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 209
+    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
+  ☐ Line: 213
+    ☐ pep8: E501 / line too long (115 > 79 characters) (col 80)
+  ☐ Line: 217
+    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
+  ☐ Line: 221
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 222
+    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
+  ☐ Line: 226
+    ☐ pep8: E501 / line too long (123 > 79 characters) (col 80)
+  ☐ Line: 229
+    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
+  ☐ Line: 230
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 234
+    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
+  ☐ Line: 235
+    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
+  ☐ Line: 239
+    ☐ pep8: E501 / line too long (141 > 79 characters) (col 80)
+  ☐ Line: 242
+    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
+  ☐ Line: 243
+    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
+  ☐ Line: 247
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 248
+    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
+  ☐ Line: 255
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 259
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 263
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 269
+    ☐ pep8: E501 / line too long (102 > 79 characters) (col 80)
+  ☐ Line: 275
+    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ☐ Line: 290
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+
+☐ lgeo/include/brick/lg_3020.py
+  ☐ Line: 30
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 34
+    ☐ pep8: E501 / line too long (96 > 79 characters) (col 80)
+  ☐ Line: 37
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 38
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 42
+    ☐ pep8: E501 / line too long (116 > 79 characters) (col 80)
+  ☐ Line: 45
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 50
+    ☐ pep8: E501 / line too long (90 > 79 characters) (col 80)
+  ☐ Line: 59
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 63
+    ☐ pep8: E501 / line too long (97 > 79 characters) (col 80)
+  ☐ Line: 66
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 67
+    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
+  ☐ Line: 71
+    ☐ pep8: E501 / line too long (115 > 79 characters) (col 80)
+  ☐ Line: 75
+    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
+  ☐ Line: 79
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 80
+    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
+  ☐ Line: 84
+    ☐ pep8: E501 / line too long (123 > 79 characters) (col 80)
+  ☐ Line: 87
+    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
+  ☐ Line: 88
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 92
+    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
+  ☐ Line: 93
+    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
+  ☐ Line: 97
+    ☐ pep8: E501 / line too long (141 > 79 characters) (col 80)
+  ☐ Line: 100
+    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
+  ☐ Line: 101
+    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
+  ☐ Line: 105
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 106
+    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
+  ☐ Line: 113
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 117
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 121
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 127
+    ☐ pep8: E501 / line too long (102 > 79 characters) (col 80)
+  ☐ Line: 135
+    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
+  ☐ Line: 158
+    ☐ pep8: E501 / line too long (91 > 79 characters) (col 80)
+
+☐ lgeo/include/brick/lg_3069b.py
+  ☐ Line: 1
+    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
+  ☐ Line: 30
+    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
+  ☐ Line: 221
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 234
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 267
+    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
+
+☐ lgeo/include/brick/lg_3710.py
+  ☐ Line: 16
+    ☐ pylint: unused-import / Unused get_brick_coloumn imported from lgeo.include.common.brick_subparts
+  ☐ Line: 19
+    ☐ pylint: unused-import / Unused LG_PLATE_COLUMN imported from lgeo.include.common.lg_defs
+
+☐ lgeo/include/brick/lg_3823.py
+  ☐ Line: 20
+    ☐ pylint: unused-import / Unused lg_knob imported from lgeo.include.common.lg_defs
+  ☐ Line: 22
+    ☐ pylint: unused-import / Unused LG_BRICK_COLUMN imported from lgeo.include.common.lg_defs
+  ☐ Line: 23
+    ☐ pylint: unused-import / Unused LG_KNOB_INNER_SPACE imported from lgeo.include.common.lg_defs
+  ☐ Line: 46
+    ☐ pylint: ungrouped-imports / Imports from package lgeo are not grouped
+    ☐ pylint: unused-import / Unused LG_RED imported from lgeo.include.common.lg_color
+  ☐ Line: 171
+    ☐ pep8: E501 / line too long (84 > 79 characters) (col 80)
+  ☐ Line: 190
+    ☐ pep8: E501 / line too long (83 > 79 characters) (col 80)
+  ☐ Line: 194
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 368
+    ☐ pep8: E501 / line too long (84 > 79 characters) (col 80)
+  ☐ Line: 420
+    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
+    ☐ pylint: unused-argument / Unused argument 'length' (col 10)
+    ☐ pylint: unused-argument / Unused argument 'width' (col 20)
+  ☐ Line: 450
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 465
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 510
+    ☐ pep8: E225 / missing whitespace around operator (col 63)
+  ☐ Line: 537
+    ☐ pep8: E261 / at least two spaces before inline comment (col 37)
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 540
+    ☐ pep8: E261 / at least two spaces before inline comment (col 31)
+  ☐ Line: 578
+    ☐ pep8: E123 / closing bracket does not match indentation of opening bracket's line (col 25)
+  ☐ Line: 618
+    ☐ pep8: E225 / missing whitespace around operator (col 44)
+  ☐ Line: 717
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 726
+    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 31)
+    ☐ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
+                              -LGBW / 2 + LGCS, 2 * LGBW - LGCS - LG_E, -LGCS
+                              ^ |
+  ☐ Line: 739
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 742
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 37)
+  ☐ Line: 844
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 63)
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 68)
+  ☐ Line: 905
+    ☐ pep8: E126 / continuation line over-indented for hanging indent (col 35)
+    ☐ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
+                                  1, 0,
+                                | ^
+  ☐ Line: 906
+    ☐ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
+                                  2 / LGBW * LGCS * sin(LG_ANGLE * pi / 180),
+                                | ^
+  ☐ Line: 907
+    ☐ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
+                                  0, 1, 0,
+                                | ^
+  ☐ Line: 908
+    ☐ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
+                                  -1 / 2, 0, 1,
+                                | ^
+  ☐ Line: 909
+    ☐ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
+                                  LGCS * (cos(LG_ANGLE * pi / 180) - 1),
+                                | ^
+  ☐ Line: 910
+    ☐ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
+                                  0, -LGCS
+                                | ^
+  ☐ Line: 932
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 34)
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 39)
+  ☐ Line: 984
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 34)
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 39)
+
+☐ lgeo/include/brick/lg_4073.py
+  ☐ Line: 22
+    ☐ pylint: unused-import / Unused Sphere imported from pov.finite_solid.Sphere
+  ☐ Line: 28
+    ☐ pylint: unused-import / Unused LG_TOP_HEIGHT imported from lgeo.include.common.lg_defs
+  ☐ Line: 29
+    ☐ pylint: unused-import / Unused LG_WALL_WIDTH imported from lgeo.include.common.lg_defs
+  ☐ Line: 31
+    ☐ pylint: unused-import / Unused LG_KNOB_INNER_RADIUS imported from lgeo.include.common.lg_defs
+  ☐ Line: 32
+    ☐ pylint: unused-import / Unused LG_KNOB_INNER_SPACE imported from lgeo.include.common.lg_defs
+  ☐ Line: 33
+    ☐ pylint: unused-import / Unused LG_PLATE_COLUMN imported from lgeo.include.common.lg_defs
+  ☐ Line: 115
+    ☐ pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  ☐ Line: 120
+    ☐ pep8: E231 / missing whitespace after ',' (col 31)
+  ☐ Line: 162
+    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 15)
+    ☐ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
+              Cylinder(
+              ^ |
+  ☐ Line: 167
+    ☐ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
+              Cylinder(
+              ^ |
+  ☐ Line: 174
+    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 15)
+    ☐ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
+              LG_KNOB_INNER_SPACE_CLEAR,
+              ^ |
+  ☐ Line: 175
+    ☐ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
+              Translate(Vector(0, 0, LG_PLATE_INNER_HEIGHT)),
+              ^ |
+
+☐ lgeo/include/brick/lg_4865.py
+  ☐ Line: 1
+    ☐ pep257: D400 / First line should end with a period (not 'e')
+  ☐ Line: 16
+    ☐ pylint: unused-import / Unused LG_PLATE_INNER_HEIGHT imported from lgeo.include.common.lg_defs
+  ☐ Line: 96
+    ☐ pep8: E303 / too many blank lines (2) (col 5)
+  ☐ Line: 216
+    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 19)
+    ☐ pylint: bad-continuation / Wrong hanging indentation.
+                  ),
+                | ^ |
+  ☐ Line: 414
+    ☐ pep8: E501 / line too long (92 > 79 characters) (col 80)
+  ☐ Line: 417
+    ☐ pep8: E501 / line too long (93 > 79 characters) (col 80)
+  ☐ Line: 420
+    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ☐ Line: 421
+    ☐ pep8: E501 / line too long (88 > 79 characters) (col 80)
+  ☐ Line: 425
+    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ☐ Line: 426
+    ☐ pep8: E501 / line too long (88 > 79 characters) (col 80)
+  ☐ Line: 436
+    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ☐ Line: 441
+    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ☐ Line: 451
+    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ☐ Line: 452
+    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ☐ Line: 456
+    ☐ pep8: E501 / line too long (91 > 79 characters) (col 80)
+  ☐ Line: 459
+    ☐ pep8: E501 / line too long (92 > 79 characters) (col 80)
+  ☐ Line: 469
+    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ☐ Line: 474
+    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ☐ Line: 478
+    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ☐ Line: 479
+    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ☐ Line: 483
+    ☐ pep8: E501 / line too long (112 > 79 characters) (col 80)
+  ☐ Line: 484
+    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
+  ☐ Line: 488
+    ☐ pep8: E501 / line too long (113 > 79 characters) (col 80)
+  ☐ Line: 489
+    ☐ pep8: E501 / line too long (96 > 79 characters) (col 80)
+  ☐ Line: 493
+    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
+  ☐ Line: 494
+    ☐ pep8: E501 / line too long (85 > 79 characters) (col 80)
+  ☐ Line: 498
+    ☐ pep8: E501 / line too long (96 > 79 characters) (col 80)
+  ☐ Line: 499
+    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ☐ Line: 503
+    ☐ pep8: E501 / line too long (96 > 79 characters) (col 80)
+  ☐ Line: 504
+    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
+  ☐ Line: 508
+    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ☐ Line: 509
+    ☐ pep8: E501 / line too long (112 > 79 characters) (col 80)
+  ☐ Line: 513
+    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ☐ Line: 514
+    ☐ pep8: E501 / line too long (113 > 79 characters) (col 80)
+  ☐ Line: 518
+    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ☐ Line: 521
+    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
+  ☐ Line: 526
+    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ☐ Line: 527
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 530
+    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ☐ Line: 531
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 534
+    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ☐ Line: 535
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 539
+    ☐ pep8: E501 / line too long (119 > 79 characters) (col 80)
+  ☐ Line: 540
+    ☐ pep8: E501 / line too long (105 > 79 characters) (col 80)
+  ☐ Line: 545
+    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
+  ☐ Line: 549
+    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
+  ☐ Line: 553
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+
+☐ lgeo/include/common/brick_subparts.py
+  ☐ Line: 147
+    ☐ pep257: D205 / 1 blank line required between summary line and description (found 2)
+
+☐ lgeo/include/common/custom_macros.py
+  ☐ Line: 103
+    ☐ pylint: too-many-arguments / Too many arguments (8/5)
+
+☐ lgeo/include/common/lg_defs.py
+  ☐ Line: 32
+    ☐ pylint: unused-import / Unused Box imported from pov.finite_solid.Box
+  ☐ Line: 295
+    ☐ pep257: D103 / Missing docstring in public function
+  ☐ Line: 298
+    ☐ pylint: redefined-variable-type / Redefinition of scale type from str to pov.object_modifier.Scale.Scale (col 8)
+  ☐ Line: 308
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 31)
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 36)
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 41)
+
+☐ lgeo/set/lg_10036_1_car.py
+  ☐ Line: 425
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 35)
+  ☐ Line: 435
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+    ☐ pylint: bad-continuation / Wrong hanging indentation (add 8 spaces).
+☐ #         std_brick(
+☐ ^       |
+  ☐ Line: 436
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ☐ Line: 437
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ☐ Line: 438
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ☐ Line: 439
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ☐ Line: 440
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ☐ Line: 459
+    ☐ pep8: E265 / block comment should start with '# ' (col 9)
+  ☐ Line: 472
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+    ☐ pylint: bad-continuation / Wrong hanging indentation (add 8 spaces).
+☐ #         Comment('**** White Hinge Tile 1 x 4 ****'),
+☐ ^       |
+  ☐ Line: 473
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ☐ Line: 474
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ☐ Line: 475
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ☐ Line: 476
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ☐ Line: 477
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ☐ Line: 478
+    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ☐ Line: 488
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 17)
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 26)
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 35)
+
+☐ lgeo/set/lg_10036_1_house.py
+  ☐ Line: 167
+    ☐ pylint: invalid-name / Invalid constant name "set_10036_1_house_nonmoving"
+
+☐ lgeo/testscene.py
+  ☐ Line: 22
+    ☐ pylint: unused-import / Unused z imported from pov.basic.Vector
+  ☐ Line: 28
+    ☐ pylint: unused-import / Unused Plane imported from pov.infinite_solid.Plane
+  ☐ Line: 45
+    ☐ pylint: unused-import / Unused LG_YELLOW imported from lgeo.include.common.lg_color
+  ☐ Line: 52
+    ☐ pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  ☐ Line: 91
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 27)
+  ☐ Line: 114
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+
+☐ pov/basic/Color.py
+  ☐ Line: 44
+    ☐ mccabe: MC0001 / Color.__init__ is too complex (12)
+  ☐ Line: 84
+    ☐ vulture: unused-attribute / Unused attribute filter
+  ☐ Line: 85
+    ☐ vulture: unused-attribute / Unused attribute transmit
+
+☐ pov/basic/PoVObject.py
+  ☐ Line: 1
+    ☐ pep257: D100 / Missing docstring in public module
+
+☐ pov/basic/SceneItem.py
+  ☐ Line: 1
+    ☐ pep257: D100 / Missing docstring in public module
+  ☐ Line: 174
+    ☐ pylint: global-statement / Using the global statement (col 12)
+  ☐ Line: 192
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 194
+    ☐ pylint: global-statement / Using the global statement (col 8)
+  ☐ Line: 198
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 200
+    ☐ pylint: global-statement / Using the global statement (col 8)
+  ☐ Line: 208
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 210
+    ☐ pylint: global-variable-not-assigned / Using global for 'INDENTATION' but no assignment is done (col 8)
+  ☐ Line: 234
+    ☐ pylint: global-variable-not-assigned / Using global for 'INDENTATION' but no assignment is done (col 8)
+  ☐ Line: 332
+    ☐ pep8: N802 / function name should be lowercase (col 9)
+    ☐ pylint: invalid-name / Invalid method name "_checkKwargValue" (col 4)
+  ☐ Line: 479
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 488
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+
+☐ pov/basic/Vector.py
+  ☐ Line: 122
+    ☐ pylint: invalid-name / Invalid constant name "x"
+  ☐ Line: 123
+    ☐ pylint: invalid-name / Invalid constant name "y"
+  ☐ Line: 124
+    ☐ pylint: invalid-name / Invalid constant name "z"
+
+☐ pov/finite_patch/FinitePatch.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function FinitePatch
+
+☐ pov/finite_solid/Box.py
+  ☐ Line: 79
+    ☐ pylint: unused-variable / Unused variable 'item' (col 15)
+
+☐ pov/finite_solid/Cone.py
+  ☐ Line: 33
+    ☐ mccabe: MC0001 / Cone.__init__ is too complex (12)
+
+☐ pov/finite_solid/Cylinder.py
+  ☐ Line: 30
+    ☐ mccabe: MC0001 / Cylinder.__init__ is too complex (11)
+
+☐ pov/finite_solid/Prism.py
+  ☐ Line: 15
+    ☐ vulture: unused-function / Unused function Prism
+
+☐ pov/finite_solid/Sor.py
+  ☐ Line: 15
+    ☐ vulture: unused-function / Unused function Sor
+
+☐ pov/finite_solid/SphereSweep.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function SphereSweep
+
+☐ pov/finite_solid/SuperEllipsoid.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function SuperEllipsoid
+
+☐ pov/finite_solid/Text.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function Text
+
+☐ pov/global_settings/Photons.py
+  ☐ Line: 17
+    ☐ vulture: unused-function / Unused function Photons
+
+☐ pov/global_settings/Radiosity.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function Radiosity
+
+☐ pov/include/colors_inc.py
+  ☐ Line: 176
+    ☐ vulture: unused-function / Unused function ch2rgb
+  ☐ Line: 202
+    ☐ vulture: unused-function / Unused function crgb2h
+  ☐ Line: 274
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+
+☐ pov/other/IsoSurface.py
+  ☐ Line: 17
+    ☐ vulture: unused-function / Unused function IsoSurface
+
+☐ pov/other/ParametricObj.py
+  ☐ Line: 17
+    ☐ vulture: unused-function / Unused function ParametricObj
+
+☐ pov/tests/AthEffTest.py
+  ☐ Line: 26
+    ☐ vulture: unused-function / Unused function FogTestCase
+  ☐ Line: 38
+    ☐ vulture: unused-function / Unused function SkySphereTestCase
+
+☐ pov/tests/BasicTest.py
+  ☐ Line: 29
+    ☐ vulture: unused-function / Unused function SceneItemTestCase
+  ☐ Line: 147
+    ☐ pylint: protected-access / Access to a protected member _block_end of a client class (col 25)
+  ☐ Line: 182
+    ☐ pylint: protected-access / Access to a protected member _dedent of a client class (col 12)
+  ☐ Line: 194
+    ☐ pylint: protected-access / Access to a protected member _validate_kwargs of a client class (col 12)
+  ☐ Line: 206
+    ☐ pylint: protected-access / Access to a protected member _validate_kwargs of a client class (col 12)
+  ☐ Line: 211
+    ☐ pylint: protected-access / Access to a protected member _is_valid_identifier of a client class (col 12)
+  ☐ Line: 214
+    ☐ pylint: protected-access / Access to a protected member _is_valid_identifier of a client class (col 12)
+  ☐ Line: 234
+    ☐ pylint: protected-access / Access to a protected member _checkKwargValue of a client class (col 12)
+  ☐ Line: 237
+    ☐ pylint: too-many-public-methods / Too many public methods (23/20)
+    ☐ vulture: unused-function / Unused function VectorTestCase
+  ☐ Line: 360
+    ☐ vulture: unused-function / Unused function SceneFileTestCase
+  ☐ Line: 367
+    ☐ vulture: unused-function / Unused function tearDown
+  ☐ Line: 400
+    ☐ pylint: unused-variable / Unused variable 'first' (col 8)
+  ☐ Line: 407
+    ☐ vulture: unused-function / Unused function BlockObjectTestCase
+  ☐ Line: 447
+    ☐ pylint: protected-access / Access to a protected member _indent of a client class (col 8)
+  ☐ Line: 449
+    ☐ pylint: protected-access / Access to a protected member _dedent of a client class (col 8)
+  ☐ Line: 457
+    ☐ vulture: unused-function / Unused function ColorTestCase
+
+☐ pov/tests/EndToEndTest.py
+  ☐ Line: 43
+    ☐ vulture: unused-function / Unused function EndToEndTestCase
+  ☐ Line: 47
+    ☐ pylint: too-many-statements / Too many statements (96/50) (col 4)
+  ☐ Line: 254
+    ☐ pylint: too-many-statements / Too many statements (61/50) (col 4)
+  ☐ Line: 381
+    ☐ pylint: too-many-statements / Too many statements (71/50) (col 4)
+
+☐ pov/tests/FiniteSolidTest.py
+  ☐ Line: 31
+    ☐ vulture: unused-function / Unused function BlobTestCase
+  ☐ Line: 62
+    ☐ vulture: unused-function / Unused function BoxTestCase
+  ☐ Line: 244
+    ☐ vulture: unused-function / Unused function ConeTestCase
+  ☐ Line: 417
+    ☐ vulture: unused-function / Unused function CylinderTestCase
+  ☐ Line: 564
+    ☐ vulture: unused-function / Unused function HeightFieldTestCase
+  ☐ Line: 684
+    ☐ vulture: unused-function / Unused function JuliaFractalTestCase
+  ☐ Line: 736
+    ☐ vulture: unused-function / Unused function SphereTestCase
+  ☐ Line: 849
+    ☐ vulture: unused-function / Unused function LatheTestCase
+
+☐ pov/tests/GlobalSettingsTest.py
+  ☐ Line: 21
+    ☐ vulture: unused-function / Unused function GlobalSettingsTestCase
+
+☐ pov/tests/IncludeTest.py
+  ☐ Line: 19
+    ☐ pep8: E402 / module level import not at top of file (col 1)
+  ☐ Line: 22
+    ☐ vulture: unused-function / Unused function ColorsIncTestCase
+
+☐ pov/tests/InfiniteSolidTest.py
+  ☐ Line: 19
+    ☐ vulture: unused-function / Unused function PlaneTestCase
+  ☐ Line: 22
+    ☐ vulture: unused-function / Unused function setUp
+
+☐ pov/tests/LanguageDirectiveTest.py
+  ☐ Line: 25
+    ☐ vulture: unused-function / Unused function LanguageDirectiveTestCase
+  ☐ Line: 43
+    ☐ vulture: unused-function / Unused function IncludeTestCase
+  ☐ Line: 76
+    ☐ vulture: unused-function / Unused function VersionTestCase
+  ☐ Line: 107
+    ☐ vulture: unused-function / Unused function DefaultTestCase
+
+
+
+Check Information
+=================
+         Started: 2016-02-25 11:44:21.347891
+        Finished: 2016-02-25 11:56:29.649125
+      Time Taken: 728.30 seconds
+       Formatter: grouped
+        Profiles: .landscape.yml, doc_warnings, strictness_veryhigh, no_member_warnings
+      Strictness: from profile
+  Libraries Used:
+       Tools Run: frosted, mccabe, pep257, pep8, profile-validator, pyflakes, pylint, pyroma, vulture
+  Messages Found: 365
+ External Config: pylint: /media/eCafe HD/devel/py_pov/.pylintrc
+
+

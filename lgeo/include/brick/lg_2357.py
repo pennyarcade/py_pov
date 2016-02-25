@@ -1,23 +1,21 @@
 """
-/*******************************************************************************/
-/*                                                                             */
-/* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)      */
-/*                                                                             */
-/* 19970815 Lutz Uhlmann                                                       */
-/*                                                                             */
-/* This file is in no way related to the LEGO(tm) Group.                       */
-/* It is provided for private non-commercial use only.                         */
-/*                                                                             */
-/* lg_2357: Brick 2 x 2 Corner                                                 */
-/*                                                                             */
-/*******************************************************************************/
+LGEO Libray Include File.
+
+(C) lgeo@digitalbricks.org (Lutz Uhlmann)
+
+19970815 Lutz Uhlmann
+
+This file is in no way related to the LEGO(tm) Group.
+It is provided for private non-commercial use only.
+
+lg_2357: Brick 2 x 2 Corner
 """
 
 from math import sqrt
 
-from lgeo.include.common.lg_defs import LGCS, LGBW, LGPH, LG_E, LGBH, lg_knob
+from lgeo.include.common.lg_defs import LGCS, LGBW, LG_E, LGBH, lg_knob
 from lgeo.include.common.lg_defs import LG_WALL_WIDTH, LG_BRICK_INNER_HEIGHT
-from lgeo.include.common.lg_defs import LG_TOP_HEIGHT, LG_BRICK_COLUMN
+from lgeo.include.common.lg_defs import LG_BRICK_COLUMN
 from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE, LG_CYLINDER_RADIUS
 
 from pov.basic.Vector import Vector
@@ -33,7 +31,6 @@ from pov.object_modifier.Rotate import Rotate
 from pov.object_modifier.Translate import Translate
 
 from pov.other.Object import Object
-
 
 
 def solid(length=2, width=2):
@@ -179,7 +176,7 @@ def solid(length=2, width=2):
                         Box(
                             Vector(0, LGCS, LGCS),
                             Vector(
-                              length * LGBW, width * LGBW - LGCS, LGBH - LGCS
+                                length * LGBW, width * LGBW - LGCS, LGBH - LGCS
                             )
                         ),
                         Box(
@@ -224,19 +221,25 @@ def solid(length=2, width=2):
                     Object(
                         LG_KNOB_INNER_SPACE,
                         Translate(
-                            Vector(0.5 * LGBW, 0.5 * LGBW, LG_BRICK_INNER_HEIGHT)
+                            Vector(
+                                0.5 * LGBW, 0.5 * LGBW, LG_BRICK_INNER_HEIGHT
+                            )
                         )
                     ),
                     Object(
                         LG_KNOB_INNER_SPACE,
                         Translate(
-                            Vector(0.5 * LGBW, 1.5 * LGBW, LG_BRICK_INNER_HEIGHT)
+                            Vector(
+                                0.5 * LGBW, 1.5 * LGBW, LG_BRICK_INNER_HEIGHT
+                            )
                         )
                     ),
                     Object(
                         LG_KNOB_INNER_SPACE,
                         Translate(
-                            Vector(1.5 * LGBW, 0.5 * LGBW, LG_BRICK_INNER_HEIGHT)
+                            Vector(
+                                1.5 * LGBW, 0.5 * LGBW, LG_BRICK_INNER_HEIGHT
+                            )
                         )
                     )
                 )
@@ -428,11 +431,13 @@ def solid(length=2, width=2):
 #    Difference(
 #     Box(
 #      Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LG_E),
-#      Vector(length * LGBH - LG_WALL_WIDTH, width * LGBH - LG_WALL_WIDTH, LG_BRICK_INNER_HEIGHT)
+#      Vector(length * LGBH - LG_WALL_WIDTH,
+# width * LGBH - LG_WALL_WIDTH, LG_BRICK_INNER_HEIGHT)
 #     )
 #     Box(
 #      Vector(length/LGBH, width * LGBH, -LGCS),
-#      Vector(length / 2 * LGBH - LG_WALL_WIDTH, width / 2 * LGBH - LG_WALL_WIDTH, LG_BRICK_INNER_HEIGHT + LG_E)
+#      Vector(length / 2 * LGBH - LG_WALL_WIDTH,
+# width / 2 * LGBH - LG_WALL_WIDTH, LG_BRICK_INNER_HEIGHT + LG_E)
 #     )
 #    )
 #    Box(
