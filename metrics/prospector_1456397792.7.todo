@@ -127,131 +127,131 @@ Messages ✔☐
                             )
                             ^     |
 
-☐ lgeo/include/brick/lg_3004.py
-  ☐ Line: 39
-    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
-  ☐ Line: 43
-    ☐ pep8: E501 / line too long (96 > 79 characters) (col 80)
-  ☐ Line: 46
-    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
-  ☐ Line: 47
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 51
-    ☐ pep8: E501 / line too long (116 > 79 characters) (col 80)
-  ☐ Line: 54
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 59
-    ☐ pep8: E501 / line too long (90 > 79 characters) (col 80)
-  ☐ Line: 68
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
-  ☐ Line: 72
-    ☐ pep8: E501 / line too long (97 > 79 characters) (col 80)
-  ☐ Line: 75
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
-  ☐ Line: 76
-    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
-  ☐ Line: 80
-    ☐ pep8: E501 / line too long (115 > 79 characters) (col 80)
-  ☐ Line: 84
-    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
-  ☐ Line: 88
-    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
-  ☐ Line: 89
-    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
-  ☐ Line: 93
-    ☐ pep8: E501 / line too long (123 > 79 characters) (col 80)
-  ☐ Line: 96
-    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
-  ☐ Line: 97
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
-  ☐ Line: 101
-    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
-  ☐ Line: 102
-    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
-  ☐ Line: 106
-    ☐ pep8: E501 / line too long (141 > 79 characters) (col 80)
-  ☐ Line: 109
-    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
-  ☐ Line: 110
-    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
-  ☐ Line: 114
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 115
-    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
-  ☐ Line: 122
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 126
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 130
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 136
-    ☐ pep8: E501 / line too long (102 > 79 characters) (col 80)
-  ☐ Line: 142
-    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
-  ☐ Line: 157
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
-  ☐ Line: 172
-    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
-  ☐ Line: 176
-    ☐ pep8: E501 / line too long (96 > 79 characters) (col 80)
-  ☐ Line: 179
-    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
-  ☐ Line: 180
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 184
-    ☐ pep8: E501 / line too long (116 > 79 characters) (col 80)
-  ☐ Line: 187
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 192
-    ☐ pep8: E501 / line too long (90 > 79 characters) (col 80)
-  ☐ Line: 201
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
-  ☐ Line: 205
-    ☐ pep8: E501 / line too long (97 > 79 characters) (col 80)
-  ☐ Line: 208
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
-  ☐ Line: 209
-    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
-  ☐ Line: 213
-    ☐ pep8: E501 / line too long (115 > 79 characters) (col 80)
-  ☐ Line: 217
-    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
-  ☐ Line: 221
-    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
-  ☐ Line: 222
-    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
-  ☐ Line: 226
-    ☐ pep8: E501 / line too long (123 > 79 characters) (col 80)
-  ☐ Line: 229
-    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
-  ☐ Line: 230
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
-  ☐ Line: 234
-    ☐ pep8: E501 / line too long (107 > 79 characters) (col 80)
-  ☐ Line: 235
-    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
-  ☐ Line: 239
-    ☐ pep8: E501 / line too long (141 > 79 characters) (col 80)
-  ☐ Line: 242
-    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
-  ☐ Line: 243
-    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
-  ☐ Line: 247
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 248
-    ☐ pep8: E501 / line too long (125 > 79 characters) (col 80)
-  ☐ Line: 255
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 259
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 263
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 269
-    ☐ pep8: E501 / line too long (102 > 79 characters) (col 80)
-  ☐ Line: 275
-    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
-  ☐ Line: 290
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+✔ lgeo/include/brick/lg_3004.py @done (16-02-25 20:00)
+  ✔ Line: 39 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (80 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 43 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (96 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 46 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (82 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 47 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 51 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (116 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 54 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 59 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (90 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 68 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 72 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (97 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 75 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 76 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (99 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 80 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (115 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 84 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (99 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 88 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (82 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 89 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (107 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 93 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (123 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 96 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (107 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 97 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 101 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (107 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 102 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (125 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 106 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (141 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 109 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (125 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 110 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (99 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 114 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 115 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (125 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 122 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 126 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 130 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 136 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (102 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 142 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (87 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 157 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 172 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (80 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 176 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (96 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 179 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (82 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 180 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 184 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (116 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 187 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 192 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (90 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 201 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 205 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (97 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 208 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 209 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (99 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 213 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (115 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 217 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (99 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 221 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (82 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 222 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (107 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 226 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (123 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 229 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (107 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 230 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 234 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (107 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 235 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (125 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 239 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (141 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 242 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (125 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 243 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (99 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 247 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 248 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (125 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 255 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 259 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 263 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 269 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (102 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 275 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (87 > 79 characters) (col 80) @done (16-02-25 20:00)
+  ✔ Line: 290 @done (16-02-25 20:00)
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80) @done (16-02-25 20:00)
 
 ☐ lgeo/include/brick/lg_3020.py
   ☐ Line: 30
