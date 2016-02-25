@@ -54,23 +54,23 @@ Messages ✔☐
     ✔ pep8: E501 / line too long (80 > 79 characters) (col 80)
 
 ☐ lgeo/include/brick/lg_2436.py
-  ☐ Line: 33
-    ☐ pylint: unused-import / Unused LG_PLATE_INNER_HEIGHT imported from lgeo.include.common.lg_defs
-  ☐ Line: 34
-    ☐ pylint: unused-import / Unused LG_KNOB_INNER_RADIUS imported from lgeo.include.common.lg_defs
-  ☐ Line: 57
-    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 10)
-    ☐ pylint: bad-continuation / Wrong hanging indentation.
+  ✔ Line: 33
+    ✔ pylint: unused-import / Unused LG_PLATE_INNER_HEIGHT imported from lgeo.include.common.lg_defs
+  ✔ Line: 34
+    ✔ pylint: unused-import / Unused LG_KNOB_INNER_RADIUS imported from lgeo.include.common.lg_defs
+  ✔ Line: 57
+    ✔ pep8: E121 / continuation line under-indented for hanging indent (col 10)
+    ✔ pylint: bad-continuation / Wrong hanging indentation.
          ),
         |^  |
-  ☐ Line: 113
-    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 10)
-    ☐ pylint: bad-continuation / Wrong hanging indentation.
+  ✔ Line: 113
+    ✔ pep8: E121 / continuation line under-indented for hanging indent (col 10)
+    ✔ pylint: bad-continuation / Wrong hanging indentation.
          ),
         |^  |
-  ☐ Line: 138
-    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 10)
-    ☐ pylint: bad-continuation / Wrong hanging indentation.
+  ✔ Line: 138
+    ✔ pep8: E121 / continuation line under-indented for hanging indent (col 10)
+    ✔ pylint: bad-continuation / Wrong hanging indentation.
          ),
         |^  |
   ☐ Line: 315

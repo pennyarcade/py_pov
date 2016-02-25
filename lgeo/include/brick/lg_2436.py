@@ -30,8 +30,7 @@ from pov.object_modifier.Translate import Translate
 
 from lgeo.include.common.lg_defs import LGCS, LGBW, LG_TOP_HEIGHT
 from lgeo.include.common.lg_defs import LGPH, LG_WALL_WIDTH
-from lgeo.include.common.lg_defs import LG_PLATE_INNER_HEIGHT, LG_E
-from lgeo.include.common.lg_defs import LG_KNOB_INNER_RADIUS, lg_knob
+from lgeo.include.common.lg_defs import LG_E, lg_knob
 from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE, lg_tech_knob_logo
 from lgeo.include.common.lg_defs import LG_KNOB_RADIUS, LG_PLATE_COLUMN
 
@@ -54,7 +53,7 @@ def solid():
         Sphere(
             Vector(-LGBW / 2 + LGCS, -LGBW + LGCS, -LGPH + LGCS),
             LGCS
-         ),
+        ),
         Cylinder(
             Vector(-LGBW / 2 + LGCS, LGBW - LGCS, -LGCS),
             Vector(-LGBW / 2 + LGCS, -LGBW + LGCS, -LGCS),
@@ -110,7 +109,7 @@ def solid():
         Sphere(
             Vector(LGBW / 2 + LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
             LGCS
-         ),
+        ),
         Sphere(
             Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
             LGCS
@@ -135,7 +134,7 @@ def solid():
             Vector(LGBW / 2 + LGCS, -LGBW + LGCS, -LGCS),
             Vector(LGBW / 2 + LGCS, -2 * LGBW + LGCS, -LGCS),
             LGCS
-         ),
+        ),
         Cylinder(
             Vector(LGBW / 2 + LGCS, LGBW - LGCS, -LGCS),
             Vector(LGBW / 2 + LGCS, 2 * LGBW - LGCS, -LGCS),
@@ -309,7 +308,6 @@ def solid():
             )
         ),
     )
-
 
 
 """
