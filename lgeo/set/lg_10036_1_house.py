@@ -164,7 +164,7 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 
 from pov.csg.Union import Union
 
-def set_10036_1_house_nonmoving()
+def set_10036_1_house_nonmoving():
     return Union(
         # 3001    White   Brick 2 x 4 (Pic)
         # std_brick(lg_3001, lg_white, -2*LGBW, 3*LGPH, 6*LGBW, -90, 90, 0)
