@@ -1,6 +1,6 @@
 autodetect: yes
 strictness: veryhigh
-test-warnings: true
+test-warnings: false
 doc-warnings: true
 
 ignore-paths:
