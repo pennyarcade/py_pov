@@ -422,7 +422,7 @@ def nonmoving(
         std_brick(
             lg_3823.clear(),
             LG_CLEAR_CYAN,
-            2 * LGBW, 15 * LGPH, 0*LGBW,
+            2 * LGBW, 15 * LGPH, 0 * LGBW,
             -90, 0, 0
         ),
         Comment('**** 3823  TrLtBlu Windscreen 2 x 4 x 2 ****'),
@@ -432,12 +432,12 @@ def nonmoving(
         ********************************************************************
         """),
         Comment('**** 3853  White Window 1 x 4 x 3 ****'),
-#         std_brick(
-#             lg_3853.solid(),
-#             LG_WHITE,
-#             -3 * LGBW, 15 * LGPH, 0 * LGBW,
-#             -90, 180, 0
-#         ),
+        # std_brick(
+        #     lg_3853.solid(),
+        #     LG_WHITE,
+        #     -3 * LGBW, 15 * LGPH, 0 * LGBW,
+        #     -90, 180, 0
+        # ),
         Comment('**** 3853  White Window 1 x 4 x 3 ****'),
         Comment('**** 3004  White Brick 1 x 2 ****'),
         std_brick(
@@ -456,7 +456,7 @@ def nonmoving(
         ),
         Comment('**** 3004  White Brick 1 x 2 ****'),
         Comment('**** 3710  White Plate 1 x 4 ****'),
-        #Todo: fix plate coloumns
+        # Todo: fix plate coloumns
         std_brick(
             lg_3710.solid(),
             LG_WHITE,
@@ -469,13 +469,13 @@ def nonmoving(
         * Objects (Step 12)
         ********************************************************************
         """),
-#         Comment('**** White Hinge Tile 1 x 4 ****'),
-#         std_brick(
-#             lg_4625.solid(),
-#             LG_WHITE, -1*LGBW, 15*LGPH, 0*LGBW,
-#             -90, 0, 0
-#         ),
-#         Comment('**** White Hinge Tile 1 x 4 ****'),
+        Comment('**** White Hinge Tile 1 x 4 ****'),
+        # std_brick(
+        #     lg_4625.solid(),
+        #     LG_WHITE, -1*LGBW, 15*LGPH, 0*LGBW,
+        #     -90, 0, 0
+        # ),
+        Comment('**** White Hinge Tile 1 x 4 ****'),
         Comment("""
         ********************************************************************
         * Objects (Step 13)
@@ -485,7 +485,7 @@ def nonmoving(
         std_brick(
             lg_3020.solid(),
             LG_WHITE,
-            -2.5*LGBW, 16*LGPH, -1*LGBW,
+            -2.5 * LGBW, 16 * LGPH, -1 * LGBW,
             -90, 90, 0
         ),
         Comment('**** 3020  White Plate 2 x 4 ****'),

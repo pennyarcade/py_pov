@@ -573,51 +573,51 @@ Messages ✔☐
     ✔ pep8: E226 / missing whitespace around arithmetic operator (col 36)
     ✔ pep8: E226 / missing whitespace around arithmetic operator (col 41)
 
-☐ lgeo/set/lg_10036_1_car.py
-  ☐ Line: 425
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 35)
-  ☐ Line: 435
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-    ☐ pylint: bad-continuation / Wrong hanging indentation (add 8 spaces).
-☐ #         std_brick(
-☐ ^       |
-  ☐ Line: 436
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-  ☐ Line: 437
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-  ☐ Line: 438
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-  ☐ Line: 439
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-  ☐ Line: 440
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-  ☐ Line: 459
-    ☐ pep8: E265 / block comment should start with '# ' (col 9)
-  ☐ Line: 472
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-    ☐ pylint: bad-continuation / Wrong hanging indentation (add 8 spaces).
-☐ #         Comment('**** White Hinge Tile 1 x 4 ****'),
-☐ ^       |
-  ☐ Line: 473
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-  ☐ Line: 474
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-  ☐ Line: 475
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-  ☐ Line: 476
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-  ☐ Line: 477
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-  ☐ Line: 478
-    ☐ pep8: E122 / continuation line missing indentation or outdented (col 1)
-  ☐ Line: 488
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 17)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 26)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 35)
+✔ lgeo/set/lg_10036_1_car.py
+  ✔ Line: 425
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 35)
+  ✔ Line: 435
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+    ✔ pylint: bad-continuation / Wrong hanging indentation (add 8 spaces).
+✔ #         std_brick(
+✔ ^       |
+  ✔ Line: 436
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ✔ Line: 437
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ✔ Line: 438
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ✔ Line: 439
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ✔ Line: 440
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ✔ Line: 459
+    ✔ pep8: E265 / block comment should start with '# ' (col 9)
+  ✔ Line: 472
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+    ✔ pylint: bad-continuation / Wrong hanging indentation (add 8 spaces).
+✔ #         Comment('**** White Hinge Tile 1 x 4 ****'),
+✔ ^       |
+  ✔ Line: 473
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ✔ Line: 474
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ✔ Line: 475
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ✔ Line: 476
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ✔ Line: 477
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ✔ Line: 478
+    ✔ pep8: E122 / continuation line missing indentation or outdented (col 1)
+  ✔ Line: 488
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 17)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 26)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 35)
 
-☐ lgeo/set/lg_10036_1_house.py
-  ☐ Line: 167
-    ☐ pylint: invalid-name / Invalid constant name "set_10036_1_house_nonmoving"
+✔ lgeo/set/lg_10036_1_house.py
+  ✔ Line: 167
+    ✔ pylint: invalid-name / Invalid constant name "set_10036_1_house_nonmoving"
 
 ☐ lgeo/testscene.py
   ☐ Line: 22
