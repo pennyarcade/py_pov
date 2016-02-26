@@ -317,23 +317,23 @@ Messages ✔☐
   ✔ Line: 158
     ✔ pep8: E501 / line too long (91 > 79 characters) (col 80)
 
-☐ lgeo/include/brick/lg_3069b.py
-  ☐ Line: 1
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-  ☐ Line: 30
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
-  ☐ Line: 221
-    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
-  ☐ Line: 234
-    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
-  ☐ Line: 267
-    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
+✔ lgeo/include/brick/lg_3069b.py
+  ✔ Line: 1
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
+  ✔ Line: 30
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
+  ✔ Line: 221
+    ✔ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ✔ Line: 234
+    ✔ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ✔ Line: 267
+    ✔ pep8: E501 / line too long (95 > 79 characters) (col 80)
 
-☐ lgeo/include/brick/lg_3710.py
-  ☐ Line: 16
-    ☐ pylint: unused-import / Unused get_brick_coloumn imported from lgeo.include.common.brick_subparts
-  ☐ Line: 19
-    ☐ pylint: unused-import / Unused LG_PLATE_COLUMN imported from lgeo.include.common.lg_defs
+✔ lgeo/include/brick/lg_3710.py
+  ✔ Line: 16
+    ✔ pylint: unused-import / Unused get_brick_coloumn imported from lgeo.include.common.brick_subparts
+  ✔ Line: 19
+    ✔ pylint: unused-import / Unused LG_PLATE_COLUMN imported from lgeo.include.common.lg_defs
 
 ☐ lgeo/include/brick/lg_3823.py
   ☐ Line: 20

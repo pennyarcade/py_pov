@@ -1,4 +1,4 @@
-'''
+"""
 LGEO Libray Include File.
 
 (C) lgeo@digitalbricks.org (Lutz Uhlmann)
@@ -9,7 +9,7 @@ This file is in no way related to the LEGO(tm) Group.
 It is provided for private non-commercial use only.
 
 lg_3069b: Tile 1 x 2 with groove
-'''
+"""
 
 from lgeo.include.common.lg_defs import LGCS, LGBW, LGPH, LG_E
 from lgeo.include.common.lg_defs import LG_WALL_WIDTH, LG_PLATE_INNER_HEIGHT
@@ -218,7 +218,8 @@ def solid(length=2, width=1):
 #   LGCS
 #  ),
 #  Sphere(
-#   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), LGCS + 0.04), LGCS
+#   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), LGCS + 0.04),
+#   LGCS
 #  ),
 #  Cylinder(
 #   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), LGCS + 0.04),
@@ -231,7 +232,8 @@ def solid(length=2, width=1):
 #   LGCS
 #  ),
 #  Sphere(
-#   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), (LGPH - LGCS)), LGCS
+#   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), (LGPH - LGCS)),
+#   LGCS
 #  ),
 #  Cylinder(
 #   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), (LGPH - LGCS)),
@@ -264,7 +266,11 @@ def solid(length=2, width=1):
 #   ),
 #   Box(
 #    Vector(LG_WALL_width, LG_WALL_width, -LGCS),
-#    Vector(length * LGBW - LG_WALL_width, width * LGBW - LG_WALL_width, LG_PLATE_INNER_HEIGHT)
+#    Vector(
+#        length * LGBW - LG_WALL_width,
+#        width * LGBW - LG_WALL_width,
+#        LG_PLATE_INNER_HEIGHT
+#    )
 #   ),
 #  ),
 #  Translate(Vector(-LGBW, -0.5*LGBW, -LGPH)

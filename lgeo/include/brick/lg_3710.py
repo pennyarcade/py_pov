@@ -13,10 +13,8 @@ lg_3710: Brick 1 x 4
 """
 
 from lgeo.include.common.brick_subparts import get_knob_inner_space
-from lgeo.include.common.brick_subparts import get_brick_coloumn
 from lgeo.include.common.brick_subparts import get_knob_objects
-from lgeo.include.common.lg_defs import LGCS, LGBW
-from lgeo.include.common.lg_defs import LGPH, LG_PLATE_COLUMN
+from lgeo.include.common.lg_defs import LGCS, LGBW, LGPH
 
 from pov.basic.Vector import Vector
 
