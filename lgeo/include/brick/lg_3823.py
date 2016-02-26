@@ -1,4 +1,3 @@
-
 """
 LGEO Libray Include File.
 
@@ -17,10 +16,10 @@ lg_3823: Windscreen 2 x 4 x 2
 
 from math import atan2, cos, sin, pi
 
-from lgeo.include.common.lg_defs import LGCS, LGBW, LGPH, LG_E, LGBH, lg_knob
+from lgeo.include.common.lg_defs import LGCS, LGBW, LGPH, LG_E, LGBH
 from lgeo.include.common.lg_defs import LG_WALL_WIDTH, LG_PLATE_INNER_HEIGHT
-from lgeo.include.common.lg_defs import LG_TOP_HEIGHT, LG_BRICK_COLUMN
-from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE, LG_CYLINDER_RADIUS
+from lgeo.include.common.lg_defs import LG_TOP_HEIGHT
+from lgeo.include.common.lg_defs import LG_CYLINDER_RADIUS
 from lgeo.include.common.lg_defs import LG_KNOB_INNER_RADIUS
 from lgeo.include.common.lg_defs import lg_tech_knob_logo_clear
 
@@ -42,8 +41,6 @@ from pov.object_modifier.Matrix import Matrix
 from pov.object_modifier.Scale import Scale
 
 from pov.other.Object import Object
-
-from lgeo.include.common.lg_color import LG_RED, LG_WHITE, LG_YELLOW, LG_BLACK
 
 
 LG_ANGLE = atan2(LGBW, 5 * LGPH) * 180 / pi
@@ -168,7 +165,8 @@ LG_ANGLE = atan2(LGBW, 5 * LGPH) * 180 / pi
 #      ),
 #      Cylinder(
 #       Vector(-LGBW / 2 + LGCS, 1.5 * LGBW - LGCS, -5 * LGPH - LGCS),
-#       Vector(-LGBW / 2 + LGCS, 2 * LGBW - LG_WALL_WIDTH + LG_E, -5 * LGPH - LGCS),
+#       Vector(-LGBW / 2 + LGCS, 2 * LGBW - LG_WALL_WIDTH + LG_E,
+#           -5 * LGPH - LGCS),
 #       LGCS
 #      ),
 #      Cylinder(
@@ -187,11 +185,13 @@ LG_ANGLE = atan2(LGBW, 5 * LGPH) * 180 / pi
 #      ),
 #      Box(
 #       Vector(-LGBW / 2 + LGCS, LGBW + LGCS, -2 * LGBH),
-#       Vector(-LGBW / 2 + LG_WALL_WIDTH, 2 * LGBW - LGCS, -2 * LGBH + LGCS + LG_E)
+#       Vector(-LGBW / 2 + LG_WALL_WIDTH, 2 * LGBW - LGCS,
+#      -2 * LGBH + LGCS + LG_E)
 #      ),
 #      Box(
 #       Vector(LGBW + LGCS, 2 * LGBW - LGCS, -5 * LGPH),
-#       Vector(-LGBW / 2 + LGCS, LGBW + LGCS, -2 * LGBH + LG_PLATE_INNER_HEIGHT)
+#       Vector(-LGBW / 2 + LGCS, LGBW + LGCS,
+#       -2 * LGBH + LG_PLATE_INNER_HEIGHT)
 #      ),
 #      Box(
 #       Vector(LGBW / 2 + LGCS + LG_E, LGBW, -5 * LGPH - LGCS),
@@ -365,7 +365,8 @@ LG_ANGLE = atan2(LGBW, 5 * LGPH) * 180 / pi
 #  ),
 #  Box(
 #   Vector(LGBW / 2 + LGCS, LGBW + LG_WALL_WIDTH, -2 * LGBH),
-#   Vector(LGBW / 2 + LG_WALL_WIDTH, -LGBW - LG_WALL_WIDTH, -2 * LGBH + LGCS + LG_E)
+#   Vector(LGBW / 2 + LG_WALL_WIDTH, -LGBW - LG_WALL_WIDTH,
+#   -2 * LGBH + LGCS + LG_E)
 #  ),
 #  Box(
 #   Vector(1.5 * LGBW - LGCS, 1.5 * LGBW, -2 * LGBH),
@@ -417,9 +418,8 @@ LG_ANGLE = atan2(LGBW, 5 * LGPH) * 180 / pi
 # ),
 
 
-def clear(length=2, width=2):
+def clear():
     """return lg_3823: Windscreen 2 x 4 x 2."""
-
     result = Merge(
     )
 
@@ -447,7 +447,9 @@ def clear(length=2, width=2):
                 ),
                 Cylinder(
                     Vector(-LGBW / 2 + LGCS, 2 * LGBW - LGCS, -LGCS),
-                    Vector(-LGBW / 2 + LGCS, 2 * LGBW - LGCS, -2 * LGBH + LGCS),
+                    Vector(
+                        -LGBW / 2 + LGCS, 2 * LGBW - LGCS, -2 * LGBH + LGCS
+                    ),
                     LGCS
                 ),
                 Cylinder(
@@ -462,7 +464,9 @@ def clear(length=2, width=2):
                         Rotate(Vector(90, 0, 0))
                     ),
                     Box(
-                        Vector(-LGBW / 2 - LG_E, -LGBW / 2 - LG_E, LGCS + LG_E),
+                        Vector(
+                            -LGBW / 2 - LG_E, -LGBW / 2 - LG_E, LGCS + LG_E
+                        ),
                         Vector(0, 0, -LGCS - LG_E)
                     ),
                     Translate(Vector(0, 1.5 * LGBW + 0.12, -LGCS))
@@ -507,7 +511,7 @@ def clear(length=2, width=2):
                             1, 0, 2 / LGBW * LGCS * sin(LG_ANGLE * pi / 180),
                             0, 1, 0,
                             -1 / 2, 0, 1,
-                            LGCS * (cos(LG_ANGLE * pi / 180) -1),
+                            LGCS * (cos(LG_ANGLE * pi / 180) - 1),
                             3 * LGBW / 2, -LGCS
                         )
                     )
@@ -534,7 +538,8 @@ def clear(length=2, width=2):
                     Translate(Vector(1 * LGBW, 0 * LGBW, 0)),
                     Matrix(
                         Vector(
-                            1, 0, 0, # 2 / LGBW * LGCS * sin(LG_ANGLE * pi / 180),
+                            1, 0, 0,
+                            # 2 / LGBW * LGCS * sin(LG_ANGLE * pi / 180),
                             0, 1, 0,
                             0, 0, 1,
                             0, # LGCS * (cos(LG_ANGLE * pi / 180) -1),
@@ -542,10 +547,6 @@ def clear(length=2, width=2):
                         )
                     ),
                 ),
-
-
-
-
                 Intersection(
                     Torus(
                         LGBW / 2 - LGCS,
@@ -575,7 +576,7 @@ def clear(length=2, width=2):
                         LGBW / 2 - LGCS,
                         LGCS,
                         Rotate(Vector(90, 0, 0))
-                        ),
+                    ),
                     Box(
                         Vector(LGBW / 2 + LG_E, LGBW / 2 + LG_E, LGCS + LG_E),
                         Vector(0, 0, -LGCS - LG_E)
@@ -615,7 +616,7 @@ def clear(length=2, width=2):
                             Vector(
                                 -LGBW / 2 + LGCS,
                                 1.5 * LGBW - LGCS,
-                                -6 * LGPH +LGCS
+                                -6 * LGPH + LGCS
                             ),
                             Vector(
                                 -LGBW / 2 + LGCS,
@@ -714,7 +715,9 @@ def clear(length=2, width=2):
                     Box(
                         Vector(LGBW, 1.5 * LGBW, -5 * LGPH + LGCS),
                         Vector(
-                            1.5 * LGBW + LG_E, 2 * LGBW + LG_E, -2 * LGBH - LG_E
+                            1.5 * LGBW + LG_E,
+                            2 * LGBW + LG_E,
+                            -2 * LGBH - LG_E
                         )
                     ),
                 ),
@@ -723,7 +726,7 @@ def clear(length=2, width=2):
                         Box(
                             Vector(LGBW, 2 * LGBW, -2 * LGBH + LGCS),
                             Vector(
-                              -LGBW / 2 + LGCS, 2 * LGBW - LGCS - LG_E, -LGCS
+                                -LGBW / 2 + LGCS, 2 * LGBW - LGCS - LG_E, -LGCS
                             )
                         ),
                         Box(
@@ -736,7 +739,8 @@ def clear(length=2, width=2):
                         Vector(0, 0, -2 * LGBH),
                         Matrix(
                             Vector(
-                                1, 0, 2 / LGBW * LGCS * sin(LG_ANGLE * pi / 180),
+                                1, 0,
+                                2 / LGBW * LGCS * sin(LG_ANGLE * pi / 180),
                                 0, 1, 0,
                                 -1 / 2, 0, 1,
                                 LGCS*(cos(LG_ANGLE * pi / 180) - 1),
@@ -841,7 +845,9 @@ def clear(length=2, width=2):
                     -LGCS
                 ),
                 Vector(
-                    LGBW / 2 - LG_WALL_WIDTH / 2 + LGCS, -LGBW-0.12-LGCS, -LGCS
+                    LGBW / 2 - LG_WALL_WIDTH / 2 + LGCS,
+                    -LGBW - 0.12 - LGCS,
+                    -LGCS
                 ),
                 LGCS
             ),
@@ -902,12 +908,12 @@ def clear(length=2, width=2):
                         ),
                         Matrix(
                             Vector(
-                                  1, 0,
-                                  2 / LGBW * LGCS * sin(LG_ANGLE * pi / 180),
-                                  0, 1, 0,
-                                  -1 / 2, 0, 1,
-                                  LGCS * (cos(LG_ANGLE * pi / 180) - 1),
-                                  0, -LGCS
+                                1, 0,
+                                2 / LGBW * LGCS * sin(LG_ANGLE * pi / 180),
+                                0, 1, 0,
+                                -1 / 2, 0, 1,
+                                LGCS * (cos(LG_ANGLE * pi / 180) - 1),
+                                0, -LGCS
                             )
                         )
                     ),
@@ -929,7 +935,7 @@ def clear(length=2, width=2):
                         ),
                         Vector(
                             LG_WALL_WIDTH,
-                            -LGBW-0.12-LGCS,
+                            -LGBW - 0.12 - LGCS,
                             -LG_WALL_WIDTH - LG_E
                         )
                     ),
@@ -981,7 +987,7 @@ def clear(length=2, width=2):
                         ),
                         Vector(
                             LG_WALL_WIDTH,
-                            -LGBW-0.12-LGCS,
+                            -LGBW - 0.12 - LGCS,
                             -LG_WALL_WIDTH - LG_E
                         )
                     ),

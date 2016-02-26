@@ -336,87 +336,87 @@ Messages ✔☐
     ✔ pylint: unused-import / Unused LG_PLATE_COLUMN imported from lgeo.include.common.lg_defs
 
 ☐ lgeo/include/brick/lg_3823.py
-  ☐ Line: 20
-    ☐ pylint: unused-import / Unused lg_knob imported from lgeo.include.common.lg_defs
-  ☐ Line: 22
-    ☐ pylint: unused-import / Unused LG_BRICK_COLUMN imported from lgeo.include.common.lg_defs
-  ☐ Line: 23
-    ☐ pylint: unused-import / Unused LG_KNOB_INNER_SPACE imported from lgeo.include.common.lg_defs
-  ☐ Line: 46
-    ☐ pylint: ungrouped-imports / Imports from package lgeo are not grouped
-    ☐ pylint: unused-import / Unused LG_RED imported from lgeo.include.common.lg_color
-  ☐ Line: 171
-    ☐ pep8: E501 / line too long (84 > 79 characters) (col 80)
-  ☐ Line: 190
-    ☐ pep8: E501 / line too long (83 > 79 characters) (col 80)
-  ☐ Line: 194
-    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
-  ☐ Line: 368
-    ☐ pep8: E501 / line too long (84 > 79 characters) (col 80)
-  ☐ Line: 420
-    ☐ pep257: D202 / No blank lines allowed after function docstring (found 1)
-    ☐ pylint: unused-argument / Unused argument 'length' (col 10)
-    ☐ pylint: unused-argument / Unused argument 'width' (col 20)
-  ☐ Line: 450
-    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
-  ☐ Line: 465
-    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
-  ☐ Line: 510
-    ☐ pep8: E225 / missing whitespace around operator (col 63)
-  ☐ Line: 537
-    ☐ pep8: E261 / at least two spaces before inline comment (col 37)
-    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
-  ☐ Line: 540
-    ☐ pep8: E261 / at least two spaces before inline comment (col 31)
-  ☐ Line: 578
-    ☐ pep8: E123 / closing bracket does not match indentation of opening bracket's line (col 25)
-  ☐ Line: 618
-    ☐ pep8: E225 / missing whitespace around operator (col 44)
-  ☐ Line: 717
-    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
-  ☐ Line: 726
-    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 31)
-    ☐ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
+  ✔ Line: 20
+    ✔ pylint: unused-import / Unused lg_knob imported from lgeo.include.common.lg_defs
+  ✔ Line: 22
+    ✔ pylint: unused-import / Unused LG_BRICK_COLUMN imported from lgeo.include.common.lg_defs
+  ✔ Line: 23
+    ✔ pylint: unused-import / Unused LG_KNOB_INNER_SPACE imported from lgeo.include.common.lg_defs
+  ✔ Line: 46
+    ✔ pylint: ungrouped-imports / Imports from package lgeo are not grouped
+    ✔ pylint: unused-import / Unused LG_RED imported from lgeo.include.common.lg_color
+  ✔ Line: 171
+    ✔ pep8: E501 / line too long (84 > 79 characters) (col 80)
+  ✔ Line: 190
+    ✔ pep8: E501 / line too long (83 > 79 characters) (col 80)
+  ✔ Line: 194
+    ✔ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ✔ Line: 368
+    ✔ pep8: E501 / line too long (84 > 79 characters) (col 80)
+  ✔ Line: 420
+    ✔ pep257: D202 / No blank lines allowed after function docstring (found 1)
+    ✔ pylint: unused-argument / Unused argument 'length' (col 10)
+    ✔ pylint: unused-argument / Unused argument 'width' (col 20)
+  ✔ Line: 450
+    ✔ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ✔ Line: 465
+    ✔ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ✔ Line: 510
+    ✔ pep8: E225 / missing whitespace around operator (col 63)
+  ✔ Line: 537
+    ✔ pep8: E261 / at least two spaces before inline comment (col 37)
+    ✔ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ✔ Line: 540
+    ✔ pep8: E261 / at least two spaces before inline comment (col 31)
+  ✔ Line: 578
+    ✔ pep8: E123 / closing bracket does not match indentation of opening bracket's line (col 25)
+  ✔ Line: 618
+    ✔ pep8: E225 / missing whitespace around operator (col 44)
+  ✔ Line: 717
+    ✔ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ✔ Line: 726
+    ✔ pep8: E121 / continuation line under-indented for hanging indent (col 31)
+    ✔ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
                               -LGBW / 2 + LGCS, 2 * LGBW - LGCS - LG_E, -LGCS
                               ^ |
-  ☐ Line: 739
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
-  ☐ Line: 742
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 37)
-  ☐ Line: 844
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 63)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 68)
-  ☐ Line: 905
-    ☐ pep8: E126 / continuation line over-indented for hanging indent (col 35)
-    ☐ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
+  ✔ Line: 739
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 742
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 37)
+  ✔ Line: 844
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 63)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 68)
+  ✔ Line: 905
+    ✔ pep8: E126 / continuation line over-indented for hanging indent (col 35)
+    ✔ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
                                   1, 0,
                                 | ^
-  ☐ Line: 906
-    ☐ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
+  ✔ Line: 906
+    ✔ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
                                   2 / LGBW * LGCS * sin(LG_ANGLE * pi / 180),
                                 | ^
-  ☐ Line: 907
-    ☐ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
+  ✔ Line: 907
+    ✔ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
                                   0, 1, 0,
                                 | ^
-  ☐ Line: 908
-    ☐ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
+  ✔ Line: 908
+    ✔ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
                                   -1 / 2, 0, 1,
                                 | ^
-  ☐ Line: 909
-    ☐ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
+  ✔ Line: 909
+    ✔ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
                                   LGCS * (cos(LG_ANGLE * pi / 180) - 1),
                                 | ^
-  ☐ Line: 910
-    ☐ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
+  ✔ Line: 910
+    ✔ pylint: bad-continuation / Wrong hanging indentation (remove 2 spaces).
                                   0, -LGCS
                                 | ^
-  ☐ Line: 932
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 34)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 39)
-  ☐ Line: 984
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 34)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 39)
+  ✔ Line: 932
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 34)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 39)
+  ✔ Line: 984
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 34)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 39)
 
 ☐ lgeo/include/brick/lg_4073.py
   ☐ Line: 22
