@@ -19,13 +19,11 @@ from pov.atmeff.SkySphere import SkySphere
 
 from pov.basic.SceneFile import SceneFile
 from pov.basic.Color import Color
-from pov.basic.Vector import Vector, x, y, z
+from pov.basic.Vector import Vector, x, y
 
 from pov.global_settings.GlobalSettings import GlobalSettings
 
 from pov.csg.Union import Union
-
-from pov.infinite_solid.Plane import Plane
 
 from pov.language_directive.Version import Version
 
@@ -42,12 +40,13 @@ from pov.texture.Pigment import Pigment
 
 from pov.texture.pattern.Gradient import Gradient
 
-from lgeo.include.common.lg_color import LG_RED, LG_WHITE, LG_YELLOW, LG_BLACK
+from lgeo.include.common.lg_color import LG_RED, LG_WHITE, LG_BLACK
 
 # ==== Custom Includes ====
 from lgeo.include.common.custom_macros import std_brick
 
 from lgeo.include.brick import lg_2441
+
 
 def main():
     """@Todo: DocString."""
@@ -88,7 +87,7 @@ def main():
     fix.append(
         SkySphere(
             Pigment(
-                Gradient(y*0.8),
+                Gradient(y * 0.8),
                 ColorMap({
                     0.00: Color(rgb=Vector(0.6, 0.7, 1.0)),
                     0.70: Color(rgb=Vector(0.0, 0.1, 0.8))
@@ -111,7 +110,7 @@ def main():
             ),
 
             LightSource(
-                Vector(0, 0, 0),             # light's position (translated below)
+                Vector(0, 0, 0),      # light's position (translated below)
                 Color(rgb=Vector(1, 1, 1)),  # light's color
                 Translate(
                     Vector(300, 300, 300)

@@ -619,19 +619,19 @@ Messages ✔☐
   ✔ Line: 167
     ✔ pylint: invalid-name / Invalid constant name "set_10036_1_house_nonmoving"
 
-☐ lgeo/testscene.py
-  ☐ Line: 22
-    ☐ pylint: unused-import / Unused z imported from pov.basic.Vector
-  ☐ Line: 28
-    ☐ pylint: unused-import / Unused Plane imported from pov.infinite_solid.Plane
-  ☐ Line: 45
-    ☐ pylint: unused-import / Unused LG_YELLOW imported from lgeo.include.common.lg_color
-  ☐ Line: 52
-    ☐ pep8: E302 / expected 2 blank lines, found 1 (col 1)
-  ☐ Line: 91
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 27)
-  ☐ Line: 114
-    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+✔ lgeo/testscene.py
+  ✔ Line: 22
+    ✔ pylint: unused-import / Unused z imported from pov.basic.Vector
+  ✔ Line: 28
+    ✔ pylint: unused-import / Unused Plane imported from pov.infinite_solid.Plane
+  ✔ Line: 45
+    ✔ pylint: unused-import / Unused LG_YELLOW imported from lgeo.include.common.lg_color
+  ✔ Line: 52
+    ✔ pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  ✔ Line: 91
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 27)
+  ✔ Line: 114
+    ✔ pep8: E501 / line too long (82 > 79 characters) (col 80)
 
 ☐ pov/basic/Color.py
   ☐ Line: 44
