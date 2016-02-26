@@ -335,7 +335,7 @@ Messages ✔☐
   ✔ Line: 19
     ✔ pylint: unused-import / Unused LG_PLATE_COLUMN imported from lgeo.include.common.lg_defs
 
-☐ lgeo/include/brick/lg_3823.py
+✔ lgeo/include/brick/lg_3823.py
   ✔ Line: 20
     ✔ pylint: unused-import / Unused lg_knob imported from lgeo.include.common.lg_defs
   ✔ Line: 22
@@ -418,7 +418,7 @@ Messages ✔☐
     ✔ pep8: E226 / missing whitespace around arithmetic operator (col 34)
     ✔ pep8: E226 / missing whitespace around arithmetic operator (col 39)
 
-☐ lgeo/include/brick/lg_4073.py
+✔ lgeo/include/brick/lg_4073.py
   ✔ Line: 22
     ✔ pylint: unused-import / Unused Sphere imported from pov.finite_solid.Sphere
   ✔ Line: 28
@@ -455,103 +455,103 @@ Messages ✔☐
               ^ |
 
 ☐ lgeo/include/brick/lg_4865.py
-  ☐ Line: 1
-    ☐ pep257: D400 / First line should end with a period (not 'e')
-  ☐ Line: 16
-    ☐ pylint: unused-import / Unused LG_PLATE_INNER_HEIGHT imported from lgeo.include.common.lg_defs
-  ☐ Line: 96
-    ☐ pep8: E303 / too many blank lines (2) (col 5)
-  ☐ Line: 216
-    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 19)
-    ☐ pylint: bad-continuation / Wrong hanging indentation.
+  ✔ Line: 1
+    ✔ pep257: D400 / First line should end with a period (not 'e')
+  ✔ Line: 16
+    ✔ pylint: unused-import / Unused LG_PLATE_INNER_HEIGHT imported from lgeo.include.common.lg_defs
+  ✔ Line: 96
+    ✔ pep8: E303 / too many blank lines (2) (col 5)
+  ✔ Line: 216
+    ✔ pep8: E121 / continuation line under-indented for hanging indent (col 19)
+    ✔ pylint: bad-continuation / Wrong hanging indentation.
                   ),
                 | ^ |
-  ☐ Line: 414
-    ☐ pep8: E501 / line too long (92 > 79 characters) (col 80)
-  ☐ Line: 417
-    ☐ pep8: E501 / line too long (93 > 79 characters) (col 80)
-  ☐ Line: 420
-    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
-  ☐ Line: 421
-    ☐ pep8: E501 / line too long (88 > 79 characters) (col 80)
-  ☐ Line: 425
-    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
-  ☐ Line: 426
-    ☐ pep8: E501 / line too long (88 > 79 characters) (col 80)
-  ☐ Line: 436
-    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
-  ☐ Line: 441
-    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
-  ☐ Line: 451
-    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
-  ☐ Line: 452
-    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
-  ☐ Line: 456
-    ☐ pep8: E501 / line too long (91 > 79 characters) (col 80)
-  ☐ Line: 459
-    ☐ pep8: E501 / line too long (92 > 79 characters) (col 80)
-  ☐ Line: 469
-    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
-  ☐ Line: 474
-    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
-  ☐ Line: 478
-    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
-  ☐ Line: 479
-    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
-  ☐ Line: 483
-    ☐ pep8: E501 / line too long (112 > 79 characters) (col 80)
-  ☐ Line: 484
-    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
-  ☐ Line: 488
-    ☐ pep8: E501 / line too long (113 > 79 characters) (col 80)
-  ☐ Line: 489
-    ☐ pep8: E501 / line too long (96 > 79 characters) (col 80)
-  ☐ Line: 493
-    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
-  ☐ Line: 494
-    ☐ pep8: E501 / line too long (85 > 79 characters) (col 80)
-  ☐ Line: 498
-    ☐ pep8: E501 / line too long (96 > 79 characters) (col 80)
-  ☐ Line: 499
-    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
-  ☐ Line: 503
-    ☐ pep8: E501 / line too long (96 > 79 characters) (col 80)
-  ☐ Line: 504
-    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
-  ☐ Line: 508
-    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
-  ☐ Line: 509
-    ☐ pep8: E501 / line too long (112 > 79 characters) (col 80)
-  ☐ Line: 513
-    ☐ pep8: E501 / line too long (87 > 79 characters) (col 80)
-  ☐ Line: 514
-    ☐ pep8: E501 / line too long (113 > 79 characters) (col 80)
-  ☐ Line: 518
-    ☐ pep8: E501 / line too long (100 > 79 characters) (col 80)
-  ☐ Line: 521
-    ☐ pep8: E501 / line too long (99 > 79 characters) (col 80)
-  ☐ Line: 526
-    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
-  ☐ Line: 527
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
-  ☐ Line: 530
-    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
-  ☐ Line: 531
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
-  ☐ Line: 534
-    ☐ pep8: E501 / line too long (86 > 79 characters) (col 80)
-  ☐ Line: 535
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
-  ☐ Line: 539
-    ☐ pep8: E501 / line too long (119 > 79 characters) (col 80)
-  ☐ Line: 540
-    ☐ pep8: E501 / line too long (105 > 79 characters) (col 80)
-  ☐ Line: 545
-    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
-  ☐ Line: 549
-    ☐ pep8: E501 / line too long (95 > 79 characters) (col 80)
-  ☐ Line: 553
-    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ✔ Line: 414
+    ✔ pep8: E501 / line too long (92 > 79 characters) (col 80)
+  ✔ Line: 417
+    ✔ pep8: E501 / line too long (93 > 79 characters) (col 80)
+  ✔ Line: 420
+    ✔ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ✔ Line: 421
+    ✔ pep8: E501 / line too long (88 > 79 characters) (col 80)
+  ✔ Line: 425
+    ✔ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ✔ Line: 426
+    ✔ pep8: E501 / line too long (88 > 79 characters) (col 80)
+  ✔ Line: 436
+    ✔ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ✔ Line: 441
+    ✔ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ✔ Line: 451
+    ✔ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ✔ Line: 452
+    ✔ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ✔ Line: 456
+    ✔ pep8: E501 / line too long (91 > 79 characters) (col 80)
+  ✔ Line: 459
+    ✔ pep8: E501 / line too long (92 > 79 characters) (col 80)
+  ✔ Line: 469
+    ✔ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ✔ Line: 474
+    ✔ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ✔ Line: 478
+    ✔ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ✔ Line: 479
+    ✔ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ✔ Line: 483
+    ✔ pep8: E501 / line too long (112 > 79 characters) (col 80)
+  ✔ Line: 484
+    ✔ pep8: E501 / line too long (95 > 79 characters) (col 80)
+  ✔ Line: 488
+    ✔ pep8: E501 / line too long (113 > 79 characters) (col 80)
+  ✔ Line: 489
+    ✔ pep8: E501 / line too long (96 > 79 characters) (col 80)
+  ✔ Line: 493
+    ✔ pep8: E501 / line too long (95 > 79 characters) (col 80)
+  ✔ Line: 494
+    ✔ pep8: E501 / line too long (85 > 79 characters) (col 80)
+  ✔ Line: 498
+    ✔ pep8: E501 / line too long (96 > 79 characters) (col 80)
+  ✔ Line: 499
+    ✔ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ✔ Line: 503
+    ✔ pep8: E501 / line too long (96 > 79 characters) (col 80)
+  ✔ Line: 504
+    ✔ pep8: E501 / line too long (95 > 79 characters) (col 80)
+  ✔ Line: 508
+    ✔ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ✔ Line: 509
+    ✔ pep8: E501 / line too long (112 > 79 characters) (col 80)
+  ✔ Line: 513
+    ✔ pep8: E501 / line too long (87 > 79 characters) (col 80)
+  ✔ Line: 514
+    ✔ pep8: E501 / line too long (113 > 79 characters) (col 80)
+  ✔ Line: 518
+    ✔ pep8: E501 / line too long (100 > 79 characters) (col 80)
+  ✔ Line: 521
+    ✔ pep8: E501 / line too long (99 > 79 characters) (col 80)
+  ✔ Line: 526
+    ✔ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ✔ Line: 527
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 530
+    ✔ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ✔ Line: 531
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 534
+    ✔ pep8: E501 / line too long (86 > 79 characters) (col 80)
+  ✔ Line: 535
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 539
+    ✔ pep8: E501 / line too long (119 > 79 characters) (col 80)
+  ✔ Line: 540
+    ✔ pep8: E501 / line too long (105 > 79 characters) (col 80)
+  ✔ Line: 545
+    ✔ pep8: E501 / line too long (95 > 79 characters) (col 80)
+  ✔ Line: 549
+    ✔ pep8: E501 / line too long (95 > 79 characters) (col 80)
+  ✔ Line: 553
+    ✔ pep8: E501 / line too long (82 > 79 characters) (col 80)
 
 ☐ lgeo/include/common/brick_subparts.py
   ☐ Line: 147
