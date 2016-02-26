@@ -29,7 +29,6 @@ from pov.csg.Union import Union
 
 from pov.basic.Vector import Vector, x, y
 
-from pov.finite_solid.Box import Box
 from pov.finite_solid.Cylinder import Cylinder
 from pov.finite_solid.Sphere import Sphere
 from pov.finite_solid.Torus import Torus
@@ -293,7 +292,8 @@ def _lg_tech_knob_function(knobclass):
 
 # hollow stud with logo
 def lg_tech_knob_logo(knobclass=Union):
-    scale = ""
+    """@Todo: ApiDoc."""
+    scale = Scale(Vector(1, 1, 1))
     if LG_TEST > 0:
         scale = Scale(Vector(1, 1, 0.1))
 
@@ -305,7 +305,7 @@ def lg_tech_knob_logo(knobclass=Union):
             ),
             Object(
                 LEGO_LOGO_TEXT,
-                Scale(Vector(3/4, 3/4, 3/4)),
+                Scale(Vector(3 / 4, 3 / 4, 3 / 4)),
             )
         )
 

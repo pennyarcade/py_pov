@@ -553,25 +553,25 @@ Messages ✔☐
   ✔ Line: 553
     ✔ pep8: E501 / line too long (82 > 79 characters) (col 80)
 
-☐ lgeo/include/common/brick_subparts.py
-  ☐ Line: 147
-    ☐ pep257: D205 / 1 blank line required between summary line and description (found 2)
+✔ lgeo/include/common/brick_subparts.py
+  ✔ Line: 147
+    ✔ pep257: D205 / 1 blank line required between summary line and description (found 2)
 
 ☐ lgeo/include/common/custom_macros.py
   ☐ Line: 103
     ☐ pylint: too-many-arguments / Too many arguments (8/5)
 
-☐ lgeo/include/common/lg_defs.py
-  ☐ Line: 32
-    ☐ pylint: unused-import / Unused Box imported from pov.finite_solid.Box
-  ☐ Line: 295
-    ☐ pep257: D103 / Missing docstring in public function
-  ☐ Line: 298
-    ☐ pylint: redefined-variable-type / Redefinition of scale type from str to pov.object_modifier.Scale.Scale (col 8)
-  ☐ Line: 308
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 31)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 36)
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 41)
+✔ lgeo/include/common/lg_defs.py
+  ✔ Line: 32
+    ✔ pylint: unused-import / Unused Box imported from pov.finite_solid.Box
+  ✔ Line: 295
+    ✔ pep257: D103 / Missing docstring in public function
+  ✔ Line: 298
+    ✔ pylint: redefined-variable-type / Redefinition of scale type from str to pov.object_modifier.Scale.Scale (col 8)
+  ✔ Line: 308
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 31)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 36)
+    ✔ pep8: E226 / missing whitespace around arithmetic operator (col 41)
 
 ☐ lgeo/set/lg_10036_1_car.py
   ☐ Line: 425

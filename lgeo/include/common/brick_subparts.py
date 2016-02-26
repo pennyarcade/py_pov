@@ -153,7 +153,6 @@ def standard_plate(
     """
     Standard plate brick.
 
-
     @Todo: fix plate column for 1x2 plate & bricks
     """
     return Union(
