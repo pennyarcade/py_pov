@@ -164,7 +164,9 @@ LDU (width of a LEGO brick) and 0.96 is 24 LDU (height of a LEGO brick).
 
 from pov.csg.Union import Union
 
+
 def set_10036_1_house_nonmoving():
+    """@Todo: DocString."""
     return Union(
         # 3001    White   Brick 2 x 4 (Pic)
         # std_brick(lg_3001, lg_white, -2*LGBW, 3*LGPH, 6*LGBW, -90, 90, 0)
@@ -216,7 +218,8 @@ def set_10036_1_house_nonmoving():
         # 3795    Red     Plate 2 x 6
         # std_brick(lg_3795, lg_red, 1*LGBW, 7*LGPH, -1*LGBW, -90, 0, 0)
         # 69c01   White   Tap 1 x 2 Assembly with Gray Spout MISSING
-        # std_brick(lg_69c01, lg_white, -3*LGBW, 5.6*LGPH, -3.5*LGBW, -90, -90, 0)
+        # std_brick(lg_69c01, lg_white, -3*LGBW, 5.6*LGPH, -3.5*LGBW,
+        # -90, -90, 0)
 
         # *******************************************************************
         # Objects (Step 6)
@@ -238,13 +241,17 @@ def set_10036_1_house_nonmoving():
         # Objects (Step 7)
         # *******************************************************************
         # 3004    White   Brick 1 x 2
-        # std_brick(lg_3004, lg_white,  1*LGBW, 12*LGPH, -4.5*LGBW, -90, -90, 0)
-        # std_brick(lg_3004, lg_white, -3*LGBW, 12*LGPH, -4.5*LGBW, -90, -90, 0)
-        # std_brick(lg_3004, lg_white, -2*LGBW, 12*LGPH,  3.5*LGBW, -90, 90, 0)
+        # std_brick(lg_3004, lg_white,  1*LGBW, 12*LGPH, -4.5*LGBW,
+        # -90, -90, 0)
+        # std_brick(lg_3004, lg_white, -3*LGBW, 12*LGPH, -4.5*LGBW,
+        # -90, -90, 0)
+        # std_brick(lg_3004, lg_white, -2*LGBW, 12*LGPH,  3.5*LGBW,
+        # -90, 90, 0)
         # 3005    White   Brick 1 x 1
         # std_brick(lg_3005, lg_white, 1.5*LGBW, 12*LGPH, 2.5*LGBW, -90, 0, 0)
         # 2357    White   Brick 2 x 2 Corner
-        # std_brick(lg_2357, lg_white, -0.5*LGBW, 12*LGPH, 2.5*LGBW, -90, 90, 0)
+        # std_brick(lg_2357, lg_white, -0.5*LGBW, 12*LGPH, 2.5*LGBW,
+        # -90, 90, 0)
         # 3010    White   Brick 1 x 4
         # std_brick(lg_3010, lg_white, -2*LGBW, 12*LGPH,  6.5*LGBW, -90, 90, 0)
         # 4070    Black   Brick 1 x 1 with Headlight
@@ -255,8 +262,10 @@ def set_10036_1_house_nonmoving():
         # Objects (Step 8)
         # *******************************************************************
         # 3004    White   Brick 1 x 2
-        # std_brick(lg_3004, lg_white,  1*LGBW, 15*LGPH, -4.5*LGBW, -90, -90, 0)
-        # std_brick(lg_3004, lg_white, -3*LGBW, 15*LGPH, -4.5*LGBW, -90, -90, 0)
+        # std_brick(lg_3004, lg_white,  1*LGBW, 15*LGPH, -4.5*LGBW,
+        # -90, -90, 0)
+        # std_brick(lg_3004, lg_white, -3*LGBW, 15*LGPH, -4.5*LGBW,
+        # -90, -90, 0)
         # 3001    White   Brick 2 x 4
         # std_brick(lg_3001, lg_white, -1*LGBW, 15*LGPH, 5*LGBW, -90, 0, 0)
         # std_brick(lg_3001, lg_white, -3*LGBW, 15*LGPH, 5*LGBW, -90, 0, 0)
@@ -270,7 +279,8 @@ def set_10036_1_house_nonmoving():
         # std_brick(lg_3023, lg_red, -0.5*LGBW, 16*LGPH, 5*LGBW, -90, 0, 0)
         # std_brick(lg_3023, lg_red, -2*LGBW, 16*LGPH, 3.5*LGBW, -90, 90, 0)
         # 4085c   Red     Plate 1 x 1 with Clip Vertical - Type 3
-        # std_brick(lg_4085c, lg_red, -3.5*LGBW, 16*LGPH, -4.5*LGBW, -90, 180, 0)
+        # std_brick(lg_4085c, lg_red, -3.5*LGBW, 16*LGPH, -4.5*LGBW,
+        # -90, 180, 0)
         # 3623    Red     Plate 1 x 3
         # std_brick(lg_3623, lg_red, -3.5*LGBW, 16*LGPH, 4.5*LGBW, -90, 0, 0)
         # 3710    Red     Plate 1 x 4
@@ -281,7 +291,8 @@ def set_10036_1_house_nonmoving():
         # 2420    Red     Plate 2 x 2 Corner
         # std_brick(lg_2420, lg_red, -0.5*LGBW, 16*LGPH, 2.5*LGBW, -90, 90, 0)
         # 2412b   Yellow  Tile 1 x 2 Grille with Groove
-        # std_brick(lg_2412b, lg_yellow, 0.2*LGBW, 10.8*LGPH, 5*LGBW, 90, 0, 90)
+        # std_brick(lg_2412b, lg_yellow, 0.2*LGBW, 10.8*LGPH, 5*LGBW,
+        # 90, 0, 90)
 
         # *******************************************************************
         # Objects (Step 10)
@@ -289,8 +300,10 @@ def set_10036_1_house_nonmoving():
         # 3005    Red   Brick 1 x 1
         # std_brick(lg_3005, lg_red, -2.5*LGBW, 17*LGPH, -4.5*LGBW, -90, 0, 0)
         # 3665    White   Slope Brick 45 2 x 1 Inverted
-        # std_brick(lg_3665, lg_white, -3.5*LGBW, 19*LGPH, -4.5*LGBW, -90, -90, 0)
-        # std_brick(lg_3665, lg_white, -3.5*LGBW, 19*LGPH, 3.5*LGBW, -90, 90, 0)
+        # std_brick(lg_3665, lg_white, -3.5*LGBW, 19*LGPH, -4.5*LGBW,
+        # -90, -90, 0)
+        # std_brick(lg_3665, lg_white, -3.5*LGBW, 19*LGPH, 3.5*LGBW,
+        # -90, 90, 0)
         # 3622    White   Brick 1 x 3
         # std_brick(lg_3622, lg_white, -3.5*LGBW, 19*LGPH, 5.5*LGBW, -90, 0, 0)
         # 3010    White   Brick 1 x 4
@@ -318,8 +331,10 @@ def set_10036_1_house_nonmoving():
         # 3010    White   Brick 1 x 4
         # std_brick(lg_3010, lg_white, -3.5*LGBW, 25*LGPH, 5*LGBW, -90, 0, 0)
         # 3622    White   Brick 1 x 3
-        # std_brick(lg_3622, lg_white,  -1.5*LGBW, 25*LGPH, 3.5*LGBW, -90, 90, 0)
-        # std_brick(lg_3622, lg_white,  -1.5*LGBW, 25*LGPH, 6.5*LGBW, -90, 90, 0)
+        # std_brick(lg_3622, lg_white,  -1.5*LGBW,
+        # 25*LGPH, 3.5*LGBW, -90, 90, 0)
+        # std_brick(lg_3622, lg_white,  -1.5*LGBW,
+        # 25*LGPH, 6.5*LGBW, -90, 90, 0)
 
         # *******************************************************************
         # Objects (Step 13)
@@ -330,8 +345,10 @@ def set_10036_1_house_nonmoving():
         # 3460    Red Plate 1 x 8
         # std_brick(lg_3460, lg_red, -3.5*LGBW, 26*LGPH, -1*LGBW, -90, 0, 0)
         # 3622    White   Brick 1 x 3
-        # std_brick(lg_3622, lg_white,  -2.5*LGBW, 28*LGPH, 3.5*LGBW, -90, 90, 0)
-        # std_brick(lg_3622, lg_white,  -2.5*LGBW, 28*LGPH, 6.5*LGBW, -90, 90, 0)
+        # std_brick(lg_3622, lg_white,  -2.5*LGBW, 28*LGPH,
+        # 3.5*LGBW, -90, 90, 0)
+        # std_brick(lg_3622, lg_white,  -2.5*LGBW, 28*LGPH, 6.5*LGBW,
+        # -90, 90, 0)
         # 3004    White   Brick 1 x 2
         # std_brick(lg_3004, lg_white, -3.5*LGBW, 28*LGPH, 5*LGBW, -90, 0, 0)
         # 3659    White   Arch 1 x 4 (Pic)
@@ -342,13 +359,17 @@ def set_10036_1_house_nonmoving():
         # *******************************************************************
         # 3675    Red     Slope Brick 33 3 x 3 Double Convex
         # std_brick(lg_3675, lg_red, -0.5*LGBW, 31*LGPH, 5*LGBW, -90, 0, 0)
-        # std_brick(lg_3675_slope, lg_red, -0.5*LGBW, 31*LGPH, 5*LGBW, -90, 0, 0)
+        # std_brick(lg_3675_slope, lg_red, -0.5*LGBW, 31*LGPH,
+        # 5*LGBW, -90, 0, 0)
         # std_brick(lg_3675, lg_red, -0.5*LGBW, 31*LGPH, 4*LGBW, -90, 90, 0)
-        # std_brick(lg_3675_slope, lg_red, -0.5*LGBW, 31*LGPH, 4*LGBW, -90, 90, 0)
+        # std_brick(lg_3675_slope, lg_red, -0.5*LGBW, 31*LGPH,
+        # 4*LGBW, -90, 90, 0)
         # std_brick(lg_3675, lg_red, -1.5*LGBW, 31*LGPH, 4*LGBW, -90, 180, 0)
-        # std_brick(lg_3675_slope, lg_red, -1.5*LGBW, 31*LGPH, 4*LGBW, -90, 180, 0)
+        # std_brick(lg_3675_slope, lg_red, -1.5*LGBW, 31*LGPH, 4*LGBW,
+        # -90, 180, 0)
         # std_brick(lg_3675, lg_red, -1.5*LGBW, 31*LGPH, 5*LGBW, -90, -90, 0)
-        # std_brick(lg_3675_slope, lg_red, -1.5*LGBW, 31*LGPH, 5*LGBW, -90, -90, 0)
+        # std_brick(lg_3675_slope, lg_red, -1.5*LGBW, 31*LGPH,
+        # 5*LGBW, -90, -90, 0)
         # 4589    Black   Cone 1 x 1
         # std_brick(lg_4589, lg_black, -1.5*LGBW, 34*LGPH, 4*LGBW, -90, 0, 0)
     )

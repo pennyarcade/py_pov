@@ -40,7 +40,7 @@ from pov.texture.Pigment import Pigment
 
 from pov.texture.pattern.Gradient import Gradient
 
-from lgeo.include.common.lg_color import LG_RED, LG_WHITE, LG_BLACK
+from lgeo.include.common.lg_color import LG_WHITE
 
 # ==== Custom Includes ====
 from lgeo.include.common.custom_macros import std_brick
