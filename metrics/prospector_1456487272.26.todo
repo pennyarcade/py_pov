@@ -1,0 +1,184 @@
+Messages
+========
+
+☐ .
+  ☐ Line: None
+    ☐ pep257: failure / Tool pep257 failed to run (exception was raised)
+    ☐ vulture: failure / Tool vulture failed to run (exception was raised)
+
+☐ lgeo/include/brick/lg_2357.py
+  ☐ Line: 466
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+
+☐ lgeo/include/brick/lg_2436.py
+  ☐ Line: 560
+    ☐ pylint: pointless-string-statement / String statement has no effect
+
+☐ lgeo/include/brick/lg_3823.py
+  ☐ Line: 22
+    ☐ pylint: unused-import / Unused LG_CYLINDER_RADIUS imported from lgeo.include.common.lg_defs
+  ☐ Line: 545
+    ☐ pep8: E261 / at least two spaces before inline comment (col 31)
+  ☐ Line: 746
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 37)
+
+☐ lgeo/include/common/custom_macros.py
+  ☐ Line: 103
+    ☐ pylint: too-many-arguments / Too many arguments (8/5)
+
+☐ lgeo/lgeo_city.py
+  ☐ Line: 117
+    ☐ pylint: no-name-in-module / No name 'lg_10036_1_house' in module 'lgeo.set'
+
+☐ lgeo/set/lg_10036_1_house.py
+  ☐ Line: 167
+    ☐ pep8: E302 / expected 2 blank lines, found 1 (col 1)
+    ☐ pylint: syntax-error / invalid syntax
+  ☐ Line: 168
+    ☐ pep8: E113 / unexpected indentation (col 5)
+  ☐ Line: 219
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 241
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 242
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 247
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 258
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 259
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 273
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 284
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 292
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 293
+    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+  ☐ Line: 321
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 322
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 333
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 334
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 345
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ☐ Line: 347
+    ☐ pep8: E501 / line too long (82 > 79 characters) (col 80)
+  ☐ Line: 349
+    ☐ pep8: E501 / line too long (83 > 79 characters) (col 80)
+  ☐ Line: 351
+    ☐ pep8: E501 / line too long (83 > 79 characters) (col 80)
+
+☐ lgeo/testscene.py
+  ☐ Line: 43
+    ☐ pylint: unused-import / Unused LG_RED imported from lgeo.include.common.lg_color
+
+☐ pov/basic/Color.py
+  ☐ Line: 44
+    ☐ mccabe: MC0001 / Color.__init__ is too complex (12)
+
+☐ pov/basic/SceneItem.py
+  ☐ Line: 174
+    ☐ pylint: global-statement / Using the global statement (col 12)
+  ☐ Line: 192
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 194
+    ☐ pylint: global-statement / Using the global statement (col 8)
+  ☐ Line: 198
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 200
+    ☐ pylint: global-statement / Using the global statement (col 8)
+  ☐ Line: 208
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 210
+    ☐ pylint: global-variable-not-assigned / Using global for 'INDENTATION' but no assignment is done (col 8)
+  ☐ Line: 234
+    ☐ pylint: global-variable-not-assigned / Using global for 'INDENTATION' but no assignment is done (col 8)
+  ☐ Line: 332
+    ☐ pep8: N802 / function name should be lowercase (col 9)
+    ☐ pylint: invalid-name / Invalid method name "_checkKwargValue" (col 4)
+  ☐ Line: 479
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 488
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+
+☐ pov/basic/Vector.py
+  ☐ Line: 122
+    ☐ pylint: invalid-name / Invalid constant name "x"
+  ☐ Line: 123
+    ☐ pylint: invalid-name / Invalid constant name "y"
+  ☐ Line: 124
+    ☐ pylint: invalid-name / Invalid constant name "z"
+
+☐ pov/finite_solid/Box.py
+  ☐ Line: 79
+    ☐ pylint: unused-variable / Unused variable 'item' (col 15)
+
+☐ pov/finite_solid/Cone.py
+  ☐ Line: 33
+    ☐ mccabe: MC0001 / Cone.__init__ is too complex (12)
+
+☐ pov/finite_solid/Cylinder.py
+  ☐ Line: 30
+    ☐ mccabe: MC0001 / Cylinder.__init__ is too complex (11)
+
+☐ pov/include/colors_inc.py
+  ☐ Line: 274
+    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+
+☐ pov/tests/BasicTest.py
+  ☐ Line: 147
+    ☐ pylint: protected-access / Access to a protected member _block_end of a client class (col 25)
+  ☐ Line: 182
+    ☐ pylint: protected-access / Access to a protected member _dedent of a client class (col 12)
+  ☐ Line: 194
+    ☐ pylint: protected-access / Access to a protected member _validate_kwargs of a client class (col 12)
+  ☐ Line: 206
+    ☐ pylint: protected-access / Access to a protected member _validate_kwargs of a client class (col 12)
+  ☐ Line: 211
+    ☐ pylint: protected-access / Access to a protected member _is_valid_identifier of a client class (col 12)
+  ☐ Line: 214
+    ☐ pylint: protected-access / Access to a protected member _is_valid_identifier of a client class (col 12)
+  ☐ Line: 234
+    ☐ pylint: protected-access / Access to a protected member _checkKwargValue of a client class (col 12)
+  ☐ Line: 237
+    ☐ pylint: too-many-public-methods / Too many public methods (23/20)
+  ☐ Line: 400
+    ☐ pylint: unused-variable / Unused variable 'first' (col 8)
+  ☐ Line: 447
+    ☐ pylint: protected-access / Access to a protected member _indent of a client class (col 8)
+  ☐ Line: 449
+    ☐ pylint: protected-access / Access to a protected member _dedent of a client class (col 8)
+
+☐ pov/tests/EndToEndTest.py
+  ☐ Line: 47
+    ☐ pylint: too-many-statements / Too many statements (96/50) (col 4)
+  ☐ Line: 254
+    ☐ pylint: too-many-statements / Too many statements (61/50) (col 4)
+  ☐ Line: 381
+    ☐ pylint: too-many-statements / Too many statements (71/50) (col 4)
+
+☐ pov/tests/IncludeTest.py
+  ☐ Line: 19
+    ☐ pep8: E402 / module level import not at top of file (col 1)
+
+
+
+Check Information
+=================
+         Started: 2016-02-26 12:40:17.651527
+        Finished: 2016-02-26 12:47:51.237633
+      Time Taken: 453.59 seconds
+       Formatter: grouped
+        Profiles: .landscape.yml, doc_warnings, strictness_veryhigh, no_member_warnings
+      Strictness: from profile
+  Libraries Used: 
+       Tools Run: frosted, mccabe, pep257, pep8, profile-validator, pyflakes, pylint, pyroma, vulture
+  Messages Found: 66
+ External Config: pylint: /media/eCafe HD/devel/py_pov/.pylintrc
+
+

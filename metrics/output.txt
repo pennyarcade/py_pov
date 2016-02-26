@@ -1,0 +1,164 @@
+povray: cannot open the user configuration file /home/chocokiko/.povray/3.6/povray.conf: No such file or directory
+Persistence of Vision(tm) Ray Tracer Version 3.6.1 (Debian  (arm-linux-gnueabi-g
+++ 4.3.3 @ arm-unknown-linux-gnueabi))
+This is an unofficial version compiled by:
+ Clément Stenac <zorglub at debian dot org> for Debian <www.debian.org>
+ The POV-Ray Team(tm) is not responsible for supporting this version.
+POV-Ray is based on DKBTrace 2.12 by David K. Buck & Aaron A. Collins
+Copyright 1991-2003 Persistence of Vision Team
+Copyright 2003-2004 Persistence of Vision Raytracer Pty. Ltd.
+
+Primary POV-Ray 3.5/3.6 Developers: (Alphabetically)
+  Chris Cason         Thorsten Froehlich  Nathan Kopp         Ron Parker        
+
+Contributing Authors: (Alphabetically)
+  Steve Anger         Eric Barish         Dieter Bayer        Steve A. Bennett  
+  David K. Buck       Nicolas Calimet     Aaron A. Collins    Chris Dailey      
+  Steve Demlow        Andreas Dilger      Alexander Enzmann   Dan Farmer        
+  Mark Gordon         Christoph Hormann   Mike Hough          Chris Huff        
+  Kari Kivisalo       Lutz Kretzschmar    Jochen Lippert      Pascal Massimino  
+  Jim McElhiney       Douglas Muir        Juha Nieminen       Bill Pulver       
+  Eduard Schwan       Wlodzimierz Skiba   Robert Skinner      Yvo Smellenbergh  
+  Zsolt Szalavari     Scott Taylor        Massimo Valentini   Timothy Wegner    
+  Drew Wells          Chris Young       
+
+Other contributors are listed in the documentation.
+
+Support libraries used by POV-Ray:
+  ZLib 1.2.3.3, Copyright 1995-1998 Jean-loup Gailly and Mark Adler
+  LibPNG 1.2.42, Copyright 1998-2002 Glenn Randers-Pehrson
+  LibJPEG 6b, Copyright 1998 Thomas G. Lane
+  LibTIFF 3.9.2, Copyright 1988-1997 Sam Leffler, 1991-1997 SGI
+Redirecting Options
+  All Streams to console..........On 
+  Debug Stream to console.........On 
+  Fatal Stream to console.........On 
+  Render Stream to console........On 
+  Statistics Stream to console....On 
+  Warning Stream to console.......On 
+Parsing Options
+  Input file: main.pov (compatible to version 3.61)
+  Remove bounds........On 
+  Split unions.........Off
+  Library paths:
+    /usr/share/povray
+    /usr/share/povray/ini
+    /usr/share/povray/include
+Output Options
+  Image resolution 640 by 480 (rows 1 to 480, columns 1 to 640).
+  Output file: /media/eCafe HD/devel/py_pov/main.png, 24 bpp PNG
+  Graphic display......On  (gamma: 2.2)
+  Mosaic preview.......Off
+  CPU usage histogram..Off
+  Continued trace......Off
+Tracing Options
+  Quality:  9
+  Bounding boxes.......On   Bounding threshold: 3
+  Light Buffer.........On 
+  Vista Buffer.........On   Draw Vista Buffer....Off
+  Antialiasing.........Off
+  Clock value:    0.000  (Animation off)
+
+  0:00:00 Parsing  0:00:01 Parsing 17K tokens
+File: main.pov  Line: 4093
+Parse Warning: Should have at least 2 objects in csg.
+  0:00:02 Parsing 25K tokens
+File: main.pov  Line: 5236
+Parse Warning: Should have at least 2 objects in csg.
+File: main.pov  Line: 6637
+Parse Warning: Should have at least 2 objects in csg.
+  0:00:03 Parsing 35K tokens  0:00:04 Parsing 52K tokens
+File: main.pov  Line: 11418
+Parse Warning: Should have at least 2 objects in csg.
+File: main.pov  Line: 11418
+Parse Warning: Degenerate CSG bounding box (not used!).
+File: main.pov  Line: 11559
+Parse Warning: Should have at least 2 objects in csg.
+File: main.pov  Line: 12666
+Parse Warning: Illegal Value: Scale X by 0.0. Changed to 1.0.
+File: main.pov  Line: 12666
+Parse Warning: Illegal Value: Scale Y by 0.0. Changed to 1.0.
+File: main.pov  Line: 12666
+Parse Warning: Illegal Value: Scale Z by 0.0. Changed to 1.0.
+  0:00:05 Parsing 65K tokens
+File: main.pov  Line: 12826
+Parse Warning: Illegal Value: Scale X by 0.0. Changed to 1.0.
+File: main.pov  Line: 12826
+Parse Warning: Illegal Value: Scale Y by 0.0. Changed to 1.0.
+File: main.pov  Line: 12826
+Parse Warning: Illegal Value: Scale Z by 0.0. Changed to 1.0.
+File: main.pov  Line: 12986
+Parse Warning: Illegal Value: Scale X by 0.0. Changed to 1.0.
+File: main.pov  Line: 12986
+Parse Warning: Illegal Value: Scale Y by 0.0. Changed to 1.0.
+File: main.pov  Line: 12986
+Parse Warning: Illegal Value: Scale Z by 0.0. Changed to 1.0.
+File: main.pov  Line: 13146
+Parse Warning: Illegal Value: Scale X by 0.0. Changed to 1.0.
+File: main.pov  Line: 13146
+Parse Warning: Illegal Value: Scale Y by 0.0. Changed to 1.0.
+File: main.pov  Line: 13146
+Parse Warning: Illegal Value: Scale Z by 0.0. Changed to 1.0.
+  0:00:06 Parsing 77K tokens
+File: main.pov  Line: 15464
+Parse Warning: Should have at least 2 objects in csg.
+File: main.pov  Line: 15464
+Parse Warning: Degenerate CSG bounding box (not used!).
+File: main.pov  Line: 15854
+Parse Warning: Should have at least 2 objects in csg.
+File: main.pov  Line: 15854
+Parse Warning: Degenerate CSG bounding box (not used!).
+  0:00:07 Parsing 90K tokens
+File: main.pov  Line: 19253
+Parse Warning: Illegal Value: Scale X by 0.0. Changed to 1.0.
+File: main.pov  Line: 19253
+Parse Warning: Illegal Value: Scale Y by 0.0. Changed to 1.0.
+File: main.pov  Line: 19253
+Parse Warning: Illegal Value: Scale Z by 0.0. Changed to 1.0.
+File: main.pov  Line: 19259
+Parse Warning: Illegal matrix column: Scale by 0.0. Changed to 1.0.
+File: main.pov  Line: 19259
+Parse Warning: Illegal matrix column: Scale by 0.0. Changed to 1.0.
+File: main.pov  Line: 19259
+Parse Warning: Illegal matrix column: Scale by 0.0. Changed to 1.0.
+File: main.pov  Line: 19618
+Parse Warning: Illegal Value: Scale X by 0.0. Changed to 1.0.
+File: main.pov  Line: 19618
+Parse Warning: Illegal Value: Scale Y by 0.0. Changed to 1.0.
+File: main.pov  Line: 19618
+Parse Warning: Illegal Value: Scale Z by 0.0. Changed to 1.0.
+File: main.pov  Line: 19817
+Parse Warning: Should have at least 2 objects in csg.
+File: main.pov  Line: 19817
+Parse Warning: Degenerate CSG bounding box (not used!).
+File: main.pov  Line: 20207
+Parse Warning: Should have at least 2 objects in csg.
+File: main.pov  Line: 20207
+Parse Warning: Degenerate CSG bounding box (not used!).
+  0:00:08 Parsing 105K tokens  0:00:10 Parsing 112K tokens
+File: main.pov  Line: 22511
+Parse Warning: Should have at least 2 objects in csg.
+File: main.pov  Line: 22511
+Parse Warning: Degenerate CSG bounding box (not used!).
+
+  0:00:10 Creating bounding slabs
+  0:00:11 Creating vista buffer
+  0:00:12 Creating light buffers  0:00:12 Creating light buffers  0:00:12 Creating light buffers 112K tokens
+Scene Statistics
+  Finite objects:         4305
+  Infinite objects:          1
+  Light sources:             1
+  Total:                  4307
+
+  0:00:00 Displaying
+Using 24 bit TrueColor visual
+Mapping background image
+
+  0:00:00 Rendering line 1 of 480  0:00:01 Rendering line 2 of 480  0:00:02 Rendering line 9 of 480  0:00:03 Rendering line 16 of 480  0:00:04 Rendering line 24 of 480  0:00:05 Rendering line 30 of 480  0:00:06 Rendering line 37 of 480  0:00:07 Rendering line 45 of 480  0:00:08 Rendering line 53 of 480  0:00:09 Rendering line 60 of 480  0:00:10 Rendering line 67 of 480  0:00:11 Rendering line 74 of 480  0:00:12 Rendering line 81 of 480  0:00:13 Rendering line 89 of 480  0:00:14 Rendering line 97 of 480  0:00:15 Rendering line 104 of 480  0:00:16 Rendering line 111 of 480  0:00:17 Rendering line 119 of 480  0:00:18 Rendering line 126 of 480  0:00:19 Rendering line 133 of 480  0:00:20 Rendering line 140 of 480  0:00:21 Rendering line 150 of 480  0:00:22 Rendering line 159 of 480  0:00:23 Rendering line 176 of 480  0:00:24 Rendering line 190 of 480  0:00:25 Rendering line 200 of 480  0:00:26 Rendering line 209 of 480  0:00:27 Rendering line 219 of 480  0:00:28 Rendering line 226 of 480  0:00:29 Rendering line 229 of 480  0:00:30 Rendering line 231 of 480  0:00:31 Rendering line 232 of 480  0:00:32 Rendering line 233 of 480  0:00:33 Rendering line 234 of 480  0:00:34 Rendering line 235 of 480  0:00:35 Rendering line 236 of 480  0:00:36 Rendering line 237 of 480  0:00:38 Rendering line 238 of 480  0:00:39 Rendering line 239 of 480  0:00:40 Rendering line 240 of 480  0:00:42 Rendering line 241 of 480  0:00:44 Rendering line 242 of 480  0:00:46 Rendering line 243 of 480  0:00:47 Rendering line 244 of 480  0:00:49 Rendering line 245 of 480  0:00:51 Rendering line 246 of 480  0:00:52 Rendering line 247 of 480  0:00:54 Rendering line 248 of 480  0:00:56 Rendering line 249 of 480  0:00:57 Rendering line 250 of 480  0:00:59 Rendering line 251 of 480  0:01:01 Rendering line 252 of 480  0:01:03 Rendering line 253 of 480  0:01:04 Rendering line 254 of 480  0:01:06 Rendering line 255 of 480  0:01:07 Rendering line 256 of 480  0:01:09 Rendering line 257 of 480  0:01:11 Rendering line 258 of 480  0:01:13 Rendering line 259 of 480  0:01:15 Rendering line 260 of 480  0:01:16 Rendering line 261 of 480  0:01:18 Rendering line 262 of 480  0:01:20 Rendering line 263 of 480  0:01:22 Rendering line 264 of 480  0:01:24 Rendering line 265 of 480  0:01:26 Rendering line 266 of 480  0:01:28 Rendering line 267 of 480  0:01:30 Rendering line 268 of 480  0:01:32 Rendering line 269 of 480  0:01:35 Rendering line 270 of 480  0:01:37 Rendering line 271 of 480  0:01:39 Rendering line 272 of 480  0:01:42 Rendering line 273 of 480  0:01:44 Rendering line 274 of 480  0:01:47 Rendering line 275 of 480  0:01:50 Rendering line 276 of 480  0:01:52 Rendering line 277 of 480  0:01:55 Rendering line 278 of 480  0:01:58 Rendering line 279 of 480  0:02:01 Rendering line 280 of 480  0:02:04 Rendering line 281 of 480  0:02:07 Rendering line 282 of 480  0:02:10 Rendering line 283 of 480  0:02:13 Rendering line 284 of 480  0:02:16 Rendering line 285 of 480  0:02:19 Rendering line 286 of 480  0:02:22 Rendering line 287 of 480  0:02:26 Rendering line 288 of 480  0:02:29 Rendering line 289 of 480  0:02:32 Rendering line 290 of 480  0:02:36 Rendering line 291 of 480  0:02:39 Rendering line 292 of 480  0:02:43 Rendering line 293 of 480  0:02:47 Rendering line 294 of 480  0:02:51 Rendering line 295 of 480  0:02:55 Rendering line 296 of 480  0:02:59 Rendering line 297 of 480  0:03:03 Rendering line 298 of 480  0:03:07 Rendering line 299 of 480  0:03:11 Rendering line 300 of 480  0:03:15 Rendering line 301 of 480  0:03:19 Rendering line 302 of 480  0:03:24 Rendering line 303 of 480  0:03:28 Rendering line 304 of 480  0:03:32 Rendering line 305 of 480  0:03:37 Rendering line 306 of 480  0:03:42 Rendering line 307 of 480  0:03:46 Rendering line 308 of 480  0:03:51 Rendering line 309 of 480  0:03:56 Rendering line 310 of 480  0:04:01 Rendering line 311 of 480  0:04:05 Rendering line 312 of 480  0:04:10 Rendering line 313 of 480  0:04:14 Rendering line 314 of 480  0:04:18 Rendering line 315 of 480  0:04:22 Rendering line 316 of 480  0:04:27 Rendering line 317 of 480  0:04:31 Rendering line 318 of 480  0:04:35 Rendering line 319 of 480  0:04:39 Rendering line 320 of 480  0:04:43 Rendering line 321 of 480  0:04:47 Rendering line 322 of 480  0:04:51 Rendering line 323 of 480  0:04:55 Rendering line 324 of 480  0:04:59 Rendering line 325 of 480  0:05:03 Rendering line 326 of 480  0:05:06 Rendering line 327 of 480  0:05:10 Rendering line 328 of 480  0:05:13 Rendering line 329 of 480  0:05:17 Rendering line 330 of 480  0:05:21 Rendering line 331 of 480  0:05:24 Rendering line 332 of 480  0:05:27 Rendering line 333 of 480
+  0:05:30 Aborting render!
+  0:05:30 User abort
+Total Scene Processing Times
+  Parse Time:    0 hours  0 minutes 12 seconds (12 seconds)
+  Photon Time:   0 hours  0 minutes  0 seconds (0 seconds)
+  Render Time:   0 hours  5 minutes 30 seconds (330 seconds)
+  Total Time:    0 hours  5 minutes 42 seconds (342 seconds)

@@ -248,7 +248,7 @@ def main():
     # object {set_10036_1_house_base}
     # object {set_10036_1_house_nonmoving
     fix.append(
-        lg_10036_1_house.set_10036_1_house_nonmoving
+        lg_10036_1_house.set_10036_1_house_nonmoving()
     )
     # object {set_10036_1_house_oven_door}
 
