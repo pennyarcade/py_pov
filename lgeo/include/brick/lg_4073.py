@@ -11,6 +11,7 @@ It is provided for private non-commercial use only.
 lg_4073: Plate 1 x 1 Round
 """
 
+
 from pov.basic.Vector import Vector
 
 from pov.csg.Merge import Merge
@@ -19,18 +20,15 @@ from pov.csg.Difference import Difference
 from pov.other.Object import Object
 
 from pov.finite_solid.Cylinder import Cylinder
-from pov.finite_solid.Sphere import Sphere
 from pov.finite_solid.Torus import Torus
 
 from pov.object_modifier.Rotate import Rotate
 from pov.object_modifier.Translate import Translate
 
-from lgeo.include.common.lg_defs import LGCS, LGBW, LG_TOP_HEIGHT
-from lgeo.include.common.lg_defs import LGPH, LG_WALL_WIDTH
+from lgeo.include.common.lg_defs import LGCS, LGBW, LGPH
 from lgeo.include.common.lg_defs import LG_PLATE_INNER_HEIGHT, LG_E
-from lgeo.include.common.lg_defs import LG_KNOB_INNER_RADIUS, LG_KNOB_CLEAR
-from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE, LG_CYLINDER_RADIUS
-from lgeo.include.common.lg_defs import LG_KNOB_RADIUS, LG_PLATE_COLUMN
+from lgeo.include.common.lg_defs import LG_KNOB_CLEAR, LG_CYLINDER_RADIUS
+from lgeo.include.common.lg_defs import LG_KNOB_RADIUS
 from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE_CLEAR
 
 # #ifdef(lg_4073)
@@ -112,12 +110,13 @@ from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE_CLEAR
 #  Translate( Vector(0, 0, -LGPH),
 # ),
 
+
 def clear():
     """Return lg_4073: Plate 1 x 1 Round."""
     return Merge(
         Object(
             LG_KNOB_CLEAR,
-            Translate(Vector(0,0, LGPH)),
+            Translate(Vector(0, 0, LGPH)),
         ),
         Merge(
             Difference(
@@ -159,20 +158,20 @@ def clear():
         ),
         Difference(
             Merge(
-              Cylinder(
-                  Vector(0, 0, LG_PLATE_INNER_HEIGHT + LGCS),
-                  Vector(0, 0, LGPH - LGCS),
-                  LGBW / 2
-              ),
-              Cylinder(
-                  Vector(0, 0, LG_PLATE_INNER_HEIGHT),
-                  Vector(0, 0, LGPH),
-                  LGBW / 2 - LGCS
-              ),
+                Cylinder(
+                    Vector(0, 0, LG_PLATE_INNER_HEIGHT + LGCS),
+                    Vector(0, 0, LGPH - LGCS),
+                    LGBW / 2
+                ),
+                Cylinder(
+                    Vector(0, 0, LG_PLATE_INNER_HEIGHT),
+                    Vector(0, 0, LGPH),
+                    LGBW / 2 - LGCS
+                ),
             ),
             Object(
-              LG_KNOB_INNER_SPACE_CLEAR,
-              Translate(Vector(0, 0, LG_PLATE_INNER_HEIGHT)),
+                LG_KNOB_INNER_SPACE_CLEAR,
+                Translate(Vector(0, 0, LG_PLATE_INNER_HEIGHT)),
             ),
         ),
         Torus(

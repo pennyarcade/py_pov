@@ -419,38 +419,38 @@ Messages ✔☐
     ✔ pep8: E226 / missing whitespace around arithmetic operator (col 39)
 
 ☐ lgeo/include/brick/lg_4073.py
-  ☐ Line: 22
-    ☐ pylint: unused-import / Unused Sphere imported from pov.finite_solid.Sphere
-  ☐ Line: 28
-    ☐ pylint: unused-import / Unused LG_TOP_HEIGHT imported from lgeo.include.common.lg_defs
-  ☐ Line: 29
-    ☐ pylint: unused-import / Unused LG_WALL_WIDTH imported from lgeo.include.common.lg_defs
-  ☐ Line: 31
-    ☐ pylint: unused-import / Unused LG_KNOB_INNER_RADIUS imported from lgeo.include.common.lg_defs
-  ☐ Line: 32
-    ☐ pylint: unused-import / Unused LG_KNOB_INNER_SPACE imported from lgeo.include.common.lg_defs
-  ☐ Line: 33
-    ☐ pylint: unused-import / Unused LG_PLATE_COLUMN imported from lgeo.include.common.lg_defs
-  ☐ Line: 115
-    ☐ pep8: E302 / expected 2 blank lines, found 1 (col 1)
-  ☐ Line: 120
-    ☐ pep8: E231 / missing whitespace after ',' (col 31)
-  ☐ Line: 162
-    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 15)
-    ☐ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
+  ✔ Line: 22
+    ✔ pylint: unused-import / Unused Sphere imported from pov.finite_solid.Sphere
+  ✔ Line: 28
+    ✔ pylint: unused-import / Unused LG_TOP_HEIGHT imported from lgeo.include.common.lg_defs
+  ✔ Line: 29
+    ✔ pylint: unused-import / Unused LG_WALL_WIDTH imported from lgeo.include.common.lg_defs
+  ✔ Line: 31
+    ✔ pylint: unused-import / Unused LG_KNOB_INNER_RADIUS imported from lgeo.include.common.lg_defs
+  ✔ Line: 32
+    ✔ pylint: unused-import / Unused LG_KNOB_INNER_SPACE imported from lgeo.include.common.lg_defs
+  ✔ Line: 33
+    ✔ pylint: unused-import / Unused LG_PLATE_COLUMN imported from lgeo.include.common.lg_defs
+  ✔ Line: 115
+    ✔ pep8: E302 / expected 2 blank lines, found 1 (col 1)
+  ✔ Line: 120
+    ✔ pep8: E231 / missing whitespace after ',' (col 31)
+  ✔ Line: 162
+    ✔ pep8: E121 / continuation line under-indented for hanging indent (col 15)
+    ✔ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
               Cylinder(
               ^ |
-  ☐ Line: 167
-    ☐ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
+  ✔ Line: 167
+    ✔ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
               Cylinder(
               ^ |
-  ☐ Line: 174
-    ☐ pep8: E121 / continuation line under-indented for hanging indent (col 15)
-    ☐ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
+  ✔ Line: 174
+    ✔ pep8: E121 / continuation line under-indented for hanging indent (col 15)
+    ✔ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
               LG_KNOB_INNER_SPACE_CLEAR,
               ^ |
-  ☐ Line: 175
-    ☐ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
+  ✔ Line: 175
+    ✔ pylint: bad-continuation / Wrong hanging indentation (add 2 spaces).
               Translate(Vector(0, 0, LG_PLATE_INNER_HEIGHT)),
               ^ |
 
