@@ -18,9 +18,7 @@ from math import atan2, cos, sin, pi
 
 from lgeo.include.common.lg_defs import LGCS, LGBW, LGPH, LG_E, LGBH
 from lgeo.include.common.lg_defs import LG_WALL_WIDTH, LG_PLATE_INNER_HEIGHT
-from lgeo.include.common.lg_defs import LG_TOP_HEIGHT
-from lgeo.include.common.lg_defs import LG_CYLINDER_RADIUS
-from lgeo.include.common.lg_defs import LG_KNOB_INNER_RADIUS
+from lgeo.include.common.lg_defs import LG_TOP_HEIGHT, LG_KNOB_INNER_RADIUS
 from lgeo.include.common.lg_defs import lg_tech_knob_logo_clear
 
 from pov.basic.Vector import Vector
@@ -542,7 +540,7 @@ def clear():
                             # 2 / LGBW * LGCS * sin(LG_ANGLE * pi / 180),
                             0, 1, 0,
                             0, 0, 1,
-                            0, # LGCS * (cos(LG_ANGLE * pi / 180) -1),
+                            0,  # LGCS * (cos(LG_ANGLE * pi / 180) -1),
                             3 * LGBW / 2, -LGCS
                         )
                     ),
@@ -743,7 +741,7 @@ def clear():
                                 2 / LGBW * LGCS * sin(LG_ANGLE * pi / 180),
                                 0, 1, 0,
                                 -1 / 2, 0, 1,
-                                LGCS*(cos(LG_ANGLE * pi / 180) - 1),
+                                LGCS * (cos(LG_ANGLE * pi / 180) - 1),
                                 3 * LGBW / 2, -LGCS
                             )
                         )

@@ -463,7 +463,8 @@ def solid(length=2, width=2):
 #   )
 #  )
 #  Box(
-#   Vector(sqrt(2)*(LGBH + LG_CYLINDER_RADIUS)/2, -0.06, LG_BRICK_INNER_HEIGHT),
+#   Vector(sqrt(2)*(LGBH + LG_CYLINDER_RADIUS)/2,
+#   -0.06, LG_BRICK_INNER_HEIGHT),
 #   Vector(sqrt(2)*LGBH, 0.06, 0)
 #   Rotate(Vector(0, 0, 45)
 #  )

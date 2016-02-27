@@ -1,25 +1,25 @@
 Messages
 ========
 
-☐ lgeo/include/brick/lg_2357.py
-  ☐ Line: 466
-    ☐ pep8: E501 / line too long (80 > 79 characters) (col 80)
+✔ lgeo/include/brick/lg_2357.py
+  ✔ Line: 466
+    ✔ pep8: E501 / line too long (80 > 79 characters) (col 80)
 
 ☐ lgeo/include/brick/lg_2436.py
   ☐ Line: 560
     ☐ pylint: pointless-string-statement / String statement has no effect
 
-☐ lgeo/include/brick/lg_3069b.py
-  ☐ Line: 30
-    ☐ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
+✔ lgeo/include/brick/lg_3069b.py
+  ✔ Line: 30
+    ✔ pep257: D300 / Use """triple double quotes""" (found '''-quotes)
 
-☐ lgeo/include/brick/lg_3823.py
-  ☐ Line: 22
-    ☐ pylint: unused-import / Unused LG_CYLINDER_RADIUS imported from lgeo.include.common.lg_defs
-  ☐ Line: 545
-    ☐ pep8: E261 / at least two spaces before inline comment (col 31)
-  ☐ Line: 746
-    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 37)
+ ✔ lgeo/include/brick/lg_3823.py
+   ✔ Line: 22
+     ✔ pylint: unused-import / Unused LG_CYLINDER_RADIUS imported from lgeo.include.common.lg_defs
+   ✔ Line: 545
+     ✔ pep8: E261 / at least two spaces before inline comment (col 31)
+   ✔ Line: 746
+     ✔ pep8: E226 / missing whitespace around arithmetic operator (col 37)
 
 ☐ lgeo/include/common/custom_macros.py
   ☐ Line: 103
@@ -33,9 +33,9 @@ Messages
   ☐ Line: 85
     ☐ vulture: unused-attribute / Unused attribute transmit
 
-☐ pov/basic/PoVObject.py
-  ☐ Line: 1
-    ☐ pep257: D100 / Missing docstring in public module
+✔ pov/basic/PoVObject.py
+  ✔ Line: 1
+    ✔ pep257: D100 / Missing docstring in public module
 
 ☐ pov/basic/SceneItem.py
   ☐ Line: 1
@@ -129,8 +129,8 @@ Messages
     ☐ vulture: unused-function / Unused function ch2rgb
   ☐ Line: 202
     ☐ vulture: unused-function / Unused function crgb2h
-  ☐ Line: 274
-    ☐ pep8: E501 / line too long (81 > 79 characters) (col 80)
+  ✔ Line: 274
+    ✔ pep8: E501 / line too long (81 > 79 characters) (col 80)
 
 ☐ pov/other/IsoSurface.py
   ☐ Line: 17
@@ -150,7 +150,7 @@ Check Information
        Formatter: grouped
         Profiles: .landscape.yml, doc_warnings, no_test_warnings, strictness_veryhigh, no_member_warnings
       Strictness: from profile
-  Libraries Used: 
+  Libraries Used:
        Tools Run: frosted, mccabe, pep257, pep8, profile-validator, pyflakes, pylint, pyroma, vulture
   Messages Found: 47
  External Config: pylint: /media/eCafe HD/devel/py_pov/.pylintrc

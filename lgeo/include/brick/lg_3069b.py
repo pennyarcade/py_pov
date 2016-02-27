@@ -28,7 +28,7 @@ from pov.object_modifier.Translate import Translate
 
 
 def solid(length=2, width=1):
-    '''return lg_3069b: Tile 1 x 2 with groove.'''
+    """return lg_3069b: Tile 1 x 2 with groove."""
     return Union(
         Sphere(
             Vector(LGCS, LGCS, LGCS + 0.04),

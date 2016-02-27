@@ -271,7 +271,8 @@ def crgb2h(rgb, maximum, span):
 #         else:
 #             saturation = span / (2 - lightness * 2)
 #     hue = crgb2h(Vector(red, green, blue), maximum, span)
-#     return Vector(hue, saturation, lightness, incolor.filter, incolor.transmit)
+#     return Vector(hue, saturation,
+# lightness, incolor.filter, incolor.transmit)
 
 
 # def chsv2rgb(vector):
