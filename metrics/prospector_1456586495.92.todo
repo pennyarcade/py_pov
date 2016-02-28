@@ -1,0 +1,140 @@
+Messages
+========
+
+☐ lgeo/include/brick/lg_2436.py
+  ☐ Line: 560
+    ☐ pylint: pointless-string-statement / String statement has no effect
+
+☐ lgeo/include/common/custom_macros.py
+  ☐ Line: 103
+    ☐ pylint: too-many-arguments / Too many arguments (8/5)
+
+☐ pov/basic/Color.py
+  ☐ Line: 44
+    ☐ mccabe: MC0001 / Color.__init__ is too complex (12)
+  ☐ Line: 84
+    ☐ vulture: unused-attribute / Unused attribute filter
+  ☐ Line: 85
+    ☐ vulture: unused-attribute / Unused attribute transmit
+
+☐ pov/basic/PoVObject.py
+  ☐ Line: 1
+    ☐ pep257: D100 / Missing docstring in public module
+
+☐ pov/basic/SceneItem.py
+  ☐ Line: 1
+    ☐ pep257: D100 / Missing docstring in public module
+  ☐ Line: 174
+    ☐ pylint: global-statement / Using the global statement (col 12)
+  ☐ Line: 192
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 194
+    ☐ pylint: global-statement / Using the global statement (col 8)
+  ☐ Line: 198
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 200
+    ☐ pylint: global-statement / Using the global statement (col 8)
+  ☐ Line: 208
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 210
+    ☐ pylint: global-variable-not-assigned / Using global for 'INDENTATION' but no assignment is done (col 8)
+  ☐ Line: 234
+    ☐ pylint: global-variable-not-assigned / Using global for 'INDENTATION' but no assignment is done (col 8)
+  ☐ Line: 332
+    ☐ pep8: N802 / function name should be lowercase (col 9)
+    ☐ pylint: invalid-name / Invalid method name "_checkKwargValue" (col 4)
+  ☐ Line: 375
+    ☐ vulture: unused-function / Unused function _is_valid_identifier
+  ☐ Line: 479
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 488
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+
+☐ pov/basic/Vector.py
+  ☐ Line: 101
+    ☐ vulture: unused-function / Unused function normalize
+  ☐ Line: 107
+    ☐ vulture: unused-function / Unused function dot
+  ☐ Line: 122
+    ☐ pylint: invalid-name / Invalid constant name "x"
+  ☐ Line: 123
+    ☐ pylint: invalid-name / Invalid constant name "y"
+  ☐ Line: 124
+    ☐ pylint: invalid-name / Invalid constant name "z"
+
+☐ pov/finite_patch/FinitePatch.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function FinitePatch
+
+☐ pov/finite_solid/Box.py
+  ☐ Line: 79
+    ☐ pylint: unused-variable / Unused variable 'item' (col 15)
+
+☐ pov/finite_solid/Cone.py
+  ☐ Line: 33
+    ☐ mccabe: MC0001 / Cone.__init__ is too complex (12)
+
+☐ pov/finite_solid/Cylinder.py
+  ☐ Line: 30
+    ☐ mccabe: MC0001 / Cylinder.__init__ is too complex (11)
+
+☐ pov/finite_solid/Prism.py
+  ☐ Line: 15
+    ☐ vulture: unused-function / Unused function Prism
+
+☐ pov/finite_solid/Sor.py
+  ☐ Line: 15
+    ☐ vulture: unused-function / Unused function Sor
+
+☐ pov/finite_solid/SphereSweep.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function SphereSweep
+
+☐ pov/finite_solid/SuperEllipsoid.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function SuperEllipsoid
+
+☐ pov/finite_solid/Text.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function Text
+
+☐ pov/global_settings/Photons.py
+  ☐ Line: 17
+    ☐ vulture: unused-function / Unused function Photons
+
+☐ pov/global_settings/Radiosity.py
+  ☐ Line: 16
+    ☐ vulture: unused-function / Unused function Radiosity
+
+☐ pov/include/colors_inc.py
+  ☐ Line: 33
+    ☐ vulture: unused-variable / Unused variable RED
+  ☐ Line: 176
+    ☐ vulture: unused-function / Unused function ch2rgb
+  ☐ Line: 202
+    ☐ vulture: unused-function / Unused function crgb2h
+
+☐ pov/other/IsoSurface.py
+  ☐ Line: 17
+    ☐ vulture: unused-function / Unused function IsoSurface
+
+☐ pov/other/ParametricObj.py
+  ☐ Line: 17
+    ☐ vulture: unused-function / Unused function ParametricObj
+
+
+
+Check Information
+=================
+         Started: 2016-02-27 16:21:09.060700
+        Finished: 2016-02-27 16:21:35.756950
+      Time Taken: 26.70 seconds
+       Formatter: grouped
+        Profiles: .landscape.yml, doc_warnings, no_test_warnings, strictness_veryhigh, no_member_warnings
+      Strictness: from profile
+  Libraries Used: 
+       Tools Run: frosted, mccabe, pep257, pep8, profile-validator, pyflakes, pylint, pyroma, vulture
+  Messages Found: 41
+ External Config: pylint: /home/chocokiko/devel/py_pov/.pylintrc
+
+

@@ -1,3 +1,305 @@
+grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.todo (27.02.2016)
+    ✔ ./pov/include/colors_inc.py:180:    @todo: Apidoc @done (16-02-27 17:57)
+    ☐ ./pov/include/colors_inc.py:181:    @Todo: Param Syntax checks
+    ☐ ./pov/include/colors_inc.py:206:    @Todo: Param Syntax checks
+    ☐ ./pov/include/colors_inc.py:232:#     @Todo: Param Syntax checks
+    ☐ ./pov/include/colors_inc.py:233:#     @todo: support this?
+    ☐ ./pov/include/colors_inc.py:257:#     @Todo: Param Syntax checks
+    ☐ ./pov/include/colors_inc.py:258:#     @todo: support this?
+    ☐ ./pov/finite_solid/HeightField.py:43:        @TODO: check if file matches given type
+    ☐ ./pov/finite_solid/HeightField.py:70:        # @TODO: check file type
+    ☐ ./pov/finite_solid/HeightField.py:76:        @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/finite_solid/Torus.py:29:    @Todo: Implement
+    ☐ ./pov/finite_solid/Prism.py:32:    @Todo: Implement
+    ☐ ./pov/finite_solid/Prism.py:33:    @Todo: Syntax Checks
+    ☐ ./pov/finite_solid/Lathe.py:34:    @TODO: Implement
+    ☐ ./pov/finite_solid/Lathe.py:35:    @Todo: Syntax Checks
+    ☐ ./pov/finite_solid/Lathe.py:92:        @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/finite_solid/Lathe.py:102:        @Todo: Finish syntax checks
+    ☐ ./pov/finite_solid/Cone.py:48:        @Todo: use Syntax Checking Methods (See juliaFractal)
+    ☐ ./pov/finite_solid/JuliaFractal.py:67:        @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/finite_solid/JuliaFractal.py:76:        @Todo: Finish syntax checks
+    ☐ ./pov/finite_solid/Text.py:27:    @Todo: Implement
+    ☐ ./pov/finite_solid/Box.py:62:        @Todo: Use Syntax checking Methods (See JuliaFractal)
+    ☐ ./pov/finite_solid/Blob.py:38:        @TODO: How to deal with Comopnent Modifiers?
+    ☐ ./pov/finite_solid/Blob.py:51:        @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/finite_solid/SphereSweep.py:33:    @Todo: Implement
+    ☐ ./pov/finite_solid/SuperEllipsoid.py:27:    @Todo: Implement
+    ☐ ./pov/finite_solid/Sphere.py:37:        @Todo: How to allow int and float as type
+    ☐ ./pov/finite_solid/Sphere.py:52:        @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/finite_solid/Sor.py:28:    @Todo: Implement
+    ☐ ./pov/finite_solid/Sor.py:29:    @todo: Syntax checks
+    ☐ ./pov/finite_solid/Cylinder.py:41:        @Todo: Use Syntax checking Methods (See JuliaFractal)
+    ☐ ./pov/finite_patch/FinitePatch.py:24:    @TODO: Implement
+    ☐ ./pov/finite_patch/FinitePatch.py:25:    @Todo: Deprecate initePatch Superclass
+    ☐ ./pov/global_settings/Radiosity.py:41:    @Todo: Implement
+    ☐ ./pov/global_settings/Radiosity.py:55:        # @TODO: check file type
+    ☐ ./pov/global_settings/Radiosity.py:61:        @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/global_settings/GlobalSettings.py:45:        @Todo: test __str__
+    ☐ ./pov/infinite_solid/Plane.py:25:    @TODO: Syntax checks
+    ☐ ./pov/infinite_solid/Plane.py:32:        # @Todo: Generalize handling of boolean keywords
+    ☐ ./pov/infinite_solid/Plane.py:53:        @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/basic/Vector.py:25:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/Vector.py:36:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/Vector.py:40:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/Vector.py:44:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/Vector.py:49:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/Vector.py:65:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/Vector.py:71:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/Vector.py:79:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/Vector.py:87:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/Vector.py:91:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/SceneItem.py:151:        @TODO: move INDENTATION check to own function
+    ☐ ./pov/basic/SceneItem.py:172:        # @todo: Does INDENTATION really have to stay in the constructor??
+    ☐ ./pov/basic/SceneItem.py:279:        @TODO: make valid_args a fixed list of arguments?
+    ☐ ./pov/basic/SceneItem.py:456:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/SceneFile.py:22:    @Todo: Proper Apidoc
+    ☐ ./pov/basic/SceneFile.py:23:    @Todo: Add param for PovRay Ini file
+    ☐ ./pov/basic/SceneFile.py:43:        @Todo: check if file is writeable?
+    ☐ ./pov/basic/SceneFile.py:87:        @TODO: There should be no more type/syntax checking here
+    ☐ ./pov/basic/SceneFile.py:88:        @Todo: Write to file code
+    ☐ ./pov/basic/Color.py:39:    @TODO: enable setting color by passing float
+    ☐ ./pov/basic/Color.py:41:    @TODO: check syntax of kwargs
+    ☐ ./pov/basic/Color.py:48:        @Todo: add properties for all color components @see colors_ink.py
+    ☐ ./pov/basic/Color.py:49:        @TODO: Syntax Checks
+    ☐ ./pov/basic/Color.py:66:            # @todo: how to deal with separate color keywords
+    ☐ ./pov/basic/Color.py:94:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/Color.py:104:        """@Todo: ApiDoc."""
+    ☐ ./pov/basic/Color.py:112:        @Todo: ApiDoc
+    ☐ ./pov/tests/CsgTest.py:10:@Todo:implement
+    ☐ ./pov/tests/BasicTest.py:33:        """@Todo: DocString."""
+    ☐ ./pov/tests/BasicTest.py:37:        """@Todo: DocString."""
+    ☐ ./pov/tests/BasicTest.py:41:        """@Todo: DocString."""
+    ☐ ./pov/tests/BasicTest.py:404:        # @TODO: No Assertion!
+    ☐ ./pov/tests/BasicTest.py:477:    @TODO: enable setting color by passing float
+    ☐ ./pov/tests/AthEffTest.py:27:    """@Todo: DocString."""
+    ☐ ./pov/tests/AthEffTest.py:30:        """@Todo: DocString."""
+    ☐ ./pov/tests/AthEffTest.py:34:        """@Todo: DocString."""
+    ☐ ./pov/tests/AthEffTest.py:39:    """@Todo: DocString."""
+    ☐ ./pov/tests/AthEffTest.py:42:        """@Todo: DocString."""
+    ☐ ./pov/tests/AthEffTest.py:46:        """@Todo: DocString."""
+    ☐ ./pov/tests/FiniteSolidTest.py:135:        @ToDo: KwArg: 0..1 no_shadow Bool
+    ☐ ./pov/tests/FiniteSolidTest.py:136:        @ToDo: KwArg: 0..1 no_image Bool
+    ☐ ./pov/tests/FiniteSolidTest.py:137:        @ToDo: KwArg: 0..1 no_reflection BOOL
+    ☐ ./pov/tests/FiniteSolidTest.py:138:        @ToDo: KwArg: 0..1 inverse bool
+    ☐ ./pov/tests/FiniteSolidTest.py:139:        @ToDo: KwArg: 0..1 double_illuminate bool
+    ☐ ./pov/tests/FiniteSolidTest.py:140:        @ToDo: KwArg: 0..1 hollow bool
+    ☐ ./pov/tests/FiniteSolidTest.py:141:        @ToDo: KwArg: 0..1 rotate Vector 3D
+    ☐ ./pov/tests/FiniteSolidTest.py:142:        @ToDo: KwArg: 0..1 scale Vector 3D
+    ☐ ./pov/tests/FiniteSolidTest.py:143:        @ToDo: KwArg: 0..1 translate Vector 3D
+    ☐ ./pov/tests/FiniteSolidTest.py:144:        @ToDo: KwArg: 0..1 matrix Vector 12D
+    ☐ ./pov/tests/FiniteSolidTest.py:146:        @ToDo: Option: 0..1 Photon object
+    ☐ ./pov/tests/FiniteSolidTest.py:147:        @ToDo: Option: 0..1 clipped_by object
+    ☐ ./pov/tests/FiniteSolidTest.py:148:        @ToDo: Option: 0..1 material object
+    ☐ ./pov/tests/FiniteSolidTest.py:149:        @ToDo: Option: 0..1 interior object
+    ☐ ./pov/tests/FiniteSolidTest.py:150:        @ToDo: Option: 0..1 interior_texture object
+    ☐ ./pov/tests/FiniteSolidTest.py:151:        @ToDo: Option: 0..1 texture object
+    ☐ ./pov/tests/FiniteSolidTest.py:152:        @ToDo: Option: 0..1 pigment object
+    ☐ ./pov/tests/FiniteSolidTest.py:153:        @ToDo: Option: 0..1 normal object
+    ☐ ./pov/tests/FiniteSolidTest.py:154:        @ToDo: Option: 0..1 finish object
+    ☐ ./pov/tests/FiniteSolidTest.py:156:        @ToDo: Option: 0..1 transform object
+    ☐ ./pov/tests/FiniteSolidTest.py:157:        @ToDo: KwArg: 0..1 transform string; existing identifier;
+    ☐ ./pov/tests/FiniteSolidTest.py:159:        @ToDo: only one "transform"
+    ☐ ./pov/tests/FiniteSolidTest.py:878:        """@Todo: fix me."""
+    ☐ ./pov/tests/FinitePatchTest.py:10:@Todo: Implement
+    ☐ ./pov/tests/EndToEndTest.py:11:@TODO: Add rendering tests that call povray to make sure it works
+    ☐ ./pov/tests/EndToEndTest.py:156:        # @TODO: Read from Config
+    ☐ ./pov/tests/EndToEndTest.py:158:        # @TODO: Read from Config
+    ☐ ./pov/tests/EndToEndTest.py:314:        # @TODO: Read from Config
+    ☐ ./pov/tests/EndToEndTest.py:316:        # @TODO: Read from Config
+    ☐ ./pov/tests/EndToEndTest.py:455:        # @TODO: Read from Config
+    ☐ ./pov/tests/EndToEndTest.py:457:        # @TODO: Read from Config
+    ☐ ./pov/tests/EndToEndTest.py:529:        """@TODO: Apidoc."""
+    ☐ ./pov/tests/EndToEndTest.py:601:        # @TODO: Read from Config
+    ☐ ./pov/tests/EndToEndTest.py:603:        # @TODO: Read from Config
+    ☐ ./pov/atmeff/Fog.py:56:        @Todo: How to treat transformation kwargs/objects?
+    ☐ ./pov/atmeff/SkySphere.py:26:    @todo: How to treat transformations? keyword/object
+    ☐ ./pov/atmeff/SkySphere.py:47:        @Todo: Finish syntax checks
+    ☐ ./pov/object_modifier/Scale.py:22:    @Todo: ApiDoc
+    ☐ ./pov/object_modifier/Scale.py:33:        @Todo: ApiDoc
+    ☐ ./pov/object_modifier/Scale.py:45:        """@Todo: DocString."""
+    ☐ ./pov/object_modifier/Translate.py:36:        """@Todo: DocString."""
+    ☐ ./pov/object_modifier/ObjectModifier.py:43:    @Todo: Implement subclasses
+    ☐ ./pov/object_modifier/Matrix.py:42:        """@Todo: DocString."""
+    ☐ ./pov/object_modifier/Rotate.py:22:    @Todo:ApiDoc
+    ☐ ./pov/object_modifier/Rotate.py:42:        """@Todo: DocString."""
+    ☐ ./pov/other/Comment.py:23:     @Todo: Implement
+    ☐ ./pov/other/LightSource.py:65:        @Todo: Syntax checks
+    ☐ ./pov/other/IsoSurface.py:24:    @Todo: Implement
+    ☐ ./pov/other/ParametricObj.py:24:    @Todo: Implement
+    ☐ ./pov/other/EmptyObject.py:22:     @Todo: Implement
+    ☐ ./pov/other/Object.py:25:    @Todo: Implement
+    ☐ ./pov/other/Camera.py:53:        @todo test __str__
+    ☐ ./pov/other/Camera.py:54:        @todo: add transformations
+    ☐ ./pov/other/Camera.py:65:        @Todo: Implement
+    ☐ ./pov/other/Camera.py:75:        @Todo: get rid of Object Modifier superclass?
+    ☐ ./pov/other/Camera.py:101:        # @TODO: Implement Camera type checking
+    ☐ ./pov/examples/text_fonts.py:2:@Todo: translate.
+    ☐ ./pov/examples/basic_scene.py:95:# @TODO: Read from Config
+    ☐ ./pov/examples/basic_scene.py:97:# @TODO: Read from Config
+    ☐ ./pov/examples/basic_sphere.py:54:# @TODO: Read from Config
+    ☐ ./pov/examples/basic_sphere.py:56:# @TODO: Read from Config
+    ☐ ./pov/examples/orthographic_scene.py:2:@Todo: Translate.
+    ☐ ./pov/examples/radiocity_scene.py:2:@Todo: Translate.
+    ☐ ./pov/examples/photons_scene.py:3:@Todo: Translate
+    ☐ ./pov/csg/Difference.py:25:     @Todo: Implement
+    ☐ ./pov/csg/Csg.py:24:    @Todo: Implement
+    ☐ ./pov/csg/Csg.py:25:    @Todo: Deprecate Csg Superclass
+    ☐ ./pov/csg/Merge.py:22:    @Todo: Implement
+    ☐ ./pov/csg/Intersection.py:28:     @Todo: Implement
+    ☐ ./pov/csg/Union.py:27:     @Todo: Implement
+    ☐ ./pov/texture/ImageMap.py:18:    """@Todo: Docstring."""
+    ☐ ./pov/texture/ImageMap.py:24:        @todo: implement
+    ☐ ./pov/texture/ImageMap.py:25:        @todo: Syntax checks
+    ☐ ./pov/texture/Normal.py:83:        @todo: implement
+    ☐ ./pov/texture/Normal.py:84:        @todo: Syntax checks
+    ☐ ./pov/texture/Reflection.py:50:        @todo: implement
+    ☐ ./pov/texture/Reflection.py:51:        @todo: Syntax checks
+    ☐ ./pov/texture/ColorMap.py:39:        @Todo: Syntax Checks
+    ☐ ./pov/texture/ColorMap.py:47:        @Todo: Docstring
+    ☐ ./pov/texture/ColorMap.py:48:        @Todo: Unittests
+    ☐ ./pov/texture/pattern/__init__.py:1:"""@TODO: Docstring."""
+    ☐ ./pov/texture/pattern/Gradient.py:32:        @todo: Syntax checks
+    ☐ ./pov/texture/Irid.py:18:    """@Todo: Docstring."""
+    ☐ ./pov/texture/Irid.py:24:        @todo: implement
+    ☐ ./pov/texture/Irid.py:25:        @todo: Syntax checks
+    ☐ ./pov/texture/Filter.py:18:    """@Todo: Docstring."""
+    ☐ ./pov/texture/Filter.py:24:        @todo: implement
+    ☐ ./pov/texture/Filter.py:25:        @todo: Syntax checks
+    ☐ ./pov/texture/Filter.py:32:        """@Todo: DocString."""
+    ☐ ./pov/texture/Texture.py:87:        @Todo: Syntax Checks
+    ☐ ./pov/texture/Finish.py:48:        @TODO: Syntax checking
+    ☐ ./pov/texture/Pigment.py:85:        @todo: Syntax checks
+    ☐ ./pov/language_directive/LanguageDirective.py:40:    @Todo: Is this superclass deprecated?
+    ☐ ./pov/language_directive/LanguageDirective.py:41:    @Todo: Implement subclasses
+    ☐ ./pov/language_directive/LanguageDirective.py:45:        """@Todo: DocString."""
+    ☐ ./pov/language_directive/LanguageDirective.py:59:        """@Todo: DocString."""
+    ☐ ./.pylintrc:103:notes=FIXME,XXX,TODO,ToDo,todo,Todo
+    ☐ ./runprospector.py:8:Plain Tasks ToDo List
+    ☐ ./runprospector.py:10:@todo Docstring
+    ☐ ./runprospector.py:46:    outfile = open('metrics/prospector_'+ str(time.time()) +'.todo', 'w')
+    ☐ ./old/ldraw/parts/6087.dat:36:0 TODO: Add boxes to underside stud
+    ☐ ./lgeo/include/brick/lg_2441.py:45:    """@Todo: DocString."""
+    ☐ ./lgeo/include/brick/lg_3003.py:21:    """@Todo: DocString."""
+    ☐ ./lgeo/include/brick/__init__.py:6:@Todo: Put some information here that makes sense
+    ☐ ./lgeo/include/brick/lg_2436.py:6:@Todo: Put some information here that makes sense
+    ☐ ./lgeo/include/brick/lg_2436.py:39:    """@Todo: Docstring."""
+    ☐ ./lgeo/include/brick/lg_2412b.py:6:@Todo: Put some information here that makes sense
+    ☐ ./lgeo/include/brick/lg_2412b.py:35:    """@Todo: Docstring."""
+    ☐ ./lgeo/include/brick/lg_3010.py:37:    """@Todo: DocString."""
+    ☐ ./lgeo/include/brick/lg_3823.py:14:@Todo: Needs to be redone!!
+    ☐ ./lgeo/include/brick/lg_3004.py:24:    @Todo: fix plate column
+    ☐ ./lgeo/include/common/lg_defs.py:86:    """@Todo: ApiDoc."""
+    ☐ ./lgeo/include/common/lg_defs.py:107:    """@Todo: ApiDoc."""
+    ☐ ./lgeo/include/common/lg_defs.py:135:    """@Todo: ApiDoc."""
+    ☐ ./lgeo/include/common/lg_defs.py:147:    """@Todo: ApiDoc."""
+    ☐ ./lgeo/include/common/lg_defs.py:166:    """@Todo: ApiDoc."""
+    ☐ ./lgeo/include/common/lg_defs.py:193:    """@Todo: ApiDoc."""
+    ☐ ./lgeo/include/common/lg_defs.py:228:    """@Todo: ApiDoc."""
+    ☐ ./lgeo/include/common/lg_defs.py:247:    """@Todo: ApiDoc."""
+    ☐ ./lgeo/include/common/lg_defs.py:295:    """@Todo: ApiDoc."""
+    ☐ ./lgeo/include/common/lg_defs.py:317:    """@Todo:ApiDoc."""
+    ☐ ./lgeo/include/common/lg_defs.py:393:    """@Todo: ApiDoc."""
+    ☐ ./lgeo/include/common/lg_color.py:268:    """@Todo: DocString."""
+    ☐ ./lgeo/include/common/lg_color.py:291:# @Todo: Check Constant name
+    ☐ ./lgeo/include/common/lg_color.py:298:# @Todo: Check Constant name
+    ☐ ./lgeo/include/common/__init__.py:6:@Todo: Put some information here that makes sense
+    ☐ ./lgeo/include/common/brick_subparts.py:50:    """@Todo: DocString."""
+    ☐ ./lgeo/include/common/brick_subparts.py:81:    """@Todo: DocString."""
+    ☐ ./lgeo/include/common/brick_subparts.py:104:    """@Todo: DocString."""
+    ☐ ./lgeo/include/common/brick_subparts.py:156:    @Todo: fix plate column for 1x2 plate & bricks
+    ☐ ./lgeo/include/__init__.py:6:@Todo: Put some information here that makes sense
+    ☐ ./lgeo/tests/__init__.py:6:@Todo: Put some information here that makes sense
+    ☐ ./lgeo/testscene.py:52:    """@Todo: DocString."""
+    ☐ ./lgeo/testscene.py:60:    # @TODO: Read from Config
+    ☐ ./lgeo/testscene.py:62:    # @TODO: Read from Config
+    ☐ ./lgeo/config/__init__.py:6:@Todo: Put some information here that makes sense
+    ☐ ./lgeo/config/lgeo_cfg.py:4:@Todo: Put some information here that makes sense
+    ☐ ./lgeo/__init__.py:6:@Todo: Put some information here that makes sense
+    ☐ ./lgeo/set/__init__.py:6:@Todo: Put some information here that makes sense
+    ☐ ./lgeo/set/lg_10036_1_car.py:158:    @Todo: ApiDoc.
+    ☐ ./lgeo/set/lg_10036_1_car.py:421:        # @Todo: Needs a lot of fixing
+    ☐ ./lgeo/set/lg_10036_1_car.py:459:        # Todo: fix plate coloumns
+    ☐ ./lgeo/set/lg_10036_1_car.py:507:# # TODO: Add Pizza design...
+    ☐ ./lgeo/set/lg_10036_1_house.py:169:    """@Todo: DocString."""
+    ☐ ./lgeo/lgeo_city.py:122:    """@Todo: DocString."""
+    ☐ ./lgeo/lgeo_city.py:130:    # @TODO: Read from Config
+    ☐ ./lgeo/lgeo_city.py:132:    # @TODO: Read from Config
+    ☐ File: main.pov  Line: 4093
+    ☐ Parse Warning: Should have at least 2 objects in csg.
+    ☐ File: main.pov  Line: 5236
+    ☐ Parse Warning: Should have at least 2 objects in csg.
+    ☐ File: main.pov  Line: 6637
+    ☐ Parse Warning: Should have at least 2 objects in csg.
+    ☐ File: main.pov  Line: 11418
+    ☐ Parse Warning: Should have at least 2 objects in csg.
+    ☐ File: main.pov  Line: 11418
+    ☐ Parse Warning: Degenerate CSG bounding box (not used!).
+    ☐ File: main.pov  Line: 11559
+    ☐ Parse Warning: Should have at least 2 objects in csg.
+    ☐ File: main.pov  Line: 12666
+    ☐ Parse Warning: Illegal Value: Scale X by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 12666
+    ☐ Parse Warning: Illegal Value: Scale Y by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 12666
+    ☐ Parse Warning: Illegal Value: Scale Z by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 12826
+    ☐ Parse Warning: Illegal Value: Scale X by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 12826
+    ☐ Parse Warning: Illegal Value: Scale Y by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 12826
+    ☐ Parse Warning: Illegal Value: Scale Z by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 12986
+    ☐ Parse Warning: Illegal Value: Scale X by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 12986
+    ☐ Parse Warning: Illegal Value: Scale Y by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 12986
+    ☐ Parse Warning: Illegal Value: Scale Z by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 13146
+    ☐ Parse Warning: Illegal Value: Scale X by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 13146
+    ☐ Parse Warning: Illegal Value: Scale Y by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 13146
+    ☐ Parse Warning: Illegal Value: Scale Z by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 15464
+    ☐ Parse Warning: Should have at least 2 objects in csg.
+    ☐ File: main.pov  Line: 15464
+    ☐ Parse Warning: Degenerate CSG bounding box (not used!).
+    ☐ File: main.pov  Line: 15854
+    ☐ Parse Warning: Should have at least 2 objects in csg.
+    ☐ File: main.pov  Line: 15854
+    ☐ Parse Warning: Degenerate CSG bounding box (not used!).
+    ☐ File: main.pov  Line: 19253
+    ☐ Parse Warning: Illegal Value: Scale X by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 19253
+    ☐ Parse Warning: Illegal Value: Scale Y by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 19253
+    ☐ Parse Warning: Illegal Value: Scale Z by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 19259
+    ☐ Parse Warning: Illegal matrix column: Scale by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 19259
+    ☐ Parse Warning: Illegal matrix column: Scale by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 19259
+    ☐ Parse Warning: Illegal matrix column: Scale by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 19618
+    ☐ Parse Warning: Illegal Value: Scale X by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 19618
+    ☐ Parse Warning: Illegal Value: Scale Y by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 19618
+    ☐ Parse Warning: Illegal Value: Scale Z by 0.0. Changed to 1.0.
+    ☐ File: main.pov  Line: 19817
+    ☐ Parse Warning: Should have at least 2 objects in csg.
+    ☐ File: main.pov  Line: 19817
+    ☐ Parse Warning: Degenerate CSG bounding box (not used!).
+    ☐ File: main.pov  Line: 20207
+    ☐ Parse Warning: Should have at least 2 objects in csg.
+    ☐ File: main.pov  Line: 20207
+    ☐ Parse Warning: Degenerate CSG bounding box (not used!).
+    ☐ File: main.pov  Line: 22511
+    ☐ Parse Warning: Should have at least 2 objects in csg.
+    ☐ File: main.pov  Line: 22511
+    ☐ Parse Warning: Degenerate CSG bounding box (not used!).
+
 grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.todo (06.11.2013):
     ✔ pov.atmeff.SkySphere                           6      1    83%   31 @done (13-11-12 09:52)
     ✔ pov.basic.SceneItem                          154      2    99%   315-316 @done (14-02-03 09:28)
@@ -112,7 +414,6 @@ grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.
     ☐ ./pov/test/FiniteSolidTest.py:152:                   @ToDo: KwArg: 0..1 transform string; existing identifier; transform object
     ☐ ./pov/test/FiniteSolidTest.py:153:                   @ToDo: only one "transform"
     ☐ ./pov/test/BasicTest.py:366:                         @TODO: enable setting color by passing float options e.g. Color(0.0, 0.2, 0.75)
-
 
 grep -Hirn 'todo' . --exclude=*.todo --exclude=*.pyc --exclude-dir=.git >> todo.todo (24.10.2013):
     ☐ ./pov/language_directive/LanguageDirective.py:37:        @Todo: Is this superclass deprecated?

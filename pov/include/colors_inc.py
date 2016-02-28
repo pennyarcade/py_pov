@@ -21,6 +21,7 @@ from logging import debug
 from pov.basic.Color import Color
 from pov.basic.Vector import Vector
 from pov.language_directive.Version import Version
+from pov.other.SdlSyntaxException import SdlSyntaxException
 
 Version(3.5)
 
@@ -30,7 +31,6 @@ debug("including colors.inc\n")
 # Many pre-defined colors for use in scene files.
 
 # COLORS:
-RED = Color(rgb=Vector(1, 0, 0))
 # GREEN = Color(rgb=Vector(0, 1, 0))
 # BLUE = Color(rgb=Vector(0, 0, 1))
 # YELLOW = Color(rgb=Vector(1, 1, 0))
@@ -177,9 +177,11 @@ def ch2rgb(hue):
     """
     Take Hue value as input, returns RGB vector.
 
-    @todo: Apidoc
     @Todo: Param Syntax checks
     """
+    if not isinstance(hue, int):
+        raise SdlSyntaxException('Parameter hue has to be of type int')
+
     hue %= 360
     if hue < 0:
         hue += 360
