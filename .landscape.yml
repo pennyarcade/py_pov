@@ -26,8 +26,8 @@ pep8:
     max-line-length: 79
     single-line-if-stmt: n
 
-#pylint:
-#  run: true
+pylint:
+  run: true
 
 #pep257:
 #  disable:
