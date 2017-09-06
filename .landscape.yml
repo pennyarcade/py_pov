@@ -15,16 +15,16 @@ ignore-paths:
 ignore-patterns:
    - (^|/)skip(this)?(/|$)
 
-#pep8:
-#  run: true
-  # disable:
-  #   - W602
-  #   - W603
-#  enable:
-#    - W601
-#  options:
-#    max-line-length: 79
-#    single-line-if-stmt: n
+pep8:
+  run: true
+  disable:
+    - W602
+    - W603
+  enable:
+    - W601
+  options:
+    max-line-length: 79
+    single-line-if-stmt: n
 
 #pylint:
 #  run: true
