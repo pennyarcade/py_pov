@@ -1,7 +1,7 @@
-autodetect: yes
-strictness: veryhigh
-test-warnings: false
-doc-warnings: true
+#autodetect: yes
+#strictness: veryhigh
+#test-warnings: false
+#doc-warnings: true
 
 ignore-paths:
   - .git
@@ -15,43 +15,43 @@ ignore-paths:
 # ignore-patterns:
 #   - (^|/)skip(this)?(/|$)
 
-pep8:
-  run: true
+#pep8:
+#  run: true
   # disable:
   #   - W602
   #   - W603
-  enable:
-    - W601
-  options:
-    max-line-length: 79
-    single-line-if-stmt: n
+#  enable:
+#    - W601
+#  options:
+#    max-line-length: 79
+#    single-line-if-stmt: n
 
-pep257:
-  disable:
-    - D203
-  run: true
+#pylint:
+#  run: true
 
-pylint:
-  run: true
+#pep257:
+#  disable:
+#    - D203
+#  run: true
 
-pyroma:
-  run: true
+#pyroma:
+#  run: true
 
-mccabe:
-  run: true
-  options:
-    max-complexity: 10
+#mccabe:
+#  run: true
+#  options:
+#    max-complexity: 10
 
-dodgy:
-  run: false
+#dodgy:
+#  run: false
 
-pyflakes:
-  run: true
+#pyflakes:
+#  run: true
 
-frosted:
- run: true
+#frosted:
+# run: true
 
-vulture:
-  run: true
+#vulture:
+#  run: true
 
 
