@@ -52,7 +52,7 @@ def main():
     """@Todo: DocString."""
     fix = SceneFile('test.pov')
     fix.append(Version(3.6))
-    
+
     part = lg_3853
 
     # ***********************************************************************

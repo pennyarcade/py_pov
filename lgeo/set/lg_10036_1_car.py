@@ -130,7 +130,7 @@ from lgeo.include.brick import lg_3022
 from lgeo.include.brick import lg_3024
 from lgeo.include.brick import lg_3069b
 # include "lg_3641.inc"
-from lgeo.include.brick import lg_3710
+# from lgeo.include.brick import lg_3710
 from lgeo.include.brick import lg_3788
 from lgeo.include.brick import lg_3823
 # include "lg_3829c01.inc"

@@ -46,7 +46,7 @@ def solid(length=2, width=2):
             LGCS
         ),
         Sphere(
-            Vector(length * LGBW - LGCS, LGCS, LGCS), 
+            Vector(length * LGBW - LGCS, LGCS, LGCS),
             LGCS
         ),
         Cylinder(
@@ -177,13 +177,11 @@ def solid(length=2, width=2):
                     Union(
                         Box(
                             Vector(0, LGCS, LGCS),
-                            Vector(length * LGBW, width * LGBW - LGCS, LGBH - LGCS
-                            )
+                            Vector(length * LGBW, width * LGBW - LGCS, LGBH - LGCS)
                         ),
                         Box(
                             Vector(LGCS, 0, LGCS),
-                            Vector(length * LGBW - LGCS, width * LGBW, LGBH - LGCS
-                            )
+                            Vector(length * LGBW - LGCS, width * LGBW, LGBH - LGCS)
                         ),
                     ),
                     Box(

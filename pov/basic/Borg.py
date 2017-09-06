@@ -11,12 +11,12 @@ Borg Pattern by Alex Martelli
 """
 
 
-u"""
-Alex Martelli's 'Borg'
-@see http://python-3-patterns-idioms-test.readthedocs.io/en/latest/Singleton.html
-@see http://www.aleax.it/Python/5ep.html
-"""
 class Borg(object):
+    u"""
+    Alex Martelli's 'Borg'
+    @see http://python-3-patterns-idioms-test.readthedocs.io/en/latest/Singleton.html
+    @see http://www.aleax.it/Python/5ep.html
+    """
     _shared_state = {}
     def __init__(self):
         self.__dict__ = self._shared_state
