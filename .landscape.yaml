@@ -10,6 +10,7 @@ ignore-paths:
   - docs
   - metrics
   - old
+  - py_pov_env
 
 ignore-patterns:
   - (^|/)skip(this)?(/|$)
