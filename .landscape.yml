@@ -45,8 +45,8 @@ mccabe:
 dodgy:
   run: false
 
-#pyflakes:
-#  run: true
+pyflakes:
+  run: true
 
 #frosted:
 # run: true
