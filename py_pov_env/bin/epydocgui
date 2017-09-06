@@ -1,0 +1,7 @@
+#!/home/martin/devel/py_pov/py_pov_env/bin/python2.7
+#
+# Call the graphical interface for Epydoc.
+#
+
+from epydoc.gui import gui
+gui()
