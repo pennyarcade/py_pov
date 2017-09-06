@@ -4,6 +4,7 @@ httmock
 coverage
 epydoc
 coveralls
+clonedigger
 
 # Program requirements
 
