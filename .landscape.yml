@@ -42,8 +42,8 @@ mccabe:
   options:
     max-complexity: 10
 
-#dodgy:
-#  run: false
+dodgy:
+  run: false
 
 #pyflakes:
 #  run: true
