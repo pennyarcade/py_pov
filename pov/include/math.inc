@@ -200,7 +200,7 @@
 // Returns true if vectors are equal, otherwise false
 #macro VEq(V1, V2) (V1.x = V2.x & V1.y = V2.y & V1.z = V2.z) #end
 #macro VEq5D(V1, V2)
-   ( V1.x = V2.x
+   (V1.x = V2.x
    & V1.y = V2.y
    & V1.z = V2.z
    & V1.filter = V2.filter
@@ -481,7 +481,7 @@
 //
 // Output: the length of the gradient as a float expression
 #macro Gradient_Length(__Gradient_Fn, p0)
-   vlength(vGradient( function { __Gradient_Fn(x, y, z) } , p0))
+   vlength(vGradient(function { __Gradient_Fn(x, y, z) } , p0))
 #end
 
 // macro calculating the gradient of a function
@@ -495,7 +495,7 @@
 // Output: the gradient in that direction as a float expression
 #macro Gradient_Directional(__Gradient_Fn, p0, Dir)
    vdot(
-      vGradient( function { __Gradient_Fn(x, y, z) }, p0),
+      vGradient(function { __Gradient_Fn(x, y, z) }, p0),
       vnormalize(Dir)
    )
 #end

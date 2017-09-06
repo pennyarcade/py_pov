@@ -31,14 +31,14 @@ debug("including colors.inc\n")
 # Many pre-defined colors for use in scene files.
 
 # COLORS:
-# GREEN = Color(rgb=Vector(0, 1, 0))
-# BLUE = Color(rgb=Vector(0, 0, 1))
-# YELLOW = Color(rgb=Vector(1, 1, 0))
-# CYAN = Color(rgb=Vector(0, 1, 1))
-# MAGENTA = Color(rgb=Vector(1, 0, 1))
-# CLEAR = Color(rgbf=Vector(1, 1, 1, 1))
-# WHITE = Color(rgb=Vector(1, 1, 1))
-# BLACK = Color(rgb=Vector(0, 0, 0))
+GREEN = Color(rgb=Vector(0, 1, 0))
+BLUE = Color(rgb=Vector(0, 0, 1))
+YELLOW = Color(rgb=Vector(1, 1, 0))
+CYAN = Color(rgb=Vector(0, 1, 1))
+MAGENTA = Color(rgb=Vector(1, 0, 1))
+CLEAR = Color(rgbf=Vector(1, 1, 1, 1))
+WHITE = Color(rgb=Vector(1, 1, 1))
+BLACK = Color(rgb=Vector(0, 0, 0))
 
 # These grays are useful for fine-tuning lighting color values
 # and for other areas where subtle variations of grays are needed.

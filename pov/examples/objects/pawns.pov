@@ -124,7 +124,7 @@ texture {
 }
 
 //
-//   Sandalwood ( makes a great burled maple, too)
+//   Sandalwood (makes a great burled maple, too)
 //
 #declare Sandalwood = texture {
    pigment {

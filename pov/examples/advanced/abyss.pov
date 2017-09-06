@@ -718,7 +718,7 @@ light_source {PdV color colWater2*2 shadowless media_interaction off}
                 #declare Start=<-rand(rd)*5*(mod(k,2)*2-1),1,(1-j)*Start0+j*End0>;
                 #declare Dir=y;
                 #declare Norm1=<0,0,0>;
-                #declare Inter=trace( SubTop, Start, Dir, Norm1);
+                #declare Inter=trace(SubTop, Start, Dir, Norm1);
                 #if (vlength(Norm1)!=0)
                     #if (vlength(vcross(Norm1,y))<0.9)
                         #declare n=int(rand(rd)*nDeco);

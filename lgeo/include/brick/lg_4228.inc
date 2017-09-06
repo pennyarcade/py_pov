@@ -357,7 +357,7 @@ union {
     }
    }
    #declare CYL_Y = -2.5;
-   #while ( CYL_Y<3 )
+   #while (CYL_Y<3 )
     difference {
      union {
       cylinder {
@@ -399,7 +399,7 @@ union {
     translate <0.5*LG_BRICK_WIDTH-LG_CORNER_SPACE, 0, -2*LG_BRICK_HEIGHT+LG_CORNER_SPACE>
    }
    #declare CYL_Y = -2.5;
-   #while ( CYL_Y<3)
+   #while (CYL_Y<3)
     cylinder {
      <LG_BRICK_WIDTH, CYL_Y*LG_BRICK_WIDTH, -2*LG_BRICK_HEIGHT>,
      <LG_BRICK_WIDTH, CYL_Y*LG_BRICK_WIDTH, -2*LG_BRICK_HEIGHT+LG_KNOB_HEIGHT+LG_E>,
@@ -458,7 +458,7 @@ union {
   }
   union {
    #declare CYL_Y = -2.5;
-   #while ( CYL_Y<3)
+   #while (CYL_Y<3)
     cylinder {
      <LG_BRICK_WIDTH, CYL_Y*LG_BRICK_WIDTH, -2*LG_BRICK_HEIGHT>,
      <LG_BRICK_WIDTH, CYL_Y*LG_BRICK_WIDTH, -2*LG_BRICK_HEIGHT+LG_KNOB_HEIGHT+LG_E>,
@@ -813,7 +813,7 @@ merge {
     }
    }
    #declare CYL_Y = -2.5;
-   #while ( CYL_Y<3 )
+   #while (CYL_Y<3 )
     difference {
      merge {
       cylinder {
@@ -855,7 +855,7 @@ merge {
     translate <0.5*LG_BRICK_WIDTH-LG_CORNER_SPACE, 0, -2*LG_BRICK_HEIGHT+LG_CORNER_SPACE>
    }
    #declare CYL_Y = -2.5;
-   #while ( CYL_Y<3)
+   #while (CYL_Y<3)
     cylinder {
      <LG_BRICK_WIDTH, CYL_Y*LG_BRICK_WIDTH, -2*LG_BRICK_HEIGHT>,
      <LG_BRICK_WIDTH, CYL_Y*LG_BRICK_WIDTH, -2*LG_BRICK_HEIGHT+LG_KNOB_HEIGHT+LG_E>,
@@ -914,7 +914,7 @@ merge {
   }
   union {
    #declare CYL_Y = -2.5;
-   #while ( CYL_Y<3)
+   #while (CYL_Y<3)
     cylinder {
      <LG_BRICK_WIDTH, CYL_Y*LG_BRICK_WIDTH, -2*LG_BRICK_HEIGHT>,
      <LG_BRICK_WIDTH, CYL_Y*LG_BRICK_WIDTH, -2*LG_BRICK_HEIGHT+LG_KNOB_HEIGHT+LG_E>,

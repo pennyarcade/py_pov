@@ -54,7 +54,7 @@ interior {ior 1.7}
 
 
 object {
-   Align_Object( // Bevelled_Text(Font, String, Cuts, BevelAng, BevelDepth, Depth, Offset)
+   Align_Object(// Bevelled_Text(Font, String, Cuts, BevelAng, BevelDepth, Depth, Offset)
       Center_Object(Bevelled_Text("crystal.ttf", "POV", 3, 45, 0.025, 0.25, 0, no), x)
       -y, < 0, 0, 0>
    )

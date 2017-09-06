@@ -109,7 +109,7 @@
 #declare Align_Right = 2;
 #declare Align_Center = 3;
 
-/* Text_Space( Font, String, Size, Spacing )
+/* Text_Space(Font, String, Size, Spacing )
 Computes the width of a text string, including "white space". It
 returns the advance widths of all n letters. Text_Space gives the
 space a text or a glyph occupies in regard to its surroundings.
@@ -125,7 +125,7 @@ Spacing: The amount of space to add between the letters. */
    ((max_extent(TO).x-min_extent(TO).x)-(max_extent(SO).x-min_extent(SO).x))
 #end
 
-/* Text_Width( Font, String, Size, Spacing )
+/* Text_Width(Font, String, Size, Spacing )
 Computes the width of a text string. It returns the advance widths
 of the first n-1 letters, plus the glyph width of the last letter.
 Text_Width gives the "fysical" width of the text and if you use
@@ -142,7 +142,7 @@ Spacing: The amount of space to add between the letters. */
 #end
 
 // Circle_Text author: Ron Parker
-/* Circle_Text( Font, Text, Size, Spacing, Thickness, Radius, Inverted,
+/* Circle_Text(Font, Text, Size, Spacing, Thickness, Radius, Inverted,
                 Justification, Angle )
 Creates a text object with the bottom (or top) of the character cells aligned
 with all or part of a circle.  This macro should be used inside an object{...}
@@ -256,7 +256,7 @@ Justification: One of the constants Align_Left, Align_Right, or Align_Center
    #local CP = 2/MinorControl;
    #local RP = 2/MajorControl;
    isosurface {
-      function { pow( pow(abs(pow(pow(abs(x),RP) + pow(abs(z),RP), 1/RP) - RMj),CP) + pow(abs(y),CP) ,1/CP) - RMn }
+      function { pow(pow(abs(pow(pow(abs(x),RP) + pow(abs(z),RP), 1/RP) - RMj),CP) + pow(abs(y),CP) ,1/CP) - RMn }
       threshold 0
       contained_by {box {<-RMj-RMn,-RMn,-RMj-RMn>, < RMj+RMn, RMn, RMj+RMn>}}
       #if(MaxGradient >= 1)
@@ -782,7 +782,7 @@ Justification: One of the constants Align_Left, Align_Right, or Align_Center
 
          #local UV = <(J-1)/(xRes-1),0,(K-1)/(zRes-1)>;
 
-         #local Dir = vrotate( vrotate(x,(-89.9999+179.9998*UV.z)*z), -360*UV.x*y );
+         #local Dir = vrotate(vrotate(x,(-89.9999+179.9998*UV.z)*z), -360*UV.x*y );
          #local P  = Center + Dir * Radius;
 
          #if (UVheight)

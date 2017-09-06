@@ -38,7 +38,7 @@ camera {
 #declare FillLight = color red 0.23 green 0.23 blue 0.25;
 // Light source (main)
 light_source { <-400.0, 300.0, -60.0> color MainLight }
-// Light source ( shadow filler )
+// Light source (shadow filler )
 light_source { <-50.0, 300.0, -60.0> color FillLight }
 
 height_field  {

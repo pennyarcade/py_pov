@@ -134,7 +134,7 @@ from lgeo.include.brick import lg_3710
 from lgeo.include.brick import lg_3788
 from lgeo.include.brick import lg_3823
 # include "lg_3829c01.inc"
-# include "lg_3853.inc"
+from lgeo.include.brick import lg_3853
 # include "lg_3856.inc"
 from lgeo.include.brick import lg_4073
 from lgeo.include.brick import lg_4085c
@@ -156,6 +156,8 @@ def nonmoving(
     docstring for lg_10036_car.
 
     @Todo: ApiDoc.
+    :param tvector:
+    :param rvector:
     """
     part = Union(
         Comment("""
@@ -432,13 +434,15 @@ def nonmoving(
         ********************************************************************
         """),
         Comment('**** 3853  White Window 1 x 4 x 3 ****'),
-        # std_brick(
-        #     lg_3853.solid(),
-        #     LG_WHITE,
-        #     -3 * LGBW, 15 * LGPH, 0 * LGBW,
-        #     -90, 180, 0
-        # ),
+        std_brick(
+            lg_3853.solid(),
+            LG_WHITE,
+            -3 * LGBW, 15 * LGPH, 0 * LGBW,
+            -90, 180, 0
+        ),
         Comment('**** 3853  White Window 1 x 4 x 3 ****'),
+
+        Comment('''
         Comment('**** 3004  White Brick 1 x 2 ****'),
         std_brick(
             lg_3004.solid(),
@@ -478,7 +482,7 @@ def nonmoving(
         Comment('**** White Hinge Tile 1 x 4 ****'),
         Comment("""
         ********************************************************************
-        * Objects (Step 13)
+        # * Objects (Step 13)
         ********************************************************************
         """),
         Comment('**** 3020  White Plate 2 x 4 ****'),
@@ -489,7 +493,7 @@ def nonmoving(
             -90, 90, 0
         ),
         Comment('**** 3020  White Plate 2 x 4 ****'),
-
+        '''),
 
         Rotate(rvector),
         Translate(tvector)

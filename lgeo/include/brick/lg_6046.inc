@@ -32,7 +32,7 @@ difference {
    LG_KNOB_INNER_RADIUS
   } 
   #declare BAR_X = -6;
-  #while ( BAR_X < 7)
+  #while (BAR_X < 7)
    cylinder {
     <-4*LG_BRICK_WIDTH, BAR_X*LG_BRICK_WIDTH, 0>,
     <4*LG_BRICK_WIDTH, BAR_X*LG_BRICK_WIDTH, 0>,
@@ -41,7 +41,7 @@ difference {
    #declare BAR_X = BAR_X + 4;
   #end
   #declare BAR_Y = -4;
-  #while ( BAR_Y < 5)
+  #while (BAR_Y < 5)
    cylinder {
     <BAR_Y*LG_BRICK_WIDTH, 6*LG_BRICK_WIDTH, 0>,
     <BAR_Y*LG_BRICK_WIDTH, -6*LG_BRICK_WIDTH, 0>,
@@ -94,7 +94,7 @@ difference {
    LG_KNOB_INNER_RADIUS
   } 
   #declare BAR_X = -6;
-  #while ( BAR_X < 7)
+  #while (BAR_X < 7)
    cylinder {
     <-4*LG_BRICK_WIDTH, BAR_X*LG_BRICK_WIDTH, 0>,
     <4*LG_BRICK_WIDTH, BAR_X*LG_BRICK_WIDTH, 0>,
@@ -103,7 +103,7 @@ difference {
    #declare BAR_X = BAR_X + 4;
   #end
   #declare BAR_Y = -4;
-  #while ( BAR_Y < 5)
+  #while (BAR_Y < 5)
    cylinder {
     <BAR_Y*LG_BRICK_WIDTH, 6*LG_BRICK_WIDTH, 0>,
     <BAR_Y*LG_BRICK_WIDTH, -6*LG_BRICK_WIDTH, 0>,

@@ -35,7 +35,7 @@ class JuliaFractal(BlockObject):
         HYPERCOMPLEX:
              sqr | cube | exp | reciprocal | sin | asin | sinh |
              asinh | cos | acos | cosh | acosh | tan | atan |tanh |
-             atanh | ln | pwr( X_Val, Y_Val )
+             atanh | ln | pwr(X_Val, Y_Val )
     """
 
     def __init__(self, param4d, *opts, **kwargs):

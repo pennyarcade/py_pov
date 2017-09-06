@@ -429,7 +429,7 @@ def solid(length=4, width=1):
 #       width * LGBW - LG_WALL_WIDTH, LG_BRICK_INNER_HEIGHT),
 #    ),
 #    #declare KS_X = 0;
-#    #while (KS_X Vector( length)
+#    #while (KS_X Vector(length)
 #     Object(
 #      lg_knob()_inner_space_clear
 #      Translate(Vector((KS_X+0.5)*LGBW,
@@ -440,7 +440,7 @@ def solid(length=4, width=1):
 #   ),
 #  ),
 #  #declare COL_X = 1;
-#  #while (COL_X Vector( length)
+#  #while (COL_X Vector(length)
 #   Object(
 #    lg_brick_column_clear
 #    Translate(Vector(COL_X*LGBW, 0.5*LGBW, 0),
@@ -448,7 +448,7 @@ def solid(length=4, width=1):
 #   #declare COL_X = COL_X + 1;
 #  #end
 #  #declare KNOB_X = 0;
-#  #while (KNOB_X Vector( length)
+#  #while (KNOB_X Vector(length)
 #   Object(
 #    lg_knob()_clear
 #    Rotate(Vector(0, 0, -90),

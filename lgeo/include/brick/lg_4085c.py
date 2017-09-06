@@ -378,7 +378,7 @@ def solid():
 # #declare lg_4085c_clear =
 # Merge(
 #  #declare MIR = 0;
-#  #while (MIR Vector( 2)
+#  #while (MIR Vector(2)
 #   Merge(
 #    Sphere(
 #     Vector(LGBW / 2 - LGCS, LGBW / 2 - LGCS, -LGCS),

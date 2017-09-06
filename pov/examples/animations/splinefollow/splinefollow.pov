@@ -127,12 +127,12 @@ union {
 // the mod() function is used for the Time value to make it cycle
 // through the spline. The time is then multiplied with 11 to make
 // it match the time values specified in the spline.
-object { Aircraft Spline_Trans (MySpline, mod( (clock+0/6) ,1)*11, y, 0.5, 0.5) }
-object { Aircraft Spline_Trans (MySpline, mod( (clock+1/6) ,1)*11, y, 0.5, 0.5) }
-object { Aircraft Spline_Trans (MySpline, mod( (clock+2/6) ,1)*11, y, 0.5, 0.5) }
-object { Aircraft Spline_Trans (MySpline, mod( (clock+3/6) ,1)*11, y, 0.5, 0.5) }
-object { Aircraft Spline_Trans (MySpline, mod( (clock+4/6) ,1)*11, y, 0.5, 0.5) }
-object { Aircraft Spline_Trans (MySpline, mod( (clock+5/6) ,1)*11, y, 0.5, 0.5) }
+object { Aircraft Spline_Trans (MySpline, mod((clock+0/6) ,1)*11, y, 0.5, 0.5) }
+object { Aircraft Spline_Trans (MySpline, mod((clock+1/6) ,1)*11, y, 0.5, 0.5) }
+object { Aircraft Spline_Trans (MySpline, mod((clock+2/6) ,1)*11, y, 0.5, 0.5) }
+object { Aircraft Spline_Trans (MySpline, mod((clock+3/6) ,1)*11, y, 0.5, 0.5) }
+object { Aircraft Spline_Trans (MySpline, mod((clock+4/6) ,1)*11, y, 0.5, 0.5) }
+object { Aircraft Spline_Trans (MySpline, mod((clock+5/6) ,1)*11, y, 0.5, 0.5) }
 
 // First-person-view camera
 // Follows the same path as the first aircraft

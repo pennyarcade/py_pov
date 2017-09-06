@@ -129,7 +129,7 @@ the "Disk_?" group, were changed from an earlier beta test and DKB-Trace
  quadric                 /* Vertical hyperboloid */
   {<1, -1,  1>,          /*                      */
    <0,  0,  0>,          /*            \   /     */
-   <0,  0,  0>, -1       /* Like this:  ) (      */
+   <0,  0,  0>, -1       /* Like this:  ) (     */
   }                      /*            /   \     */
 
 // Cube using the procedural box primitive

@@ -13,7 +13,7 @@
 
 //converts a color to a string, with filter and transmit
 #macro CRGBFTStr(C, MinLen, Padding)
-    concat( "color rgbft < ", str(C.red, MinLen, Padding), 
+    concat("color rgbft < ", str(C.red, MinLen, Padding),
                         ", ", str(C.green, MinLen, Padding),
                         ", ", str(C.blue, MinLen, Padding),
                         ", ", str(C.filter, MinLen, Padding),
@@ -22,7 +22,7 @@
 
 //converts a color to a string, without filter and transmit
 #macro CRGBStr(C, MinLen, Padding)
-    concat( "color rgb <   ", str(C.red, MinLen, Padding), 
+    concat("color rgb <   ", str(C.red, MinLen, Padding),
                         ", ", str(C.green, MinLen, Padding),
                         ", ", str(C.blue, MinLen, Padding), ">")
 #end

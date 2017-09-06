@@ -25,7 +25,7 @@ union {
   material { texture { lg_chrome  normal { bumps 0.1 scale 2 } } }
  }
  #declare ROT = 0;
- #while ( ROT < 2 )
+ #while (ROT < 2 )
   object {
    lg_0020
    rotate <0, 0, 90>
@@ -49,7 +49,7 @@ union {
   material { texture { lg_chrome  normal { bumps 0.1 scale 2 } } }
  }
  #declare ROT = 0;
- #while ( ROT < 2 )
+ #while (ROT < 2 )
   object {
    lg_0020
    rotate <0, 0, 90>

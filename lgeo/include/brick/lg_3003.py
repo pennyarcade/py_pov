@@ -162,9 +162,9 @@ def solid(length=2, width=2, height=LGBH, innerheight=LG_BRICK_INNER_HEIGHT):
 #       width * LGBW - LG_WALL_WIDTH, LG_BRICK_INNER_HEIGHT),
 #    ),
 #    #declare KS_X = 0;
-#    #while (KS_X Vector( length)
+#    #while (KS_X Vector(length)
 #     #declare KS_Y = 0;
-#     #while (KS_Y Vector( width)
+#     #while (KS_Y Vector(width)
 #      Object(
 #       lg_knob_inner_space_clear
 #       Translate(Vector((KS_X+0.5)*LGBW,
@@ -181,9 +181,9 @@ def solid(length=2, width=2, height=LGBH, innerheight=LG_BRICK_INNER_HEIGHT):
 #   Translate(Vector(LGBW, LGBW, 0),
 #  ),
 #  #declare KNOB_X = 0;
-#  #while (KNOB_X Vector( length)
+#  #while (KNOB_X Vector(length)
 #   #declare KNOB_Y = 0;
-#   #while (KNOB_Y Vector( width)
+#   #while (KNOB_Y Vector(width)
 #    Object(
 #     lg_knob_clear
 #     Rotate(Vector(0, 0, -90),

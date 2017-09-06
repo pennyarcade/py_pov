@@ -116,7 +116,7 @@ Update_Camera()
    #local Pos = (Position-0.5)*2;
    #local Pos = (
       +<Pos.x*Camera_Aspect_Ratio/2,Pos.y/2,Camera_Zoom>
-      +( -Obj_Cen -Pos*(Obj_Dim+Spacing) ) * Confine
+      +(-Obj_Cen -Pos*(Obj_Dim+Spacing) ) * Confine
    );
    object {
       Object

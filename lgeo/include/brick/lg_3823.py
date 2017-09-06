@@ -49,7 +49,7 @@ LG_ANGLE = atan2(LGBW, 5 * LGPH) * 180 / pi
 # #declare lg_3823 =
 # Union(
 #  #declare MIR = 0;
-#  #while (MIR Vector( 2)
+#  #while (MIR Vector(2)
 #   Union(
 #    Cylinder(
 #     Vector(0, 2 * LGBW - LGCS, -LGCS),

@@ -82,7 +82,7 @@ merge {
    difference {
       box {<-0.8,-4,0>, <0.8,0.9,0.7>}
       object{Supercone(-0.0001*z, 1.4,1.26, 1.0001*z, 2.4,2.26) translate 1.9*y}
-      plane {vrotate( x-z, degrees(atan2(1/6,1))*z), 0 translate -4*y}
+      plane {vrotate(x-z, degrees(atan2(1/6,1))*z), 0 translate -4*y}
       plane {vrotate(-x-z,-degrees(atan2(1/6,1))*z), 0 translate -4*y}
    }
    difference {

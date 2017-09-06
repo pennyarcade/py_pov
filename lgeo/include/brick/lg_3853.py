@@ -223,7 +223,7 @@ def solid():
                     ),
                     # FIXME: refactor into knob?
                     #if (lg_quality ) 2)
-                    #  Object( lego_logo_text scale 0.75 rotate Vector(0, 0, 90) translate Vector(0,0,LG_KNOB_HEIGHT) ),
+                    #  Object(lego_logo_text scale 0.75 rotate Vector(0, 0, 90) translate Vector(0,0,LG_KNOB_HEIGHT) ),
                     #end
                     Translate(Vector(-LGBW / 2, 1.5 * LGBW, 0))
                 ),
@@ -256,7 +256,7 @@ def solid():
                     ),
                     # FIXME: refactor into knob?
                     #if (lg_quality ) 2)
-                    # Object( lego_logo_text scale 0.75 rotate Vector(0, 0, 90) translate Vector(0,0,LG_KNOB_HEIGHT) ),
+                    # Object(lego_logo_text scale 0.75 rotate Vector(0, 0, 90) translate Vector(0,0,LG_KNOB_HEIGHT) ),
                     #end
                     Translate(Vector(-LGBW / 2, -1.5 * LGBW, 0))
                 )
@@ -926,7 +926,7 @@ Union(
 #declare lg_3853_clear =
 merge {
  #declare ROT = 0;
- #while (ROT Vector( 2)
+ #while (ROT Vector(2)
   merge {
    Sphere(
     Vector(LENGTH / 2 * LGBW - LGCS, WIDTH / 2 * LGBW - LGCS, -HEIGHT * LGBH + LGCS), LGCS
@@ -1040,7 +1040,7 @@ merge {
   Vector(-0.06, -WIDTH / 2 * LGBW + LGWW - LGCS, -HEIGHT * LGBH + LGPH + 0.1 - LGCS)
  ),
  #declare BOX_X = -1.5;
- #while (BOX_X Vector( 2)
+ #while (BOX_X Vector(2)
   Box(
    Vector(LENGTH / 2 * LGBW - LGWW, BOX_X * LGBW + 0.03, -HEIGHT * LGBH + LGCS),
    Vector(LENGTH / 2 * LGBW - LG_TOP_HEIGHT + LG_E, BOX_X * LGBW - 0.03, -HEIGHT * LGBH + LG_PLATE_INNER_HEIGHT + LG_E)
@@ -1091,7 +1091,7 @@ merge {
      translate Vector(0, 0, (LG_KNOB_HEIGHT - LG_KNOB_CORNER_SPACE))
     ),
     #if (lg_quality ) 2)
-     Object( lego_logo_text scale 0.75 rotate Vector(0, 0, 90) translate Vector(0,0,LG_KNOB_HEIGHT) ),
+     Object(lego_logo_text scale 0.75 rotate Vector(0, 0, 90) translate Vector(0,0,LG_KNOB_HEIGHT) ),
     #end
     translate Vector(0, 1.5 * LGBW, 0)
    ),
@@ -1123,7 +1123,7 @@ merge {
      translate Vector(0, 0, (LG_KNOB_HEIGHT - LG_KNOB_CORNER_SPACE))
     ),
     #if (lg_quality ) 2)
-     Object( lego_logo_text scale 0.75 rotate Vector(0, 0, 90) translate Vector(0,0,LG_KNOB_HEIGHT) ),
+     Object(lego_logo_text scale 0.75 rotate Vector(0, 0, 90) translate Vector(0,0,LG_KNOB_HEIGHT) ),
     #end
     translate Vector(0, -1.5 * LGBW, 0)
    ),

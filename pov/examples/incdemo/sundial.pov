@@ -47,7 +47,7 @@ background {rgb 0}
 #declare DailH= cylinder{ <0, 0, 0>, <0, 0, 2>, 0.01 }
 #declare HCount= -30;
 
-#while ( HCount<90 )
+#while (HCount<90 )
    #declare RotH = degrees(atan2(tan(radians(HCount))/sin(radians(LAT)),1));
    #declare HourlinesH = union {
       cylinder{
@@ -76,7 +76,7 @@ background {rgb 0}
 #declare DailV= cylinder{ <0, 0, 0>, <0,-2, 0>, 0.01 }
 #declare VCount= -30;
 
-#while ( VCount<90 )
+#while (VCount<90 )
    #declare RotV = degrees(atan2(tan(radians(VCount))/cos(radians(LAT)),1));
    #declare HourlinesV = union {
       cylinder {

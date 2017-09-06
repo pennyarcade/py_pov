@@ -143,14 +143,14 @@
 #include "cattex.inc"
 
 #declare R_InEar= union {
-   r_ConnectSpheres( 0.25, 0.14, R_EarLength, 0.5, 1, 1)
+   r_ConnectSpheres(0.25, 0.14, R_EarLength, 0.5, 1, 1)
    rotate R_EarTip
    translate < 0, 1,-0.2>
    texture {R_EarInTex}
 }
 
 #declare L_InEar= union {
-   r_ConnectSpheres( 0.25, 0.14, L_EarLength, 0.5, 1, 1)
+   r_ConnectSpheres(0.25, 0.14, L_EarLength, 0.5, 1, 1)
    rotate L_EarTip
    translate < 0, 1,-0.2>
    texture {L_EarInTex}
@@ -166,11 +166,11 @@
 #declare R_Ear= difference {
    union {
       union {
-         r_ConnectSpheres( 1, 0.3, 1, 1.5, false, 1)
+         r_ConnectSpheres(1, 0.3, 1, 1.5, false, 1)
          texture {R_EarBaseTex}
       }
       union {
-         r_ConnectSpheres( 0.3, 0.1, R_EarLength, 2, false, 1)
+         r_ConnectSpheres(0.3, 0.1, R_EarLength, 2, false, 1)
          rotate R_EarTip
          translate < 0, 1, 0>
          texture {R_EarTipTex}
@@ -183,11 +183,11 @@
 #declare L_Ear= difference {
    union {
       union {
-         r_ConnectSpheres( 1, 0.3, 1, 1.5, false, 1)
+         r_ConnectSpheres(1, 0.3, 1, 1.5, false, 1)
          texture {L_EarBaseTex}
       }
       union {
-         r_ConnectSpheres( 0.3, 0.1, L_EarLength, 2, false, 1)
+         r_ConnectSpheres(0.3, 0.1, L_EarLength, 2, false, 1)
          rotate L_EarTip
          translate < 0, 1, 0>
          texture {L_EarTipTex}
@@ -199,7 +199,7 @@
 
 #declare R_Eye= difference {
    union {
-      r_ConnectSpheres( 1, 0.3, 0.8, 0.2, false, false)  // Eyelid
+      r_ConnectSpheres(1, 0.3, 0.8, 0.2, false, false)  // Eyelid
       sphere {   //Eyeball
          0,0.3
          texture {EyeTex}
@@ -214,7 +214,7 @@
 
 #declare L_Eye= difference {
    union {
-      r_ConnectSpheres( 1, 0.3, 0.8, 0.2, false, false)  // Eyelid
+      r_ConnectSpheres(1, 0.3, 0.8, 0.2, false, false)  // Eyelid
       sphere {   //Eyeball
          0,0.3
          texture {EyeTex}
@@ -228,19 +228,19 @@
 }
 
 #declare Nose= union {
-   r_ConnectSpheres( 1, 0.2, 0.9, 1, false, 1)
+   r_ConnectSpheres(1, 0.2, 0.9, 1, false, 1)
    texture {NoseTex}
    rotate NosePos
 }
 
 #declare R_Cheek= union {
-   r_ConnectSpheres( 1, 0.4, 0.8, 0.3, false, 1)
+   r_ConnectSpheres(1, 0.4, 0.8, 0.3, false, 1)
    texture {R_CheekTex}
    rotate R_CheekPos
 }
 
 #declare L_Cheek= union {
-   r_ConnectSpheres( 1, 0.4, 0.8, 0.3, false, 1)
+   r_ConnectSpheres(1, 0.4, 0.8, 0.3, false, 1)
    texture {L_CheekTex}
    rotate L_CheekPos
 }
@@ -288,7 +288,7 @@
          #while (i<n)
             object {
                Forelock
-               scale <Vmm( 1, 0.5, i/n), Vmm( 1, 0.5, i/n), 1>
+               scale <Vmm(1, 0.5, i/n), Vmm(1, 0.5, i/n), 1>
                translate < 0, 1, Vmm(0,-1,i/n)>
             rotate <-10, 0, 0>
             }
@@ -301,7 +301,7 @@
          #while (i<n)
             object {
                HairPart
-               scale <Vmm( 1, 2, i/n), 1, 1>
+               scale <Vmm(1, 2, i/n), 1, 1>
                translate <0,1,0>
                rotate <Vmm(-10, 100, i/n), 0, 0>
             }
@@ -314,9 +314,9 @@
          #while (i<n)
             object {
                HairPart
-               scale <Vmm( 2, 0.3, i/n), Vmm(1,0.5,i/n), 1>
+               scale <Vmm(2, 0.3, i/n), Vmm(1,0.5,i/n), 1>
                translate < 0, 1, 0>
-               rotate <Vmm( 100, 140, i/n), 0, 0>
+               rotate <Vmm(100, 140, i/n), 0, 0>
             }
             #declare i=i+1;
          #end//while

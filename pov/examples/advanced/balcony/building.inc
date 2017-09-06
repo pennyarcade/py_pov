@@ -90,7 +90,7 @@ function {
 
 #declare Small_Column_part1=
 isosurface {
-  function { min(sqrt( x*x + y*y ) - fn_Rad(x, y, z), sqrt( x*x + y*y + pow(abs(z*2),1.4)) - 1.0) }
+  function { min(sqrt(x*x + y*y ) - fn_Rad(x, y, z), sqrt(x*x + y*y + pow(abs(z*2),1.4)) - 1.0) }
   max_gradient 1.8
   //eval
   accuracy 0.001

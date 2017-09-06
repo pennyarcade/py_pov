@@ -39,7 +39,7 @@ Set_Camera_Sky(<0,1,0.3>) // set the sky vector
 // Screen_Object is a macro that will place an object right in front of
 // the camera. You use it as follows:
 //
-// Screen_Object ( Object, Coords, Spacing, Confine, Scaling )
+// Screen_Object (Object, Coords, Spacing, Confine, Scaling )
 //
 // Object  - The object to place in front of the screen.
 //
@@ -67,7 +67,7 @@ text {
 // Place MyTextObject in the right bottom corner
 // with spacing 0.04 horizontally and 0.02 vertically.
 // Confine object to visible area and scale it by 0.01.
-Screen_Object ( MyTextObject, <1,0>, <0.04,0.02>, true, 0.01 )
+Screen_Object (MyTextObject, <1,0>, <0.04,0.02>, true, 0.01 )
 
 #declare MyCrosshair =
 union {
@@ -95,12 +95,12 @@ union {
 
 // Place MyCrosshair in the center of the image with no spacing.
 // Confine object to visible area and scale it by 0.01.
-Screen_Object ( MyCrosshair, <0.5,0.5>, 0, true, 0.01 )
+Screen_Object (MyCrosshair, <0.5,0.5>, 0, true, 0.01 )
 
 // Screen_Plane is a macro that will place a texture of your choice on a
 // plane right in front of the camera. You use it as follows:
 //
-// Screen_Plane ( Texture, Scaling, BLCorner, TRCorner )
+// Screen_Plane (Texture, Scaling, BLCorner, TRCorner )
 //
 // Texture  - The texture to be displayed on the camera plane. <0,0,0> is
 //            lower left corner and <1,1,0> is upper right corner.
@@ -127,7 +127,7 @@ texture {
 // Make screen plane with the texture MyScreenTexture and scale
 // it by 0.02 to bring it closer to the camera.
 // Make the texture fill out the entire screen from <0,0> to <1,1>.
-Screen_Plane ( MyScreenTexture, 0.02, <0,0>, <1,1> )
+Screen_Plane (MyScreenTexture, 0.02, <0,0>, <1,1> )
 
 #declare MyScreenTexture2 = // screen texture with test bitmap
 texture {
@@ -149,7 +149,7 @@ texture {
 // it by 0.03 to bring it closer to the camera.
 // Make the texture fill out the area of the screen from <0.1,0.5> to <0.5,0.9>.
 
-// Screen_Plane ( MyScreenTexture2, 0.03, <0.1,0.5>, <0.5,0.9> )
+// Screen_Plane (MyScreenTexture2, 0.03, <0.1,0.5>, <0.5,0.9> )
 
 
 // Below are some simple scene elements

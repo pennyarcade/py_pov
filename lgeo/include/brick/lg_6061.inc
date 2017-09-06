@@ -202,7 +202,7 @@ union {
   #declare CYL_X = CYL_X + 1;
  #end
  #declare COL_X = -1;
- #while ( COL_X < 2 )
+ #while (COL_X < 2 )
   difference {
    union {
     box {
@@ -509,7 +509,7 @@ merge {
   #declare CYL_X = CYL_X + 1;
  #end
  #declare COL_X = -1;
- #while ( COL_X < 2 )
+ #while (COL_X < 2 )
   difference {
    merge {
     box {

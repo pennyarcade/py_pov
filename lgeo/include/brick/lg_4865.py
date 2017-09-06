@@ -209,7 +209,7 @@ def solid(length=1, width=2, height=1):
 # #declare lg_4865_clear =
 # merge {
 #  #declare ROT = 0;
-#  #while (ROT Vector( 2)
+#  #while (ROT Vector(2)
 #   merge {
 #    Sphere(
 #     Vector(length / 2 * LGBW - LGCS, width / 2 * LGBW - LGCS,

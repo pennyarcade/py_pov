@@ -127,7 +127,7 @@ union {
   #declare CYL_X = CYL_X + 1;
  #end
  #declare COL_X = -1;
- #while ( COL_X < 2 )
+ #while (COL_X < 2 )
   difference {
    cylinder {
     <0, COL_X*LG_BRICK_WIDTH, -2*LG_BRICK_HEIGHT+LG_CYLINDER_WALL_WIDTH/2>,
@@ -272,7 +272,7 @@ merge {
   #declare CYL_X = CYL_X + 1;
  #end
  #declare COL_X = -1;
- #while ( COL_X < 2 )
+ #while (COL_X < 2 )
   difference {
    cylinder {
     <0, COL_X*LG_BRICK_WIDTH, -2*LG_BRICK_HEIGHT+LG_CYLINDER_WALL_WIDTH/2>,

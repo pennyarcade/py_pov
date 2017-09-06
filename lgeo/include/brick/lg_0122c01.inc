@@ -27,7 +27,7 @@ union {
   material { texture { lg_chrome  normal { bumps 0.1 scale 2 } } }
  }
  #declare ROT = 0;
- #while ( ROT < 2 )
+ #while (ROT < 2 )
   union {
    cylinder {
     <0, -0.2, 0>,
@@ -120,7 +120,7 @@ union {
   material { texture { lg_chrome  normal { bumps 0.1 scale 2 } } }
  }
  #declare ROT = 0;
- #while ( ROT < 2 )
+ #while (ROT < 2 )
   merge {
    cylinder {
     <0, -0.2, 0>,

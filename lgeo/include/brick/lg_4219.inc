@@ -226,7 +226,7 @@ union {
   }
   union {
    #declare XX=-2.19;
-   #while ( XX<2.5 )
+   #while (XX<2.5 )
     difference {
      union {
       box {
@@ -490,7 +490,7 @@ merge {
   }
   union {
    #declare XX=-2.19;
-   #while ( XX<2.5 )
+   #while (XX<2.5 )
     difference {
      union {
       box {

@@ -11,25 +11,25 @@
 //
 //*******************************************
 
-#macro Interfere( A, B, Object )
+#macro Interfere(A, B, Object )
   #local N=<0,0,0>;
-  #local I=trace( Object, A, B-A, N );
+  #local I=trace(Object, A, B-A, N );
   (vlength(N) & (vlength(I-A)<vlength(B-A)))
 #end // macro
 
-#macro FindTmp( CurPt, Normal, Object, RandSeed )
+#macro FindTmp(CurPt, Normal, Object, RandSeed )
   #local More = 1;
   #local Safety = C3;
   #local Q = <0,0,0>;
-  #while ( More & Safety )
+  #while (More & Safety )
     // select random unit T orthogonal to Normal
     #local T = <rand(RandSeed)-.5,rand(RandSeed)-.5, rand(RandSeed)-.5>;
     #local T = T-vdot(T,Normal)*Normal;
-    #if ( vlength(T))
+    #if (vlength(T))
       #local T = T/vlength(T);
       #local Safety = Safety-1;
       #local Q = CurPt + C2 * T;
-      #local More = Interfere( CurPt, Q, Object );
+      #local More = Interfere(CurPt, Q, Object );
     #end // if
   #end // while
   #if (Safety)
@@ -39,7 +39,7 @@
   #end // if
 #end // macro
 
-#macro Draw( CurPt, NewPt, Normal, NewNormal )
+#macro Draw(CurPt, NewPt, Normal, NewNormal )
   union {
     sphere {CurPt, R1}
     sphere {NewPt, R1}
@@ -57,10 +57,10 @@
   }
 #end // macro
 
-#macro Grow( Start, Normal, Object, RandSeed )
+#macro Grow(Start, Normal, Object, RandSeed )
 
   #local Continue = 1;
-  #while ( Continue )
+  #while (Continue )
     #ifndef (Watchdog)
       #local Watchdog = C8;
     #else
@@ -77,11 +77,11 @@
     #local Continue = 0;
     #local Branch = 0;
 
-    #if ( Watchdog )
+    #if (Watchdog )
 
       #local CurPt = Start + C1 * Normal;
-      #local NewTmp = FindTmp( CurPt, Normal, Object, RandSeed )
-      #if (vlength( NewTmp ))
+      #local NewTmp = FindTmp(CurPt, Normal, Object, RandSeed )
+      #if (vlength(NewTmp ))
 
         #local Dist = 9999;
         #local NewRoot = Start;
@@ -92,12 +92,12 @@
           #local R = <rand(RandSeed)-.5,rand(RandSeed)-.5,
                       rand(RandSeed)-.5>+Bias;
           #local N = <0,0,0>;
-          #local Int = trace( Object, NewTmp, R, N );
-          #if ( vlength(N) )
-            #local CurDist = vlength( Int-Start );
+          #local Int = trace(Object, NewTmp, R, N );
+          #if (vlength(N) )
+            #local CurDist = vlength(Int-Start );
             #local TestPt = Int + C1 * N;
-            #if ( (CurDist < Dist) & (CurDist < C4) &
-                   !Interfere( CurPt, TestPt, Object ))
+            #if ((CurDist < Dist) & (CurDist < C4) &
+                   !Interfere(CurPt, TestPt, Object ))
               #local Dist = CurDist;
               #local NewRoot = Int;
               #local NewNormal = vnormalize(N);
@@ -106,8 +106,8 @@
           #end // if N
           #local Iter = Iter-1;
         #end // while Iter
-        #if ( vlength(CurPt-NewPt))
-          Draw( CurPt, NewPt, Normal, NewNormal )
+        #if (vlength(CurPt-NewPt))
+          Draw(CurPt, NewPt, Normal, NewNormal )
           #if (rand(RandSeed) > C5 & Gen < C7)
             #local Continue = 1;
             #if (rand(RandSeed)<C6)
@@ -119,7 +119,7 @@
     #end // if watchdog
 
     #if (Branch)
-      Grow( NewRoot, NewNormal, Object, RandSeed )
+      Grow(NewRoot, NewNormal, Object, RandSeed )
     #end // if branch
   #local Start = NewRoot;
   #local Normal = NewNormal;
@@ -170,7 +170,7 @@
 
 #while (Count<12)
   #debug concat("plant ",str(Count+1,0,0), "\n")
-  Grow( Sa[Count], Na[Count], Fence, RandSeed )
+  Grow(Sa[Count], Na[Count], Fence, RandSeed )
   #declare Count=Count+1;
 #end
 

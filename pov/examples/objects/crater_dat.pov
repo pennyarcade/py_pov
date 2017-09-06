@@ -3,7 +3,7 @@
 // Render CRATER_DAT.POV (this file) to create the height_field
 // image that is needed in CRATER.POV. Then render CRATER.POV.
 // 
-// ( You can use any output image type, but the quality will be
+// (You can use any output image type, but the quality will be
 // best with the special 16-bit gray output that is supported
 // by the PNG, TGA and PPM image types. For example the command
 // line setting +fn will set the output image type to PNG. See

@@ -422,7 +422,7 @@ object {
 
 #declare ObjArr[4]=
 object {
-  Round_Box_Merge ( <-1, -1, -1>, <1, 1, 1>, 0.08 )
+  Round_Box_Merge (<-1, -1, -1>, <1, 1, 1>, 0.08 )
 }
 
 #ifndef (Stack)

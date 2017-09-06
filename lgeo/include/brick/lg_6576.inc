@@ -90,7 +90,7 @@ union {
     <-2*LG_BRICK_WIDTH+LG_WALL_WIDTH, -4*LG_BRICK_WIDTH+LG_WALL_WIDTH, -LG_PLATE_HEIGHT-LG_E>
    }
    #declare KNOB_X = -2.5;
-   #while ( KNOB_X < 3 )
+   #while (KNOB_X < 3 )
     object {
      lg_knob_inner_space
      translate <-LG_BRICK_WIDTH/2, KNOB_X*LG_BRICK_WIDTH, -LG_TOP_HEIGHT>
@@ -104,7 +104,7 @@ union {
   }
  }
  #declare KNOB_X = -2.5;
- #while ( KNOB_X < 3 )
+ #while (KNOB_X < 3 )
   object {
    lg_knob
    translate <-LG_BRICK_WIDTH/2, KNOB_X*LG_BRICK_WIDTH, 0>
@@ -116,7 +116,7 @@ union {
   #declare KNOB_X = KNOB_X + 1;
  #end
  #declare CYL_X = -3;
- #while ( CYL_X < 4 )
+ #while (CYL_X < 4 )
   object {
    lg_plate_cylinder
    translate <-LG_BRICK_WIDTH, CYL_X*LG_BRICK_WIDTH, -LG_PLATE_HEIGHT>
@@ -137,7 +137,7 @@ union {
   0.04
  }
  #declare BAR_X = -3.5;
- #while ( BAR_X < 4 )
+ #while (BAR_X < 4 )
   box {
    <-LG_KNOB_INNER_RADIUS+0.04, BAR_X*LG_BRICK_WIDTH-0.04, -LG_PLATE_HEIGHT+LG_E+0.04>,  
    <LG_KNOB_INNER_RADIUS-0.04, BAR_X*LG_BRICK_WIDTH+0.04, -LG_TOP_HEIGHT+LG_E>
@@ -168,7 +168,7 @@ union {
   #declare BAR_X = BAR_X + 1;
  #end  
  #declare BAR_X = -3;
- #while ( BAR_X < 4 )
+ #while (BAR_X < 4 )
   box {
    <-LG_KNOB_RADIUS+0.04, BAR_X*LG_BRICK_WIDTH-0.04, -LG_PLATE_HEIGHT+LG_E+0.04>,  
    <LG_KNOB_RADIUS-0.04, BAR_X*LG_BRICK_WIDTH+0.04, -LG_TOP_HEIGHT+LG_E>
@@ -278,7 +278,7 @@ merge {
     <-2*LG_BRICK_WIDTH+LG_WALL_WIDTH, -4*LG_BRICK_WIDTH+LG_WALL_WIDTH, -LG_PLATE_HEIGHT-LG_E>
    }
    #declare KNOB_X = -2.5;
-   #while ( KNOB_X < 3 )
+   #while (KNOB_X < 3 )
     object {
      lg_knob_inner_space_clear
      translate <-LG_BRICK_WIDTH/2, KNOB_X*LG_BRICK_WIDTH, -LG_TOP_HEIGHT>
@@ -292,7 +292,7 @@ merge {
   }
  }
  #declare KNOB_X = -2.5;
- #while ( KNOB_X < 3 )
+ #while (KNOB_X < 3 )
   object {
    lg_knob_clear
    translate <-LG_BRICK_WIDTH/2, KNOB_X*LG_BRICK_WIDTH, 0>
@@ -304,7 +304,7 @@ merge {
   #declare KNOB_X = KNOB_X + 1;
  #end
  #declare CYL_X = -3;
- #while ( CYL_X < 4 )
+ #while (CYL_X < 4 )
   object {
    lg_plate_cylinder_clear
    translate <-LG_BRICK_WIDTH, CYL_X*LG_BRICK_WIDTH, -LG_PLATE_HEIGHT>
@@ -325,7 +325,7 @@ merge {
   0.04
  }
  #declare BAR_X = -3.5;
- #while ( BAR_X < 4 )
+ #while (BAR_X < 4 )
   box {
    <-LG_KNOB_INNER_RADIUS+0.04, BAR_X*LG_BRICK_WIDTH-0.04, -LG_PLATE_HEIGHT+LG_E+0.04>,  
    <LG_KNOB_INNER_RADIUS-0.04, BAR_X*LG_BRICK_WIDTH+0.04, -LG_TOP_HEIGHT+LG_E>
@@ -356,7 +356,7 @@ merge {
   #declare BAR_X = BAR_X + 1;
  #end  
  #declare BAR_X = -3;
- #while ( BAR_X < 4 )
+ #while (BAR_X < 4 )
   box {
    <-LG_KNOB_RADIUS+0.04, BAR_X*LG_BRICK_WIDTH-0.04, -LG_PLATE_HEIGHT+LG_E+0.04>,  
    <LG_KNOB_RADIUS-0.04, BAR_X*LG_BRICK_WIDTH+0.04, -LG_TOP_HEIGHT+LG_E>

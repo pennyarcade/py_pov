@@ -166,16 +166,16 @@
    #switch (H)
       #range (0, 120)
          #local R = (120-  H) / 60;
-         #local G = (  H-  0) / 60;
+         #local G = ( H-  0) / 60;
          #local B = 0;
       #break
       #range (120, 240)
          #local R = 0;
          #local G = (240-  H) / 60;
-         #local B = (  H-120) / 60;
+         #local B = ( H-120) / 60;
       #break
       #range (240, 360)
-         #local R = (  H-240) / 60;
+         #local R = ( H-240) / 60;
          #local G = 0;
          #local B = (360-  H) / 60;
       #break
@@ -231,8 +231,8 @@
    #local Span = Max-Min;
    #local L = (Min+Max)/2;
    #local S = 0;
-   #if( L!=0 & L!=1 )
-      #local S = Span / ( L<0.5 ? (L*2) : (2-L*2) );
+   #if(L!=0 & L!=1 )
+      #local S = Span / (L<0.5 ? (L*2) : (2-L*2) );
    #end
    #local H = CRGB2H (<R,G,B>, Max, Span);
    <H,S,L,(RGBFT.filter),(RGBFT.transmit)>
@@ -247,7 +247,7 @@
    #local S = (HSVFT.green);
    #local V = (HSVFT.blue);
    #local SatRGB = CH2RGB(H);
-   #local RGB = ( ((1-S)*<1,1,1> + S*SatRGB) * V );
+   #local RGB = (((1-S)*<1,1,1> + S*SatRGB) * V );
    <RGB.red,RGB.green,RGB.blue,(HSVFT.filter),(HSVFT.transmit)>
 #end
 

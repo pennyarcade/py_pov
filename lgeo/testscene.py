@@ -45,22 +45,24 @@ from lgeo.include.common.lg_color import LG_WHITE
 # ==== Custom Includes ====
 from lgeo.include.common.custom_macros import std_brick
 
-from lgeo.include.brick import lg_2441
+from lgeo.include.brick import lg_3853
 
 
 def main():
     """@Todo: DocString."""
     fix = SceneFile('test.pov')
     fix.append(Version(3.6))
+    
+    part = lg_3853
 
     # ***********************************************************************
     # Settings --> After Includes to overwrite presets
     # ***********************************************************************
 
     # @TODO: Read from Config
-    image_width = 800
+    image_width = 1600
     # @TODO: Read from Config
-    image_height = 600
+    image_height = 1200
 
     fix.append(
         GlobalSettings(
@@ -135,102 +137,100 @@ def main():
         Union(
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 9, 0, 8,
                 45, 0, 45),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 3, 0, 8,
                 135, 0, 45),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 -3, 0, 8,
                 215, 0, -45),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 -9, 0, 8,
                 315, 0, -45),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 9, 0, 3,
                 45, 45, 0),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 3, 0, 3,
                 45, 135, 0),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 -3, 0, 3,
                 -45, 215, 0),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 -9, 0, 3,
                 -45, 315, 0),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 9, 0, -2,
                 45, 0, 45,),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 3, 0, -2,
                 45, 0, 135),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 -3, 0, -2,
                 -45, 0, 215),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 -9, 0, -2,
                 -45, 0, 315),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 9, 0, -7,
                 0, 0, 0,),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 3, 0, -7,
                 90, 0, 0),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 -3, 0, -7,
                 180, 0, 0),
             Comment('**** Start 2441 Red Car Base 7 x 4 x 2/3 ****'),
             std_brick(
-                lg_2441.solid(),
+                part.solid(),
                 LG_WHITE,
                 -9, 0, -7,
                 270, 0, 0),
-
-
         )
     )
 

@@ -697,7 +697,7 @@ texture {
 }
 
 //
-//   Sandalwood ( makes a great burled maple, too)
+//   Sandalwood (makes a great burled maple, too)
 //
 #declare Sandalwood = 
 texture {
@@ -1321,7 +1321,7 @@ texture {
 }
 
 // Irregular_Bricks_Ptrn() authors: Ron Parker and Rune S. Johansen
-/* Irregular_Bricks_Ptrn( Mortar Thickness, X-scaling, Variation, Roundness )
+/* Irregular_Bricks_Ptrn(Mortar Thickness, X-scaling, Variation, Roundness )
 This function pattern creates a pattern of bricks of varying lengths on the x-y plane.
 This can be useful in building walls that don't look like they were built by a computer.
 Note that mortar thickness between bricks can vary somewhat, too.
@@ -1424,7 +1424,7 @@ This macro creates a pattern that resembles a star. It can be used together with
 color_maps, pigment_maps, texture_maps etc. The pattern is in the X-Z plane,
 centered around the origin.
            
- Star_Ptrn( Radius, Points, Skip )
+ Star_Ptrn(Radius, Points, Skip )
            
      Radius: the radius of a circle drawn through the points
              of the star

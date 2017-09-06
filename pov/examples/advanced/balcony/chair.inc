@@ -171,7 +171,7 @@ union {
     translate -0.23*y
   }
   union {
-    object { Chair_Back( 0.25) translate -Chair_Tube_Rad*2*y }
+    object { Chair_Back(0.25) translate -Chair_Tube_Rad*2*y }
 
     object { Chair_Leg }
     object { Chair_Leg rotate 180*z }

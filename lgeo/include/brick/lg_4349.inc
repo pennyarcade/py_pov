@@ -34,7 +34,7 @@ union {
     LG_WALL_WIDTH
    }
    #declare RING = 0;
-   #while ( RING < 8)
+   #while (RING < 8)
     torus {
      LG_CYLINDER_RADIUS-0.055,
      0.055
@@ -117,7 +117,7 @@ merge {
     LG_WALL_WIDTH
    }
    #declare RING = 0;
-   #while ( RING < 8)
+   #while (RING < 8)
     torus {
      LG_CYLINDER_RADIUS-0.055,
      0.055

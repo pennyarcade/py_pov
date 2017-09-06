@@ -131,9 +131,9 @@ def solid():
 #     )
 #    )
 #    #declare KS_X = 0;
-#    #while (KS_X Vector( length)
+#    #while (KS_X Vector(length)
 #     #declare KS_Y = 0;
-#     #while (KS_Y Vector( width)
+#     #while (KS_Y Vector(width)
 #      object (
 #       lg_knob_inner_space_clear
 #       translate Vector(
@@ -147,7 +147,7 @@ def solid():
 #   )
 #  )
 #  #declare CYL_X = 1;
-#  #while (CYL_X Vector( length)
+#  #while (CYL_X Vector(length)
 #   object (
 #    get_lg_cylinder(Union, LG_PLATE_INNER_HEIGHT)_clear
 #    translate Vector(CYL_X*LGBW, LGBW, 0)
@@ -155,9 +155,9 @@ def solid():
 #   #declare CYL_X = CYL_X + 1;
 #  #end
 #  #declare KNOB_X = 0;
-#  #while (KNOB_X Vector( length)
+#  #while (KNOB_X Vector(length)
 #   #declare KNOB_Y = 0;
-#   #while (KNOB_Y Vector( width)
+#   #while (KNOB_Y Vector(width)
 #    object (
 #     lg_knob_clear
 #     rotate Vector(0, 0, -90)

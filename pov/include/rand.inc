@@ -146,7 +146,7 @@
             #local X=-ln((B-P)/Alpha);
          #end
          #local R1=rand(Stream); 
-         #if(!( ((P<=1) & (R1>exp(-X))) | ((P>1) & (R1>pow(X,Alpha-1))) ))
+         #if(!(((P<=1) & (R1>exp(-X))) | ((P>1) & (R1>pow(X,Alpha-1))) ))
              #local RETURN=X;
              #local Loop=false;
          #end

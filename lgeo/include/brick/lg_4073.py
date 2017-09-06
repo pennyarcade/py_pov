@@ -37,7 +37,7 @@ from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE_CLEAR
 # union {
 #  Object(
 #   lg_knob
-#   Translate( Vector(0,0, LGPH),
+#   Translate(Vector(0,0, LGPH),
 #  ),
 #  union {
 #   Difference(
@@ -68,13 +68,13 @@ from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE_CLEAR
 #    (LG_CYLINDER_RADIUS - LGCS),
 #    LGCS
 #    Rotate(Vector(90, 0, 0),
-#    Translate( Vector(0, 0, LGCS),
+#    Translate(Vector(0, 0, LGCS),
 #   ),
 #   Torus(
 #    (LG_KNOB_RADIUS + LGCS),
 #    LGCS
 #    Rotate(Vector(90, 0, 0),
-#    Translate( Vector(0, 0, LGCS),
+#    Translate(Vector(0, 0, LGCS),
 #   ),
 #  ),
 #  Difference(
@@ -92,22 +92,22 @@ from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE_CLEAR
 #   ),
 #   Object(
 #    lg_knob_inner_space
-#    Translate( Vector(0,0, LG_PLATE_INNER_HEIGHT),
+#    Translate(Vector(0,0, LG_PLATE_INNER_HEIGHT),
 #   ),
 #  ),
 #  Torus(
 #   (LGBW/2-LGCS),
 #   LGCS
 #   Rotate(Vector(90, 0, 0),
-#   Translate( Vector(0, 0, LGPH-LGCS),
+#   Translate(Vector(0, 0, LGPH-LGCS),
 #  ),
 #  Torus(
 #   (LGBW/2-LGCS),
 #   LGCS
 #   Rotate(Vector(90, 0, 0),
-#   Translate( Vector(0, 0, LG_PLATE_INNER_HEIGHT+LGCS),
+#   Translate(Vector(0, 0, LG_PLATE_INNER_HEIGHT+LGCS),
 #  ),
-#  Translate( Vector(0, 0, -LGPH),
+#  Translate(Vector(0, 0, -LGPH),
 # ),
 
 
