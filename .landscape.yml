@@ -1,7 +1,7 @@
 #autodetect: yes
-#strictness: veryhigh
-#test-warnings: false
-#doc-warnings: true
+strictness: veryhigh
+test-warnings: false
+doc-warnings: true
 
 ignore-paths:
   - .git
@@ -12,8 +12,8 @@ ignore-paths:
   - old
   - py_pov_env
 
-# ignore-patterns:
-#   - (^|/)skip(this)?(/|$)
+ignore-patterns:
+   - (^|/)skip(this)?(/|$)
 
 #pep8:
 #  run: true
