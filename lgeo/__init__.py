@@ -1,5 +1,4 @@
-"""
-LGEO Libray Include File.
+u"""LGEO Libray Include File.
 
 (C) lgeo@digitalbricks.org (Lutz Uhlmann)
 

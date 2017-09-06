@@ -1,0 +1,1542 @@
+Messages
+========
+
+☐ lgeo/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/config/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/config/lgeo_cfg.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/include/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/include/brick/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/include/brick/lg_2357.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 36
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Return', not 'return')
+  ☐ Line: 180
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 184
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 196
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 200
+    ☐ pep8: E501 / line too long (115 > 99 characters) (col 100)
+  ☐ Line: 214
+    ☐ pylint: line-too-long / Line too long (81/79)
+  ☐ Line: 220
+    ☐ pylint: line-too-long / Line too long (81/79)
+  ☐ Line: 226
+    ☐ pylint: line-too-long / Line too long (81/79)
+  ☐ Line: 232
+    ☐ pylint: line-too-long / Line too long (96/79)
+
+☐ lgeo/include/brick/lg_2412b.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 175
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 185
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 195
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 205
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 242
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 243
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 252
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 253
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 277
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 283
+    ☐ pylint: line-too-long / Line too long (99/79)
+  ☐ Line: 291
+    ☐ pylint: line-too-long / Line too long (95/79)
+  ☐ Line: 307
+    ☐ pylint: line-too-long / Line too long (95/79)
+
+☐ lgeo/include/brick/lg_2436.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 532
+    ☐ pylint: pointless-string-statement / String statement has no effect
+
+☐ lgeo/include/brick/lg_2441.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 66
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 74
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 80
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 83
+    ☐ pylint: line-too-long / Line too long (89/79)
+  ☐ Line: 87
+    ☐ pylint: line-too-long / Line too long (81/79)
+  ☐ Line: 90
+    ☐ pylint: line-too-long / Line too long (90/79)
+  ☐ Line: 107
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 110
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 114
+    ☐ pylint: line-too-long / Line too long (81/79)
+  ☐ Line: 117
+    ☐ pylint: line-too-long / Line too long (89/79)
+  ☐ Line: 126
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 139
+    ☐ pylint: line-too-long / Line too long (96/79)
+  ☐ Line: 145
+    ☐ pylint: line-too-long / Line too long (89/79)
+  ☐ Line: 151
+    ☐ pylint: line-too-long / Line too long (95/79)
+  ☐ Line: 157
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 162
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 236
+    ☐ pep8: W291 / trailing whitespace (col 69)
+  ☐ Line: 240
+    ☐ pep8: W291 / trailing whitespace (col 69)
+  ☐ Line: 244
+    ☐ pep8: W291 / trailing whitespace (col 66)
+  ☐ Line: 248
+    ☐ pep8: W291 / trailing whitespace (col 70)
+  ☐ Line: 260
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 288
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 303
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 323
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 327
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 331
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 332
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 345
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 349
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 360
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 364
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 394
+    ☐ pylint: line-too-long / Line too long (87/79)
+  ☐ Line: 402
+    ☐ pylint: line-too-long / Line too long (86/79)
+  ☐ Line: 414
+    ☐ pylint: line-too-long / Line too long (86/79)
+  ☐ Line: 418
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 423
+    ☐ pylint: line-too-long / Line too long (86/79)
+  ☐ Line: 427
+    ☐ pylint: line-too-long / Line too long (85/79)
+  ☐ Line: 430
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 438
+    ☐ pylint: line-too-long / Line too long (91/79)
+  ☐ Line: 442
+    ☐ pylint: line-too-long / Line too long (94/79)
+  ☐ Line: 446
+    ☐ pylint: line-too-long / Line too long (94/79)
+  ☐ Line: 450
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 454
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 463
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 467
+    ☐ pylint: line-too-long / Line too long (81/79)
+  ☐ Line: 471
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 475
+    ☐ pylint: line-too-long / Line too long (87/79)
+  ☐ Line: 479
+    ☐ pylint: line-too-long / Line too long (92/79)
+  ☐ Line: 483
+    ☐ pylint: line-too-long / Line too long (92/79)
+  ☐ Line: 487
+    ☐ pylint: line-too-long / Line too long (93/79)
+  ☐ Line: 757
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 762
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 766
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 770
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 774
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 778
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 782
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 786
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 790
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 794
+    ☐ pylint: line-too-long / Line too long (85/79)
+  ☐ Line: 798
+    ☐ pylint: line-too-long / Line too long (85/79)
+  ☐ Line: 802
+    ☐ pylint: line-too-long / Line too long (85/79)
+  ☐ Line: 806
+    ☐ pylint: line-too-long / Line too long (86/79)
+
+☐ lgeo/include/brick/lg_3003.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/include/brick/lg_3004.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 20
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Return', not 'return')
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/include/brick/lg_3010.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 36
+    ☐ pep8: E302 / expected 2 blank lines, found 1 (col 1)
+
+☐ lgeo/include/brick/lg_3020.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/include/brick/lg_3021.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/include/brick/lg_3022.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/include/brick/lg_3024.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/include/brick/lg_3069b.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 30
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Return', not 'return')
+  ☐ Line: 43
+    ☐ pep8: W291 / trailing whitespace (col 61)
+  ☐ Line: 52
+    ☐ pep8: W291 / trailing whitespace (col 61)
+  ☐ Line: 61
+    ☐ pep8: W291 / trailing whitespace (col 45)
+  ☐ Line: 75
+    ☐ pep8: W291 / trailing whitespace (col 60)
+  ☐ Line: 84
+    ☐ pep8: W291 / trailing whitespace (col 60)
+  ☐ Line: 141
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 146
+    ☐ pylint: line-too-long / Line too long (88/79)
+
+☐ lgeo/include/brick/lg_3710.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 36
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Return', not 'return')
+
+☐ lgeo/include/brick/lg_3788.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 73
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 170
+    ☐ pylint: line-too-long / Line too long (89/79)
+  ☐ Line: 177
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 201
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 208
+    ☐ pylint: line-too-long / Line too long (86/79)
+  ☐ Line: 209
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 213
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 215
+    ☐ pylint: line-too-long / Line too long (97/79)
+  ☐ Line: 219
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 221
+    ☐ pylint: line-too-long / Line too long (96/79)
+  ☐ Line: 275
+    ☐ pylint: line-too-long / Line too long (89/79)
+  ☐ Line: 281
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 332
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 336
+    ☐ pylint: line-too-long / Line too long (81/79)
+  ☐ Line: 340
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 344
+    ☐ pylint: line-too-long / Line too long (81/79)
+
+☐ lgeo/include/brick/lg_3823.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 419
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Return', not 'return')
+  ☐ Line: 441
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 446
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 461
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 468
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 473
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 575
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 580
+    ☐ pylint: line-too-long / Line too long (90/79)
+  ☐ Line: 581
+    ☐ pylint: line-too-long / Line too long (95/79)
+  ☐ Line: 585
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 590
+    ☐ pylint: line-too-long / Line too long (90/79)
+  ☐ Line: 591
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 595
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 596
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 600
+    ☐ pylint: line-too-long / Line too long (94/79)
+  ☐ Line: 604
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 607
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 612
+    ☐ pylint: line-too-long / Line too long (87/79)
+  ☐ Line: 622
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 646
+    ☐ pylint: line-too-long / Line too long (80/79)
+  ☐ Line: 653
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 660
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 800
+    ☐ pylint: line-too-long / Line too long (87/79)
+  ☐ Line: 829
+    ☐ pylint: line-too-long / Line too long (85/79)
+  ☐ Line: 863
+    ☐ pylint: line-too-long / Line too long (85/79)
+
+☐ lgeo/include/brick/lg_3853.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pylint: line-too-long / Line too long (92/79)
+  ☐ Line: 46
+    ☐ pylint: line-too-long / Line too long (97/79)
+  ☐ Line: 50
+    ☐ pylint: line-too-long / Line too long (98/79)
+  ☐ Line: 54
+    ☐ pylint: line-too-long / Line too long (81/79)
+  ☐ Line: 55
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 59
+    ☐ pylint: line-too-long / Line too long (97/79)
+  ☐ Line: 60
+    ☐ pylint: line-too-long / Line too long (98/79)
+  ☐ Line: 64
+    ☐ pylint: line-too-long / Line too long (97/79)
+  ☐ Line: 65
+    ☐ pylint: line-too-long / Line too long (98/79)
+  ☐ Line: 69
+    ☐ pylint: line-too-long / Line too long (81/79)
+  ☐ Line: 70
+    ☐ pylint: line-too-long / Line too long (97/79)
+  ☐ Line: 74
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 75
+    ☐ pylint: line-too-long / Line too long (98/79)
+  ☐ Line: 88
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 91
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 104
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 105
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 109
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 110
+    ☐ pep8: E501 / line too long (102 > 99 characters) (col 100)
+  ☐ Line: 114
+    ☐ pylint: line-too-long / Line too long (91/79)
+  ☐ Line: 115
+    ☐ pylint: line-too-long / Line too long (92/79)
+  ☐ Line: 119
+    ☐ pep8: E501 / line too long (107 > 99 characters) (col 100)
+  ☐ Line: 120
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 124
+    ☐ pylint: line-too-long / Line too long (91/79)
+  ☐ Line: 125
+    ☐ pep8: E501 / line too long (107 > 99 characters) (col 100)
+  ☐ Line: 129
+    ☐ pylint: line-too-long / Line too long (92/79)
+  ☐ Line: 130
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 134
+    ☐ pylint: line-too-long / Line too long (92/79)
+  ☐ Line: 135
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 139
+    ☐ pylint: line-too-long / Line too long (93/79)
+  ☐ Line: 140
+    ☐ pep8: E501 / line too long (109 > 99 characters) (col 100)
+  ☐ Line: 144
+    ☐ pylint: line-too-long / Line too long (92/79)
+  ☐ Line: 145
+    ☐ pylint: line-too-long / Line too long (93/79)
+  ☐ Line: 149
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 150
+    ☐ pep8: E501 / line too long (109 > 99 characters) (col 100)
+  ☐ Line: 154
+    ☐ pylint: line-too-long / Line too long (93/79)
+  ☐ Line: 155
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 158
+    ☐ pylint: line-too-long / Line too long (93/79)
+  ☐ Line: 159
+    ☐ pylint: line-too-long / Line too long (81/79)
+  ☐ Line: 163
+    ☐ pylint: invalid-name / Invalid variable name "BOX_X" (col 8)
+  ☐ Line: 164
+    ☐ pylint: invalid-name / Invalid variable name "BOX_X" (col 8)
+  ☐ Line: 167
+    ☐ pylint: line-too-long / Line too long (93/79)
+  ☐ Line: 175
+    ☐ pylint: line-too-long / Line too long (94/79)
+  ☐ Line: 187
+    ☐ pep8: E501 / line too long (113 > 99 characters) (col 100)
+  ☐ Line: 191
+    ☐ pep8: E501 / line too long (114 > 99 characters) (col 100)
+  ☐ Line: 196
+    ☐ pylint: line-too-long / Line too long (81/79)
+  ☐ Line: 197
+    ☐ pylint: line-too-long / Line too long (86/79)
+  ☐ Line: 201
+    ☐ pylint: line-too-long / Line too long (86/79)
+  ☐ Line: 205
+    ☐ pylint: line-too-long / Line too long (86/79)
+  ☐ Line: 222
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 225
+    ☐ pep8: E265 / block comment should start with '# ' (col 21)
+  ☐ Line: 226
+    ☐ pep8: E501 / line too long (119 > 99 characters) (col 100)
+  ☐ Line: 227
+    ☐ pep8: E265 / block comment should start with '# ' (col 21)
+  ☐ Line: 255
+    ☐ pylint: line-too-long / Line too long (88/79)
+  ☐ Line: 258
+    ☐ pep8: E265 / block comment should start with '# ' (col 21)
+  ☐ Line: 259
+    ☐ pep8: E501 / line too long (118 > 99 characters) (col 100)
+  ☐ Line: 260
+    ☐ pep8: E265 / block comment should start with '# ' (col 21)
+  ☐ Line: 322
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 323
+    ☐ pylint: line-too-long / Line too long (95/79)
+  ☐ Line: 326
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 93)
+    ☐ pylint: line-too-long / Line too long (99/79)
+  ☐ Line: 327
+    ☐ pylint: line-too-long / Line too long (95/79)
+  ☐ Line: 330
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 93)
+    ☐ pylint: line-too-long / Line too long (99/79)
+  ☐ Line: 331
+    ☐ pylint: line-too-long / Line too long (95/79)
+  ☐ Line: 341
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 113)
+    ☐ pep8: E501 / line too long (118 > 99 characters) (col 100)
+  ☐ Line: 400
+    ☐ pylint: line-too-long / Line too long (85/79)
+  ☐ Line: 401
+    ☐ pep8: E501 / line too long (118 > 99 characters) (col 100)
+  ☐ Line: 404
+    ☐ pylint: line-too-long / Line too long (86/79)
+  ☐ Line: 405
+    ☐ pep8: E501 / line too long (117 > 99 characters) (col 100)
+  ☐ Line: 409
+    ☐ pep8: E501 / line too long (119 > 99 characters) (col 100)
+  ☐ Line: 410
+    ☐ pep8: E501 / line too long (119 > 99 characters) (col 100)
+  ☐ Line: 417
+    ☐ pylint: line-too-long / Line too long (86/79)
+  ☐ Line: 418
+    ☐ pep8: E501 / line too long (119 > 99 characters) (col 100)
+  ☐ Line: 421
+    ☐ pylint: line-too-long / Line too long (87/79)
+  ☐ Line: 422
+    ☐ pep8: E501 / line too long (118 > 99 characters) (col 100)
+  ☐ Line: 426
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 107)
+    ☐ pep8: E501 / line too long (118 > 99 characters) (col 100)
+  ☐ Line: 427
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 107)
+    ☐ pep8: E501 / line too long (118 > 99 characters) (col 100)
+  ☐ Line: 445
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 69)
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 449
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 450
+    ☐ pep8: E226 / missing whitespace around arithmetic operator (col 69)
+    ☐ pylint: line-too-long / Line too long (89/79)
+  ☐ Line: 465
+    ☐ pep8: E303 / too many blank lines (4) (col 1)
+  ☐ Line: 605
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 620
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 628
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 632
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 633
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 642
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 643
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 678
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 693
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 701
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 705
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 706
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 715
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 716
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 736
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 741
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 838
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 871
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 876
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 883
+    ☐ pep8: E501 / line too long (102 > 99 characters) (col 100)
+  ☐ Line: 916
+    ☐ pep8: E501 / line too long (102 > 99 characters) (col 100)
+  ☐ Line: 921
+    ☐ pep8: E501 / line too long (109 > 99 characters) (col 100)
+  ☐ Line: 1046
+    ☐ pep8: E501 / line too long (119 > 99 characters) (col 100)
+  ☐ Line: 1050
+    ☐ pep8: E501 / line too long (120 > 99 characters) (col 100)
+  ☐ Line: 1056
+    ☐ pep8: E501 / line too long (103 > 99 characters) (col 100)
+  ☐ Line: 1060
+    ☐ pep8: E501 / line too long (104 > 99 characters) (col 100)
+  ☐ Line: 1094
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1126
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1139
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 1144
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 1149
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1171
+    ☐ pep8: E501 / line too long (120 > 99 characters) (col 100)
+  ☐ Line: 1172
+    ☐ pep8: E501 / line too long (102 > 99 characters) (col 100)
+  ☐ Line: 1175
+    ☐ pep8: E501 / line too long (123 > 99 characters) (col 100)
+  ☐ Line: 1176
+    ☐ pep8: E501 / line too long (106 > 99 characters) (col 100)
+  ☐ Line: 1180
+    ☐ pep8: E501 / line too long (124 > 99 characters) (col 100)
+  ☐ Line: 1181
+    ☐ pep8: E501 / line too long (107 > 99 characters) (col 100)
+  ☐ Line: 1185
+    ☐ pep8: E501 / line too long (124 > 99 characters) (col 100)
+  ☐ Line: 1186
+    ☐ pep8: E501 / line too long (107 > 99 characters) (col 100)
+  ☐ Line: 1190
+    ☐ pep8: E501 / line too long (125 > 99 characters) (col 100)
+  ☐ Line: 1191
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 1200
+    ☐ pep8: E501 / line too long (102 > 99 characters) (col 100)
+  ☐ Line: 1204
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1208
+    ☐ pep8: E501 / line too long (104 > 99 characters) (col 100)
+  ☐ Line: 1209
+    ☐ pep8: E501 / line too long (104 > 99 characters) (col 100)
+  ☐ Line: 1217
+    ☐ pep8: E501 / line too long (103 > 99 characters) (col 100)
+  ☐ Line: 1221
+    ☐ pep8: E501 / line too long (102 > 99 characters) (col 100)
+  ☐ Line: 1225
+    ☐ pep8: E501 / line too long (105 > 99 characters) (col 100)
+  ☐ Line: 1226
+    ☐ pep8: E501 / line too long (105 > 99 characters) (col 100)
+  ☐ Line: 1385
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 1400
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 1408
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 1412
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 1413
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 1422
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 1423
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 1458
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1473
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1481
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1485
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1486
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1495
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1496
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1516
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 1521
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 1618
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1651
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 1656
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 1663
+    ☐ pep8: E501 / line too long (102 > 99 characters) (col 100)
+  ☐ Line: 1696
+    ☐ pep8: E501 / line too long (102 > 99 characters) (col 100)
+  ☐ Line: 1701
+    ☐ pep8: E501 / line too long (109 > 99 characters) (col 100)
+  ☐ Line: 1707
+    ☐ pylint: pointless-string-statement / String statement has no effect
+
+☐ lgeo/include/brick/lg_4073.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/include/brick/lg_4085c.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 102
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 107
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 129
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 134
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 156
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 157
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 172
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 176
+    ☐ pylint: line-too-long / Line too long (84/79)
+  ☐ Line: 179
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 260
+    ☐ pylint: line-too-long / Line too long (81/79)
+  ☐ Line: 261
+    ☐ pylint: line-too-long / Line too long (80/79)
+
+☐ lgeo/include/brick/lg_4865.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 34
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Return', not 'return')
+  ☐ Line: 49
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 53
+    ☐ pep8: E501 / line too long (102 > 99 characters) (col 100)
+  ☐ Line: 57
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 58
+    ☐ pep8: E501 / line too long (102 > 99 characters) (col 100)
+  ☐ Line: 62
+    ☐ pep8: E501 / line too long (101 > 99 characters) (col 100)
+  ☐ Line: 63
+    ☐ pep8: E501 / line too long (102 > 99 characters) (col 100)
+  ☐ Line: 74
+    ☐ pylint: line-too-long / Line too long (89/79)
+  ☐ Line: 75
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 79
+    ☐ pylint: line-too-long / Line too long (90/79)
+  ☐ Line: 80
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 84
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 85
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 89
+    ☐ pylint: line-too-long / Line too long (89/79)
+  ☐ Line: 90
+    ☐ pylint: line-too-long / Line too long (90/79)
+  ☐ Line: 94
+    ☐ pylint: line-too-long / Line too long (89/79)
+  ☐ Line: 98
+    ☐ pylint: line-too-long / Line too long (90/79)
+  ☐ Line: 102
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 106
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 110
+    ☐ pylint: line-too-long / Line too long (82/79)
+  ☐ Line: 111
+    ☐ pylint: line-too-long / Line too long (98/79)
+  ☐ Line: 115
+    ☐ pylint: line-too-long / Line too long (83/79)
+  ☐ Line: 116
+    ☐ pylint: line-too-long / Line too long (99/79)
+  ☐ Line: 120
+    ☐ pylint: line-too-long / Line too long (90/79)
+  ☐ Line: 121
+    ☐ pylint: line-too-long / Line too long (89/79)
+  ☐ Line: 125
+    ☐ pep8: E501 / line too long (115 > 99 characters) (col 100)
+  ☐ Line: 126
+    ☐ pep8: E501 / line too long (107 > 99 characters) (col 100)
+  ☐ Line: 130
+    ☐ pep8: E501 / line too long (116 > 99 characters) (col 100)
+  ☐ Line: 131
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 135
+    ☐ pep8: E501 / line too long (107 > 99 characters) (col 100)
+  ☐ Line: 136
+    ☐ pylint: line-too-long / Line too long (97/79)
+  ☐ Line: 140
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 141
+    ☐ pylint: line-too-long / Line too long (98/79)
+  ☐ Line: 145
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 146
+    ☐ pep8: E501 / line too long (107 > 99 characters) (col 100)
+  ☐ Line: 150
+    ☐ pylint: line-too-long / Line too long (89/79)
+  ☐ Line: 151
+    ☐ pep8: E501 / line too long (115 > 99 characters) (col 100)
+  ☐ Line: 155
+    ☐ pylint: line-too-long / Line too long (90/79)
+  ☐ Line: 156
+    ☐ pep8: E501 / line too long (116 > 99 characters) (col 100)
+  ☐ Line: 160
+    ☐ pep8: E501 / line too long (108 > 99 characters) (col 100)
+  ☐ Line: 164
+    ☐ pep8: E501 / line too long (107 > 99 characters) (col 100)
+  ☐ Line: 170
+    ☐ pep8: E501 / line too long (105 > 99 characters) (col 100)
+  ☐ Line: 171
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 174
+    ☐ pep8: E501 / line too long (105 > 99 characters) (col 100)
+  ☐ Line: 175
+    ☐ pep8: E501 / line too long (100 > 99 characters) (col 100)
+  ☐ Line: 178
+    ☐ pep8: E501 / line too long (105 > 99 characters) (col 100)
+  ☐ Line: 179
+    ☐ pylint: line-too-long / Line too long (99/79)
+  ☐ Line: 183
+    ☐ pep8: E501 / line too long (117 > 99 characters) (col 100)
+  ☐ Line: 184
+    ☐ pep8: E501 / line too long (102 > 99 characters) (col 100)
+  ☐ Line: 189
+    ☐ pylint: line-too-long / Line too long (98/79)
+  ☐ Line: 193
+    ☐ pylint: line-too-long / Line too long (98/79)
+  ☐ Line: 196
+    ☐ pylint: line-too-long / Line too long (86/79)
+  ☐ Line: 197
+    ☐ pylint: line-too-long / Line too long (85/79)
+
+☐ lgeo/include/common/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/include/common/brick_subparts.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 147
+    ☐ pep257: D401 / First line should be in imperative mood; try rephrasing (found 'Standard')
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/include/common/custom_macros.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 103
+    ☐ pylint: too-many-arguments / Too many arguments (8/5)
+
+☐ lgeo/include/common/lg_color.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 269
+    ☐ pylint: no-else-return / Unnecessary "else" after "return" (col 4)
+
+☐ lgeo/include/common/lg_defs.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 168
+    ☐ pylint: no-else-return / Unnecessary "else" after "return" (col 4)
+  ☐ Line: 395
+    ☐ pylint: no-else-return / Unnecessary "else" after "return" (col 4)
+
+☐ lgeo/lgeo_city.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/set/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/set/lg_10036_1_car.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 151
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Docstring', not 'docstring')
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/set/lg_10036_1_house.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/set/lg_10036_1_main.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ lgeo/testscene.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ main.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/atmeff/Fog.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 52
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/atmeff/SkySphere.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 43
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/atmeff/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/basic/BlockObject.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 19
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Return', not 'return')
+
+☐ pov/basic/Borg.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 14
+    ☐ pep257: D204 / 1 blank line required after class docstring (found 0)
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+    ☐ pep257: D400 / First line should end with a period (not u"'")
+    ☐ pep257: D205 / 1 blank line required between summary line and description (found 0)
+    ☐ pylint: too-few-public-methods / Too few public methods (0/2)
+  ☐ Line: 17
+    ☐ pylint: line-too-long / Line too long (85/79)
+  ☐ Line: 21
+    ☐ pep8: E301 / expected 1 blank line, found 0 (col 5)
+    ☐ pep257: D102 / Missing docstring in public method
+  ☐ Line: 22
+    ☐ pep8: W292 / no newline at end of file (col 43)
+
+☐ pov/basic/Color.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 44
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+    ☐ mccabe: MC0001 / Color.__init__ is too complex (12)
+  ☐ Line: 108
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/basic/Indentation.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D101 / Missing docstring in public class
+  ☐ Line: 19
+    ☐ pep257: D102 / Missing docstring in public method
+  ☐ Line: 30
+    ☐ pylint: unneeded-not / Consider changing "not self.level > 0" to "self.level <= 0" (col 11)
+  ☐ Line: 39
+    ☐ pep8: W391 / blank line at end of file (col 1)
+    ☐ pylint: trailing-newlines / Trailing newlines
+
+☐ pov/basic/PoVObject.py
+  ☐ Line: 1
+    ☐ pep257: D100 / Missing docstring in public module
+  ☐ Line: 14
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/basic/SceneFile.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 33
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 83
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/basic/SceneItem.py
+  ☐ Line: 1
+    ☐ pep257: D100 / Missing docstring in public module
+  ☐ Line: 20
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 134
+    ☐ pep257: D401 / First line should be in imperative mood; try rephrasing (found 'Base')
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 185
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 199
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 218
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Format', not 'format')
+  ☐ Line: 223
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 231
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 239
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 247
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 304
+    ☐ pep8: N802 / function name should be lowercase (col 9)
+    ☐ pylint: invalid-name / Invalid method name "_checkKwargValue" (col 4)
+  ☐ Line: 314
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Format', not 'format')
+  ☐ Line: 321
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Format', not 'format')
+  ☐ Line: 328
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Format', not 'format')
+  ☐ Line: 357
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Return', not 'return')
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 368
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 383
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 398
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 435
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Append', not 'append')
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 451
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+  ☐ Line: 455
+    ☐ pylint: len-as-condition / Do not use `len(SEQUENCE)` as condition value (col 15)
+  ☐ Line: 460
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Flatten', not 'flatten')
+    ☐ pylint: no-self-use / Method could be a function (col 4)
+
+☐ pov/basic/Vector.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 52
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Scalar', not 'scalar')
+  ☐ Line: 58
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Scalar', not 'scalar')
+  ☐ Line: 122
+    ☐ pylint: invalid-name / Invalid constant name "x"
+  ☐ Line: 123
+    ☐ pylint: invalid-name / Invalid constant name "y"
+  ☐ Line: 124
+    ☐ pylint: invalid-name / Invalid constant name "z"
+
+☐ pov/basic/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/csg/Csg.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/csg/Difference.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/csg/Intersection.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/csg/Merge.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/csg/Union.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/csg/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/examples/basic_scene.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/examples/basic_sphere.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/examples/checkered_floor.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/examples/image_map.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/examples/orthographic_scene.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/examples/radiocity_scene.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/examples/text_fonts.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_patch/FinitePatch.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_patch/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_solid/Blob.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 15
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 34
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 47
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_solid/Box.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 19
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 53
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 79
+    ☐ pylint: unused-variable / Unused variable 'item' (col 15)
+
+☐ pov/finite_solid/Cone.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 21
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 33
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+    ☐ mccabe: MC0001 / Cone.__init__ is too complex (12)
+
+☐ pov/finite_solid/Cylinder.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 30
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+    ☐ mccabe: MC0001 / Cylinder.__init__ is too complex (11)
+
+☐ pov/finite_solid/HeightField.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 36
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 72
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_solid/JuliaFractal.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 41
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 63
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 72
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_solid/Lathe.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 38
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 88
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 98
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_solid/Prism.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 15
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_solid/Sor.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 15
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_solid/Sphere.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 33
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 48
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_solid/SphereSweep.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_solid/SuperEllipsoid.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_solid/Text.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_solid/Torus.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/finite_solid/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/global_settings/GlobalSettings.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 41
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/global_settings/Photons.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/global_settings/Radiosity.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 57
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/global_settings/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/include/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/include/chars_inc.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/include/colors_inc.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 176
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 204
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/infinite_solid/Plane.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 49
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/infinite_solid/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/language_directive/Default.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 28
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Create', not 'create')
+  ☐ Line: 44
+    ☐ pep257: D401 / First line should be in imperative mood; try rephrasing (found 'Optional')
+
+☐ pov/language_directive/Include.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 19
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 31
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/language_directive/LanguageDirective.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/language_directive/Version.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 26
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 41
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/language_directive/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/object_modifier/ClippedBy.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/object_modifier/Interior.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/object_modifier/Matrix.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/object_modifier/ObjectModifier.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/object_modifier/Rotate.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/object_modifier/Scale.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 29
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/object_modifier/Transformation.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/object_modifier/Translate.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/object_modifier/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/other/Camera.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 61
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 71
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/other/Comment.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 30
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Return', not 'return')
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/other/EmptyObject.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 29
+    ☐ pep257: D403 / First word of the first line should be properly capitalized ('Return', not 'return')
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/other/IllegalStateException.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/other/IsoSurface.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/other/LightSource.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 61
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/other/Object.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/other/ParametricObj.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/other/SdlSyntaxException.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/other/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/texture/ColorMap.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 35
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 43
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 62
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/texture/Filter.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 20
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/texture/Finish.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 16
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 44
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/texture/ImageMap.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 20
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/texture/Irid.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 20
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/texture/Normal.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 79
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/texture/Pigment.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 81
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/texture/Reflection.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 46
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/texture/Texture.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 83
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/texture/__init__.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ pov/texture/pattern/Gradient.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 18
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 28
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+
+☐ runprospector.py
+  ☐ Line: 1
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 17
+    ☐ pep257: D401 / First line should be in imperative mood; try rephrasing (found 'Main')
+    ☐ pep257: D212 / Multi-line docstring summary should start at the first line
+  ☐ Line: 35
+    ☐ pylint: len-as-condition / Do not use `len(SEQUENCE)` as condition value (col 43)
+
+
+
+Check Information
+=================
+         Started: 2017-09-06 14:22:51.280122
+        Finished: 2017-09-06 14:23:08.073327
+      Time Taken: 16.79 seconds
+       Formatter: grouped
+        Profiles: .landscape.yml, doc_warnings, no_test_warnings, strictness_veryhigh, no_member_warnings
+      Strictness: from profile
+  Libraries Used: 
+       Tools Run: frosted, mccabe, pep257, pep8, profile-validator, pyflakes, pylint, pyroma
+  Messages Found: 651
+ External Config: pylint: /home/martin/devel/py_pov/.pylintrc
+
+

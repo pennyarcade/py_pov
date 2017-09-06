@@ -1,5 +1,4 @@
-"""
-Configuration for Lgeo Library parts.
+u"""Configuration for Lgeo Library parts.
 
 @Todo: Put some information here that makes sense
 """

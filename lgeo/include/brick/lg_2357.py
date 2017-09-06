@@ -1,5 +1,4 @@
-"""
-LGEO Libray Include File.
+u"""LGEO Libray Include File.
 
 (C) lgeo@digitalbricks.org (Lutz Uhlmann)
 
@@ -34,7 +33,7 @@ from pov.other.Object import Object
 
 
 def solid(length=2, width=2):
-    """return lg_4865: Panel 1 x 2 x 1."""
+    """Return lg_4865: Panel 1 x 2 x 1."""
     result = Union(
         Sphere(
             Vector(LGCS, LGCS, LGCS),

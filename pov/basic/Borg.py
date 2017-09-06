@@ -12,11 +12,15 @@ Borg Pattern by Alex Martelli
 
 
 class Borg(object):
-    u"""
-    Alex Martelli's 'Borg'
+    u"""Alex Martelli's 'Borg'.
+
+    Singleton like shared storage class
     @see http://python-3-patterns-idioms-test.readthedocs.io/en/latest/Singleton.html
     @see http://www.aleax.it/Python/5ep.html
     """
+
     _shared_state = {}
+
     def __init__(self):
+        """Link each Instances storage to the same object"""
         self.__dict__ = self._shared_state

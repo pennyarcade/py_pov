@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c21762c-fe61-45a8-9a7b-8fbb44dfc947" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.landscape.yml" afterPath="$PROJECT_DIR$/.landscape.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lgeo/__init__.py" afterPath="$PROJECT_DIR$/lgeo/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lgeo/config/__init__.py" afterPath="$PROJECT_DIR$/lgeo/config/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lgeo/config/lgeo_cfg.py" afterPath="$PROJECT_DIR$/lgeo/config/lgeo_cfg.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lgeo/include/__init__.py" afterPath="$PROJECT_DIR$/lgeo/include/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lgeo/include/brick/__init__.py" afterPath="$PROJECT_DIR$/lgeo/include/brick/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lgeo/include/brick/lg_2357.py" afterPath="$PROJECT_DIR$/lgeo/include/brick/lg_2357.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pov/basic/Borg.py" afterPath="$PROJECT_DIR$/pov/basic/Borg.py" />
     </list>
     <ignored path="py_pov.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,51 +30,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lg_10036_1_car.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lgeo/set/lg_10036_1_car.py">
+      <file leaf-file-name="prospector_1504700588.16.todo" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/metrics/prospector_1504700588.16.todo">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="132" column="2" lean-forward="false" selection-start-line="132" selection-start-column="2" selection-end-line="132" selection-end-column="2" />
+            <state relative-caret-position="81">
+              <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Borg.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Borg.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pov/basic/Borg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lg_2357.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lgeo/include/brick/lg_2357.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="475" column="0" lean-forward="true" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".landscape.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.landscape.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testscene.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lgeo/testscene.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,12 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pov/examples/advanced/balcony/chair.inc" />
-        <option value="$PROJECT_DIR$/pov/examples/advanced/cats/coolcat.inc" />
-        <option value="$PROJECT_DIR$/pov/examples/advanced/mtmand.pov" />
-        <option value="$PROJECT_DIR$/pov/examples/animations/splinefollow/splinefollow.pov" />
-        <option value="$PROJECT_DIR$/pov/examples/incdemo/glasses/sample.inc" />
-        <option value="$PROJECT_DIR$/pov/examples/incdemo/screen.pov" />
         <option value="$PROJECT_DIR$/pov/examples/incdemo/shapes.pov" />
         <option value="$PROJECT_DIR$/pov/examples/incdemo/sundial.pov" />
         <option value="$PROJECT_DIR$/pov/examples/language/tracevines.pov" />
@@ -155,13 +123,19 @@
         <option value="$PROJECT_DIR$/lgeo/include/brick/lg_6576.inc" />
         <option value="$PROJECT_DIR$/lgeo/set/lg_10036_1_car.py" />
         <option value="$PROJECT_DIR$/lgeo/testscene.py" />
-        <option value="$PROJECT_DIR$/pov/basic/Borg.py" />
-        <option value="$PROJECT_DIR$/lgeo/include/brick/lg_2357.py" />
         <option value="$PROJECT_DIR$/.landscape.yml" />
+        <option value="$PROJECT_DIR$/lgeo/__init__.py" />
+        <option value="$PROJECT_DIR$/lgeo/config/lgeo_cfg.py" />
+        <option value="$PROJECT_DIR$/lgeo/config/__init__.py" />
+        <option value="$PROJECT_DIR$/lgeo/include/__init__.py" />
+        <option value="$PROJECT_DIR$/metrics/prospector_1504700588.16.todo" />
+        <option value="$PROJECT_DIR$/lgeo/include/brick/__init__.py" />
+        <option value="$PROJECT_DIR$/lgeo/include/brick/lg_2357.py" />
+        <option value="$PROJECT_DIR$/pov/basic/Borg.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1920" />
     <option name="width" value="1920" />
     <option name="height" value="1200" />
@@ -208,6 +182,11 @@
             <path>
               <item name="py_pov" type="b2602c69:ProjectViewProjectNode" />
               <item name="py_pov" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py_pov" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py_pov" type="462c0819:PsiDirectoryNode" />
+              <item name="pov" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -395,7 +374,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1920" height="1200" extended-state="1" />
+    <frame x="1920" y="0" width="1920" height="1200" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25923914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -405,7 +385,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4643606" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4643606" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -460,70 +440,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pov/examples/advanced/balcony/chair.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="173" column="23" lean-forward="false" selection-start-line="173" selection-start-column="23" selection-end-line="173" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pov/examples/advanced/cats/coolcat.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="318" column="26" lean-forward="false" selection-start-line="318" selection-start-column="26" selection-end-line="318" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pov/examples/advanced/mtmand.pov">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pov/examples/animations/splinefollow/splinefollow.pov">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="134" column="45" lean-forward="false" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pov/examples/incdemo/glasses/sample.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="424" column="18" lean-forward="false" selection-start-line="424" selection-start-column="18" selection-end-line="424" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pov/examples/incdemo/screen.pov">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="151" column="16" lean-forward="false" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pov/examples/incdemo/shapes.pov">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="56" column="15" lean-forward="false" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pov/examples/incdemo/sundial.pov">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="78" column="7" lean-forward="false" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pov/examples/language/tracevines.pov">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -844,26 +760,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pov/basic/Borg.py">
+    <entry file="file://$PROJECT_DIR$/lgeo/config/lgeo_cfg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lgeo/include/brick/lg_2357.py">
+    <entry file="file://$PROJECT_DIR$/lgeo/config/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="475" column="0" lean-forward="true" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lgeo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lgeo/include/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shippable.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.prospector.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.landscape.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="108">
           <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lgeo/include/brick/lg_2357.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lgeo/include/brick/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metrics/prospector_1504700588.16.todo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pov/basic/Borg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
