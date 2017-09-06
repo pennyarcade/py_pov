@@ -34,8 +34,8 @@ pep257:
     - D203
   run: true
 
-#pyroma:
-#  run: true
+pyroma:
+  run: true
 
 #mccabe:
 #  run: true
