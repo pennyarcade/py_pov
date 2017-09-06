@@ -18,5 +18,5 @@ script:
 
 after_script:
   - nosetests -d --no-byte-compile --with-coverage --cover-branches pov lgeo || true
-  - COVERALLS_REPO_TOKEN=tPacM416uj1msoRvZDDWRi7kTnYUFxKFt coveralls || true
+  - COVERALLS_REPO_TOKEN=dUmCzPJGyOTDcvNvHSfE2NDyq7sSN0Ua4 coveralls || true
 
