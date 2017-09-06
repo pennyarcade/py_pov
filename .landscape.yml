@@ -28,6 +28,8 @@ pep8:
 
 pylint:
   run: true
+  options:
+    max-line-length: 99
 
 pep257:
   disable:
