@@ -34,7 +34,7 @@ from pov.object_modifier.Translate import Translate
 
 from pov.other.Object import Object
 
-from lgeo.include.common.lg_defs import LG_WALL_WIDTH, LGBW, LGPH
+from lgeo.include.common.lg_defs import LGWW, LGBW, LGPH
 from lgeo.include.common.lg_defs import LG_PLATE_INNER_HEIGHT, LGCS
 from lgeo.include.common.lg_defs import LG_BRICK_INNER_HEIGHT
 from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE, lg_knob
@@ -50,10 +50,10 @@ def get_knob_inner_space(length=1, width=1, height=LG_BRICK_INNER_HEIGHT):
     """@Todo: DocString."""
     result = Union(
         Box(
-            Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LGCS),
+            Vector(LGWW, LGWW, -LGCS),
             Vector(
-                length * LGBW - LG_WALL_WIDTH,
-                width * LGBW - LG_WALL_WIDTH,
+                length * LGBW - LGWW,
+                width * LGBW - LGWW,
                 LG_PLATE_INNER_HEIGHT
             )
         )

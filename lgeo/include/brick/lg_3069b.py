@@ -12,7 +12,7 @@ lg_3069b: Tile 1 x 2 with groove
 """
 
 from lgeo.include.common.lg_defs import LGCS, LGBW, LGPH, LG_E
-from lgeo.include.common.lg_defs import LG_WALL_WIDTH, LG_PLATE_INNER_HEIGHT
+from lgeo.include.common.lg_defs import LGWW, LG_PLATE_INNER_HEIGHT
 
 from pov.basic.Vector import Vector
 
@@ -36,76 +36,75 @@ def solid(length=2, width=1):
         ),
         Cylinder(
             Vector(LGCS, LGCS, LGCS + 0.04),
-            Vector((length * LGBW - LGCS), LGCS, LGCS + 0.04),
+            Vector(length * LGBW - LGCS, LGCS, LGCS + 0.04),
             LGCS
         ),
         Sphere(
-            Vector((length * LGBW - LGCS), LGCS, LGCS + 0.04), LGCS
+            Vector(length * LGBW - LGCS, LGCS, LGCS + 0.04), 
+            LGCS
         ),
         Cylinder(
-            Vector(((length * LGBW) - LGCS), LGCS, LGCS + 0.04),
-            Vector(((length * LGBW) - LGCS), LGCS, (LGPH - LGCS)),
+            Vector(length * LGBW - LGCS, LGCS, LGCS + 0.04),
+            Vector(length * LGBW - LGCS, LGCS, LGPH - LGCS),
             LGCS
         ),
         Sphere(
-            Vector(((length * LGBW) - LGCS), LGCS, (LGPH - LGCS)), LGCS
+            Vector(length * LGBW - LGCS, LGCS, LGPH - LGCS), 
+            LGCS
         ),
         Cylinder(
-            Vector(((length * LGBW) - LGCS), LGCS, (LGPH - LGCS)),
-            Vector(LGCS, LGCS, (LGPH - LGCS)),
+            Vector(length * LGBW - LGCS, LGCS, LGPH - LGCS),
+            Vector(LGCS, LGCS, LGPH - LGCS),
             LGCS
         ),
         Sphere(
-            Vector(LGCS, LGCS, (LGPH - LGCS)), LGCS
-        ),
-        Cylinder(
-            Vector(LGCS, LGCS, LGCS + 0.04),
-            Vector(LGCS, LGCS, (LGPH - LGCS)),
+            Vector(LGCS, LGCS, LGPH - LGCS), 
             LGCS
         ),
         Cylinder(
             Vector(LGCS, LGCS, LGCS + 0.04),
-            Vector(LGCS, ((width * LGBW) - LGCS), LGCS + 0.04),
+            Vector(LGCS, LGCS, LGPH - LGCS),
+            LGCS
+        ),
+        Cylinder(
+            Vector(LGCS, LGCS, LGCS + 0.04),
+            Vector(LGCS, width * LGBW - LGCS, LGCS + 0.04),
             LGCS
         ),
         Sphere(
-            Vector(LGCS, ((width * LGBW) - LGCS), LGCS + 0.04), LGCS
+            Vector(LGCS, width * LGBW - LGCS, LGCS + 0.04), 
+            LGCS
         ),
         Cylinder(
-            Vector(LGCS, ((width * LGBW) - LGCS), LGCS + 0.04),
-            Vector(LGCS, ((width * LGBW) - LGCS), (LGPH - LGCS)),
+            Vector(LGCS, width * LGBW - LGCS, LGCS + 0.04),
+            Vector(LGCS, width * LGBW - LGCS, LGPH - LGCS),
             LGCS
         ),
         Sphere(
-            Vector(LGCS, ((width * LGBW) - LGCS), (LGPH - LGCS)), LGCS
-        ),
-        Cylinder(
-            Vector(LGCS, LGCS, (LGPH - LGCS)),
-            Vector(LGCS, ((width * LGBW) - LGCS), (LGPH - LGCS)),
+            Vector(LGCS, width * LGBW - LGCS, LGPH - LGCS), 
             LGCS
         ),
         Cylinder(
-            Vector(((length * LGBW) - LGCS), LGCS, LGCS + 0.04),
-            Vector(
-                ((length * LGBW) - LGCS), ((width * LGBW) - LGCS), LGCS + 0.04
-            ),
+            Vector(LGCS, LGCS, LGPH - LGCS),
+            Vector(LGCS, width * LGBW - LGCS, LGPH - LGCS),
+            LGCS
+        ),
+        Cylinder(
+            Vector(length * LGBW - LGCS, LGCS, LGCS + 0.04),
+            Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGCS + 0.04),
             LGCS
         ),
         Sphere(
-            Vector(
-                length * LGBW - LGCS, width * LGBW - LGCS, LGCS + 0.04), LGCS
-        ),
-        Cylinder(
-            Vector(
-                length * LGBW - LGCS, width * LGBW - LGCS, LGCS + 0.04
-            ),
-            Vector(LGCS, ((width * LGBW) - LGCS), LGCS + 0.04),
+            Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGCS + 0.04),
             LGCS
         ),
         Cylinder(
-            Vector(
-                length * LGBW - LGCS, width * LGBW - LGCS, LGCS + 0.04
-            ),
+            Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGCS + 0.04),
+            Vector(LGCS, width * LGBW - LGCS, LGCS + 0.04),
+            LGCS
+        ),
+        Cylinder(
+            Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGCS + 0.04),
             Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGPH - LGCS),
             LGCS
         ),
@@ -139,18 +138,12 @@ def solid(length=2, width=1):
                 ),
                 Box(
                     Vector(0.04, 0.04, 0),
-                    Vector(
-                        length * LGBW - 0.04, width * LGBW - 0.04, 0.04 + LG_E
-                    )
+                    Vector(length * LGBW - 0.04, width * LGBW - 0.04, 0.04 + LG_E)
                 ),
             ),
             Box(
-                Vector(LG_WALL_WIDTH, LG_WALL_WIDTH, -LGCS),
-                Vector(
-                    length * LGBW - LG_WALL_WIDTH,
-                    width * LGBW - LG_WALL_WIDTH,
-                    LG_PLATE_INNER_HEIGHT
-                )
+                Vector(LGWW, LGWW, -LGCS),
+                Vector(length * LGBW - LGWW, width * LGBW - LGWW, LG_PLATE_INNER_HEIGHT)
             ),
         ),
         Translate(Vector(-LGBW, -0.5 * LGBW, -LGPH)),
@@ -164,85 +157,85 @@ def solid(length=2, width=1):
 #  ),
 #  Cylinder(
 #   Vector(LGCS, LGCS, LGCS + 0.04),
-#   Vector((length * LGBW - LGCS), LGCS, LGCS + 0.04),
+#   Vector(length * LGBW - LGCS, LGCS, LGCS + 0.04),
 #   LGCS
 #  ),
 #  Sphere(
-#   Vector((length * LGBW - LGCS), LGCS, LGCS + 0.04), LGCS
+#   Vector(length * LGBW - LGCS, LGCS, LGCS + 0.04), LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW) - LGCS), LGCS, LGCS + 0.04),
-#   Vector(((length * LGBW) - LGCS), LGCS, (LGPH - LGCS)),
+#   Vector(length * LGBW - LGCS, LGCS, LGCS + 0.04),
+#   Vector(length * LGBW - LGCS, LGCS, LGPH - LGCS),
 #   LGCS
 #  ),
 #  Sphere(
-#   Vector(((length * LGBW) - LGCS), LGCS, (LGPH - LGCS)), LGCS
+#   Vector(length * LGBW - LGCS, LGCS, LGPH - LGCS), LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW) - LGCS), LGCS, (LGPH - LGCS)),
-#   Vector(LGCS, LGCS, (LGPH - LGCS)),
+#   Vector(length * LGBW - LGCS, LGCS, LGPH - LGCS),
+#   Vector(LGCS, LGCS, LGPH - LGCS),
 #   LGCS
 #  ),
 #  Sphere(
-#   Vector(LGCS, LGCS, (LGPH - LGCS)), LGCS
+#   Vector(LGCS, LGCS, LGPH - LGCS), LGCS
 #  ),
 #  Cylinder(
 #   Vector(LGCS, LGCS, LGCS + 0.04),
-#   Vector(LGCS, LGCS, (LGPH - LGCS)),
+#   Vector(LGCS, LGCS, LGPH - LGCS),
 #   LGCS
 #  ),
 #  Cylinder(
 #   Vector(LGCS, LGCS, LGCS + 0.04),
-#   Vector(LGCS, ((width * LGBW) - LGCS), LGCS + 0.04),
+#   Vector(LGCS, width * LGBW - LGCS, LGCS + 0.04),
 #   LGCS
 #  ),
 #  Sphere(
-#   Vector(LGCS, ((width * LGBW) - LGCS), LGCS + 0.04), LGCS
+#   Vector(LGCS, width * LGBW - LGCS, LGCS + 0.04), LGCS
 #  ),
 #  Cylinder(
-#   Vector(LGCS, ((width * LGBW) - LGCS), LGCS + 0.04),
-#   Vector(LGCS, ((width * LGBW) - LGCS), (LGPH - LGCS)),
+#   Vector(LGCS, width * LGBW - LGCS, LGCS + 0.04),
+#   Vector(LGCS, width * LGBW - LGCS, LGPH - LGCS),
 #   LGCS
 #  ),
 #  Sphere(
-#   Vector(LGCS, ((width * LGBW) - LGCS), (LGPH - LGCS)), LGCS
+#   Vector(LGCS, width * LGBW - LGCS, LGPH - LGCS), LGCS
 #  ),
 #  Cylinder(
-#   Vector(LGCS, LGCS, (LGPH - LGCS)),
-#   Vector(LGCS, ((width * LGBW) - LGCS), (LGPH - LGCS)),
+#   Vector(LGCS, LGCS, LGPH - LGCS),
+#   Vector(LGCS, width * LGBW - LGCS, LGPH - LGCS),
 #   LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW) - LGCS), LGCS, LGCS + 0.04),
-#   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), LGCS + 0.04),
+#   Vector(length * LGBW - LGCS, LGCS, LGCS + 0.04),
+#   Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGCS + 0.04),
 #   LGCS
 #  ),
 #  Sphere(
-#   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), LGCS + 0.04),
+#   Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGCS + 0.04),
 #   LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), LGCS + 0.04),
-#   Vector(LGCS, ((width * LGBW) - LGCS), LGCS + 0.04),
+#   Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGCS + 0.04),
+#   Vector(LGCS, width * LGBW - LGCS, LGCS + 0.04),
 #   LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), LGCS + 0.04),
-#   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), (LGPH - LGCS)),
+#   Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGCS + 0.04),
+#   Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGPH - LGCS),
 #   LGCS
 #  ),
 #  Sphere(
-#   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), (LGPH - LGCS)),
+#   Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGPH - LGCS),
 #   LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), (LGPH - LGCS)),
-#   Vector(LGCS, ((width * LGBW) - LGCS), (LGPH - LGCS)),
+#   Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGPH - LGCS),
+#   Vector(LGCS, width * LGBW - LGCS, LGPH - LGCS),
 #   LGCS
 #  ),
 #  Cylinder(
-#   Vector(((length * LGBW) - LGCS), LGCS, (LGPH - LGCS)),
-#   Vector(((length * LGBW) - LGCS), ((width * LGBW) - LGCS), (LGPH - LGCS)),
+#   Vector(length * LGBW - LGCS, LGCS, LGPH - LGCS),
+#   Vector(length * LGBW - LGCS, width * LGBW - LGCS, LGPH - LGCS),
 #   LGCS
 #  ),
 #  Difference(

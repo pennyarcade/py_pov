@@ -74,6 +74,7 @@ LGBW = LG_BRICK_WIDTH
 LGBH = LG_BRICK_HEIGHT
 LGPH = LG_PLATE_HEIGHT
 LGCS = LG_CORNER_SPACE
+LGWW = LG_WALL_WIDTH
 
 
 # Stud Logo
@@ -196,17 +197,17 @@ def lg_knob_function(knobclass, textfunction):
             Cylinder(
                 Vector(0, 0, LG_KNOB_HEIGHT - LG_KNOB_CORNER_SPACE),
                 Vector(0, 0, -LG_E),
-                (LG_KNOB_RADIUS)
+                LG_KNOB_RADIUS
             ),
             Cylinder(
                 Vector(0, 0, LG_KNOB_HEIGHT),
                 Vector(0, 0, -LG_E),
-                (LG_KNOB_RADIUS - LG_KNOB_CORNER_SPACE)
+                LG_KNOB_RADIUS - LG_KNOB_CORNER_SPACE
             ),
         ),
         Torus(
-            (LG_KNOB_RADIUS - LG_KNOB_CORNER_SPACE),
-            (LG_KNOB_CORNER_SPACE),
+            LG_KNOB_RADIUS - LG_KNOB_CORNER_SPACE,
+            LG_KNOB_CORNER_SPACE,
             Rotate(Vector(90, 0, 0)),
             Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_KNOB_CORNER_SPACE)))
         )
@@ -251,36 +252,36 @@ def _lg_tech_knob_function(knobclass):
                 Cylinder(
                     Vector(0, 0, LG_KNOB_HEIGHT - LG_CORNER_SPACE),
                     Vector(0, 0, -LG_E),
-                    (LG_KNOB_RADIUS)
+                    LG_KNOB_RADIUS
                 ),
                 Difference(
                     Cylinder(
                         Vector(0, 0, LG_KNOB_HEIGHT),
                         Vector(0, 0, -LG_E),
-                        (LG_KNOB_RADIUS - LG_CORNER_SPACE)
+                        LG_KNOB_RADIUS - LG_CORNER_SPACE
                     ),
                     Cylinder(
                         Vector(0, 0, LG_KNOB_HEIGHT + LG_E),
                         Vector(0, 0, -2 * LG_E),
-                        (LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE)
+                        LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE
                     )
                 )
             ),
             Cylinder(
                 Vector(0, 0, (LG_KNOB_HEIGHT + 2 * LG_E)),
                 Vector(0, 0, -3 * LG_E),
-                (LG_KNOB_INNER_RADIUS)
+                LG_KNOB_INNER_RADIUS
             )
         ),
         Torus(
-            (LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE),
-            (LG_CORNER_SPACE),
+            LG_KNOB_INNER_RADIUS + LG_CORNER_SPACE,
+            LG_CORNER_SPACE,
             Rotate(Vector(90, 0, 0)),
             Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_CORNER_SPACE)))
         ),
         Torus(
-            (LG_KNOB_RADIUS - LG_CORNER_SPACE),
-            (LG_CORNER_SPACE),
+            LG_KNOB_RADIUS - LG_CORNER_SPACE,
+            LG_CORNER_SPACE,
             Rotate(Vector(90, 0, 0)),
             Translate(Vector(0, 0, (LG_KNOB_HEIGHT - LG_CORNER_SPACE)))
         )
@@ -320,17 +321,17 @@ def get_lg_cylinder(cylinderclass, height):
             Cylinder(
                 Vector(0, 0, height + LG_E),
                 Vector(0, 0, (LG_CYLINDER_WALL_WIDTH / 2)),
-                (LG_CYLINDER_RADIUS)
+                LG_CYLINDER_RADIUS
             ),
             Cylinder(
                 Vector(0, 0, height + LG_CORNER_SPACE),
                 Vector(0, 0, 0),
-                (LG_KNOB_RADIUS)
+                LG_KNOB_RADIUS
             )
         ),
         Torus(
-            (LG_CYLINDER_RADIUS - LG_CYLINDER_WALL_WIDTH / 2),
-            (LG_CYLINDER_WALL_WIDTH / 2),
+            LG_CYLINDER_RADIUS - LG_CYLINDER_WALL_WIDTH / 2,
+            LG_CYLINDER_WALL_WIDTH / 2,
             Rotate(Vector(90, 0, 0)),
             Translate(Vector(0, 0, (LG_CYLINDER_WALL_WIDTH / 2)))
         )
@@ -344,7 +345,7 @@ LG_PLATE_CYLINDER = get_lg_cylinder(Union, LG_PLATE_INNER_HEIGHT)
 LG_BRICK_COLUMN = Cylinder(
     Vector(0, 0, LG_BRICK_INNER_HEIGHT + LG_E),
     Vector(0, 0, 0),
-    (LG_KNOB_INNER_RADIUS)
+    LG_KNOB_INNER_RADIUS
 )
 
 
@@ -353,12 +354,12 @@ LG_PLATE_COLUMN = Difference(
     Cylinder(
         Vector(0, 0, LG_PLATE_INNER_HEIGHT + LG_E),
         Vector(0, 0, 0),
-        (LG_KNOB_INNER_RADIUS)
+        LG_KNOB_INNER_RADIUS
     ),
     Cylinder(
         Vector(0, 0, 1),
         Vector(0, 0, -1),
-        (0.06)
+        0.06
     )
 )
 
@@ -378,7 +379,7 @@ LG_PLATE_COLUMN = Difference(
 LG_KNOB_INNER_SPACE = Cylinder(
     Vector(0, 0, -LG_CORNER_SPACE),
     Vector(0, 0, 0.15),
-    (0.125)
+    0.125
 )
 
 # """

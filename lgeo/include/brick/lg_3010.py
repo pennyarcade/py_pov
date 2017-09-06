@@ -32,7 +32,7 @@ from pov.object_modifier.Translate import Translate
 
 # from pov.other.Object import Object
 
-
+# FIXME: refactor int common funktion for all brick bars
 def solid(length=4, width=1):
     """@Todo: DocString."""
     return Union(
@@ -41,24 +41,12 @@ def solid(length=4, width=1):
             LGCS
         ),
         Cylinder(
-            Vector(
-                LGCS,
-                LGCS,
-                LGCS
-            ),
-            Vector(
-                length * LGBW - LGCS,
-                LGCS,
-                LGCS
-            ),
+            Vector(LGCS, LGCS, LGCS),
+            Vector(length * LGBW - LGCS, LGCS, LGCS),
             LGCS
         ),
         Sphere(
-            Vector(
-                length * LGBW - LGCS,
-                LGCS,
-                LGCS
-            ),
+            Vector(length * LGBW - LGCS, LGCS, LGCS),
             LGCS
         ),
         Cylinder(

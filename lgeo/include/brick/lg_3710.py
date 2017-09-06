@@ -10,6 +10,7 @@ This file is in no way related to the LEGO(tm) Group.
 It is provided for private non-commercial use only.
 
 lg_3710: Brick 1 x 4
+
 """
 
 from lgeo.include.common.brick_subparts import get_knob_inner_space
@@ -31,6 +32,7 @@ from pov.object_modifier.Translate import Translate
 # from pov.other.Object import Object
 
 
+# FIXME: refactor into general function for brick bars
 def solid(length=4, width=1):
     """return lg_3710: Brick 1 x 4."""
     return Union(
@@ -39,11 +41,7 @@ def solid(length=4, width=1):
             LGCS
         ),
         Cylinder(
-            Vector(
-                LGCS,
-                LGCS,
-                LGCS
-            ),
+            Vector(LGCS, LGCS, LGCS),
             Vector(
                 length * LGBW - LGCS,
                 LGCS,

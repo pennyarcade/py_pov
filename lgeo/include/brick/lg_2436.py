@@ -29,7 +29,7 @@ from pov.object_modifier.Rotate import Rotate
 from pov.object_modifier.Translate import Translate
 
 from lgeo.include.common.lg_defs import LGCS, LGBW, LG_TOP_HEIGHT
-from lgeo.include.common.lg_defs import LGPH, LG_WALL_WIDTH
+from lgeo.include.common.lg_defs import LGPH, LGWW
 from lgeo.include.common.lg_defs import LG_E, lg_knob
 from lgeo.include.common.lg_defs import LG_KNOB_INNER_SPACE, lg_tech_knob_logo
 from lgeo.include.common.lg_defs import LG_KNOB_RADIUS, LG_PLATE_COLUMN
@@ -111,23 +111,19 @@ def solid():
             LGCS
         ),
         Sphere(
-            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
+            Vector(LGBW / 2 + LGWW - LGCS, 2 * LGBW - LGCS, -LGCS),
             LGCS
         ),
         Sphere(
-            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGCS),
+            Vector(LGBW / 2 + LGWW - LGCS, -2 * LGBW + LGCS, -LGCS),
             LGCS
         ),
         Sphere(
-            Vector(
-                LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS
-            ),
+            Vector(LGBW / 2 + LGWW - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
             LGCS
         ),
         Sphere(
-            Vector(
-                LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS
-            ),
+            Vector(LGBW / 2 + LGWW - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
             LGCS
         ),
         Cylinder(
@@ -146,55 +142,43 @@ def solid():
             LGCS
         ),
         Cylinder(
-            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
-            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGCS),
+            Vector(LGBW / 2 + LGWW - LGCS, 2 * LGBW - LGCS, -LGCS),
+            Vector(LGBW / 2 + LGWW - LGCS, -2 * LGBW + LGCS, -LGCS),
             LGCS
         ),
         Cylinder(
-            Vector(
-                LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS
-            ),
-            Vector(
-                LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS
-            ),
+            Vector(LGBW / 2 + LGWW - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
+            Vector(LGBW / 2 + LGWW - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
             LGCS
         ),
         Cylinder(
             Vector(LGBW / 2 + LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
-            Vector(
-                LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS
-            ),
+            Vector(LGBW / 2 + LGWW - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
             LGCS
         ),
         Cylinder(
             Vector(LGBW / 2 + LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
-            Vector(
-                LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS
-            ),
+            Vector(LGBW / 2 + LGWW - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
             LGCS
         ),
         Cylinder(
             Vector(LGBW / 2 + LGCS, -2 * LGBW + LGCS, -LGCS),
-            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGCS),
+            Vector(LGBW / 2 + LGWW - LGCS, -2 * LGBW + LGCS, -LGCS),
             LGCS
         ),
         Cylinder(
             Vector(LGBW / 2 + LGCS, 2 * LGBW - LGCS, -LGCS),
-            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
+            Vector(LGBW / 2 + LGWW - LGCS, 2 * LGBW - LGCS, -LGCS),
             LGCS
         ),
         Cylinder(
-            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGCS),
-            Vector(
-                LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS
-            ),
+            Vector(LGBW / 2 + LGWW - LGCS, -2 * LGBW + LGCS, -LGCS),
+            Vector(LGBW / 2 + LGWW - LGCS, -2 * LGBW + LGCS, -LGBW + LGCS),
             LGCS
         ),
         Cylinder(
-            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGCS),
-            Vector(
-                LGBW / 2 + LG_WALL_WIDTH - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS
-            ),
+            Vector(LGBW / 2 + LGWW - LGCS, 2 * LGBW - LGCS, -LGCS),
+            Vector(LGBW / 2 + LGWW - LGCS, 2 * LGBW - LGCS, -LGBW + LGCS),
             LGCS
         ),
         Cylinder(
@@ -224,16 +208,8 @@ def solid():
             ),
             Union(
                 Box(
-                    Vector(
-                        LGBW / 2 + LG_E,
-                        -LGBW + LG_WALL_WIDTH,
-                        -LG_TOP_HEIGHT
-                    ),
-                    Vector(
-                        -LGBW / 2 + LG_WALL_WIDTH,
-                        LGBW - LG_WALL_WIDTH,
-                        -LGPH - LG_E
-                    )
+                    Vector(LGBW / 2 + LG_E, -LGBW + LGWW, -LG_TOP_HEIGHT),
+                    Vector(-LGBW / 2 + LGWW, LGBW - LGWW, -LGPH - LG_E)
                 ),
                 Object(
                     LG_KNOB_INNER_SPACE,
@@ -247,15 +223,15 @@ def solid():
         ),
         Box(
             Vector(LGBW / 2 + LGCS, 2 * LGBW - LGCS, 0),
-            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW + LGCS, -LGBW)
+            Vector(LGBW / 2 + LGWW - LGCS, -2 * LGBW + LGCS, -LGBW)
         ),
         Box(
             Vector(LGBW / 2 + LGCS, 2 * LGBW, -LGCS),
-            Vector(LGBW / 2 + LG_WALL_WIDTH - LGCS, -2 * LGBW, -LGBW + LGCS)
+            Vector(LGBW / 2 + LGWW - LGCS, -2 * LGBW, -LGBW + LGCS)
         ),
         Box(
             Vector(LGBW / 2, 2 * LGBW - LGCS, -LGCS),
-            Vector(LGBW / 2 + LG_WALL_WIDTH, -2 * LGBW + LGCS, -LGBW + LGCS)
+            Vector(LGBW / 2 + LGWW, -2 * LGBW + LGCS, -LGBW + LGCS)
         ),
         Box(
             Vector(LG_KNOB_RADIUS, -LGBW / 2 + 0.06, -LGPH),
@@ -283,29 +259,25 @@ def solid():
             lg_tech_knob_logo(),
             Rotate(Vector(0, 0, 90)),
             Rotate(Vector(0, 90, 0)),
-            Translate(
-                Vector(LGBW / 2 + LG_WALL_WIDTH, -3 * LGBW / 2, -LGBW / 2)
-            )
+            Translate(Vector(LGBW / 2 + LGWW, -3 * LGBW / 2, -LGBW / 2))
         ),
         Object(
             lg_tech_knob_logo(),
             Rotate(Vector(0, 0, 90)),
             Rotate(Vector(0, 90, 0)),
-            Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, -LGBW / 2, -LGBW / 2))
+            Translate(Vector(LGBW / 2 + LGWW, -LGBW / 2, -LGBW / 2))
         ),
         Object(
             lg_tech_knob_logo(),
             Rotate(Vector(0, 0, 90)),
             Rotate(Vector(0, 90, 0)),
-            Translate(Vector(LGBW / 2 + LG_WALL_WIDTH, LGBW / 2, -LGBW / 2))
+            Translate(Vector(LGBW / 2 + LGWW, LGBW / 2, -LGBW / 2))
         ),
         Object(
             lg_tech_knob_logo(),
             Rotate(Vector(0, 0, 90)),
             Rotate(Vector(0, 90, 0)),
-            Translate(
-                Vector(LGBW / 2 + LG_WALL_WIDTH, 3 * LGBW / 2, -LGBW / 2)
-            )
+            Translate(Vector(LGBW / 2 + LGWW, 3 * LGBW / 2, -LGBW / 2))
         ),
     )
 
