@@ -48,8 +48,8 @@ dodgy:
 pyflakes:
   run: true
 
-#frosted:
-# run: true
+frosted:
+  run: true
 
 #vulture:
 #  run: true
