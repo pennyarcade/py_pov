@@ -52,7 +52,7 @@ class HeightField(BlockObject):
 
     def _get_begin_code(self):
         """Start block of code."""
-        code = "  " * self._get_indent() + self.name + self._block_begin()
+        code = "  " * self.indentation.get() + self.name + self._block_begin()
         code = code + self._get_line('"' + str(self.args[0]) + '"')
         return code
 

@@ -41,6 +41,6 @@ class Matrix(ObjectModifier):
     def __str__(self):
         """@Todo: DocString."""
         code = ''
-        code += "  " * self._get_indent() + self.name + ' '
+        code += "  " * self.indentation.get() + self.name + ' '
         code += str(self.args[0]) + os.linesep
         return code

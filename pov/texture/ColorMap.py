@@ -47,7 +47,7 @@ class ColorMap(BlockObject):
         @Todo: Docstring
         @Todo: Unittests
         """
-        code = "  " * self._get_indent() + self.name + self._block_begin()
+        code = "  " * self.indentation.get() + self.name + self._block_begin()
 
         cmap = self.args[0]
 

@@ -31,6 +31,6 @@ class Filter(BlockObject):
     def __str__(self):
         """@Todo: DocString."""
         code = ''
-        code += "  " * self._get_indent() + self.name + ' '
+        code += "  " * self.indentation.get() + self.name + ' '
         code += str(self.args[0]) + ' ' + str(self.args[1]) + os.linesep
         return code

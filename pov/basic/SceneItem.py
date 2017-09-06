@@ -13,11 +13,8 @@ from __future__ import nested_scopes
 from os import linesep
 from logging import debug, info
 from pov.basic.Vector import Vector
+from pov.basic.Indentation import Indentation
 from pov.other.SdlSyntaxException import SdlSyntaxException
-from pov.other.IllegalStateException import IllegalStateException
-
-# set global Indentation variable
-INDENTATION = 0
 
 
 class SceneItem(object):
@@ -169,11 +166,7 @@ class SceneItem(object):
         self._format_opts(opts)
         self._format_kwargs(kwargs)
 
-        # @todo: Does INDENTATION really have to stay in the constructor??
-        if "INDENTATION" not in globals():
-            global INDENTATION
-            INDENTATION = 0
-            debug("set initial INDENTATION to 0")
+        self.indentation = Indentation()
 
         # Call syntax check methods
         self._check_arguments()
@@ -189,27 +182,6 @@ class SceneItem(object):
     # Pseudo private  methods
     # ------------------------------------------------------------------------
 
-    def _indent(self):
-        """Indent PoV code."""
-        global INDENTATION
-        INDENTATION += 1
-        debug("indent: %s", INDENTATION)
-
-    def _dedent(self):
-        """Dedent PoV code."""
-        global INDENTATION
-
-        if not INDENTATION > 0:
-            raise IllegalStateException('Indentation below zero')
-
-        INDENTATION -= 1
-        debug("dedent: %s", INDENTATION)
-
-    def _get_indent(self):
-        """Get INDENTATION."""
-        global INDENTATION
-        return INDENTATION
-
     def _block_begin(self):
         """
         Begin code block.
@@ -220,7 +192,7 @@ class SceneItem(object):
         debug("begin block")
         code = " {" + linesep
 
-        self._indent()
+        self.indentation.indent()
 
         return code
 
@@ -231,22 +203,22 @@ class SceneItem(object):
         * reduce INDENTATION
         * add line with closing bracket
         """
-        global INDENTATION
-        debug("end block: INDENTATION= %s", INDENTATION)
+        ilevel = self.indentation.get()
+        debug("end block: INDENTATION= %s", ilevel)
 
-        if INDENTATION == 0:
+        if ilevel == 0:
             # blank line if this is a top level end
             code = self._get_line()
         else:
-            self._dedent()
+            self.indentation.dedent()
             code = self._get_line("}")
 
         return code
 
     def _get_line(self, string=""):
         """format line of code with INDENTATION and line separator."""
-        info("'" + "  " * self._get_indent() + string + "'")
-        return "  " * self._get_indent() + string + linesep
+        info("'" + "  " * self.indentation.get() + string + "'")
+        return "  " * self.indentation.get() + string + linesep
 
     def _check_opts(self):
         """

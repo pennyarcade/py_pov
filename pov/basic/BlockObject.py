@@ -38,7 +38,7 @@ class BlockObject(SceneItem):
 
     def _get_begin_code(self):
         """Start block of code."""
-        code = "  " * self._get_indent() + self.name + self._block_begin()
+        code = "  " * self.indentation.get() + self.name + self._block_begin()
         if self.args:
             code = code + self._get_line(
                 ", ".join([str(arg) for arg in self.args])
