@@ -51,7 +51,6 @@ pyflakes:
 frosted:
   run: true
 
-vulture:
-  run: true
+
 
 
