@@ -37,10 +37,10 @@ pep257:
 pyroma:
   run: true
 
-#mccabe:
-#  run: true
-#  options:
-#    max-complexity: 10
+mccabe:
+  run: true
+  options:
+    max-complexity: 10
 
 #dodgy:
 #  run: false
