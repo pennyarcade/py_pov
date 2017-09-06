@@ -1,0 +1,4 @@
+#!/home/martin/devel/py_pov/py_pov_env/bin/python2.7
+
+import dodgy.run
+dodgy.run.run()

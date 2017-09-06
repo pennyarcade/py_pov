@@ -5,6 +5,7 @@ coverage
 epydoc
 coveralls
 clonedigger
+prospector[with-everything]
 
 # Program requirements
 
